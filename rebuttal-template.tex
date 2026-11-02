@@ -1,0 +1,110 @@
+% Rebuttal / response-letter template
+% Extracted from RSASE_Wendong2026/02-response-letter.tex (structure and macros kept, content replaced).
+% Compile: pdflatex rebuttal-template.tex  (run twice)
+\documentclass[11pt]{article}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage{graphicx,booktabs}
+\usepackage{hyperref}
+
+% --- Cross-references to the revised manuscript --------------------------
+% The original letter hard-coded \newlabel{...} / \bibcite{...} lines copied
+% from the manuscript .aux file. Cleaner: compile the manuscript first, then
+% uncomment the two lines below so \ref{sec:...}, \ref{tab:...} resolve
+% against it (\cite needs the \bibcite lines copied, or plain numbers).
+% \usepackage{xr-hyper}
+% \externaldocument{02-clean-manuscript-with-appendix}
+
+% Highlight for revised text (switch to \textcolor{blue}{#1} if wanted)
+\newcommand{\revised}[1]{#1}
+
+% Native framed minipage (no mdframed package needed)
+\newsavebox{\responseframe}
+\newenvironment{mdframed}[1][]{\par\medskip\begin{lrbox}{\responseframe}\begin{minipage}{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}}{\end{minipage}\end{lrbox}\noindent\fbox{\usebox{\responseframe}}\par\medskip}
+% Break the page if less than #1 of space remains
+\newcommand{\Needspace}[1]{\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<#1\newpage\fi\endgroup}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+\setlength{\emergencystretch}{3em}
+\pagestyle{plain}
+
+% --- Response building blocks --------------------------------------------
+\newcommand{\ReviewerComment}[1]{\par\textbf{Reviewer comment}\par{\itshape #1\par}}
+\newcommand{\AuthorResponse}[1]{\par\Needspace{4\baselineskip}\textbf{Response}\par\nobreak #1\par}
+\newcommand{\RevisedExcerpt}[1]{\begin{quote}\itshape #1\end{quote}}
+\newcommand{\ManuscriptChange}[1]{\begin{mdframed}\small\textbf{Location and supporting manuscript content}\par #1\end{mdframed}}
+\newcommand{\EvidenceBox}[2]{\begin{mdframed}\small\textbf{#1}\par\medskip #2\end{mdframed}}
+
+\begin{document}
+
+% =========================================================================
+\begin{center}\Large\bfseries Response to Reviewer 1\end{center}
+\textbf{Manuscript}\quad XXXX-D-YY-NNNNN\\
+\textbf{Journal}\quad Journal Name\\
+\textbf{Decision}\quad Major Revision
+
+\textbf{Revised title}\quad Revised Title of the Manuscript
+
+\begin{mdframed}\small One-paragraph scope note, e.g.\ which responses are complete, partial, or acknowledged limitations.\end{mdframed}
+
+Thank you for your careful evaluation. [Summarise the main changes in the revised manuscript.] Each comment is reproduced in italic type, followed by our response, the manuscript location and directly reproduced supporting text, tables or figures. Italic passages are verbatim manuscript excerpts. All locations refer to the clean revised manuscript.
+
+% ----- Questionnaire item (Elsevier-style structured review form) --------
+\Needspace{5\baselineskip}
+\subsection*{Questionnaire item Q1}
+\par\textbf{Questionnaire question}\par Are the objectives and the rationale of the study clearly stated?
+\par{\small\textit{[Form instructions shown to the reviewer, if any.]}}\par
+\ReviewerComment{Paste the reviewer's answer here verbatim.}
+\AuthorResponse{Short answer; point to the numbered comments below (see Comments 1 and 2).}
+\EvidenceBox{Location in the revised manuscript}{Section~X, paragraph Y.\par\smallskip\textbf{Manuscript excerpt}\RevisedExcerpt{Verbatim revised text from the manuscript.}}
+
+% ----- Numbered comment: text excerpt ------------------------------------
+\Needspace{5\baselineskip}
+\subsection*{Comment 1}
+\ReviewerComment{1. Paste the reviewer's comment here verbatim.}
+\AuthorResponse{We thank the reviewer for this comment. [What was changed and why; state clearly what is and is not claimed.]}
+\EvidenceBox{Location in the revised manuscript}{Section~X; Table~Y.\par\smallskip\textbf{Manuscript excerpt}\RevisedExcerpt{Verbatim revised text from the manuscript.}}
+
+% Optional follow-up paragraph outside the box
+\Needspace{5\baselineskip}
+\par We additionally [new analysis / control]. [Key numbers and their interpretation.]\par
+
+% ----- Numbered comment: reproduced table ---------------------------------
+\Needspace{5\baselineskip}
+\subsection*{Comment 2}
+\ReviewerComment{2. Please compare the proposed model with more recent methods.}
+\AuthorResponse{We added [comparison]. Results are reproduced below.}
+\EvidenceBox{Table~N: caption as in the manuscript}{Errors in mm; [short table note].\par\medskip\centering\resizebox{\linewidth}{!}{\begin{tabular}{lrrrr}
+\toprule
+Method & RMSE & MAE & Params & Time\\
+\midrule
+Baseline A & 0.000 & 0.000 & 0.0M & 0.0 s\\
+Proposed   & 0.000 & 0.000 & 0.0M & 0.0 s\\
+\bottomrule
+\end{tabular}}}
+
+% ----- Numbered comment: reproduced figure --------------------------------
+\Needspace{5\baselineskip}
+\subsection*{Comment 3}
+\ReviewerComment{3. Please simplify Figure 1.}
+\AuthorResponse{We replaced Figure 1 with a simplified workflow.}
+\EvidenceBox{Figure~1: revised workflow}{\centering
+% \includegraphics[width=0.9\linewidth]{Figures/overallFlow.pdf}
+\fbox{\parbox[c][4cm][c]{0.9\linewidth}{\centering figure placeholder}}
+\par\smallskip\raggedright Shortened figure note.}
+
+% ----- Closing --------------------------------------------------------------
+\Needspace{5\baselineskip}
+\subsection*{Overall assessment}
+\ReviewerComment{Paste the reviewer's overall assessment.}
+\AuthorResponse{We thank the reviewer again for the constructive comments, which have substantially improved the manuscript.}
+
+% Copy the block from \begin{center}...Response to Reviewer 1 for further
+% reviewers, starting each with \newpage.
+
+\end{document}
