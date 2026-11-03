@@ -1,0 +1,54 @@
+Thresholds (training): {'Q95': 0.574, '1.0 mm/h': 1.0}
+AR1      : y(t) = 0.0763 + 0.2811 * y(t-1)   (train N = 18404)
+AR1+clim : y(t) = c(t) + 0.2793 * (y(t-1) - c(t-1))
+Check OK: y(t-1) equals the saved Persistence predictions (3938 of 3939 test rows checked; 1 first-of-split rows take y(t-1) from the Persistence file).
+
+=== A. TEST SKILL (mm/h): deep models vs cheap baselines ===
+                         Model   RMSE    MAE      R2  Pearson_r  Std_ratio
+                   Persistence 0.3282 0.1400 -0.4394     0.2803     1.0000
+                       XGBoost 0.2437 0.1188  0.2060     0.4564     0.5019
+                   Transformer 0.2591 0.1209  0.1032     0.3539     0.2698
+                       BU-LSTM 0.2487 0.1170  0.1732     0.4373     0.3350
+              BiLSTM-Attention 0.2428 0.1156  0.2119     0.4689     0.4082
+  BU-LSTM-Attention (proposed) 0.2464 0.1174  0.1883     0.4386     0.4129
+Probabilistic BiLSTM-Attention 0.2481 0.1162  0.1772     0.4288     0.3948
+      AR1 (damped persistence) 0.2627 0.1391  0.0780     0.2803     0.2811
+       AR1 + month x hour clim 0.2624 0.1390  0.0799     0.2835     0.2941
+
+=== B. RMSE(model) - RMSE(baseline), paired block bootstrap; negative = model better ===
+                Baseline                          Model  RMSE_model  RMSE_baseline    Diff  CI_low  CI_high  Significant
+AR1 (damped persistence)                        XGBoost      0.2437         0.2627 -0.0189 -0.0247  -0.0131         True
+AR1 (damped persistence)                    Transformer      0.2591         0.2627 -0.0036 -0.0082   0.0012        False
+AR1 (damped persistence)                        BU-LSTM      0.2487         0.2627 -0.0139 -0.0164  -0.0116         True
+AR1 (damped persistence)               BiLSTM-Attention      0.2428         0.2627 -0.0198 -0.0233  -0.0162         True
+AR1 (damped persistence)   BU-LSTM-Attention (proposed)      0.2464         0.2627 -0.0162 -0.0187  -0.0136         True
+AR1 (damped persistence) Probabilistic BiLSTM-Attention      0.2481         0.2627 -0.0145 -0.0177  -0.0113         True
+ AR1 + month x hour clim                        XGBoost      0.2437         0.2624 -0.0186 -0.0245  -0.0130         True
+ AR1 + month x hour clim                    Transformer      0.2591         0.2624 -0.0033 -0.0081   0.0016        False
+ AR1 + month x hour clim                        BU-LSTM      0.2487         0.2624 -0.0137 -0.0162  -0.0111         True
+ AR1 + month x hour clim               BiLSTM-Attention      0.2428         0.2624 -0.0195 -0.0231  -0.0160         True
+ AR1 + month x hour clim   BU-LSTM-Attention (proposed)      0.2464         0.2624 -0.0159 -0.0184  -0.0134         True
+ AR1 + month x hour clim Probabilistic BiLSTM-Attention      0.2481         0.2624 -0.0143 -0.0175  -0.0112         True
+
+=== C. EVENT DETECTION (cutoff tuned on validation, applied to test) ===
+Threshold                          Model  AUC_test  Cutoff_from_val  Val_CSI  N_test_events  N_pred_events  Hits  FalseAlarms   POD   FAR   CSI
+      Q95                    Persistence     0.747            0.185    0.143            238            629   117          512 0.492 0.814 0.156
+      Q95                        XGBoost     0.848            0.306    0.208            238            355    95          260 0.399 0.732 0.191
+      Q95                    Transformer     0.798            0.191    0.160            238            340    68          272 0.286 0.800 0.133
+      Q95                        BU-LSTM     0.833            0.203    0.166            238            554   125          429 0.525 0.774 0.187
+      Q95               BiLSTM-Attention     0.835            0.262    0.192            238            443   105          338 0.441 0.763 0.182
+      Q95   BU-LSTM-Attention (proposed)     0.838            0.195    0.178            238            702   147          555 0.618 0.791 0.185
+      Q95 Probabilistic BiLSTM-Attention     0.832            0.221    0.171            238            568   126          442 0.529 0.778 0.185
+      Q95       AR1 (damped persistence)     0.747            0.128    0.143            238            629   117          512 0.492 0.814 0.156
+      Q95        AR1 + month x hour clim     0.726            0.140    0.136            238            620   113          507 0.475 0.818 0.152
+ 1.0 mm/h                    Persistence     0.732            0.390    0.084             91            362    28          334 0.308 0.923 0.066
+ 1.0 mm/h                        XGBoost     0.868            0.418    0.120             91            191    27          164 0.297 0.859 0.106
+ 1.0 mm/h                    Transformer     0.822            0.205    0.104             91            287    24          263 0.264 0.916 0.068
+ 1.0 mm/h                        BU-LSTM     0.848            0.231    0.099             91            434    42          392 0.462 0.903 0.087
+ 1.0 mm/h               BiLSTM-Attention     0.861            0.262    0.110             91            443    50          393 0.549 0.887 0.103
+ 1.0 mm/h   BU-LSTM-Attention (proposed)     0.853            0.214    0.095             91            618    56          562 0.615 0.909 0.086
+ 1.0 mm/h Probabilistic BiLSTM-Attention     0.846            0.204    0.089             91            631    55          576 0.604 0.913 0.082
+ 1.0 mm/h       AR1 (damped persistence)     0.732            0.186    0.084             91            362    28          334 0.308 0.923 0.066
+ 1.0 mm/h        AR1 + month x hour clim     0.701            0.188    0.086             91            377    28          349 0.308 0.926 0.064
+
+Saved q05c_*.csv to results/metrics

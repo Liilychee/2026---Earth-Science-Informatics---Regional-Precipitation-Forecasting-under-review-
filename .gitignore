@@ -1,0 +1,11 @@
+data/
+*.npz
+*.h5
+*.keras
+*.pt
+*.pth
+*.pkl
+results/windows/
+results/models/
+__pycache__/
+.ipynb_checkpoints/

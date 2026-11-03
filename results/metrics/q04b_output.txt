@@ -1,0 +1,44 @@
+q04_pairs: 26,300 stamps; station missing: 0
+Aligned test stamps: 3,939
+Alignment check |y_true - ERA5 regional (pairs)|: max 1.64e-07 mm, share > 1e-3 mm: 0.0000
+Test stamps with a valid station value: 3,939  (wet >= 0.1: 13.1 %)
+
+=== Test predictions vs HOURLY STATION observations (Dublin Airport) ===
+                        Series    N  Spearman_vs_station  Spearman_CI_low  Spearman_CI_high  Pearson_vs_station  RMSE_vs_station_mm  MAE_vs_station_mm  Bias_pred_minus_station_mm  Wet_POD  Wet_FAR  Wet_CSI
+          ERA5 target (y_true) 3939               0.4770           0.4480            0.5032              0.4824              0.3844             0.1176                      0.0223   0.7660   0.5363   0.4062
+                   Persistence 3939               0.3031           0.2725            0.3307              0.1695              0.4709             0.1599                      0.0223   0.5145   0.6885   0.2407
+     Climatology (global mean) 3939                  NaN              NaN               NaN                 NaN              0.4320             0.1715                      0.0133   1.0000   0.8687   0.1313
+                       XGBoost 3939               0.3608           0.3332            0.3852              0.2406              0.4208             0.1544                      0.0180   0.7563   0.7181   0.2584
+                   Transformer 3939               0.3052           0.2756            0.3313              0.2063              0.4229             0.1424                     -0.0112   0.5822   0.7166   0.2355
+                       BU-LSTM 3939               0.3451           0.3159            0.3703              0.2466              0.4187             0.1443                     -0.0015   0.7079   0.7120   0.2574
+              BiLSTM-Attention 3939               0.3324           0.2969            0.3637              0.2586              0.4171             0.1470                      0.0043   0.7060   0.6993   0.2672
+  BU-LSTM-Attention (proposed) 3939               0.3527           0.3241            0.3783              0.2540              0.4176             0.1473                      0.0063   0.7447   0.7110   0.2630
+Probabilistic BiLSTM-Attention 3939               0.3534           0.3248            0.3788              0.2596              0.4170             0.1448                      0.0020   0.7157   0.7098   0.2602
+
+=== Difference to XGBoost (paired block bootstrap, 95% CI; CI excluding 0 = clear difference) ===
+                        Series  dSpearman_vs_XGB  dSpearman_CI_low  dSpearman_CI_high  dRMSE_vs_XGB  dRMSE_CI_low  dRMSE_CI_high
+          ERA5 target (y_true)            0.1163            0.0930             0.1404       -0.0364       -0.0537        -0.0189
+                   Persistence           -0.0577           -0.0804            -0.0371        0.0501        0.0355         0.0662
+     Climatology (global mean)               NaN               NaN                NaN        0.0112        0.0043         0.0175
+                       XGBoost            0.0000            0.0000             0.0000        0.0000        0.0000         0.0000
+                   Transformer           -0.0556           -0.0730            -0.0383        0.0021       -0.0041         0.0079
+                       BU-LSTM           -0.0156           -0.0276            -0.0045       -0.0021       -0.0070         0.0027
+              BiLSTM-Attention           -0.0284           -0.0468            -0.0113       -0.0037       -0.0079         0.0007
+  BU-LSTM-Attention (proposed)           -0.0081           -0.0203             0.0028       -0.0031       -0.0071         0.0009
+Probabilistic BiLSTM-Attention           -0.0073           -0.0180             0.0033       -0.0038       -0.0080         0.0004
+
+=== Ranking: ERA5 target vs station (1 = best) ===
+                         Model  RMSE_vs_ERA5_target  RMSE_vs_station  Spearman_vs_ERA5_target  Spearman_vs_station  Rank_RMSE_vs_ERA5_target  Rank_RMSE_vs_station  Rank_Spearman_vs_ERA5_target  Rank_Spearman_vs_station
+                   Persistence               0.3282           0.4709                   0.5524               0.3031                         8                     8                             6                         7
+     Climatology (global mean)               0.2737           0.4320                      NaN                  NaN                         7                     7                             8                         8
+                       XGBoost               0.2437           0.4208                   0.6215               0.3608                         2                     5                             1                         1
+                   Transformer               0.2591           0.4229                   0.5009               0.3052                         6                     6                             7                         6
+                       BU-LSTM               0.2487           0.4187                   0.5745               0.3451                         5                     4                             4                         4
+              BiLSTM-Attention               0.2428           0.4171                   0.5576               0.3324                         1                     2                             5                         5
+  BU-LSTM-Attention (proposed)               0.2464           0.4176                   0.5922               0.3527                         3                     3                             3                         3
+Probabilistic BiLSTM-Attention               0.2481           0.4170                   0.5972               0.3534                         4                     1                             2                         2
+
+Rank agreement between the two targets (Spearman of the model rankings): by RMSE 0.762, by rho 0.964
+Reference (ERA5 label vs station): rho 0.477; best model vs station: XGBoost rho 0.361
+
+Saved q04b_transfer_to_station.csv and q04b_ranking_vs_station.csv to results/metrics
