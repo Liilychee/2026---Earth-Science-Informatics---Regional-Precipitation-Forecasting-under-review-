@@ -1,0 +1,107 @@
+# q08 下载检查
+
+## 1. 每个文件的时间范围 / 时刻数 / 缺失值数
+
+### HRES（33 个文件）
+hres_tp_201904.nc: 2019-04-20T00:00 .. 2019-04-30T12:00  时刻数=22  缺失={'total_precipitation_6hr': 550, 'total_precipitation': 0}
+hres_tp_201905.nc: 2019-05-01T00:00 .. 2019-05-31T12:00  时刻数=62  缺失={'total_precipitation_6hr': 1550, 'total_precipitation': 0}
+hres_tp_201906.nc: 2019-06-01T00:00 .. 2019-06-30T12:00  时刻数=60  缺失={'total_precipitation_6hr': 1500, 'total_precipitation': 0}
+hres_tp_201907.nc: 2019-07-01T00:00 .. 2019-07-31T12:00  时刻数=62  缺失={'total_precipitation_6hr': 1550, 'total_precipitation': 0}
+hres_tp_201908.nc: 2019-08-01T00:00 .. 2019-08-31T12:00  时刻数=62  缺失={'total_precipitation_6hr': 1550, 'total_precipitation': 0}
+hres_tp_201909.nc: 2019-09-01T00:00 .. 2019-09-30T12:00  时刻数=60  缺失={'total_precipitation_6hr': 1500, 'total_precipitation': 0}
+hres_tp_201910.nc: 2019-10-01T00:00 .. 2019-10-31T12:00  时刻数=62  缺失={'total_precipitation_6hr': 1550, 'total_precipitation': 0}
+hres_tp_201911.nc: 2019-11-01T00:00 .. 2019-11-30T12:00  时刻数=60  缺失={'total_precipitation_6hr': 1500, 'total_precipitation': 0}
+hres_tp_201912.nc: 2019-12-01T00:00 .. 2019-12-31T12:00  时刻数=62  缺失={'total_precipitation_6hr': 1550, 'total_precipitation': 0}
+hres_tp_202001.nc: 2020-01-01T00:00 .. 2020-01-31T12:00  时刻数=62  缺失={'total_precipitation_6hr': 1550, 'total_precipitation': 0}
+hres_tp_202002.nc: 2020-02-01T00:00 .. 2020-02-29T12:00  时刻数=58  缺失={'total_precipitation_6hr': 1450, 'total_precipitation': 0}
+hres_tp_202003.nc: 2020-03-01T00:00 .. 2020-03-31T12:00  时刻数=62  缺失={'total_precipitation_6hr': 1550, 'total_precipitation': 0}
+hres_tp_202004.nc: 2020-04-01T00:00 .. 2020-04-30T12:00  时刻数=60  缺失={'total_precipitation_6hr': 1500, 'total_precipitation': 0}
+hres_tp_202005.nc: 2020-05-01T00:00 .. 2020-05-31T12:00  时刻数=62  缺失={'total_precipitation_6hr': 1550, 'total_precipitation': 0}
+hres_tp_202006.nc: 2020-06-01T00:00 .. 2020-06-30T12:00  时刻数=60  缺失={'total_precipitation_6hr': 1500, 'total_precipitation': 0}
+hres_tp_202007.nc: 2020-07-01T00:00 .. 2020-07-31T12:00  时刻数=62  缺失={'total_precipitation_6hr': 1550, 'total_precipitation': 0}
+hres_tp_202008.nc: 2020-08-01T00:00 .. 2020-08-31T12:00  时刻数=62  缺失={'total_precipitation_6hr': 1550, 'total_precipitation': 0}
+hres_tp_202009.nc: 2020-09-01T00:00 .. 2020-09-30T12:00  时刻数=60  缺失={'total_precipitation_6hr': 1500, 'total_precipitation': 0}
+hres_tp_202010.nc: 2020-10-01T00:00 .. 2020-10-31T12:00  时刻数=62  缺失={'total_precipitation_6hr': 1550, 'total_precipitation': 0}
+hres_tp_202011.nc: 2020-11-01T00:00 .. 2020-11-30T12:00  时刻数=60  缺失={'total_precipitation_6hr': 1500, 'total_precipitation': 0}
+hres_tp_202012.nc: 2020-12-01T00:00 .. 2020-12-31T12:00  时刻数=62  缺失={'total_precipitation_6hr': 1550, 'total_precipitation': 0}
+hres_tp_202101.nc: 2021-01-01T00:00 .. 2021-01-31T12:00  时刻数=62  缺失={'total_precipitation_6hr': 1550, 'total_precipitation': 0}
+hres_tp_202102.nc: 2021-02-01T00:00 .. 2021-02-28T12:00  时刻数=56  缺失={'total_precipitation_6hr': 1400, 'total_precipitation': 0}
+hres_tp_202103.nc: 2021-03-01T00:00 .. 2021-03-31T12:00  时刻数=62  缺失={'total_precipitation_6hr': 1550, 'total_precipitation': 0}
+hres_tp_202104.nc: 2021-04-01T00:00 .. 2021-04-30T12:00  时刻数=60  缺失={'total_precipitation_6hr': 1500, 'total_precipitation': 0}
+hres_tp_202105.nc: 2021-05-01T00:00 .. 2021-05-31T12:00  时刻数=62  缺失={'total_precipitation_6hr': 1550, 'total_precipitation': 0}
+hres_tp_202106.nc: 2021-06-01T00:00 .. 2021-06-30T12:00  时刻数=60  缺失={'total_precipitation_6hr': 1500, 'total_precipitation': 0}
+hres_tp_202107.nc: 2021-07-01T00:00 .. 2021-07-31T12:00  时刻数=62  缺失={'total_precipitation_6hr': 1550, 'total_precipitation': 0}
+hres_tp_202108.nc: 2021-08-01T00:00 .. 2021-08-31T12:00  时刻数=62  缺失={'total_precipitation_6hr': 1550, 'total_precipitation': 0}
+hres_tp_202109.nc: 2021-09-01T00:00 .. 2021-09-30T12:00  时刻数=60  缺失={'total_precipitation_6hr': 1500, 'total_precipitation': 0}
+hres_tp_202110.nc: 2021-10-01T00:00 .. 2021-10-31T12:00  时刻数=62  缺失={'total_precipitation_6hr': 1550, 'total_precipitation': 0}
+hres_tp_202111.nc: 2021-11-01T00:00 .. 2021-11-30T12:00  时刻数=60  缺失={'total_precipitation_6hr': 1500, 'total_precipitation': 0}
+hres_tp_202112.nc: 2021-12-01T00:00 .. 2021-12-31T12:00  时刻数=62  缺失={'total_precipitation_6hr': 1550, 'total_precipitation': 0}
+合计: 2019-04-20 00:00:00 .. 2021-12-31 12:00:00  时刻数=1974（按日历应为 1974）  缺少的时刻=0  重复=0
+格点: lat=[52.75, 53.0, 53.25, 53.5, 53.75]  lon=[353.25, 353.5, 353.75, 354.0, 354.25]
+总缺失值: {'total_precipitation_6hr': 49350, 'total_precipitation': 0}
+
+### ERA5（33 个文件）
+era5_tp_201904.nc: 2019-04-20T00:00 .. 2019-04-30T18:00  时刻数=44  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_201905.nc: 2019-05-01T00:00 .. 2019-05-31T18:00  时刻数=124  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_201906.nc: 2019-06-01T00:00 .. 2019-06-30T18:00  时刻数=120  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_201907.nc: 2019-07-01T00:00 .. 2019-07-31T18:00  时刻数=124  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_201908.nc: 2019-08-01T00:00 .. 2019-08-31T18:00  时刻数=124  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_201909.nc: 2019-09-01T00:00 .. 2019-09-30T18:00  时刻数=120  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_201910.nc: 2019-10-01T00:00 .. 2019-10-31T18:00  时刻数=124  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_201911.nc: 2019-11-01T00:00 .. 2019-11-30T18:00  时刻数=120  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_201912.nc: 2019-12-01T00:00 .. 2019-12-31T18:00  时刻数=124  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_202001.nc: 2020-01-01T00:00 .. 2020-01-31T18:00  时刻数=124  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_202002.nc: 2020-02-01T00:00 .. 2020-02-29T18:00  时刻数=116  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_202003.nc: 2020-03-01T00:00 .. 2020-03-31T18:00  时刻数=124  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_202004.nc: 2020-04-01T00:00 .. 2020-04-30T18:00  时刻数=120  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_202005.nc: 2020-05-01T00:00 .. 2020-05-31T18:00  时刻数=124  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_202006.nc: 2020-06-01T00:00 .. 2020-06-30T18:00  时刻数=120  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_202007.nc: 2020-07-01T00:00 .. 2020-07-31T18:00  时刻数=124  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_202008.nc: 2020-08-01T00:00 .. 2020-08-31T18:00  时刻数=124  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_202009.nc: 2020-09-01T00:00 .. 2020-09-30T18:00  时刻数=120  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_202010.nc: 2020-10-01T00:00 .. 2020-10-31T18:00  时刻数=124  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_202011.nc: 2020-11-01T00:00 .. 2020-11-30T18:00  时刻数=120  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_202012.nc: 2020-12-01T00:00 .. 2020-12-31T18:00  时刻数=124  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_202101.nc: 2021-01-01T00:00 .. 2021-01-31T18:00  时刻数=124  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_202102.nc: 2021-02-01T00:00 .. 2021-02-28T18:00  时刻数=112  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_202103.nc: 2021-03-01T00:00 .. 2021-03-31T18:00  时刻数=124  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_202104.nc: 2021-04-01T00:00 .. 2021-04-30T18:00  时刻数=120  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_202105.nc: 2021-05-01T00:00 .. 2021-05-31T18:00  时刻数=124  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_202106.nc: 2021-06-01T00:00 .. 2021-06-30T18:00  时刻数=120  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_202107.nc: 2021-07-01T00:00 .. 2021-07-31T18:00  时刻数=124  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_202108.nc: 2021-08-01T00:00 .. 2021-08-31T18:00  时刻数=124  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_202109.nc: 2021-09-01T00:00 .. 2021-09-30T18:00  时刻数=120  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_202110.nc: 2021-10-01T00:00 .. 2021-10-31T18:00  时刻数=124  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_202111.nc: 2021-11-01T00:00 .. 2021-11-30T18:00  时刻数=120  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+era5_tp_202112.nc: 2021-12-01T00:00 .. 2021-12-31T18:00  时刻数=124  缺失={'total_precipitation_6hr': 0, 'total_precipitation': 0}
+合计: 2019-04-20 00:00:00 .. 2021-12-31 18:00:00  时刻数=3948（按日历应为 3948）  缺少的时刻=0  重复=0
+格点: lat=[53.75, 53.5, 53.25, 53.0, 52.75]  lon=[353.25, 353.5, 353.75, 354.0, 354.25]
+总缺失值: {'total_precipitation_6hr': 0, 'total_precipitation': 0}
+
+## 2. HRES：tp(lead6) − tp(lead0) 与 tp_6hr(lead6) 对比
+最大绝对差 = 0.000e+00 m；平均绝对差 = 0.000e+00 m
+参考：tp_6hr(lead6) 最大值 = 3.529e-02 m；tp(lead0) 最大值 = 0.000e+00 m；tp_6hr(lead0) 最大值 = nan m
+
+## 3. ERA5 total_precipitation_6hr 的累积窗口
+attrs = {'long_name': 'Total precipitation', 'short_name': 'tp', 'units': 'm', 'source_store': 'datasets/era5/1959-2022-6h-1440x721.zarr'}
+attrs 里没有说明累积窗口是该时刻之前还是之后 6 小时 → 待确认
+
+## 4. ERA5 total_precipitation 区域平均 ×1000 与 dublin_regional_2004_2021.csv 的 tp_mm 对比
+对照文件: /Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/data/dublin_regional_2004_2021.csv；ERA5 时刻 3948，CSV 中能对上的 3948
+最大绝对差 = 2.398e-04 mm；平均绝对差 = 2.605e-05 mm；差 > 1e-4 mm 的时刻数 = 98
+结论: 不一致
+  2020-09-06 00:00:00: ERA5=0.000733  CSV=0.000973  差=2.398e-04
+  2020-12-08 06:00:00: ERA5=0.000000  CSV=0.000229  差=2.289e-04
+  2020-07-24 06:00:00: ERA5=0.006525  CSV=0.006714  差=1.889e-04
+  2021-09-21 00:00:00: ERA5=0.001676  CSV=0.001488  差=1.886e-04
+  2019-11-25 12:00:00: ERA5=0.168759  CSV=0.168571  差=1.876e-04
+  相关系数 = 1.000000（只作为参考，不做分析）
+
+## 5. 磁盘占用
+1.3M	/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/HRES
+1.1M	/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/WeatherBench
+
+## 6. 打包
+/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/q08_data/q08_tp_dublin.tar.gz  大小 = 0.61 MB
+
+注：HRES total_precipitation_6hr 的 49,350 个缺失值 = 1,974 起报 × 25 格点，全部在 lead 0（lead 0 没有前 6 小时累积，属正常）；lead 6 无缺失。
