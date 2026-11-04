@@ -1,0 +1,37 @@
+{
+  "tag": "bilstm_attn__no_precip__s2024",
+  "arch": "bilstm_attn",
+  "config": "no_precip",
+  "seed": 2024,
+  "removed": "mxtpr,mntpr,lsp",
+  "features": [
+    "tcc",
+    "v10",
+    "sp",
+    "d2m"
+  ],
+  "test": {
+    "rmse": 0.247758833280236,
+    "mae": 0.12527652084827423,
+    "r2": 0.179656982421875
+  },
+  "val": {
+    "rmse": 0.2563978745454243,
+    "mae": 0.11643486469984055,
+    "r2": 0.14807748794555664
+  },
+  "train": {
+    "rmse": 0.25435884192414565,
+    "mae": 0.11898687481880188,
+    "r2": 0.17895185947418213
+  },
+  "best_epoch": 12,
+  "epochs_trained": 22,
+  "train_seconds": 174.5,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tf": "2.21.0",
+  "keras": "3.15.1",
+  "numpy": "2.3.2",
+  "host": "autodl-container-2dbb47835f-e1339b93",
+  "finished_utc": "2026-11-04T20:43:41+00:00"
+}

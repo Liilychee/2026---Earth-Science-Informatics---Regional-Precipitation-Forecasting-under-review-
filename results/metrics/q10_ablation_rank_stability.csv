@@ -1,0 +1,10 @@
+subset,comparison,kendall_tau,min,max
+all,bilstm_attn: between seeds (mean of 10 pairs),0.8666666666666668,0.8095238095238096,1.0
+all,bulstm_attn: between seeds (mean of 10 pairs),0.5428571428571429,0.33333333333333337,0.7142857142857143
+all,bilstm_attn vs bulstm_attn (mean dRMSE),0.7142857142857143,,
+wet_ge0.1,bilstm_attn: between seeds (mean of 10 pairs),0.48571428571428577,-0.04761904761904762,1.0
+wet_ge0.1,bulstm_attn: between seeds (mean of 10 pairs),0.23809523809523814,-0.23809523809523814,0.7142857142857143
+wet_ge0.1,bilstm_attn vs bulstm_attn (mean dRMSE),0.6190476190476191,,
+upper_geQ95,bilstm_attn: between seeds (mean of 10 pairs),0.5619047619047619,0.33333333333333337,0.8095238095238096
+upper_geQ95,bulstm_attn: between seeds (mean of 10 pairs),0.23809523809523814,-0.04761904761904762,0.6190476190476191
+upper_geQ95,bilstm_attn vs bulstm_attn (mean dRMSE),0.6190476190476191,,

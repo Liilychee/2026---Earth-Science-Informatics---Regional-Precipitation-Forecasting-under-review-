@@ -1,0 +1,8 @@
+nohup: ignoring input
+[load] bilstm_attn seed 42: max |prediction - saved prediction| = 8.78e-08 mm
+[done] bilstm_attn s42 temporal: 519 samples, 1471s, efficiency residual 2.8e-16; mean|phi| (mm): mntpr 0.0609, v10 0.0595, tcc 0.0594, sp 0.0586, d2m 0.0244, mxtpr 0.0169, lsp 0.0120
+[load] bilstm_attn seed 123: max |prediction - saved prediction| = 2.75e-07 mm
+[done] bilstm_attn s123 temporal: 519 samples, 1163s, efficiency residual 3.1e-16; mean|phi| (mm): tcc 0.0747, sp 0.0620, v10 0.0575, mntpr 0.0569, d2m 0.0312, lsp 0.0165, mxtpr 0.0159
+[load] bilstm_attn seed 7: max |prediction - saved prediction| = 2.79e-07 mm
+[done] bilstm_attn s7 temporal: 519 samples, 904s, efficiency residual 3.3e-16; mean|phi| (mm): sp 0.0705, tcc 0.0656, mntpr 0.0623, v10 0.0578, mxtpr 0.0251, d2m 0.0236, lsp 0.0195
+===== q10 SHAP JOB COMPLETE =====

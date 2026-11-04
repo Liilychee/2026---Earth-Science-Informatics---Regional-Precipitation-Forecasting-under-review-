@@ -1,0 +1,6 @@
+nohup: ignoring input
+[load] bulstm_attn seed 2024: max |prediction - saved prediction| = 3.41e-06 mm
+[done] bulstm_attn s2024 temporal: 519 samples, 3081s, efficiency residual 8.3e-17; mean|phi| (mm): tcc 0.0460, v10 0.0379, sp 0.0322, mxtpr 0.0231, mntpr 0.0230, d2m 0.0168, lsp 0.0075
+[load] bulstm_attn seed 99: max |prediction - saved prediction| = 2.51e-06 mm
+[done] bulstm_attn s99 temporal: 519 samples, 1741s, efficiency residual 1.7e-16; mean|phi| (mm): tcc 0.0542, mntpr 0.0421, v10 0.0399, sp 0.0361, mxtpr 0.0195, lsp 0.0086, d2m 0.0081
+===== q10 SHAP JOB COMPLETE =====

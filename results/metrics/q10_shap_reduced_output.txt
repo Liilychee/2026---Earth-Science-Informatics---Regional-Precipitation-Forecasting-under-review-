@@ -1,0 +1,21 @@
+[load] bilstm_attn no_mxtpr_mntpr seed 42: max |prediction - saved prediction| = 6.99e-06 mm
+[done] bilstm_attn no_mxtpr_mntpr s42 grouped: 519 samples, 5s, efficiency residual 1.1e-16; mean|phi| (mm): lsp 0.0458, tcc 0.0376, sp 0.0358, v10 0.0270, d2m 0.0139
+[load] bilstm_attn no_mxtpr_mntpr seed 123: max |prediction - saved prediction| = 1.03e-05 mm
+[done] bilstm_attn no_mxtpr_mntpr s123 grouped: 519 samples, 5s, efficiency residual 1.1e-16; mean|phi| (mm): sp 0.0497, tcc 0.0447, lsp 0.0404, v10 0.0242, d2m 0.0108
+[load] bilstm_attn no_mxtpr_mntpr seed 7: max |prediction - saved prediction| = 3.85e-06 mm
+[done] bilstm_attn no_mxtpr_mntpr s7 grouped: 519 samples, 5s, efficiency residual 1.1e-16; mean|phi| (mm): sp 0.0477, tcc 0.0468, lsp 0.0405, v10 0.0272, d2m 0.0100
+[load] bilstm_attn no_mxtpr_mntpr seed 2024: max |prediction - saved prediction| = 4.75e-06 mm
+[done] bilstm_attn no_mxtpr_mntpr s2024 grouped: 519 samples, 5s, efficiency residual 1.7e-16; mean|phi| (mm): lsp 0.0513, sp 0.0404, tcc 0.0357, v10 0.0229, d2m 0.0090
+[load] bilstm_attn no_mxtpr_mntpr seed 99: max |prediction - saved prediction| = 4.38e-06 mm
+[done] bilstm_attn no_mxtpr_mntpr s99 grouped: 519 samples, 5s, efficiency residual 1.1e-16; mean|phi| (mm): lsp 0.0538, sp 0.0463, tcc 0.0389, v10 0.0244, d2m 0.0074
+[load] bulstm_attn no_mxtpr_mntpr seed 42: max |prediction - saved prediction| = 1.85e-05 mm
+[done] bulstm_attn no_mxtpr_mntpr s42 grouped: 519 samples, 11s, efficiency residual 1.7e-16; mean|phi| (mm): lsp 0.0529, tcc 0.0400, sp 0.0307, v10 0.0290, d2m 0.0065
+[load] bulstm_attn no_mxtpr_mntpr seed 123: max |prediction - saved prediction| = 2.01e-05 mm
+[done] bulstm_attn no_mxtpr_mntpr s123 grouped: 519 samples, 11s, efficiency residual 1.1e-16; mean|phi| (mm): lsp 0.0388, tcc 0.0373, sp 0.0335, v10 0.0254, d2m 0.0063
+[load] bulstm_attn no_mxtpr_mntpr seed 7: max |prediction - saved prediction| = 5.29e-06 mm
+[done] bulstm_attn no_mxtpr_mntpr s7 grouped: 519 samples, 11s, efficiency residual 1.1e-16; mean|phi| (mm): tcc 0.0364, sp 0.0360, lsp 0.0353, v10 0.0254, d2m 0.0057
+[load] bulstm_attn no_mxtpr_mntpr seed 2024: max |prediction - saved prediction| = 9.53e-06 mm
+[done] bulstm_attn no_mxtpr_mntpr s2024 grouped: 519 samples, 11s, efficiency residual 8.3e-17; mean|phi| (mm): lsp 0.0470, sp 0.0355, tcc 0.0307, v10 0.0278, d2m 0.0037
+[load] bulstm_attn no_mxtpr_mntpr seed 99: max |prediction - saved prediction| = 8.13e-06 mm
+[done] bulstm_attn no_mxtpr_mntpr s99 grouped: 519 samples, 11s, efficiency residual 1.1e-16; mean|phi| (mm): lsp 0.0516, sp 0.0344, tcc 0.0314, v10 0.0234, d2m 0.0071
+===== q10 SHAP JOB COMPLETE =====

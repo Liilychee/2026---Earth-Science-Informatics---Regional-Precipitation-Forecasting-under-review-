@@ -1,0 +1,22 @@
+nohup: ignoring input
+[load] bilstm_attn full seed 42: max |prediction - saved prediction| = 8.78e-08 mm
+[done] bilstm_attn full s42 grouped_precip: 519 samples, 7s, efficiency residual 1.4e-16; mean|phi| (mm): precip 0.0531, tcc 0.0381, sp 0.0309, v10 0.0263, d2m 0.0126
+[load] bilstm_attn full seed 123: max |prediction - saved prediction| = 2.75e-07 mm
+[done] bilstm_attn full s123 grouped_precip: 519 samples, 7s, efficiency residual 1.7e-16; mean|phi| (mm): tcc 0.0452, sp 0.0422, precip 0.0412, v10 0.0269, d2m 0.0102
+[load] bilstm_attn full seed 7: max |prediction - saved prediction| = 2.79e-07 mm
+[done] bilstm_attn full s7 grouped_precip: 519 samples, 6s, efficiency residual 1.7e-16; mean|phi| (mm): tcc 0.0460, precip 0.0446, sp 0.0434, v10 0.0254, d2m 0.0097
+[load] bilstm_attn full seed 2024: max |prediction - saved prediction| = 1.71e-07 mm
+[done] bilstm_attn full s2024 grouped_precip: 519 samples, 7s, efficiency residual 1.1e-16; mean|phi| (mm): precip 0.0511, tcc 0.0389, sp 0.0380, v10 0.0238, d2m 0.0084
+[load] bilstm_attn full seed 99: max |prediction - saved prediction| = 1.53e-07 mm
+[done] bilstm_attn full s99 grouped_precip: 519 samples, 7s, efficiency residual 1.7e-16; mean|phi| (mm): precip 0.0572, sp 0.0416, tcc 0.0402, v10 0.0264, d2m 0.0098
+[load] bulstm_attn full seed 42: max |prediction - saved prediction| = 4.76e-06 mm
+[done] bulstm_attn full s42 grouped_precip: 519 samples, 17s, efficiency residual 1.1e-16; mean|phi| (mm): precip 0.0642, tcc 0.0337, v10 0.0288, sp 0.0224, d2m 0.0062
+[load] bulstm_attn full seed 123: max |prediction - saved prediction| = 5.36e-06 mm
+[done] bulstm_attn full s123 grouped_precip: 519 samples, 17s, efficiency residual 1.1e-16; mean|phi| (mm): precip 0.0490, tcc 0.0350, v10 0.0264, sp 0.0213, d2m 0.0043
+[load] bulstm_attn full seed 7: max |prediction - saved prediction| = 1.30e-05 mm
+[done] bulstm_attn full s7 grouped_precip: 519 samples, 17s, efficiency residual 1.1e-16; mean|phi| (mm): precip 0.0546, tcc 0.0340, sp 0.0271, v10 0.0248, d2m 0.0036
+[load] bulstm_attn full seed 2024: max |prediction - saved prediction| = 3.41e-06 mm
+[done] bulstm_attn full s2024 grouped_precip: 519 samples, 17s, efficiency residual 8.3e-17; mean|phi| (mm): precip 0.0482, sp 0.0285, tcc 0.0248, v10 0.0197, d2m 0.0080
+[load] bulstm_attn full seed 99: max |prediction - saved prediction| = 2.51e-06 mm
+[done] bulstm_attn full s99 grouped_precip: 519 samples, 17s, efficiency residual 1.1e-16; mean|phi| (mm): precip 0.0590, tcc 0.0402, sp 0.0248, v10 0.0225, d2m 0.0043
+===== q10 SHAP JOB COMPLETE =====
