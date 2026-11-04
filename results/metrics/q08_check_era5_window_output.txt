@@ -1,0 +1,15 @@
+files: 33 | times: 3948 | first file: (dtype('<f4'), (44, 5, 5), {'_FillValue': array([nan], dtype=float32), 'units': np.bytes_(b'm')}, 'hours since 1959-01-01')
+matched with CSV: 3948
+tp6h(T) >= tp1h(T)      : 0.9754   (1.0000 -> window ends at T)
+tp6h(T) >= tp1h(T+6 h)  : 0.7812  (1.0000 -> window starts at T)
+corr(tp6h(T), tp1h(T))  : 0.742
+corr(tp6h(T), tp1h(T+6)): 0.207
+
+|WB2 tp1h - CSV|: max 2.40e-04, mean 2.60e-05, n>1e-4: 98
+                 n  mean_abs_diff  max_abs_diff  max_rel_diff
+csv                                                          
+(-1.0, 0.01]  2008       0.000020      0.000240      3.725290
+(0.01, 0.1]   1086       0.000033      0.000178      0.012574
+(0.1, 0.5]     566       0.000032      0.000188      0.001113
+(0.5, 1.0]     197       0.000031      0.000144      0.000225
+(1.0, 10.0]     91       0.000034      0.000106      0.000098

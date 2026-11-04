@@ -1,0 +1,57 @@
+HRES: 1974 inits, 2019-04-20 00:00:00 -> 2021-12-31 12:00:00, negative 6 h totals clipped: 0, NaN: 0
+ERA5 WB2: 3948 times, 2019-04-20 00:00:00 -> 2021-12-31 18:00:00
+AR(1) on training targets: y(t+6h) = 0.0763 + 0.2811 * y(t)   (item 07: 0.0763 + 0.2811)
+Aligned samples (valid 06/18 UTC): 1970 (2019-04-22 06:00:00 -> 2021-12-31 18:00:00); of all test samples at 06/18 UTC: 1970
+max (hourly truth - ERA5 6 h total) = 9.24e-05 mm (must be <= 3e-4; storage precision)
+
+===== Point and event scores, valid 06/18 UTC (fixed rule: forecast >= threshold) =====
+                      forecast    n   RMSE    MAE      R2    bias   corr  skill_vs_clim  pred_max
+              BiLSTM-Attention 1970 0.2428 0.1162  0.2206 -0.0166 0.4799         0.1143    0.5766
+                       XGBoost 1970 0.2443 0.1187  0.2110 -0.0044 0.4601         0.1088    0.9806
+             BU-LSTM-Attention 1970 0.2474 0.1182  0.1914 -0.0142 0.4417         0.0978    0.4867
+Probabilistic BiLSTM-Attention 1970 0.2478 0.1167  0.1886 -0.0181 0.4418         0.0963    0.4675
+                       BU-LSTM 1970 0.2493 0.1179  0.1788 -0.0223 0.4455         0.0909    0.4315
+                   Transformer 1970 0.2622 0.1228  0.0917 -0.0333 0.3347         0.0438    0.5770
+                   Persistence 1970 0.3242 0.1362 -0.3888  0.0022 0.2977        -0.1823    2.5068
+    Climatology (month x hour) 1970 0.2742 0.1527  0.0065 -0.0095 0.0891         0.0000    0.1365
+                         AR(1) 1970 0.2627 0.1409  0.0879 -0.0050 0.2977         0.0418    0.7809
+               HRES (6 h mean) 1970 0.2061 0.0839  0.4386  0.0165 0.7201         0.2483    3.6870
+    Perfect 6 h mean (ceiling) 1970 0.1882 0.0743  0.5317  0.0073 0.7520         0.3134    3.1888
+                      forecast  wet01_POD  wet01_FAR  wet01_CSI  Q95_obs_events  Q95_fcst_events  Q95_POD  Q95_FAR  Q95_CSI
+              BiLSTM-Attention      0.723      0.496      0.422             116                1    0.009    0.000    0.009
+                       XGBoost      0.768      0.539      0.404             116               21    0.069    0.619    0.062
+             BU-LSTM-Attention      0.756      0.527      0.410             116                0    0.000      NaN    0.000
+Probabilistic BiLSTM-Attention      0.725      0.520      0.406             116                0    0.000      NaN    0.000
+                       BU-LSTM      0.725      0.526      0.402             116                0    0.000      NaN    0.000
+                   Transformer      0.571      0.553      0.335             116                1    0.009    0.000    0.009
+                   Persistence      0.526      0.486      0.351             116              122    0.267    0.746    0.150
+    Climatology (month x hour)      0.635      0.764      0.207             116                0    0.000      NaN    0.000
+                         AR(1)      0.566      0.505      0.359             116                6    0.009    0.833    0.008
+               HRES (6 h mean)      0.865      0.334      0.603             116              118    0.526    0.483    0.353
+    Perfect 6 h mean (ceiling)      0.863      0.262      0.661             116              119    0.560    0.454    0.382
+
+===== dRMSE = RMSE(forecast) - RMSE(reference), block 14, 10000 reps =====
+                      forecast                  reference   dRMSE  ci_low  ci_high  significant
+              BiLSTM-Attention            HRES (6 h mean) +0.0368 +0.0123  +0.0610         True
+                       XGBoost            HRES (6 h mean) +0.0382 +0.0145  +0.0625         True
+             BU-LSTM-Attention            HRES (6 h mean) +0.0413 +0.0168  +0.0657         True
+Probabilistic BiLSTM-Attention            HRES (6 h mean) +0.0417 +0.0169  +0.0668         True
+                       BU-LSTM            HRES (6 h mean) +0.0432 +0.0180  +0.0682         True
+                   Transformer            HRES (6 h mean) +0.0561 +0.0299  +0.0821         True
+                   Persistence            HRES (6 h mean) +0.1181 +0.0923  +0.1439         True
+    Climatology (month x hour)            HRES (6 h mean) +0.0681 +0.0415  +0.0946         True
+                         AR(1)            HRES (6 h mean) +0.0566 +0.0307  +0.0827         True
+    Perfect 6 h mean (ceiling)            HRES (6 h mean) -0.0179 -0.0307  -0.0042         True
+              BiLSTM-Attention Perfect 6 h mean (ceiling) +0.0546 +0.0304  +0.0764         True
+                       XGBoost Perfect 6 h mean (ceiling) +0.0561 +0.0334  +0.0770         True
+             BU-LSTM-Attention Perfect 6 h mean (ceiling) +0.0591 +0.0353  +0.0804         True
+Probabilistic BiLSTM-Attention Perfect 6 h mean (ceiling) +0.0595 +0.0354  +0.0815         True
+                       BU-LSTM Perfect 6 h mean (ceiling) +0.0610 +0.0362  +0.0834         True
+                   Transformer Perfect 6 h mean (ceiling) +0.0739 +0.0474  +0.0976         True
+                   Persistence Perfect 6 h mean (ceiling) +0.1359 +0.1119  +0.1591         True
+    Climatology (month x hour) Perfect 6 h mean (ceiling) +0.0859 +0.0596  +0.1099         True
+                         AR(1) Perfect 6 h mean (ceiling) +0.0745 +0.0498  +0.0969         True
+               HRES (6 h mean) Perfect 6 h mean (ceiling) +0.0179 +0.0042  +0.0307         True
+
+Saved: q08_hres_comparison.csv, q08_hres_bootstrap.csv, q08_hres_aligned_samples.csv
+===== q08 HRES COMPARISON COMPLETE =====
