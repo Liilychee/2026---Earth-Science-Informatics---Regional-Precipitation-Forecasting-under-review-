@@ -1,0 +1,26 @@
+{
+  "tag": "F4s__xgboost__s123",
+  "fold": "F4s",
+  "model": "xgboost",
+  "seed": 123,
+  "val": {
+    "rmse": 0.24339795467972755,
+    "mae": 0.11300743133848885,
+    "r2": 0.18162024063981153
+  },
+  "test": {
+    "rmse": 0.24330474308810787,
+    "mae": 0.11842783834293806,
+    "r2": 0.201299758464058
+  },
+  "best_epoch": null,
+  "epochs_trained": null,
+  "train_seconds": 0.2,
+  "n_train": 18990,
+  "n_val": 2914,
+  "n_test": 4378,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tf": "2.21.0",
+  "host": "autodl-container-a5cc479537-afc6f6d6",
+  "finished_utc": "2026-11-05T19:07:48+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "tag": "F4__bulstm__s42",
+  "fold": "F4",
+  "model": "bulstm",
+  "seed": 42,
+  "val": {
+    "rmse": 0.24657701726953346,
+    "mae": 0.11330021509096519,
+    "r2": 0.16010261641385015
+  },
+  "test": {
+    "rmse": 0.24427287970367287,
+    "mae": 0.11964497004358168,
+    "r2": 0.19493087402020015
+  },
+  "best_epoch": 6,
+  "epochs_trained": 16,
+  "train_seconds": 329.1,
+  "n_train": 36522,
+  "n_val": 2914,
+  "n_test": 4378,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tf": "2.21.0",
+  "host": "autodl-container-a5cc479537-afc6f6d6",
+  "finished_utc": "2026-11-05T18:37:22+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "tag": "F4__transformer__s2024",
+  "fold": "F4",
+  "model": "transformer",
+  "seed": 2024,
+  "val": {
+    "rmse": 0.24940682656180163,
+    "mae": 0.1208367718034815,
+    "r2": 0.14071404828229295
+  },
+  "test": {
+    "rmse": 0.24738673975763648,
+    "mae": 0.12739826659684353,
+    "r2": 0.1742748705310011
+  },
+  "best_epoch": 30,
+  "epochs_trained": 30,
+  "train_seconds": 727.2,
+  "n_train": 36522,
+  "n_val": 2914,
+  "n_test": 4378,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tf": "2.21.0",
+  "host": "autodl-container-a5cc479537-afc6f6d6",
+  "finished_utc": "2026-11-05T19:21:25+00:00"
+}

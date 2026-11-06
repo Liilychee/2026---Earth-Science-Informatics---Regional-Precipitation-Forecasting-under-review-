@@ -1,0 +1,26 @@
+{
+  "tag": "F3__transformer__s123",
+  "fold": "F3",
+  "model": "transformer",
+  "seed": 123,
+  "val": {
+    "rmse": 0.2717834013023342,
+    "mae": 0.11982362424753633,
+    "r2": 0.16427308976487787
+  },
+  "test": {
+    "rmse": 0.24764199480118682,
+    "mae": 0.10558276360914169,
+    "r2": 0.15712515775775648
+  },
+  "best_epoch": 30,
+  "epochs_trained": 30,
+  "train_seconds": 690.9,
+  "n_train": 32138,
+  "n_val": 2914,
+  "n_test": 4378,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tf": "2.21.0",
+  "host": "autodl-container-a5cc479537-afc6f6d6",
+  "finished_utc": "2026-11-05T19:34:11+00:00"
+}

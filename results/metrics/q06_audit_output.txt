@@ -1,0 +1,62 @@
+===== A. fold 4 (25 y) vs fold 4' (13 y) =====
+  [OK] val: same target period ['2017-01-02 12:00:00', '2018-12-31 18:00:00'] and n = 2914
+  [OK] test: same target period ['2019-01-02 12:00:00', '2021-12-31 18:00:00'] and n = 4378
+  [OK] every fold 4' training time stamp is also in fold 4
+  [OK] extra training rows of fold 4 all lie in 1992-2003 (n = 17532, 1992-01-01 00:00:00 -> 2003-12-31 18:00:00)
+  [OK] shared training years 2004-2016 have identical values in both folds (max |diff| = 0.0)
+  training windows: fold 4 = 36522, fold 4' = 18990
+  training Q95: fold 4 = 0.5775, fold 4' = 0.5739
+  [OK] saved predictions of all 6 models x 5 seeds: same validation and test samples in fold 4 and 4' (0 mismatches)
+
+===== B. temporal isolation of every fold =====
+  [OK] F1: train (1992, 2007) < val (2008, 2009) < test (2010, 2012), whole calendar years
+  [OK] F1: target scaler equals training-period mean/std (0.10371 / 0.26512)
+  [OK] F2: train (1992, 2010) < val (2011, 2012) < test (2013, 2015), whole calendar years
+  [OK] F2: target scaler equals training-period mean/std (0.10555 / 0.27218)
+  [OK] F3: train (1992, 2013) < val (2014, 2015) < test (2016, 2018), whole calendar years
+  [OK] F3: target scaler equals training-period mean/std (0.10557 / 0.27335)
+  [OK] F4: train (1992, 2016) < val (2017, 2018) < test (2019, 2021), whole calendar years
+  [OK] F4: target scaler equals training-period mean/std (0.10609 / 0.27515)
+  [OK] F4s: train (2004, 2016) < val (2017, 2018) < test (2019, 2021), whole calendar years
+  [OK] F4s: target scaler equals training-period mean/std (0.10597 / 0.28195)
+  predictor set: fixed 7 variables ['mxtpr', 'mntpr', 'lsp', 'tcc', 'v10', 'sp', 'd2m']; per-fold check on training years only -> /root/autodl-tmp/results/metrics/q06_feature_check.csv
+                         period     n                           top7  same_set_as_main rank7_feature  rank7_abs_rho rank8_feature  rank8_abs_rho   rho_u10  rho_v10  rho_d2m  rho_t2m    rho_sp     rho_e  rho_mxtpr  rho_mntpr  rho_tcc  rho_ssr  rho_lsp
+  original (2004-01 to 2016-08) 18410 mxtpr,mntpr,lsp,tcc,sp,d2m,v10              True           v10       0.181582             e       0.135688 -0.006281 0.181582 0.218941 0.126572 -0.427731 -0.135688   0.986774   0.942585 0.475472 0.060664 0.898895
+             F1 train 1992-2007 23376 mxtpr,mntpr,lsp,tcc,sp,d2m,v10              True           v10       0.173854             e       0.114291 -0.013634 0.173854 0.191482 0.094213 -0.440978 -0.114291   0.987620   0.942904 0.472544 0.040310 0.899951
+             F2 train 1992-2010 27760 mxtpr,mntpr,lsp,tcc,sp,d2m,v10              True           v10       0.173350             e       0.123469 -0.018122 0.173350 0.197071 0.101329 -0.439296 -0.123469   0.987314   0.943089 0.468900 0.042636 0.900150
+             F3 train 1992-2013 32144 mxtpr,mntpr,lsp,tcc,sp,d2m,v10              True           v10       0.176794             e       0.122731 -0.016399 0.176794 0.201837 0.106526 -0.434657 -0.122731   0.987297   0.943279 0.473167 0.044055 0.900415
+             F4 train 1992-2016 36528 mxtpr,mntpr,lsp,tcc,sp,d2m,v10              True           v10       0.180991             e       0.123247 -0.011601 0.180991 0.203175 0.107754 -0.438224 -0.123247   0.987283   0.943141 0.472894 0.044342 0.899826
+            F4s train 2004-2016 18996 mxtpr,mntpr,lsp,tcc,sp,d2m,v10              True           v10       0.180424             e       0.133335 -0.005857 0.180424 0.219167 0.127558 -0.428043 -0.133335   0.986768   0.942253 0.471432 0.061034 0.897999
+
+===== C. protocol across folds =====
+  [OK] 150 runs; every fold x model has seeds [7, 42, 99, 123, 2024]
+  [OK] software / GPU: TF <StringArray>
+['2.21.0']
+Length: 1, dtype: str, GPU <StringArray>
+['NVIDIA GeForce RTX 5090']
+Length: 1, dtype: str
+  best epoch (mean over seeds) / runs stopped before epoch 30:
+  fold                F1    F2    F3    F4   F4s
+  model                                         
+  bilstm_attn       14.0  10.8  11.4   8.4   7.2
+  bulstm            18.2  10.0  16.8  13.6  11.6
+  bulstm_attn       18.0  15.0   8.6  13.8  15.4
+  prob_bilstm_attn  21.8  14.0   7.2  11.2   9.2
+  transformer       28.0  29.0  27.4  27.8  29.0
+  runs that hit the 30-epoch cap: 39 of 125
+
+===== D. pooled 2010-2021 test series =====
+  [OK] pooled test: n = 17508, unique and in time order, fold 4' excluded
+  gap between folds: 2012-12-31 18:00:00 -> 2013-01-02 12:00:00 (1 days 18:00:00); first 6 targets of each test period are lost to the input window
+  gap between folds: 2015-12-31 18:00:00 -> 2016-01-02 12:00:00 (1 days 18:00:00); first 6 targets of each test period are lost to the input window
+  gap between folds: 2018-12-31 18:00:00 -> 2019-01-02 12:00:00 (1 days 18:00:00); first 6 targets of each test period are lost to the input window
+
+===== E. bootstrap settings used in q06_stats.py =====
+  N_BOOT, BSEED, BLOCK = 5000, 42, 28
+  scheme: moving-block (non-circular), block starts uniform on [0, n - L], ceil(n / L) blocks per replicate;
+          the same block starts are applied to both forecasts (paired); RMSE of each replicate = sqrt(sum e^2 / count)
+          within the resampled blocks; seed handling: RMSE averaged over the 5 seeds inside every replicate;
+          95% percentile interval; main L = 28 samples (7 days), sensitivity 56 and 120 (14 and 30 days);
+          pooled series = folds 1-4 only, blocks may span the short gap between consecutive folds
+
+===== AUDIT PASSED =====

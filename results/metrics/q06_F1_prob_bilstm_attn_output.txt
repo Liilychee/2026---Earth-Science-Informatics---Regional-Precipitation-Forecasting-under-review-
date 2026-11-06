@@ -1,0 +1,304 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793909138.749973  244990 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1793909138.791098  244990 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793909139.695328  244990 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+W0000 00:00:1793909140.937021  244990 gpu_device.cc:2459] TensorFlow was not built with CUDA kernel binaries compatible with compute capability 12.0a. CUDA kernels will be jit-compiled from PTX, which could take 30 minutes or longer.
+W0000 00:00:1793909141.168579  244990 gpu_device.cc:2459] TensorFlow was not built with CUDA kernel binaries compatible with compute capability 12.0a. CUDA kernels will be jit-compiled from PTX, which could take 30 minutes or longer.
+I0000 00:00:1793909141.342814  244990 gpu_device.cc:2043] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 25455 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 5090, pci bus id: 0000:2a:00.0, compute capability: 12.0a
+fold: {"fold": "F1", "periods": {"train": [1992, 2007], "val": [2008, 2009], "test": [2010, 2012]}, "n_windows": {"train": 23370, "val": 2918, "test": 4378}, "target_times": {"train": ["1992-01-02 12:00:00", "2007-12-31 18:00:00"], "val": ["2008-01-02 12:00:00", "2009-12-31 18:00:00"], "test": ["2010-01-02 12:00:00", "2012-12-31 18:00:00"]}, "q95_train": 0.5678658485412598, "y_mean": 0.10371346656310976, "y_scale": 0.265122388711935}
+Epoch 1/30
+E0000 00:00:1793909142.326872  244990 node_def_util.cc:682] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=metadata:string,default=""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node ParallelMapDatasetV2/_15}}
+I0000 00:00:1793909143.914308  246323 cuda_dnn.cc:461] Loaded cuDNN version 91002
+E0000 00:00:1793909156.826438  244990 node_def_util.cc:682] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=metadata:string,default=""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node ParallelMapDatasetV2/_15}}
+731/731 - 16s - 22ms/step - loss: 0.0318 - val_loss: 0.2374
+Epoch 2/30
+731/731 - 14s - 20ms/step - loss: -1.3979e-01 - val_loss: 0.0480
+Epoch 3/30
+731/731 - 14s - 20ms/step - loss: -1.9520e-01 - val_loss: 0.0482
+Epoch 4/30
+731/731 - 14s - 19ms/step - loss: -2.3530e-01 - val_loss: -1.1247e-02
+Epoch 5/30
+731/731 - 14s - 20ms/step - loss: -2.6322e-01 - val_loss: -4.3332e-02
+Epoch 6/30
+731/731 - 14s - 19ms/step - loss: -3.1707e-01 - val_loss: -1.5972e-02
+Epoch 7/30
+731/731 - 14s - 19ms/step - loss: -3.1905e-01 - val_loss: -1.1809e-02
+Epoch 8/30
+731/731 - 17s - 23ms/step - loss: -3.4413e-01 - val_loss: 0.0434
+Epoch 9/30
+731/731 - 12s - 17ms/step - loss: -3.3675e-01 - val_loss: -6.7531e-02
+Epoch 10/30
+731/731 - 14s - 19ms/step - loss: -3.6084e-01 - val_loss: -9.8199e-02
+Epoch 11/30
+731/731 - 13s - 18ms/step - loss: -3.6901e-01 - val_loss: -1.2377e-01
+Epoch 12/30
+731/731 - 14s - 20ms/step - loss: -4.0158e-01 - val_loss: -7.7688e-02
+Epoch 13/30
+731/731 - 14s - 20ms/step - loss: -4.0666e-01 - val_loss: -2.8548e-02
+Epoch 14/30
+731/731 - 14s - 19ms/step - loss: -4.1649e-01 - val_loss: -1.5003e-01
+Epoch 15/30
+731/731 - 14s - 19ms/step - loss: -4.1047e-01 - val_loss: -8.0162e-02
+Epoch 16/30
+731/731 - 14s - 19ms/step - loss: -4.3887e-01 - val_loss: -9.9720e-02
+Epoch 17/30
+731/731 - 14s - 19ms/step - loss: -4.4933e-01 - val_loss: -1.0095e-01
+Epoch 18/30
+731/731 - 15s - 20ms/step - loss: -4.6782e-01 - val_loss: -8.7539e-02
+Epoch 19/30
+731/731 - 14s - 20ms/step - loss: -4.8217e-01 - val_loss: -1.2439e-01
+Epoch 20/30
+731/731 - 15s - 20ms/step - loss: -4.7613e-01 - val_loss: -9.6100e-02
+Epoch 21/30
+731/731 - 14s - 19ms/step - loss: -5.0689e-01 - val_loss: 0.0222
+Epoch 22/30
+731/731 - 14s - 19ms/step - loss: -5.3156e-01 - val_loss: -8.1375e-02
+Epoch 23/30
+731/731 - 14s - 19ms/step - loss: -5.3823e-01 - val_loss: 0.0709
+Epoch 24/30
+731/731 - 14s - 19ms/step - loss: -5.4418e-01 - val_loss: 0.0844
+E0000 00:00:1793909485.316791  244990 node_def_util.cc:682] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=metadata:string,default=""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node ParallelMapDatasetV2/_14}}
+[done] F1__prob_bilstm_attn__s42 | test RMSE=0.255769 R2=0.1747 | best epoch 14/24 | 345s
+Epoch 1/30
+E0000 00:00:1793909500.303345  244990 node_def_util.cc:682] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=metadata:string,default=""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node ParallelMapDatasetV2/_15}}
+731/731 - 15s - 21ms/step - loss: 0.0713 - val_loss: 0.2160
+Epoch 2/30
+731/731 - 14s - 19ms/step - loss: -7.2042e-02 - val_loss: 0.1290
+Epoch 3/30
+731/731 - 14s - 19ms/step - loss: -1.4399e-01 - val_loss: 0.0573
+Epoch 4/30
+731/731 - 13s - 18ms/step - loss: -1.9873e-01 - val_loss: -1.5538e-02
+Epoch 5/30
+731/731 - 12s - 17ms/step - loss: -2.4329e-01 - val_loss: -7.4607e-03
+Epoch 6/30
+731/731 - 13s - 18ms/step - loss: -2.6880e-01 - val_loss: -5.6753e-02
+Epoch 7/30
+731/731 - 12s - 17ms/step - loss: -2.9644e-01 - val_loss: -8.3485e-02
+Epoch 8/30
+731/731 - 13s - 17ms/step - loss: -3.3600e-01 - val_loss: -4.9842e-02
+Epoch 9/30
+731/731 - 12s - 17ms/step - loss: -3.4938e-01 - val_loss: -6.4314e-02
+Epoch 10/30
+731/731 - 13s - 18ms/step - loss: -3.6366e-01 - val_loss: -3.7696e-02
+Epoch 11/30
+731/731 - 13s - 18ms/step - loss: -3.7459e-01 - val_loss: -7.5692e-02
+Epoch 12/30
+731/731 - 13s - 17ms/step - loss: -3.7898e-01 - val_loss: -8.6184e-02
+Epoch 13/30
+731/731 - 13s - 17ms/step - loss: -4.0139e-01 - val_loss: -6.0405e-02
+Epoch 14/30
+731/731 - 13s - 17ms/step - loss: -4.1229e-01 - val_loss: -8.0656e-02
+Epoch 15/30
+731/731 - 12s - 17ms/step - loss: -4.0527e-01 - val_loss: -7.3077e-02
+Epoch 16/30
+731/731 - 13s - 17ms/step - loss: -4.3593e-01 - val_loss: -1.3994e-01
+Epoch 17/30
+731/731 - 13s - 17ms/step - loss: -4.3668e-01 - val_loss: -3.7069e-02
+Epoch 18/30
+731/731 - 12s - 17ms/step - loss: -4.5342e-01 - val_loss: -4.9067e-02
+Epoch 19/30
+731/731 - 13s - 18ms/step - loss: -4.7148e-01 - val_loss: -1.0559e-01
+Epoch 20/30
+731/731 - 12s - 16ms/step - loss: -4.9443e-01 - val_loss: -1.1484e-01
+Epoch 21/30
+731/731 - 13s - 17ms/step - loss: -4.9486e-01 - val_loss: -1.2822e-01
+Epoch 22/30
+731/731 - 13s - 17ms/step - loss: -4.9755e-01 - val_loss: -1.3325e-01
+Epoch 23/30
+731/731 - 13s - 18ms/step - loss: -5.0550e-01 - val_loss: -1.6957e-01
+Epoch 24/30
+731/731 - 12s - 17ms/step - loss: -5.3184e-01 - val_loss: -1.6160e-01
+Epoch 25/30
+731/731 - 12s - 17ms/step - loss: -5.3061e-01 - val_loss: -6.7627e-02
+Epoch 26/30
+731/731 - 12s - 17ms/step - loss: -5.5163e-01 - val_loss: -1.6328e-01
+Epoch 27/30
+731/731 - 12s - 16ms/step - loss: -5.6352e-01 - val_loss: -2.3045e-01
+Epoch 28/30
+731/731 - 12s - 17ms/step - loss: -5.7196e-01 - val_loss: -2.1902e-01
+Epoch 29/30
+731/731 - 13s - 17ms/step - loss: -5.9289e-01 - val_loss: -1.7827e-01
+Epoch 30/30
+731/731 - 13s - 18ms/step - loss: -6.0096e-01 - val_loss: -9.1878e-02
+E0000 00:00:1793909869.865231  244990 node_def_util.cc:682] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=metadata:string,default=""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node ParallelMapDatasetV2/_14}}
+[done] F1__prob_bilstm_attn__s123 | test RMSE=0.251539 R2=0.2018 | best epoch 27/30 | 385s
+Epoch 1/30
+E0000 00:00:1793909883.290793  244990 node_def_util.cc:682] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=metadata:string,default=""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node ParallelMapDatasetV2/_15}}
+731/731 - 14s - 19ms/step - loss: 0.0622 - val_loss: 0.1271
+Epoch 2/30
+731/731 - 13s - 17ms/step - loss: -7.3294e-02 - val_loss: 0.1806
+Epoch 3/30
+731/731 - 13s - 17ms/step - loss: -1.5233e-01 - val_loss: 0.2154
+Epoch 4/30
+731/731 - 13s - 18ms/step - loss: -1.8826e-01 - val_loss: 0.0718
+Epoch 5/30
+731/731 - 13s - 17ms/step - loss: -2.2995e-01 - val_loss: 0.0132
+Epoch 6/30
+731/731 - 13s - 18ms/step - loss: -2.5104e-01 - val_loss: -1.6441e-02
+Epoch 7/30
+731/731 - 13s - 17ms/step - loss: -2.8479e-01 - val_loss: -9.9629e-03
+Epoch 8/30
+731/731 - 12s - 17ms/step - loss: -3.2431e-01 - val_loss: -3.1749e-02
+Epoch 9/30
+731/731 - 12s - 17ms/step - loss: -3.3364e-01 - val_loss: -8.9433e-03
+Epoch 10/30
+731/731 - 13s - 17ms/step - loss: -3.5415e-01 - val_loss: -5.1950e-02
+Epoch 11/30
+731/731 - 10s - 14ms/step - loss: -3.6154e-01 - val_loss: -7.2162e-02
+Epoch 12/30
+731/731 - 10s - 14ms/step - loss: -3.7831e-01 - val_loss: -1.1091e-01
+Epoch 13/30
+731/731 - 10s - 14ms/step - loss: -3.7786e-01 - val_loss: -1.2236e-01
+Epoch 14/30
+731/731 - 10s - 14ms/step - loss: -4.0552e-01 - val_loss: -3.7525e-02
+Epoch 15/30
+731/731 - 11s - 15ms/step - loss: -4.0976e-01 - val_loss: -1.0582e-01
+Epoch 16/30
+731/731 - 11s - 15ms/step - loss: -4.4087e-01 - val_loss: -6.7787e-02
+Epoch 17/30
+731/731 - 11s - 15ms/step - loss: -4.5569e-01 - val_loss: -8.7547e-02
+Epoch 18/30
+731/731 - 11s - 15ms/step - loss: -4.6489e-01 - val_loss: -6.0119e-02
+Epoch 19/30
+731/731 - 11s - 16ms/step - loss: -4.8526e-01 - val_loss: -9.1345e-02
+Epoch 20/30
+731/731 - 11s - 15ms/step - loss: -4.8232e-01 - val_loss: -1.2563e-01
+Epoch 21/30
+731/731 - 11s - 15ms/step - loss: -5.0925e-01 - val_loss: -1.1963e-01
+Epoch 22/30
+731/731 - 11s - 15ms/step - loss: -5.1375e-01 - val_loss: -1.5260e-01
+Epoch 23/30
+731/731 - 11s - 15ms/step - loss: -5.5221e-01 - val_loss: -8.6799e-02
+Epoch 24/30
+731/731 - 10s - 14ms/step - loss: -5.4403e-01 - val_loss: -7.5315e-02
+Epoch 25/30
+731/731 - 11s - 15ms/step - loss: -5.7314e-01 - val_loss: -1.2209e-01
+Epoch 26/30
+731/731 - 10s - 14ms/step - loss: -5.7774e-01 - val_loss: -1.6768e-01
+Epoch 27/30
+731/731 - 11s - 15ms/step - loss: -5.8232e-01 - val_loss: -1.5074e-01
+Epoch 28/30
+731/731 - 10s - 13ms/step - loss: -5.9182e-01 - val_loss: -2.0964e-01
+Epoch 29/30
+731/731 - 9s - 13ms/step - loss: -6.1524e-01 - val_loss: -1.4814e-01
+Epoch 30/30
+731/731 - 10s - 13ms/step - loss: -6.4409e-01 - val_loss: -2.3225e-02
+E0000 00:00:1793910209.383810  244990 node_def_util.cc:682] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=metadata:string,default=""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node ParallelMapDatasetV2/_14}}
+[done] F1__prob_bilstm_attn__s7 | test RMSE=0.253669 R2=0.1882 | best epoch 28/30 | 339s
+Epoch 1/30
+E0000 00:00:1793910220.302023  244990 node_def_util.cc:682] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=metadata:string,default=""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node ParallelMapDatasetV2/_15}}
+731/731 - 11s - 15ms/step - loss: 0.0246 - val_loss: 0.1678
+Epoch 2/30
+731/731 - 10s - 13ms/step - loss: -1.1115e-01 - val_loss: 0.0915
+Epoch 3/30
+731/731 - 10s - 14ms/step - loss: -1.8906e-01 - val_loss: 0.0205
+Epoch 4/30
+731/731 - 10s - 13ms/step - loss: -2.2170e-01 - val_loss: 0.0119
+Epoch 5/30
+731/731 - 9s - 13ms/step - loss: -2.6282e-01 - val_loss: -4.5503e-02
+Epoch 6/30
+731/731 - 10s - 13ms/step - loss: -2.8839e-01 - val_loss: -7.6665e-02
+Epoch 7/30
+731/731 - 10s - 13ms/step - loss: -3.2190e-01 - val_loss: -8.7553e-02
+Epoch 8/30
+731/731 - 10s - 14ms/step - loss: -3.2448e-01 - val_loss: -1.1190e-01
+Epoch 9/30
+731/731 - 10s - 14ms/step - loss: -3.4575e-01 - val_loss: -1.2783e-01
+Epoch 10/30
+731/731 - 10s - 13ms/step - loss: -3.7243e-01 - val_loss: -1.8092e-01
+Epoch 11/30
+731/731 - 10s - 13ms/step - loss: -3.8936e-01 - val_loss: -1.7044e-01
+Epoch 12/30
+731/731 - 10s - 14ms/step - loss: -3.9843e-01 - val_loss: -1.4998e-01
+Epoch 13/30
+731/731 - 9s - 13ms/step - loss: -4.2131e-01 - val_loss: -1.7338e-01
+Epoch 14/30
+731/731 - 9s - 12ms/step - loss: -4.2814e-01 - val_loss: -2.0072e-01
+Epoch 15/30
+731/731 - 10s - 13ms/step - loss: -4.3628e-01 - val_loss: -1.5711e-01
+Epoch 16/30
+731/731 - 10s - 14ms/step - loss: -4.4963e-01 - val_loss: -1.9453e-01
+Epoch 17/30
+731/731 - 9s - 13ms/step - loss: -4.6925e-01 - val_loss: -1.9516e-01
+Epoch 18/30
+731/731 - 10s - 14ms/step - loss: -4.6240e-01 - val_loss: -1.8525e-01
+Epoch 19/30
+731/731 - 10s - 13ms/step - loss: -4.9162e-01 - val_loss: -2.2070e-01
+Epoch 20/30
+731/731 - 9s - 13ms/step - loss: -5.0714e-01 - val_loss: -1.9408e-01
+Epoch 21/30
+731/731 - 10s - 13ms/step - loss: -5.1799e-01 - val_loss: -1.5116e-01
+Epoch 22/30
+731/731 - 9s - 13ms/step - loss: -5.1635e-01 - val_loss: -2.1654e-01
+Epoch 23/30
+731/731 - 10s - 14ms/step - loss: -5.3037e-01 - val_loss: -1.5821e-01
+Epoch 24/30
+731/731 - 11s - 15ms/step - loss: -5.6643e-01 - val_loss: -1.8456e-01
+Epoch 25/30
+731/731 - 10s - 14ms/step - loss: -5.7101e-01 - val_loss: -2.4058e-01
+Epoch 26/30
+731/731 - 9s - 13ms/step - loss: -5.8452e-01 - val_loss: -2.6012e-01
+Epoch 27/30
+731/731 - 9s - 13ms/step - loss: -6.1205e-01 - val_loss: -2.1787e-01
+Epoch 28/30
+731/731 - 10s - 13ms/step - loss: -6.0527e-01 - val_loss: -1.9029e-01
+Epoch 29/30
+731/731 - 9s - 13ms/step - loss: -6.4919e-01 - val_loss: -2.0330e-01
+Epoch 30/30
+731/731 - 10s - 14ms/step - loss: -6.4555e-01 - val_loss: -1.2489e-01
+E0000 00:00:1793910502.547577  244990 node_def_util.cc:682] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=metadata:string,default=""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node ParallelMapDatasetV2/_14}}
+[done] F1__prob_bilstm_attn__s2024 | test RMSE=0.252489 R2=0.1958 | best epoch 26/30 | 293s
+Epoch 1/30
+E0000 00:00:1793910513.478961  244990 node_def_util.cc:682] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=metadata:string,default=""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node ParallelMapDatasetV2/_15}}
+731/731 - 11s - 15ms/step - loss: 0.0333 - val_loss: 0.1146
+Epoch 2/30
+731/731 - 10s - 14ms/step - loss: -1.0427e-01 - val_loss: 0.0728
+Epoch 3/30
+731/731 - 10s - 14ms/step - loss: -1.7373e-01 - val_loss: 0.1312
+Epoch 4/30
+731/731 - 9s - 13ms/step - loss: -2.1298e-01 - val_loss: 0.0745
+Epoch 5/30
+731/731 - 10s - 14ms/step - loss: -2.5024e-01 - val_loss: 0.0463
+Epoch 6/30
+731/731 - 10s - 14ms/step - loss: -2.7871e-01 - val_loss: 0.0572
+Epoch 7/30
+731/731 - 10s - 14ms/step - loss: -3.2511e-01 - val_loss: 0.0740
+Epoch 8/30
+731/731 - 10s - 14ms/step - loss: -3.2475e-01 - val_loss: 0.0503
+Epoch 9/30
+731/731 - 10s - 14ms/step - loss: -3.5431e-01 - val_loss: 0.0633
+Epoch 10/30
+731/731 - 9s - 12ms/step - loss: -3.6347e-01 - val_loss: -3.3084e-02
+Epoch 11/30
+731/731 - 9s - 12ms/step - loss: -3.8109e-01 - val_loss: 9.9402e-04
+Epoch 12/30
+731/731 - 9s - 12ms/step - loss: -4.0929e-01 - val_loss: 0.0089
+Epoch 13/30
+731/731 - 9s - 12ms/step - loss: -4.2475e-01 - val_loss: -5.7248e-02
+Epoch 14/30
+731/731 - 8s - 11ms/step - loss: -4.2331e-01 - val_loss: -1.3033e-01
+Epoch 15/30
+731/731 - 8s - 11ms/step - loss: -4.4058e-01 - val_loss: 0.0994
+Epoch 16/30
+731/731 - 9s - 12ms/step - loss: -4.5105e-01 - val_loss: -6.7101e-02
+Epoch 17/30
+731/731 - 9s - 12ms/step - loss: -4.7610e-01 - val_loss: 0.0318
+Epoch 18/30
+731/731 - 8s - 11ms/step - loss: -5.0040e-01 - val_loss: -2.6881e-02
+Epoch 19/30
+731/731 - 9s - 12ms/step - loss: -5.0107e-01 - val_loss: 0.0274
+Epoch 20/30
+731/731 - 7s - 10ms/step - loss: -5.0745e-01 - val_loss: -1.2835e-02
+Epoch 21/30
+731/731 - 7s - 10ms/step - loss: -5.3893e-01 - val_loss: -2.5885e-02
+Epoch 22/30
+731/731 - 8s - 11ms/step - loss: -5.4021e-01 - val_loss: -4.5755e-03
+Epoch 23/30
+731/731 - 8s - 10ms/step - loss: -5.6369e-01 - val_loss: -5.9443e-02
+Epoch 24/30
+731/731 - 8s - 11ms/step - loss: -5.6943e-01 - val_loss: 0.1689
+E0000 00:00:1793910716.627286  244990 node_def_util.cc:682] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=metadata:string,default=""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node ParallelMapDatasetV2/_14}}
+[done] F1__prob_bilstm_attn__s99 | test RMSE=0.253604 R2=0.1886 | best epoch 14/24 | 214s
+===== q06 TRAIN JOB COMPLETE =====

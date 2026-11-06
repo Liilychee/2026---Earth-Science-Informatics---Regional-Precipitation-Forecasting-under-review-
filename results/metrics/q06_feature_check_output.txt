@@ -1,0 +1,24 @@
+                       period     n  same_set_as_main rank7_feature  rank7_abs_rho rank8_feature  rank8_abs_rho
+original (2004-01 to 2016-08) 18410              True           v10          0.182             e          0.136
+           F1 train 1992-2007 23376              True           v10          0.174             e          0.114
+           F2 train 1992-2010 27760              True           v10          0.173             e          0.123
+           F3 train 1992-2013 32144              True           v10          0.177             e          0.123
+           F4 train 1992-2016 36528              True           v10          0.181             e          0.123
+          F4s train 2004-2016 18996              True           v10          0.180             e          0.133
+
+Spearman rho with tp_mm (training period of each row):
+period     original (2004-01 to 2016-08)  F1 train 1992-2007  F2 train 1992-2010  F3 train 1992-2013  F4 train 1992-2016  F4s train 2004-2016
+rho_u10                           -0.006              -0.014              -0.018              -0.016              -0.012               -0.006
+rho_v10                           +0.182              +0.174              +0.173              +0.177              +0.181               +0.180
+rho_d2m                           +0.219              +0.191              +0.197              +0.202              +0.203               +0.219
+rho_t2m                           +0.127              +0.094              +0.101              +0.107              +0.108               +0.128
+rho_sp                            -0.428              -0.441              -0.439              -0.435              -0.438               -0.428
+rho_e                             -0.136              -0.114              -0.123              -0.123              -0.123               -0.133
+rho_mxtpr                         +0.987              +0.988              +0.987              +0.987              +0.987               +0.987
+rho_mntpr                         +0.943              +0.943              +0.943              +0.943              +0.943               +0.942
+rho_tcc                           +0.475              +0.473              +0.469              +0.473              +0.473               +0.471
+rho_ssr                           +0.061              +0.040              +0.043              +0.044              +0.044               +0.061
+rho_lsp                           +0.899              +0.900              +0.900              +0.900              +0.900               +0.898
+
+main-study set: ['mxtpr', 'mntpr', 'lsp', 'tcc', 'v10', 'sp', 'd2m']
+===== q06 FEATURE CHECK COMPLETE =====

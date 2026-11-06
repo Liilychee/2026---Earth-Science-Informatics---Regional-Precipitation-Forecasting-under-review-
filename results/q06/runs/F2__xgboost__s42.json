@@ -1,0 +1,26 @@
+{
+  "tag": "F2__xgboost__s42",
+  "fold": "F2",
+  "model": "xgboost",
+  "seed": 42,
+  "val": {
+    "rmse": 0.24258956514382432,
+    "mae": 0.11392278852031736,
+    "r2": 0.24906512172463946
+  },
+  "test": {
+    "rmse": 0.2609109433636668,
+    "mae": 0.1183608290167892,
+    "r2": 0.20659409787017569
+  },
+  "best_epoch": null,
+  "epochs_trained": null,
+  "train_seconds": 0.5,
+  "n_train": 27754,
+  "n_val": 2918,
+  "n_test": 4374,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tf": "2.21.0",
+  "host": "autodl-container-a5cc479537-afc6f6d6",
+  "finished_utc": "2026-11-05T19:50:07+00:00"
+}

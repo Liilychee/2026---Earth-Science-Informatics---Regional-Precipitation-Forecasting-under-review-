@@ -1,0 +1,26 @@
+{
+  "tag": "F4s__transformer__s42",
+  "fold": "F4s",
+  "model": "transformer",
+  "seed": 42,
+  "val": {
+    "rmse": 0.24767271176390948,
+    "mae": 0.10875193872730397,
+    "r2": 0.1526216785140333
+  },
+  "test": {
+    "rmse": 0.2517282567639481,
+    "mae": 0.1176229918976664,
+    "r2": 0.14503841464761158
+  },
+  "best_epoch": 29,
+  "epochs_trained": 30,
+  "train_seconds": 426.8,
+  "n_train": 18990,
+  "n_val": 2914,
+  "n_test": 4378,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tf": "2.21.0",
+  "host": "autodl-container-a5cc479537-afc6f6d6",
+  "finished_utc": "2026-11-05T18:57:52+00:00"
+}

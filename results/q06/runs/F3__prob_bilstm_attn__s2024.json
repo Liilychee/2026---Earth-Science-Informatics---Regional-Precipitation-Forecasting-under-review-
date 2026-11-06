@@ -1,0 +1,26 @@
+{
+  "tag": "F3__prob_bilstm_attn__s2024",
+  "fold": "F3",
+  "model": "prob_bilstm_attn",
+  "seed": 2024,
+  "val": {
+    "rmse": 0.2727605694403342,
+    "mae": 0.12193269366119912,
+    "r2": 0.15825275308528475
+  },
+  "test": {
+    "rmse": 0.24932485374026514,
+    "mae": 0.10886131050214166,
+    "r2": 0.1456306696047882
+  },
+  "best_epoch": 5,
+  "epochs_trained": 15,
+  "train_seconds": 293.8,
+  "n_train": 32138,
+  "n_val": 2914,
+  "n_test": 4378,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tf": "2.21.0",
+  "host": "autodl-container-a5cc479537-afc6f6d6",
+  "finished_utc": "2026-11-05T19:30:38+00:00"
+}

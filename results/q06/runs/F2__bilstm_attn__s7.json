@@ -1,0 +1,26 @@
+{
+  "tag": "F2__bilstm_attn__s7",
+  "fold": "F2",
+  "model": "bilstm_attn",
+  "seed": 7,
+  "val": {
+    "rmse": 0.24813666912369575,
+    "mae": 0.11261317067303009,
+    "r2": 0.21433041574506062
+  },
+  "test": {
+    "rmse": 0.2611546107030735,
+    "mae": 0.11359311917327743,
+    "r2": 0.2051114664572764
+  },
+  "best_epoch": 12,
+  "epochs_trained": 22,
+  "train_seconds": 404.4,
+  "n_train": 27754,
+  "n_val": 2918,
+  "n_test": 4374,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tf": "2.21.0",
+  "host": "autodl-container-a5cc479537-afc6f6d6",
+  "finished_utc": "2026-11-05T19:52:51+00:00"
+}

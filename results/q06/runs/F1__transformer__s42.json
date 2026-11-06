@@ -1,0 +1,26 @@
+{
+  "tag": "F1__transformer__s42",
+  "fold": "F1",
+  "model": "transformer",
+  "seed": 42,
+  "val": {
+    "rmse": 0.2992984222396075,
+    "mae": 0.12645250805087696,
+    "r2": 0.11162708629399465
+  },
+  "test": {
+    "rmse": 0.25741838024790603,
+    "mae": 0.11285206220958623,
+    "r2": 0.16404589304614314
+  },
+  "best_epoch": 28,
+  "epochs_trained": 30,
+  "train_seconds": 466.5,
+  "n_train": 23370,
+  "n_val": 2918,
+  "n_test": 4378,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tf": "2.21.0",
+  "host": "autodl-container-a5cc479537-afc6f6d6",
+  "finished_utc": "2026-11-05T20:15:34+00:00"
+}

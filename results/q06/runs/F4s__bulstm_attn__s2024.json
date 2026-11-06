@@ -1,0 +1,26 @@
+{
+  "tag": "F4s__bulstm_attn__s2024",
+  "fold": "F4s",
+  "model": "bulstm_attn",
+  "seed": 2024,
+  "val": {
+    "rmse": 0.24817851294686247,
+    "mae": 0.11741344172869816,
+    "r2": 0.14915708521008242
+  },
+  "test": {
+    "rmse": 0.24460693213809048,
+    "mae": 0.1225047838706176,
+    "r2": 0.19272744754421467
+  },
+  "best_epoch": 12,
+  "epochs_trained": 22,
+  "train_seconds": 421.0,
+  "n_train": 18990,
+  "n_val": 2914,
+  "n_test": 4378,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tf": "2.21.0",
+  "host": "autodl-container-a5cc479537-afc6f6d6",
+  "finished_utc": "2026-11-05T19:04:52+00:00"
+}

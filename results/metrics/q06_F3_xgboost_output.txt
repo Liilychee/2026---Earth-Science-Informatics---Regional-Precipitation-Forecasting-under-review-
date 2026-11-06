@@ -1,0 +1,14 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793906713.507525  739900 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1793906713.551166  739900 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793906714.454457  739900 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+W0000 00:00:1793906715.760291  739900 gpu_device.cc:2459] TensorFlow was not built with CUDA kernel binaries compatible with compute capability 12.0a. CUDA kernels will be jit-compiled from PTX, which could take 30 minutes or longer.
+fold: {"fold": "F3", "periods": {"train": [1992, 2013], "val": [2014, 2015], "test": [2016, 2018]}, "n_windows": {"train": 32138, "val": 2914, "test": 4378}, "target_times": {"train": ["1992-01-02 12:00:00", "2013-12-31 18:00:00"], "val": ["2014-01-02 12:00:00", "2015-12-31 18:00:00"], "test": ["2016-01-02 12:00:00", "2018-12-31 18:00:00"]}, "q95_train": 0.5741644501686096, "y_mean": 0.10557312938563874, "y_scale": 0.2733534811485837}
+[done] F3__xgboost__s42 | test RMSE=0.245218 R2=0.1735 | best epoch None/None | 1s
+[done] F3__xgboost__s123 | test RMSE=0.244754 R2=0.1767 | best epoch None/None | 0s
+[done] F3__xgboost__s7 | test RMSE=0.244618 R2=0.1776 | best epoch None/None | 0s
+[done] F3__xgboost__s2024 | test RMSE=0.243859 R2=0.1827 | best epoch None/None | 0s
+[done] F3__xgboost__s99 | test RMSE=0.243598 R2=0.1844 | best epoch None/None | 0s
+===== q06 TRAIN JOB COMPLETE =====
