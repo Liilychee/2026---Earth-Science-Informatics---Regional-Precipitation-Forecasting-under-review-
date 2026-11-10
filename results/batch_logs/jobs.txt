@@ -1,0 +1,105 @@
+q14 python /root/autodl-tmp/code/q14q15_train.py --models transformer --window 6 --seeds 42
+q14 python /root/autodl-tmp/code/q14q15_train.py --models transformer --window 6 --seeds 123
+q14 python /root/autodl-tmp/code/q14q15_train.py --models transformer --window 6 --seeds 7
+q14 python /root/autodl-tmp/code/q14q15_train.py --models transformer --window 6 --seeds 2024
+q14 python /root/autodl-tmp/code/q14q15_train.py --models transformer --window 6 --seeds 99
+q14 python /root/autodl-tmp/code/q14q15_train.py --models transformer --window 3 --seeds 42
+q14 python /root/autodl-tmp/code/q14q15_train.py --models transformer --window 3 --seeds 123
+q14 python /root/autodl-tmp/code/q14q15_train.py --models transformer --window 3 --seeds 7
+q14 python /root/autodl-tmp/code/q14q15_train.py --models transformer --window 3 --seeds 2024
+q14 python /root/autodl-tmp/code/q14q15_train.py --models transformer --window 3 --seeds 99
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bulstm_attn --window 6 --seeds 42
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bulstm_attn --window 6 --seeds 123
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bulstm_attn --window 6 --seeds 7
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bulstm_attn --window 6 --seeds 2024
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bulstm_attn --window 6 --seeds 99
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bulstm_attn --window 3 --seeds 42
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bulstm_attn --window 3 --seeds 123
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bulstm_attn --window 3 --seeds 7
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bulstm_attn --window 3 --seeds 2024
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bulstm_attn --window 3 --seeds 99
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bulstm --window 6 --seeds 42
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bulstm --window 6 --seeds 123
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bulstm --window 6 --seeds 7
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bulstm --window 6 --seeds 2024
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bulstm --window 6 --seeds 99
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bulstm --window 3 --seeds 42
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bulstm --window 3 --seeds 123
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bulstm --window 3 --seeds 7
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bulstm --window 3 --seeds 2024
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bulstm --window 3 --seeds 99
+q14 python /root/autodl-tmp/code/q14q15_train.py --models prob_bilstm_attn --window 6 --seeds 42
+q14 python /root/autodl-tmp/code/q14q15_train.py --models prob_bilstm_attn --window 6 --seeds 123
+q14 python /root/autodl-tmp/code/q14q15_train.py --models prob_bilstm_attn --window 6 --seeds 7
+q14 python /root/autodl-tmp/code/q14q15_train.py --models prob_bilstm_attn --window 6 --seeds 2024
+q14 python /root/autodl-tmp/code/q14q15_train.py --models prob_bilstm_attn --window 6 --seeds 99
+q14 python /root/autodl-tmp/code/q14q15_train.py --models prob_bilstm_attn --window 3 --seeds 42
+q14 python /root/autodl-tmp/code/q14q15_train.py --models prob_bilstm_attn --window 3 --seeds 123
+q14 python /root/autodl-tmp/code/q14q15_train.py --models prob_bilstm_attn --window 3 --seeds 7
+q14 python /root/autodl-tmp/code/q14q15_train.py --models prob_bilstm_attn --window 3 --seeds 2024
+q14 python /root/autodl-tmp/code/q14q15_train.py --models prob_bilstm_attn --window 3 --seeds 99
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bilstm_attn --window 6 --seeds 42
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bilstm_attn --window 6 --seeds 123
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bilstm_attn --window 6 --seeds 7
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bilstm_attn --window 6 --seeds 2024
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bilstm_attn --window 6 --seeds 99
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bilstm_attn --window 3 --seeds 42
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bilstm_attn --window 3 --seeds 123
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bilstm_attn --window 3 --seeds 7
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bilstm_attn --window 3 --seeds 2024
+q14 python /root/autodl-tmp/code/q14q15_train.py --models bilstm_attn --window 3 --seeds 99
+q15 python /root/autodl-tmp/code/q14q15_train.py --models transformer --window 6 --loss huber --delta 0.5 --seeds 42
+q15 python /root/autodl-tmp/code/q14q15_train.py --models transformer --window 6 --loss huber --delta 0.5 --seeds 123
+q15 python /root/autodl-tmp/code/q14q15_train.py --models transformer --window 6 --loss huber --delta 0.5 --seeds 7
+q15 python /root/autodl-tmp/code/q14q15_train.py --models transformer --window 6 --loss huber --delta 0.5 --seeds 2024
+q15 python /root/autodl-tmp/code/q14q15_train.py --models transformer --window 6 --loss huber --delta 0.5 --seeds 99
+q15 python /root/autodl-tmp/code/q14q15_train.py --models transformer --window 6 --loss huber --delta 1 --seeds 42
+q15 python /root/autodl-tmp/code/q14q15_train.py --models transformer --window 6 --loss huber --delta 1 --seeds 123
+q15 python /root/autodl-tmp/code/q14q15_train.py --models transformer --window 6 --loss huber --delta 1 --seeds 7
+q15 python /root/autodl-tmp/code/q14q15_train.py --models transformer --window 6 --loss huber --delta 1 --seeds 2024
+q15 python /root/autodl-tmp/code/q14q15_train.py --models transformer --window 6 --loss huber --delta 1 --seeds 99
+q15 python /root/autodl-tmp/code/q14q15_train.py --models transformer --window 6 --loss huber --delta 2 --seeds 42
+q15 python /root/autodl-tmp/code/q14q15_train.py --models transformer --window 6 --loss huber --delta 2 --seeds 123
+q15 python /root/autodl-tmp/code/q14q15_train.py --models transformer --window 6 --loss huber --delta 2 --seeds 7
+q15 python /root/autodl-tmp/code/q14q15_train.py --models transformer --window 6 --loss huber --delta 2 --seeds 2024
+q15 python /root/autodl-tmp/code/q14q15_train.py --models transformer --window 6 --loss huber --delta 2 --seeds 99
+q15 python /root/autodl-tmp/code/q14q15_train.py --models bilstm_attn --window 6 --loss huber --delta 0.5 --seeds 42
+q15 python /root/autodl-tmp/code/q14q15_train.py --models bilstm_attn --window 6 --loss huber --delta 0.5 --seeds 123
+q15 python /root/autodl-tmp/code/q14q15_train.py --models bilstm_attn --window 6 --loss huber --delta 0.5 --seeds 7
+q15 python /root/autodl-tmp/code/q14q15_train.py --models bilstm_attn --window 6 --loss huber --delta 0.5 --seeds 2024
+q15 python /root/autodl-tmp/code/q14q15_train.py --models bilstm_attn --window 6 --loss huber --delta 0.5 --seeds 99
+q15 python /root/autodl-tmp/code/q14q15_train.py --models bilstm_attn --window 6 --loss huber --delta 1 --seeds 42
+q15 python /root/autodl-tmp/code/q14q15_train.py --models bilstm_attn --window 6 --loss huber --delta 1 --seeds 123
+q15 python /root/autodl-tmp/code/q14q15_train.py --models bilstm_attn --window 6 --loss huber --delta 1 --seeds 7
+q15 python /root/autodl-tmp/code/q14q15_train.py --models bilstm_attn --window 6 --loss huber --delta 1 --seeds 2024
+q15 python /root/autodl-tmp/code/q14q15_train.py --models bilstm_attn --window 6 --loss huber --delta 1 --seeds 99
+q15 python /root/autodl-tmp/code/q14q15_train.py --models bilstm_attn --window 6 --loss huber --delta 2 --seeds 42
+q15 python /root/autodl-tmp/code/q14q15_train.py --models bilstm_attn --window 6 --loss huber --delta 2 --seeds 123
+q15 python /root/autodl-tmp/code/q14q15_train.py --models bilstm_attn --window 6 --loss huber --delta 2 --seeds 7
+q15 python /root/autodl-tmp/code/q14q15_train.py --models bilstm_attn --window 6 --loss huber --delta 2 --seeds 2024
+q15 python /root/autodl-tmp/code/q14q15_train.py --models bilstm_attn --window 6 --loss huber --delta 2 --seeds 99
+q11 python /root/autodl-tmp/code/q11_train.py --dists gaussian --seeds 42
+q11 python /root/autodl-tmp/code/q11_train.py --dists tobit --dry 0 0.001 --seeds 42
+q11 python /root/autodl-tmp/code/q11_train.py --dists bergamma --dry 0 0.001 --seeds 42
+q11 python /root/autodl-tmp/code/q11_train.py --dists gaussian --seeds 123
+q11 python /root/autodl-tmp/code/q11_train.py --dists tobit --dry 0 0.001 --seeds 123
+q11 python /root/autodl-tmp/code/q11_train.py --dists bergamma --dry 0 0.001 --seeds 123
+q11 python /root/autodl-tmp/code/q11_train.py --dists gaussian --seeds 7
+q11 python /root/autodl-tmp/code/q11_train.py --dists tobit --dry 0 0.001 --seeds 7
+q11 python /root/autodl-tmp/code/q11_train.py --dists bergamma --dry 0 0.001 --seeds 7
+q11 python /root/autodl-tmp/code/q11_train.py --dists gaussian --seeds 2024
+q11 python /root/autodl-tmp/code/q11_train.py --dists tobit --dry 0 0.001 --seeds 2024
+q11 python /root/autodl-tmp/code/q11_train.py --dists bergamma --dry 0 0.001 --seeds 2024
+q11 python /root/autodl-tmp/code/q11_train.py --dists gaussian --seeds 99
+q11 python /root/autodl-tmp/code/q11_train.py --dists tobit --dry 0 0.001 --seeds 99
+q11 python /root/autodl-tmp/code/q11_train.py --dists bergamma --dry 0 0.001 --seeds 99
+q14 python /root/autodl-tmp/code/q14q15_train.py --models xgboost --window 6 --seeds 42
+q14 python /root/autodl-tmp/code/q14q15_train.py --models xgboost --window 6 --seeds 123
+q14 python /root/autodl-tmp/code/q14q15_train.py --models xgboost --window 6 --seeds 7
+q14 python /root/autodl-tmp/code/q14q15_train.py --models xgboost --window 6 --seeds 2024
+q14 python /root/autodl-tmp/code/q14q15_train.py --models xgboost --window 6 --seeds 99
+q14 python /root/autodl-tmp/code/q14q15_train.py --models xgboost --window 3 --seeds 42
+q14 python /root/autodl-tmp/code/q14q15_train.py --models xgboost --window 3 --seeds 123
+q14 python /root/autodl-tmp/code/q14q15_train.py --models xgboost --window 3 --seeds 7
+q14 python /root/autodl-tmp/code/q14q15_train.py --models xgboost --window 3 --seeds 2024
+q14 python /root/autodl-tmp/code/q14q15_train.py --models xgboost --window 3 --seeds 99

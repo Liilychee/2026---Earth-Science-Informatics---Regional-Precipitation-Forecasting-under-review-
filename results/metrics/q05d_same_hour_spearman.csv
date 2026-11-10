@@ -1,0 +1,7 @@
+Subset,N,Variable,Spearman_with_tp_same_hour
+all stamps,26300,mxtpr,0.9865049868854838
+all stamps,26300,mntpr,0.9421014456584785
+all stamps,26300,lsp,0.9009149448720188
+tp>=0.1 mm,5363,mxtpr,0.9185159348158418
+tp>=0.1 mm,5363,mntpr,0.8327497367027363
+tp>=0.1 mm,5363,lsp,0.7571858779144496

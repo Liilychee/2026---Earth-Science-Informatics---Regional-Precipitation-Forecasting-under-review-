@@ -1,0 +1,64 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793927184.590586   70329 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1793927184.633721   70329 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793927185.565209   70329 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+W0000 00:00:1793927186.936280   70329 gpu_device.cc:2459] TensorFlow was not built with CUDA kernel binaries compatible with compute capability 12.0a. CUDA kernels will be jit-compiled from PTX, which could take 30 minutes or longer.
+W0000 00:00:1793927187.179593   70329 gpu_device.cc:2459] TensorFlow was not built with CUDA kernel binaries compatible with compute capability 12.0a. CUDA kernels will be jit-compiled from PTX, which could take 30 minutes or longer.
+I0000 00:00:1793927187.425494   70329 gpu_device.cc:2043] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 25293 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 5090, pci bus id: 0000:2a:00.0, compute capability: 12.0a
+window 3 (12 h history) | windows train/val/test = 18407/3942/3942 | GPU NVIDIA GeForce RTX 5090
+Epoch 1/30
+E0000 00:00:1793927188.392633   70329 node_def_util.cc:682] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=metadata:string,default=""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node ParallelMapDatasetV2/_15}}
+I0000 00:00:1793927190.437813   71037 cuda_dnn.cc:461] Loaded cuDNN version 91002
+E0000 00:00:1793927202.271180   70329 node_def_util.cc:682] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=metadata:string,default=""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node ParallelMapDatasetV2/_15}}
+576/576 - 15s - 27ms/step - loss: 0.0501 - val_loss: -9.9552e-02
+Epoch 2/30
+576/576 - 12s - 21ms/step - loss: -9.8899e-02 - val_loss: -4.5831e-02
+Epoch 3/30
+576/576 - 12s - 20ms/step - loss: -1.3082e-01 - val_loss: -9.5433e-02
+Epoch 4/30
+576/576 - 11s - 18ms/step - loss: -1.6913e-01 - val_loss: -4.8258e-02
+Epoch 5/30
+576/576 - 11s - 19ms/step - loss: -1.6984e-01 - val_loss: -8.3117e-02
+Epoch 6/30
+576/576 - 12s - 21ms/step - loss: -1.8171e-01 - val_loss: -1.0564e-01
+Epoch 7/30
+576/576 - 11s - 19ms/step - loss: -2.2290e-01 - val_loss: -3.0849e-02
+Epoch 8/30
+576/576 - 11s - 19ms/step - loss: -2.0509e-01 - val_loss: -4.2361e-02
+Epoch 9/30
+576/576 - 11s - 19ms/step - loss: -2.3450e-01 - val_loss: -9.6899e-02
+Epoch 10/30
+576/576 - 11s - 19ms/step - loss: -2.4982e-01 - val_loss: -7.9074e-02
+Epoch 11/30
+576/576 - 10s - 18ms/step - loss: -2.3745e-01 - val_loss: -8.6963e-02
+Epoch 12/30
+576/576 - 11s - 19ms/step - loss: -2.7284e-01 - val_loss: -1.0322e-01
+Epoch 13/30
+576/576 - 11s - 19ms/step - loss: -2.9005e-01 - val_loss: -1.5730e-01
+Epoch 14/30
+576/576 - 11s - 20ms/step - loss: -3.1880e-01 - val_loss: -1.6465e-01
+Epoch 15/30
+576/576 - 11s - 20ms/step - loss: -3.0139e-01 - val_loss: -1.2810e-01
+Epoch 16/30
+576/576 - 11s - 20ms/step - loss: -3.0274e-01 - val_loss: -1.3815e-02
+Epoch 17/30
+576/576 - 11s - 20ms/step - loss: -2.7807e-01 - val_loss: -1.2233e-01
+Epoch 18/30
+576/576 - 11s - 19ms/step - loss: -3.4720e-01 - val_loss: -1.1603e-01
+Epoch 19/30
+576/576 - 12s - 20ms/step - loss: -3.5511e-01 - val_loss: -9.3948e-02
+Epoch 20/30
+576/576 - 11s - 19ms/step - loss: -3.3291e-01 - val_loss: -3.9169e-04
+Epoch 21/30
+576/576 - 10s - 18ms/step - loss: -3.1554e-01 - val_loss: -8.8769e-02
+Epoch 22/30
+576/576 - 9s - 15ms/step - loss: -3.7314e-01 - val_loss: -7.0481e-02
+Epoch 23/30
+576/576 - 8s - 13ms/step - loss: -3.8933e-01 - val_loss: -6.2340e-02
+Epoch 24/30
+576/576 - 10s - 17ms/step - loss: -3.9758e-01 - val_loss: -1.0980e-01
+E0000 00:00:1793927452.465663   70329 node_def_util.cc:682] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=metadata:string,default=""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node ParallelMapDatasetV2/_14}}
+[done] bulstm__w3__nll__s123 | val RMSE=0.255043 test RMSE=0.245398 | best epoch 14/24 | 266s
+===== q14/q15 TRAIN JOB COMPLETE =====

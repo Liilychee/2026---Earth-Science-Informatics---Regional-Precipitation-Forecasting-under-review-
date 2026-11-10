@@ -1,0 +1,29 @@
+{
+  "tag": "transformer__w6__huber1__s123",
+  "model": "transformer",
+  "window": 6,
+  "history_hours": 30,
+  "loss": "huber1",
+  "huber_delta_std_units": 1.0,
+  "seed": 123,
+  "val": {
+    "rmse": 0.2621235417248516,
+    "mae": 0.10109453362324582,
+    "r2": 0.10960369853151974
+  },
+  "test": {
+    "rmse": 0.25562069247992136,
+    "mae": 0.11077159710091104,
+    "r2": 0.1267688642890984
+  },
+  "best_epoch": 22,
+  "epochs_trained": 30,
+  "train_seconds": 336.7,
+  "n_train": 18404,
+  "n_val": 3939,
+  "n_test": 3939,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tf": "2.21.0",
+  "host": "autodl-container-a5cc479537-afc6f6d6",
+  "finished_utc": "2026-11-06T01:26:22+00:00"
+}

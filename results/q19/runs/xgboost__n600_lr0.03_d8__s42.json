@@ -1,0 +1,28 @@
+{
+ "tag": "xgboost__n600_lr0.03_d8__s42",
+ "model": "xgboost",
+ "config": {
+  "n": 600,
+  "lr": 0.03,
+  "depth": 8
+ },
+ "cap": null,
+ "seed": 42,
+ "val": {
+  "rmse": 0.2544335484512714,
+  "mae": 0.11621801907978267
+ },
+ "test": {
+  "rmse": 0.2446867881669787,
+  "mae": 0.12097327939584561
+ },
+ "best_epoch": null,
+ "epochs_trained": null,
+ "hit_cap": null,
+ "train_seconds": 1.4,
+ "history": null,
+ "gpu": "NVIDIA GeForce RTX 5090",
+ "tf": "2.21.0",
+ "host": "autodl-container-63af4ab7db-b84c1520",
+ "finished_utc": "2026-11-09T17:27:14+00:00"
+}

@@ -9,3 +9,8 @@ results/windows/
 results/models/
 __pycache__/
 .ipynb_checkpoints/
+04-24.csv
+*.nc
+*.part
+.Trash-0/
+.autodl/

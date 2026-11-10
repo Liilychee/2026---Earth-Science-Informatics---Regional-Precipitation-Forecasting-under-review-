@@ -1,0 +1,39 @@
+{
+  "tag": "xgboost__w6__C6__tree__s123",
+  "config": "C6",
+  "features": [
+    "mxtpr",
+    "mntpr",
+    "lsp",
+    "tcc",
+    "v10",
+    "sp",
+    "cp_dub"
+  ],
+  "n_features": 7,
+  "model": "xgboost",
+  "window": 6,
+  "loss": "tree",
+  "seed": 123,
+  "val": {
+    "rmse": 0.2522038941214854,
+    "mae": 0.1121201893698424,
+    "r2": 0.1757197985933684
+  },
+  "test": {
+    "rmse": 0.24480081234885478,
+    "mae": 0.11918846927434956,
+    "r2": 0.19912837346829482
+  },
+  "best_epoch": null,
+  "epochs_trained": null,
+  "train_seconds": 0.1,
+  "n_train": 18404,
+  "n_val": 3939,
+  "n_test": 3939,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tf": "2.21.0",
+  "xgboost": "3.4.1",
+  "host": "autodl-container-63af4ab7db-b84c1520",
+  "finished_utc": "2026-11-09T15:06:34+00:00"
+}

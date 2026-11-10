@@ -1,0 +1,29 @@
+{
+  "tag": "xgboost__w12__tree__s7",
+  "model": "xgboost",
+  "window": 12,
+  "history_hours": 66,
+  "loss": "tree",
+  "huber_delta_std_units": null,
+  "seed": 7,
+  "val": {
+    "rmse": 0.2519030204548685,
+    "mae": 0.11423744831550836,
+    "r2": 0.17882846792952867
+  },
+  "test": {
+    "rmse": 0.24443187602679575,
+    "mae": 0.11981375480015115,
+    "r2": 0.20254339449060987
+  },
+  "best_epoch": null,
+  "epochs_trained": null,
+  "train_seconds": 0.5,
+  "n_train": 18398,
+  "n_val": 3933,
+  "n_test": 3933,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tf": "2.21.0",
+  "host": "autodl-container-bf7c41afc9-586c49b4",
+  "finished_utc": "2026-11-07T14:55:20+00:00"
+}

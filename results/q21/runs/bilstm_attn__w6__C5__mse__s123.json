@@ -1,0 +1,39 @@
+{
+  "tag": "bilstm_attn__w6__C5__mse__s123",
+  "config": "C5",
+  "features": [
+    "mxtpr",
+    "mntpr",
+    "lsp",
+    "lcc_dub",
+    "v10",
+    "sp",
+    "d2m"
+  ],
+  "n_features": 7,
+  "model": "bilstm_attn",
+  "window": 6,
+  "loss": "mse",
+  "seed": 123,
+  "val": {
+    "rmse": 0.2572416226268611,
+    "mae": 0.11393323588788927,
+    "r2": 0.14246121145263602
+  },
+  "test": {
+    "rmse": 0.24590229171657138,
+    "mae": 0.12227388219173962,
+    "r2": 0.19190512805964322
+  },
+  "best_epoch": 16,
+  "epochs_trained": 26,
+  "train_seconds": 169.3,
+  "n_train": 18404,
+  "n_val": 3939,
+  "n_test": 3939,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tf": "2.21.0",
+  "xgboost": "3.4.1",
+  "host": "autodl-container-63af4ab7db-b84c1520",
+  "finished_utc": "2026-11-09T15:01:16+00:00"
+}

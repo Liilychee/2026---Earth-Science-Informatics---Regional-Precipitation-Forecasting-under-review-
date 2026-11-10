@@ -1,0 +1,20 @@
+Source: data/dublin_regional_reduced.csv (26300, 13)
+cp = tp - lsp: min -0.000343 mm (tiny negatives = float noise), fraction < -1e-4 mm: 0.0044
+
+=== SHARE OF LARGE-SCALE (lsp) vs CONVECTIVE (cp = tp - lsp) PRECIPITATION ===
+        Group     N  N_wet_ge_0.1mm  Share_lsp_of_total_tp_%  Share_cp_of_total_tp_%  Median_lsp_over_tp_wet_%  Frac_wet_with_cp_gt_10pct_of_tp
+          All 26300            5363                    61.95                   38.05                     57.84                             0.76
+          DJF  6500            1299                    71.99                   28.01                     75.97                             0.64
+          MAM  6624            1288                    60.14                   39.86                     54.61                             0.76
+          JJA  6624            1443                    50.92                   49.08                     41.15                             0.87
+          SON  6552            1333                    64.50                   35.50                     63.20                             0.77
+tp 0.1-0.5 mm  3757            3757                    52.64                   47.36                     47.37                             0.78
+tp 0.5-1.0 mm  1025            1025                    63.63                   36.37                     68.48                             0.73
+  tp >=1.0 mm   581             581                    75.73                   24.27                     80.94                             0.69
+
+=== IS lsp(t) A LOWER BOUND FOR tp(t+6h)?  (R4 M2) ===
+Same hour: tp >= lsp in 99.56% of samples (by construction, tp = lsp + cp).
+Next sample: among 3312 cases with lsp(t) >= 0.1 mm, tp(t+6h) < lsp(t) in 71.2%; tp(t+6h) < 0.1 mm in 47.1%
+Spearman lsp(t) vs tp(t+6h): 0.534   (same-hour lsp vs tp: 0.901)
+
+Saved results/metrics/q02_lsp_share.csv

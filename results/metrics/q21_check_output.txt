@@ -1,0 +1,30 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794230119.902152    1881 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1794230119.950890    1881 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794230120.936940    1881 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+W0000 00:00:1794230122.383881    1881 gpu_device.cc:2459] TensorFlow was not built with CUDA kernel binaries compatible with compute capability 12.0a. CUDA kernels will be jit-compiled from PTX, which could take 30 minutes or longer.
+合并表 (26300, 33)，2004-01-01 00:00:00 至 2021-12-31 18:00:00，无缺失、时间戳对齐
+
+===== C0（7 个变量）：['mxtpr', 'mntpr', 'lsp', 'tcc', 'v10', 'sp', 'd2m']
+  windows train/val/test = 18404/3939/3939，X 形状 (18404, 6, 7)
+
+===== C1（8 个变量）：['mxtpr', 'mntpr', 'lsp', 'tcc', 'v10', 'sp', 'd2m', 'ws_dub']
+  windows train/val/test = 18404/3939/3939，X 形状 (18404, 6, 8)
+
+===== C2（9 个变量）：['mxtpr', 'mntpr', 'lsp', 'tcc', 'v10', 'sp', 'd2m', 'z500_dub', 'tcwv_dub']
+  windows train/val/test = 18404/3939/3939，X 形状 (18404, 6, 9)
+
+===== C3（17 个变量）：['mxtpr', 'mntpr', 'lsp', 'tcc', 'v10', 'sp', 'd2m', 'mxtpr_u1', 'mntpr_u1', 'lsp_u1', 'tcc_u1', 'v10_u1', 'sp_u1', 'd2m_u1', 'ws_u1', 'z500_up', 'tcwv_up']
+  windows train/val/test = 18404/3939/3939，X 形状 (18404, 6, 17)
+
+===== C4（20 个变量）：['mxtpr', 'mntpr', 'lsp', 'tcc', 'v10', 'sp', 'd2m', 'ws_dub', 'z500_dub', 'tcwv_dub', 'mxtpr_u1', 'mntpr_u1', 'lsp_u1', 'tcc_u1', 'v10_u1', 'sp_u1', 'd2m_u1', 'ws_u1', 'z500_up', 'tcwv_up']
+  windows train/val/test = 18404/3939/3939，X 形状 (18404, 6, 20)
+
+===== C5（7 个变量）：['mxtpr', 'mntpr', 'lsp', 'lcc_dub', 'v10', 'sp', 'd2m']
+  windows train/val/test = 18404/3939/3939，X 形状 (18404, 6, 7)
+
+===== C6（7 个变量）：['mxtpr', 'mntpr', 'lsp', 'tcc', 'v10', 'sp', 'cp_dub']
+  windows train/val/test = 18404/3939/3939，X 形状 (18404, 6, 7)
+===== q21 CHECK COMPLETE =====

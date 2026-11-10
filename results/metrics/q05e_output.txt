@@ -1,0 +1,245 @@
+thresholds: {'wet>=0.1': 0.1, 'Q90': 0.2958, 'Q95': 0.574, 'Q97.5': 0.9322, '1.0': 1.0}
+AR(1): y = 0.0763 + 0.2811 * y_lag
+
+===== event scores (test; cutoff from validation) =====
+Threshold  thr_mm                          Model  N_events_test   AUC  cutoff_from_val  Forecast_events  Hits   POD   FAR   CSI
+ wet>=0.1   0.100                        XGBoost            854 0.837            0.147              998   527 0.617 0.472 0.398
+ wet>=0.1   0.100                    Transformer            854 0.782            0.094             1141   510 0.597 0.553 0.343
+ wet>=0.1   0.100                        BU-LSTM            854 0.820            0.118             1093   549 0.643 0.498 0.393
+ wet>=0.1   0.100               BiLSTM-Attention            854 0.824            0.110             1126   585 0.685 0.480 0.419
+ wet>=0.1   0.100   BU-LSTM-Attention (proposed)            854 0.825            0.138             1037   543 0.636 0.476 0.403
+ wet>=0.1   0.100 Probabilistic BiLSTM-Attention            854 0.826            0.115             1125   567 0.664 0.496 0.402
+ wet>=0.1   0.100                    Persistence            854 0.767            0.043             1250   550 0.644 0.560 0.354
+ wet>=0.1   0.100              AR(1) (train fit)            854 0.767            0.088             1250   550 0.644 0.560 0.354
+ wet>=0.1   0.100     Climatology (month x hour)            854 0.565            0.102             2118   520 0.609 0.754 0.212
+      Q90   0.296                        XGBoost            463 0.848            0.198              740   281 0.607 0.620 0.305
+      Q90   0.296                    Transformer            463 0.792            0.133              676   217 0.469 0.679 0.235
+      Q90   0.296                        BU-LSTM            463 0.834            0.170              732   262 0.566 0.642 0.281
+      Q90   0.296               BiLSTM-Attention            463 0.838            0.175              751   284 0.613 0.622 0.305
+      Q90   0.296   BU-LSTM-Attention (proposed)            463 0.839            0.195              702   261 0.564 0.628 0.289
+      Q90   0.296 Probabilistic BiLSTM-Attention            463 0.833            0.158              844   288 0.622 0.659 0.283
+      Q90   0.296                    Persistence            463 0.757            0.166              667   224 0.484 0.664 0.247
+      Q90   0.296              AR(1) (train fit)            463 0.757            0.123              667   224 0.484 0.664 0.247
+      Q90   0.296     Climatology (month x hour)            463 0.562            0.102             2118   292 0.631 0.862 0.128
+      Q95   0.574                        XGBoost            238 0.848            0.306              355    95 0.399 0.732 0.191
+      Q95   0.574                    Transformer            238 0.798            0.191              340    68 0.286 0.800 0.133
+      Q95   0.574                        BU-LSTM            238 0.833            0.203              554   125 0.525 0.774 0.187
+      Q95   0.574               BiLSTM-Attention            238 0.835            0.262              443   105 0.441 0.763 0.182
+      Q95   0.574   BU-LSTM-Attention (proposed)            238 0.838            0.195              702   147 0.618 0.791 0.185
+      Q95   0.574 Probabilistic BiLSTM-Attention            238 0.832            0.221              568   126 0.529 0.778 0.185
+      Q95   0.574                    Persistence            238 0.747            0.185              629   117 0.492 0.814 0.156
+      Q95   0.574              AR(1) (train fit)            238 0.747            0.128              629   117 0.492 0.814 0.156
+      Q95   0.574     Climatology (month x hour)            238 0.566            0.102             2118   146 0.613 0.931 0.066
+    Q97.5   0.932                        XGBoost            106 0.866            0.418              191    32 0.302 0.832 0.121
+    Q97.5   0.932                    Transformer            106 0.820            0.214              251    27 0.255 0.892 0.082
+    Q97.5   0.932                        BU-LSTM            106 0.845            0.231              434    48 0.453 0.889 0.098
+    Q97.5   0.932               BiLSTM-Attention            106 0.859            0.252              461    57 0.538 0.876 0.112
+    Q97.5   0.932   BU-LSTM-Attention (proposed)            106 0.852            0.214              618    66 0.623 0.893 0.100
+    Q97.5   0.932 Probabilistic BiLSTM-Attention            106 0.844            0.204              631    64 0.604 0.899 0.095
+    Q97.5   0.932                    Persistence            106 0.739            0.390              362    35 0.330 0.903 0.081
+    Q97.5   0.932              AR(1) (train fit)            106 0.739            0.186              362    35 0.330 0.903 0.081
+    Q97.5   0.932     Climatology (month x hour)            106 0.563            0.111             1839    57 0.538 0.969 0.030
+      1.0   1.000                        XGBoost             91 0.868            0.418              191    27 0.297 0.859 0.106
+      1.0   1.000                    Transformer             91 0.822            0.205              287    24 0.264 0.916 0.068
+      1.0   1.000                        BU-LSTM             91 0.848            0.231              434    42 0.462 0.903 0.087
+      1.0   1.000               BiLSTM-Attention             91 0.861            0.262              443    50 0.549 0.887 0.103
+      1.0   1.000   BU-LSTM-Attention (proposed)             91 0.853            0.214              618    56 0.615 0.909 0.086
+      1.0   1.000 Probabilistic BiLSTM-Attention             91 0.846            0.204              631    55 0.604 0.913 0.082
+      1.0   1.000                    Persistence             91 0.732            0.390              362    28 0.308 0.923 0.066
+      1.0   1.000              AR(1) (train fit)             91 0.732            0.186              362    28 0.308 0.923 0.066
+      1.0   1.000     Climatology (month x hour)             91 0.560            0.111             1839    49 0.538 0.973 0.026
+
+===== paired differences, block 28, 2000 reps, seed 42 =====
+Threshold Metric                              A                          B  A_minus_B  CI_low  CI_high  CI_excludes_0
+ wet>=0.1    AUC                        XGBoost                Persistence      0.071   0.056    0.086           True
+ wet>=0.1    CSI                        XGBoost                Persistence      0.044   0.023    0.063           True
+ wet>=0.1    AUC                        XGBoost          AR(1) (train fit)      0.071   0.056    0.086           True
+ wet>=0.1    CSI                        XGBoost          AR(1) (train fit)      0.044   0.023    0.063           True
+ wet>=0.1    AUC                        XGBoost Climatology (month x hour)      0.272   0.241    0.303           True
+ wet>=0.1    CSI                        XGBoost Climatology (month x hour)      0.186   0.158    0.215           True
+ wet>=0.1    AUC                    Transformer                Persistence      0.015  -0.006    0.035          False
+ wet>=0.1    CSI                    Transformer                Persistence     -0.010  -0.035    0.012          False
+ wet>=0.1    AUC                    Transformer          AR(1) (train fit)      0.015  -0.006    0.035          False
+ wet>=0.1    CSI                    Transformer          AR(1) (train fit)     -0.010  -0.035    0.012          False
+ wet>=0.1    AUC                    Transformer Climatology (month x hour)      0.217   0.182    0.251           True
+ wet>=0.1    CSI                    Transformer Climatology (month x hour)      0.131   0.103    0.159           True
+ wet>=0.1    AUC                        BU-LSTM                Persistence      0.054   0.040    0.068           True
+ wet>=0.1    CSI                        BU-LSTM                Persistence      0.039   0.019    0.058           True
+ wet>=0.1    AUC                        BU-LSTM          AR(1) (train fit)      0.054   0.040    0.068           True
+ wet>=0.1    CSI                        BU-LSTM          AR(1) (train fit)      0.039   0.019    0.058           True
+ wet>=0.1    AUC                        BU-LSTM Climatology (month x hour)      0.255   0.224    0.288           True
+ wet>=0.1    CSI                        BU-LSTM Climatology (month x hour)      0.181   0.154    0.209           True
+ wet>=0.1    AUC               BiLSTM-Attention                Persistence      0.058   0.041    0.074           True
+ wet>=0.1    CSI               BiLSTM-Attention                Persistence      0.065   0.045    0.086           True
+ wet>=0.1    AUC               BiLSTM-Attention          AR(1) (train fit)      0.058   0.041    0.074           True
+ wet>=0.1    CSI               BiLSTM-Attention          AR(1) (train fit)      0.065   0.045    0.086           True
+ wet>=0.1    AUC               BiLSTM-Attention Climatology (month x hour)      0.259   0.227    0.291           True
+ wet>=0.1    CSI               BiLSTM-Attention Climatology (month x hour)      0.207   0.181    0.236           True
+ wet>=0.1    AUC   BU-LSTM-Attention (proposed)                Persistence      0.058   0.044    0.073           True
+ wet>=0.1    CSI   BU-LSTM-Attention (proposed)                Persistence      0.049   0.030    0.069           True
+ wet>=0.1    AUC   BU-LSTM-Attention (proposed)          AR(1) (train fit)      0.058   0.044    0.073           True
+ wet>=0.1    CSI   BU-LSTM-Attention (proposed)          AR(1) (train fit)      0.049   0.030    0.069           True
+ wet>=0.1    AUC   BU-LSTM-Attention (proposed) Climatology (month x hour)      0.260   0.229    0.292           True
+ wet>=0.1    CSI   BU-LSTM-Attention (proposed) Climatology (month x hour)      0.191   0.164    0.218           True
+ wet>=0.1    AUC Probabilistic BiLSTM-Attention                Persistence      0.060   0.046    0.074           True
+ wet>=0.1    CSI Probabilistic BiLSTM-Attention                Persistence      0.048   0.025    0.068           True
+ wet>=0.1    AUC Probabilistic BiLSTM-Attention          AR(1) (train fit)      0.060   0.046    0.074           True
+ wet>=0.1    CSI Probabilistic BiLSTM-Attention          AR(1) (train fit)      0.048   0.025    0.068           True
+ wet>=0.1    AUC Probabilistic BiLSTM-Attention Climatology (month x hour)      0.261   0.230    0.292           True
+ wet>=0.1    CSI Probabilistic BiLSTM-Attention Climatology (month x hour)      0.189   0.163    0.217           True
+ wet>=0.1    AUC   BU-LSTM-Attention (proposed)                    XGBoost     -0.012  -0.021   -0.004           True
+ wet>=0.1    CSI   BU-LSTM-Attention (proposed)                    XGBoost      0.005  -0.012    0.023          False
+      Q90    AUC                        XGBoost                Persistence      0.091   0.072    0.113           True
+      Q90    CSI                        XGBoost                Persistence      0.058   0.034    0.082           True
+      Q90    AUC                        XGBoost          AR(1) (train fit)      0.091   0.072    0.113           True
+      Q90    CSI                        XGBoost          AR(1) (train fit)      0.058   0.034    0.082           True
+      Q90    AUC                        XGBoost Climatology (month x hour)      0.287   0.252    0.321           True
+      Q90    CSI                        XGBoost Climatology (month x hour)      0.177   0.148    0.208           True
+      Q90    AUC                    Transformer                Persistence      0.035   0.008    0.063           True
+      Q90    CSI                    Transformer                Persistence     -0.012  -0.042    0.020          False
+      Q90    AUC                    Transformer          AR(1) (train fit)      0.035   0.008    0.063           True
+      Q90    CSI                    Transformer          AR(1) (train fit)     -0.012  -0.042    0.020          False
+      Q90    AUC                    Transformer Climatology (month x hour)      0.231   0.194    0.268           True
+      Q90    CSI                    Transformer Climatology (month x hour)      0.108   0.079    0.138           True
+      Q90    AUC                        BU-LSTM                Persistence      0.077   0.059    0.097           True
+      Q90    CSI                        BU-LSTM                Persistence      0.034   0.015    0.053           True
+      Q90    AUC                        BU-LSTM          AR(1) (train fit)      0.077   0.059    0.097           True
+      Q90    CSI                        BU-LSTM          AR(1) (train fit)      0.034   0.015    0.053           True
+      Q90    AUC                        BU-LSTM Climatology (month x hour)      0.273   0.237    0.307           True
+      Q90    CSI                        BU-LSTM Climatology (month x hour)      0.153   0.127    0.180           True
+      Q90    AUC               BiLSTM-Attention                Persistence      0.081   0.060    0.103           True
+      Q90    CSI               BiLSTM-Attention                Persistence      0.058   0.035    0.081           True
+      Q90    AUC               BiLSTM-Attention          AR(1) (train fit)      0.081   0.060    0.103           True
+      Q90    CSI               BiLSTM-Attention          AR(1) (train fit)      0.058   0.035    0.081           True
+      Q90    AUC               BiLSTM-Attention Climatology (month x hour)      0.277   0.239    0.312           True
+      Q90    CSI               BiLSTM-Attention Climatology (month x hour)      0.178   0.150    0.206           True
+      Q90    AUC   BU-LSTM-Attention (proposed)                Persistence      0.082   0.063    0.103           True
+      Q90    CSI   BU-LSTM-Attention (proposed)                Persistence      0.041   0.023    0.060           True
+      Q90    AUC   BU-LSTM-Attention (proposed)          AR(1) (train fit)      0.082   0.063    0.103           True
+      Q90    CSI   BU-LSTM-Attention (proposed)          AR(1) (train fit)      0.041   0.023    0.060           True
+      Q90    AUC   BU-LSTM-Attention (proposed) Climatology (month x hour)      0.277   0.243    0.311           True
+      Q90    CSI   BU-LSTM-Attention (proposed) Climatology (month x hour)      0.161   0.135    0.187           True
+      Q90    AUC Probabilistic BiLSTM-Attention                Persistence      0.076   0.057    0.096           True
+      Q90    CSI Probabilistic BiLSTM-Attention                Persistence      0.035   0.011    0.059           True
+      Q90    AUC Probabilistic BiLSTM-Attention          AR(1) (train fit)      0.076   0.057    0.096           True
+      Q90    CSI Probabilistic BiLSTM-Attention          AR(1) (train fit)      0.035   0.011    0.059           True
+      Q90    AUC Probabilistic BiLSTM-Attention Climatology (month x hour)      0.272   0.237    0.306           True
+      Q90    CSI Probabilistic BiLSTM-Attention Climatology (month x hour)      0.155   0.129    0.181           True
+      Q90    AUC   BU-LSTM-Attention (proposed)                    XGBoost     -0.009  -0.020    0.001          False
+      Q90    CSI   BU-LSTM-Attention (proposed)                    XGBoost     -0.016  -0.038    0.006          False
+      Q95    AUC                        XGBoost                Persistence      0.101   0.074    0.130           True
+      Q95    CSI                        XGBoost                Persistence      0.035   0.001    0.072           True
+      Q95    AUC                        XGBoost          AR(1) (train fit)      0.101   0.074    0.130           True
+      Q95    CSI                        XGBoost          AR(1) (train fit)      0.035   0.001    0.072           True
+      Q95    AUC                        XGBoost Climatology (month x hour)      0.282   0.233    0.329           True
+      Q95    CSI                        XGBoost Climatology (month x hour)      0.125   0.089    0.163           True
+      Q95    AUC                    Transformer                Persistence      0.051   0.018    0.089           True
+      Q95    CSI                    Transformer                Persistence     -0.023  -0.053    0.009          False
+      Q95    AUC                    Transformer          AR(1) (train fit)      0.051   0.018    0.089           True
+      Q95    CSI                    Transformer          AR(1) (train fit)     -0.023  -0.053    0.009          False
+      Q95    AUC                    Transformer Climatology (month x hour)      0.232   0.182    0.285           True
+      Q95    CSI                    Transformer Climatology (month x hour)      0.067   0.040    0.096           True
+      Q95    AUC                        BU-LSTM                Persistence      0.086   0.062    0.111           True
+      Q95    CSI                        BU-LSTM                Persistence      0.031   0.014    0.049           True
+      Q95    AUC                        BU-LSTM          AR(1) (train fit)      0.086   0.062    0.111           True
+      Q95    CSI                        BU-LSTM          AR(1) (train fit)      0.031   0.014    0.049           True
+      Q95    AUC                        BU-LSTM Climatology (month x hour)      0.267   0.216    0.316           True
+      Q95    CSI                        BU-LSTM Climatology (month x hour)      0.121   0.092    0.152           True
+      Q95    AUC               BiLSTM-Attention                Persistence      0.088   0.059    0.118           True
+      Q95    CSI               BiLSTM-Attention                Persistence      0.026   0.004    0.050           True
+      Q95    AUC               BiLSTM-Attention          AR(1) (train fit)      0.088   0.059    0.118           True
+      Q95    CSI               BiLSTM-Attention          AR(1) (train fit)      0.026   0.004    0.050           True
+      Q95    AUC               BiLSTM-Attention Climatology (month x hour)      0.269   0.218    0.319           True
+      Q95    CSI               BiLSTM-Attention Climatology (month x hour)      0.116   0.087    0.146           True
+      Q95    AUC   BU-LSTM-Attention (proposed)                Persistence      0.091   0.067    0.116           True
+      Q95    CSI   BU-LSTM-Attention (proposed)                Persistence      0.029   0.012    0.047           True
+      Q95    AUC   BU-LSTM-Attention (proposed)          AR(1) (train fit)      0.091   0.067    0.116           True
+      Q95    CSI   BU-LSTM-Attention (proposed)          AR(1) (train fit)      0.029   0.012    0.047           True
+      Q95    AUC   BU-LSTM-Attention (proposed) Climatology (month x hour)      0.272   0.224    0.320           True
+      Q95    CSI   BU-LSTM-Attention (proposed) Climatology (month x hour)      0.119   0.095    0.146           True
+      Q95    AUC Probabilistic BiLSTM-Attention                Persistence      0.085   0.059    0.112           True
+      Q95    CSI Probabilistic BiLSTM-Attention                Persistence      0.029   0.009    0.051           True
+      Q95    AUC Probabilistic BiLSTM-Attention          AR(1) (train fit)      0.085   0.059    0.112           True
+      Q95    CSI Probabilistic BiLSTM-Attention          AR(1) (train fit)      0.029   0.009    0.051           True
+      Q95    AUC Probabilistic BiLSTM-Attention Climatology (month x hour)      0.266   0.219    0.314           True
+      Q95    CSI Probabilistic BiLSTM-Attention Climatology (month x hour)      0.119   0.094    0.148           True
+      Q95    AUC   BU-LSTM-Attention (proposed)                    XGBoost     -0.010  -0.023    0.004          False
+      Q95    CSI   BU-LSTM-Attention (proposed)                    XGBoost     -0.005  -0.040    0.027          False
+    Q97.5    AUC                        XGBoost                Persistence      0.128   0.091    0.167           True
+    Q97.5    CSI                        XGBoost                Persistence      0.040   0.004    0.079           True
+    Q97.5    AUC                        XGBoost          AR(1) (train fit)      0.128   0.091    0.167           True
+    Q97.5    CSI                        XGBoost          AR(1) (train fit)      0.040   0.004    0.079           True
+    Q97.5    AUC                        XGBoost Climatology (month x hour)      0.303   0.245    0.363           True
+    Q97.5    CSI                        XGBoost Climatology (month x hour)      0.091   0.053    0.130           True
+    Q97.5    AUC                    Transformer                Persistence      0.081   0.037    0.132           True
+    Q97.5    CSI                    Transformer                Persistence      0.001  -0.031    0.037          False
+    Q97.5    AUC                    Transformer          AR(1) (train fit)      0.081   0.037    0.132           True
+    Q97.5    CSI                    Transformer          AR(1) (train fit)      0.001  -0.031    0.037          False
+    Q97.5    AUC                    Transformer Climatology (month x hour)      0.257   0.197    0.320           True
+    Q97.5    CSI                    Transformer Climatology (month x hour)      0.052   0.026    0.082           True
+    Q97.5    AUC                        BU-LSTM                Persistence      0.107   0.075    0.144           True
+    Q97.5    CSI                        BU-LSTM                Persistence      0.017  -0.002    0.036          False
+    Q97.5    AUC                        BU-LSTM          AR(1) (train fit)      0.107   0.075    0.144           True
+    Q97.5    CSI                        BU-LSTM          AR(1) (train fit)      0.017  -0.002    0.036          False
+    Q97.5    AUC                        BU-LSTM Climatology (month x hour)      0.282   0.222    0.344           True
+    Q97.5    CSI                        BU-LSTM Climatology (month x hour)      0.067   0.044    0.089           True
+    Q97.5    AUC               BiLSTM-Attention                Persistence      0.121   0.087    0.159           True
+    Q97.5    CSI               BiLSTM-Attention                Persistence      0.031   0.007    0.055           True
+    Q97.5    AUC               BiLSTM-Attention          AR(1) (train fit)      0.121   0.087    0.159           True
+    Q97.5    CSI               BiLSTM-Attention          AR(1) (train fit)      0.031   0.007    0.055           True
+    Q97.5    AUC               BiLSTM-Attention Climatology (month x hour)      0.296   0.235    0.359           True
+    Q97.5    CSI               BiLSTM-Attention Climatology (month x hour)      0.082   0.058    0.106           True
+    Q97.5    AUC   BU-LSTM-Attention (proposed)                Persistence      0.113   0.082    0.150           True
+    Q97.5    CSI   BU-LSTM-Attention (proposed)                Persistence      0.019   0.001    0.038           True
+    Q97.5    AUC   BU-LSTM-Attention (proposed)          AR(1) (train fit)      0.113   0.082    0.150           True
+    Q97.5    CSI   BU-LSTM-Attention (proposed)          AR(1) (train fit)      0.019   0.001    0.038           True
+    Q97.5    AUC   BU-LSTM-Attention (proposed) Climatology (month x hour)      0.289   0.230    0.349           True
+    Q97.5    CSI   BU-LSTM-Attention (proposed) Climatology (month x hour)      0.070   0.051    0.090           True
+    Q97.5    AUC Probabilistic BiLSTM-Attention                Persistence      0.106   0.071    0.147           True
+    Q97.5    CSI Probabilistic BiLSTM-Attention                Persistence      0.014  -0.006    0.036          False
+    Q97.5    AUC Probabilistic BiLSTM-Attention          AR(1) (train fit)      0.106   0.071    0.147           True
+    Q97.5    CSI Probabilistic BiLSTM-Attention          AR(1) (train fit)      0.014  -0.006    0.036          False
+    Q97.5    AUC Probabilistic BiLSTM-Attention Climatology (month x hour)      0.281   0.225    0.339           True
+    Q97.5    CSI Probabilistic BiLSTM-Attention Climatology (month x hour)      0.065   0.045    0.086           True
+    Q97.5    AUC   BU-LSTM-Attention (proposed)                    XGBoost     -0.015  -0.034    0.005          False
+    Q97.5    CSI   BU-LSTM-Attention (proposed)                    XGBoost     -0.020  -0.055    0.013          False
+      1.0    AUC                        XGBoost                Persistence      0.136   0.097    0.180           True
+      1.0    CSI                        XGBoost                Persistence      0.040   0.007    0.074           True
+      1.0    AUC                        XGBoost          AR(1) (train fit)      0.136   0.097    0.180           True
+      1.0    CSI                        XGBoost          AR(1) (train fit)      0.040   0.007    0.074           True
+      1.0    AUC                        XGBoost Climatology (month x hour)      0.308   0.248    0.369           True
+      1.0    CSI                        XGBoost Climatology (month x hour)      0.080   0.046    0.115           True
+      1.0    AUC                    Transformer                Persistence      0.090   0.040    0.146           True
+      1.0    CSI                    Transformer                Persistence      0.002  -0.026    0.033          False
+      1.0    AUC                    Transformer          AR(1) (train fit)      0.090   0.040    0.146           True
+      1.0    CSI                    Transformer          AR(1) (train fit)      0.002  -0.026    0.033          False
+      1.0    AUC                    Transformer Climatology (month x hour)      0.262   0.195    0.330           True
+      1.0    CSI                    Transformer Climatology (month x hour)      0.042   0.019    0.068           True
+      1.0    AUC                        BU-LSTM                Persistence      0.116   0.085    0.153           True
+      1.0    CSI                        BU-LSTM                Persistence      0.021   0.005    0.037           True
+      1.0    AUC                        BU-LSTM          AR(1) (train fit)      0.116   0.085    0.153           True
+      1.0    CSI                        BU-LSTM          AR(1) (train fit)      0.021   0.005    0.037           True
+      1.0    AUC                        BU-LSTM Climatology (month x hour)      0.288   0.222    0.354           True
+      1.0    CSI                        BU-LSTM Climatology (month x hour)      0.061   0.038    0.082           True
+      1.0    AUC               BiLSTM-Attention                Persistence      0.129   0.090    0.172           True
+      1.0    CSI               BiLSTM-Attention                Persistence      0.037   0.016    0.060           True
+      1.0    AUC               BiLSTM-Attention          AR(1) (train fit)      0.129   0.090    0.172           True
+      1.0    CSI               BiLSTM-Attention          AR(1) (train fit)      0.037   0.016    0.060           True
+      1.0    AUC               BiLSTM-Attention Climatology (month x hour)      0.301   0.235    0.368           True
+      1.0    CSI               BiLSTM-Attention Climatology (month x hour)      0.077   0.055    0.099           True
+      1.0    AUC   BU-LSTM-Attention (proposed)                Persistence      0.121   0.087    0.161           True
+      1.0    CSI   BU-LSTM-Attention (proposed)                Persistence      0.020   0.002    0.038           True
+      1.0    AUC   BU-LSTM-Attention (proposed)          AR(1) (train fit)      0.121   0.087    0.161           True
+      1.0    CSI   BU-LSTM-Attention (proposed)          AR(1) (train fit)      0.020   0.002    0.038           True
+      1.0    AUC   BU-LSTM-Attention (proposed) Climatology (month x hour)      0.293   0.228    0.358           True
+      1.0    CSI   BU-LSTM-Attention (proposed) Climatology (month x hour)      0.060   0.043    0.077           True
+      1.0    AUC Probabilistic BiLSTM-Attention                Persistence      0.114   0.076    0.157           True
+      1.0    CSI Probabilistic BiLSTM-Attention                Persistence      0.017  -0.001    0.036          False
+      1.0    AUC Probabilistic BiLSTM-Attention          AR(1) (train fit)      0.114   0.076    0.157           True
+      1.0    CSI Probabilistic BiLSTM-Attention          AR(1) (train fit)      0.017  -0.001    0.036          False
+      1.0    AUC Probabilistic BiLSTM-Attention Climatology (month x hour)      0.286   0.225    0.347           True
+      1.0    CSI Probabilistic BiLSTM-Attention Climatology (month x hour)      0.056   0.038    0.076           True
+      1.0    AUC   BU-LSTM-Attention (proposed)                    XGBoost     -0.015  -0.036    0.007          False
+      1.0    CSI   BU-LSTM-Attention (proposed)                    XGBoost     -0.020  -0.054    0.012          False
+
+Saved q05e_*.csv to results/metrics

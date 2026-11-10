@@ -1,0 +1,29 @@
+{
+  "tag": "transformer__w3__mse__s123",
+  "model": "transformer",
+  "window": 3,
+  "history_hours": 12,
+  "loss": "mse",
+  "huber_delta_std_units": null,
+  "seed": 123,
+  "val": {
+    "rmse": 0.2528325963817016,
+    "mae": 0.11185161784845803,
+    "r2": 0.17105414790440399
+  },
+  "test": {
+    "rmse": 0.2457459480523991,
+    "mae": 0.11982103139604161,
+    "r2": 0.19242641956694828
+  },
+  "best_epoch": 22,
+  "epochs_trained": 30,
+  "train_seconds": 348.9,
+  "n_train": 18407,
+  "n_val": 3942,
+  "n_test": 3942,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tf": "2.21.0",
+  "host": "autodl-container-a5cc479537-afc6f6d6",
+  "finished_utc": "2026-11-06T00:55:52+00:00"
+}

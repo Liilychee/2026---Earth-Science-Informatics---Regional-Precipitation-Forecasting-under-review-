@@ -1,0 +1,29 @@
+{
+  "tag": "bilstm_attn__w12__mse__s123",
+  "model": "bilstm_attn",
+  "window": 12,
+  "history_hours": 66,
+  "loss": "mse",
+  "huber_delta_std_units": null,
+  "seed": 123,
+  "val": {
+    "rmse": 0.25384141155996004,
+    "mae": 0.1144917091818694,
+    "r2": 0.16614203132739458
+  },
+  "test": {
+    "rmse": 0.24108504174465953,
+    "mae": 0.11939756189094482,
+    "r2": 0.22423191632768358
+  },
+  "best_epoch": 9,
+  "epochs_trained": 19,
+  "train_seconds": 156.5,
+  "n_train": 18398,
+  "n_val": 3933,
+  "n_test": 3933,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tf": "2.21.0",
+  "host": "autodl-container-bf7c41afc9-586c49b4",
+  "finished_utc": "2026-11-07T14:57:30+00:00"
+}

@@ -1,0 +1,86 @@
+Station file: data/hly532.csv 
+ERA5 raw    : data/04-24.csv 
+ERA5 reduced: data/dublin_regional_reduced.csv
+Station rows 2004-2021: 157,800; missing rain: 0 (0.00 %); max 26.5 mm/h
+ERA5 cell (53.5, -6.25): 26,300 stamps; regional mean: 26,300 stamps
+
+=== TIME-ALIGNMENT TEST (station value at t+shift vs ERA5 tp at t) ===
+ Station_shift_h        ERA5_series     N  Pearson_r  Spearman_rho
+              -1  ERA5 nearest cell 26299     0.4833        0.4484
+              -1 ERA5 regional mean 26299     0.5044        0.4475
+               0  ERA5 nearest cell 26300     0.4903        0.4628
+               0 ERA5 regional mean 26300     0.5384        0.4599
+               1  ERA5 nearest cell 26300     0.4482        0.4556
+               1 ERA5 regional mean 26300     0.5144        0.4580
+-> highest Spearman for the nearest cell at shift +0 h
+   shift  0: station stamp t labels the hour ENDING at t (same convention as ERA5)
+   shift -1: station stamp labels the START of the hour (station value at t-1h = hour ending at t)
+   shift +1: station stamp labels the hour ending one hour LATER than ERA5's
+
+=== ERA5 vs DUBLIN AIRPORT OBSERVATIONS (mm per hour) ===
+                 Period        ERA5_series     N  Pearson_r  Spearman_rho  Mean_obs_mm  Mean_ERA5_mm  Bias_ERA5_minus_obs_mm  RMSE_mm  Wet_freq_obs  Wet_freq_ERA5  Q95_obs  Q95_ERA5  Q99_obs  Q99_ERA5  Max_obs  Max_ERA5
+          2004-2021 all  ERA5 nearest cell 26300      0.490         0.463        0.089         0.097                   0.008    0.388         0.128          0.164      0.5     0.569      2.0     1.584     16.4     5.559
+          2004-2021 all ERA5 regional mean 26300      0.538         0.460        0.089         0.107                   0.018    0.366         0.128          0.204      0.5     0.582      2.0     1.433     16.4     4.135
+test period (last 15 %)  ERA5 nearest cell  3945      0.432         0.474        0.093         0.102                   0.010    0.405         0.131          0.178      0.5     0.628      2.0     1.552      8.4     3.373
+test period (last 15 %) ERA5 regional mean  3945      0.482         0.477        0.093         0.115                   0.022    0.384         0.131          0.216      0.5     0.652      2.0     1.389      8.4     2.987
+
+=== EVENT AGREEMENT (wet >=0.1 mm, and observed-Q95 exceedance) ===
+                 Period        ERA5_series  POD_0.1  FAR_0.1  CSI_0.1  Bias_0.1  POD_obsQ95  FAR_obsQ95  CSI_obsQ95
+          2004-2021 all  ERA5 nearest cell    0.632    0.507    0.383     1.282       0.509       0.521       0.327
+          2004-2021 all ERA5 regional mean    0.730    0.541    0.393     1.589       0.556       0.517       0.349
+test period (last 15 %)  ERA5 nearest cell    0.689    0.492    0.413     1.356       0.526       0.550       0.320
+test period (last 15 %) ERA5 regional mean    0.766    0.536    0.406     1.652       0.600       0.552       0.345
+
+=== BY SEASON ===
+Season        ERA5_series    N  Spearman_rho  Bias_mm  Wet_freq_obs  Wet_freq_ERA5  Q95_obs  Q95_ERA5
+   DJF  ERA5 nearest cell 6500         0.482    0.004         0.138          0.157      0.6     0.551
+   DJF ERA5 regional mean 6500         0.473    0.023         0.138          0.200      0.6     0.620
+   MAM  ERA5 nearest cell 6624         0.469    0.012         0.118          0.165      0.4     0.465
+   MAM ERA5 regional mean 6624         0.458    0.017         0.118          0.194      0.4     0.457
+   JJA  ERA5 nearest cell 6624         0.430    0.018         0.125          0.187      0.4     0.624
+   JJA ERA5 regional mean 6624         0.443    0.019         0.125          0.218      0.4     0.588
+   SON  ERA5 nearest cell 6552         0.468   -0.002         0.133          0.149      0.6     0.643
+   SON ERA5 regional mean 6552         0.464    0.013         0.133          0.203      0.6     0.673
+
+=== STATION RAIN INDICATOR at the matched stamps (0 = satisfactory) ===
+ rain_indicator  count  share
+            111  26300    1.0
+
+=== RAIN INDICATOR BY YEAR (whole station file, 1995-2022) ===
+ind   0    1    2    3    4    6     111
+year                                    
+1995    0    0    0    0    0    0  8760
+1996    0    0    0    0    0    0  8784
+1997    0    0    0    0    0    0  8760
+1998    0    0    0    0    0    0  8760
+1999    0    0    0    0    0    0  8760
+2000    0    0    0    0    0    0  8784
+2001    0    0    0    0    0    0  8760
+2002    0    0    0    0    0    0  8760
+2003    0    0    0    0    0    0  8760
+2004    0    0    0    0    0    0  8784
+2005    0    0    0    0    0    0  8760
+2006    0    0    0    0    0    0  8760
+2007    0    0    0    0    0    0  8760
+2008    0    0    0    0    0    0  8784
+2009    0    0    0    0    0    0  8760
+2010    0    0    0    0    0    0  8760
+2011    0    0    0    0    0    0  8760
+2012    0    0    0    0    0    0  8784
+2013    0    0    0    0    0    0  8760
+2014    0    0    0    0    0    0  8760
+2015    0    0    0    0    0    0  8760
+2016    0    0    0    0    0    0  8784
+2017    0    0    0    0    0    0  8760
+2018    0    0    0    0    0    0  8760
+2019    0    0    0    0    0    0  8760
+2020    0    0    0    0    0    0  8784
+2021    0    0    0    0    0    0  8760
+2022    0    0    0    0    0    0  8760
+
+Observed hourly rain at matched stamps: max 16.4 mm/h; >=2.5 mm/h: 172; >=10 mm/h: 4 of 26300
+ERA5 nearest cell: >=2.5: 71; >=10: 0
+
+Sensitivity (indicator==0 only) skipped: only 0 matched stamps have indicator 0.
+
+Saved q04_*.csv to /root/autodl-tmp/results/metrics

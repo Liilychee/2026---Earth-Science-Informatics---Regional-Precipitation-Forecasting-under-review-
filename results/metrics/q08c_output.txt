@@ -1,0 +1,201 @@
+samples 1970; 985 distinct days; median gap 12 h; gaps > 12 h: 0
+moving-block bootstrap: block 14 samples (~7 days), NBOOT 10000, seed 42
+check HRES (6 h mean) == hres_tp6_mm/6: max abs diff 0.00e+00
+count check wet>=0.1: here 422 vs q08_hres_comparison.csv 422
+count check Q95: here 116 vs q08_hres_comparison.csv 116
+
+########## target: ERA5; n=1970; observed events: {'wet>=0.1': 422, 'Q95': 116, '>=1.0': 46} ##########
+
+===== [ERA5] AUC (event = truth >= threshold) =====
+event                           >=1.0    Q95  wet>=0.1
+model                                                 
+BiLSTM-Attention                0.875  0.850     0.837
+XGBoost                         0.883  0.857     0.844
+BU-LSTM-Attention               0.857  0.835     0.830
+Probabilistic BiLSTM-Attention  0.869  0.841     0.836
+BU-LSTM                         0.853  0.834     0.829
+Transformer                     0.820  0.784     0.783
+HRES (6 h mean)                 0.969  0.959     0.941
+Persistence                     0.753  0.762     0.786
+Climatology (month x hour)      0.614  0.601     0.548
+AR(1)                           0.753  0.762     0.786
+Perfect 6 h mean (ceiling)      0.976  0.966     0.961
+
+===== [ERA5] frequency-matched cutoff, wet>=0.1 (obs 422) =====
+                                FM_n_fcst  FM_POD  FM_FAR  FM_CSI
+model                                                            
+BiLSTM-Attention                      422   0.571   0.429   0.400
+XGBoost                               422   0.576   0.424   0.404
+BU-LSTM-Attention                     422   0.569   0.431   0.397
+Probabilistic BiLSTM-Attention        422   0.531   0.469   0.361
+BU-LSTM                               422   0.569   0.431   0.397
+Transformer                           422   0.476   0.524   0.313
+HRES (6 h mean)                       422   0.742   0.258   0.589
+Persistence                           422   0.517   0.483   0.348
+Climatology (month x hour)            428   0.246   0.757   0.139
+AR(1)                                 422   0.517   0.483   0.348
+Perfect 6 h mean (ceiling)            422   0.775   0.225   0.632
+
+===== [ERA5] frequency-matched cutoff, Q95 (obs 116) =====
+                                FM_n_fcst  FM_POD  FM_FAR  FM_CSI
+model                                                            
+BiLSTM-Attention                      116   0.310   0.690   0.184
+XGBoost                               116   0.310   0.690   0.184
+BU-LSTM-Attention                     116   0.284   0.716   0.166
+Probabilistic BiLSTM-Attention        116   0.302   0.698   0.178
+BU-LSTM                               116   0.293   0.707   0.172
+Transformer                           116   0.172   0.828   0.094
+HRES (6 h mean)                       116   0.526   0.474   0.357
+Persistence                           116   0.259   0.741   0.149
+Climatology (month x hour)            186   0.138   0.914   0.056
+AR(1)                                 116   0.259   0.741   0.149
+Perfect 6 h mean (ceiling)            116   0.552   0.448   0.381
+
+===== [ERA5] frequency-matched cutoff, >=1.0 (obs 46) =====
+                                FM_n_fcst  FM_POD  FM_FAR  FM_CSI
+model                                                            
+BiLSTM-Attention                       46   0.174   0.826   0.095
+XGBoost                                46   0.130   0.870   0.070
+BU-LSTM-Attention                      46   0.109   0.891   0.057
+Probabilistic BiLSTM-Attention         46   0.109   0.891   0.057
+BU-LSTM                                46   0.152   0.848   0.082
+Transformer                            46   0.109   0.891   0.057
+HRES (6 h mean)                        46   0.435   0.565   0.278
+Persistence                            46   0.109   0.891   0.057
+Climatology (month x hour)             93   0.109   0.946   0.037
+AR(1)                                  46   0.109   0.891   0.057
+Perfect 6 h mean (ceiling)             46   0.457   0.543   0.296
+
+===== [ERA5] paired AUC differences (model minus reference; negative = reference better) =====
+                         model                  reference    event    dAUC  ci_low  ci_high  significant
+              BiLSTM-Attention            HRES (6 h mean) wet>=0.1 -0.1041 -0.1242  -0.0840         True
+              BiLSTM-Attention            HRES (6 h mean)      Q95 -0.1084 -0.1388  -0.0789         True
+              BiLSTM-Attention            HRES (6 h mean)    >=1.0 -0.0937 -0.1409  -0.0526         True
+                       XGBoost            HRES (6 h mean) wet>=0.1 -0.0969 -0.1143  -0.0793         True
+                       XGBoost            HRES (6 h mean)      Q95 -0.1013 -0.1292  -0.0748         True
+                       XGBoost            HRES (6 h mean)    >=1.0 -0.0864 -0.1274  -0.0479         True
+             BU-LSTM-Attention            HRES (6 h mean) wet>=0.1 -0.1105 -0.1306  -0.0906         True
+             BU-LSTM-Attention            HRES (6 h mean)      Q95 -0.1233 -0.1546  -0.0929         True
+             BU-LSTM-Attention            HRES (6 h mean)    >=1.0 -0.1116 -0.1570  -0.0700         True
+Probabilistic BiLSTM-Attention            HRES (6 h mean) wet>=0.1 -0.1043 -0.1225  -0.0859         True
+Probabilistic BiLSTM-Attention            HRES (6 h mean)      Q95 -0.1180 -0.1489  -0.0890         True
+Probabilistic BiLSTM-Attention            HRES (6 h mean)    >=1.0 -0.0998 -0.1324  -0.0711         True
+                       BU-LSTM            HRES (6 h mean) wet>=0.1 -0.1112 -0.1304  -0.0910         True
+                       BU-LSTM            HRES (6 h mean)      Q95 -0.1243 -0.1550  -0.0937         True
+                       BU-LSTM            HRES (6 h mean)    >=1.0 -0.1162 -0.1622  -0.0720         True
+                   Transformer            HRES (6 h mean) wet>=0.1 -0.1577 -0.1831  -0.1311         True
+                   Transformer            HRES (6 h mean)      Q95 -0.1746 -0.2119  -0.1364         True
+                   Transformer            HRES (6 h mean)    >=1.0 -0.1486 -0.1995  -0.0959         True
+              BiLSTM-Attention                Persistence wet>=0.1  0.0511  0.0265   0.0771         True
+              BiLSTM-Attention                Persistence      Q95  0.0882  0.0513   0.1297         True
+              BiLSTM-Attention                Persistence    >=1.0  0.1225  0.0689   0.1822         True
+                       XGBoost                Persistence wet>=0.1  0.0583  0.0377   0.0805         True
+                       XGBoost                Persistence      Q95  0.0953  0.0579   0.1370         True
+                       XGBoost                Persistence    >=1.0  0.1298  0.0745   0.1915         True
+             BU-LSTM-Attention                Persistence wet>=0.1  0.0447  0.0228   0.0684         True
+             BU-LSTM-Attention                Persistence      Q95  0.0733  0.0386   0.1122         True
+             BU-LSTM-Attention                Persistence    >=1.0  0.1046  0.0608   0.1545         True
+Probabilistic BiLSTM-Attention                Persistence wet>=0.1  0.0509  0.0305   0.0722         True
+Probabilistic BiLSTM-Attention                Persistence      Q95  0.0786  0.0402   0.1196         True
+Probabilistic BiLSTM-Attention                Persistence    >=1.0  0.1164  0.0587   0.1770         True
+                       BU-LSTM                Persistence wet>=0.1  0.0439  0.0223   0.0674         True
+                       BU-LSTM                Persistence      Q95  0.0723  0.0390   0.1100         True
+                       BU-LSTM                Persistence    >=1.0  0.1000  0.0587   0.1505         True
+                   Transformer                Persistence wet>=0.1 -0.0026 -0.0308   0.0270        False
+                   Transformer                Persistence      Q95  0.0220 -0.0239   0.0727        False
+                   Transformer                Persistence    >=1.0  0.0675  0.0005   0.1416         True
+               HRES (6 h mean)                Persistence wet>=0.1  0.1552  0.1313   0.1807         True
+               HRES (6 h mean)                Persistence      Q95  0.1966  0.1524   0.2430         True
+               HRES (6 h mean)                Persistence    >=1.0  0.2162  0.1461   0.2875         True
+               HRES (6 h mean) Climatology (month x hour) wet>=0.1  0.3925  0.3546   0.4279         True
+               HRES (6 h mean) Climatology (month x hour)      Q95  0.3577  0.3006   0.4167         True
+               HRES (6 h mean) Climatology (month x hour)    >=1.0  0.3553  0.2662   0.4446         True
+
+station merge: 1970 aligned samples, 0 without station value, 1970 used
+count check station wet>=0.1: here 277 vs q08b_station_comparison.csv 277
+count check station >=1.0: here 64 vs q08b_station_comparison.csv 64
+
+########## target: station; n=1970; observed events: {'wet>=0.1': 277, '>=1.0': 64} ##########
+
+===== [station] AUC (event = truth >= threshold) =====
+event                              >=1.0  wet>=0.1
+model                                             
+BiLSTM-Attention                   0.836     0.784
+XGBoost                            0.844     0.810
+BU-LSTM-Attention                  0.835     0.800
+Probabilistic BiLSTM-Attention     0.840     0.802
+BU-LSTM                            0.826     0.792
+Transformer                        0.783     0.754
+HRES (6 h mean)                    0.949     0.905
+Persistence                        0.774     0.765
+Climatology (month x hour)         0.577     0.529
+AR(1)                              0.774     0.765
+ERA5 6 h mean (window diagnostic)  0.918     0.889
+ERA5 label (regional mean)         0.941     0.892
+
+===== [station] frequency-matched cutoff, wet>=0.1 (obs 277) =====
+                                   FM_n_fcst  FM_POD  FM_FAR  FM_CSI
+model                                                               
+BiLSTM-Attention                         277   0.426   0.574   0.271
+XGBoost                                  277   0.444   0.556   0.285
+BU-LSTM-Attention                        277   0.440   0.560   0.282
+Probabilistic BiLSTM-Attention           277   0.390   0.610   0.242
+BU-LSTM                                  277   0.412   0.588   0.259
+Transformer                              277   0.329   0.671   0.197
+HRES (6 h mean)                          277   0.603   0.397   0.432
+Persistence                              277   0.379   0.621   0.234
+Climatology (month x hour)               338   0.199   0.837   0.098
+AR(1)                                    277   0.379   0.621   0.234
+ERA5 6 h mean (window diagnostic)        277   0.585   0.415   0.413
+ERA5 label (regional mean)               277   0.617   0.383   0.446
+
+===== [station] frequency-matched cutoff, >=1.0 (obs 64) =====
+                                   FM_n_fcst  FM_POD  FM_FAR  FM_CSI
+model                                                               
+BiLSTM-Attention                          64   0.156   0.844   0.085
+XGBoost                                   64   0.125   0.875   0.067
+BU-LSTM-Attention                         64   0.125   0.875   0.067
+Probabilistic BiLSTM-Attention            64   0.125   0.875   0.067
+BU-LSTM                                   64   0.125   0.875   0.067
+Transformer                               64   0.109   0.891   0.058
+HRES (6 h mean)                           64   0.391   0.609   0.243
+Persistence                               64   0.078   0.922   0.041
+Climatology (month x hour)                93   0.109   0.925   0.047
+AR(1)                                     64   0.078   0.922   0.041
+ERA5 6 h mean (window diagnostic)         64   0.266   0.734   0.153
+ERA5 label (regional mean)                64   0.422   0.578   0.267
+
+===== [station] paired AUC differences (model minus reference; negative = reference better) =====
+                         model                  reference    event    dAUC  ci_low  ci_high  significant
+              BiLSTM-Attention            HRES (6 h mean) wet>=0.1 -0.1211 -0.1453  -0.0967         True
+              BiLSTM-Attention            HRES (6 h mean)    >=1.0 -0.1125 -0.1461  -0.0782         True
+                       XGBoost            HRES (6 h mean) wet>=0.1 -0.0948 -0.1132  -0.0753         True
+                       XGBoost            HRES (6 h mean)    >=1.0 -0.1049 -0.1324  -0.0731         True
+             BU-LSTM-Attention            HRES (6 h mean) wet>=0.1 -0.1049 -0.1256  -0.0837         True
+             BU-LSTM-Attention            HRES (6 h mean)    >=1.0 -0.1137 -0.1391  -0.0837         True
+Probabilistic BiLSTM-Attention            HRES (6 h mean) wet>=0.1 -0.1024 -0.1219  -0.0826         True
+Probabilistic BiLSTM-Attention            HRES (6 h mean)    >=1.0 -0.1086 -0.1349  -0.0788         True
+                       BU-LSTM            HRES (6 h mean) wet>=0.1 -0.1126 -0.1336  -0.0905         True
+                       BU-LSTM            HRES (6 h mean)    >=1.0 -0.1230 -0.1544  -0.0882         True
+                   Transformer            HRES (6 h mean) wet>=0.1 -0.1512 -0.1771  -0.1238         True
+                   Transformer            HRES (6 h mean)    >=1.0 -0.1656 -0.2121  -0.1171         True
+              BiLSTM-Attention                Persistence wet>=0.1  0.0191 -0.0118   0.0502        False
+              BiLSTM-Attention                Persistence    >=1.0  0.0617  0.0131   0.1188         True
+                       XGBoost                Persistence wet>=0.1  0.0454  0.0225   0.0702         True
+                       XGBoost                Persistence    >=1.0  0.0693  0.0227   0.1303         True
+             BU-LSTM-Attention                Persistence wet>=0.1  0.0353  0.0126   0.0596         True
+             BU-LSTM-Attention                Persistence    >=1.0  0.0606  0.0168   0.1160         True
+Probabilistic BiLSTM-Attention                Persistence wet>=0.1  0.0378  0.0134   0.0633         True
+Probabilistic BiLSTM-Attention                Persistence    >=1.0  0.0656  0.0242   0.1161         True
+                       BU-LSTM                Persistence wet>=0.1  0.0276  0.0033   0.0532         True
+                       BU-LSTM                Persistence    >=1.0  0.0513  0.0091   0.1035         True
+                   Transformer                Persistence wet>=0.1 -0.0110 -0.0421   0.0220        False
+                   Transformer                Persistence    >=1.0  0.0086 -0.0489   0.0731        False
+    ERA5 label (regional mean)            HRES (6 h mean) wet>=0.1 -0.0126 -0.0278   0.0018        False
+    ERA5 label (regional mean)            HRES (6 h mean)    >=1.0 -0.0074 -0.0253   0.0107        False
+               HRES (6 h mean)                Persistence wet>=0.1  0.1402  0.1128   0.1682         True
+               HRES (6 h mean)                Persistence    >=1.0  0.1743  0.1237   0.2302         True
+               HRES (6 h mean) Climatology (month x hour) wet>=0.1  0.3759  0.3306   0.4208         True
+               HRES (6 h mean) Climatology (month x hour)    >=1.0  0.3718  0.2897   0.4466         True
+
+Saved q08c_event_auc.csv and q08c_event_auc_paired.csv to /root/autodl-tmp/results/metrics

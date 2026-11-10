@@ -1,0 +1,19 @@
+Source: data/04-24.csv
+Columns used: valid_time latitude longitude tp
+read 1,000,000 rowsread 2,000,000 rowsread 3,000,000 rowsread 4,000,000 rowsread 5,000,000 rowsread 6,000,000 rowsread 7,000,000 rowsread 8,000,000 rowsread 9,000,000 rowsread 10,000,000 rowsread 10,869,579 rows
+Grid: (26300, 25) (timestamps x cells)
+Nearest cell to Dublin Airport (53.4214, -6.27): (53.5, -6.25);  to city centre (53.3498, -6.2603): (53.25, -6.25)
+SANITY: max |regional tp (reduced file) - regional tp (here)| = 1.33e-15 mm
+
+=== WMO-No. 8 (2008) RAIN CLASSES, COUNTS OF SAMPLED HOURLY VALUES ===
+                                          Series                            Period     N  N_wet_ge_0.1  Frac_wet_ge_0.1  N_light_lt_2.5  N_moderate_2.5_to_lt_10  N_heavy_10_to_lt_50  N_ge_50  N_ge_1.0  N_gt_2.5  Max_mm_per_h
+        Regional mean (25 cells) [used in paper]                     2004-2021 all 26300          5363          0.20392           26259                       41                    0        0       581        41       4.13454
+Single cell nearest Dublin Airport (53.5, -6.25)                     2004-2021 all 26300          4326          0.16449           26229                       71                    0        0       647        71       5.55897
+  Single cell nearest city centre (53.25, -6.25)                     2004-2021 all 26300          4670          0.17757           26223                       77                    0        0       713        77       6.10113
+                       Maximum over the 25 cells                     2004-2021 all 26300         10236          0.38920           25881                      419                    0        0      2382       419       7.11203
+        Regional mean (25 cells) [used in paper] test period (last 15 % of stamps)  3945           854          0.21648            3942                        3                    0        0        91         3       2.98655
+Single cell nearest Dublin Airport (53.5, -6.25) test period (last 15 % of stamps)  3945           701          0.17769            3939                        6                    0        0       104         6       3.37267
+  Single cell nearest city centre (53.25, -6.25) test period (last 15 % of stamps)  3945           750          0.19011            3937                        8                    0        0       111         8       3.62158
+                       Maximum over the 25 cells test period (last 15 % of stamps)  3945          1608          0.40760            3875                       70                    0        0       433        70       5.82361
+
+Saved /root/autodl-tmp/results/metrics/q03_intensity_class_counts_wmo.csv

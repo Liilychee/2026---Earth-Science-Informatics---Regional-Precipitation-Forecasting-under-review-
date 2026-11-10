@@ -1,0 +1,66 @@
+Data: data/dublin_regional_reduced.csv; test targets 3939
+Alignment OK. Models: ['XGBoost', 'Transformer', 'BU-LSTM', 'BiLSTM-Attention', 'BU-LSTM-Attention (proposed)', 'Probabilistic BiLSTM-Attention', 'Persistence', 'Climatology (month x hour)']
+
+Stratum sizes: {'all test': 3939, 'JJA (all hours)': 1104, 'non-JJA (all hours)': 2835, 'wet': 854, 'wet & convective-dominated': 383, 'wet & large-scale-dominated': 471, 'JJA & wet & convective-dominated': 146, 'JJA & wet & large-scale-dominated': 114, 'non-JJA & wet & convective-dominated': 237, 'non-JJA & wet & large-scale-dominated': 357}
+
+--- all test (N=3939) ---
+                       Model  Mean_obs_mm_h  RMSE  RMSE_CI_low  RMSE_CI_high  RMSE_over_mean_obs  Pearson_r  Skill_vs_monthhour_clim
+                     XGBoost          0.115 0.244        0.220         0.266               2.119      0.456                    0.107
+BU-LSTM-Attention (proposed)          0.115 0.246        0.223         0.269               2.142      0.439                    0.097
+                 Persistence          0.115 0.328        0.294         0.361               2.852      0.280                   -0.202
+
+--- JJA (all hours) (N=1104) ---
+                       Model  Mean_obs_mm_h  RMSE  RMSE_CI_low  RMSE_CI_high  RMSE_over_mean_obs  Pearson_r  Skill_vs_monthhour_clim
+                     XGBoost          0.123 0.246        0.200         0.288               2.001      0.493                    0.127
+BU-LSTM-Attention (proposed)          0.123 0.250        0.201         0.293               2.036      0.479                    0.112
+                 Persistence          0.123 0.322        0.252         0.385               2.618      0.348                   -0.142
+
+--- non-JJA (all hours) (N=2835) ---
+                       Model  Mean_obs_mm_h  RMSE  RMSE_CI_low  RMSE_CI_high  RMSE_over_mean_obs  Pearson_r  Skill_vs_monthhour_clim
+                     XGBoost          0.112 0.243        0.218         0.267               2.169      0.445                    0.099
+BU-LSTM-Attention (proposed)          0.112 0.245        0.218         0.271               2.187      0.425                    0.091
+                 Persistence          0.112 0.331        0.293         0.369               2.952      0.251                   -0.227
+
+--- wet (N=854) ---
+                       Model  Mean_obs_mm_h  RMSE  RMSE_CI_low  RMSE_CI_high  RMSE_over_mean_obs  Pearson_r  Skill_vs_monthhour_clim
+                     XGBoost          0.477 0.473        0.432         0.514               0.992      0.286                    0.151
+BU-LSTM-Attention (proposed)          0.477 0.492        0.450         0.536               1.033      0.236                    0.115
+                 Persistence          0.477 0.582        0.529         0.637               1.221      0.104                   -0.046
+
+--- wet & convective-dominated (N=383) ---
+                       Model  Mean_obs_mm_h  RMSE  RMSE_CI_low  RMSE_CI_high  RMSE_over_mean_obs  Pearson_r  Skill_vs_monthhour_clim
+                     XGBoost          0.352 0.333        0.295         0.374               0.947      0.190                    0.091
+BU-LSTM-Attention (proposed)          0.352 0.336        0.295         0.378               0.954      0.220                    0.084
+                 Persistence          0.352 0.419        0.372         0.465               1.193      0.106                   -0.144
+
+--- wet & large-scale-dominated (N=471) ---
+                       Model  Mean_obs_mm_h  RMSE  RMSE_CI_low  RMSE_CI_high  RMSE_over_mean_obs  Pearson_r  Skill_vs_monthhour_clim
+                     XGBoost          0.578 0.561        0.505         0.615               0.971      0.252                    0.166
+BU-LSTM-Attention (proposed)          0.578 0.590        0.532         0.649               1.021      0.160                    0.123
+                 Persistence          0.578 0.686        0.609         0.766               1.188      0.048                   -0.021
+
+--- JJA & wet & convective-dominated (N=146) ---
+                       Model  Mean_obs_mm_h  RMSE  RMSE_CI_low  RMSE_CI_high  RMSE_over_mean_obs  Pearson_r  Skill_vs_monthhour_clim
+                     XGBoost          0.388 0.376        0.302         0.457               0.969      0.241                    0.103
+BU-LSTM-Attention (proposed)          0.388 0.376        0.301         0.458               0.970      0.278                    0.101
+                 Persistence          0.388 0.425        0.351         0.501               1.095      0.211                   -0.014
+
+--- JJA & wet & large-scale-dominated (N=114) ---
+                       Model  Mean_obs_mm_h  RMSE  RMSE_CI_low  RMSE_CI_high  RMSE_over_mean_obs  Pearson_r  Skill_vs_monthhour_clim
+                     XGBoost           0.57 0.572        0.420         0.708               1.003      0.340                    0.167
+BU-LSTM-Attention (proposed)           0.57 0.601        0.450         0.745               1.055      0.255                    0.123
+                 Persistence           0.57 0.702        0.478         0.927               1.232      0.127                   -0.024
+
+--- non-JJA & wet & convective-dominated (N=237) ---
+                       Model  Mean_obs_mm_h  RMSE  RMSE_CI_low  RMSE_CI_high  RMSE_over_mean_obs  Pearson_r  Skill_vs_monthhour_clim
+                     XGBoost          0.329 0.304        0.265         0.341               0.923      0.161                    0.080
+BU-LSTM-Attention (proposed)          0.329 0.308        0.267         0.347               0.934      0.183                    0.068
+                 Persistence          0.329 0.416        0.355         0.477               1.263      0.026                   -0.260
+
+--- non-JJA & wet & large-scale-dominated (N=357) ---
+                       Model  Mean_obs_mm_h  RMSE  RMSE_CI_low  RMSE_CI_high  RMSE_over_mean_obs  Pearson_r  Skill_vs_monthhour_clim
+                     XGBoost          0.581 0.557        0.497         0.619               0.960      0.221                    0.165
+BU-LSTM-Attention (proposed)          0.581 0.586        0.526         0.651               1.010      0.128                    0.123
+                 Persistence          0.581 0.681        0.609         0.761               1.173      0.016                   -0.020
+
+Full table (all models) saved to results/metrics/q03e_convective_strata.csv

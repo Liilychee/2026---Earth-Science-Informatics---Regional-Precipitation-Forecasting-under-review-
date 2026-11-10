@@ -1,0 +1,26 @@
+Source: data/dublin_regional_reduced.csv (26300, 13)
+Units assumed: tp [m] -> mm; mxtpr, mntpr [kg m-2 s-1] -> mm/h (x3600).
+Medians: tp_mm 0.0083, mx_mmh 0.0153, mn_mmh 0.0020
+
+===== 01-E6: max/min rate vs hourly total (same-hour consistency) =====
+      Subset   Tolerance     N  mxtpr*3600 >= tp (%)  mntpr*3600 <= tp (%)  both (%)
+ all samples      strict 26300                 93.17                 99.27     92.44
+ all samples tol 1e-3 mm 26300                 97.50                 99.80     97.30
+tp >= 0.1 mm      strict  5363                 99.74                 99.42     99.16
+tp >= 0.1 mm tol 1e-3 mm  5363                 99.74                 99.48     99.22
+
+Samples with tp >= 0.1 mm: 5363  (earlier record: 5,363; inequalities 99.7% / 99.4%)
+Median ratio mxtpr*3600/tp = 1.64, mntpr*3600/tp = 0.57 (earlier record: about 1.6 / 0.6)
+Ratio quantiles (5/25/50/75/95%): mx [1.13, 1.36, 1.64, 2.08, 3.16] | mn [0.11, 0.35, 0.57, 0.74, 0.9]
+
+Violations among tp >= 0.1: 45; largest excess (mm): mx 0.0494, mn 0.0601
+
+===== 01-E5: tp (mm) by hour of day of the stored timestamp =====
+         N    mean  median     p95     max  frac_ge_0.1mm
+hour                                                     
+0     6575  0.0975  0.0035  0.5702  3.2165         0.1751
+6     6575  0.1032  0.0056  0.5794  3.4193         0.1859
+12    6575  0.1210  0.0245  0.5853  3.9403         0.2446
+18    6575  0.1048  0.0079  0.5880  4.1345         0.2102
+
+Saved results/metrics/q01_*.csv

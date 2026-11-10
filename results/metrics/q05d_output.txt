@@ -1,0 +1,50 @@
+Data data/dublin_regional_reduced.csv; windows train 18404 val 3939 test 3939
+Train-derived thresholds (mm/h): {'wet>=0.1': 0.1, 'Q90': 0.2958, 'Q95': 0.574, 'Q97.5': 0.9322, '>=1.0': 1.0}
+
+===== (1) event counts per split =====
+ Threshold  mm_per_h  train_N  train_pct  val_N  val_pct  test_N  test_pct
+ wet>=0.1     0.100     3755     20.403    753   19.117     854    21.681
+      Q90     0.296     1841     10.003    358    9.089     463    11.754
+      Q95     0.574      921      5.004    186    4.722     238     6.042
+    Q97.5     0.932      461      2.505     95    2.412     106     2.691
+    >=1.0     1.000      402      2.184     88    2.234      91     2.310
+
+===== (2) all / wet / upper-tail, test split =====
+                         Model                   Subset    N   RMSE    MAE  Bias_pred_minus_obs  R2_in_subset  Skill_vs_clim
+                       XGBoost                      all 3939 0.2437 0.1188              -0.0043        0.2060         0.1073
+                       XGBoost                 wet>=0.1  854 0.4726 0.3102              -0.2435       -0.2669         0.1507
+                       XGBoost upper tail (>=train Q95)  238 0.8417 0.7281              -0.7259       -2.9983         0.1591
+                   Transformer                      all 3939 0.2591 0.1209              -0.0335        0.1032         0.0513
+                   Transformer                 wet>=0.1  854 0.5365 0.3590              -0.3399       -0.6330         0.0358
+                   Transformer upper tail (>=train Q95)  238 0.9610 0.8628              -0.8628       -4.2123         0.0400
+                       BU-LSTM                      all 3939 0.2487 0.1170              -0.0238        0.1732         0.0891
+                       BU-LSTM                 wet>=0.1  854 0.5071 0.3319              -0.3018       -0.4588         0.0887
+                       BU-LSTM upper tail (>=train Q95)  238 0.9146 0.8124              -0.8124       -3.7213         0.0863
+              BiLSTM-Attention                      all 3939 0.2428 0.1156              -0.0179        0.2119         0.1106
+              BiLSTM-Attention                 wet>=0.1  854 0.4887 0.3202              -0.2735       -0.3549         0.1217
+              BiLSTM-Attention upper tail (>=train Q95)  238 0.8784 0.7711              -0.7711       -3.3554         0.1224
+  BU-LSTM-Attention (proposed)                      all 3939 0.2464 0.1174              -0.0160        0.1883         0.0975
+  BU-LSTM-Attention (proposed)                 wet>=0.1  854 0.4923 0.3220              -0.2740       -0.3750         0.1152
+  BU-LSTM-Attention (proposed) upper tail (>=train Q95)  238 0.8859 0.7754              -0.7754       -3.4297         0.1150
+Probabilistic BiLSTM-Attention                      all 3939 0.2481 0.1162              -0.0203        0.1772         0.0913
+Probabilistic BiLSTM-Attention                 wet>=0.1  854 0.4990 0.3264              -0.2846       -0.4124         0.1033
+Probabilistic BiLSTM-Attention upper tail (>=train Q95)  238 0.8980 0.7902              -0.7902       -3.5514         0.1029
+                   Persistence                      all 3939 0.3282 0.1400              -0.0000       -0.4394        -0.2019
+                   Persistence                 wet>=0.1  854 0.5820 0.4023              -0.1955       -0.9215        -0.0459
+                   Persistence upper tail (>=train Q95)  238 0.9048 0.7549              -0.6604       -3.6207         0.0961
+    Climatology (month x hour)                      all 3939 0.2731 0.1517              -0.0069        0.0036         0.0000
+    Climatology (month x hour)                 wet>=0.1  854 0.5565 0.3670              -0.3640       -0.7565         0.0000
+    Climatology (month x hour) upper tail (>=train Q95)  238 1.0010 0.9070              -0.9070       -4.6551         0.0000
+
+NOTE: RMSE and MAE rise from 'all' to 'upper tail' for every model if the columns above show it; skill vs climatology and R2_in_subset are reported separately and need not move the same way.
+
+===== (3) same-hour Spearman with tp =====
+     Subset     N Variable  Spearman_with_tp_same_hour
+all stamps 26300    mxtpr                       0.987
+all stamps 26300    mntpr                       0.942
+all stamps 26300      lsp                       0.901
+tp>=0.1 mm  5363    mxtpr                       0.919
+tp>=0.1 mm  5363    mntpr                       0.833
+tp>=0.1 mm  5363      lsp                       0.757
+
+Saved q05d_*.csv to results/metrics

@@ -1,0 +1,83 @@
+/root/miniconda3/lib/python3.12/site-packages/pandas/core/nanops.py:2043: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return spearmanr(a, b)[0]
+/root/miniconda3/lib/python3.12/site-packages/pandas/core/nanops.py:2043: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return spearmanr(a, b)[0]
+/root/miniconda3/lib/python3.12/site-packages/pandas/core/nanops.py:2043: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return spearmanr(a, b)[0]
+/root/miniconda3/lib/python3.12/site-packages/pandas/core/nanops.py:2043: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return spearmanr(a, b)[0]
+Station values missing at the 26,300 stamps: 0
+train windows 18404 (station target valid 18404); test 3939 (valid 3939)
+Station test: mean 0.0928, wet>=0.1 13.1%, max 8.4
+Station train Q95 = 0.5000 mm/h; train wet freq 13.1%
+SANITY: E on ERA5 target, mean test RMSE over seeds = 0.2439 (main pipeline 0.2439 / 0.2437)
+
+===== per-seed RMSE / Spearman on STATION test target =====
+    Method   RMSE    MAE  Spearman
+  S seed42 0.4282 0.1516    0.3372
+ S seed123 0.4268 0.1504    0.3455
+   S seed7 0.4266 0.1510    0.3454
+S seed2024 0.4251 0.1504    0.3395
+  S seed99 0.4253 0.1472    0.3411
+  E seed42 0.4208 0.1544    0.3608
+ E seed123 0.4224 0.1554    0.3607
+   E seed7 0.4218 0.1543    0.3613
+E seed2024 0.4217 0.1542    0.3629
+  E seed99 0.4202 0.1535    0.3654
+
+===== summary (station target) =====
+                       Method                   Subset    N   RMSE  Skill_vs_B1  Spearman  POD_0.1  FAR_0.1  CSI_0.1  Thr_freq_matched  POD_fm  FAR_fm  CSI_fm
+S station-trained (seed mean)                      all 3939 0.4235       0.0201    0.3493   0.7350   0.7151   0.2583            0.2329  0.3694  0.6291  0.2271
+S station-trained (seed mean)                 wet>=0.1  517 1.1020       0.0560    0.2050      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+S station-trained (seed mean) upper tail (>=train Q95)  215 1.6906       0.0613    0.1221      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+S station-trained (seed mean)                      DJF  848 0.3980       0.0290    0.3512      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+S station-trained (seed mean)                      MAM  895 0.2216       0.0327    0.3354      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+S station-trained (seed mean)                      JJA 1104 0.4550       0.0138    0.3492      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+S station-trained (seed mean)                      SON 1092 0.5239       0.0190    0.3260      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+   E ERA5-trained (seed mean)                      all 3939 0.4206       0.0268    0.3649   0.7718   0.7146   0.2632            0.2598  0.3965  0.6019  0.2479
+   E ERA5-trained (seed mean)                 wet>=0.1  517 1.0955       0.0616    0.1572      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+   E ERA5-trained (seed mean) upper tail (>=train Q95)  215 1.6821       0.0661    0.0420      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+   E ERA5-trained (seed mean)                      DJF  848 0.4014       0.0209    0.3617      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+   E ERA5-trained (seed mean)                      MAM  895 0.2250       0.0177    0.3349      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+   E ERA5-trained (seed mean)                      JJA 1104 0.4481       0.0288    0.3864      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+   E ERA5-trained (seed mean)                      SON 1092 0.5183       0.0294    0.3445      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+ B1 station clim month x hour                      all 3939 0.4322       0.0000    0.0250   0.3366   0.8618   0.1086            0.1164  0.1567  0.8533  0.0820
+ B1 station clim month x hour                 wet>=0.1  517 1.1674       0.0000    0.0057      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+ B1 station clim month x hour upper tail (>=train Q95)  215 1.8011       0.0000    0.0225      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+ B1 station clim month x hour                      DJF  848 0.4099       0.0000   -0.0537      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+ B1 station clim month x hour                      MAM  895 0.2291       0.0000    0.0752      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+ B1 station clim month x hour                      JJA 1104 0.4614       0.0000   -0.0193      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+ B1 station clim month x hour                      SON 1092 0.5341       0.0000    0.0109      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+     B2 constant (train mean)                      all 3939 0.4318       0.0011       NaN   0.0000      NaN   0.0000            0.0900  1.0000  0.8687  0.1313
+     B2 constant (train mean)                 wet>=0.1  517 1.1691      -0.0014       NaN      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+     B2 constant (train mean) upper tail (>=train Q95)  215 1.8033      -0.0012       NaN      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+     B2 constant (train mean)                      DJF  848 0.4095       0.0011       NaN      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+     B2 constant (train mean)                      MAM  895 0.2325      -0.0150       NaN      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+     B2 constant (train mean)                      JJA 1104 0.4603       0.0023       NaN      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+     B2 constant (train mean)                      SON 1092 0.5327       0.0026       NaN      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+               B3 persistence                      all 3939 0.5847      -0.3526    0.2359   0.3308   0.6692   0.1981            0.1000  0.3308  0.6692  0.1981
+               B3 persistence                 wet>=0.1  517 1.3150      -0.1264    0.0774      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+               B3 persistence upper tail (>=train Q95)  215 1.8756      -0.0414   -0.0553      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+               B3 persistence                      DJF  848 0.5279      -0.2879    0.2244      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+               B3 persistence                      MAM  895 0.3139      -0.3700    0.2583      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+               B3 persistence                      JJA 1104 0.6264      -0.3577    0.2721      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+               B3 persistence                      SON 1092 0.7343      -0.3749    0.1804      NaN      NaN      NaN               NaN     NaN     NaN     NaN
+
+===== paired RMSE (A minus B; negative = A better); bootstrap block 28, 2000 reps, seed 42 =====
+                A              B                   Subset    N  RMSE_A  RMSE_B  A_minus_B  CI_low  CI_high
+S station-trained E ERA5-trained                      all 3939  0.4235  0.4206     0.0029 -0.0015   0.0077
+S station-trained E ERA5-trained                 wet>=0.1  517  1.1020  1.0955     0.0065 -0.0012   0.0141
+S station-trained E ERA5-trained upper tail (>=train Q95)  215  1.6906  1.6821     0.0085 -0.0034   0.0197
+S station-trained        B1 clim                      all 3939  0.4235  0.4322    -0.0087 -0.0167  -0.0004
+S station-trained        B1 clim                 wet>=0.1  517  1.1020  1.1674    -0.0654 -0.0838  -0.0489
+S station-trained        B1 clim upper tail (>=train Q95)  215  1.6906  1.8011    -0.1105 -0.1375  -0.0875
+   E ERA5-trained        B1 clim                      all 3939  0.4206  0.4322    -0.0116 -0.0184  -0.0047
+   E ERA5-trained        B1 clim                 wet>=0.1  517  1.0955  1.1674    -0.0719 -0.0886  -0.0571
+   E ERA5-trained        B1 clim upper tail (>=train Q95)  215  1.6821  1.8011    -0.1190 -0.1436  -0.0977
+S station-trained    B2 constant                      all 3939  0.4235  0.4318    -0.0082 -0.0162   0.0002
+S station-trained    B2 constant                 wet>=0.1  517  1.1020  1.1691    -0.0670 -0.0854  -0.0500
+S station-trained    B2 constant upper tail (>=train Q95)  215  1.6906  1.8033    -0.1127 -0.1402  -0.0897
+
+S minus E per seed (all): [0.0074, 0.0044, 0.0048, 0.0033, 0.005]; seeds with S better: 0/5
+
+Saved results/ablation/q04c_*.csv

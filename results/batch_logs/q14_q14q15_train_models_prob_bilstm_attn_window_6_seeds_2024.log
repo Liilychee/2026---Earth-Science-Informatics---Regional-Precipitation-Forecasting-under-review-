@@ -1,0 +1,44 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793927435.289595  157136 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1793927435.333364  157136 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793927436.317260  157136 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+W0000 00:00:1793927437.588848  157136 gpu_device.cc:2459] TensorFlow was not built with CUDA kernel binaries compatible with compute capability 12.0a. CUDA kernels will be jit-compiled from PTX, which could take 30 minutes or longer.
+W0000 00:00:1793927437.836129  157136 gpu_device.cc:2459] TensorFlow was not built with CUDA kernel binaries compatible with compute capability 12.0a. CUDA kernels will be jit-compiled from PTX, which could take 30 minutes or longer.
+I0000 00:00:1793927438.029903  157136 gpu_device.cc:2043] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 25949 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 5090, pci bus id: 0000:2a:00.0, compute capability: 12.0a
+window 6 (30 h history) | windows train/val/test = 18404/3939/3939 | GPU NVIDIA GeForce RTX 5090
+Epoch 1/30
+E0000 00:00:1793927438.809090  157136 node_def_util.cc:682] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=metadata:string,default=""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node ParallelMapDatasetV2/_15}}
+I0000 00:00:1793927440.235516  159295 cuda_dnn.cc:461] Loaded cuDNN version 91002
+E0000 00:00:1793927451.447756  157136 node_def_util.cc:682] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=metadata:string,default=""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node ParallelMapDatasetV2/_15}}
+576/576 - 14s - 25ms/step - loss: 0.1314 - val_loss: 0.0137
+Epoch 2/30
+576/576 - 10s - 17ms/step - loss: 0.0288 - val_loss: -1.9322e-02
+Epoch 3/30
+576/576 - 11s - 18ms/step - loss: -7.3423e-02 - val_loss: -9.8787e-02
+Epoch 4/30
+576/576 - 10s - 18ms/step - loss: -8.5782e-02 - val_loss: -1.0042e-01
+Epoch 5/30
+576/576 - 11s - 19ms/step - loss: -1.3957e-01 - val_loss: -8.6185e-02
+Epoch 6/30
+576/576 - 11s - 19ms/step - loss: -1.5705e-01 - val_loss: -5.9104e-02
+Epoch 7/30
+576/576 - 10s - 17ms/step - loss: -2.1683e-01 - val_loss: -6.5155e-02
+Epoch 8/30
+576/576 - 11s - 18ms/step - loss: -2.2314e-01 - val_loss: -1.0511e-02
+Epoch 9/30
+576/576 - 11s - 19ms/step - loss: -2.4656e-01 - val_loss: -1.3861e-02
+Epoch 10/30
+576/576 - 10s - 18ms/step - loss: -2.6549e-01 - val_loss: 0.0687
+Epoch 11/30
+576/576 - 9s - 15ms/step - loss: -3.0059e-01 - val_loss: 0.1400
+Epoch 12/30
+576/576 - 8s - 15ms/step - loss: -3.2488e-01 - val_loss: 0.1157
+Epoch 13/30
+576/576 - 10s - 17ms/step - loss: -3.3340e-01 - val_loss: 0.0154
+Epoch 14/30
+576/576 - 9s - 15ms/step - loss: -3.7582e-01 - val_loss: 0.2831
+E0000 00:00:1793927582.020374  157136 node_def_util.cc:682] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=metadata:string,default=""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node ParallelMapDatasetV2/_14}}
+[done] prob_bilstm_attn__w6__nll__s2024 | val RMSE=0.258549 test RMSE=0.250153 | best epoch 4/14 | 145s
+===== q14/q15 TRAIN JOB COMPLETE =====
