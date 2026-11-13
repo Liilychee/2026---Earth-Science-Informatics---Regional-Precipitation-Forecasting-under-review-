@@ -1,0 +1,73 @@
+核对：月×时刻气候态 0.2731（.2731），AR(1) 0.2627（.2627），Persistence 0.3282（.3282）
+复现 XGBoost seed 42：0.243750（原稿 0.24375）
+复现 BiLSTM-Attention seed 42：0.242848（原稿 0.242848）
+q18 运行所在 GPU：['NVIDIA GeForce RTX 5090']
+
+===== 五种子均值、技能分与复杂度 =====
+                        rmse_mean  rmse_sd    params  train_s_mean  ss_clim
+BiLSTM-Attention           0.2429   0.0010   45313.0      123.7684   0.1106
+XGBoost                    0.2439   0.0002       NaN        0.4205   0.1067
+BiLSTM-NoAttention         0.2447   0.0012   36993.0      104.8400   0.1040
+BU-LSTM                    0.2470   0.0013   83802.0      172.6182   0.0955
+BU-LSTM-Attention          0.2472   0.0017  243074.0      265.6636   0.0947
+Prob. BiLSTM-Attention     0.2494   0.0011   45442.0      136.4857   0.0868
+Transformer                0.2600   0.0022    8833.0      311.5909   0.0479
+参照：AR(1) 0.2627；月×时刻气候态 0.2731；Persistence 0.3282
+
+===== 主指标（全部样本 RMSE）配对差，负数 = a 更好；Holm 校正（整个预定比较族）=====
+                     a                      b                       group  ref_b   delta     pct    t_lo    t_hi  boot_lo  boot_hi  n_a_better_of_5  p_seed_t  p_seed_holm  p_boot  p_boot_holm                evidence  d_params  train_s_a  train_s_b
+      BiLSTM-Attention     BiLSTM-NoAttention     attention (R3 L822-824) 0.2447 -0.0018 -0.7326 -0.0033 -0.0003  -0.0033  -0.0003                5    0.0288       0.1725  0.0192       0.1344                  strong    8320.0   123.7684   104.8400
+      BiLSTM-Attention                XGBoost                architecture 0.2439 -0.0011 -0.4331 -0.0024  0.0003  -0.0049   0.0030                4    0.0938       0.3465  0.6080       1.0000               weak/none       NaN   123.7684     0.4205
+           Transformer                XGBoost                architecture 0.2439  0.0161  6.5880  0.0131  0.0191   0.0103   0.0224                0    0.0001       0.0012  0.0000       0.0000                  strong       NaN   311.5909     0.4205
+               BU-LSTM                XGBoost                architecture 0.2439  0.0031  1.2505  0.0013  0.0048  -0.0011   0.0077                0    0.0077       0.0612  0.1584       0.7920          medium(seed-t)       NaN   172.6182     0.4205
+     BU-LSTM-Attention                XGBoost                architecture 0.2439  0.0033  1.3474  0.0011  0.0054  -0.0009   0.0079                0    0.0130       0.0913  0.1224       0.7344          medium(seed-t)       NaN   265.6636     0.4205
+Prob. BiLSTM-Attention                XGBoost                architecture 0.2439  0.0054  2.2337  0.0038  0.0071   0.0011   0.0104                0    0.0008       0.0070  0.0148       0.1184                  strong       NaN   136.4857     0.4205
+    BiLSTM-NoAttention                XGBoost                architecture 0.2439  0.0007  0.3017 -0.0010  0.0025  -0.0029   0.0044                1    0.3158       0.6316  0.6680       1.0000               weak/none       NaN   104.8400     0.4205
+     BU-LSTM-Attention                BU-LSTM    attention, probabilistic 0.2470  0.0002  0.0958 -0.0028  0.0033  -0.0004   0.0008                2    0.8416       0.8416  0.4720       1.0000               weak/none  159272.0   265.6636   172.6182
+     BU-LSTM-Attention Prob. BiLSTM-Attention depth 3 vs 1, probabilistic 0.2494 -0.0022 -0.8669 -0.0048  0.0005  -0.0032  -0.0013                5    0.0866       0.3465  0.0000       0.0000 medium(block-bootstrap)  197632.0   265.6636   136.4857
+               XGBoost                  AR(1)                vs reference 0.2627 -0.0187 -7.1343 -0.0190 -0.0184  -0.0245  -0.0135                5    0.0000       0.0000  0.0000       0.0000                  strong       NaN     0.4205        NaN
+      BiLSTM-Attention                  AR(1)                vs reference 0.2627 -0.0198 -7.5366 -0.0210 -0.0186  -0.0238  -0.0162                5    0.0000       0.0000  0.0000       0.0000                  strong       NaN   123.7684        NaN
+    BiLSTM-NoAttention                  AR(1)                vs reference 0.2627 -0.0180 -6.8542 -0.0195 -0.0165  -0.0220  -0.0142                5    0.0000       0.0001  0.0000       0.0000                  strong       NaN   104.8400        NaN
+               BU-LSTM                  AR(1)                vs reference 0.2627 -0.0157 -5.9731 -0.0173 -0.0141  -0.0182  -0.0132                5    0.0000       0.0001  0.0000       0.0000                  strong       NaN   172.6182        NaN
+     BU-LSTM-Attention                  AR(1)                vs reference 0.2627 -0.0155 -5.8830 -0.0176 -0.0133  -0.0181  -0.0129                5    0.0000       0.0004  0.0000       0.0000                  strong       NaN   265.6636        NaN
+Prob. BiLSTM-Attention                  AR(1)                vs reference 0.2627 -0.0133 -5.0600 -0.0147 -0.0119  -0.0158  -0.0107                5    0.0000       0.0002  0.0000       0.0000                  strong       NaN   136.4857        NaN
+           Transformer                  AR(1)                vs reference 0.2627 -0.0027 -1.0163 -0.0054  0.0001  -0.0065   0.0017                4    0.0548       0.2739  0.2404       0.9616               weak/none       NaN   311.5909        NaN
+
+===== 子集与 CRPS（只描述，不做多重校正）=====
+                     a                      b metric subset  ref_b   delta      pct    t_lo    t_hi  boot_lo  boot_hi  n_a_better_of_5                evidence
+      BiLSTM-Attention     BiLSTM-NoAttention   rmse    wet 0.4893 -0.0043  -0.8863 -0.0101  0.0014  -0.0078  -0.0010                4 medium(block-bootstrap)
+      BiLSTM-Attention     BiLSTM-NoAttention   rmse   tail 0.8790 -0.0058  -0.6556 -0.0174  0.0059  -0.0122   0.0004                4               weak/none
+      BiLSTM-Attention                XGBoost   rmse    wet 0.4735  0.0115   2.4236  0.0077  0.0152   0.0027   0.0208                0                  strong
+      BiLSTM-Attention                XGBoost   rmse   tail 0.8428  0.0304   3.6068  0.0253  0.0355   0.0145   0.0469                0                  strong
+           Transformer                XGBoost   rmse    wet 0.4735  0.0548  11.5759  0.0412  0.0685   0.0427   0.0680                0                  strong
+           Transformer                XGBoost   rmse   tail 0.8428  0.1062  12.6064  0.0837  0.1288   0.0845   0.1299                0                  strong
+               BU-LSTM                XGBoost   rmse    wet 0.4735  0.0231   4.8751  0.0134  0.0327   0.0137   0.0336                0                  strong
+               BU-LSTM                XGBoost   rmse   tail 0.8428  0.0542   6.4352  0.0379  0.0706   0.0369   0.0731                0                  strong
+     BU-LSTM-Attention                XGBoost   rmse    wet 0.4735  0.0226   4.7740  0.0124  0.0328   0.0133   0.0330                0                  strong
+     BU-LSTM-Attention                XGBoost   rmse   tail 0.8428  0.0537   6.3687  0.0342  0.0732   0.0368   0.0725                0                  strong
+Prob. BiLSTM-Attention                XGBoost   rmse    wet 0.4735  0.0281   5.9342  0.0208  0.0354   0.0186   0.0392                0                  strong
+Prob. BiLSTM-Attention                XGBoost   rmse   tail 0.8428  0.0635   7.5332  0.0531  0.0739   0.0461   0.0836                0                  strong
+    BiLSTM-NoAttention                XGBoost   rmse    wet 0.4735  0.0158   3.3395  0.0074  0.0243   0.0079   0.0245                0                  strong
+    BiLSTM-NoAttention                XGBoost   rmse   tail 0.8428  0.0362   4.2905  0.0219  0.0504   0.0211   0.0519                0                  strong
+     BU-LSTM-Attention                BU-LSTM   rmse    wet 0.4966 -0.0005  -0.0965 -0.0158  0.0148  -0.0021   0.0011                3               weak/none
+     BU-LSTM-Attention                BU-LSTM   rmse   tail 0.8970 -0.0006  -0.0624 -0.0295  0.0284  -0.0037   0.0023                3               weak/none
+     BU-LSTM-Attention                BU-LSTM   crps    all 0.0943  0.0007   0.7558 -0.0005  0.0020   0.0003   0.0011                2               weak/none
+     BU-LSTM-Attention Prob. BiLSTM-Attention   rmse    wet 0.5016 -0.0055  -1.0952 -0.0210  0.0100  -0.0081  -0.0034                3               weak/none
+     BU-LSTM-Attention Prob. BiLSTM-Attention   rmse   tail 0.9063 -0.0098  -1.0829 -0.0378  0.0182  -0.0146  -0.0059                3               weak/none
+     BU-LSTM-Attention Prob. BiLSTM-Attention   crps    all 0.0961 -0.0011  -1.1699 -0.0044  0.0022  -0.0017  -0.0006                3               weak/none
+               XGBoost                  AR(1)   rmse    wet 0.5313 -0.0578 -10.8786 -0.0591 -0.0565  -0.0697  -0.0466                5                  strong
+               XGBoost                  AR(1)   rmse   tail 0.9525 -0.1097 -11.5204 -0.1123 -0.1072  -0.1312  -0.0895                5                  strong
+      BiLSTM-Attention                  AR(1)   rmse    wet 0.5313 -0.0463  -8.7187 -0.0497 -0.0430  -0.0539  -0.0392                5                  strong
+      BiLSTM-Attention                  AR(1)   rmse   tail 0.9525 -0.0793  -8.3291 -0.0835 -0.0752  -0.0925  -0.0667                5                  strong
+    BiLSTM-NoAttention                  AR(1)   rmse    wet 0.5313 -0.0420  -7.9024 -0.0505 -0.0335  -0.0500  -0.0339                5                  strong
+    BiLSTM-NoAttention                  AR(1)   rmse   tail 0.9525 -0.0736  -7.7242 -0.0884 -0.0588  -0.0881  -0.0589                5                  strong
+               BU-LSTM                  AR(1)   rmse    wet 0.5313 -0.0347  -6.5338 -0.0433 -0.0262  -0.0396  -0.0295                5                  strong
+               BU-LSTM                  AR(1)   rmse   tail 0.9525 -0.0555  -5.8266 -0.0700 -0.0410  -0.0641  -0.0465                5                  strong
+     BU-LSTM-Attention                  AR(1)   rmse    wet 0.5313 -0.0352  -6.6240 -0.0458 -0.0246  -0.0406  -0.0296                5                  strong
+     BU-LSTM-Attention                  AR(1)   rmse   tail 0.9525 -0.0561  -5.8854 -0.0765 -0.0356  -0.0653  -0.0463                5                  strong
+Prob. BiLSTM-Attention                  AR(1)   rmse    wet 0.5313 -0.0297  -5.5900 -0.0374 -0.0220  -0.0346  -0.0240                5                  strong
+Prob. BiLSTM-Attention                  AR(1)   rmse   tail 0.9525 -0.0462  -4.8550 -0.0576 -0.0349  -0.0548  -0.0362                5                  strong
+           Transformer                  AR(1)   rmse    wet 0.5313 -0.0030  -0.5620 -0.0169  0.0109  -0.0111   0.0066                3               weak/none
+           Transformer                  AR(1)   rmse   tail 0.9525 -0.0035  -0.3663 -0.0275  0.0205  -0.0187   0.0140                3               weak/none
+
+输出：/root/autodl-tmp/results/metrics/q18_model_summary.csv、q18_pairwise.csv

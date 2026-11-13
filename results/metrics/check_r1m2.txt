@@ -1,0 +1,1059 @@
+
+====================================================================================================
+1. q07 / q07b baselines
+====================================================================================================
+
+----- q07 CSV: files -----
+2026-11-03 20:33         2180  6fbfa2368fc78e9c4f73a222488c1447  results/metrics/q07_baseline_metrics.csv
+2026-11-03 20:33         3607  a28e1bff68ac5803242b4f6f107f05a9  results/metrics/q07_model_minus_reference.csv
+2026-11-03 20:33         5352  c69ee913f0c9d7ffe51d4eb38ad2fddf  results/metrics/q07_season_skill.csv
+2026-11-05 19:32         3537  8aa5df04c68b08919ba44df6c070d2c1  results/metrics/q07b_linear_baselines.csv
+2026-11-05 19:33         6317  5086aacb882aa9554d027afe69920454  results/metrics/q07b_model_minus_linear.csv
+
+----- q07 scripts -----
+2026-11-03 20:16         9396  4082eae6470b2651399760ccded5e2e6  code/analysis_q05c_damped_persistence.py
+2026-11-03 20:33         9198  0a4a9b06ce40e4ec29c04667ae27e526  code/analysis_q07_baselines.py
+2026-11-05 19:31         8738  dea992c1f1dd106be9d7834959072303  code/analysis_q07b_linear_baselines.py
+2026-11-02 17:22        10185  c81942e445db7253e84c2516d24b6f80  code/analysis_revision_metrics.py
+2026-11-03 20:38         3956  1c83c6a034f4516acd993db3302051de  code/plot_q07_forest.py
+
+----- q07 logs -----
+2026-11-03 20:16         5645  df22c7e7c930483d42dce28a4eca91c8  results/metrics/q05c_output.txt
+2026-11-03 20:33         6846  66e6b6eee375e1b467ba2e0691b8c50d  results/metrics/q07_output.txt
+2026-11-05 19:33         9090  313c1cfc017201e1ed74204b299032e9  results/metrics/q07b_output.txt
+  == results/metrics/q07_baseline_metrics.csv  shape (15, 7)
+                            Forecast      RMSE       MAE        R2  Skill_vs_global_clim  Skill_vs_best_clim  Skill_vs_month_x_hour
+0           Climatology: global mean  0.273693  0.151711 -0.001068              0.000000           -0.002696              -0.002328
+1        Climatology: diurnal (hour)  0.273760  0.151445 -0.001560             -0.000245           -0.002942              -0.002574
+2   Climatology: seasonal (DJF..SON)  0.273018  0.152071  0.003858              0.002463           -0.000226               0.000141
+3               Climatology: monthly  0.272957  0.152051  0.004308              0.002689            0.000000               0.000367
+4          Climatology: month x hour  0.273057  0.151710  0.003577              0.002323           -0.000367               0.000000
+5                        Persistence  0.328187  0.140038 -0.439397             -0.199108           -0.202341              -0.201900
+6           AR(1) damped persistence  0.262659  0.139061  0.078021              0.040315            0.037728               0.038081
+7                   Linear on lsp(t)  0.263293  0.140922  0.073565              0.037999            0.035405               0.035759
+8                 Linear on mxtpr(t)  0.264327  0.140182  0.066272              0.034220            0.031615               0.031971
+9                            XGBoost  0.243750  0.118831  0.205990              0.109403            0.107002               0.107330
+10                       Transformer  0.259051  0.120851  0.103175              0.053497            0.050945               0.051293
+11                           BU-LSTM  0.248730  0.116981  0.173214              0.091208            0.088757               0.089092
+12                  BiLSTM-Attention  0.242848  0.115575  0.211855              0.112698            0.110306               0.110633
+13      BU-LSTM-Attention (proposed)  0.246445  0.117440  0.188336              0.099557            0.097129               0.097460
+14    Probabilistic BiLSTM-Attention  0.248129  0.116152  0.177204              0.093403            0.090959               0.091293
+  == results/metrics/q07b_linear_baselines.csv  shape (10, 18)
+                           Method      RMSE       MAE      Bias        R2  Skill_vs_clim_MH  RMSE_wet>=0.1  RMSE_>=Q95  Pred_max  Std_ratio   AUC_Q95   POD_Q95   FAR_Q95   CSI_Q95   AUC_1.0   POD_1.0   FAR_1.0   CSI_1.0
+0             L1 ridge, 42 inputs  0.249733  0.133129 -0.005033  0.166533          0.085419       0.492486    0.888752  0.925878   0.402148  0.847743  0.676471  0.785619  0.194444  0.869605  0.230769  0.902778  0.073427
+1    L2 ridge, origin 7 variables  0.253177  0.135112 -0.005530  0.143382          0.072804       0.501780    0.908496  0.762377   0.368239  0.827591  0.617647  0.823952  0.158747  0.835582  0.615385  0.928205  0.068712
+2             L3 OLS tp(t)+lsp(t)  0.262894  0.139076 -0.006291  0.076366          0.037218       0.531436    0.952854  0.932116   0.284406  0.745323  0.500000  0.820242  0.152369  0.728123  0.241758  0.925424  0.060440
+3                         XGBoost  0.243750  0.118831 -0.004303  0.205990          0.107330       0.472573    0.841656  1.016636   0.501910  0.847754  0.399160  0.732394  0.190763  0.867981  0.296703  0.858639  0.105882
+4                     Transformer  0.259051  0.120851 -0.033486  0.103175          0.051293       0.536534    0.960965  0.625396   0.269784  0.798246  0.285714  0.800000  0.133333  0.821640  0.263736  0.916376  0.067797
+5                         BU-LSTM  0.248730  0.116981 -0.023770  0.173214          0.089092       0.507111    0.914587  0.431541   0.335047  0.832916  0.525210  0.774368  0.187406  0.848044  0.461538  0.903226  0.086957
+6                BiLSTM-Attention  0.242848  0.115575 -0.017946  0.211855          0.110633       0.488717    0.878432  0.576580   0.408183  0.835016  0.441176  0.762980  0.182292  0.860841  0.549451  0.887133  0.103306
+7               BU-LSTM-Attention  0.246445  0.117440 -0.015967  0.188336          0.097460       0.492330    0.885893  0.486729   0.412912  0.838030  0.617647  0.790598  0.185372  0.853136  0.615385  0.909385  0.085758
+8  Probabilistic BiLSTM-Attention  0.248129  0.116152 -0.020303  0.177204          0.091293       0.498984    0.897982  0.489634   0.394808  0.832059  0.529412  0.778169  0.185294  0.845680  0.604396  0.912837  0.082459
+9                     Persistence  0.328187  0.140038 -0.000011 -0.439397         -0.201900       0.582007    0.904787  2.986546   1.000014  0.747022  0.491597  0.813990  0.156000  0.731713  0.307692  0.922652  0.065882
+  == results/metrics/q07_model_minus_reference.csv  shape (24, 8)
+                   Reference                           Model  RMSE_model  RMSE_reference      Diff    CI_low   CI_high  Significant
+0       Climatology: monthly                         XGBoost    0.243750        0.272957 -0.029207 -0.036858 -0.022112         True
+1       Climatology: monthly                     Transformer    0.259051        0.272957 -0.013906 -0.016827 -0.011234         True
+2       Climatology: monthly                         BU-LSTM    0.248730        0.272957 -0.024227 -0.028017 -0.020421         True
+3       Climatology: monthly                BiLSTM-Attention    0.242848        0.272957 -0.030109 -0.035111 -0.025066         True
+4       Climatology: monthly    BU-LSTM-Attention (proposed)    0.246445        0.272957 -0.026512 -0.031403 -0.021655         True
+5       Climatology: monthly  Probabilistic BiLSTM-Attention    0.248129        0.272957 -0.024828 -0.029142 -0.020667         True
+6   AR(1) damped persistence                         XGBoost    0.243750        0.262659 -0.018909 -0.024732 -0.013107         True
+7   AR(1) damped persistence                     Transformer    0.259051        0.262659 -0.003608 -0.008219  0.001209        False
+8   AR(1) damped persistence                         BU-LSTM    0.248730        0.262659 -0.013929 -0.016401 -0.011577         True
+9   AR(1) damped persistence                BiLSTM-Attention    0.242848        0.262659 -0.019811 -0.023259 -0.016218         True
+10  AR(1) damped persistence    BU-LSTM-Attention (proposed)    0.246445        0.262659 -0.016214 -0.018720 -0.013636         True
+11  AR(1) damped persistence  Probabilistic BiLSTM-Attention    0.248129        0.262659 -0.014530 -0.017692 -0.011328         True
+12          Linear on lsp(t)                         XGBoost    0.243750        0.263293 -0.019543 -0.025454 -0.013944         True
+13          Linear on lsp(t)                     Transformer    0.259051        0.263293 -0.004242 -0.008740  0.000329        False
+14          Linear on lsp(t)                         BU-LSTM    0.248730        0.263293 -0.014563 -0.016824 -0.012298         True
+15          Linear on lsp(t)                BiLSTM-Attention    0.242848        0.263293 -0.020445 -0.023936 -0.016957         True
+16          Linear on lsp(t)    BU-LSTM-Attention (proposed)    0.246445        0.263293 -0.016848 -0.019408 -0.014300         True
+17          Linear on lsp(t)  Probabilistic BiLSTM-Attention    0.248129        0.263293 -0.015164 -0.018343 -0.012141         True
+18        Linear on mxtpr(t)                         XGBoost    0.243750        0.264327 -0.020577 -0.026417 -0.014752         True
+19        Linear on mxtpr(t)                     Transformer    0.259051        0.264327 -0.005276 -0.009588 -0.000725         True
+20        Linear on mxtpr(t)                         BU-LSTM    0.248730        0.264327 -0.015597 -0.017943 -0.013241         True
+21        Linear on mxtpr(t)                BiLSTM-Attention    0.242848        0.264327 -0.021479 -0.024987 -0.017707         True
+22        Linear on mxtpr(t)    BU-LSTM-Attention (proposed)    0.246445        0.264327 -0.017882 -0.020508 -0.015181         True
+23        Linear on mxtpr(t)  Probabilistic BiLSTM-Attention    0.248129        0.264327 -0.016198 -0.019254 -0.012892         True
+  [q07_model_minus_reference.csv] rows with CI (CI_low, CI_high) excluding 0: 22 of 24
+                   Reference                           Model  RMSE_model  RMSE_reference      Diff    CI_low   CI_high  Significant
+0       Climatology: monthly                         XGBoost    0.243750        0.272957 -0.029207 -0.036858 -0.022112         True
+1       Climatology: monthly                     Transformer    0.259051        0.272957 -0.013906 -0.016827 -0.011234         True
+2       Climatology: monthly                         BU-LSTM    0.248730        0.272957 -0.024227 -0.028017 -0.020421         True
+3       Climatology: monthly                BiLSTM-Attention    0.242848        0.272957 -0.030109 -0.035111 -0.025066         True
+4       Climatology: monthly    BU-LSTM-Attention (proposed)    0.246445        0.272957 -0.026512 -0.031403 -0.021655         True
+5       Climatology: monthly  Probabilistic BiLSTM-Attention    0.248129        0.272957 -0.024828 -0.029142 -0.020667         True
+6   AR(1) damped persistence                         XGBoost    0.243750        0.262659 -0.018909 -0.024732 -0.013107         True
+8   AR(1) damped persistence                         BU-LSTM    0.248730        0.262659 -0.013929 -0.016401 -0.011577         True
+9   AR(1) damped persistence                BiLSTM-Attention    0.242848        0.262659 -0.019811 -0.023259 -0.016218         True
+10  AR(1) damped persistence    BU-LSTM-Attention (proposed)    0.246445        0.262659 -0.016214 -0.018720 -0.013636         True
+11  AR(1) damped persistence  Probabilistic BiLSTM-Attention    0.248129        0.262659 -0.014530 -0.017692 -0.011328         True
+12          Linear on lsp(t)                         XGBoost    0.243750        0.263293 -0.019543 -0.025454 -0.013944         True
+14          Linear on lsp(t)                         BU-LSTM    0.248730        0.263293 -0.014563 -0.016824 -0.012298         True
+15          Linear on lsp(t)                BiLSTM-Attention    0.242848        0.263293 -0.020445 -0.023936 -0.016957         True
+16          Linear on lsp(t)    BU-LSTM-Attention (proposed)    0.246445        0.263293 -0.016848 -0.019408 -0.014300         True
+17          Linear on lsp(t)  Probabilistic BiLSTM-Attention    0.248129        0.263293 -0.015164 -0.018343 -0.012141         True
+18        Linear on mxtpr(t)                         XGBoost    0.243750        0.264327 -0.020577 -0.026417 -0.014752         True
+19        Linear on mxtpr(t)                     Transformer    0.259051        0.264327 -0.005276 -0.009588 -0.000725         True
+20        Linear on mxtpr(t)                         BU-LSTM    0.248730        0.264327 -0.015597 -0.017943 -0.013241         True
+21        Linear on mxtpr(t)                BiLSTM-Attention    0.242848        0.264327 -0.021479 -0.024987 -0.017707         True
+22        Linear on mxtpr(t)    BU-LSTM-Attention (proposed)    0.246445        0.264327 -0.017882 -0.020508 -0.015181         True
+23        Linear on mxtpr(t)  Probabilistic BiLSTM-Attention    0.248129        0.264327 -0.016198 -0.019254 -0.012892         True
+  == results/metrics/q07b_model_minus_linear.csv  shape (54, 7)
+                             Model                     Reference   Metric  Model_minus_ref    CI_low   CI_high  CI_excludes_0
+0                          XGBoost           L1 ridge, 42 inputs     RMSE        -0.005983 -0.010919 -0.001137           True
+1                          XGBoost           L1 ridge, 42 inputs  AUC_Q95         0.000011 -0.018459  0.018364          False
+2                          XGBoost           L1 ridge, 42 inputs  AUC_1.0        -0.001625 -0.027325  0.020465          False
+3                      Transformer           L1 ridge, 42 inputs     RMSE         0.009318  0.004901  0.014022           True
+4                      Transformer           L1 ridge, 42 inputs  AUC_Q95        -0.049497 -0.072384 -0.026314           True
+5                      Transformer           L1 ridge, 42 inputs  AUC_1.0        -0.047966 -0.081169 -0.017536           True
+6                          BU-LSTM           L1 ridge, 42 inputs     RMSE        -0.001003 -0.003353  0.001353          False
+7                          BU-LSTM           L1 ridge, 42 inputs  AUC_Q95        -0.014827 -0.031217  0.000383          False
+8                          BU-LSTM           L1 ridge, 42 inputs  AUC_1.0        -0.021561 -0.044687 -0.001545           True
+9                 BiLSTM-Attention           L1 ridge, 42 inputs     RMSE        -0.006885 -0.009721 -0.004197           True
+10                BiLSTM-Attention           L1 ridge, 42 inputs  AUC_Q95        -0.012727 -0.034158  0.006220          False
+11                BiLSTM-Attention           L1 ridge, 42 inputs  AUC_1.0        -0.008764 -0.042880  0.017123          False
+12               BU-LSTM-Attention           L1 ridge, 42 inputs     RMSE        -0.003288 -0.005443 -0.001244           True
+13               BU-LSTM-Attention           L1 ridge, 42 inputs  AUC_Q95        -0.009712 -0.024058  0.003528          False
+14               BU-LSTM-Attention           L1 ridge, 42 inputs  AUC_1.0        -0.016469 -0.036287  0.001554          False
+15  Probabilistic BiLSTM-Attention           L1 ridge, 42 inputs     RMSE        -0.001604 -0.004303  0.001010          False
+16  Probabilistic BiLSTM-Attention           L1 ridge, 42 inputs  AUC_Q95        -0.015684 -0.030612 -0.001939           True
+17  Probabilistic BiLSTM-Attention           L1 ridge, 42 inputs  AUC_1.0        -0.023926 -0.047546 -0.003812           True
+18                         XGBoost  L2 ridge, origin 7 variables     RMSE        -0.009428 -0.014880 -0.004234           True
+19                         XGBoost  L2 ridge, origin 7 variables  AUC_Q95         0.020163  0.004043  0.036758           True
+20                         XGBoost  L2 ridge, origin 7 variables  AUC_1.0         0.032399  0.008853  0.056082           True
+21                     Transformer  L2 ridge, origin 7 variables     RMSE         0.005874  0.001721  0.010275           True
+22                     Transformer  L2 ridge, origin 7 variables  AUC_Q95        -0.029346 -0.049366 -0.008722           True
+23                     Transformer  L2 ridge, origin 7 variables  AUC_1.0        -0.013942 -0.045373  0.018431          False
+24                         BU-LSTM  L2 ridge, origin 7 variables     RMSE        -0.004448 -0.006417 -0.002516           True
+25                         BU-LSTM  L2 ridge, origin 7 variables  AUC_Q95         0.005324 -0.006380  0.016776          False
+26                         BU-LSTM  L2 ridge, origin 7 variables  AUC_1.0         0.012463 -0.004742  0.028579          False
+27                BiLSTM-Attention  L2 ridge, origin 7 variables     RMSE        -0.010329 -0.013224 -0.007414           True
+28                BiLSTM-Attention  L2 ridge, origin 7 variables  AUC_Q95         0.007425 -0.011111  0.024720          False
+29                BiLSTM-Attention  L2 ridge, origin 7 variables  AUC_1.0         0.025259 -0.004675  0.050752          False
+30               BU-LSTM-Attention  L2 ridge, origin 7 variables     RMSE        -0.006733 -0.008449 -0.004997           True
+31               BU-LSTM-Attention  L2 ridge, origin 7 variables  AUC_Q95         0.010439  0.000969  0.020029           True
+32               BU-LSTM-Attention  L2 ridge, origin 7 variables  AUC_1.0         0.017554  0.002849  0.031562           True
+33  Probabilistic BiLSTM-Attention  L2 ridge, origin 7 variables     RMSE        -0.005049 -0.007751 -0.002565           True
+34  Probabilistic BiLSTM-Attention  L2 ridge, origin 7 variables  AUC_Q95         0.004467 -0.006868  0.016421          False
+35  Probabilistic BiLSTM-Attention  L2 ridge, origin 7 variables  AUC_1.0         0.010098 -0.008405  0.027501          False
+36                         XGBoost           L3 OLS tp(t)+lsp(t)     RMSE        -0.019145 -0.025013 -0.013346           True
+37                         XGBoost           L3 OLS tp(t)+lsp(t)  AUC_Q95         0.102431  0.075308  0.131611           True
+38                         XGBoost           L3 OLS tp(t)+lsp(t)  AUC_1.0         0.139857  0.099863  0.183219           True
+39                     Transformer           L3 OLS tp(t)+lsp(t)     RMSE        -0.003843 -0.008437  0.000898          False
+40                     Transformer           L3 OLS tp(t)+lsp(t)  AUC_Q95         0.052923  0.019237  0.089898           True
+41                     Transformer           L3 OLS tp(t)+lsp(t)  AUC_1.0         0.093517  0.042971  0.149504           True
+42                         BU-LSTM           L3 OLS tp(t)+lsp(t)     RMSE        -0.014165 -0.016615 -0.011724           True
+43                         BU-LSTM           L3 OLS tp(t)+lsp(t)  AUC_Q95         0.087593  0.063267  0.112828           True
+44                         BU-LSTM           L3 OLS tp(t)+lsp(t)  AUC_1.0         0.119921  0.087748  0.157090           True
+45                BiLSTM-Attention           L3 OLS tp(t)+lsp(t)     RMSE        -0.020046 -0.023541 -0.016450           True
+46                BiLSTM-Attention           L3 OLS tp(t)+lsp(t)  AUC_Q95         0.089694  0.060353  0.119194           True
+47                BiLSTM-Attention           L3 OLS tp(t)+lsp(t)  AUC_1.0         0.132718  0.092589  0.176929           True
+48               BU-LSTM-Attention           L3 OLS tp(t)+lsp(t)     RMSE        -0.016450 -0.018961 -0.013873           True
+49               BU-LSTM-Attention           L3 OLS tp(t)+lsp(t)  AUC_Q95         0.092708  0.068530  0.118016           True
+50               BU-LSTM-Attention           L3 OLS tp(t)+lsp(t)  AUC_1.0         0.125013  0.089781  0.165599           True
+51  Probabilistic BiLSTM-Attention           L3 OLS tp(t)+lsp(t)     RMSE        -0.014765 -0.017910 -0.011556           True
+52  Probabilistic BiLSTM-Attention           L3 OLS tp(t)+lsp(t)  AUC_Q95         0.086736  0.060460  0.113688           True
+53  Probabilistic BiLSTM-Attention           L3 OLS tp(t)+lsp(t)  AUC_1.0         0.117556  0.078999  0.161362           True
+  [q07b_model_minus_linear.csv] rows with CI (CI_low, CI_high) excluding 0: 37 of 54
+                             Model                     Reference   Metric  Model_minus_ref    CI_low   CI_high  CI_excludes_0
+0                          XGBoost           L1 ridge, 42 inputs     RMSE        -0.005983 -0.010919 -0.001137           True
+3                      Transformer           L1 ridge, 42 inputs     RMSE         0.009318  0.004901  0.014022           True
+4                      Transformer           L1 ridge, 42 inputs  AUC_Q95        -0.049497 -0.072384 -0.026314           True
+5                      Transformer           L1 ridge, 42 inputs  AUC_1.0        -0.047966 -0.081169 -0.017536           True
+8                          BU-LSTM           L1 ridge, 42 inputs  AUC_1.0        -0.021561 -0.044687 -0.001545           True
+9                 BiLSTM-Attention           L1 ridge, 42 inputs     RMSE        -0.006885 -0.009721 -0.004197           True
+12               BU-LSTM-Attention           L1 ridge, 42 inputs     RMSE        -0.003288 -0.005443 -0.001244           True
+16  Probabilistic BiLSTM-Attention           L1 ridge, 42 inputs  AUC_Q95        -0.015684 -0.030612 -0.001939           True
+17  Probabilistic BiLSTM-Attention           L1 ridge, 42 inputs  AUC_1.0        -0.023926 -0.047546 -0.003812           True
+18                         XGBoost  L2 ridge, origin 7 variables     RMSE        -0.009428 -0.014880 -0.004234           True
+19                         XGBoost  L2 ridge, origin 7 variables  AUC_Q95         0.020163  0.004043  0.036758           True
+20                         XGBoost  L2 ridge, origin 7 variables  AUC_1.0         0.032399  0.008853  0.056082           True
+21                     Transformer  L2 ridge, origin 7 variables     RMSE         0.005874  0.001721  0.010275           True
+22                     Transformer  L2 ridge, origin 7 variables  AUC_Q95        -0.029346 -0.049366 -0.008722           True
+24                         BU-LSTM  L2 ridge, origin 7 variables     RMSE        -0.004448 -0.006417 -0.002516           True
+27                BiLSTM-Attention  L2 ridge, origin 7 variables     RMSE        -0.010329 -0.013224 -0.007414           True
+30               BU-LSTM-Attention  L2 ridge, origin 7 variables     RMSE        -0.006733 -0.008449 -0.004997           True
+31               BU-LSTM-Attention  L2 ridge, origin 7 variables  AUC_Q95         0.010439  0.000969  0.020029           True
+32               BU-LSTM-Attention  L2 ridge, origin 7 variables  AUC_1.0         0.017554  0.002849  0.031562           True
+33  Probabilistic BiLSTM-Attention  L2 ridge, origin 7 variables     RMSE        -0.005049 -0.007751 -0.002565           True
+36                         XGBoost           L3 OLS tp(t)+lsp(t)     RMSE        -0.019145 -0.025013 -0.013346           True
+37                         XGBoost           L3 OLS tp(t)+lsp(t)  AUC_Q95         0.102431  0.075308  0.131611           True
+38                         XGBoost           L3 OLS tp(t)+lsp(t)  AUC_1.0         0.139857  0.099863  0.183219           True
+40                     Transformer           L3 OLS tp(t)+lsp(t)  AUC_Q95         0.052923  0.019237  0.089898           True
+41                     Transformer           L3 OLS tp(t)+lsp(t)  AUC_1.0         0.093517  0.042971  0.149504           True
+42                         BU-LSTM           L3 OLS tp(t)+lsp(t)     RMSE        -0.014165 -0.016615 -0.011724           True
+43                         BU-LSTM           L3 OLS tp(t)+lsp(t)  AUC_Q95         0.087593  0.063267  0.112828           True
+44                         BU-LSTM           L3 OLS tp(t)+lsp(t)  AUC_1.0         0.119921  0.087748  0.157090           True
+45                BiLSTM-Attention           L3 OLS tp(t)+lsp(t)     RMSE        -0.020046 -0.023541 -0.016450           True
+46                BiLSTM-Attention           L3 OLS tp(t)+lsp(t)  AUC_Q95         0.089694  0.060353  0.119194           True
+47                BiLSTM-Attention           L3 OLS tp(t)+lsp(t)  AUC_1.0         0.132718  0.092589  0.176929           True
+48               BU-LSTM-Attention           L3 OLS tp(t)+lsp(t)     RMSE        -0.016450 -0.018961 -0.013873           True
+49               BU-LSTM-Attention           L3 OLS tp(t)+lsp(t)  AUC_Q95         0.092708  0.068530  0.118016           True
+50               BU-LSTM-Attention           L3 OLS tp(t)+lsp(t)  AUC_1.0         0.125013  0.089781  0.165599           True
+51  Probabilistic BiLSTM-Attention           L3 OLS tp(t)+lsp(t)     RMSE        -0.014765 -0.017910 -0.011556           True
+52  Probabilistic BiLSTM-Attention           L3 OLS tp(t)+lsp(t)  AUC_Q95         0.086736  0.060460  0.113688           True
+53  Probabilistic BiLSTM-Attention           L3 OLS tp(t)+lsp(t)  AUC_1.0         0.117556  0.078999  0.161362           True
+  [grep 'alpha|Ridge|RidgeCV|GridSearch|cv=|TimeSeriesSplit|block|n_?boot|reps|seed|final_all_seed|_preds\\.csv|mean\\(axis|seed[- ]avera|ensemble'] code/analysis_q05c_damped_persistence.py: 16 lines
+       8: # 1.0 mm/h; and paired circular block bootstrap (block 28, 2,000 reps, seed 42) of RMSE(model) - RMSE(baseline)
+      23:                 if os.path.exists(os.path.join(d, "xgboost_preds.csv")))
+      28:     "Persistence": "persistence_preds.csv",
+      29:     "XGBoost": "xgboost_preds.csv",
+      30:     "Transformer": "transformer_preds.csv",
+      31:     "BU-LSTM": "bulstm_preds.csv",
+      32:     "BiLSTM-Attention": "bilstm_attention_preds.csv",
+      33:     "BU-LSTM-Attention (proposed)": "proposed_model_preds.csv",
+      34:     "Probabilistic BiLSTM-Attention": "prob_bilstm_attention_preds.csv",
+      36: BLOCK, NBOOT, SEED = 28, 2000, 42
+     168: # ---- B. paired block bootstrap of RMSE(model) - RMSE(baseline) ----
+     169: rng = np.random.default_rng(SEED)
+     170: nb = int(np.ceil(N / BLOCK))
+     171: IDX = [((rng.integers(0, N, nb)[:, None] + np.arange(BLOCK)[None, :]) % N).ravel()[:N] for _ in range(NBOOT)]
+     175:     d = np.empty(NBOOT)
+     191: print("\n=== B. RMSE(model) - RMSE(baseline), paired block bootstrap; negative = model better ===")
+  [grep 'alpha|Ridge|RidgeCV|GridSearch|cv=|TimeSeriesSplit|block|n_?boot|reps|seed|final_all_seed|_preds\\.csv|mean\\(axis|seed[- ]avera|ensemble'] code/analysis_q07_baselines.py: 15 lines
+      14: # the best climatology; paired circular block bootstrap (block 28, 2,000 reps, seed 42) of
+      31:                 if os.path.exists(os.path.join(d, "xgboost_preds.csv")))
+      40:     "XGBoost": "xgboost_preds.csv",
+      41:     "Transformer": "transformer_preds.csv",
+      42:     "BU-LSTM": "bulstm_preds.csv",
+      43:     "BiLSTM-Attention": "bilstm_attention_preds.csv",
+      44:     "BU-LSTM-Attention (proposed)": "proposed_model_preds.csv",
+      45:     "Probabilistic BiLSTM-Attention": "prob_bilstm_attention_preds.csv",
+      47: WINDOW, BLOCK, NBOOT, SEED = 6, 28, 2000, 42
+      77: pers = pd.read_csv(os.path.join(PRED_DIR, "persistence_preds.csv"), parse_dates=["valid_time"])
+     145: # ---------- B. paired block bootstrap: model - reference ----------
+     146: rng = np.random.default_rng(SEED)
+     147: nb = int(np.ceil(N / BLOCK))
+     148: IDX = [((rng.integers(0, N, nb)[:, None] + np.arange(BLOCK)[None, :]) % N).ravel()[:N] for _ in range(NBOOT)]
+     164: print("\n=== B. RMSE(model) - RMSE(reference); paired block bootstrap; negative = model better ===")
+  [grep 'alpha|Ridge|RidgeCV|GridSearch|cv=|TimeSeriesSplit|block|n_?boot|reps|seed|final_all_seed|_preds\\.csv|mean\\(axis|seed[- ]avera|ensemble'] code/analysis_q07b_linear_baselines.py: 23 lines
+       5: #   L1 ridge on all 42 model inputs (6 snapshots x 7 variables, train-only standardisation)   -> how much do non-linear models add?
+       6: #   L2 ridge on the 7 variables at the forecast origin only (last snapshot)
+       8: # Ridge strength chosen on VALIDATION from [0.1, 1, 10, 100, 1000, 10000]; nothing is fitted or selected on test.
+      11: # paired block bootstrap (28, 2,000, seed 42): model minus linear reference for the six saved models (RMSE all, AUC Q95, AUC 1.0).
+      16: # Optional env: NBOOT (default 2000)
+      22: from sklearn.linear_model import Ridge, LinearRegression
+      25: W, BLOCK, BSEED = 6, 28, 42
+      26: NBOOT = int(os.environ.get("NBOOT", 2000))
+      28: ALPHAS = [0.1, 1, 10, 100, 1000, 10000]
+      30: PRED_DIR = next(d for d in (os.path.join(ROOT, "predictions"), ROOT) if os.path.exists(os.path.join(d, "xgboost_preds.csv")))
+      34: MODELS = {"XGBoost": "xgboost_preds.csv", "Transformer": "transformer_preds.csv", "BU-LSTM": "bulstm_preds.csv",
+      35:           "BiLSTM-Attention": "bilstm_attention_preds.csv", "BU-LSTM-Attention": "proposed_model_preds.csv",
+      36:           "Probabilistic BiLSTM-Attention": "prob_bilstm_attention_preds.csv"}
+      71: def fit_ridge(key):
+      73:     for al in ALPHAS:
+      74:         m = Ridge(alpha=al).fit(tr[key], tr["y"])
+      77:     print(f"  ridge on {key}: alpha {best[1]} (validation RMSE {best[0]:.4f})")
+      86: v1, t1, al1 = fit_ridge("X42"); LIN["L1 ridge, 42 inputs"] = (v1, t1)
+      87: v2, t2, al2 = fit_ridge("X7"); LIN["L2 ridge, origin 7 variables"] = (v2, t2)
+     133: rng = np.random.default_rng(BSEED)
+     134: st = rng.integers(0, N, size=(NBOOT, int(np.ceil(N / BLOCK))))
+     135: IDX = ((st[:, :, None] + np.arange(BLOCK)[None, None, :]) % N).reshape(NBOOT, -1)[:, :N]
+     158: print(f"\n===== model minus linear reference (RMSE: negative = model better; AUC: positive = model better); block {BLOCK}, {NBOOT} reps =====")
+  [grep 'alpha|Ridge|RidgeCV|GridSearch|cv=|TimeSeriesSplit|block|n_?boot|reps|seed|final_all_seed|_preds\\.csv|mean\\(axis|seed[- ]avera|ensemble'] code/analysis_revision_metrics.py: 9 lines
+      33:                 if os.path.exists(os.path.join(d, "xgboost_preds.csv")))
+      38:     "Persistence": "persistence_preds.csv",
+      39:     "Climatology (global mean)": "climatology_preds.csv",
+      40:     "XGBoost": "xgboost_preds.csv",
+      41:     "Transformer": "transformer_preds.csv",
+      42:     "BU-LSTM": "bulstm_preds.csv",
+      43:     "BiLSTM-Attention": "bilstm_attention_preds.csv",
+      44:     "BU-LSTM-Attention (proposed)": "proposed_model_preds.csv",
+      45:     "Probabilistic BiLSTM-Attention": "prob_bilstm_attention_preds.csv",
+  [grep 'alpha|Ridge|RidgeCV|GridSearch|cv=|TimeSeriesSplit|block|n_?boot|reps|seed|final_all_seed|_preds\\.csv|mean\\(axis|seed[- ]avera|ensemble'] code/plot_q07_forest.py: 1 lines
+       4: # block-bootstrap intervals; negative = the model is better than the reference.
+  [grep 'alpha|ridge|L1|L2|L3|block|boot|reps|seed|selected'] results/metrics/q05c_output.txt: 1 lines
+      18: === B. RMSE(model) - RMSE(baseline), paired block bootstrap; negative = model better ===
+  [grep 'alpha|ridge|L1|L2|L3|block|boot|reps|seed|selected'] results/metrics/q07_output.txt: 1 lines
+      27: === B. RMSE(model) - RMSE(reference); paired block bootstrap; negative = model better ===
+  [grep 'alpha|ridge|L1|L2|L3|block|boot|reps|seed|selected'] results/metrics/q07b_output.txt: 61 lines
+       2:   ridge on X42: alpha 10 (validation RMSE 0.2600)
+       3:   ridge on X7: alpha 1000 (validation RMSE 0.2611)
+       4:   L3 coefficients: intercept 0.0755, tp(t) 0.3237, lsp(t) -0.0576
+       8:            L1 ridge, 42 inputs 0.2497 0.1331 -0.0050  0.1665            0.0854         0.4925      0.8888    0.9259     0.4021   0.8477   0.6765   0.7856   0.1944   0.8696   0.2308   0.9028   0.0734
+       9:   L2 ridge, origin 7 variables 0.2532 0.1351 -0.0055  0.1434            0.0728         0.5018      0.9085    0.7624     0.3682   0.8276   0.6176   0.8240   0.1587   0.8356   0.6154   0.9282   0.0687
+      10:            L3 OLS tp(t)+lsp(t) 0.2629 0.1391 -0.0063  0.0764            0.0372         0.5314      0.9529    0.9321     0.2844   0.7453   0.5000   0.8202   0.1524   0.7281   0.2418   0.9254   0.0604
+      19: ===== model minus linear reference (RMSE: negative = model better; AUC: positive = model better); block 28, 2000 reps =====
+      21:                        XGBoost          L1 ridge, 42 inputs    RMSE          -0.0060 -0.0109  -0.0011           True
+      22:                        XGBoost          L1 ridge, 42 inputs AUC_Q95           0.0000 -0.0185   0.0184          False
+      23:                        XGBoost          L1 ridge, 42 inputs AUC_1.0          -0.0016 -0.0273   0.0205          False
+      24:                    Transformer          L1 ridge, 42 inputs    RMSE           0.0093  0.0049   0.0140           True
+      25:                    Transformer          L1 ridge, 42 inputs AUC_Q95          -0.0495 -0.0724  -0.0263           True
+      26:                    Transformer          L1 ridge, 42 inputs AUC_1.0          -0.0480 -0.0812  -0.0175           True
+      27:                        BU-LSTM          L1 ridge, 42 inputs    RMSE          -0.0010 -0.0034   0.0014          False
+      28:                        BU-LSTM          L1 ridge, 42 inputs AUC_Q95          -0.0148 -0.0312   0.0004          False
+      29:                        BU-LSTM          L1 ridge, 42 inputs AUC_1.0          -0.0216 -0.0447  -0.0015           True
+      30:               BiLSTM-Attention          L1 ridge, 42 inputs    RMSE          -0.0069 -0.0097  -0.0042           True
+      31:               BiLSTM-Attention          L1 ridge, 42 inputs AUC_Q95          -0.0127 -0.0342   0.0062          False
+      32:               BiLSTM-Attention          L1 ridge, 42 inputs AUC_1.0          -0.0088 -0.0429   0.0171          False
+      33:              BU-LSTM-Attention          L1 ridge, 42 inputs    RMSE          -0.0033 -0.0054  -0.0012           True
+      34:              BU-LSTM-Attention          L1 ridge, 42 inputs AUC_Q95          -0.0097 -0.0241   0.0035          False
+      35:              BU-LSTM-Attention          L1 ridge, 42 inputs AUC_1.0          -0.0165 -0.0363   0.0016          False
+      36: Probabilistic BiLSTM-Attention          L1 ridge, 42 inputs    RMSE          -0.0016 -0.0043   0.0010          False
+      37: Probabilistic BiLSTM-Attention          L1 ridge, 42 inputs AUC_Q95          -0.0157 -0.0306  -0.0019           True
+      38: Probabilistic BiLSTM-Attention          L1 ridge, 42 inputs AUC_1.0          -0.0239 -0.0475  -0.0038           True
+      39:                        XGBoost L2 ridge, origin 7 variables    RMSE          -0.0094 -0.0149  -0.0042           True
+      40:                        XGBoost L2 ridge, origin 7 variables AUC_Q95           0.0202  0.0040   0.0368           True
+      41:                        XGBoost L2 ridge, origin 7 variables AUC_1.0           0.0324  0.0089   0.0561           True
+      42:                    Transformer L2 ridge, origin 7 variables    RMSE           0.0059  0.0017   0.0103           True
+      43:                    Transformer L2 ridge, origin 7 variables AUC_Q95          -0.0293 -0.0494  -0.0087           True
+      44:                    Transformer L2 ridge, origin 7 variables AUC_1.0          -0.0139 -0.0454   0.0184          False
+      45:                        BU-LSTM L2 ridge, origin 7 variables    RMSE          -0.0044 -0.0064  -0.0025           True
+      46:                        BU-LSTM L2 ridge, origin 7 variables AUC_Q95           0.0053 -0.0064   0.0168          False
+      47:                        BU-LSTM L2 ridge, origin 7 variables AUC_1.0           0.0125 -0.0047   0.0286          False
+      48:               BiLSTM-Attention L2 ridge, origin 7 variables    RMSE          -0.0103 -0.0132  -0.0074           True
+      49:               BiLSTM-Attention L2 ridge, origin 7 variables AUC_Q95           0.0074 -0.0111   0.0247          False
+      50:               BiLSTM-Attention L2 ridge, origin 7 variables AUC_1.0           0.0253 -0.0047   0.0508          False
+      51:              BU-LSTM-Attention L2 ridge, origin 7 variables    RMSE          -0.0067 -0.0084  -0.0050           True
+      52:              BU-LSTM-Attention L2 ridge, origin 7 variables AUC_Q95           0.0104  0.0010   0.0200           True
+      53:              BU-LSTM-Attention L2 ridge, origin 7 variables AUC_1.0           0.0176  0.0028   0.0316           True
+
+====================================================================================================
+2-3. q08 / q08b / q08c HRES comparison
+====================================================================================================
+
+----- q08 CSV: files -----
+2026-11-04 17:28       487298  20292cc723177cd58565f2ccc3f753c2  results/metrics/q08_hres_aligned_samples.csv
+2026-11-04 17:28         2115  32ad6c3f13ab5a2b62920b9683aa4664  results/metrics/q08_hres_bootstrap.csv
+2026-11-04 17:28         3084  757d173011ba0a8f50dedb4f16827916  results/metrics/q08_hres_comparison.csv
+2026-11-04 17:36         1173  c1b9f85c03d39d32b13ada449ddd6c79  results/metrics/q08b_station_bootstrap.csv
+2026-11-04 17:36         2931  15aff76671d715d7e63a5962ad855835  results/metrics/q08b_station_comparison.csv
+2026-11-05 23:41         6316  d65d7de1e1e1b9e9e7375a429ee30209  results/metrics/q08c_event_auc.csv
+2026-11-05 23:41         8004  e7b2a2bf787a94c5052b69454d2b4139  results/metrics/q08c_event_auc_paired.csv
+
+----- q08 scripts -----
+2026-11-05 23:40         7940  e1a42f912772f0d2edab3d075b283129  code/analysis_q08c_event_auc.py
+2026-11-04 17:07         3273  a0c3ff38dc197d1eee6b2c8c4c4b50dd  code/q08_check_era5_window.py
+2026-11-04 17:28        11779  62e94df28d1d5a279a07a27bd4ea9d71  code/q08_hres_comparison.py
+2026-11-04 17:36         4550  57ae34bd4736b6997bb9bfc4a7633080  code/q08_station_comparison.py
+
+----- q08 logs -----
+2026-11-04 17:07          871  63dbfa343fd9d40c1492d7e393931d98  results/metrics/q08_check_era5_window_output.txt
+2026-11-04 17:44        11529  f8cab26c5c35bb6a9dde89f93df46a3d  results/metrics/q08_download_check.txt
+2026-11-04 17:45         8521  dfebe7a209be698bf5f173bfa94965b4  results/metrics/q08_download_output.txt
+2026-11-04 17:43           12  508344f69a09d16095fe66779c4a0d5b  results/metrics/q08_h5py_version.txt
+2026-11-04 17:28         5439  a68b1bd14e01342e65adbee3e4f9cccc  results/metrics/q08_hres_comparison_output.txt
+2026-11-04 17:36         4498  1e19c7f87415c8ee020ea5eba667e2c3  results/metrics/q08b_station_comparison_output.txt
+2026-11-05 23:41        15155  29a32c16dfb5776faedc6a6804c34309  results/metrics/q08c_output.txt
+
+----- HRES raw data files -----
+2026-11-04 13:39        22138  8e0522a4ad5b110a38813f2bb3f089d4  data/q08/HRES/hres_tp_201904.nc
+2026-11-04 13:39        38138  a5402e21bf6cd8d1865c02ae4dc68bf2  data/q08/HRES/hres_tp_201905.nc
+2026-11-04 13:39        37338  9fe6600efa71f65574b7798432d9f3e9  data/q08/HRES/hres_tp_201906.nc
+2026-11-04 13:39        38138  b60d329d7c29a0efb993fa93aad8ff4d  data/q08/HRES/hres_tp_201907.nc
+2026-11-04 13:39        38138  9977f819eace81e696e9b567e7451ca0  data/q08/HRES/hres_tp_201908.nc
+2026-11-04 13:39        37338  e4a0bb19de70b99cdf6d21550a61aed0  data/q08/HRES/hres_tp_201909.nc
+2026-11-04 13:40        38138  0f69f5dbde5607e1b210db895b8246d7  data/q08/HRES/hres_tp_201910.nc
+2026-11-04 13:40        37338  b5614419f3cb3fede9414157e941d038  data/q08/HRES/hres_tp_201911.nc
+2026-11-04 13:40        38138  44820ae82e1a191d92a42b98677e3330  data/q08/HRES/hres_tp_201912.nc
+2026-11-04 13:40        38138  aa45c46e0105df5a409aa8e4e67c440f  data/q08/HRES/hres_tp_202001.nc
+2026-11-04 13:40        36538  6ae89e99355e7eaa3e5bd22bc473d3cb  data/q08/HRES/hres_tp_202002.nc
+2026-11-04 13:40        38138  be8e918aa6fa4fa1c1a2130d9dc9dd9c  data/q08/HRES/hres_tp_202003.nc
+2026-11-04 13:40        37338  467be5a2fc843483e91bf2caa94873e3  data/q08/HRES/hres_tp_202004.nc
+2026-11-04 13:41        38138  b6f0d09eb70ced9b4a40841977298348  data/q08/HRES/hres_tp_202005.nc
+2026-11-04 13:41        37338  14e0dde58369ca1bf9e2923a4b3e5de8  data/q08/HRES/hres_tp_202006.nc
+2026-11-04 13:41        38138  3b0a01054c563467b44d2d5a7b5ad62b  data/q08/HRES/hres_tp_202007.nc
+2026-11-04 13:41        38138  110720b918e5bac8fd22bab9f19e7ce4  data/q08/HRES/hres_tp_202008.nc
+2026-11-04 13:41        37338  cc1dbf58c2d79375280d8c97adf3752c  data/q08/HRES/hres_tp_202009.nc
+2026-11-04 13:41        38138  4d1e7fde2b44378e861c1f9a58197488  data/q08/HRES/hres_tp_202010.nc
+2026-11-04 13:41        37338  c321fb9e9b11d0ae015fcd3ea83705d5  data/q08/HRES/hres_tp_202011.nc
+2026-11-04 13:42        38138  506b7caecc966c2ca9b5206e129c88a3  data/q08/HRES/hres_tp_202012.nc
+2026-11-04 13:42        38138  b5abdbb6975f99ba7fcb8e65f9b180b9  data/q08/HRES/hres_tp_202101.nc
+2026-11-04 13:42        35738  a3abad3464867ee12cc23f456e8b4c7b  data/q08/HRES/hres_tp_202102.nc
+2026-11-04 13:42        38138  e93e20f228e466306909d22fa1f45541  data/q08/HRES/hres_tp_202103.nc
+2026-11-04 13:42        37338  56c28fe2230d84912eb9f7e3d159520f  data/q08/HRES/hres_tp_202104.nc
+2026-11-04 13:42        38138  9a39be6346e3798ae711a2bb5f7ddfc5  data/q08/HRES/hres_tp_202105.nc
+2026-11-04 13:42        37338  6799e27365cdff194b1f561830fed5c8  data/q08/HRES/hres_tp_202106.nc
+2026-11-04 13:43        38138  befa2d91a9f79d74c940a077536f9cbb  data/q08/HRES/hres_tp_202107.nc
+2026-11-04 13:44        38138  5bc7d30f00f9ba3603f993e313e60f43  data/q08/HRES/hres_tp_202108.nc
+2026-11-04 13:44        37338  dda57d8025fff752b5b627c66e0d5426  data/q08/HRES/hres_tp_202109.nc
+2026-11-04 13:44        38138  6615ea1e1cd70d36b43768a99ac770bb  data/q08/HRES/hres_tp_202110.nc
+2026-11-04 13:44        37338  6e2dbf9b7c488ddf68e40a12d0390a3a  data/q08/HRES/hres_tp_202111.nc
+2026-11-04 13:44        38138  33616ea2908d6f4fdb5ee28d71c5685e  data/q08/HRES/hres_tp_202112.nc
+2026-11-04 13:45        19480  57d21b323ca583cb7d47ab5ddeb07b81  data/q08/WeatherBench/era5_tp_201904.nc
+2026-11-04 13:46        35480  e54b1c38db2983ec502f9807b107a48a  data/q08/WeatherBench/era5_tp_201905.nc
+2026-11-04 13:46        34680  5481f1e2dc1ea21ff58d187fc3e06d2e  data/q08/WeatherBench/era5_tp_201906.nc
+2026-11-04 13:47        35480  fec64bc884ec9b4041a73f7e2ccba3c8  data/q08/WeatherBench/era5_tp_201907.nc
+2026-11-04 13:47        35480  1a2e664f7e3da047fce8d97e32d07756  data/q08/WeatherBench/era5_tp_201908.nc
+2026-11-04 13:48        34680  358aad07b10efafece21c0dfa28661c5  data/q08/WeatherBench/era5_tp_201909.nc
+2026-11-04 13:48        35480  d012dd8e81e48e0fdcb8c8914ac4eb02  data/q08/WeatherBench/era5_tp_201910.nc
+
+  aligned samples: results/metrics/q08_hres_aligned_samples.csv shape (1970, 16)
+  columns: ['valid_time', 'init', 'y_true', 'hres_tp6_mm', 'era5_tp6_mm', 'BiLSTM-Attention', 'XGBoost', 'BU-LSTM-Attention', 'Probabilistic BiLSTM-Attention', 'BU-LSTM', 'Transformer', 'Persistence', 'Climatology (month x hour)', 'AR(1)', 'HRES (6 h mean)', 'Perfect 6 h mean (ceiling)']
+            valid_time                 init        y_true  hres_tp6_mm  era5_tp6_mm  BiLSTM-Attention   XGBoost  BU-LSTM-Attention  Probabilistic BiLSTM-Attention   BU-LSTM  Transformer  Persistence  Climatology (month x hour)     AR(1)  HRES (6 h mean)  Perfect 6 h mean (ceiling)
+0  2019-04-22 06:00:00  2019-04-22 00:00:00 -7.450581e-09     0.000000     0.000000          0.033310  0.106257           0.040531                        0.017060  0.035427     0.025725     0.000000                    0.071435  0.076290         0.000000                    0.000000
+1  2019-04-22 18:00:00  2019-04-22 12:00:00  3.013611e-03     0.018616     0.044530          0.060546  0.081655           0.043415                        0.030999  0.087033     0.030777     0.000000                    0.094284  0.076290         0.003103                    0.007422
+2  2019-04-23 06:00:00  2019-04-23 00:00:00 -7.450581e-09     0.000000     0.000948          0.088586  0.066648           0.047180                        0.053040  0.105686     0.033805     0.000000                    0.071435  0.076290         0.000000                    0.000158
+3  2019-04-23 18:00:00  2019-04-23 12:00:00 -7.450581e-09     0.000000     0.000000          0.034422  0.032332           0.016619                        0.012982  0.047958     0.029006     0.000000                    0.094284  0.076290         0.000000                    0.000000
+4  2019-04-24 06:00:00  2019-04-24 00:00:00  2.646828e-01     0.637817     1.059429          0.230306  0.267754           0.236678                        0.183194  0.180272     0.155536     0.142365                    0.071435  0.116308         0.106303                    0.176571
+  valid_time: n=1970 unique=1970 min=2019-04-22 06:00:00 max=2021-12-31 18:00:00 hours=[6, 18]
+  init: n=1970 unique=1970 min=2019-04-22 00:00:00 max=2021-12-31 12:00:00 hours=[0, 12]
+  lead time valid_time - init (h): {6.0: 1970}
+  gaps between consecutive valid_time: {Timedelta('0 days 12:00:00'): 1969}
+  distinct days: 985
+  == results/metrics/q08_hres_comparison.csv  shape (11, 19)
+                          forecast     n      RMSE       MAE        R2      bias      corr  skill_vs_clim  pred_max  wet01_obs_events  wet01_fcst_events  wet01_POD  wet01_FAR  wet01_CSI  Q95_obs_events  Q95_fcst_events   Q95_POD   Q95_FAR   Q95_CSI
+0                 BiLSTM-Attention  1970  0.242850  0.116195  0.220585 -0.016578  0.479871       0.114267  0.576580               422                605   0.722749   0.495868   0.422438             116                1  0.008621  0.000000  0.008621
+1                          XGBoost  1970  0.244342  0.118673  0.210978 -0.004373  0.460141       0.108825  0.980570               422                703   0.767773   0.539118   0.404494             116               21  0.068966  0.619048  0.062016
+2                BU-LSTM-Attention  1970  0.247353  0.118212  0.191409 -0.014176  0.441666       0.097841  0.486729               422                675   0.755924   0.527407   0.410026             116                0  0.000000       NaN  0.000000
+3   Probabilistic BiLSTM-Attention  1970  0.247781  0.116722  0.188611 -0.018092  0.441837       0.096281  0.467472               422                638   0.725118   0.520376   0.405836             116                0  0.000000       NaN  0.000000
+4                          BU-LSTM  1970  0.249269  0.117915  0.178836 -0.022305  0.445545       0.090854  0.431541               422                646   0.725118   0.526316   0.401575             116                0  0.000000       NaN  0.000000
+5                      Transformer  1970  0.262164  0.122800  0.091682 -0.033286  0.334695       0.043825  0.576968               422                539   0.571090   0.552876   0.334722             116                1  0.008621  0.000000  0.008621
+6                      Persistence  1970  0.324169  0.136227 -0.388791  0.002239  0.297711      -0.182325  2.506828               422                432   0.526066   0.486111   0.351266             116              122  0.267241  0.745902  0.149758
+7       Climatology (month x hour)  1970  0.274179  0.152690  0.006511 -0.009504  0.089088       0.000000  0.136536               422               1138   0.635071   0.764499   0.207430             116                0  0.000000       NaN  0.000000
+8                            AR(1)  1970  0.262707  0.140868  0.087913 -0.004968  0.297711       0.041843  0.780942               422                483   0.566351   0.505176   0.358859             116                6  0.008621  0.833333  0.008264
+9                  HRES (6 h mean)  1970  0.206097  0.083895  0.438649  0.016474  0.720074       0.248315  3.687032               422                548   0.864929   0.333942   0.603306             116              118  0.525862  0.483051  0.352601
+10      Perfect 6 h mean (ceiling)  1970  0.188242  0.074339  0.531699  0.007342  0.751976       0.313436  3.188833               422                493   0.862559   0.261663   0.660617             116              119  0.560345  0.453782  0.382353
+  == results/metrics/q08b_station_comparison.csv  shape (12, 18)
+                             forecast     n      RMSE       MAE      bias   pearson  spearman  skill_vs_clim  wet01_obs  wet01_fcst  wet01_POD  wet01_FAR  wet01_CSI  ge1mm_obs  ge1mm_fcst  ge1mm_POD  ge1mm_FAR  ge1mm_CSI
+0                    BiLSTM-Attention  1970  0.467753  0.156925 -0.008865  0.258448  0.345734       0.032144        277         605   0.696751   0.680992   0.280116         64           0   0.000000        NaN   0.000000
+1                             XGBoost  1970  0.470278  0.163391  0.003340  0.238308  0.376485       0.026920        277         703   0.743682   0.706970   0.266150         64           0   0.000000        NaN   0.000000
+2                   BU-LSTM-Attention  1970  0.468366  0.157577 -0.006463  0.252316  0.364664       0.030876        277         675   0.761733   0.687407   0.284750         64           0   0.000000        NaN   0.000000
+3      Probabilistic BiLSTM-Attention  1970  0.469197  0.155588 -0.010379  0.246474  0.367513       0.029155        277         638   0.711191   0.691223   0.274373         64           0   0.000000        NaN   0.000000
+4                             BU-LSTM  1970  0.469760  0.154993 -0.014592  0.249343  0.355005       0.027990        277         646   0.707581   0.696594   0.269601         64           0   0.000000        NaN   0.000000
+5                         Transformer  1970  0.474481  0.152991 -0.025573  0.213751  0.308347       0.018222        277         539   0.577617   0.703154   0.243902         64           0   0.000000        NaN   0.000000
+6                         Persistence  1970  0.517421  0.171407  0.009952  0.153787  0.322962      -0.070627        277         432   0.516245   0.668981   0.252650         64          45   0.031250   0.955556   0.018692
+7          Climatology (month x hour)  1970  0.483288  0.181538 -0.001791  0.050516  0.038588       0.000000        277        1138   0.610108   0.851494   0.135634         64           0   0.000000        NaN   0.000000
+8                               AR(1)  1970  0.478141  0.175818  0.002745  0.153787  0.322964       0.010650        277         483   0.566787   0.674948   0.260365         64           0   0.000000        NaN   0.000000
+9                     HRES (6 h mean)  1970  0.437246  0.141899  0.024187  0.447361  0.493381       0.095268        277         548   0.848375   0.571168   0.398305         64          44   0.281250   0.590909   0.200000
+10  ERA5 6 h mean (window diagnostic)  1970  0.453337  0.142476  0.015055  0.381502  0.473099       0.061973        277         493   0.783394   0.559838   0.392405         64          37   0.171875   0.702703   0.122222
+11         ERA5 label (regional mean)  1970  0.430897  0.125333  0.007713  0.466545  0.478655       0.108406        277         422   0.743682   0.511848   0.417850         64          46   0.343750   0.521739   0.250000
+  == results/metrics/q08c_event_auc.csv  shape (57, 9)
+     target                              model     event  n_obs       AUC  FM_n_fcst    FM_POD    FM_FAR    FM_CSI
+0      ERA5                   BiLSTM-Attention  wet>=0.1    422  0.836644        422  0.571090  0.428910  0.399668
+1      ERA5                   BiLSTM-Attention       Q95    116  0.850268        116  0.310345  0.689655  0.183673
+2      ERA5                   BiLSTM-Attention     >=1.0     46  0.875203         46  0.173913  0.826087  0.095238
+3      ERA5                            XGBoost  wet>=0.1    422  0.843822        422  0.575829  0.424171  0.404326
+4      ERA5                            XGBoost       Q95    116  0.857373        116  0.310345  0.689655  0.183673
+5      ERA5                            XGBoost     >=1.0     46  0.882502         46  0.130435  0.869565  0.069767
+6      ERA5                  BU-LSTM-Attention  wet>=0.1    422  0.830217        422  0.568720  0.431280  0.397351
+7      ERA5                  BU-LSTM-Attention       Q95    116  0.835412        116  0.284483  0.715517  0.165829
+8      ERA5                  BU-LSTM-Attention     >=1.0     46  0.857328         46  0.108696  0.891304  0.057471
+9      ERA5     Probabilistic BiLSTM-Attention  wet>=0.1    422  0.836422        422  0.530806  0.469194  0.361290
+10     ERA5     Probabilistic BiLSTM-Attention       Q95    116  0.840731        116  0.301724  0.698276  0.177665
+11     ERA5     Probabilistic BiLSTM-Attention     >=1.0     46  0.869079         46  0.108696  0.891304  0.057471
+12     ERA5                            BU-LSTM  wet>=0.1    422  0.829465        422  0.568720  0.431280  0.397351
+13     ERA5                            BU-LSTM       Q95    116  0.834417        116  0.293103  0.706897  0.171717
+14     ERA5                            BU-LSTM     >=1.0     46  0.852730         46  0.152174  0.847826  0.082353
+15     ERA5                        Transformer  wet>=0.1    422  0.782953        422  0.476303  0.523697  0.312597
+16     ERA5                        Transformer       Q95    116  0.784134        116  0.172414  0.827586  0.094340
+17     ERA5                        Transformer     >=1.0     46  0.820245         46  0.108696  0.891304  0.057471
+18     ERA5                    HRES (6 h mean)  wet>=0.1    422  0.940700        422  0.741706  0.258294  0.589454
+19     ERA5                    HRES (6 h mean)       Q95    116  0.958717        116  0.525862  0.474138  0.356725
+20     ERA5                    HRES (6 h mean)     >=1.0     46  0.968883         46  0.434783  0.565217  0.277778
+21     ERA5                        Persistence  wet>=0.1    422  0.785519        422  0.516588  0.483412  0.348243
+22     ERA5                        Persistence       Q95    116  0.762103        116  0.258621  0.741379  0.148515
+23     ERA5                        Persistence     >=1.0     46  0.752723         46  0.108696  0.891304  0.057471
+24     ERA5         Climatology (month x hour)  wet>=0.1    422  0.548155        428  0.246445  0.757009  0.139410
+25     ERA5         Climatology (month x hour)       Q95    116  0.601037        186  0.137931  0.913978  0.055944
+26     ERA5         Climatology (month x hour)     >=1.0     46  0.613605         93  0.108696  0.946237  0.037313
+27     ERA5                              AR(1)  wet>=0.1    422  0.785520        422  0.516588  0.483412  0.348243
+28     ERA5                              AR(1)       Q95    116  0.762106        116  0.258621  0.741379  0.148515
+29     ERA5                              AR(1)     >=1.0     46  0.752723         46  0.108696  0.891304  0.057471
+30     ERA5         Perfect 6 h mean (ceiling)  wet>=0.1    422  0.960897        422  0.774882  0.225118  0.632495
+31     ERA5         Perfect 6 h mean (ceiling)       Q95    116  0.965885        116  0.551724  0.448276  0.380952
+32     ERA5         Perfect 6 h mean (ceiling)     >=1.0     46  0.976317         46  0.456522  0.543478  0.295775
+33  station                   BiLSTM-Attention  wet>=0.1    277  0.783718        277  0.425993  0.574007  0.270642
+34  station                   BiLSTM-Attention     >=1.0     64  0.835995         64  0.156250  0.843750  0.084746
+35  station                            XGBoost  wet>=0.1    277  0.810043        277  0.444043  0.555957  0.285383
+36  station                            XGBoost     >=1.0     64  0.843602         64  0.125000  0.875000  0.066667
+37  station                  BU-LSTM-Attention  wet>=0.1    277  0.799885        277  0.440433  0.559567  0.282407
+38  station                  BU-LSTM-Attention     >=1.0     64  0.834888         64  0.125000  0.875000  0.066667
+39  station     Probabilistic BiLSTM-Attention  wet>=0.1    277  0.802404        277  0.389892  0.610108  0.242152
+40  station     Probabilistic BiLSTM-Attention     >=1.0     64  0.839897         64  0.125000  0.875000  0.066667
+41  station                            BU-LSTM  wet>=0.1    277  0.792226        277  0.411552  0.588448  0.259091
+42  station                            BU-LSTM     >=1.0     64  0.825584         64  0.125000  0.875000  0.066667
+43  station                        Transformer  wet>=0.1    277  0.753617        277  0.328520  0.671480  0.196544
+44  station                        Transformer     >=1.0     64  0.782906         64  0.109375  0.890625  0.057851
+45  station                    HRES (6 h mean)  wet>=0.1    277  0.904810        277  0.602888  0.397112  0.431525
+46  station                    HRES (6 h mean)     >=1.0     64  0.948542         64  0.390625  0.609375  0.242718
+47  station                        Persistence  wet>=0.1    277  0.764621        277  0.379061  0.620939  0.233853
+48  station                        Persistence     >=1.0     64  0.774290         64  0.078125  0.921875  0.040650
+49  station         Climatology (month x hour)  wet>=0.1    277  0.528899        338  0.198556  0.837278  0.098214
+50  station         Climatology (month x hour)     >=1.0     64  0.576703         93  0.109375  0.924731  0.046667
+51  station                              AR(1)  wet>=0.1    277  0.764622        277  0.379061  0.620939  0.233853
+52  station                              AR(1)     >=1.0     64  0.774294         64  0.078125  0.921875  0.040650
+53  station  ERA5 6 h mean (window diagnostic)  wet>=0.1    277  0.888939        277  0.584838  0.415162  0.413265
+54  station  ERA5 6 h mean (window diagnostic)     >=1.0     64  0.917874         64  0.265625  0.734375  0.153153
+55  station         ERA5 label (regional mean)  wet>=0.1    277  0.892209        277  0.617329  0.382671  0.446475
+56  station         ERA5 label (regional mean)     >=1.0     64  0.941173         64  0.421875  0.578125  0.267327
+  == results/metrics/q08_hres_bootstrap.csv  shape (20, 6)
+                          forecast                   reference     dRMSE    ci_low   ci_high  significant
+0                 BiLSTM-Attention             HRES (6 h mean)  0.036753  0.012343  0.060960         True
+1                          XGBoost             HRES (6 h mean)  0.038245  0.014519  0.062463         True
+2                BU-LSTM-Attention             HRES (6 h mean)  0.041257  0.016805  0.065733         True
+3   Probabilistic BiLSTM-Attention             HRES (6 h mean)  0.041684  0.016886  0.066762         True
+4                          BU-LSTM             HRES (6 h mean)  0.043172  0.017962  0.068208         True
+5                      Transformer             HRES (6 h mean)  0.056067  0.029930  0.082104         True
+6                      Persistence             HRES (6 h mean)  0.118073  0.092265  0.143890         True
+7       Climatology (month x hour)             HRES (6 h mean)  0.068083  0.041511  0.094569         True
+8                            AR(1)             HRES (6 h mean)  0.056610  0.030740  0.082749         True
+9       Perfect 6 h mean (ceiling)             HRES (6 h mean) -0.017855 -0.030742 -0.004216         True
+10                BiLSTM-Attention  Perfect 6 h mean (ceiling)  0.054608  0.030449  0.076367         True
+11                         XGBoost  Perfect 6 h mean (ceiling)  0.056100  0.033410  0.076996         True
+12               BU-LSTM-Attention  Perfect 6 h mean (ceiling)  0.059112  0.035301  0.080444         True
+13  Probabilistic BiLSTM-Attention  Perfect 6 h mean (ceiling)  0.059539  0.035361  0.081528         True
+14                         BU-LSTM  Perfect 6 h mean (ceiling)  0.061027  0.036234  0.083388         True
+15                     Transformer  Perfect 6 h mean (ceiling)  0.073922  0.047447  0.097638         True
+16                     Persistence  Perfect 6 h mean (ceiling)  0.135928  0.111871  0.159050         True
+17      Climatology (month x hour)  Perfect 6 h mean (ceiling)  0.085938  0.059631  0.109933         True
+18                           AR(1)  Perfect 6 h mean (ceiling)  0.074465  0.049822  0.096937         True
+19                 HRES (6 h mean)  Perfect 6 h mean (ceiling)  0.017855  0.004216  0.030742         True
+  [q08_hres_bootstrap.csv] rows with CI (ci_low, ci_high) excluding 0: 20 of 20
+                          forecast                   reference     dRMSE    ci_low   ci_high  significant
+0                 BiLSTM-Attention             HRES (6 h mean)  0.036753  0.012343  0.060960         True
+1                          XGBoost             HRES (6 h mean)  0.038245  0.014519  0.062463         True
+2                BU-LSTM-Attention             HRES (6 h mean)  0.041257  0.016805  0.065733         True
+3   Probabilistic BiLSTM-Attention             HRES (6 h mean)  0.041684  0.016886  0.066762         True
+4                          BU-LSTM             HRES (6 h mean)  0.043172  0.017962  0.068208         True
+5                      Transformer             HRES (6 h mean)  0.056067  0.029930  0.082104         True
+6                      Persistence             HRES (6 h mean)  0.118073  0.092265  0.143890         True
+7       Climatology (month x hour)             HRES (6 h mean)  0.068083  0.041511  0.094569         True
+8                            AR(1)             HRES (6 h mean)  0.056610  0.030740  0.082749         True
+9       Perfect 6 h mean (ceiling)             HRES (6 h mean) -0.017855 -0.030742 -0.004216         True
+10                BiLSTM-Attention  Perfect 6 h mean (ceiling)  0.054608  0.030449  0.076367         True
+11                         XGBoost  Perfect 6 h mean (ceiling)  0.056100  0.033410  0.076996         True
+12               BU-LSTM-Attention  Perfect 6 h mean (ceiling)  0.059112  0.035301  0.080444         True
+13  Probabilistic BiLSTM-Attention  Perfect 6 h mean (ceiling)  0.059539  0.035361  0.081528         True
+14                         BU-LSTM  Perfect 6 h mean (ceiling)  0.061027  0.036234  0.083388         True
+15                     Transformer  Perfect 6 h mean (ceiling)  0.073922  0.047447  0.097638         True
+16                     Persistence  Perfect 6 h mean (ceiling)  0.135928  0.111871  0.159050         True
+17      Climatology (month x hour)  Perfect 6 h mean (ceiling)  0.085938  0.059631  0.109933         True
+18                           AR(1)  Perfect 6 h mean (ceiling)  0.074465  0.049822  0.096937         True
+19                 HRES (6 h mean)  Perfect 6 h mean (ceiling)  0.017855  0.004216  0.030742         True
+  == results/metrics/q08b_station_bootstrap.csv  shape (11, 6)
+                             forecast        reference     dRMSE    ci_low   ci_high  significant
+0                    BiLSTM-Attention  HRES (6 h mean)  0.030507 -0.003150  0.058736        False
+1                             XGBoost  HRES (6 h mean)  0.033032  0.001674  0.058156         True
+2                   BU-LSTM-Attention  HRES (6 h mean)  0.031120 -0.001667  0.058370        False
+3      Probabilistic BiLSTM-Attention  HRES (6 h mean)  0.031951 -0.001631  0.059669        False
+4                             BU-LSTM  HRES (6 h mean)  0.032514 -0.001520  0.060518        False
+5                         Transformer  HRES (6 h mean)  0.037235  0.001902  0.066331         True
+6                         Persistence  HRES (6 h mean)  0.080175  0.051055  0.108941         True
+7          Climatology (month x hour)  HRES (6 h mean)  0.046042  0.010699  0.075721         True
+8                               AR(1)  HRES (6 h mean)  0.040894  0.006602  0.069935         True
+9   ERA5 6 h mean (window diagnostic)  HRES (6 h mean)  0.016091  0.002435  0.027466         True
+10         ERA5 label (regional mean)  HRES (6 h mean) -0.006350 -0.032320  0.012493        False
+  [q08b_station_bootstrap.csv] rows with CI (ci_low, ci_high) excluding 0: 6 of 11
+                            forecast        reference     dRMSE    ci_low   ci_high  significant
+1                            XGBoost  HRES (6 h mean)  0.033032  0.001674  0.058156         True
+5                        Transformer  HRES (6 h mean)  0.037235  0.001902  0.066331         True
+6                        Persistence  HRES (6 h mean)  0.080175  0.051055  0.108941         True
+7         Climatology (month x hour)  HRES (6 h mean)  0.046042  0.010699  0.075721         True
+8                              AR(1)  HRES (6 h mean)  0.040894  0.006602  0.069935         True
+9  ERA5 6 h mean (window diagnostic)  HRES (6 h mean)  0.016091  0.002435  0.027466         True
+  == results/metrics/q08c_event_auc_paired.csv  shape (72, 8)
+     target                           model                   reference     event      dAUC    ci_low   ci_high  significant
+0      ERA5                BiLSTM-Attention             HRES (6 h mean)  wet>=0.1 -0.104056 -0.124216 -0.083986         True
+1      ERA5                BiLSTM-Attention             HRES (6 h mean)       Q95 -0.108449 -0.138840 -0.078933         True
+2      ERA5                BiLSTM-Attention             HRES (6 h mean)     >=1.0 -0.093679 -0.140896 -0.052641         True
+3      ERA5                         XGBoost             HRES (6 h mean)  wet>=0.1 -0.096878 -0.114261 -0.079273         True
+4      ERA5                         XGBoost             HRES (6 h mean)       Q95 -0.101344 -0.129171 -0.074759         True
+5      ERA5                         XGBoost             HRES (6 h mean)     >=1.0 -0.086380 -0.127371 -0.047864         True
+6      ERA5               BU-LSTM-Attention             HRES (6 h mean)  wet>=0.1 -0.110483 -0.130582 -0.090607         True
+7      ERA5               BU-LSTM-Attention             HRES (6 h mean)       Q95 -0.123305 -0.154564 -0.092940         True
+8      ERA5               BU-LSTM-Attention             HRES (6 h mean)     >=1.0 -0.111554 -0.156974 -0.069978         True
+9      ERA5  Probabilistic BiLSTM-Attention             HRES (6 h mean)  wet>=0.1 -0.104278 -0.122457 -0.085900         True
+10     ERA5  Probabilistic BiLSTM-Attention             HRES (6 h mean)       Q95 -0.117986 -0.148920 -0.089039         True
+11     ERA5  Probabilistic BiLSTM-Attention             HRES (6 h mean)     >=1.0 -0.099803 -0.132383 -0.071111         True
+12     ERA5                         BU-LSTM             HRES (6 h mean)  wet>=0.1 -0.111235 -0.130370 -0.090955         True
+13     ERA5                         BU-LSTM             HRES (6 h mean)       Q95 -0.124300 -0.154970 -0.093657         True
+14     ERA5                         BU-LSTM             HRES (6 h mean)     >=1.0 -0.116153 -0.162172 -0.071972         True
+15     ERA5                     Transformer             HRES (6 h mean)  wet>=0.1 -0.157747 -0.183066 -0.131102         True
+16     ERA5                     Transformer             HRES (6 h mean)       Q95 -0.174583 -0.211869 -0.136356         True
+17     ERA5                     Transformer             HRES (6 h mean)     >=1.0 -0.148637 -0.199523 -0.095863         True
+18     ERA5                BiLSTM-Attention                 Persistence  wet>=0.1  0.051125  0.026494  0.077089         True
+19     ERA5                BiLSTM-Attention                 Persistence       Q95  0.088164  0.051331  0.129718         True
+20     ERA5                BiLSTM-Attention                 Persistence     >=1.0  0.122480  0.068859  0.182181         True
+21     ERA5                         XGBoost                 Persistence  wet>=0.1  0.058303  0.037670  0.080486         True
+22     ERA5                         XGBoost                 Persistence       Q95  0.095269  0.057853  0.136983         True
+23     ERA5                         XGBoost                 Persistence     >=1.0  0.129779  0.074503  0.191452         True
+24     ERA5               BU-LSTM-Attention                 Persistence  wet>=0.1  0.044698  0.022779  0.068425         True
+25     ERA5               BU-LSTM-Attention                 Persistence       Q95  0.073308  0.038569  0.112203         True
+26     ERA5               BU-LSTM-Attention                 Persistence     >=1.0  0.104605  0.060766  0.154536         True
+27     ERA5  Probabilistic BiLSTM-Attention                 Persistence  wet>=0.1  0.050903  0.030477  0.072197         True
+28     ERA5  Probabilistic BiLSTM-Attention                 Persistence       Q95  0.078628  0.040209  0.119564         True
+29     ERA5  Probabilistic BiLSTM-Attention                 Persistence     >=1.0  0.116356  0.058714  0.177018         True
+30     ERA5                         BU-LSTM                 Persistence  wet>=0.1  0.043946  0.022348  0.067383         True
+31     ERA5                         BU-LSTM                 Persistence       Q95  0.072313  0.039040  0.109958         True
+32     ERA5                         BU-LSTM                 Persistence     >=1.0  0.100007  0.058731  0.150501         True
+33     ERA5                     Transformer                 Persistence  wet>=0.1 -0.002566 -0.030780  0.027026        False
+34     ERA5                     Transformer                 Persistence       Q95  0.022031 -0.023891  0.072703        False
+35     ERA5                     Transformer                 Persistence     >=1.0  0.067522  0.000461  0.141636         True
+36     ERA5                 HRES (6 h mean)                 Persistence  wet>=0.1  0.155181  0.131250  0.180673         True
+37     ERA5                 HRES (6 h mean)                 Persistence       Q95  0.196614  0.152431  0.242970         True
+38     ERA5                 HRES (6 h mean)                 Persistence     >=1.0  0.216160  0.146083  0.287487         True
+39     ERA5                 HRES (6 h mean)  Climatology (month x hour)  wet>=0.1  0.392545  0.354615  0.427892         True
+40     ERA5                 HRES (6 h mean)  Climatology (month x hour)       Q95  0.357680  0.300617  0.416692         True
+41     ERA5                 HRES (6 h mean)  Climatology (month x hour)     >=1.0  0.355278  0.266237  0.444631         True
+42  station                BiLSTM-Attention             HRES (6 h mean)  wet>=0.1 -0.121092 -0.145257 -0.096669         True
+43  station                BiLSTM-Attention             HRES (6 h mean)     >=1.0 -0.112548 -0.146119 -0.078192         True
+44  station                         XGBoost             HRES (6 h mean)  wet>=0.1 -0.094767 -0.113231 -0.075327         True
+45  station                         XGBoost             HRES (6 h mean)     >=1.0 -0.104940 -0.132450 -0.073121         True
+46  station               BU-LSTM-Attention             HRES (6 h mean)  wet>=0.1 -0.104925 -0.125585 -0.083684         True
+47  station               BU-LSTM-Attention             HRES (6 h mean)     >=1.0 -0.113654 -0.139131 -0.083735         True
+48  station  Probabilistic BiLSTM-Attention             HRES (6 h mean)  wet>=0.1 -0.102406 -0.121920 -0.082635         True
+49  station  Probabilistic BiLSTM-Attention             HRES (6 h mean)     >=1.0 -0.108645 -0.134899 -0.078801         True
+50  station                         BU-LSTM             HRES (6 h mean)  wet>=0.1 -0.112584 -0.133621 -0.090456         True
+51  station                         BU-LSTM             HRES (6 h mean)     >=1.0 -0.122959 -0.154367 -0.088219         True
+52  station                     Transformer             HRES (6 h mean)  wet>=0.1 -0.151193 -0.177123 -0.123815         True
+53  station                     Transformer             HRES (6 h mean)     >=1.0 -0.165636 -0.212109 -0.117050         True
+54  station                BiLSTM-Attention                 Persistence  wet>=0.1  0.019096 -0.011827  0.050208        False
+55  station                BiLSTM-Attention                 Persistence     >=1.0  0.061705  0.013082  0.118846         True
+56  station                         XGBoost                 Persistence  wet>=0.1  0.045422  0.022497  0.070150         True
+57  station                         XGBoost                 Persistence     >=1.0  0.069312  0.022687  0.130297         True
+58  station               BU-LSTM-Attention                 Persistence  wet>=0.1  0.035264  0.012616  0.059611         True
+59  station               BU-LSTM-Attention                 Persistence     >=1.0  0.060598  0.016764  0.115993         True
+60  station  Probabilistic BiLSTM-Attention                 Persistence  wet>=0.1  0.037782  0.013395  0.063333         True
+61  station  Probabilistic BiLSTM-Attention                 Persistence     >=1.0  0.065607  0.024167  0.116143         True
+62  station                         BU-LSTM                 Persistence  wet>=0.1  0.027605  0.003325  0.053173         True
+63  station                         BU-LSTM                 Persistence     >=1.0  0.051294  0.009073  0.103514         True
+64  station                     Transformer                 Persistence  wet>=0.1 -0.011004 -0.042066  0.022003        False
+65  station                     Transformer                 Persistence     >=1.0  0.008616 -0.048936  0.073111        False
+66  station      ERA5 label (regional mean)             HRES (6 h mean)  wet>=0.1 -0.012601 -0.027764  0.001823        False
+67  station      ERA5 label (regional mean)             HRES (6 h mean)     >=1.0 -0.007370 -0.025322  0.010661        False
+68  station                 HRES (6 h mean)                 Persistence  wet>=0.1  0.140189  0.112827  0.168175         True
+69  station                 HRES (6 h mean)                 Persistence     >=1.0  0.174252  0.123658  0.230242         True
+70  station                 HRES (6 h mean)  Climatology (month x hour)  wet>=0.1  0.375911  0.330608  0.420821         True
+71  station                 HRES (6 h mean)  Climatology (month x hour)     >=1.0  0.371840  0.289731  0.446635         True
+  [q08c_event_auc_paired.csv] rows with CI (ci_low, ci_high) excluding 0: 65 of 72
+     target                           model                   reference     event      dAUC    ci_low   ci_high  significant
+0      ERA5                BiLSTM-Attention             HRES (6 h mean)  wet>=0.1 -0.104056 -0.124216 -0.083986         True
+1      ERA5                BiLSTM-Attention             HRES (6 h mean)       Q95 -0.108449 -0.138840 -0.078933         True
+2      ERA5                BiLSTM-Attention             HRES (6 h mean)     >=1.0 -0.093679 -0.140896 -0.052641         True
+3      ERA5                         XGBoost             HRES (6 h mean)  wet>=0.1 -0.096878 -0.114261 -0.079273         True
+4      ERA5                         XGBoost             HRES (6 h mean)       Q95 -0.101344 -0.129171 -0.074759         True
+5      ERA5                         XGBoost             HRES (6 h mean)     >=1.0 -0.086380 -0.127371 -0.047864         True
+6      ERA5               BU-LSTM-Attention             HRES (6 h mean)  wet>=0.1 -0.110483 -0.130582 -0.090607         True
+7      ERA5               BU-LSTM-Attention             HRES (6 h mean)       Q95 -0.123305 -0.154564 -0.092940         True
+8      ERA5               BU-LSTM-Attention             HRES (6 h mean)     >=1.0 -0.111554 -0.156974 -0.069978         True
+9      ERA5  Probabilistic BiLSTM-Attention             HRES (6 h mean)  wet>=0.1 -0.104278 -0.122457 -0.085900         True
+10     ERA5  Probabilistic BiLSTM-Attention             HRES (6 h mean)       Q95 -0.117986 -0.148920 -0.089039         True
+11     ERA5  Probabilistic BiLSTM-Attention             HRES (6 h mean)     >=1.0 -0.099803 -0.132383 -0.071111         True
+12     ERA5                         BU-LSTM             HRES (6 h mean)  wet>=0.1 -0.111235 -0.130370 -0.090955         True
+13     ERA5                         BU-LSTM             HRES (6 h mean)       Q95 -0.124300 -0.154970 -0.093657         True
+14     ERA5                         BU-LSTM             HRES (6 h mean)     >=1.0 -0.116153 -0.162172 -0.071972         True
+15     ERA5                     Transformer             HRES (6 h mean)  wet>=0.1 -0.157747 -0.183066 -0.131102         True
+16     ERA5                     Transformer             HRES (6 h mean)       Q95 -0.174583 -0.211869 -0.136356         True
+17     ERA5                     Transformer             HRES (6 h mean)     >=1.0 -0.148637 -0.199523 -0.095863         True
+18     ERA5                BiLSTM-Attention                 Persistence  wet>=0.1  0.051125  0.026494  0.077089         True
+19     ERA5                BiLSTM-Attention                 Persistence       Q95  0.088164  0.051331  0.129718         True
+20     ERA5                BiLSTM-Attention                 Persistence     >=1.0  0.122480  0.068859  0.182181         True
+21     ERA5                         XGBoost                 Persistence  wet>=0.1  0.058303  0.037670  0.080486         True
+22     ERA5                         XGBoost                 Persistence       Q95  0.095269  0.057853  0.136983         True
+23     ERA5                         XGBoost                 Persistence     >=1.0  0.129779  0.074503  0.191452         True
+24     ERA5               BU-LSTM-Attention                 Persistence  wet>=0.1  0.044698  0.022779  0.068425         True
+25     ERA5               BU-LSTM-Attention                 Persistence       Q95  0.073308  0.038569  0.112203         True
+26     ERA5               BU-LSTM-Attention                 Persistence     >=1.0  0.104605  0.060766  0.154536         True
+27     ERA5  Probabilistic BiLSTM-Attention                 Persistence  wet>=0.1  0.050903  0.030477  0.072197         True
+28     ERA5  Probabilistic BiLSTM-Attention                 Persistence       Q95  0.078628  0.040209  0.119564         True
+29     ERA5  Probabilistic BiLSTM-Attention                 Persistence     >=1.0  0.116356  0.058714  0.177018         True
+30     ERA5                         BU-LSTM                 Persistence  wet>=0.1  0.043946  0.022348  0.067383         True
+31     ERA5                         BU-LSTM                 Persistence       Q95  0.072313  0.039040  0.109958         True
+32     ERA5                         BU-LSTM                 Persistence     >=1.0  0.100007  0.058731  0.150501         True
+35     ERA5                     Transformer                 Persistence     >=1.0  0.067522  0.000461  0.141636         True
+36     ERA5                 HRES (6 h mean)                 Persistence  wet>=0.1  0.155181  0.131250  0.180673         True
+37     ERA5                 HRES (6 h mean)                 Persistence       Q95  0.196614  0.152431  0.242970         True
+38     ERA5                 HRES (6 h mean)                 Persistence     >=1.0  0.216160  0.146083  0.287487         True
+39     ERA5                 HRES (6 h mean)  Climatology (month x hour)  wet>=0.1  0.392545  0.354615  0.427892         True
+40     ERA5                 HRES (6 h mean)  Climatology (month x hour)       Q95  0.357680  0.300617  0.416692         True
+41     ERA5                 HRES (6 h mean)  Climatology (month x hour)     >=1.0  0.355278  0.266237  0.444631         True
+42  station                BiLSTM-Attention             HRES (6 h mean)  wet>=0.1 -0.121092 -0.145257 -0.096669         True
+43  station                BiLSTM-Attention             HRES (6 h mean)     >=1.0 -0.112548 -0.146119 -0.078192         True
+44  station                         XGBoost             HRES (6 h mean)  wet>=0.1 -0.094767 -0.113231 -0.075327         True
+45  station                         XGBoost             HRES (6 h mean)     >=1.0 -0.104940 -0.132450 -0.073121         True
+46  station               BU-LSTM-Attention             HRES (6 h mean)  wet>=0.1 -0.104925 -0.125585 -0.083684         True
+47  station               BU-LSTM-Attention             HRES (6 h mean)     >=1.0 -0.113654 -0.139131 -0.083735         True
+48  station  Probabilistic BiLSTM-Attention             HRES (6 h mean)  wet>=0.1 -0.102406 -0.121920 -0.082635         True
+49  station  Probabilistic BiLSTM-Attention             HRES (6 h mean)     >=1.0 -0.108645 -0.134899 -0.078801         True
+50  station                         BU-LSTM             HRES (6 h mean)  wet>=0.1 -0.112584 -0.133621 -0.090456         True
+51  station                         BU-LSTM             HRES (6 h mean)     >=1.0 -0.122959 -0.154367 -0.088219         True
+52  station                     Transformer             HRES (6 h mean)  wet>=0.1 -0.151193 -0.177123 -0.123815         True
+53  station                     Transformer             HRES (6 h mean)     >=1.0 -0.165636 -0.212109 -0.117050         True
+55  station                BiLSTM-Attention                 Persistence     >=1.0  0.061705  0.013082  0.118846         True
+56  station                         XGBoost                 Persistence  wet>=0.1  0.045422  0.022497  0.070150         True
+57  station                         XGBoost                 Persistence     >=1.0  0.069312  0.022687  0.130297         True
+58  station               BU-LSTM-Attention                 Persistence  wet>=0.1  0.035264  0.012616  0.059611         True
+59  station               BU-LSTM-Attention                 Persistence     >=1.0  0.060598  0.016764  0.115993         True
+60  station  Probabilistic BiLSTM-Attention                 Persistence  wet>=0.1  0.037782  0.013395  0.063333         True
+61  station  Probabilistic BiLSTM-Attention                 Persistence     >=1.0  0.065607  0.024167  0.116143         True
+62  station                         BU-LSTM                 Persistence  wet>=0.1  0.027605  0.003325  0.053173         True
+63  station                         BU-LSTM                 Persistence     >=1.0  0.051294  0.009073  0.103514         True
+68  station                 HRES (6 h mean)                 Persistence  wet>=0.1  0.140189  0.112827  0.168175         True
+69  station                 HRES (6 h mean)                 Persistence     >=1.0  0.174252  0.123658  0.230242         True
+70  station                 HRES (6 h mean)  Climatology (month x hour)  wet>=0.1  0.375911  0.330608  0.420821         True
+71  station                 HRES (6 h mean)  Climatology (month x hour)     >=1.0  0.371840  0.289731  0.446635         True
+  [grep '/ ?6|6\\.0|\\* ?1000|1000|step|accum|tp|lead|init|valid|time_step|05:00|\\+ ?6|hours=|block|n_?boot|reps|BSEED|seed|default_rng|RandomState'] code/analysis_q08c_event_auc.py: 24 lines
+       2: q08c: cutoff-free event discrimination on the common HRES subset (1,970 samples, 06/18 UTC valid times),
+      11: Paired moving-block bootstrap of AUC differences. Same scheme as q08_hres_comparison.py / q08_station_comparison.py:
+      12: moving blocks (not circular), BLOCK=14 samples (7 days at two stamps/day), N_BOOT=10000, seed 42.
+      17:   cd /root/autodl-tmp && python3 code/analysis_q08c_event_auc.py 2>&1 | tee results/metrics/q08c_output.txt
+      18: Env (optional): BASE (default /root/autodl-tmp), NBOOT (10000), BLOCK (14), Q95 (0.5740)
+      19: Outputs: results/metrics/q08c_event_auc.csv, q08c_event_auc_paired.csv  (column 'target' = ERA5 | station)
+      32: NBOOT = int(os.environ.get("NBOOT", 10000))
+      33: BLOCK = int(os.environ.get("BLOCK", 14))
+      35: SEED = 42
+      79:     rng = np.random.default_rng(SEED)
+      80:     nb = int(np.ceil(n / BLOCK))
+      81:     starts = rng.integers(0, n - BLOCK + 1, size=(NBOOT, nb))
+      82:     idx = (starts[:, :, None] + np.arange(BLOCK)).reshape(NBOOT, -1)[:, :n]
+      83:     A = {m: {k: np.empty(NBOOT) for k in thr} for m in models}
+      84:     for b in range(NBOOT):
+     113: d["valid_time"] = pd.to_datetime(d["valid_time"])
+     114: d = d.sort_values("valid_time").reset_index(drop=True)
+     115: gaps = d["valid_time"].diff().dropna().dt.total_seconds() / 3600
+     116: print(f"samples {len(d)}; {d['valid_time'].dt.date.nunique()} distinct days; median gap {gaps.median():.0f} h; "
+     118: print(f"moving-block bootstrap: block {BLOCK} samples (~{BLOCK/2:.0f} days), NBOOT {NBOOT}, seed {SEED}")
+     119: chk = np.abs(d["hres_tp6_mm"].to_numpy(float) / 6 - d[HRES].to_numpy(float)).max()
+     120: print(f"check HRES (6 h mean) == hres_tp6_mm/6: max abs diff {chk:.2e}")
+     139: pairs_df = pd.read_csv(PAIRS, parse_dates=["valid_time"]).drop_duplicates("valid_time")
+     140: ds = d.merge(pairs_df[["valid_time", "station_mm", "era5_regional_mm"]], on="valid_time", how="left")
+  [grep '/ ?6|6\\.0|\\* ?1000|1000|step|accum|tp|lead|init|valid|time_step|05:00|\\+ ?6|hours=|block|n_?boot|reps|BSEED|seed|default_rng|RandomState'] code/q08_check_era5_window.py: 13 lines
+      21:     step, origin = m.group(1), pd.Timestamp(m.group(2).strip())
+      23:     return origin + pd.to_timedelta(t[...].astype("int64"), unit=unit_map[step]), units
+      31:         for name, key in [("total_precipitation", "tp1h"), ("total_precipitation_6hr", "tp6h")]:
+      35:             cols[key] = np.nanmean(a, axis=other) * 1000.0
+      43: csv = pd.read_csv("data/dublin_regional_2004_2021.csv", parse_dates=["valid_time"]).set_index("valid_time")["tp_mm"]
+      48: end_at_T   = (e["tp6h"] >= e["tp1h"] - eps).mean()            # window (T-6, T] contains the hour ending at T
+      49: start_at_T = (e["tp6h"] >= e["tp1h"].shift(-1) - eps).mean()   # window (T, T+6] contains the hour ending at T+6
+      50: print(f"tp6h(T) >= tp1h(T)      : {end_at_T:.4f}   (1.0000 -> window ends at T)")
+      51: print(f"tp6h(T) >= tp1h(T+6 h)  : {start_at_T:.4f}  (1.0000 -> window starts at T)")
+      52: print(f"corr(tp6h(T), tp1h(T))  : {e['tp6h'].corr(e['tp1h']):.3f}")
+      53: print(f"corr(tp6h(T), tp1h(T+6)): {e['tp6h'].corr(e['tp1h'].shift(-1)):.3f}")
+      55: d = (e["tp1h"] - e["csv"]).abs()
+      56: print(f"\n|WB2 tp1h - CSV|: max {d.max():.2e}, mean {d.mean():.2e}, n>1e-4: {(d > 1e-4).sum()}")
+  [grep '/ ?6|6\\.0|\\* ?1000|1000|step|accum|tp|lead|init|valid|time_step|05:00|\\+ ?6|hours=|block|n_?boot|reps|BSEED|seed|default_rng|RandomState'] code/q08_hres_comparison.py: 56 lines
+       4: # Sample set : test targets valid at 06 and 18 UTC (HRES initialised at 00/12 UTC,
+       5: #              i.e. at the model's input cut-off time t, lead +6 h).
+       6: # Truth      : y_true in the saved prediction files (ERA5 regional mean, hour (t+5h, t+6h], mm/h).
+       9: #              HRES proxy  = HRES 6 h accumulation over (t, t+6h] / 6;
+      10: #              6 h ceiling = ERA5 (WeatherBench 2) 6 h accumulation over (t, t+6h] / 6.
+      14: # Outputs: results/metrics/q08_hres_comparison.csv      (Table S13 source)
+      15: #          results/metrics/q08_hres_bootstrap.csv       (paired block bootstrap, dRMSE)
+      26: Q95 = 0.574048          # training-period Q95 of window targets (q10_prepare_output.txt)
+      28: N_BOOT, BLOCK, SEED = 10000, 14, 42   # 14 samples = 7 days at two samples per day
+      29: MODELS = {              # label -> saved single-run prediction file (seed 42)
+      84: # ---------- 1. HRES: 6 h accumulation over (t, t+6h], t = 00/12 UTC ----------
+      90:         init = read_time(h, "time")
+      91:         lead_name = "prediction_timedelta" if "prediction_timedelta" in h else "step"
+      92:         lead_h = (read_time(h, lead_name) / pd.Timedelta(hours=1)).astype(int)
+      96:         a6 = np.take(a, list(lead_h).index(6), axis=dims.index(lead_name))   # lead +6 h only
+      97:         dims6 = [d for d in dims if d != lead_name]
+      99:         rows.append(pd.DataFrame({"init": init, "hres_tp6_mm": m * 1000.0}))
+     100: hres = pd.concat(rows).drop_duplicates("init").sort_values("init")
+     101: hres["valid_time"] = hres["init"] + pd.Timedelta(hours=6)
+     102: n_neg = int((hres["hres_tp6_mm"] < 0).sum())
+     103: hres["hres_tp6_mm"] = hres["hres_tp6_mm"].clip(lower=0)
+     104: print(f"HRES: {len(hres)} inits, {hres['init'].min()} -> {hres['init'].max()}, "
+     105:       f"negative 6 h totals clipped: {n_neg}, NaN: {int(hres['hres_tp6_mm'].isna().sum())}")
+     107: # ---------- 2. ERA5 (WeatherBench 2): 6 h accumulation over (T-6h, T] ----------
+     116:         rows.append(pd.DataFrame({"valid_time": tt, "era5_tp6_mm": m * 1000.0}))
+     117: era = pd.concat(rows).drop_duplicates("valid_time").sort_values("valid_time")
+     118: print(f"ERA5 WB2: {len(era)} times, {era['valid_time'].min()} -> {era['valid_time'].max()}")
+     122:     d = pd.read_csv(f"{RES}/{fn}", parse_dates=["valid_time"])
+     126: test = base[base["split"] == "test"][["valid_time", "y_true"]].reset_index(drop=True)
+     127: train = base[base["split"] == "train"][["valid_time", "y_true"]].reset_index(drop=True)
+     131:     assert (d["valid_time"].values == test["valid_time"].values).all(), f"{lab}: times differ"
+     136: pers = pers[pers["split"] == "test"][["valid_time", "y_pred_mean"]].rename(columns={"y_pred_mean": "Persistence"})
+     137: test = test.merge(pers, on="valid_time", how="left")
+     139: # month-by-hour climatology and AR(1), training period only (same definitions as item 07)
+     140: train["month"], train["hour"] = train["valid_time"].dt.month, train["valid_time"].dt.hour
+     142: test["month"], test["hour"] = test["valid_time"].dt.month, test["valid_time"].dt.hour
+     144: tr = train.set_index("valid_time")["y_true"]
+     148: print(f"AR(1) on training targets: y(t+6h) = {a0:.4f} + {b:.4f} * y(t)   (item 07: 0.0763 + 0.2811)")
+     152: test = test.merge(hres[["valid_time", "init", "hres_tp6_mm"]], on="valid_time", how="left")
+     153: test = test.merge(era, on="valid_time", how="left")
+  [grep '/ ?6|6\\.0|\\* ?1000|1000|step|accum|tp|lead|init|valid|time_step|05:00|\\+ ?6|hours=|block|n_?boot|reps|BSEED|seed|default_rng|RandomState'] code/q08_station_comparison.py: 11 lines
+       8: # Outputs: results/metrics/q08b_station_comparison.csv, q08b_station_bootstrap.csv
+      17: N_BOOT, BLOCK, SEED = 10000, 14, 42
+      20: al = pd.read_csv(f"{MET}/q08_hres_aligned_samples.csv", parse_dates=["valid_time"])
+      21: pairs = pd.read_csv(f"{MET}/q04_pairs.csv", parse_dates=["valid_time"]).drop_duplicates("valid_time")
+      22: d = al.merge(pairs[["valid_time", "station_mm", "era5_regional_mm"]], on="valid_time", how="left")
+      26: print(f"Samples: {n_all} aligned (valid 06/18 UTC); station missing {n_nan}; used {len(d)}")
+      61: rng = np.random.default_rng(SEED)
+      63: starts = rng.integers(0, n - BLOCK + 1, size=(N_BOOT, int(np.ceil(n / BLOCK))))
+      64: idx = (starts[:, :, None] + np.arange(BLOCK)).reshape(N_BOOT, -1)[:, :n]
+      77: boot.to_csv(f"{MET}/q08b_station_bootstrap.csv", index=False)
+      78: print(f"\n===== dRMSE vs HRES against station truth (block {BLOCK}, {N_BOOT} reps) =====")
+  [grep 'block|boot|reps|seed|n ?=|samples|lead|init|valid|1970|1,970|/ ?6|accum|warn|error'] results/metrics/q08_check_era5_window_output.txt: 0 lines
+  [grep 'block|boot|reps|seed|n ?=|samples|lead|init|valid|1970|1,970|/ ?6|accum|warn|error'] results/metrics/q08_download_check.txt: 5 lines
+      40: 格点: lat=[52.75, 53.0, 53.25, 53.5, 53.75]  lon=[353.25, 353.5, 353.75, 354.0, 354.25]
+      78: 格点: lat=[53.75, 53.5, 53.25, 53.0, 52.75]  lon=[353.25, 353.5, 353.75, 354.0, 354.25]
+      81: ## 2. HRES：tp(lead6) − tp(lead0) 与 tp_6hr(lead6) 对比
+      83: 参考：tp_6hr(lead6) 最大值 = 3.529e-02 m；tp(lead0) 最大值 = 0.000e+00 m；tp_6hr(lead0) 最大值 = nan m
+     107: 注：HRES total_precipitation_6hr 的 49,350 个缺失值 = 1,974 起报 × 25 格点，全部在 lead 0（lead 0 没有前 6 小时累积，属正常）；lead 6 无缺失。
+  [grep 'block|boot|reps|seed|n ?=|samples|lead|init|valid|1970|1,970|/ ?6|accum|warn|error'] results/metrics/q08_download_output.txt: 3 lines
+       4:  lat: [52.75 53.   53.25 53.5  53.75] lon: [353.25 353.5  353.75 354.   354.25] n init times: 1974
+      37:    attempt 1 failed: ClientPayloadError: Response payload is not completed: <ContentLengthError: 400, message='Not enough data to satisfy content length header.'>. ConnectionResetError(54, 'Connection reset by peer')
+      47:  lat: [52.75 53.   53.25 53.5  53.75] lon: [353.25 353.5  353.75 354.   354.25] n init times: 1974
+  [grep 'block|boot|reps|seed|n ?=|samples|lead|init|valid|1970|1,970|/ ?6|accum|warn|error'] results/metrics/q08_h5py_version.txt: 0 lines
+  [grep 'block|boot|reps|seed|n ?=|samples|lead|init|valid|1970|1,970|/ ?6|accum|warn|error'] results/metrics/q08_hres_comparison_output.txt: 16 lines
+       1: HRES: 1974 inits, 2019-04-20 00:00:00 -> 2021-12-31 12:00:00, negative 6 h totals clipped: 0, NaN: 0
+       4: Aligned samples (valid 06/18 UTC): 1970 (2019-04-22 06:00:00 -> 2021-12-31 18:00:00); of all test samples at 06/18 UTC: 1970
+       7: ===== Point and event scores, valid 06/18 UTC (fixed rule: forecast >= threshold) =====
+       9:               BiLSTM-Attention 1970 0.2428 0.1162  0.2206 -0.0166 0.4799         0.1143    0.5766
+      10:                        XGBoost 1970 0.2443 0.1187  0.2110 -0.0044 0.4601         0.1088    0.9806
+      11:              BU-LSTM-Attention 1970 0.2474 0.1182  0.1914 -0.0142 0.4417         0.0978    0.4867
+      12: Probabilistic BiLSTM-Attention 1970 0.2478 0.1167  0.1886 -0.0181 0.4418         0.0963    0.4675
+      13:                        BU-LSTM 1970 0.2493 0.1179  0.1788 -0.0223 0.4455         0.0909    0.4315
+      14:                    Transformer 1970 0.2622 0.1228  0.0917 -0.0333 0.3347         0.0438    0.5770
+      15:                    Persistence 1970 0.3242 0.1362 -0.3888  0.0022 0.2977        -0.1823    2.5068
+      16:     Climatology (month x hour) 1970 0.2742 0.1527  0.0065 -0.0095 0.0891         0.0000    0.1365
+      17:                          AR(1) 1970 0.2627 0.1409  0.0879 -0.0050 0.2977         0.0418    0.7809
+      18:                HRES (6 h mean) 1970 0.2061 0.0839  0.4386  0.0165 0.7201         0.2483    3.6870
+      19:     Perfect 6 h mean (ceiling) 1970 0.1882 0.0743  0.5317  0.0073 0.7520         0.3134    3.1888
+      33: ===== dRMSE = RMSE(forecast) - RMSE(reference), block 14, 10000 reps =====
+      56: Saved: q08_hres_comparison.csv, q08_hres_bootstrap.csv, q08_hres_aligned_samples.csv
+  [grep 'block|boot|reps|seed|n ?=|samples|lead|init|valid|1970|1,970|/ ?6|accum|warn|error'] results/metrics/q08b_station_comparison_output.txt: 14 lines
+       1: Samples: 1970 aligned (valid 06/18 UTC); station missing 0; used 1970
+       7:                  BiLSTM-Attention 1970 0.4678 0.1569 -0.0089   0.2584    0.3457         0.0321
+       8:                           XGBoost 1970 0.4703 0.1634  0.0033   0.2383    0.3765         0.0269
+       9:                 BU-LSTM-Attention 1970 0.4684 0.1576 -0.0065   0.2523    0.3647         0.0309
+      10:    Probabilistic BiLSTM-Attention 1970 0.4692 0.1556 -0.0104   0.2465    0.3675         0.0292
+      11:                           BU-LSTM 1970 0.4698 0.1550 -0.0146   0.2493    0.3550         0.0280
+      12:                       Transformer 1970 0.4745 0.1530 -0.0256   0.2138    0.3083         0.0182
+      13:                       Persistence 1970 0.5174 0.1714  0.0100   0.1538    0.3230        -0.0706
+      14:        Climatology (month x hour) 1970 0.4833 0.1815 -0.0018   0.0505    0.0386         0.0000
+      15:                             AR(1) 1970 0.4781 0.1758  0.0027   0.1538    0.3230         0.0107
+      16:                   HRES (6 h mean) 1970 0.4372 0.1419  0.0242   0.4474    0.4934         0.0953
+      17: ERA5 6 h mean (window diagnostic) 1970 0.4533 0.1425  0.0151   0.3815    0.4731         0.0620
+      18:        ERA5 label (regional mean) 1970 0.4309 0.1253  0.0077   0.4665    0.4787         0.1084
+      33: ===== dRMSE vs HRES against station truth (block 14, 10000 reps) =====
+  [grep 'block|boot|reps|seed|n ?=|samples|lead|init|valid|1970|1,970|/ ?6|accum|warn|error'] results/metrics/q08c_output.txt: 6 lines
+       1: samples 1970; 985 distinct days; median gap 12 h; gaps > 12 h: 0
+       2: moving-block bootstrap: block 14 samples (~7 days), NBOOT 10000, seed 42
+       3: check HRES (6 h mean) == hres_tp6_mm/6: max abs diff 0.00e+00
+       7: ########## target: ERA5; n=1970; observed events: {'wet>=0.1': 422, 'Q95': 116, '>=1.0': 46} ##########
+     114: station merge: 1970 aligned samples, 0 without station value, 1970 used
+     118: ########## target: station; n=1970; observed events: {'wet>=0.1': 277, '>=1.0': 64} ##########
+
+====================================================================================================
+4. Table 3 statistics
+====================================================================================================
+
+----- Table 3 source CSV: files -----
+2026-11-02 15:10          944  a0147272cf96f3571f34ff556bd4c592  results/final_5seed_point.csv
+2026-11-02 15:10          736  87e4aa69f69e4bfc226ab0e83eb9e3ca  results/final_5seed_probabilistic.csv
+2026-11-02 15:10         3870  1d93960ff17e90246b5aa5206c261263  results/final_all_seed_raw.csv
+2026-11-02 15:10          578  f665b1507da7f90ff2b81e66d78108fe  results/prob_bilstm_attention_seed_summary.csv
+2026-11-02 15:10         1115  7f1b4cb30d534799cf342102b266cebf  results/seed_stability_summary.csv
+  == results/final_5seed_point.csv  shape (6, 8)
+                            Model  N_seeds  RMSE_mean  RMSE_std  MAE_mean   MAE_std   R2_mean    R2_std
+0                BiLSTM-Attention        5   0.242864  0.000963  0.118228  0.002112  0.211743  0.006262
+1                         XGBoost        5   0.243920  0.000244  0.119062  0.000480  0.204879  0.001590
+2    BiLSTM-NoAttention (control)        5   0.244656  0.001207  0.118316  0.001747  0.200059  0.007879
+3    BU-LSTM-Attention (proposed)        5   0.246931  0.002081  0.120197  0.002471  0.185084  0.013748
+4                         BU-LSTM        5   0.246971  0.001283  0.119120  0.001616  0.184851  0.008472
+5  Probabilistic BiLSTM-Attention        5   0.248843  0.001688  0.121648  0.003687  0.172434  0.011234
+  == results/prob_bilstm_attention_seed_summary.csv  shape (1, 20)
+                            model  n_seeds  RMSE_mean  RMSE_std  MAE_mean   MAE_std   R2_mean    R2_std  NLL_mean   NLL_std  CRPS_mean  CRPS_std  Coverage95_mean  Coverage95_std  MPIW95_mean  MPIW95_std  NegativeLowerBound95_Rate_mean  NegativeLowerBound95_Rate_std  MeanPredStd_mean  MeanPredStd_std
+0  Probabilistic BiLSTM-Attention        5   0.248843  0.001688  0.121648  0.003687  0.172434  0.011234 -0.435561  0.118952    0.09638  0.003235         0.956842        0.007669     0.811831    0.070875                             1.0                            0.0          0.207104         0.018081
+  == results/seed_stability_summary.csv  shape (5, 14)
+                          model  n_seeds  RMSE_mean  RMSE_std  MAE_mean   MAE_std   R2_mean    R2_std  NLL_mean   NLL_std  CRPS_mean  CRPS_std  Coverage_95_mean  Coverage_95_std
+0                       XGBoost        5   0.243920  0.000244  0.119062  0.000480  0.204879  0.001590       NaN       NaN        NaN       NaN               NaN              NaN
+1                       BU-LSTM        5   0.246971  0.001283  0.119120  0.001616  0.184851  0.008472 -0.487374  0.023306   0.094260  0.001267          0.955928         0.003128
+2              BiLSTM-Attention        5   0.242864  0.000963  0.118228  0.002112  0.211743  0.006262       NaN       NaN        NaN       NaN               NaN              NaN
+3  BU-LSTM-Attention (proposed)        5   0.246931  0.002081  0.120197  0.002471  0.185084  0.013748 -0.467532  0.075764   0.095036  0.001386          0.958111         0.003300
+4  BiLSTM-NoAttention (control)        5   0.244656  0.001207  0.118316  0.001747  0.200059  0.007879       NaN       NaN        NaN       NaN               NaN              NaN
+
+  Transformer W=6 MSE runs: 5
+                            file  seed     rmse      mae       r2  best  epochs                     gpu
+ transformer__w6__mse__s123.json   123 0.257687 0.132595 0.112597    28      30 NVIDIA GeForce RTX 5090
+transformer__w6__mse__s2024.json  2024 0.263318 0.132825 0.073386     6      16 NVIDIA GeForce RTX 5090
+  transformer__w6__mse__s42.json    42 0.260364 0.118467 0.094062    26      30 NVIDIA GeForce RTX 5090
+   transformer__w6__mse__s7.json     7 0.258235 0.131521 0.108817    29      30 NVIDIA GeForce RTX 5090
+  transformer__w6__mse__s99.json    99 0.260345 0.126250 0.094192    28      30 NVIDIA GeForce RTX 5090
+  Transformer five-seed RMSE mean 0.259990 SD 0.002221
+  check preds transformer__w6__mse__s123.csv: n=3939 rmse=0.257687
+  check preds transformer__w6__mse__s2024.csv: n=3939 rmse=0.263318
+  check preds transformer__w6__mse__s42.csv: n=3939 rmse=0.260364
+  check preds transformer__w6__mse__s7.csv: n=3939 rmse=0.258235
+  check preds transformer__w6__mse__s99.csv: n=3939 rmse=0.260345
+
+  SS with unrounded denominator 0.273057:
+   Prob. BiLSTM-Attention 5-seed: RMSE 0.248843 -> SS 0.0887
+   Transformer 5-seed: RMSE 0.259990 -> SS 0.0479
+  results/prob_bilstm_attention_seed_summary.csv numeric means:
+n_seeds                           5.000000
+RMSE_mean                         0.248843
+RMSE_std                          0.001688
+MAE_mean                          0.121648
+MAE_std                           0.003687
+R2_mean                           0.172434
+R2_std                            0.011234
+NLL_mean                         -0.435561
+NLL_std                           0.118952
+CRPS_mean                         0.096380
+CRPS_std                          0.003235
+Coverage95_mean                   0.956842
+Coverage95_std                    0.007669
+MPIW95_mean                       0.811831
+MPIW95_std                        0.070875
+NegativeLowerBound95_Rate_mean    1.000000
+NegativeLowerBound95_Rate_std     0.000000
+MeanPredStd_mean                  0.207104
+MeanPredStd_std                   0.018081
+
+====================================================================================================
+5. q13 seasonal and q03d
+====================================================================================================
+
+----- q13 / q03d files: files -----
+2026-11-04 19:37        11211  59ce6d56a58db4282ead4681c34b3287  code/analysis_q03d_seasonal_xgb.py
+2026-11-09 17:30        12841  090a620122160b89f2747ada7e9a2cd9  code/q13_seasonal.py
+2026-11-04 19:37          969  34f42e03229dbd5e0233eb00aeedcfa6  results/ablation/q03d_seasonal_xgb_paired.csv
+2026-11-04 19:37         9920  62a294a4d512da13ac4a54cfb9cf36ba  results/ablation/q03d_seasonal_xgb_raw.csv
+2026-11-04 19:37         1444  57f5fb31b6e301bd87693103edaa1ca2  results/ablation/q03d_seasonal_xgb_summary.csv
+2026-11-04 19:37       312753  dfd9d226b99c0ce372f3549a84733a33  results/ablation/q03d_seasonal_xgb_test_preds.csv
+2026-11-04 19:37         6514  65f308dfd7ea2d8d737cd72018a19adf  results/metrics/q03d_seasonal_xgb_output.txt
+2026-11-09 17:30        14052  8a26df66670c5a6f56d1edf5912ee1f2  results/metrics/q13_output.txt
+2026-11-09 17:30        18924  e8bebe1167485427ab6e42884beed5c1  results/metrics/q13_season_ablation.csv
+2026-11-09 17:30          447  2fe3cce5710601e4c9ad5b2b1c2b2475  results/metrics/q13_season_counts.csv
+2026-11-09 17:30         6774  1bdeb2ebf19aa3158f79f48c42272247  results/metrics/q13_season_metrics.csv
+2026-11-09 17:30         7007  e9e961928b63ac2bc88daddbd4a25eba  results/metrics/q13_season_paired.csv
+2026-11-09 17:30         1994  485a7ec2b3d7b4576704061ab594a371  results/metrics/q13_season_upstream.csv
+  [grep 'preds|predictions|q14|q21|q10|q06|glob|SEEDS|seed|block|n_?boot|reps|BSEED|clim|AR\\(1\\)|ar1'] code/q13_seasonal.py: 43 lines
+       6: B 季节性能（R3 §4.1）：6 个模型 × 5 种子（14 的 W = 6 流程；XGBoost、BiLSTM-Attention、BU-LSTM-Attention 的 seed 42
+       7:   精确复现原稿）与参照（Persistence、训练期月×时刻气候态、训练期 AR(1)）。
+      26: from q06_common import TARGET, load_regional
+      30: SEEDS = [42, 123, 7, 2024, 99]
+      32: BLOCK, NBOOT, BSEED = 28, 5000, 42
+      35: Q14 = {"xgboost": "tree", "bulstm": "nll", "bilstm_attn": "mse", "transformer": "mse", "bulstm_attn": "nll",
+      54:     nb = int(np.ceil(n / BLOCK))
+      55:     W = np.empty((NBOOT, n), dtype=np.float32)
+      56:     for b in range(NBOOT):
+      57:         st = rng.integers(0, max(n - BLOCK + 1, 1), nb)
+      58:         W[b] = np.bincount((st[:, None] + np.arange(BLOCK)).ravel()[:n] % n, minlength=n)
+      67:         return "medium(" + ("seed-t" if t_ex else "block-bootstrap") + ")"
+      78:     clim = pd.Series(y_tr).groupby([t_tr.month, t_tr.hour]).mean()
+      79:     b_ar = np.polyfit(y_tr[:-1], y_tr[1:], 1)                       # AR(1): y(t+6h) = a·y(t) + c，训练期 OLS
+      83:     P = {m: {s: test_part(f"{ROOT}/results/q14/preds/{m}__w6__{l}__s{s}.csv") for s in SEEDS} for m, l in Q14.items()}
+      88:         for s in SEEDS:
+      93:             "Clim (month×hour)": np.array([clim[(mo, hr)] for mo, hr in zip(t.month, t.hour)]),
+      94:             "AR(1)": np.polyval(b_ar, pers)}
+      95:     print(f"核对全测试集：月×时刻气候态 RMSE {rmse(refs['Clim (month×hour)'], y):.4f}（S11 为 .2731），"
+      96:           f"Persistence {rmse(pers, y):.4f}（Table 3 为 .3282），AR(1) {rmse(refs['AR(1)'], y):.4f}")
+      98:         print(f"复现 {NAMES[m]} seed 42：{rmse(P[m][42].y_pred_mean.values, y):.6f}（原稿 {ref42}）")
+     117:         crm = rmse(refs["Clim (month×hour)"][mk], y[mk])
+     121:                          "nrmse_test": r / y[mk].mean(), "ss_clim": 1 - r / crm, "rmse_tail": rmse(yp[tk], y[tk]),
+     124:             rs = np.array([rmse(P[m][s].y_pred_mean.values[mk], y[mk]) for s in SEEDS])
+     125:             rt = np.array([rmse(P[m][s].y_pred_mean.values[tk], y[tk]) for s in SEEDS])
+     126:             bs = np.array([np.mean(P[m][s].y_pred_mean.values[mk] - y[mk]) for s in SEEDS])
+     129:                          "ss_clim": 1 - rs.mean() / crm, "rmse_tail": rt.mean(), "bias": bs.mean()})
+     134:     rng = np.random.default_rng(BSEED)
+     140:         ds, db = [], np.zeros(NBOOT)
+     155:     cl = refs["Clim (month×hour)"]
+     159:             crows.append(paired(sn, mk, [P[m][s].y_pred_mean.values for s in SEEDS], [cl] * 5,
+     160:                                 "model − clim(month×hour)", NAMES[m]))
+     161:         crows.append(paired(sn, mk, [P["bilstm_attn"][s].y_pred_mean.values for s in SEEDS],
+     162:                             [P["xgboost"][s].y_pred_mean.values for s in SEEDS], "BiLSTM-Attention − XGBoost", "pair"))
+     169:         full = {s: test_part(f"{ROOT}/results/q10/preds/{arch}__full__s{s}.csv") for s in SEEDS}
+     170:         for s in SEEDS:
+     171:             assert (full[s]["valid_time"].values == ref["valid_time"].values).all(), f"q10 {arch} 测试时刻未对齐"
+     173:             path = f"{ROOT}/results/q10/preds/{arch}__{cfg}__s42.csv"
+     176:             ab = {s: test_part(f"{ROOT}/results/q10/preds/{arch}__{cfg}__s{s}.csv") for s in SEEDS}
+     181:                                    for s in SEEDS])
+  [grep 'source|preds|seed 42|repro|check|核对|0\\.2731|0\\.2627|0\\.3282|0\\.24375|0\\.242848|block|boot'] results/metrics/q13_output.txt: 15 lines
+       1: 核对全测试集：月×时刻气候态 RMSE 0.2731（S11 为 .2731），Persistence 0.3282（Table 3 为 .3282），AR(1) 0.2627
+       2: 复现 XGBoost seed 42：0.243750（原稿 0.24375）
+       3: 复现 BiLSTM-Attention seed 42：0.242848（原稿 0.242848）
+       4: 复现 BU-LSTM-Attention seed 42：0.246413（原稿 0.246413）
+      18: AR(1)                   0.3065  0.1897  0.2651  0.2746  0.2627
+      22: Clim (month×hour)       0.3121  0.1973  0.2819  0.2848  0.2731
+      23: Persistence             0.3971  0.2318  0.3218  0.3426  0.3282
+      81: season                  model                 comparison    n  rmse_ref   delta      pct    t_lo    t_hi  boot_lo  boot_hi  n_better_of_5       evidence
+     110:    all                XGBoost   model − clim(month×hour) 3939    0.2731 -0.0291 -10.6718 -0.0294 -0.0288  -0.0363  -0.0225              5         strong
+     111:    all                BU-LSTM   model − clim(month×hour) 3939    0.2731 -0.0261  -9.5548 -0.0277 -0.0245  -0.0305  -0.0221              5         strong
+     112:    all       BiLSTM-Attention   model − clim(month×hour) 3939    0.2731 -0.0302 -11.0587 -0.0314 -0.0290  -0.0355  -0.0252              5         strong
+     113:    all            Transformer   model − clim(month×hour) 3939    0.2731 -0.0131  -4.7869 -0.0158 -0.0103  -0.0157  -0.0103              5         strong
+     114:    all      BU-LSTM-Attention   model − clim(month×hour) 3939    0.2731 -0.0259  -9.4682 -0.0280 -0.0237  -0.0302  -0.0220              5         strong
+     115:    all Prob. BiLSTM-Attention   model − clim(month×hour) 3939    0.2731 -0.0237  -8.6765 -0.0251 -0.0223  -0.0276  -0.0200              5         strong
+     147: season            model         comparison    n  rmse_ref   delta      pct    t_lo    t_hi  boot_lo  boot_hi  n_better_of_5       evidence
+  [grep 'variant|G |S |F |global|season|month|hour|feature|SEEDS|seed|block|n_?boot|NBOOT|reps|BSEED|XGB_KW|n_estimators'] code/analysis_q03d_seasonal_xgb.py: 118 lines
+       2: # analysis_q03d_seasonal_xgb.py  --  issue 03 (R3 L469-471) small CPU experiment
+       4: # Reviewer R3: "modeling and analyses need to be carried out by separating seasons".
+       5: # Question: does season-specific XGBoost, or a global XGBoost with calendar
+       6: # (month / hour sin-cos) inputs, beat the global 7-feature XGBoost at the 6 h lead?
+       8: # Everything else is IDENTICAL to the main pipeline (Step 2D + Step 3) and to
+      10: #   - same data file, chronological 70/15/15 split, scalers fitted on TRAIN only
+      11: #   - window of 6 snapshots t-5..t -> target at the next step, built per split
+      12: #   - XGBoost n_estimators=100, lr=0.05, max_depth=6, subsample=0.8,
+      13: #     colsample_bytree=0.8 (same hyper-parameters for every variant, NO re-tuning)
+      14: #   - 5 seeds: 42, 123, 7, 2024, 99
+      16: # Variants
+      17: #   G  global XGBoost, 42 inputs (6 x 7 features)                  [= main XGBoost]
+      18: #   S  four season-specific XGBoosts (DJF/MAM/JJA/SON); each is trained only on
+      19: #      training windows whose TARGET time falls in that season, and predicts only
+      20: #      test windows whose target time falls in that season
+      21: #   F  global XGBoost + calendar inputs of the target time:
+      22: #      sin/cos(month), sin/cos(hour of day)  (46 inputs)
+      24: # Season = season of the target time stamp (month of the row that is predicted).
+      25: # Subsets reported: all, DJF, MAM, JJA, SON, wet (>=0.1 mm/h), upper tail (>=Q95,
+      26: # Q95 derived from the TRAIN targets only).
+      28: # CPU only, a few minutes.  Run from the folder that contains data/ :
+      30: #     python3 code/analysis_q03d_seasonal_xgb.py 2>&1 | tee results/metrics/q03d_seasonal_xgb_output.txt
+      31: # Optional first argument: path of the regional csv.
+      32: # Outputs (results/ablation/):
+      33: #     q03d_seasonal_xgb_raw.csv        per seed x variant x subset
+      34: #     q03d_seasonal_xgb_summary.csv    mean/std over seeds
+      35: #     q03d_seasonal_xgb_paired.csv     S-G and F-G: per-seed mean/std/#worse + block-bootstrap CI
+      36: #     q03d_seasonal_xgb_test_preds.csv seed-averaged test predictions (G, S, F)
+      37: # Nothing existing is read for writing or overwritten.
+      41: import numpy as np
+      42: import pandas as pd
+      43: import xgboost as xgb
+      44: from sklearn.preprocessing import StandardScaler
+      46: SEEDS = [42, 123, 7, 2024, 99]
+      49: SEASONS = ['DJF', 'MAM', 'JJA', 'SON']
+      51: BOOT_REPS, BOOT_BLOCK, BOOT_SEED = 2000, 28, 42     # same settings as the other bootstraps
+      52: XGB_KW = dict(n_estimators=100, learning_rate=0.05, max_depth=6,
+      55: CANDS = (sys.argv[1:2] or []) + [
+      58: path = next(p for p in CANDS if os.path.exists(p))
+      59: df = pd.read_csv(path, parse_dates=['valid_time']).sort_values('valid_time').reset_index(drop=True)
+  == results/ablation/q03d_seasonal_xgb_summary.csv  shape (21, 10)
+   Variant     Subset  RMSE_mean  RMSE_std  MAE_mean  MAE_std  R2_mean  R2_std  Skill_vs_monthhour_clim_mean  Skill_vs_monthhour_clim_std
+0        F        all     0.2443    0.0005    0.1190   0.0003   0.2022  0.0034                        0.1052                       0.0019
+1        F        DJF     0.2806    0.0014    0.1540   0.0012   0.1768  0.0084                        0.1009                       0.0046
+2        F        MAM     0.1724    0.0011    0.0732   0.0009   0.2390  0.0101                        0.1264                       0.0058
+3        F        JJA     0.2443    0.0010    0.1182   0.0007   0.2484  0.0063                        0.1334                       0.0036
+4        F        SON     0.2637    0.0018    0.1301   0.0012   0.1400  0.0118                        0.0741                       0.0064
+5        F   wet>=0.1     0.4746    0.0016    0.3126   0.0006  -0.2780  0.0088                        0.1470                       0.0030
+6        F  tail>=Q95     0.8432    0.0029    0.7295   0.0034  -3.0130  0.0279                        0.1576                       0.0029
+7        G        all     0.2439    0.0002    0.1191   0.0005   0.2049  0.0016                        0.1067                       0.0009
+8        G        DJF     0.2819    0.0020    0.1556   0.0017   0.1689  0.0118                        0.0966                       0.0064
+9        G        MAM     0.1731    0.0011    0.0745   0.0008   0.2321  0.0096                        0.1224                       0.0055
+10       G        JJA     0.2467    0.0015    0.1192   0.0011   0.2336  0.0092                        0.1249                       0.0052
+11       G        SON     0.2585    0.0012    0.1271   0.0009   0.1736  0.0080                        0.0924                       0.0044
+12       G   wet>=0.1     0.4735    0.0011    0.3118   0.0010  -0.2718  0.0057                        0.1491                       0.0019
+13       G  tail>=Q95     0.8428    0.0020    0.7294   0.0020  -3.0093  0.0193                        0.1580                       0.0020
+14       S        all     0.2468    0.0010    0.1205   0.0006   0.1860  0.0063                        0.0962                       0.0035
+15       S        DJF     0.2811    0.0011    0.1486   0.0012   0.1741  0.0067                        0.0994                       0.0037
+16       S        MAM     0.1707    0.0013    0.0728   0.0005   0.2536  0.0114                        0.1348                       0.0066
+17       S        JJA     0.2497    0.0015    0.1247   0.0012   0.2147  0.0094                        0.1142                       0.0053
+18       S        SON     0.2673    0.0021    0.1335   0.0014   0.1160  0.0136                        0.0613                       0.0072
+19       S   wet>=0.1     0.4784    0.0023    0.3169   0.0011  -0.2981  0.0123                        0.1403                       0.0041
+20       S  tail>=Q95     0.8476    0.0041    0.7351   0.0035  -3.0546  0.0388                        0.1533                       0.0041
+  == results/ablation/q03d_seasonal_xgb_paired.csv  shape (14, 10)
+   Comparison     Subset     N  seed_mean_delta_RMSE  seed_std_delta  n_seeds_worse  n_seeds  seedavg_pred_delta_RMSE  boot_CI_low  boot_CI_high
+0   S_minus_G        all  3939                0.0029          0.0008              5        5                   0.0020      -0.0012        0.0056
+1   S_minus_G        DJF   848               -0.0009          0.0024              3        5                  -0.0013      -0.0103        0.0074
+2   S_minus_G        MAM   895               -0.0024          0.0013              0        5                  -0.0025      -0.0074        0.0030
+3   S_minus_G        JJA  1104                0.0030          0.0016              5        5                   0.0023      -0.0011        0.0059
+4   S_minus_G        SON  1092                0.0088          0.0029              5        5                   0.0071      -0.0005        0.0148
+5   S_minus_G   wet>=0.1   854                0.0049          0.0029              5        5                   0.0037      -0.0032        0.0111
+6   S_minus_G  tail>=Q95   238                0.0047          0.0056              4        5                   0.0041      -0.0093        0.0184
+7   F_minus_G        all  3939                0.0004          0.0007              3        5                   0.0004      -0.0011        0.0018
+8   F_minus_G        DJF   848               -0.0013          0.0019              1        5                  -0.0013      -0.0038        0.0013
+9   F_minus_G        MAM   895               -0.0008          0.0003              0        5                  -0.0007      -0.0030        0.0013
+10  F_minus_G        JJA  1104               -0.0024          0.0024              1        5                  -0.0025      -0.0050       -0.0004
+11  F_minus_G        SON  1092                0.0052          0.0011              5        5                   0.0050       0.0022        0.0079
+12  F_minus_G   wet>=0.1   854                0.0012          0.0017              4        5                   0.0010      -0.0015        0.0033
+13  F_minus_G  tail>=Q95   238                0.0004          0.0030              1        5                   0.0004      -0.0048        0.0051
+  [q03d_paired] rows with CI (boot_CI_low, boot_CI_high) excluding 0: 2 of 14
+   Comparison Subset     N  seed_mean_delta_RMSE  seed_std_delta  n_seeds_worse  n_seeds  seedavg_pred_delta_RMSE  boot_CI_low  boot_CI_high
+10  F_minus_G    JJA  1104               -0.0024          0.0024              1        5                  -0.0025      -0.0050       -0.0004
+11  F_minus_G    SON  1092                0.0052          0.0011              5        5                   0.0050       0.0022        0.0079
+
+===== CHECK COMPLETE (read-only) =====

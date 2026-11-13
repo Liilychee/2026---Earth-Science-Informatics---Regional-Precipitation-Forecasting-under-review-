@@ -1,0 +1,64 @@
+tp1h attrs: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'long_name': 'Total precipitation', 'short_name': 'tp', 'units': 'm', 'source_store': 'datasets/era5/1959-2022-full_37-1h-0p25deg-chunk-1.zarr-v2', '_Netcdf4Dimid': np.int32(0)}
+tp6h attrs: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'long_name': 'Total precipitation', 'short_name': 'tp', 'units': 'm', 'source_store': 'datasets/era5/1959-2022-6h-1440x721.zarr', '_Netcdf4Dimid': np.int32(0)}
+datasets in first file: ['total_precipitation_6hr', 'latitude', 'longitude', 'time', 'total_precipitation']
+
+== 1. coverage: 3948 times, 2019-04-20 00:00:00 -> 2021-12-31 18:00:00, cells per time 25
+hour of day counts: {0: 987, 6: 987, 12: 987, 18: 987}
+time steps: {Timedelta('0 days 06:00:00'): 3947}
+NaN tp1h / tp6h: 0 0
+min tp1h / tp6h (mm): -3.725290298461914e-06 -2.2351741790771484e-05 | n<0: 7351 5085
+
+== 2. box-mean tp6h(T) >= tp1h(T) - eps, by tolerance
+  eps 0 mm: 0.9754  (violations 97)
+  eps 1e-06 mm: 0.9754  (violations 97)
+  eps 1e-05 mm: 0.9992  (violations 3)
+  eps 0.0001 mm: 1.0000  (violations 0)
+  eps 0.001 mm: 1.0000  (violations 0)
+  eps 0.01 mm: 1.0000  (violations 0)
+
+== 3. violations (eps 1e-6): n 97
+by hour: {0: 25, 6: 27, 12: 20, 18: 25}
+by year: {2019: 32, 2020: 38, 2021: 27}
+            tp1h       tp6h     excess      ratio
+count  97.000000  97.000000  97.000000  10.000000
+mean    0.000022   0.000013   0.000009   1.152564
+std     0.000133   0.000133   0.000002   0.103437
+min    -0.000002  -0.000019   0.000005   1.007461
+50%    -0.000002  -0.000011   0.000009   1.138092
+90%     0.000020   0.000010   0.000009   1.276574
+99%     0.000372   0.000363   0.000019   1.306123
+max     0.001258   0.001248   0.000019   1.309406
+largest 15 excess:
+               time      tp1h      tp6h   excess    ratio
+2019-08-29 06:00:00  0.000112  0.000093 0.000019 1.199362
+2019-08-08 06:00:00  0.000079  0.000060 0.000019 1.309406
+2020-11-23 00:00:00  0.000000 -0.000019 0.000019      NaN
+2019-05-13 12:00:00 -0.000002 -0.000011 0.000009      NaN
+2019-05-13 06:00:00 -0.000002 -0.000011 0.000009      NaN
+2019-05-14 12:00:00 -0.000002 -0.000011 0.000009      NaN
+2019-05-14 18:00:00 -0.000002 -0.000011 0.000009      NaN
+2019-05-14 00:00:00 -0.000002 -0.000011 0.000009      NaN
+2019-05-13 18:00:00 -0.000002 -0.000011 0.000009      NaN
+2019-05-15 12:00:00 -0.000002 -0.000011 0.000009      NaN
+2019-05-15 18:00:00 -0.000002 -0.000011 0.000009      NaN
+2019-05-16 00:00:00  0.000000 -0.000009 0.000009      NaN
+2019-05-21 06:00:00 -0.000002 -0.000011 0.000009      NaN
+2019-06-09 06:00:00 -0.000002 -0.000011 0.000009      NaN
+2019-06-27 12:00:00 -0.000002 -0.000011 0.000009      NaN
+
+== 4. per cell (time x cell) tp6h >= tp1h - eps
+  eps 1e-06: 0.9517
+  eps 0.0001: 1.0000
+  eps 0.001: 1.0000
+
+== 5. 'window starts at T' using only true +6 h neighbours
+  pairs with T+6 h present: 3947 / 3948
+  eps 1e-06: tp6h(T) >= tp1h(T+6h): 0.7814   vs  tp6h(T) >= tp1h(T): 0.9754
+  eps 0.0001: tp6h(T) >= tp1h(T+6h): 0.8067   vs  tp6h(T) >= tp1h(T): 1.0000
+  eps 0.001: tp6h(T) >= tp1h(T+6h): 0.8224   vs  tp6h(T) >= tp1h(T): 1.0000
+  corr tp6h(T)~tp1h(T) 0.742 | tp6h(T)~tp1h(T+6h) 0.207
+
+== 6. wet-only (tp6h > 0.1 mm): fraction tp6h(T) >= tp1h(T)
+  n 1960: 1.0000
+
+===== CHECK COMPLETE (read-only) =====
