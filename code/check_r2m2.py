@@ -45,11 +45,25 @@ for p in ["data/*.csv", "data/**/*.nc", "data/**/*.grib", "data/**/*.grb", "data
 
 # ---------------------------------------------------------------- 2. CSVs: columns, units, timestamps
 sec("2. CSV COLUMNS, TIME AXIS, MAGNITUDES (mxtpr, mntpr, lsp, tp)")
-for f in ["data/04-24.csv", "data/dublin_regional_2004_2021.csv"]:
+for f in ["data/dublin_regional_2004_2021.csv", "data/dublin_regional_reduced.csv", "data/04-24.csv"]:
     if not os.path.exists(f):
         print("  [missing]", f); continue
+    size_mb = os.path.getsize(f) / 1e6
+    print(f"\n{f}: {size_mb:.1f} MB", flush=True)
+    if size_mb > 100:  # large file: header, first rows and chunked time range only
+        h = pd.read_csv(f, nrows=5)
+        print(f"columns: {list(h.columns)}\n{h.to_string()}")
+        tcol = next((c for c in h.columns if re.search(r"time|date", c, re.I)), None)
+        if tcol:
+            tmin, tmax, n, hours = None, None, 0, set()
+            for ch in pd.read_csv(f, usecols=[tcol], chunksize=2_000_000, dtype=str):
+                u = pd.Series(ch[tcol].unique())  # ISO strings: lexicographic order = time order
+                tmin = u.min() if tmin is None else min(tmin, u.min()); tmax = u.max() if tmax is None else max(tmax, u.max())
+                n += len(ch); hours |= set(pd.to_datetime(u).dt.hour.unique().tolist())
+            print(f"time col '{tcol}': {tmin} -> {tmax}, rows {n}, hours {sorted(hours)}", flush=True)
+        continue
     d = pd.read_csv(f)
-    print(f"\n{f}: shape {d.shape}\ncolumns: {list(d.columns)}")
+    print(f"shape {d.shape}\ncolumns: {list(d.columns)}")
     tcol = next((c for c in d.columns if re.search(r"time|date", c, re.I)), None)
     if tcol:
         t = pd.to_datetime(d[tcol])

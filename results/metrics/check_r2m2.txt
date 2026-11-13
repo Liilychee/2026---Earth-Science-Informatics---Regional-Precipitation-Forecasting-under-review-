@@ -42,3 +42,972 @@
 ====================================================================================================
 2. CSV COLUMNS, TIME AXIS, MAGNITUDES (mxtpr, mntpr, lsp, tp)
 ====================================================================================================
+
+data/dublin_regional_2004_2021.csv: 3.6 MB
+shape (26300, 9)
+columns: ['valid_time', 'mxtpr', 'mntpr', 'lsp', 'tcc', 'v10', 'u10', 'd2m', 'tp_mm']
+time col 'valid_time': 2004-01-01 00:00:00 -> 2021-12-31 18:00:00, unique 26300, hours [0, 6, 12, 18], steps {Timedelta('0 days 06:00:00'): 26299}
+         count      mean       std  min           25%           50%       75%       max
+mxtpr  26300.0  0.000050  0.000121  0.0  8.583069e-08  4.243851e-06  0.000036  0.001636
+mntpr  26300.0  0.000017  0.000056  0.0  0.000000e+00  5.531311e-07  0.000007  0.001090
+lsp    26300.0  0.000066  0.000219  0.0  3.814697e-08  2.079010e-06  0.000022  0.003856
+tp_mm  26300.0  0.106632  0.279164  0.0  2.479553e-04  8.277893e-03  0.068340  4.134541
+            valid_time         mxtpr         mntpr           lsp       tcc       v10       u10         d2m     tp_mm
+0  2004-01-01 00:00:00  5.617142e-06  3.719330e-07  8.487701e-06  0.202726  0.947801  6.650042  277.814113  0.019417
+1  2004-01-01 06:00:00  4.873276e-06  1.702309e-06  8.277893e-06  0.408947 -2.558291  7.981807  277.712466  0.013428
+2  2004-01-01 12:00:00  3.862381e-07  1.335144e-07  7.629394e-07  0.383137 -4.215610  7.123491  276.204019  0.000820
+
+data/dublin_regional_reduced.csv: 5.0 MB
+shape (26300, 13)
+columns: ['valid_time', 'u10', 'v10', 'd2m', 't2m', 'sp', 'tp', 'e', 'mxtpr', 'mntpr', 'tcc', 'ssr', 'lsp']
+time col 'valid_time': 2004-01-01 00:00:00 -> 2021-12-31 18:00:00, unique 26300, hours [0, 6, 12, 18], steps {Timedelta('0 days 06:00:00'): 26299}
+         count      mean       std  min           25%           50%       75%       max
+tp     26300.0  0.000107  0.000279  0.0  2.479553e-07  8.277893e-06  0.000068  0.004135
+mxtpr  26300.0  0.000050  0.000121  0.0  8.583069e-08  4.243851e-06  0.000036  0.001636
+mntpr  26300.0  0.000017  0.000056  0.0  0.000000e+00  5.531311e-07  0.000007  0.001090
+lsp    26300.0  0.000066  0.000219  0.0  3.814697e-08  2.079010e-06  0.000022  0.003856
+            valid_time       u10       v10         d2m         t2m          sp            tp         e         mxtpr         mntpr       tcc           ssr           lsp
+0  2004-01-01 00:00:00  6.650042  0.947801  277.814113  280.565299   99407.940  1.941681e-05 -0.000056  5.617142e-06  3.719330e-07  0.202726  3.599999e-12  8.487701e-06
+1  2004-01-01 06:00:00  7.981807 -2.558291  277.712466  280.620457   99524.645  1.342773e-05 -0.000068  4.873276e-06  1.702309e-06  0.408947  3.599999e-12  8.277893e-06
+2  2004-01-01 12:00:00  7.123491 -4.215610  276.204019  280.548908  100028.015  8.201599e-07 -0.000119  3.862381e-07  1.335144e-07  0.383137  5.533824e+05  7.629394e-07
+
+data/04-24.csv: 1637.9 MB
+columns: ['valid_time', 'latitude', 'longitude', 'number', 'expver', 'u10', 'v10', 'd2m', 't2m', 'sp', 'tp', 'e', 'mxtpr', 'mntpr', 'tcc', 'ssr', 'lsp']
+            valid_time  latitude  longitude  number  expver        u10        v10        d2m        t2m        sp        tp         e     mxtpr     mntpr       tcc           ssr       lsp
+0  2004-01-01 00:00:00      55.5     -10.50       0       1  15.037308 -12.340988  279.58910  282.60413  99860.06  0.000139 -0.000256  0.000067  0.000017  0.543610  3.599999e-12  0.000037
+1  2004-01-01 00:00:00      55.5     -10.25       0       1  15.046097 -11.705246  279.74536  282.67834  99792.06  0.000226 -0.000238  0.000109  0.000050  0.481079  3.599999e-12  0.000031
+2  2004-01-01 00:00:00      55.5     -10.00       0       1  14.989456 -10.914230  279.89380  282.75647  99740.06  0.000283 -0.000222  0.000109  0.000050  0.412537  3.599999e-12  0.000026
+3  2004-01-01 00:00:00      55.5      -9.75       0       1  14.779495  -9.798019  280.01100  282.83070  99715.06  0.000274 -0.000207  0.000112  0.000050  0.329193  3.599999e-12  0.000022
+4  2004-01-01 00:00:00      55.5      -9.50       0       1  14.564652  -8.629074  280.08130  282.88538  99663.06  0.000273 -0.000191  0.000112  0.000050  0.274841  3.599999e-12  0.000019
+time col 'valid_time': 2004-01-01 00:00:00 -> 2024-11-02 12:00:00, rows 10869579, hours [0, 6, 12, 18]
+
+consistency columns: {'mx': 'mxtpr', 'mn': 'mntpr', 'tp': 'tp_mm', 'lsp': 'lsp'}
+mxtpr scale used: x3600.0
+  eps 0: mxtpr*s >= tp: 0.9317 | tp >= mntpr*s: 0.9927
+  eps 0.0001: mxtpr*s >= tp: 0.9500 | tp >= mntpr*s: 0.9962
+  eps 0.001: mxtpr*s >= tp: 0.9750 | tp >= mntpr*s: 0.9980
+  lsp*1000 <= tp + 1e-4: 0.9956  (lsp is part of tp in the same hour)
+
+====================================================================================================
+3. RAW ERA5 FILE METADATA (stepType, units, valid_time) if any raw download is on AutoDL
+====================================================================================================
+
+  data/era5_1992_2003/era5_1992.nc: datasets ['valid_time', 'latitude', 'longitude', 'tp', 'e', 'ssr', 'lsp', 'u10', 'v10', 'd2m', 't2m', 'sp', 'tcc', 'mxtpr', 'mntpr']
+    tp: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'GRIB_paramId': array([228]), 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': array([357]), 'GRIB_typeOfLevel': 'surface', 'GRIB_stepUnits': array([1]), 'GRIB_stepType': 'accum', 'GRIB_gridType': 'regular_ll', 'GRIB_uvRelativeToGrid': array([0]), 'GRIB_NV': array([0]), 'GRIB_Nx': array([21]), 'GRIB_Ny': array([17]), 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'tp', 'GRIB_gridDefinitionDescription': 'Latitude/Longitude Grid', 'GRIB_iDirectionIncrementInDegrees': array([0.25]), 'GRIB_iScansNegatively': array([0]), 'GRIB_jDirectionIncrementInDegrees': array([0.25]), 'GRIB_jPointsAreConsecutive': array([0]), 'GRIB_jScansPositively': array([0]), 'GRIB_latitudeOfFirstGridPointInDegrees': array([55.5]), 'GRIB_latitudeOfLastGridPointInDegrees': array([51.5]), 'GRIB_longitudeOfFirstGridPointInDegrees': array([-10.5]), 'GRIB_longitudeOfLastGridPointInDegrees': array([-5.5]), 'GRIB_missingValue': array([3.40282347e+38]), 'GRIB_name': 'Total precipitation', 'GRIB_shortName': 'tp', 'GRIB_totalNumber': array([0]), 'GRIB_units': 'm', 'long_name': 'Total precipitation', 'units': 'm', 'standard_name': 'unknown', 'GRIB_surface': array([0.]), 'coordinates': 'number valid_time latitude longitude expver'}
+    lsp: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'GRIB_paramId': array([142]), 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': array([357]), 'GRIB_typeOfLevel': 'surface', 'GRIB_stepUnits': array([1]), 'GRIB_stepType': 'accum', 'GRIB_gridType': 'regular_ll', 'GRIB_uvRelativeToGrid': array([0]), 'GRIB_NV': array([0]), 'GRIB_Nx': array([21]), 'GRIB_Ny': array([17]), 'GRIB_cfName': 'lwe_thickness_of_stratiform_precipitation_amount', 'GRIB_cfVarName': 'lsp', 'GRIB_gridDefinitionDescription': 'Latitude/Longitude Grid', 'GRIB_iDirectionIncrementInDegrees': array([0.25]), 'GRIB_iScansNegatively': array([0]), 'GRIB_jDirectionIncrementInDegrees': array([0.25]), 'GRIB_jPointsAreConsecutive': array([0]), 'GRIB_jScansPositively': array([0]), 'GRIB_latitudeOfFirstGridPointInDegrees': array([55.5]), 'GRIB_latitudeOfLastGridPointInDegrees': array([51.5]), 'GRIB_longitudeOfFirstGridPointInDegrees': array([-10.5]), 'GRIB_longitudeOfLastGridPointInDegrees': array([-5.5]), 'GRIB_missingValue': array([3.40282347e+38]), 'GRIB_name': 'Large-scale precipitation', 'GRIB_shortName': 'lsp', 'GRIB_totalNumber': array([0]), 'GRIB_units': 'm', 'long_name': 'Large-scale precipitation', 'units': 'm', 'standard_name': 'lwe_thickness_of_stratiform_precipitation_amount', 'GRIB_surface': array([0.]), 'coordinates': 'number valid_time latitude longitude expver'}
+    mxtpr: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'GRIB_paramId': array([228226]), 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': array([357]), 'GRIB_typeOfLevel': 'surface', 'GRIB_stepUnits': array([1]), 'GRIB_stepType': 'max', 'GRIB_gridType': 'regular_ll', 'GRIB_uvRelativeToGrid': array([0]), 'GRIB_NV': array([0]), 'GRIB_Nx': array([21]), 'GRIB_Ny': array([17]), 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'mxtpr', 'GRIB_gridDefinitionDescription': 'Latitude/Longitude Grid', 'GRIB_iDirectionIncrementInDegrees': array([0.25]), 'GRIB_iScansNegatively': array([0]), 'GRIB_jDirectionIncrementInDegrees': array([0.25]), 'GRIB_jPointsAreConsecutive': array([0]), 'GRIB_jScansPositively': array([0]), 'GRIB_latitudeOfFirstGridPointInDegrees': array([55.5]), 'GRIB_latitudeOfLastGridPointInDegrees': array([51.5]), 'GRIB_longitudeOfFirstGridPointInDegrees': array([-10.5]), 'GRIB_longitudeOfLastGridPointInDegrees': array([-5.5]), 'GRIB_missingValue': array([3.40282347e+38]), 'GRIB_name': 'Maximum total precipitation rate since previous post-processing', 'GRIB_shortName': 'mxtpr', 'GRIB_totalNumber': array([0]), 'GRIB_units': 'kg m**-2 s**-1', 'long_name': 'Maximum total precipitation rate since previous post-processing', 'units': 'kg m**-2 s**-1', 'standard_name': 'unknown', 'GRIB_surface': array([0.]), 'coordinates': 'number valid_time latitude longitude expver'}
+    mntpr: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'GRIB_paramId': array([228227]), 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': array([357]), 'GRIB_typeOfLevel': 'surface', 'GRIB_stepUnits': array([1]), 'GRIB_stepType': 'max', 'GRIB_gridType': 'regular_ll', 'GRIB_uvRelativeToGrid': array([0]), 'GRIB_NV': array([0]), 'GRIB_Nx': array([21]), 'GRIB_Ny': array([17]), 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'mntpr', 'GRIB_gridDefinitionDescription': 'Latitude/Longitude Grid', 'GRIB_iDirectionIncrementInDegrees': array([0.25]), 'GRIB_iScansNegatively': array([0]), 'GRIB_jDirectionIncrementInDegrees': array([0.25]), 'GRIB_jPointsAreConsecutive': array([0]), 'GRIB_jScansPositively': array([0]), 'GRIB_latitudeOfFirstGridPointInDegrees': array([55.5]), 'GRIB_latitudeOfLastGridPointInDegrees': array([51.5]), 'GRIB_longitudeOfFirstGridPointInDegrees': array([-10.5]), 'GRIB_longitudeOfLastGridPointInDegrees': array([-5.5]), 'GRIB_missingValue': array([3.40282347e+38]), 'GRIB_name': 'Minimum total precipitation rate since previous post-processing', 'GRIB_shortName': 'mntpr', 'GRIB_totalNumber': array([0]), 'GRIB_units': 'kg m**-2 s**-1', 'long_name': 'Minimum total precipitation rate since previous post-processing', 'units': 'kg m**-2 s**-1', 'standard_name': 'unknown', 'GRIB_surface': array([0.]), 'coordinates': 'number valid_time latitude longitude expver'}
+
+  data/era5_1992_2003/era5_1993.nc: datasets ['valid_time', 'latitude', 'longitude', 'tp', 'e', 'ssr', 'lsp', 'u10', 'v10', 'd2m', 't2m', 'sp', 'tcc', 'mxtpr', 'mntpr']
+    tp: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'GRIB_paramId': array([228]), 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': array([357]), 'GRIB_typeOfLevel': 'surface', 'GRIB_stepUnits': array([1]), 'GRIB_stepType': 'accum', 'GRIB_gridType': 'regular_ll', 'GRIB_uvRelativeToGrid': array([0]), 'GRIB_NV': array([0]), 'GRIB_Nx': array([21]), 'GRIB_Ny': array([17]), 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'tp', 'GRIB_gridDefinitionDescription': 'Latitude/Longitude Grid', 'GRIB_iDirectionIncrementInDegrees': array([0.25]), 'GRIB_iScansNegatively': array([0]), 'GRIB_jDirectionIncrementInDegrees': array([0.25]), 'GRIB_jPointsAreConsecutive': array([0]), 'GRIB_jScansPositively': array([0]), 'GRIB_latitudeOfFirstGridPointInDegrees': array([55.5]), 'GRIB_latitudeOfLastGridPointInDegrees': array([51.5]), 'GRIB_longitudeOfFirstGridPointInDegrees': array([-10.5]), 'GRIB_longitudeOfLastGridPointInDegrees': array([-5.5]), 'GRIB_missingValue': array([3.40282347e+38]), 'GRIB_name': 'Total precipitation', 'GRIB_shortName': 'tp', 'GRIB_totalNumber': array([0]), 'GRIB_units': 'm', 'long_name': 'Total precipitation', 'units': 'm', 'standard_name': 'unknown', 'GRIB_surface': array([0.]), 'coordinates': 'number valid_time latitude longitude expver'}
+    lsp: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'GRIB_paramId': array([142]), 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': array([357]), 'GRIB_typeOfLevel': 'surface', 'GRIB_stepUnits': array([1]), 'GRIB_stepType': 'accum', 'GRIB_gridType': 'regular_ll', 'GRIB_uvRelativeToGrid': array([0]), 'GRIB_NV': array([0]), 'GRIB_Nx': array([21]), 'GRIB_Ny': array([17]), 'GRIB_cfName': 'lwe_thickness_of_stratiform_precipitation_amount', 'GRIB_cfVarName': 'lsp', 'GRIB_gridDefinitionDescription': 'Latitude/Longitude Grid', 'GRIB_iDirectionIncrementInDegrees': array([0.25]), 'GRIB_iScansNegatively': array([0]), 'GRIB_jDirectionIncrementInDegrees': array([0.25]), 'GRIB_jPointsAreConsecutive': array([0]), 'GRIB_jScansPositively': array([0]), 'GRIB_latitudeOfFirstGridPointInDegrees': array([55.5]), 'GRIB_latitudeOfLastGridPointInDegrees': array([51.5]), 'GRIB_longitudeOfFirstGridPointInDegrees': array([-10.5]), 'GRIB_longitudeOfLastGridPointInDegrees': array([-5.5]), 'GRIB_missingValue': array([3.40282347e+38]), 'GRIB_name': 'Large-scale precipitation', 'GRIB_shortName': 'lsp', 'GRIB_totalNumber': array([0]), 'GRIB_units': 'm', 'long_name': 'Large-scale precipitation', 'units': 'm', 'standard_name': 'lwe_thickness_of_stratiform_precipitation_amount', 'GRIB_surface': array([0.]), 'coordinates': 'number valid_time latitude longitude expver'}
+    mxtpr: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'GRIB_paramId': array([228226]), 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': array([357]), 'GRIB_typeOfLevel': 'surface', 'GRIB_stepUnits': array([1]), 'GRIB_stepType': 'max', 'GRIB_gridType': 'regular_ll', 'GRIB_uvRelativeToGrid': array([0]), 'GRIB_NV': array([0]), 'GRIB_Nx': array([21]), 'GRIB_Ny': array([17]), 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'mxtpr', 'GRIB_gridDefinitionDescription': 'Latitude/Longitude Grid', 'GRIB_iDirectionIncrementInDegrees': array([0.25]), 'GRIB_iScansNegatively': array([0]), 'GRIB_jDirectionIncrementInDegrees': array([0.25]), 'GRIB_jPointsAreConsecutive': array([0]), 'GRIB_jScansPositively': array([0]), 'GRIB_latitudeOfFirstGridPointInDegrees': array([55.5]), 'GRIB_latitudeOfLastGridPointInDegrees': array([51.5]), 'GRIB_longitudeOfFirstGridPointInDegrees': array([-10.5]), 'GRIB_longitudeOfLastGridPointInDegrees': array([-5.5]), 'GRIB_missingValue': array([3.40282347e+38]), 'GRIB_name': 'Maximum total precipitation rate since previous post-processing', 'GRIB_shortName': 'mxtpr', 'GRIB_totalNumber': array([0]), 'GRIB_units': 'kg m**-2 s**-1', 'long_name': 'Maximum total precipitation rate since previous post-processing', 'units': 'kg m**-2 s**-1', 'standard_name': 'unknown', 'GRIB_surface': array([0.]), 'coordinates': 'number valid_time latitude longitude expver'}
+    mntpr: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'GRIB_paramId': array([228227]), 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': array([357]), 'GRIB_typeOfLevel': 'surface', 'GRIB_stepUnits': array([1]), 'GRIB_stepType': 'max', 'GRIB_gridType': 'regular_ll', 'GRIB_uvRelativeToGrid': array([0]), 'GRIB_NV': array([0]), 'GRIB_Nx': array([21]), 'GRIB_Ny': array([17]), 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'mntpr', 'GRIB_gridDefinitionDescription': 'Latitude/Longitude Grid', 'GRIB_iDirectionIncrementInDegrees': array([0.25]), 'GRIB_iScansNegatively': array([0]), 'GRIB_jDirectionIncrementInDegrees': array([0.25]), 'GRIB_jPointsAreConsecutive': array([0]), 'GRIB_jScansPositively': array([0]), 'GRIB_latitudeOfFirstGridPointInDegrees': array([55.5]), 'GRIB_latitudeOfLastGridPointInDegrees': array([51.5]), 'GRIB_longitudeOfFirstGridPointInDegrees': array([-10.5]), 'GRIB_longitudeOfLastGridPointInDegrees': array([-5.5]), 'GRIB_missingValue': array([3.40282347e+38]), 'GRIB_name': 'Minimum total precipitation rate since previous post-processing', 'GRIB_shortName': 'mntpr', 'GRIB_totalNumber': array([0]), 'GRIB_units': 'kg m**-2 s**-1', 'long_name': 'Minimum total precipitation rate since previous post-processing', 'units': 'kg m**-2 s**-1', 'standard_name': 'unknown', 'GRIB_surface': array([0.]), 'coordinates': 'number valid_time latitude longitude expver'}
+
+  data/era5_1992_2003/era5_1994.nc: datasets ['valid_time', 'latitude', 'longitude', 'tp', 'e', 'ssr', 'lsp', 'u10', 'v10', 'd2m', 't2m', 'sp', 'tcc', 'mxtpr', 'mntpr']
+    tp: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'GRIB_paramId': array([228]), 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': array([357]), 'GRIB_typeOfLevel': 'surface', 'GRIB_stepUnits': array([1]), 'GRIB_stepType': 'accum', 'GRIB_gridType': 'regular_ll', 'GRIB_uvRelativeToGrid': array([0]), 'GRIB_NV': array([0]), 'GRIB_Nx': array([21]), 'GRIB_Ny': array([17]), 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'tp', 'GRIB_gridDefinitionDescription': 'Latitude/Longitude Grid', 'GRIB_iDirectionIncrementInDegrees': array([0.25]), 'GRIB_iScansNegatively': array([0]), 'GRIB_jDirectionIncrementInDegrees': array([0.25]), 'GRIB_jPointsAreConsecutive': array([0]), 'GRIB_jScansPositively': array([0]), 'GRIB_latitudeOfFirstGridPointInDegrees': array([55.5]), 'GRIB_latitudeOfLastGridPointInDegrees': array([51.5]), 'GRIB_longitudeOfFirstGridPointInDegrees': array([-10.5]), 'GRIB_longitudeOfLastGridPointInDegrees': array([-5.5]), 'GRIB_missingValue': array([3.40282347e+38]), 'GRIB_name': 'Total precipitation', 'GRIB_shortName': 'tp', 'GRIB_totalNumber': array([0]), 'GRIB_units': 'm', 'long_name': 'Total precipitation', 'units': 'm', 'standard_name': 'unknown', 'GRIB_surface': array([0.]), 'coordinates': 'number valid_time latitude longitude expver'}
+    lsp: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'GRIB_paramId': array([142]), 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': array([357]), 'GRIB_typeOfLevel': 'surface', 'GRIB_stepUnits': array([1]), 'GRIB_stepType': 'accum', 'GRIB_gridType': 'regular_ll', 'GRIB_uvRelativeToGrid': array([0]), 'GRIB_NV': array([0]), 'GRIB_Nx': array([21]), 'GRIB_Ny': array([17]), 'GRIB_cfName': 'lwe_thickness_of_stratiform_precipitation_amount', 'GRIB_cfVarName': 'lsp', 'GRIB_gridDefinitionDescription': 'Latitude/Longitude Grid', 'GRIB_iDirectionIncrementInDegrees': array([0.25]), 'GRIB_iScansNegatively': array([0]), 'GRIB_jDirectionIncrementInDegrees': array([0.25]), 'GRIB_jPointsAreConsecutive': array([0]), 'GRIB_jScansPositively': array([0]), 'GRIB_latitudeOfFirstGridPointInDegrees': array([55.5]), 'GRIB_latitudeOfLastGridPointInDegrees': array([51.5]), 'GRIB_longitudeOfFirstGridPointInDegrees': array([-10.5]), 'GRIB_longitudeOfLastGridPointInDegrees': array([-5.5]), 'GRIB_missingValue': array([3.40282347e+38]), 'GRIB_name': 'Large-scale precipitation', 'GRIB_shortName': 'lsp', 'GRIB_totalNumber': array([0]), 'GRIB_units': 'm', 'long_name': 'Large-scale precipitation', 'units': 'm', 'standard_name': 'lwe_thickness_of_stratiform_precipitation_amount', 'GRIB_surface': array([0.]), 'coordinates': 'number valid_time latitude longitude expver'}
+    mxtpr: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'GRIB_paramId': array([228226]), 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': array([357]), 'GRIB_typeOfLevel': 'surface', 'GRIB_stepUnits': array([1]), 'GRIB_stepType': 'max', 'GRIB_gridType': 'regular_ll', 'GRIB_uvRelativeToGrid': array([0]), 'GRIB_NV': array([0]), 'GRIB_Nx': array([21]), 'GRIB_Ny': array([17]), 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'mxtpr', 'GRIB_gridDefinitionDescription': 'Latitude/Longitude Grid', 'GRIB_iDirectionIncrementInDegrees': array([0.25]), 'GRIB_iScansNegatively': array([0]), 'GRIB_jDirectionIncrementInDegrees': array([0.25]), 'GRIB_jPointsAreConsecutive': array([0]), 'GRIB_jScansPositively': array([0]), 'GRIB_latitudeOfFirstGridPointInDegrees': array([55.5]), 'GRIB_latitudeOfLastGridPointInDegrees': array([51.5]), 'GRIB_longitudeOfFirstGridPointInDegrees': array([-10.5]), 'GRIB_longitudeOfLastGridPointInDegrees': array([-5.5]), 'GRIB_missingValue': array([3.40282347e+38]), 'GRIB_name': 'Maximum total precipitation rate since previous post-processing', 'GRIB_shortName': 'mxtpr', 'GRIB_totalNumber': array([0]), 'GRIB_units': 'kg m**-2 s**-1', 'long_name': 'Maximum total precipitation rate since previous post-processing', 'units': 'kg m**-2 s**-1', 'standard_name': 'unknown', 'GRIB_surface': array([0.]), 'coordinates': 'number valid_time latitude longitude expver'}
+    mntpr: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'GRIB_paramId': array([228227]), 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': array([357]), 'GRIB_typeOfLevel': 'surface', 'GRIB_stepUnits': array([1]), 'GRIB_stepType': 'max', 'GRIB_gridType': 'regular_ll', 'GRIB_uvRelativeToGrid': array([0]), 'GRIB_NV': array([0]), 'GRIB_Nx': array([21]), 'GRIB_Ny': array([17]), 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'mntpr', 'GRIB_gridDefinitionDescription': 'Latitude/Longitude Grid', 'GRIB_iDirectionIncrementInDegrees': array([0.25]), 'GRIB_iScansNegatively': array([0]), 'GRIB_jDirectionIncrementInDegrees': array([0.25]), 'GRIB_jPointsAreConsecutive': array([0]), 'GRIB_jScansPositively': array([0]), 'GRIB_latitudeOfFirstGridPointInDegrees': array([55.5]), 'GRIB_latitudeOfLastGridPointInDegrees': array([51.5]), 'GRIB_longitudeOfFirstGridPointInDegrees': array([-10.5]), 'GRIB_longitudeOfLastGridPointInDegrees': array([-5.5]), 'GRIB_missingValue': array([3.40282347e+38]), 'GRIB_name': 'Minimum total precipitation rate since previous post-processing', 'GRIB_shortName': 'mntpr', 'GRIB_totalNumber': array([0]), 'GRIB_units': 'kg m**-2 s**-1', 'long_name': 'Minimum total precipitation rate since previous post-processing', 'units': 'kg m**-2 s**-1', 'standard_name': 'unknown', 'GRIB_surface': array([0.]), 'coordinates': 'number valid_time latitude longitude expver'}
+
+  data/era5_1992_2003/era5_1995.nc: datasets ['valid_time', 'latitude', 'longitude', 'tp', 'e', 'ssr', 'lsp', 'u10', 'v10', 'd2m', 't2m', 'sp', 'tcc', 'mxtpr', 'mntpr']
+    tp: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'GRIB_paramId': array([228]), 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': array([357]), 'GRIB_typeOfLevel': 'surface', 'GRIB_stepUnits': array([1]), 'GRIB_stepType': 'accum', 'GRIB_gridType': 'regular_ll', 'GRIB_uvRelativeToGrid': array([0]), 'GRIB_NV': array([0]), 'GRIB_Nx': array([21]), 'GRIB_Ny': array([17]), 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'tp', 'GRIB_gridDefinitionDescription': 'Latitude/Longitude Grid', 'GRIB_iDirectionIncrementInDegrees': array([0.25]), 'GRIB_iScansNegatively': array([0]), 'GRIB_jDirectionIncrementInDegrees': array([0.25]), 'GRIB_jPointsAreConsecutive': array([0]), 'GRIB_jScansPositively': array([0]), 'GRIB_latitudeOfFirstGridPointInDegrees': array([55.5]), 'GRIB_latitudeOfLastGridPointInDegrees': array([51.5]), 'GRIB_longitudeOfFirstGridPointInDegrees': array([-10.5]), 'GRIB_longitudeOfLastGridPointInDegrees': array([-5.5]), 'GRIB_missingValue': array([3.40282347e+38]), 'GRIB_name': 'Total precipitation', 'GRIB_shortName': 'tp', 'GRIB_totalNumber': array([0]), 'GRIB_units': 'm', 'long_name': 'Total precipitation', 'units': 'm', 'standard_name': 'unknown', 'GRIB_surface': array([0.]), 'coordinates': 'number valid_time latitude longitude expver'}
+    lsp: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'GRIB_paramId': array([142]), 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': array([357]), 'GRIB_typeOfLevel': 'surface', 'GRIB_stepUnits': array([1]), 'GRIB_stepType': 'accum', 'GRIB_gridType': 'regular_ll', 'GRIB_uvRelativeToGrid': array([0]), 'GRIB_NV': array([0]), 'GRIB_Nx': array([21]), 'GRIB_Ny': array([17]), 'GRIB_cfName': 'lwe_thickness_of_stratiform_precipitation_amount', 'GRIB_cfVarName': 'lsp', 'GRIB_gridDefinitionDescription': 'Latitude/Longitude Grid', 'GRIB_iDirectionIncrementInDegrees': array([0.25]), 'GRIB_iScansNegatively': array([0]), 'GRIB_jDirectionIncrementInDegrees': array([0.25]), 'GRIB_jPointsAreConsecutive': array([0]), 'GRIB_jScansPositively': array([0]), 'GRIB_latitudeOfFirstGridPointInDegrees': array([55.5]), 'GRIB_latitudeOfLastGridPointInDegrees': array([51.5]), 'GRIB_longitudeOfFirstGridPointInDegrees': array([-10.5]), 'GRIB_longitudeOfLastGridPointInDegrees': array([-5.5]), 'GRIB_missingValue': array([3.40282347e+38]), 'GRIB_name': 'Large-scale precipitation', 'GRIB_shortName': 'lsp', 'GRIB_totalNumber': array([0]), 'GRIB_units': 'm', 'long_name': 'Large-scale precipitation', 'units': 'm', 'standard_name': 'lwe_thickness_of_stratiform_precipitation_amount', 'GRIB_surface': array([0.]), 'coordinates': 'number valid_time latitude longitude expver'}
+    mxtpr: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'GRIB_paramId': array([228226]), 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': array([357]), 'GRIB_typeOfLevel': 'surface', 'GRIB_stepUnits': array([1]), 'GRIB_stepType': 'max', 'GRIB_gridType': 'regular_ll', 'GRIB_uvRelativeToGrid': array([0]), 'GRIB_NV': array([0]), 'GRIB_Nx': array([21]), 'GRIB_Ny': array([17]), 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'mxtpr', 'GRIB_gridDefinitionDescription': 'Latitude/Longitude Grid', 'GRIB_iDirectionIncrementInDegrees': array([0.25]), 'GRIB_iScansNegatively': array([0]), 'GRIB_jDirectionIncrementInDegrees': array([0.25]), 'GRIB_jPointsAreConsecutive': array([0]), 'GRIB_jScansPositively': array([0]), 'GRIB_latitudeOfFirstGridPointInDegrees': array([55.5]), 'GRIB_latitudeOfLastGridPointInDegrees': array([51.5]), 'GRIB_longitudeOfFirstGridPointInDegrees': array([-10.5]), 'GRIB_longitudeOfLastGridPointInDegrees': array([-5.5]), 'GRIB_missingValue': array([3.40282347e+38]), 'GRIB_name': 'Maximum total precipitation rate since previous post-processing', 'GRIB_shortName': 'mxtpr', 'GRIB_totalNumber': array([0]), 'GRIB_units': 'kg m**-2 s**-1', 'long_name': 'Maximum total precipitation rate since previous post-processing', 'units': 'kg m**-2 s**-1', 'standard_name': 'unknown', 'GRIB_surface': array([0.]), 'coordinates': 'number valid_time latitude longitude expver'}
+    mntpr: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'GRIB_paramId': array([228227]), 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': array([357]), 'GRIB_typeOfLevel': 'surface', 'GRIB_stepUnits': array([1]), 'GRIB_stepType': 'max', 'GRIB_gridType': 'regular_ll', 'GRIB_uvRelativeToGrid': array([0]), 'GRIB_NV': array([0]), 'GRIB_Nx': array([21]), 'GRIB_Ny': array([17]), 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'mntpr', 'GRIB_gridDefinitionDescription': 'Latitude/Longitude Grid', 'GRIB_iDirectionIncrementInDegrees': array([0.25]), 'GRIB_iScansNegatively': array([0]), 'GRIB_jDirectionIncrementInDegrees': array([0.25]), 'GRIB_jPointsAreConsecutive': array([0]), 'GRIB_jScansPositively': array([0]), 'GRIB_latitudeOfFirstGridPointInDegrees': array([55.5]), 'GRIB_latitudeOfLastGridPointInDegrees': array([51.5]), 'GRIB_longitudeOfFirstGridPointInDegrees': array([-10.5]), 'GRIB_longitudeOfLastGridPointInDegrees': array([-5.5]), 'GRIB_missingValue': array([3.40282347e+38]), 'GRIB_name': 'Minimum total precipitation rate since previous post-processing', 'GRIB_shortName': 'mntpr', 'GRIB_totalNumber': array([0]), 'GRIB_units': 'kg m**-2 s**-1', 'long_name': 'Minimum total precipitation rate since previous post-processing', 'units': 'kg m**-2 s**-1', 'standard_name': 'unknown', 'GRIB_surface': array([0.]), 'coordinates': 'number valid_time latitude longitude expver'}
+
+  data/era5_1992_2003/era5_1996.nc: datasets ['valid_time', 'latitude', 'longitude', 'tp', 'e', 'ssr', 'lsp', 'u10', 'v10', 'd2m', 't2m', 'sp', 'tcc', 'mxtpr', 'mntpr']
+    tp: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'GRIB_paramId': array([228]), 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': array([357]), 'GRIB_typeOfLevel': 'surface', 'GRIB_stepUnits': array([1]), 'GRIB_stepType': 'accum', 'GRIB_gridType': 'regular_ll', 'GRIB_uvRelativeToGrid': array([0]), 'GRIB_NV': array([0]), 'GRIB_Nx': array([21]), 'GRIB_Ny': array([17]), 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'tp', 'GRIB_gridDefinitionDescription': 'Latitude/Longitude Grid', 'GRIB_iDirectionIncrementInDegrees': array([0.25]), 'GRIB_iScansNegatively': array([0]), 'GRIB_jDirectionIncrementInDegrees': array([0.25]), 'GRIB_jPointsAreConsecutive': array([0]), 'GRIB_jScansPositively': array([0]), 'GRIB_latitudeOfFirstGridPointInDegrees': array([55.5]), 'GRIB_latitudeOfLastGridPointInDegrees': array([51.5]), 'GRIB_longitudeOfFirstGridPointInDegrees': array([-10.5]), 'GRIB_longitudeOfLastGridPointInDegrees': array([-5.5]), 'GRIB_missingValue': array([3.40282347e+38]), 'GRIB_name': 'Total precipitation', 'GRIB_shortName': 'tp', 'GRIB_totalNumber': array([0]), 'GRIB_units': 'm', 'long_name': 'Total precipitation', 'units': 'm', 'standard_name': 'unknown', 'GRIB_surface': array([0.]), 'coordinates': 'number valid_time latitude longitude expver'}
+    lsp: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'GRIB_paramId': array([142]), 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': array([357]), 'GRIB_typeOfLevel': 'surface', 'GRIB_stepUnits': array([1]), 'GRIB_stepType': 'accum', 'GRIB_gridType': 'regular_ll', 'GRIB_uvRelativeToGrid': array([0]), 'GRIB_NV': array([0]), 'GRIB_Nx': array([21]), 'GRIB_Ny': array([17]), 'GRIB_cfName': 'lwe_thickness_of_stratiform_precipitation_amount', 'GRIB_cfVarName': 'lsp', 'GRIB_gridDefinitionDescription': 'Latitude/Longitude Grid', 'GRIB_iDirectionIncrementInDegrees': array([0.25]), 'GRIB_iScansNegatively': array([0]), 'GRIB_jDirectionIncrementInDegrees': array([0.25]), 'GRIB_jPointsAreConsecutive': array([0]), 'GRIB_jScansPositively': array([0]), 'GRIB_latitudeOfFirstGridPointInDegrees': array([55.5]), 'GRIB_latitudeOfLastGridPointInDegrees': array([51.5]), 'GRIB_longitudeOfFirstGridPointInDegrees': array([-10.5]), 'GRIB_longitudeOfLastGridPointInDegrees': array([-5.5]), 'GRIB_missingValue': array([3.40282347e+38]), 'GRIB_name': 'Large-scale precipitation', 'GRIB_shortName': 'lsp', 'GRIB_totalNumber': array([0]), 'GRIB_units': 'm', 'long_name': 'Large-scale precipitation', 'units': 'm', 'standard_name': 'lwe_thickness_of_stratiform_precipitation_amount', 'GRIB_surface': array([0.]), 'coordinates': 'number valid_time latitude longitude expver'}
+    mxtpr: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'GRIB_paramId': array([228226]), 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': array([357]), 'GRIB_typeOfLevel': 'surface', 'GRIB_stepUnits': array([1]), 'GRIB_stepType': 'max', 'GRIB_gridType': 'regular_ll', 'GRIB_uvRelativeToGrid': array([0]), 'GRIB_NV': array([0]), 'GRIB_Nx': array([21]), 'GRIB_Ny': array([17]), 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'mxtpr', 'GRIB_gridDefinitionDescription': 'Latitude/Longitude Grid', 'GRIB_iDirectionIncrementInDegrees': array([0.25]), 'GRIB_iScansNegatively': array([0]), 'GRIB_jDirectionIncrementInDegrees': array([0.25]), 'GRIB_jPointsAreConsecutive': array([0]), 'GRIB_jScansPositively': array([0]), 'GRIB_latitudeOfFirstGridPointInDegrees': array([55.5]), 'GRIB_latitudeOfLastGridPointInDegrees': array([51.5]), 'GRIB_longitudeOfFirstGridPointInDegrees': array([-10.5]), 'GRIB_longitudeOfLastGridPointInDegrees': array([-5.5]), 'GRIB_missingValue': array([3.40282347e+38]), 'GRIB_name': 'Maximum total precipitation rate since previous post-processing', 'GRIB_shortName': 'mxtpr', 'GRIB_totalNumber': array([0]), 'GRIB_units': 'kg m**-2 s**-1', 'long_name': 'Maximum total precipitation rate since previous post-processing', 'units': 'kg m**-2 s**-1', 'standard_name': 'unknown', 'GRIB_surface': array([0.]), 'coordinates': 'number valid_time latitude longitude expver'}
+    mntpr: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'GRIB_paramId': array([228227]), 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': array([357]), 'GRIB_typeOfLevel': 'surface', 'GRIB_stepUnits': array([1]), 'GRIB_stepType': 'max', 'GRIB_gridType': 'regular_ll', 'GRIB_uvRelativeToGrid': array([0]), 'GRIB_NV': array([0]), 'GRIB_Nx': array([21]), 'GRIB_Ny': array([17]), 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'mntpr', 'GRIB_gridDefinitionDescription': 'Latitude/Longitude Grid', 'GRIB_iDirectionIncrementInDegrees': array([0.25]), 'GRIB_iScansNegatively': array([0]), 'GRIB_jDirectionIncrementInDegrees': array([0.25]), 'GRIB_jPointsAreConsecutive': array([0]), 'GRIB_jScansPositively': array([0]), 'GRIB_latitudeOfFirstGridPointInDegrees': array([55.5]), 'GRIB_latitudeOfLastGridPointInDegrees': array([51.5]), 'GRIB_longitudeOfFirstGridPointInDegrees': array([-10.5]), 'GRIB_longitudeOfLastGridPointInDegrees': array([-5.5]), 'GRIB_missingValue': array([3.40282347e+38]), 'GRIB_name': 'Minimum total precipitation rate since previous post-processing', 'GRIB_shortName': 'mntpr', 'GRIB_totalNumber': array([0]), 'GRIB_units': 'kg m**-2 s**-1', 'long_name': 'Minimum total precipitation rate since previous post-processing', 'units': 'kg m**-2 s**-1', 'standard_name': 'unknown', 'GRIB_surface': array([0.]), 'coordinates': 'number valid_time latitude longitude expver'}
+
+  data/era5_1992_2003/era5_1997.nc: datasets ['valid_time', 'latitude', 'longitude', 'tp', 'e', 'ssr', 'lsp', 'u10', 'v10', 'd2m', 't2m', 'sp', 'tcc', 'mxtpr', 'mntpr']
+    tp: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'GRIB_paramId': array([228]), 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': array([357]), 'GRIB_typeOfLevel': 'surface', 'GRIB_stepUnits': array([1]), 'GRIB_stepType': 'accum', 'GRIB_gridType': 'regular_ll', 'GRIB_uvRelativeToGrid': array([0]), 'GRIB_NV': array([0]), 'GRIB_Nx': array([21]), 'GRIB_Ny': array([17]), 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'tp', 'GRIB_gridDefinitionDescription': 'Latitude/Longitude Grid', 'GRIB_iDirectionIncrementInDegrees': array([0.25]), 'GRIB_iScansNegatively': array([0]), 'GRIB_jDirectionIncrementInDegrees': array([0.25]), 'GRIB_jPointsAreConsecutive': array([0]), 'GRIB_jScansPositively': array([0]), 'GRIB_latitudeOfFirstGridPointInDegrees': array([55.5]), 'GRIB_latitudeOfLastGridPointInDegrees': array([51.5]), 'GRIB_longitudeOfFirstGridPointInDegrees': array([-10.5]), 'GRIB_longitudeOfLastGridPointInDegrees': array([-5.5]), 'GRIB_missingValue': array([3.40282347e+38]), 'GRIB_name': 'Total precipitation', 'GRIB_shortName': 'tp', 'GRIB_totalNumber': array([0]), 'GRIB_units': 'm', 'long_name': 'Total precipitation', 'units': 'm', 'standard_name': 'unknown', 'GRIB_surface': array([0.]), 'coordinates': 'number valid_time latitude longitude expver'}
+    lsp: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'GRIB_paramId': array([142]), 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': array([357]), 'GRIB_typeOfLevel': 'surface', 'GRIB_stepUnits': array([1]), 'GRIB_stepType': 'accum', 'GRIB_gridType': 'regular_ll', 'GRIB_uvRelativeToGrid': array([0]), 'GRIB_NV': array([0]), 'GRIB_Nx': array([21]), 'GRIB_Ny': array([17]), 'GRIB_cfName': 'lwe_thickness_of_stratiform_precipitation_amount', 'GRIB_cfVarName': 'lsp', 'GRIB_gridDefinitionDescription': 'Latitude/Longitude Grid', 'GRIB_iDirectionIncrementInDegrees': array([0.25]), 'GRIB_iScansNegatively': array([0]), 'GRIB_jDirectionIncrementInDegrees': array([0.25]), 'GRIB_jPointsAreConsecutive': array([0]), 'GRIB_jScansPositively': array([0]), 'GRIB_latitudeOfFirstGridPointInDegrees': array([55.5]), 'GRIB_latitudeOfLastGridPointInDegrees': array([51.5]), 'GRIB_longitudeOfFirstGridPointInDegrees': array([-10.5]), 'GRIB_longitudeOfLastGridPointInDegrees': array([-5.5]), 'GRIB_missingValue': array([3.40282347e+38]), 'GRIB_name': 'Large-scale precipitation', 'GRIB_shortName': 'lsp', 'GRIB_totalNumber': array([0]), 'GRIB_units': 'm', 'long_name': 'Large-scale precipitation', 'units': 'm', 'standard_name': 'lwe_thickness_of_stratiform_precipitation_amount', 'GRIB_surface': array([0.]), 'coordinates': 'number valid_time latitude longitude expver'}
+    mxtpr: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'GRIB_paramId': array([228226]), 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': array([357]), 'GRIB_typeOfLevel': 'surface', 'GRIB_stepUnits': array([1]), 'GRIB_stepType': 'max', 'GRIB_gridType': 'regular_ll', 'GRIB_uvRelativeToGrid': array([0]), 'GRIB_NV': array([0]), 'GRIB_Nx': array([21]), 'GRIB_Ny': array([17]), 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'mxtpr', 'GRIB_gridDefinitionDescription': 'Latitude/Longitude Grid', 'GRIB_iDirectionIncrementInDegrees': array([0.25]), 'GRIB_iScansNegatively': array([0]), 'GRIB_jDirectionIncrementInDegrees': array([0.25]), 'GRIB_jPointsAreConsecutive': array([0]), 'GRIB_jScansPositively': array([0]), 'GRIB_latitudeOfFirstGridPointInDegrees': array([55.5]), 'GRIB_latitudeOfLastGridPointInDegrees': array([51.5]), 'GRIB_longitudeOfFirstGridPointInDegrees': array([-10.5]), 'GRIB_longitudeOfLastGridPointInDegrees': array([-5.5]), 'GRIB_missingValue': array([3.40282347e+38]), 'GRIB_name': 'Maximum total precipitation rate since previous post-processing', 'GRIB_shortName': 'mxtpr', 'GRIB_totalNumber': array([0]), 'GRIB_units': 'kg m**-2 s**-1', 'long_name': 'Maximum total precipitation rate since previous post-processing', 'units': 'kg m**-2 s**-1', 'standard_name': 'unknown', 'GRIB_surface': array([0.]), 'coordinates': 'number valid_time latitude longitude expver'}
+    mntpr: {'_Netcdf4Coordinates': array([0, 1, 2], dtype=int32), '_FillValue': array([nan], dtype=float32), 'GRIB_paramId': array([228227]), 'GRIB_dataType': 'fc', 'GRIB_numberOfPoints': array([357]), 'GRIB_typeOfLevel': 'surface', 'GRIB_stepUnits': array([1]), 'GRIB_stepType': 'max', 'GRIB_gridType': 'regular_ll', 'GRIB_uvRelativeToGrid': array([0]), 'GRIB_NV': array([0]), 'GRIB_Nx': array([21]), 'GRIB_Ny': array([17]), 'GRIB_cfName': 'unknown', 'GRIB_cfVarName': 'mntpr', 'GRIB_gridDefinitionDescription': 'Latitude/Longitude Grid', 'GRIB_iDirectionIncrementInDegrees': array([0.25]), 'GRIB_iScansNegatively': array([0]), 'GRIB_jDirectionIncrementInDegrees': array([0.25]), 'GRIB_jPointsAreConsecutive': array([0]), 'GRIB_jScansPositively': array([0]), 'GRIB_latitudeOfFirstGridPointInDegrees': array([55.5]), 'GRIB_latitudeOfLastGridPointInDegrees': array([51.5]), 'GRIB_longitudeOfFirstGridPointInDegrees': array([-10.5]), 'GRIB_longitudeOfLastGridPointInDegrees': array([-5.5]), 'GRIB_missingValue': array([3.40282347e+38]), 'GRIB_name': 'Minimum total precipitation rate since previous post-processing', 'GRIB_shortName': 'mntpr', 'GRIB_totalNumber': array([0]), 'GRIB_units': 'kg m**-2 s**-1', 'long_name': 'Minimum total precipitation rate since previous post-processing', 'units': 'kg m**-2 s**-1', 'standard_name': 'unknown', 'GRIB_surface': array([0.]), 'coordinates': 'number valid_time latitude longitude expver'}
+
+====================================================================================================
+4. CODE: windowing, target shift, split, scaler fit, feature selection
+====================================================================================================
+
+  [notebook] 2026-11-03 15:33        25384  364f7ae913394cc2cb78af4719cac0b8  Test.ipynb
+   cell   0 L  2: for d in ["features","windows","predictions","metrics","shap","seeds","ablation","figures","models"]:
+   cell   2 L  1: for d in ["features","windows","predictions","metrics","shap","seeds","ablation","figures","models"]:
+   cell   3 L  1: !grep -n "dublin_regional_reduced" code/step2d_feature_selection_windowing.py
+   cell   4 L  1: %run -i code/step2d_feature_selection_windowing.py
+   cell   5 L  1: %run -i code/step2e_lead_time_spearman.py
+
+  [notebook] 2026-11-02 15:07      2161632  18d2f49b5f7399f9bf1dd3e53b308cf9  code/Interpretable_analysis.ipynb
+   cell   3 L 47: rows_per_time = df.groupby("valid_time").size()
+   cell   3 L 67: print(df["tp"].nlargest(10).tolist())
+   cell   4 L 34: print(df_dublin.groupby("valid_time").size().value_counts())
+   cell   4 L 47: df_dublin.groupby("valid_time")["tp"]
+   cell   5 L 54: .groupby("valid_time", as_index=False)[required_cols]
+   cell   6 L 40: cells_per_time = df_complete.groupby("valid_time").size()
+   cell   6 L 66: .groupby("valid_time")
+   cell   7 L  6: from sklearn.preprocessing import StandardScaler
+   cell   7 L 26: train_end = int(n * 0.70)
+   cell   7 L 29: train_df = df_model.iloc[:train_end].copy()
+   cell   7 L 30: val_df   = df_model.iloc[train_end:val_end].copy()
+   cell   7 L 31: test_df  = df_model.iloc[val_end:].copy()
+   cell   7 L 50: x_scaler = StandardScaler()
+   cell   7 L 51: y_scaler = StandardScaler()
+   cell   7 L 53: x_scaler.fit(train_df[FEATURES])
+   cell   7 L 54: y_scaler.fit(train_df[[TARGET]])
+   cell   7 L 57: X_train_raw = x_scaler.transform(train_df[FEATURES])
+   cell   7 L 58: X_val_raw   = x_scaler.transform(val_df[FEATURES])
+   cell   7 L 59: X_test_raw  = x_scaler.transform(test_df[FEATURES])
+   cell   7 L 61: y_train_raw = y_scaler.transform(train_df[[TARGET]]).ravel()
+   cell   7 L 62: y_val_raw   = y_scaler.transform(val_df[[TARGET]]).ravel()
+   cell   7 L 63: y_test_raw  = y_scaler.transform(test_df[[TARGET]]).ravel()
+   cell   8 L 20: from scipy.stats import spearmanr
+   cell   8 L 45: assert (df_complete.groupby('valid_time').size() == 25).all(), \
+   cell   8 L 50: .groupby('valid_time', as_index=False)[ALL_CANDIDATES + [TARGET_RAW]]
+   cell   8 L 65: train_end = int(n * 0.70)
+   cell   8 L 68: train_full = df_regional_full.iloc[:train_end].copy()
+   cell   8 L 69: val_full = df_regional_full.iloc[train_end:val_end].copy()
+   cell   8 L 70: test_full = df_regional_full.iloc[val_end:].copy()
+   cell   8 L 72: print("\n===== 1. SPLIT (for feature selection) =====")
+   cell   8 L 83: train_corr = train_full[corr_cols].corr(method='spearman')
+   cell   8 L 98: train_corr_path = os.path.join(RESULTS_FEATURES_DIR, "train_only_spearman.csv")
+   cell   8 L108: print("Original selected features:", ORIGINAL_SELECTION)
+   cell   8 L141: from sklearn.preprocessing import StandardScaler
+   cell   8 L143: x_scaler = StandardScaler()
+   cell   8 L144: y_scaler = StandardScaler()
+   cell   8 L145: x_scaler.fit(train_df[FINAL_FEATURES])
+   cell   8 L146: y_scaler.fit(train_df[[TARGET]])
+   cell   8 L149: part[FINAL_FEATURES] = x_scaler.transform(part[FINAL_FEATURES])
+   cell   8 L150: part[TARGET + '_scaled'] = y_scaler.transform(part[[TARGET]])
+   cell   8 L164: WINDOW = 6
+   cell   8 L166: def build_windows(df_part, features, target_col):
+   cell   8 L180: X_list.append(values_X[i:i + WINDOW])
+   cell   8 L181: y_list.append(values_y[i + WINDOW])
+   cell   8 L197: f"unexpected gap found. Investigate before windowing."
+   cell   8 L200: X_train, y_train, t_train = build_windows(train_df, FINAL_FEATURES, TARGET + '_scaled')
+   cell   8 L201: X_val, y_val, t_val = build_windows(val_df, FINAL_FEATURES, TARGET + '_scaled')
+   cell   8 L202: X_test, y_test, t_test = build_windows(test_df, FINAL_FEATURES, TARGET + '_scaled')
+   cell   8 L218: print("\n===== 8. LEAKAGE SPOT-CHECK (train, first 3 windows) =====")
+   cell   8 L220: window_times = train_df['valid_time'].iloc[i:i + WINDOW].values
+   cell   8 L221: target_time = train_df['valid_time'].iloc[i + WINDOW]
+   cell   8 L222: gap = pd.to_datetime(target_time) - pd.to_datetime(window_times[-1])
+   cell   8 L223: print(f"Window {i}: last feature time = {window_times[-1]}, "
+   cell   8 L225: assert gap == pd.Timedelta(hours=6), "Gap between window end and target is not 6h!"
+   cell   9 L 26: "Step 2D outputs not found in memory — run step2d_feature_selection_windowing.py "
+   cell   9 L 65: xgb_model.fit(X_train_flat, y_train)
+   cell   9 L 79: return y_scaler.inverse_transform(
+   cell   9 L112: def make_split_df(times, y_true, y_pred, split_name):
+   cell   9 L114: "split": split_name,
+   cell   9 L122: make_split_df(t_train, y_train_true_mm, y_train_pred_mm, "train"),
+   cell   9 L123: make_split_df(t_val, y_val_true_mm, y_val_pred_mm, "val"),
+   cell   9 L124: make_split_df(t_test, y_test_true_mm, y_test_pred_mm, "test"),
+   cell   9 L127: out_path = os.path.join(RESULTS_DIR, "xgboost_preds.csv")
+   cell   9 L132: print(df_out.groupby("split").size())
+   cell  10 L 31: "step2d_feature_selection_windowing.py first."
+   cell  10 L 46: def persistence_predictions(df_part, target_col, window):
+   cell  10 L 51: for i in range(len(df_part) - window):
+   cell  10 L 52: y_pred.append(y_all[i + window - 1])   # value at time t
+   cell  10 L 53: y_true.append(y_all[i + window])        # value at time t+1
+   cell  10 L 54: times.append(times_all[i + window])
+   cell  10 L 64: "Persistence target timestamps do not match Step 2D windowing — check alignment."
+   cell  10 L 99: def make_split_df(times, y_true, y_pred, split_name):
+   cell  10 L101: "split": split_name,
+   cell  10 L109: make_split_df(t_train_p, y_train_true_p, y_train_pred_p, "train"),
+   cell  10 L110: make_split_df(t_val_p, y_val_true_p, y_val_pred_p, "val"),
+   cell  10 L111: make_split_df(t_test_p, y_test_true_p, y_test_pred_p, "test"),
+   cell  10 L115: make_split_df(t_train_p, y_train_true_p, y_train_pred_c, "train"),
+   cell  10 L116: make_split_df(t_val_p, y_val_true_p, y_val_pred_c, "val"),
+   cell  10 L117: make_split_df(t_test_p, y_test_true_p, y_test_pred_c, "test"),
+   cell  10 L120: persistence_path = os.path.join(RESULTS_DIR, "persistence_preds.csv")
+   cell  10 L121: climatology_path = os.path.join(RESULTS_DIR, "climatology_preds.csv")
+   cell  11 L 39: assert 'X_train' in dir() and 'y_scaler' in dir(), (
+   cell  11 L 41: "step2d_feature_selection_windowing.py first."
+   cell  11 L130: history = nll_model.fit(
+   cell  11 L156: y_scale_factor = float(np.ravel(y_scaler.scale_)[0])
+   cell  11 L159: return y_scaler.inverse_transform(np.asarray(arr_scaled).reshape(-1, 1)).flatten()
+   cell  11 L203: def make_split_df(times, y_true, y_pred, y_std, split_name):
+   cell  11 L205: "split": split_name,
+   cell  11 L213: make_split_df(t_train, y_train_true_mm, y_train_pred_mm, y_train_std_mm, "train"),
+   cell  11 L214: make_split_df(t_val, y_val_true_mm, y_val_pred_mm, y_val_std_mm, "val"),
+   cell  11 L215: make_split_df(t_test, y_test_true_mm, y_test_pred_mm, y_test_std_mm, "test"),
+   cell  11 L218: out_path = os.path.join(RESULTS_DIR, "bulstm_preds.csv")
+   cell  11 L223: print(df_out.groupby("split").size())
+   cell  12 L 44: assert 'X_train' in dir() and 'y_scaler' in dir(), (
+   cell  12 L 46: "step2d_feature_selection_windowing.py first."
+   cell  12 L122: history = model.fit(
+   cell  12 L142: return y_scaler.inverse_transform(np.asarray(arr_scaled).reshape(-1, 1)).flatten()
+   cell  12 L178: def make_split_df(times, y_true, y_pred, split_name):
+   cell  12 L180: "split": split_name,
+   cell  12 L188: make_split_df(t_train, y_train_true_mm, y_train_pred_mm, "train"),
+   cell  12 L189: make_split_df(t_val, y_val_true_mm, y_val_pred_mm, "val"),
+   cell  12 L190: make_split_df(t_test, y_test_true_mm, y_test_pred_mm, "test"),
+   cell  12 L193: out_path = os.path.join(RESULTS_DIR, "bilstm_attention_preds.csv")
+   cell  12 L198: print(df_out.groupby("split").size())
+   cell  13 L 47: assert 'X_train' in dir() and 'y_scaler' in dir(), (
+   cell  13 L 49: "step2d_feature_selection_windowing.py first."
+   cell  13 L120: history = model.fit(
+   cell  13 L140: return y_scaler.inverse_transform(np.asarray(arr_scaled).reshape(-1, 1)).flatten()
+   cell  13 L176: def make_split_df(times, y_true, y_pred, split_name):
+   cell  13 L178: "split": split_name,
+   cell  13 L186: make_split_df(t_train, y_train_true_mm, y_train_pred_mm, "train"),
+   cell  13 L187: make_split_df(t_val, y_val_true_mm, y_val_pred_mm, "val"),
+   cell  13 L188: make_split_df(t_test, y_test_true_mm, y_test_pred_mm, "test"),
+   cell  13 L191: out_path = os.path.join(RESULTS_DIR, "transformer_preds.csv")
+   cell  13 L196: print(df_out.groupby("split").size())
+   cell  14 L 43: assert 'X_train' in dir() and 'y_scaler' in dir(), (
+   cell  14 L 45: "step2d_feature_selection_windowing.py first."
+   cell  14 L171: history = nll_model.fit(
+   cell  14 L194: y_scale_factor = float(np.ravel(y_scaler.scale_)[0])
+   cell  14 L197: return y_scaler.inverse_transform(np.asarray(arr_scaled).reshape(-1, 1)).flatten()
+   cell  14 L249: def make_split_df(times, y_true, y_pred, y_std, split_name):
+   cell  14 L251: "split": split_name,
+   cell  14 L259: make_split_df(t_train, y_train_true_mm, y_train_pred_mm, y_train_std_mm, "train"),
+   cell  14 L260: make_split_df(t_val, y_val_true_mm, y_val_pred_mm, y_val_std_mm, "val"),
+   cell  14 L261: make_split_df(t_test, y_test_true_mm, y_test_pred_mm, y_test_std_mm, "test"),
+   cell  14 L264: out_path = os.path.join(RESULTS_DIR, "proposed_model_preds.csv")
+   cell  14 L269: print(df_out.groupby("split").size())
+   cell  15 L 43: assert 'X_train' in dir() and 'y_scaler' in dir(), (
+   cell  15 L 45: "step2d_feature_selection_windowing.py first."
+   cell  15 L124: history = model.fit(
+   cell  15 L144: return y_scaler.inverse_transform(np.asarray(arr_scaled).reshape(-1, 1)).flatten()
+   cell  15 L190: def make_split_df(times, y_true, y_pred, split_name):
+   cell  15 L192: "split": split_name,
+   cell  15 L200: make_split_df(t_train, y_train_true_mm, y_train_pred_mm, "train"),
+   cell  15 L201: make_split_df(t_val, y_val_true_mm, y_val_pred_mm, "val"),
+   cell  15 L202: make_split_df(t_test, y_test_true_mm, y_test_pred_mm, "test"),
+   cell  15 L205: out_path = os.path.join(RESULTS_DIR, "bulstm_attention_3layer_deterministic_preds.csv")
+   cell  15 L210: print(df_out.groupby("split").size())
+   cell  16 L131: for split in ["train", "val", "test"]:
+   cell  16 L132: part = df[df["split"] == split]
+   cell  16 L135: row = {"model": name, "split": split, "n": len(part)}
+   cell  16 L156: fpath = os.path.join(PRED_DIR, fname)
+   cell  16 L167: fpath = os.path.join(ABLATION_DIR, fname)
+   cell  16 L181: metrics_path = os.path.join(METRICS_DIR, "table2_unified_metrics.csv")
+   cell  16 L182: ablation_metrics_path = os.path.join(METRICS_DIR, "ablation_unified_metrics.csv")
+   cell  16 L195: headline = df_metrics[df_metrics["split"] == HEADLINE_SPLIT][
+   cell  16 L208: (df_metrics["split"] == HEADLINE_SPLIT) & (df_metrics["NLL"].notna())
+   cell  16 L223: print("No models with uncertainty estimates found in this split.")
+   cell  16 L227: abl_headline = df_ablation_metrics[df_ablation_metrics["split"] == HEADLINE_SPLIT][
+   cell  17 L 49: "(or step2d_feature_selection_windowing.py in full) first."
+   cell  17 L153: nll_model.fit(
+   cell  17 L162: weights_path = os.path.join(MODEL_DIR, "proposed_model_seed42.weights.h5")
+   cell  17 L196: print(f"Background: {N_BACKGROUND} random TRAIN windows")
+   cell  17 L197: print(f"Explained set: {N_EXPLAIN} random TEST windows")
+   cell  17 L198: print(f"Explainer: shap.Explainer (black-box, auto-selected algorithm)")
+   cell  17 L237: out_path = os.path.join(SHAP_DIR, "shap_values_proposed_model.npz")
+   cell  18 L 35: assert 'X_train' in dir() and 'y_scaler' in dir(), (
+   cell  18 L 37: "step2d_feature_selection_windowing.py first."
+   cell  18 L 54: return y_scaler.inverse_transform(np.asarray(arr_scaled).reshape(-1, 1)).flatten()
+   cell  18 L 57: y_scale_factor = float(np.ravel(y_scaler.scale_)[0])
+   cell  18 L155: early_stop_kwargs = dict(monitor="val_loss", patience=10, restore_best_weights=True)
+   cell  18 L167: m.fit(Xtr, y_train)
+   cell  18 L186: m.fit(X_train, y_train, validation_data=(X_val, y_val), epochs=30,
+   cell  18 L187: batch_size=32, callbacks=[EarlyStopping(**early_stop_kwargs)], verbose=0)
+   cell  18 L209: m.fit(X_train, y_train, validation_data=(X_val, y_val), epochs=30,
+   cell  18 L210: batch_size=32, callbacks=[EarlyStopping(**early_stop_kwargs)], verbose=0)
+   cell  18 L232: m.fit(X_train, y_train, validation_data=(X_val, y_val), epochs=30,
+   cell  18 L233: batch_size=32, callbacks=[EarlyStopping(**early_stop_kwargs)], verbose=0)
+   cell  18 L265: raw_path = os.path.join(RESULTS_DIR, "seed_stability_raw.csv")
+   cell  18 L284: summary_path = os.path.join(RESULTS_DIR, "seed_stability_summary.csv")
+   cell  19 L 36: assert 'X_train' in dir() and 'y_scaler' in dir(), (
+   cell  19 L 38: "step2d_feature_selection_windowing.py first."
+   cell  19 L 56: return y_scaler.inverse_transform(np.asarray(arr_scaled).reshape(-1, 1)).flatten()
+   cell  19 L 67: early_stop_kwargs = dict(monitor="val_loss", patience=10, restore_best_weights=True)
+   cell  19 L 79: m.fit(X_train, y_train, validation_data=(X_val, y_val), epochs=30,
+   cell  19 L 80: batch_size=32, callbacks=[EarlyStopping(**early_stop_kwargs)], verbose=0)
+   cell  19 L103: raw_path = os.path.join(RESULTS_DIR, "seed_stability_raw.csv")
+   cell  19 L104: summary_path = os.path.join(RESULTS_DIR, "seed_stability_summary.csv")
+   cell  20 L 31: "train_df not found in memory — run step2d_feature_selection_windowing.py first "
+   cell  20 L 77: fpath = os.path.join(PRED_DIR, fname)
+   cell  20 L 83: test_df_preds = df[df["split"] == "test"]
+   cell  20 L101: out_path = os.path.join(METRICS_DIR, "extreme_event_stratified_metrics.csv")
+   cell  21 L 57: path = os.path.join(STYLE["output_dir"], f"{name}.{STYLE['output_format']}")
+   cell  21 L 69: order = np.argsort(mean_abs_shap)  # ascending, for horizontal barh top-to-bottom
+   cell  21 L137: y = np.full_like(vals, rank) + np.random.uniform(-0.15, 0.15, size=vals.shape)
+   cell  21 L138: sc = ax.scatter(vals, y, c=colors, cmap=STYLE["summary_cmap"], s=10, alpha=0.7)
+   cell  22 L 85: assert 'X_train' in dir() and 'y_scaler' in dir(), (
+   cell  22 L406: history = prob_bilstm_attention_model.fit(
+   cell  22 L518: return y_scaler.inverse_transform(
+   cell  22 L533: y_scaler.scale_
+   cell  22 L675: for split_name, metrics in [
+   cell  22 L696: f"{split_name:12s} | "
+   cell  22 L988: def make_split_df(
+   cell  22 L994: split_name
+   cell  22 L1000: "split":
+   cell  22 L1001: split_name,
+   cell  22 L1022: make_split_df(
+   cell  22 L1036: make_split_df(
+   cell  22 L1050: make_split_df(
+   cell  22 L1067: out_path = os.path.join(
+   cell  22 L1098: "split"
+   cell  23 L 79: assert 'X_train' in dir() and 'y_scaler' in dir(), (
+   cell  23 L225: return y_scaler.inverse_transform(
+   cell  23 L234: y_scaler.scale_
+   cell  23 L509: history = model.fit(
+   cell  23 L683: raw_path = os.path.join(
+   cell  23 L768: summary_path = os.path.join(
+   cell  24 L 85: assert 'X_train' in dir() and 'y_scaler' in dir(), (
+   cell  24 L406: history = prob_bilstm_attention_model.fit(
+   cell  24 L518: return y_scaler.inverse_transform(
+   cell  24 L533: y_scaler.scale_
+   cell  24 L675: for split_name, metrics in [
+   cell  24 L696: f"{split_name:12s} | "
+   cell  24 L988: def make_split_df(
+   cell  24 L994: split_name
+   cell  24 L1000: "split":
+   cell  24 L1001: split_name,
+   cell  24 L1022: make_split_df(
+   cell  24 L1036: make_split_df(
+   cell  24 L1050: make_split_df(
+   cell  24 L1067: out_path = os.path.join(
+   cell  24 L1098: "split"
+   cell  25 L 42: PRED_DIR = os.path.join(
+   cell  25 L 47: SEED_DIR = os.path.join(
+   cell  25 L 52: METRICS_DIR = os.path.join(
+   cell  25 L139: path = os.path.join(
+   cell  25 L164: df["split"] == "test"
+   cell  25 L198: single_path = os.path.join(
+   cell  25 L257: old_seed_path = os.path.join(
+   cell  25 L265: new_seed_path = os.path.join(
+   cell  25 L395: all_seed_path = os.path.join(
+   cell  25 L484: point_seed_path = os.path.join(
+   cell  25 L646: prob_seed_path = os.path.join(
+   cell  25 L903: path = os.path.join(
+   cell  25 L920: df["split"] == "test"
+   cell  25 L1013: single_prob_path = os.path.join(
+   cell  25 L1104: best_point = df_point_seed.iloc[0]
+   cell  25 L1138: ].iloc[0]
+   cell  25 L1145: ].iloc[0]
+   cell  25 L1197: ].iloc[0]
+   cell  25 L1204: ].iloc[0]
+   cell  26 L 47: PRED_DIR = os.path.join(
+   cell  26 L 52: METRICS_DIR = os.path.join(
+   cell  26 L105: reference_path = os.path.join(
+   cell  26 L119: df_ref["split"] == "train"
+   cell  26 L124: df_ref["split"] == "test"
+   cell  26 L345: path = os.path.join(
+   cell  26 L366: df["split"] == "test"
+   cell  26 L443: point_path = os.path.join(
+   cell  26 L536: path = os.path.join(
+   cell  26 L553: df["split"] == "test"
+   cell  26 L631: prob_path = os.path.join(
+   cell  26 L743: winner = temp.iloc[0]
+   cell  27 L 71: assert 'y_scaler' in dir()
+   cell  27 L297: history = final_model.fit(
+   cell  27 L326: return y_scaler.inverse_transform(
+   cell  27 L424: weights_path = os.path.join(
+   cell  27 L494: "Background windows:",
+   cell  27 L499: "Explained TEST windows:",
+   cell  27 L553: pred_mm = y_scaler.inverse_transform(
+   cell  27 L667: shap_path = os.path.join(
+   cell  27 L751: importance_csv = os.path.join(
+   cell  29 L 65: BILSTM_PATH = os.path.join(
+   cell  29 L 70: XGB_PATH = os.path.join(
+   cell  29 L105: bilstm["split"] == "train"
+   cell  29 L124: bilstm["split"] == "test"
+   cell  29 L128: xgb["split"] == "test"
+   cell  29 L155: ].merge(
+   cell  29 L614: output_path = os.path.join(
+   cell  30 L 96: reference_path = os.path.join(
+   cell  30 L110: reference["split"] == "train"
+   cell  30 L115: reference["split"] == "test"
+   cell  30 L363: path = os.path.join(
+   cell  30 L380: df["split"] == "test"
+   cell  30 L411: merged = ref.merge(
+   cell  30 L841: ].iloc[0]
+   cell  30 L930: ].iloc[0]
+   cell  30 L941: ].iloc[0]
+   cell  30 L982: threshold_path = os.path.join(
+   cell  30 L987: point_path = os.path.join(
+   cell  30 L992: prob_path = os.path.join(
+   cell  31 L 47: BILSTM_PATH = os.path.join(
+   cell  31 L 52: XGB_PATH = os.path.join(
+   cell  31 L 74: bilstm["split"] == "train"
+   cell  31 L 92: bilstm["split"] == "test"
+   cell  31 L 96: xgb["split"] == "test"
+   cell  31 L128: ].merge(
+   cell  31 L646: output_path = os.path.join(
+   cell  33 L 33: os.path.join(
+   cell  33 L160: base = os.path.join(
+   cell  34 L 34: os.path.join(
+   cell  34 L190: base = os.path.join(
+   cell  35 L 34: os.path.join(
+   cell  35 L193: base = os.path.join(
+   cell  36 L207: linewidth=0.7
+   cell  36 L222: path = os.path.join(
+   cell  36 L248: os.path.join(
+   cell  36 L261: os.path.join(
+   cell  37 L 66: temp["Coverage95"].iloc[0]
+   cell  40 L133: alpha=0.75,
+   cell  40 L148: alpha=0.75
+   cell  40 L232: alpha=0.15,
+   cell  40 L233: linewidth=0.7
+   cell  41 L 17: os.path.join(
+   cell  42 L 17: os.path.join(
+   cell  42 L 90: temp["RMSE"].iloc[0]
+   cell  43 L 11: csv_path = "autodl-tmp/results/features/train_only_spearman.csv"
+   cell  43 L 44: value = corr.iloc[i, j]
+   cell  43 L 76: "autodl-tmp/results/final_figures/train_only_spearman_heatmap.pdf",
+   cell  43 L 81: "autodl-tmp/results/final_figures/train_only_spearman_heatmap.svg",
+   cell  43 L 86: "autodl-tmp/results/final_figures/train_only_spearman_heatmap.png",
+   cell  44 L100: reference_path = os.path.join(
+   cell  44 L115: reference["split"] == "test"
+   cell  44 L139: path = os.path.join(
+   cell  44 L157: df["split"] == "test"
+   cell  44 L169: ].merge(
+   cell  44 L572: out_path = os.path.join(
+   cell  45 L113: base = os.path.join(
+   cell  46 L 63: "y_scaler",
+   cell  46 L439: return y_scaler.inverse_transform(
+   cell  46 L586: history = model.fit(
+   cell  46 L704: ].iloc[0]
+   cell  46 L711: ].iloc[0]
+   cell  46 L718: ].iloc[0]
+   cell  46 L800: out_path = os.path.join(
+   cell  47 L 67: "y_scaler",
+   cell  47 L 90: seed_path = os.path.join(
+   cell  47 L250: model.fit(
+   cell  47 L526: raw_path = os.path.join(
+   cell  47 L531: summary_path = os.path.join(
+   cell  48 L 25: raw_path = os.path.join(ABLATION_DIR, "targeted_ablation_5seed_raw.csv")
+   cell  48 L 26: summary_path = os.path.join(ABLATION_DIR, "targeted_ablation_5seed_summary.csv")
+   cell  48 L132: base = os.path.join(FIG_DIR, "feature_ablation_rmse_5seed")
+
+  [script] 2026-11-13 11:27         4531  cd012c87be492a4dca28ed772cca7f76  code/check_q08_window.py
+   L  80: print("\n== 5. 'window starts at T' using only true +6 h neighbours")
+
+  [script] 2026-11-05 18:04         2217  665d3c5e7d2afdc4669cfe7f6d9b5bb4  code/q06_feature_check.py
+   L  11: from q06_common import ROOT, CANDIDATES, FEATURES, TARGET, FOLDS, load_regional, split
+   L  18: orig_train = orig.iloc[:int(len(orig) * 0.70)]
+   L  22: periods[f"{f} train {a}-{b}"] = split(df, f)["train"]
+   L  25: rho = part[CANDIDATES + [TARGET]].corr(method="spearman")[TARGET].drop(TARGET)
+   L  28: rows.append({"period": name, "n": len(part), "top7": ",".join(top7),
+   L  30: "rank7_feature": rank.index[6], "rank7_abs_rho": rank.iloc[6],
+   L  31: "rank8_feature": rank.index[7], "rank8_abs_rho": rank.iloc[7],
+
+  [script] 2026-11-04 17:07         3273  a0c3ff38dc197d1eee6b2c8c4c4b50dd  code/q08_check_era5_window.py
+   L  44: e = e.join(csv.rename("csv"), how="inner")
+   L  48: end_at_T   = (e["tp6h"] >= e["tp1h"] - eps).mean()            # window (T-6, T] contains the hour ending at T
+   L  49: start_at_T = (e["tp6h"] >= e["tp1h"].shift(-1) - eps).mean()   # window (T, T+6] contains the hour ending at T+6
+   L  50: print(f"tp6h(T) >= tp1h(T)      : {end_at_T:.4f}   (1.0000 -> window ends at T)")
+   L  51: print(f"tp6h(T) >= tp1h(T+6 h)  : {start_at_T:.4f}  (1.0000 -> window starts at T)")
+   L  52: print(f"corr(tp6h(T), tp1h(T))  : {e['tp6h'].corr(e['tp1h']):.3f}")
+   L  53: print(f"corr(tp6h(T), tp1h(T+6)): {e['tp6h'].corr(e['tp1h'].shift(-1)):.3f}")
+
+  [script] 2026-11-07 14:48         5123  d9e56ff5a0f1b7bc1d3d561faff2d5ac  code/q14b_window_curve.py
+   L  33: return df.query("split == 'test'").set_index("valid_time")
+   L  68: r = {"model": lab, "window": w, "history_h": 6 * (w - 1), "val_rmse_mean": vr[w].mean(), "val_rmse_sd": vr[w].std(ddof=1)}
+   L  88: say(f"window with lowest validation RMSE: W={best_val} ({6 * (best_val - 1)} h); "
+   L  90: pd.DataFrame(rows).to_csv(f"{MET}/q14b_window_curve.csv", index=False)
+   L  93: open(f"{MET}/q14b_window_curve_output.txt", "w").write("\n".join(lines) + "\n")
+
+  [script] 2026-11-09 12:56        11956  73a71e764f000e7b224b1e2947490001  code/q21_build_features.py
+   L  18: results/metrics/q21_spearman_new.csv  新候选与原 13 个候选合并的训练期筛选表（同 q09 方法）
+   L  19: results/metrics/q21_spearman_seasonal.csv
+   L 129: n_dub, n_u1 = d[isdub].groupby("valid_time").size(), d[isu1].groupby("valid_time").size()
+   L 133: dub = d[isdub].groupby("valid_time")[RAW11 + ["tp", "ws", "cp"]].mean().sort_index()
+   L 134: u1 = d[isu1].groupby("valid_time")[U1_VARS].mean().sort_index().add_suffix("_u1")
+   L 139: def spearman(a, b):
+   L 143: def partial_spearman(x, y, z):
+   L 181: tr = allv.iloc[:N_TRAIN]
+   L 182: tp_t = dub["tp"].iloc[:N_TRAIN]
+   L 183: y = tp_t.shift(-1)
+   L 190: rows.append({"var": v, "new": v in new, "rho_contemp": spearman(tr[v].values, tp_t.values),
+   L 191: "rho_lead_k0": spearman(x, y.values[m]),
+   L 192: "rho_partial_given_tp_t": partial_spearman(x, y.values[m], tp_t.values[m])})
+   L 194: for c, r in (("rho_lead_k0", "rank_lead"), ("rho_partial_given_tp_t", "rank_partial")):
+   L 202: lead_bs = np.empty((NBOOT, len(cands)))
+   L 208: lead_bs[b, j] = spearman(X[v][idx], yy[idx])
+   L 209: part_bs[b, j] = partial_spearman(X[v][idx], yy[idx], zz[idx])
+   L 210: tab["lead_lo"], tab["lead_hi"] = np.percentile(lead_bs, [2.5, 97.5], axis=0)
+   L 212: tab = tab.sort_values("rank_lead")
+   L 213: tab.to_csv(f"{OUT_MET}/q21_spearman_new.csv")
+   L 215: tgt_season = pd.Series(tr.index.shift(1, freq="6h").month.map(SEASON), index=tr.index)
+   L 221: "rho_lead_k0": spearman(tr[v].values[ms], y.values[ms]),
+   L 222: "rho_partial": partial_spearman(tr[v].values[ms], y.values[ms], tp_t.values[ms])})
+   L 224: S.to_csv(f"{OUT_MET}/q21_spearman_seasonal.csv", index=False)
+   L 228: print("\n===== 训练期筛选表（原 13 个 + 新候选；按 |ρ_lead| 排序）=====")
+   L 230: print("\n===== 新候选分季节 ρ_lead(k=0) =====")
+   L 231: print(S.pivot(index="var", columns="season", values="rho_lead_k0")[["DJF", "MAM", "JJA", "SON"]].round(3).to_string())
+   L 234: print(f"\n输出：{OUT_MET}/q21_spearman_new.csv、q21_spearman_seasonal.csv")
+
+  [script] 2026-11-02 15:36        12751  3ff581a333ce33764dd0c62218f892de  code/step2d_feature_selection_windowing.py
+   L  20: from scipy.stats import spearmanr
+   L  76: train_end = int(n * 0.70)
+   L  79: train_full = df_regional_full.iloc[:train_end].copy()
+   L  80: val_full = df_regional_full.iloc[train_end:val_end].copy()
+   L  81: test_full = df_regional_full.iloc[val_end:].copy()
+   L  83: print("\n===== 1. SPLIT (for feature selection) =====")
+   L  94: train_corr = train_full[corr_cols].corr(method='spearman')
+   L 109: train_corr_path = os.path.join(RESULTS_FEATURES_DIR, "train_only_spearman.csv")
+   L 119: print("Original selected features:", ORIGINAL_SELECTION)
+   L 152: from sklearn.preprocessing import StandardScaler
+   L 154: x_scaler = StandardScaler()
+   L 155: y_scaler = StandardScaler()
+   L 156: x_scaler.fit(train_df[FINAL_FEATURES])
+   L 157: y_scaler.fit(train_df[[TARGET]])
+   L 160: part[FINAL_FEATURES] = x_scaler.transform(part[FINAL_FEATURES])
+   L 161: part[TARGET + '_scaled'] = y_scaler.transform(part[[TARGET]])
+   L 175: WINDOW = 6
+   L 177: def build_windows(df_part, features, target_col):
+   L 191: X_list.append(values_X[i:i + WINDOW])
+   L 192: y_list.append(values_y[i + WINDOW])
+   L 208: f"unexpected gap found. Investigate before windowing."
+   L 211: X_train, y_train, t_train = build_windows(train_df, FINAL_FEATURES, TARGET + '_scaled')
+   L 212: X_val, y_val, t_val = build_windows(val_df, FINAL_FEATURES, TARGET + '_scaled')
+   L 213: X_test, y_test, t_test = build_windows(test_df, FINAL_FEATURES, TARGET + '_scaled')
+   L 229: print("\n===== 8. LEAKAGE SPOT-CHECK (train, first 3 windows) =====")
+   L 231: window_times = train_df['valid_time'].iloc[i:i + WINDOW].values
+   L 232: target_time = train_df['valid_time'].iloc[i + WINDOW]
+   L 233: gap = pd.to_datetime(target_time) - pd.to_datetime(window_times[-1])
+   L 234: print(f"Window {i}: last feature time = {window_times[-1]}, "
+   L 236: assert gap == pd.Timedelta(hours=6), "Gap between window end and target is not 6h!"
+   L 250: WINDOWS_DIR = "/root/autodl-tmp/results/windows"
+   L 254: train_df.to_csv(os.path.join(WINDOWS_DIR, "train_df.csv"), index=False)
+   L 255: val_df.to_csv(os.path.join(WINDOWS_DIR, "val_df.csv"), index=False)
+   L 256: test_df.to_csv(os.path.join(WINDOWS_DIR, "test_df.csv"), index=False)
+   L 260: os.path.join(WINDOWS_DIR, "windowed_arrays.npz"),
+   L 267: with open(os.path.join(WINDOWS_DIR, "scalers_and_features.pkl"), "wb") as f:
+   L 269: "x_scaler": x_scaler,
+   L 270: "y_scaler": y_scaler,
+
+  [script] 2026-11-02 17:20         1912  ff1dfc7dfb3f1a73335bcd948417cf6b  code/step2e_lead_time_spearman.py
+   L  14: from scipy.stats import spearmanr
+   L  26: x = train_full[feat].iloc[:len(train_full) - k] if k else train_full[feat]
+   L  27: y = train_full['tp_mm'].shift(-k).dropna() if k else train_full['tp_mm']
+   L  28: rec[f'rho_lead_{6*k}h'] = spearmanr(x.values, y.values).correlation
+   L  32: out['abs_rho_6h'] = out['rho_lead_6h'].abs()
+   L  37: path = "/root/autodl-tmp/results/features/train_only_spearman_leadtime.csv"
+   L  40: print("\nTop-7 at 6h lead:", [f for f in out.index if f != 'tp_mm'][:7])
+
+====================================================================================================
+5. EXISTING EVIDENCE OUTPUTS (01 consistency, 02 ablation, 06 audit, 09 lead correlation, 10 ablation)
+====================================================================================================
+
+  -- 2026-11-04 20:24         1477  920813b51946e3e1fd6d1273f77cc7d2  results/metrics/q01_extreme_consistency_output.txt
+   Source: data/dublin_regional_reduced.csv (26300, 13)
+   Units assumed: tp [m] -> mm; mxtpr, mntpr [kg m-2 s-1] -> mm/h (x3600).
+   Medians: tp_mm 0.0083, mx_mmh 0.0153, mn_mmh 0.0020
+   
+   ===== 01-E6: max/min rate vs hourly total (same-hour consistency) =====
+         Subset   Tolerance     N  mxtpr*3600 >= tp (%)  mntpr*3600 <= tp (%)  both (%)
+    all samples      strict 26300                 93.17                 99.27     92.44
+    all samples tol 1e-3 mm 26300                 97.50                 99.80     97.30
+   tp >= 0.1 mm      strict  5363                 99.74                 99.42     99.16
+   tp >= 0.1 mm tol 1e-3 mm  5363                 99.74                 99.48     99.22
+   
+   Samples with tp >= 0.1 mm: 5363  (earlier record: 5,363; inequalities 99.7% / 99.4%)
+   Median ratio mxtpr*3600/tp = 1.64, mntpr*3600/tp = 0.57 (earlier record: about 1.6 / 0.6)
+   Ratio quantiles (5/25/50/75/95%): mx [1.13, 1.36, 1.64, 2.08, 3.16] | mn [0.11, 0.35, 0.57, 0.74, 0.9]
+   
+   Violations among tp >= 0.1: 45; largest excess (mm): mx 0.0494, mn 0.0601
+   
+   ===== 01-E5: tp (mm) by hour of day of the stored timestamp =====
+            N    mean  median     p95     max  frac_ge_0.1mm
+   hour                                                     
+   0     6575  0.0975  0.0035  0.5702  3.2165         0.1751
+   6     6575  0.1032  0.0056  0.5794  3.4193         0.1859
+   12    6575  0.1210  0.0245  0.5853  3.9403         0.2446
+   18    6575  0.1048  0.0079  0.5880  4.1345         0.2102
+   
+   Saved results/metrics/q01_*.csv
+
+  -- 2026-11-04 20:24          394  49297ede9f30840f3568519c691ac07c  results/metrics/q01_extreme_consistency_summary.csv
+   Subset,Tolerance,N,mxtpr*3600 >= tp (%),mntpr*3600 <= tp (%),both (%)
+   all samples,strict,26300,93.17490494296578,99.26996197718631,92.4448669201521
+   all samples,tol 1e-3 mm,26300,97.50190114068441,99.79847908745248,97.30038022813689
+   tp >= 0.1 mm,strict,5363,99.73895207906023,99.42196531791907,99.1609173969793
+   tp >= 0.1 mm,tol 1e-3 mm,5363,99.73895207906023,99.47790415812045,99.21685623718068
+
+  -- 2026-11-04 20:24         4358  7d40142b2f0ae36170f8a0b466755058  results/metrics/q01_extreme_violations.csv
+   valid_time,tp_mm,mx_mmh,mn_mmh,excess_mx_mm,excess_mn_mm
+   2004-12-22 12:00:00,0.43657302704,0.5814514167264,0.46070480431871996,0.0,0.024131777278719957
+   2005-01-20 12:00:00,0.3427886984,0.44261169251328,0.37671089106384004,0.0,0.033922192663840056
+   2005-03-02 06:00:00,0.32020569024,0.4127941148472,0.32538414298463997,0.0,0.005178452744639961
+   2005-03-17 06:00:00,0.1077270514952,0.16046905458816,0.12194824032000001,0.0,0.014221188824800016
+   2005-03-29 06:00:00,0.177173613856,0.175094605296,0.1082153324448,0.002079008560000012,0.0
+   2005-05-18 18:00:00,0.4127120956,0.4493408178239999,0.415008543456,0.0,0.002296447856000028
+   2005-11-26 06:00:00,0.290641782064,0.41933441442815994,0.29460525399072,0.0,0.00396347192672003
+   2005-11-26 18:00:00,0.10335922232160001,0.07971954262848001,0.026264190692160003,0.023639679693120003,0.0
+   2005-11-29 12:00:00,0.11657714776,0.11508178841279998,0.0926284790304,0.0014953593472000204,0.0
+   2006-01-18 00:00:00,0.10124206589200001,0.13660812258912,0.11295318616415999,0.0,0.01171112027215998
+   2006-04-13 06:00:00,0.136184692328,0.22978591912512003,0.13865089322304,0.0,0.0024662008950399883
+   2006-10-21 18:00:00,0.12762069648,0.19717025921568002,0.133518219336,0.0,0.005897522856000009
+   2007-05-17 06:00:00,0.159034729472,0.23012924164416,0.17344665431999998,0.0,0.014411924847999968
+   2008-02-25 18:00:00,0.26947021544,0.36189651743999995,0.2758941692784,0.0,0.006423953838399998
+   2008-05-25 18:00:00,0.281753538632,0.37775802168,0.282022476912,0.0,0.0002689382800000195
+   2009-10-22 00:00:00,0.86235045856,1.249660454256,0.9224739036432001,0.0,0.06012344508320011
+   2009-12-07 12:00:00,0.14053344675999999,0.13372421474304,0.10450744816320001,0.006809232016959987,0.0
+   2010-01-06 00:00:00,0.46339034464,0.6499786366857601,0.47230911478079995,0.0,0.008918770140799948
+   2010-11-26 18:00:00,0.10229110794079999,0.0936584461152,0.028701782300160003,0.008632661825599991,0.0
+   2011-12-24 18:00:00,0.16189575231199999,0.1532936088864,0.09410476708799999,0.008602143425599978,0.0
+   2012-01-30 12:00:00,0.16260147135999997,0.18230438376,0.165962218032,0.0,0.0033607466720000367
+   2013-02-13 00:00:00,0.17066955644,0.212139129456,0.17219352758400003,0.0,0.0015239711440000192
+   2013-03-10 06:00:00,0.11337280216000001,0.1426162712256,0.1186866754992,0.0,0.005313873339199998
+   2013-03-23 06:00:00,0.477275851,0.538793568288,0.478969575624,0.0,0.0016937246240000259
+   2014-02-15 06:00:00,0.3604507448,0.357192991872,0.30641555880000004,0.003257752928000013,0.0
+   2014-11-04 18:00:00,0.243549347172,0.34325408602368,0.26329421900016,0.0,0.019744871828159982
+   2014-11-05 00:00:00,0.1306343077048,0.10660171326624,0.038143158269759996,0.024032594438559998,0.0
+   2014-12-18 06:00:00,0.53218841192,0.7054595906111999,0.55470657462912,0.0,0.022518162709119993
+   2014-12-22 18:00:00,0.470695495928,0.5999221842335999,0.5043067944278399,0.0,0.0336112984998399
+   2014-12-23 00:00:00,0.19638061335200002,0.27620314971264004,0.21200180048640002,0.0,0.0156211871344
+   2016-03-05 00:00:00,0.172462462736,0.2438621491968,0.1837120051008,0.0,0.011249542364799997
+   2016-04-02 18:00:00,0.5598831164000001,0.6266326917599999,0.565040586816,0.0,0.0051574704159998985
+   2016-04-03 00:00:00,0.3491973884,0.34311675888000004,0.315547941888,0.006080629519999936,0.0
+   2016-04-03 06:00:00,0.32575607368,0.324165347136,0.28943824608,0.0015907265439999985,0.0
+   2016-09-13 18:00:00,0.1261329652,0.07669830326400001,0.0317916873792,0.04943466193599999,0.0
+   2017-02-21 06:00:00,0.15007018904,0.22782898074528,0.15126800776704,0.0,0.001197818727040001
+   2017-10-04 18:00:00,0.49396514856,0.6857872067980801,0.49522590878399997,0.0,0.0012607602239999571
+   2018-03-02 00:00:00,1.1275672864,1.1884803796799999,1.12841606592,0.0,0.0008487795200000647
+   2018-05-21 18:00:00,0.11270523013839999,0.10636138800575999,0.08241462671904001,0.0063438421326399985,0.0
+   ... (46 lines)
+
+  -- 2026-11-04 20:24          231  46a7c348529f41f6cb5cb9d4b8e7d3ef  results/metrics/q01_tp_by_hour.csv
+   hour,N,mean,median,p95,max,frac_ge_0.1mm
+   0,6575,0.09753,0.00351,0.57015,3.21646,0.17506
+   6,6575,0.10319,0.00555,0.57944,3.41927,0.18586
+   12,6575,0.12098,0.02453,0.58534,3.94032,0.24456
+   18,6575,0.10484,0.00786,0.58802,4.13454,0.21019
+
+  -- 2026-11-04 20:24        39105  5696bd47d2e87570c9d3838a5d4081b9  results/ablation/q02b_importance.csv
+   Variant,Seed,Method,Feature,Importance,Share_%,Rank
+   V0_all7,42,Spearman,mxtpr,0.5408142281328838,18.875949514299904,3
+   V0_all7,42,Spearman,mntpr,0.5438288155565136,18.981167160313646,2
+   V0_all7,42,Spearman,lsp,0.5528451046879688,19.295861207915255,1
+   V0_all7,42,Spearman,tcc,0.4452251671084541,15.53962033478519,4
+   V0_all7,42,Spearman,v10,0.24074171578392295,8.40256826972145,6
+   V0_all7,42,Spearman,sp,0.404630996406494,14.122768712019093,5
+   V0_all7,42,Spearman,d2m,0.13701078625186566,4.78206480094546,7
+   V0_all7,42,Gain,mxtpr,12153.95556640625,12.335324838736113,4
+   V0_all7,42,Gain,mntpr,10982.411437988281,11.146298162771172,5
+   V0_all7,42,Gain,lsp,8466.52279663086,8.592865785989277,7
+   V0_all7,42,Gain,tcc,27526.128784179688,27.936891676998208,1
+   V0_all7,42,Gain,v10,15863.353759765625,16.100077097480657,2
+   V0_all7,42,Gain,sp,13889.078063964844,14.096339968785088,3
+   V0_all7,42,Gain,d2m,9648.225341796875,9.792202469239482,6
+   V0_all7,42,Permutation(val),mxtpr,0.005589902400970459,9.981567649175474,5
+   V0_all7,42,Permutation(val),mntpr,0.008365531762441,14.937849575626654,2
+   V0_all7,42,Permutation(val),lsp,0.008148511250813803,14.550328513060432,3
+   V0_all7,42,Permutation(val),tcc,0.0193923016389211,34.62771919747698,1
+   V0_all7,42,Permutation(val),v10,0.004866987466812134,8.690699973445069,6
+   V0_all7,42,Permutation(val),sp,0.00793550411860148,14.169973911598154,4
+   V0_all7,42,Permutation(val),d2m,0.0017035106817881267,3.0418611796172366,7
+   V0_all7,42,SHAP,mxtpr,0.09115704149007797,9.828295141826013,5
+   V0_all7,42,SHAP,mntpr,0.11559312045574188,12.462924263808347,4
+   V0_all7,42,SHAP,lsp,0.06882411241531372,7.420421709995281,6
+   V0_all7,42,SHAP,tcc,0.2446097582578659,26.373134312292198,1
+   V0_all7,42,SHAP,v10,0.16539184749126434,17.832082575573192,3
+   V0_all7,42,SHAP,sp,0.19057025015354156,20.546746945100075,2
+   V0_all7,42,SHAP,d2m,0.05134984105825424,5.536395051404892,7
+   V0_all7,123,Spearman,mxtpr,0.5408142281328838,18.875949514299904,3
+   V0_all7,123,Spearman,mntpr,0.5438288155565136,18.981167160313646,2
+   V0_all7,123,Spearman,lsp,0.5528451046879688,19.295861207915255,1
+   V0_all7,123,Spearman,tcc,0.4452251671084541,15.53962033478519,4
+   V0_all7,123,Spearman,v10,0.24074171578392295,8.40256826972145,6
+   V0_all7,123,Spearman,sp,0.404630996406494,14.122768712019093,5
+   V0_all7,123,Spearman,d2m,0.13701078625186566,4.78206480094546,7
+   V0_all7,123,Gain,mxtpr,11185.993896484375,11.603152666308645,5
+   V0_all7,123,Gain,mntpr,11843.840454101562,12.285532266161352,4
+   V0_all7,123,Gain,lsp,7737.743103027344,8.026306410315541,7
+   V0_all7,123,Gain,tcc,27628.06982421875,28.6584021958565,1
+   ... (561 lines)
+
+  -- 2026-11-04 20:24          530  a75eed94702021a51f495748fb44f89e  results/ablation/q02b_lsp_rank.csv
+   Variant,Method,median_rank,seeds_rank1,n_seeds,mean_share_pct,n_features_in_variant
+   V0_all7,Gain,7.0,0,5,9.08,7
+   V0_all7,Permutation(val),4.0,0,5,10.93,7
+   V0_all7,SHAP,6.0,0,5,7.25,7
+   V0_all7,Spearman,1.0,5,5,19.3,7
+   V1_no_mxtpr,Gain,5.0,0,5,12.42,6
+   V1_no_mxtpr,Permutation(val),4.0,0,5,11.32,6
+   V1_no_mxtpr,SHAP,5.0,0,5,9.07,6
+   V1_no_mxtpr,Spearman,1.0,5,5,23.79,6
+   V2_no_mxtpr_mntpr,Gain,2.0,0,5,20.7,5
+   V2_no_mxtpr_mntpr,Permutation(val),3.0,0,5,18.8,5
+   V2_no_mxtpr_mntpr,SHAP,3.0,0,5,20.17,5
+   V2_no_mxtpr_mntpr,Spearman,1.0,5,5,31.05,5
+
+  -- 2026-11-04 20:24          372  c958803f95a5c7d2f8a21412dc481b72  results/ablation/q02b_rmse_paired.csv
+   Variant_minus_V0,mean_RMSE_V0,mean_RMSE_variant,seed_mean_delta,seed_std_delta,n_seeds_worse,n_seeds,boot_CI_low,boot_CI_high
+   V1_no_mxtpr,0.2439,0.2439,-0.0,0.0011,2,5,-0.0012,0.0011
+   V2_no_mxtpr_mntpr,0.2439,0.2459,0.002,0.0009,5,5,0.0005,0.0035
+   V3_no_lsp,0.2439,0.2437,-0.0002,0.0007,1,5,-0.0012,0.0008
+   V4_no_mxtpr_mntpr_lsp,0.2439,0.2482,0.0043,0.0008,5,5,0.0018,0.0071
+
+  -- 2026-11-04 20:24         1498  cb1c270d8a4548a5db03af7bae2d975f  results/ablation/q02b_rmse_raw.csv
+   Variant,Seed,N_features,RMSE,MAE
+   V0_all7,42,7,0.24374979734420776,0.1188308522105217
+   V0_all7,123,7,0.24429933726787567,0.11984307318925858
+   V0_all7,7,7,0.2440299391746521,0.11906620115041733
+   V0_all7,2024,7,0.24379464983940125,0.11901590973138809
+   V0_all7,99,7,0.243727445602417,0.11855488270521164
+   V1_no_mxtpr,42,6,0.2434583306312561,0.11812470853328705
+   V1_no_mxtpr,123,6,0.24387863278388977,0.11883994191884995
+   V1_no_mxtpr,7,6,0.24261504411697388,0.1179349347949028
+   V1_no_mxtpr,2024,6,0.24464569985866547,0.11885491013526917
+   V1_no_mxtpr,99,6,0.2449355125427246,0.11953413486480713
+   V2_no_mxtpr_mntpr,42,5,0.2471044361591339,0.1208895593881607
+   V2_no_mxtpr_mntpr,123,5,0.2457374930381775,0.12062788754701614
+   V2_no_mxtpr_mntpr,7,5,0.245424285531044,0.12045561522245407
+   V2_no_mxtpr_mntpr,2024,5,0.24620333313941956,0.12051738798618317
+   V2_no_mxtpr_mntpr,99,5,0.24512092769145966,0.12087994068861008
+   V3_no_lsp,42,6,0.2436225563287735,0.11921391636133194
+   V3_no_lsp,123,6,0.24414333701133728,0.1192862018942833
+   V3_no_lsp,7,6,0.24305301904678345,0.11878713220357895
+   V3_no_lsp,2024,6,0.24314987659454346,0.11954235285520554
+   V3_no_lsp,99,6,0.24451257288455963,0.11991428583860397
+   V4_no_mxtpr_mntpr_lsp,42,4,0.24768243730068207,0.12442803382873535
+   V4_no_mxtpr_mntpr_lsp,123,4,0.248409241437912,0.1246635690331459
+   V4_no_mxtpr_mntpr_lsp,7,4,0.2476511001586914,0.1242498978972435
+   V4_no_mxtpr_mntpr_lsp,2024,4,0.2478480190038681,0.12462872266769409
+   V4_no_mxtpr_mntpr_lsp,99,4,0.24937130510807037,0.12487480044364929
+
+  -- 2026-11-04 20:24          853  34e13b8a5312250467641b17cb1f573a  results/metrics/q02_lsp_share.csv
+   Group,N,N_wet_ge_0.1mm,Share_lsp_of_total_tp_%,Share_cp_of_total_tp_%,Median_lsp_over_tp_wet_%,Frac_wet_with_cp_gt_10pct_of_tp
+   All,26300,5363,61.9479196038119,38.05391196401797,57.844798199428425,0.7622599291441358
+   DJF,6500,1299,71.99222473733379,28.010485412773857,75.97123694359252,0.6358737490377213
+   MAM,6624,1288,60.14050825883209,39.86207167437624,54.611658107788976,0.7624223602484472
+   JJA,6624,1443,50.92052624679893,49.08066784223754,41.1498614993992,0.8676368676368676
+   SON,6552,1333,64.50469813249283,35.49640566652182,63.199398496008364,0.7711927981995499
+   tp 0.1-0.5 mm,3757,3757,52.63938999522789,47.36102809084243,47.36569247938793,0.7814745807825393
+   tp 0.5-1.0 mm,1025,1025,63.631078056420414,36.36898362388225,68.47826127037476,0.7307317073170732
+   tp >=1.0 mm,581,581,75.73336188275526,24.266699630002893,80.93999181547493,0.693631669535284
+
+  -- 2026-11-04 20:24         1868  9f132ad05df5fd3abd37768d76194c86  results/metrics/q02_lsp_share_output.txt
+   Source: data/dublin_regional_reduced.csv (26300, 13)
+   cp = tp - lsp: min -0.000343 mm (tiny negatives = float noise), fraction < -1e-4 mm: 0.0044
+   
+   === SHARE OF LARGE-SCALE (lsp) vs CONVECTIVE (cp = tp - lsp) PRECIPITATION ===
+           Group     N  N_wet_ge_0.1mm  Share_lsp_of_total_tp_%  Share_cp_of_total_tp_%  Median_lsp_over_tp_wet_%  Frac_wet_with_cp_gt_10pct_of_tp
+             All 26300            5363                    61.95                   38.05                     57.84                             0.76
+             DJF  6500            1299                    71.99                   28.01                     75.97                             0.64
+             MAM  6624            1288                    60.14                   39.86                     54.61                             0.76
+             JJA  6624            1443                    50.92                   49.08                     41.15                             0.87
+             SON  6552            1333                    64.50                   35.50                     63.20                             0.77
+   tp 0.1-0.5 mm  3757            3757                    52.64                   47.36                     47.37                             0.78
+   tp 0.5-1.0 mm  1025            1025                    63.63                   36.37                     68.48                             0.73
+     tp >=1.0 mm   581             581                    75.73                   24.27                     80.94                             0.69
+   
+   === IS lsp(t) A LOWER BOUND FOR tp(t+6h)?  (R4 M2) ===
+   Same hour: tp >= lsp in 99.56% of samples (by construction, tp = lsp + cp).
+   Next sample: among 3312 cases with lsp(t) >= 0.1 mm, tp(t+6h) < lsp(t) in 71.2%; tp(t+6h) < 0.1 mm in 47.1%
+   Spearman lsp(t) vs tp(t+6h): 0.534   (same-hour lsp vs tp: 0.901)
+   
+   Saved results/metrics/q02_lsp_share.csv
+
+  -- 2026-11-04 20:24         4341  d8ae4527a247eb8a4fcb79e06788f917  results/metrics/q02b_remove_precip_rates_output.txt
+   Source: data/dublin_regional_reduced.csv (26300, 13)
+   
+   Spearman |rho| (feature at t vs target, test): {'mxtpr': np.float64(0.541), 'mntpr': np.float64(0.544), 'lsp': np.float64(0.553), 'tcc': np.float64(0.445), 'v10': np.float64(0.241), 'sp': np.float64(0.405), 'd2m': np.flo
+   V0_all7                  (7 feats) mean test RMSE over seeds = 0.2439
+   V1_no_mxtpr              (6 feats) mean test RMSE over seeds = 0.2439
+   V2_no_mxtpr_mntpr        (5 feats) mean test RMSE over seeds = 0.2459
+   V3_no_lsp                (6 feats) mean test RMSE over seeds = 0.2437
+   V4_no_mxtpr_mntpr_lsp    (4 feats) mean test RMSE over seeds = 0.2482
+   
+   ===== TEST RMSE: variant minus V0 (negative = variant better; XGBoost, 5 seeds) =====
+        Variant_minus_V0  mean_RMSE_V0  mean_RMSE_variant  seed_mean_delta  seed_std_delta  n_seeds_worse  n_seeds  boot_CI_low  boot_CI_high
+             V1_no_mxtpr        0.2439             0.2439          -0.0000          0.0011              2        5      -0.0012        0.0011
+       V2_no_mxtpr_mntpr        0.2439             0.2459           0.0020          0.0009              5        5       0.0005        0.0035
+               V3_no_lsp        0.2439             0.2437          -0.0002          0.0007              1        5      -0.0012        0.0008
+   V4_no_mxtpr_mntpr_lsp        0.2439             0.2482           0.0043          0.0008              5        5       0.0018        0.0071
+   (bootstrap: circular block 28, 2000 reps, seed 42, seed-averaged predictions)
+   
+   ===== RANK OF lsp (1 = most important) PER VARIANT AND METHOD =====
+             Variant           Method  median_rank  seeds_rank1  n_seeds  mean_share_pct  n_features_in_variant
+             V0_all7             Gain          7.0            0        5            9.08                      7
+             V0_all7 Permutation(val)          4.0            0        5           10.93                      7
+             V0_all7             SHAP          6.0            0        5            7.25                      7
+             V0_all7         Spearman          1.0            5        5           19.30                      7
+         V1_no_mxtpr             Gain          5.0            0        5           12.42                      6
+         V1_no_mxtpr Permutation(val)          4.0            0        5           11.32                      6
+         V1_no_mxtpr             SHAP          5.0            0        5            9.07                      6
+         V1_no_mxtpr         Spearman          1.0            5        5           23.79                      6
+   V2_no_mxtpr_mntpr             Gain          2.0            0        5           20.70                      5
+   V2_no_mxtpr_mntpr Permutation(val)          3.0            0        5           18.80                      5
+   V2_no_mxtpr_mntpr             SHAP          3.0            0        5           20.17                      5
+   V2_no_mxtpr_mntpr         Spearman          1.0            5        5           31.05                      5
+   
+   Top-ranked feature per variant and method (modal over seeds):
+   Variant                Method          
+   V0_all7                Gain                  tcc (5/5 seeds)
+                          Permutation(val)      tcc (5/5 seeds)
+                          SHAP                  tcc (5/5 seeds)
+                          Spearman              lsp (5/5 seeds)
+   V1_no_mxtpr            Gain                  tcc (5/5 seeds)
+                          Permutation(val)      tcc (5/5 seeds)
+   ... (56 lines)
+
+  -- 2026-11-05 23:24         5472  26c48cc0eaff19463eff0d98448784ee  results/metrics/q06_audit_output.txt
+   ===== A. fold 4 (25 y) vs fold 4' (13 y) =====
+     [OK] val: same target period ['2017-01-02 12:00:00', '2018-12-31 18:00:00'] and n = 2914
+     [OK] test: same target period ['2019-01-02 12:00:00', '2021-12-31 18:00:00'] and n = 4378
+     [OK] every fold 4' training time stamp is also in fold 4
+     [OK] extra training rows of fold 4 all lie in 1992-2003 (n = 17532, 1992-01-01 00:00:00 -> 2003-12-31 18:00:00)
+     [OK] shared training years 2004-2016 have identical values in both folds (max |diff| = 0.0)
+     training windows: fold 4 = 36522, fold 4' = 18990
+     training Q95: fold 4 = 0.5775, fold 4' = 0.5739
+     [OK] saved predictions of all 6 models x 5 seeds: same validation and test samples in fold 4 and 4' (0 mismatches)
+   
+   ===== B. temporal isolation of every fold =====
+     [OK] F1: train (1992, 2007) < val (2008, 2009) < test (2010, 2012), whole calendar years
+     [OK] F1: target scaler equals training-period mean/std (0.10371 / 0.26512)
+     [OK] F2: train (1992, 2010) < val (2011, 2012) < test (2013, 2015), whole calendar years
+     [OK] F2: target scaler equals training-period mean/std (0.10555 / 0.27218)
+     [OK] F3: train (1992, 2013) < val (2014, 2015) < test (2016, 2018), whole calendar years
+     [OK] F3: target scaler equals training-period mean/std (0.10557 / 0.27335)
+     [OK] F4: train (1992, 2016) < val (2017, 2018) < test (2019, 2021), whole calendar years
+     [OK] F4: target scaler equals training-period mean/std (0.10609 / 0.27515)
+     [OK] F4s: train (2004, 2016) < val (2017, 2018) < test (2019, 2021), whole calendar years
+     [OK] F4s: target scaler equals training-period mean/std (0.10597 / 0.28195)
+     predictor set: fixed 7 variables ['mxtpr', 'mntpr', 'lsp', 'tcc', 'v10', 'sp', 'd2m']; per-fold check on training years only -> /root/autodl-tmp/results/metrics/q06_feature_check.csv
+                            period     n                           top7  same_set_as_main rank7_feature  rank7_abs_rho rank8_feature  rank8_abs_rho   rho_u10  rho_v10  rho_d2m  rho_t2m    rho_sp     rho_e  rho_mxtpr  rho_mn
+     original (2004-01 to 2016-08) 18410 mxtpr,mntpr,lsp,tcc,sp,d2m,v10              True           v10       0.181582             e       0.135688 -0.006281 0.181582 0.218941 0.126572 -0.427731 -0.135688   0.986774   0.942
+                F1 train 1992-2007 23376 mxtpr,mntpr,lsp,tcc,sp,d2m,v10              True           v10       0.173854             e       0.114291 -0.013634 0.173854 0.191482 0.094213 -0.440978 -0.114291   0.987620   0.942
+                F2 train 1992-2010 27760 mxtpr,mntpr,lsp,tcc,sp,d2m,v10              True           v10       0.173350             e       0.123469 -0.018122 0.173350 0.197071 0.101329 -0.439296 -0.123469   0.987314   0.943
+                F3 train 1992-2013 32144 mxtpr,mntpr,lsp,tcc,sp,d2m,v10              True           v10       0.176794             e       0.122731 -0.016399 0.176794 0.201837 0.106526 -0.434657 -0.122731   0.987297   0.943
+                F4 train 1992-2016 36528 mxtpr,mntpr,lsp,tcc,sp,d2m,v10              True           v10       0.180991             e       0.123247 -0.011601 0.180991 0.203175 0.107754 -0.438224 -0.123247   0.987283   0.943
+               F4s train 2004-2016 18996 mxtpr,mntpr,lsp,tcc,sp,d2m,v10              True           v10       0.180424             e       0.133335 -0.005857 0.180424 0.219167 0.127558 -0.428043 -0.133335   0.986768   0.942
+   
+   ===== C. protocol across folds =====
+     [OK] 150 runs; every fold x model has seeds [7, 42, 99, 123, 2024]
+     [OK] software / GPU: TF <StringArray>
+   ['2.21.0']
+   Length: 1, dtype: str, GPU <StringArray>
+   ['NVIDIA GeForce RTX 5090']
+   Length: 1, dtype: str
+     best epoch (mean over seeds) / runs stopped before epoch 30:
+     fold                F1    F2    F3    F4   F4s
+     model                                         
+   ... (62 lines)
+
+  -- 2026-11-05 18:21         1468  9ce5465a1f3f46d8e760f137eee6f478  results/metrics/q06_repro_output.txt
+   I0000 00:00:1793902525.888096    1324 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them 
+   I0000 00:00:1793902526.822505    1324 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them 
+   fold: {"fold": "ORIG", "periods": "original 70/15/15 of 2004-2021", "n_windows": {"train": 18404, "val": 3939, "test": 3939}, "target_times": {"train": ["2004-01-02 12:00:00", "2016-08-07 06:00:00"], "val": ["2016-08-09 
+   [done] ORIG__xgboost__s42 | test RMSE=0.243750 R2=0.2060 | best epoch None/None | 0s
+   [repro] xgboost seed 42: 0.243750 vs main study 0.24375 -> diff -0.000000 OK
+   [done] ORIG__bilstm_attn__s42 | test RMSE=0.242848 R2=0.2119 | best epoch 9/19 | 118s
+   [repro] bilstm_attn seed 42: 0.242848 vs main study 0.242848 -> diff +0.000000 OK
+   [done] ORIG__bulstm_attn__s42 | test RMSE=0.246413 R2=0.1885 | best epoch 11/21 | 248s
+   [repro] bulstm_attn seed 42: 0.246413 vs main study 0.246413 -> diff +0.000000 OK
+
+  -- 2026-11-07 17:47         6124  c0456ec554f55af03405d6bb6ee3e1bf  results/metrics/q09_output.txt
+   区域序列 (26300, 14)，2004-01-01 00:00:00 至 2021-12-31 18:00:00
+   cp 为负的时刻（数值误差）：985，最小 -3.433e-07
+   训练期时刻 18410：2004-01-01 00:00:00 至 2016-08-07 06:00:00
+   
+   ===== 选择表（训练期；按 |ρ_lead(k=0)| 排序）=====
+          rho_contemp  rho_lead_k0  rho_partial_given_tp_t  rank_contemp  rank_lead  rank_partial  in_orig7  lead_k0_lo  lead_k0_hi  partial_lo  partial_hi  freq_top7_lead
+   var                                                                                                                                                                     
+   lsp          0.899        0.530                   0.157             3          1             5      True       0.514       0.546       0.141       0.174           1.000
+   mntpr        0.943        0.525                   0.107             2          2             8      True       0.509       0.541       0.091       0.124           1.000
+   mxtpr        0.987        0.515                  -0.024             1          3            13      True       0.497       0.532      -0.040      -0.008           1.000
+   tcc          0.475        0.438                   0.251             5          4             1      True       0.419       0.455       0.235       0.267           1.000
+   cp           0.843        0.388                  -0.119             4          5             7     False       0.368       0.408      -0.134      -0.105           1.000
+   sp          -0.428       -0.369                  -0.188             6          6             2      True      -0.392      -0.345      -0.203      -0.172           1.000
+   v10          0.182        0.251                   0.186             9          7             3      True       0.223       0.277       0.168       0.204           0.797
+   ws           0.336        0.238                   0.077             7          8             9     False       0.216       0.261       0.062       0.092           0.203
+   d2m          0.219        0.149                   0.042             8          9            12      True       0.118       0.181       0.024       0.061           0.000
+   ssr          0.061       -0.091                  -0.145            12         10             6     False      -0.109      -0.073      -0.160      -0.129           0.000
+   e           -0.136        0.066                   0.163            10         11             4     False       0.048       0.084       0.148       0.178           0.000
+   u10         -0.006       -0.058                  -0.064            13         12            10     False      -0.092      -0.026      -0.086      -0.044           0.000
+   t2m          0.127        0.025                  -0.049            11         13            11     False      -0.005       0.058      -0.067      -0.031           0.000
+   
+   tp(t) 参照：同期 1；提前量 ρ[tp(t), tp(t+6h)] = 0.525
+   
+   原稿 7 个：['mxtpr', 'mntpr', 'lsp', 'tcc', 'v10', 'sp', 'd2m']
+   同期前 7（复现）：['mxtpr', 'mntpr', 'lsp', 'cp', 'tcc', 'sp', 'ws']，与原稿相同：False
+   提前量前 7：['lsp', 'mntpr', 'mxtpr', 'tcc', 'cp', 'sp', 'v10']，与原稿相同：False
+     进入：['cp']；退出：['d2m']
+   原稿 7 个在自助法中进入提前量前 7 的频率：{'mxtpr': 1.0, 'mntpr': 1.0, 'lsp': 1.0, 'tcc': 1.0, 'v10': 0.797, 'sp': 1.0, 'd2m': 0.0}
+   第 7 名与第 8 名 |ρ_lead| 间隔：0.251 − 0.238 = 0.013
+   偏相关 95% 区间不含 0 的变量：['lsp', 'mntpr', 'mxtpr', 'tcc', 'cp', 'sp', 'v10', 'ws', 'd2m', 'ssr', 'e', 'u10', 't2m']
+   
+   ===== 提前量剖面 |ρ| 随 k（x 在 t−6k h，目标 t+6h）=====
+   x_time   t-0h   t-6h  t-12h  t-18h  t-24h  t-30h
+   var                                             
+   u10    -0.058 -0.026 -0.001  0.019  0.035  0.044
+   v10     0.251  0.216  0.164  0.122  0.077  0.056
+   d2m     0.149  0.088  0.050  0.021 -0.002 -0.002
+   t2m     0.025 -0.010  0.033  0.029 -0.047 -0.049
+   sp     -0.369 -0.299 -0.255 -0.227 -0.212 -0.201
+   e       0.066  0.115 -0.054 -0.155  0.015  0.068
+   ... (91 lines)
+
+  -- 2026-11-07 17:47         2249  1dfe2161ae5ca88adbb2fc913862f6f8  results/metrics/q09_selection_table.csv
+   var,rho_contemp,rho_lead_k0,rho_partial_given_tp_t,rank_contemp,rank_lead,rank_partial,in_orig7,lead_k0_lo,lead_k0_hi,partial_lo,partial_hi,freq_top7_lead
+   lsp,0.8988951980114962,0.5304697972362352,0.15715930169043266,3,1,5,True,0.5139602891494863,0.5463886064341027,0.14113112762509622,0.17387971784472672,1.0
+   mntpr,0.9425851400189124,0.525290397051295,0.10729418239046974,2,2,8,True,0.5093024394583854,0.5413290146301246,0.09067058053869152,0.12424253097657706,1.0
+   mxtpr,0.9867740748085724,0.5146503338338687,-0.024187468139525714,1,3,13,True,0.4969146665000407,0.5316207052153112,-0.039732988607571726,-0.007598192104677861,1.0
+   tcc,0.4754719511298504,0.4378017555023401,0.25134950125718714,5,4,1,True,0.4189933879193814,0.4554710505578132,0.2350550572325171,0.2672357381547009,1.0
+   cp,0.8428954889490062,0.3878663277416191,-0.11920811443917374,4,5,7,False,0.3683797641653697,0.4083655803375802,-0.13388679549280683,-0.10482221198883952,1.0
+   sp,-0.42773062213023466,-0.36910226542403257,-0.1879150329652956,6,6,2,True,-0.391749499806579,-0.34547610061738615,-0.2034019005983114,-0.17221559538293854,1.0
+   v10,0.181582185760466,0.2510960135883028,0.1861129007667213,9,7,3,True,0.2231331522211694,0.27674570136666565,0.16769595002972687,0.20378805569120237,0.797
+   ws,0.33551630462102167,0.2376005339009481,0.07666389718016142,7,8,9,False,0.21602925935871595,0.26124272983082064,0.061883051802276254,0.09231831440397675,0.203
+   d2m,0.21894134539497556,0.14949867746325216,0.0416144294821453,8,9,12,True,0.1184263387343146,0.18104983372850794,0.02353710746221916,0.060642370866569005,0.0
+   ssr,0.060663565190050714,-0.09105883722757835,-0.14466309445386222,12,10,6,False,-0.10856062649375375,-0.07276179555268943,-0.16027642991296487,-0.12902198626809336,0.0
+   e,-0.13568841802205853,0.06629676486788226,0.1630826774479288,10,11,4,False,0.047763394702813454,0.08416789310180209,0.14824711253424605,0.17839334859714856,0.0
+   u10,-0.0062805696329007845,-0.05801954723334235,-0.06430042670447429,13,12,10,False,-0.09175162413826704,-0.025679692839076187,-0.08619359923513936,-0.043799486313445934,0.0
+   t2m,0.1265717011980203,0.02514018866351052,-0.04893067629734051,11,13,11,False,-0.005454019476670672,0.05773427778424487,-0.06690269126948017,-0.03090771324819625,0.0
+
+  -- 2026-11-04 22:52         4278  6f089d13994a1754e38ebb626a03b195  results/metrics/q10_group_ablation.csv
+   arch,subset,config,removed,n,RMSE_full_mean,dRMSE_mean,dRMSE_sd,seed_t_low,seed_t_high,n_seeds_worse,boot_low,boot_high,boot_significant,sum_of_single_dRMSE,dRMSE_s42,dRMSE_s123,dRMSE_s7,dRMSE_s2024,dRMSE_s99
+   bilstm_attn,all,no_precip,mxtpr+mntpr+lsp,3939,0.2428637033219135,0.0048048426082969165,0.0016639313953970584,0.0027387988991514367,0.006870886317442397,5,0.0019804832751551837,0.008062203356527964,True,-0.00061529987633
+   bilstm_attn,all,no_mxtpr_mntpr,mxtpr+mntpr,3939,0.2428637033219135,-0.0001880079219013453,0.00047208273567588585,-0.0007741760589636365,0.00039816021516094586,2,-0.0013403499216317752,0.0010513822211845013,False,-0.00010
+   bilstm_attn,wet_ge0.1,no_precip,mxtpr+mntpr+lsp,854,0.4849630322764087,0.010704696421586956,0.007290764297381852,0.001652016874138549,0.019757375969035363,5,0.003802221175379734,0.018290529991555896,True,-0.0004891876311
+   bilstm_attn,wet_ge0.1,no_mxtpr_mntpr,mxtpr+mntpr,854,0.4849630322764087,-0.0012127108536613362,0.0007612844035582051,-0.002157970289953585,-0.00026745141736908746,0,-0.0037868515761310564,0.0015535540184438994,False,0.00
+   bilstm_attn,upper_geQ95,no_precip,mxtpr+mntpr+lsp,238,0.873203680222766,0.019359408107572217,0.014882249163791147,0.0008806551085946759,0.03783816110654976,5,0.005695373345836733,0.034164674305272036,True,-0.001556240904
+   bilstm_attn,upper_geQ95,no_mxtpr_mntpr,mxtpr+mntpr,238,0.873203680222766,-0.002992041192425865,0.002410328317877488,-0.00598485908858538,7.767037336495544e-07,0,-0.007956611987608303,0.002030723209413669,False,-0.0002920
+   bulstm_attn,all,no_precip,mxtpr+mntpr+lsp,3939,0.24720692842583003,0.0030148823864319827,0.0027006446123345124,-0.0003384108006467424,0.006368175573510708,4,0.00043257874413936724,0.005929311295221604,True,-0.00460892041
+   bulstm_attn,all,no_mxtpr_mntpr,mxtpr+mntpr,3939,0.24720692842583003,-0.0006547263231003797,0.0018319870668259057,-0.0029294387091530205,0.001619986062952261,2,-0.0016227337474297972,0.00037484327026039645,False,-0.003738
+   bulstm_attn,wet_ge0.1,no_precip,mxtpr+mntpr+lsp,854,0.49609193534308904,0.004952728111911486,0.015493582836427563,-0.014285095899268376,0.02419055212309135,3,-0.0010547382210978906,0.01190555974462778,False,-0.0256360592
+   bulstm_attn,wet_ge0.1,no_mxtpr_mntpr,mxtpr+mntpr,854,0.49609193534308904,-0.0035988226613075103,0.008340677263894567,-0.01395514134052207,0.006757496017907049,2,-0.005743294026964458,-0.0010993271102354,True,-0.021860857
+   bulstm_attn,upper_geQ95,no_precip,mxtpr+mntpr+lsp,238,0.8964816439902183,0.008619113684269842,0.02933076744671586,-0.02779984429400418,0.04503807166254386,3,-0.0028108282335379126,0.021269936227571146,False,-0.0494388781
+   bulstm_attn,upper_geQ95,no_mxtpr_mntpr,mxtpr+mntpr,238,0.8964816439902183,-0.0067046642682981215,0.01498637972660379,-0.02531271243823282,0.011903383901636574,2,-0.010473585679789262,-0.0025285324305301875,True,-0.042337
+
+  -- 2026-11-04 17:28       487298  20292cc723177cd58565f2ccc3f753c2  results/metrics/q08_hres_aligned_samples.csv
+   valid_time,init,y_true,hres_tp6_mm,era5_tp6_mm,BiLSTM-Attention,XGBoost,BU-LSTM-Attention,Probabilistic BiLSTM-Attention,BU-LSTM,Transformer,Persistence,Climatology (month x hour),AR(1),HRES (6 h mean),Perfect 6 h mean (
+   2019-04-22 06:00:00,2019-04-22 00:00:00,-7.450581e-09,0.0,0.0,0.03330978,0.106256604,0.040530816,0.01705978,0.035426773,0.025725223,0.0,0.07143509695380768,0.0762902393263908,0.0,0.0
+   2019-04-22 18:00:00,2019-04-22 12:00:00,0.0030136108,0.01861572265625,0.04453003406524658,0.060545806,0.08165494,0.043415263,0.030998811,0.08703257,0.030776732,0.0,0.09428356830749494,0.0762902393263908,0.003102620442708
+   2019-04-23 06:00:00,2019-04-23 00:00:00,-7.450581e-09,0.0,0.0009483844041824341,0.088586226,0.06664802,0.047179747,0.05304011,0.105685554,0.033804573,0.0,0.07143509695380768,0.0762902393263908,0.0,0.00015806406736373901
+   2019-04-23 18:00:00,2019-04-23 12:00:00,-7.450581e-09,0.0,0.0,0.034421816,0.03233245,0.016619444,0.012981929,0.047957543,0.02900637,0.0,0.09428356830749494,0.0762902393263908,0.0,0.0
+   2019-04-24 06:00:00,2019-04-24 00:00:00,0.26468277,0.6378173828125,1.0594286769628525,0.23030621,0.26775426,0.23667806,0.1831936,0.18027201,0.1555362,0.14236450207600002,0.07143509695380768,0.11630791616746369,0.10630289
+   2019-04-24 18:00:00,2019-04-24 12:00:00,1.0835838,5.521240234375,4.3138812482357025,0.10180044,0.08480021,0.124287,0.12724501,0.11574947,0.05983443,0.10370254565840001,0.09428356830749494,0.10544030763161377,0.9202067057
+   2019-04-25 06:00:00,2019-04-25 00:00:00,0.011329651,0.1483154296875,0.01991160213947296,0.06664786,0.09493396,0.14899439,0.11778691,0.11020353,0.23915982,0.0100898742312,0.07143509695380768,0.07912643318415233,0.02471923
+   2019-04-25 18:00:00,2019-04-25 12:00:00,0.2148056,2.60101318359375,1.2502534687519073,0.1578644,0.19541949,0.22386721,0.14653322,0.12255254,0.08772348,0.2904319776,0.09428356830749494,0.15792865939901538,0.43350219726562
+   2019-04-26 06:00:00,2019-04-26 00:00:00,0.32821655,1.811370849609375,0.48951663076877594,0.07104063,0.13207492,0.116573185,0.1301656,0.09361497,0.06062907,0.0044822692768,0.07143509695380768,0.0775501742175893,0.30189514
+   2019-04-26 18:00:00,2019-04-26 12:00:00,0.25478363,1.9985961914062498,1.766854152083397,0.11152776,0.21410687,0.16863215,0.32043904,0.15730493,0.07628851,0.0019454956,0.09428356830749494,0.07683710468314221,0.33309936523
+   2019-04-27 06:00:00,2019-04-27 00:00:00,0.23902893,8.284912109375,3.9667304605245595,0.30623943,0.3222767,0.41326562,0.38845673,0.29796275,0.27758282,0.8673858628,0.07143509695380768,0.32010640591204403,1.380818684895833
+   2019-04-27 18:00:00,2019-04-27 12:00:00,0.0020599365,0.22430419921875,0.09710043668746948,0.009093814,0.05539557,0.014883347,0.029762574,0.011466868,0.03145904,0.06767272996800001,0.09428356830749494,0.09531257564845314,
+   2019-04-28 06:00:00,2019-04-28 00:00:00,0.015792854,0.22308349609375,0.03692507743835449,-0.019638486,0.019142844,0.019910604,0.03340038,0.027008593,0.040134035,0.0,0.07143509695380768,0.0762902393263908,0.03718058268229
+   2019-04-28 18:00:00,2019-04-28 12:00:00,0.010643005,0.343170166015625,0.3105033189058304,0.2257142,0.30348396,0.24906963,0.22345728,0.26549706,0.055412795,0.19897460948,0.09428356830749494,0.1322206258036224,0.0571950276
+   2019-04-29 06:00:00,2019-04-29 00:00:00,0.09277344,0.36895751953125,0.4018731415271759,0.045638245,0.039593503,0.06826635,0.041649774,0.070234194,0.05062599,0.021209716776,0.07143509695380768,0.08225214401088543,0.061492
+   2019-04-29 18:00:00,2019-04-29 12:00:00,0.105781555,0.9136962890625,0.5938384681940079,0.10305433,0.20182304,0.09890008,0.12375516,0.10910224,0.06626248,0.084571838912,0.09428356830749494,0.10006279828655192,0.1522827148
+   2019-04-30 06:00:00,2019-04-30 00:00:00,0.9284783,3.053436279296875,3.731631636619568,0.111819655,0.12688401,0.121526875,0.13141832,0.14002207,0.106313124,0.10240554816000001,0.07143509695380768,0.10507573060575558,0.508
+   2019-04-30 18:00:00,2019-04-30 12:00:00,0.3068161,1.238555908203125,2.071026638150215,0.09988336,0.08764325,0.13926241,0.11412649,0.20125481,0.15422961,0.15735626208000003,0.09428356830749494,0.12052199621108808,0.206425
+   2019-05-01 06:00:00,2019-05-01 00:00:00,0.04272461,0.775299072265625,0.36936230957508087,0.04914107,0.046869617,0.062399954,0.10247279,0.079803094,0.12301569,0.046634673971999996,0.09028162641772985,0.08939892362189045,0
+   2019-05-01 18:00:00,2019-05-01 12:00:00,0.014801025,0.07110595703125,0.03752715885639191,0.03791602,0.017135575,0.018803231,0.03584171,0.028443359,0.07270214,0.00045776367199999995,0.09696383142704218,0.07641891352837621
+   2019-05-02 06:00:00,2019-05-02 00:00:00,0.029335022,0.39154052734375,0.13415738940238953,0.02085659,0.015458457,0.02219174,0.018631704,0.026649572,0.040498964,0.0005149841304000001,0.09028162641772985,0.07643499780345572
+   2019-05-02 18:00:00,2019-05-02 12:00:00,0.092926025,0.35980224609375,0.6554494798183441,0.05773613,0.060313,0.024098195,0.04468274,0.034008183,0.02609051,0.09456634552,0.09696383142704218,0.10287218496506113,0.0599670410
+   2019-05-03 06:00:00,2019-05-03 00:00:00,0.005531311,0.029296875,0.010833144187927246,0.033586733,0.021766163,0.014901467,0.019452803,0.01968854,0.030837648,0.0052261352367999996,0.09028162641772985,0.07775926979384792,0.
+   2019-05-03 18:00:00,2019-05-03 12:00:00,0.05191803,0.399169921875,0.40017567574977875,0.04016369,0.030710675,0.025519893,0.023060702,0.04071922,0.028905742,0.011596679532,0.09696383142704218,0.07954998573208763,0.0665283
+   2019-05-04 06:00:00,2019-05-04 00:00:00,0.07095337,0.780029296875,0.42482249438762665,0.035261467,0.011102639,0.0150755495,0.01560469,0.013934657,0.031773128,0.013961791904000001,0.09028162641772985,0.0802148024610851,0.
+   2019-05-04 18:00:00,2019-05-04 12:00:00,-7.450581e-09,0.0,1.1175870895385742e-05,0.024830244,0.0088809505,0.014258638,0.015133031,0.016523331,0.027712747,0.0,0.09696383142704218,0.0762902393263908,0.0,1.862645149230957e-
+   2019-05-05 06:00:00,2019-05-05 00:00:00,-7.450581e-09,0.0,0.00022515654563903809,0.017510436,0.013505399,0.01097855,0.00811746,0.008512683,0.0239833,0.0008392334,0.09028162641772985,0.0765261420304055,0.0,3.7526090939839
+   2019-05-05 18:00:00,2019-05-05 12:00:00,0.0042915344,0.016632080078125,0.04038967192173004,0.021857806,0.023129977,0.015774295,0.03472335,0.01785884,0.02288279,0.008163452136000001,0.09696383142704218,0.07858492925767449
+   2019-05-06 06:00:00,2019-05-06 00:00:00,7.6293945e-05,0.00396728515625,0.00017583370208740234,0.030034743,0.012739122,0.021011062,0.019742027,0.050664,0.031612754,0.0002288818384,0.09028162641772985,0.07635457642805812,0
+   2019-05-06 18:00:00,2019-05-06 12:00:00,0.032901764,0.274658203125,0.16239196062088013,0.049363248,0.052751,0.048054192,0.04859901,0.08564798,0.0477773,0.041656493864000006,0.09696383142704218,0.08799959162610788,0.04577
+   2019-05-07 06:00:00,2019-05-07 00:00:00,0.023536682,0.31951904296875,0.2410341054201126,0.070296474,0.06720511,0.11270028,0.07919553,0.09555824,0.07096551,0.021419525292000002,0.09028162641772985,0.08231111973355056,0.05
+   2019-05-07 18:00:00,2019-05-07 12:00:00,0.00091552734,0.36895751953125,0.28827004134655,0.071375445,0.07680412,0.07703972,0.075652674,0.06287804,0.047605395,0.06713867166000001,0.09696383142704218,0.0951624555519952,0.06
+   2019-05-08 06:00:00,2019-05-08 00:00:00,0.9236527,1.800994873046875,2.502831146121025,0.08584911,0.38002783,0.07554673,0.07910364,0.06784199,0.11799675,0.0186538695456,0.09028162641772985,0.08153371303244744,0.3001658121
+   2019-05-08 18:00:00,2019-05-08 12:00:00,0.07034302,1.5948486328125,1.412036046385765,0.3573855,0.3553842,0.36273822,0.3187801,0.30631414,0.29765353,0.609817506,0.09696383142704218,0.24770572233850746,0.26580810546875,0.2
+   2019-05-09 06:00:00,2019-05-09 00:00:00,0.20217896,0.750732421875,0.83265021443367,0.095202155,0.09680926,0.029800504,0.08931844,0.04361361,0.07468228,0.06956100497600001,0.09028162641772985,0.09584335669257099,0.1251220
+   2019-05-09 18:00:00,2019-05-09 12:00:00,0.61573035,3.34686279296875,3.254564553499222,0.1984621,0.19958001,0.23296931,0.29802462,0.22314957,0.10799692,0.34847259544000003,0.09696383142704218,0.17424347562432274,0.5578104
+   2019-05-10 06:00:00,2019-05-10 00:00:00,0.019626617,0.269012451171875,0.0824633240699768,0.0572336,0.056401473,0.06788865,0.074163,0.04852267,0.08825744,0.0160026549296,0.09028162641772985,0.08078847494154484,0.044835408
+   2019-05-10 18:00:00,2019-05-10 12:00:00,0.25646213,0.711517333984375,0.7682584971189499,0.051869225,0.073721096,0.04673032,0.070947826,0.052506145,0.08009678,0.064544677324,0.09696383142704218,0.09443330168602512,0.11858
+   2019-05-11 06:00:00,2019-05-11 00:00:00,-7.450581e-09,0.01190185546875,0.003066807985305786,0.05000578,0.010853663,0.017368838,0.025198892,0.020059817,0.056715358,0.0,0.09028162641772985,0.0762902393263908,0.001983642578
+   ... (1971 lines)
+
+===== CHECK COMPLETE (read-only) =====
