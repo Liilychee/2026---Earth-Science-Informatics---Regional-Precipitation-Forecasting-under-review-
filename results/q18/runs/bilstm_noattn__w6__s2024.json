@@ -1,0 +1,20 @@
+{
+  "tag": "bilstm_noattn__w6__s2024",
+  "seed": 2024,
+  "val": {
+    "rmse": 0.25459950909214857,
+    "mae": 0.10897388033056891
+  },
+  "test": {
+    "rmse": 0.24460053864950604,
+    "mae": 0.11845662838345443
+  },
+  "n_params": 36993,
+  "best_epoch": 12,
+  "epochs_trained": 22,
+  "train_seconds": 112.3,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tf": "2.21.0",
+  "host": "autodl-container-473f4db77f-7222831c",
+  "finished_utc": "2026-11-11T18:36:22+00:00"
+}
