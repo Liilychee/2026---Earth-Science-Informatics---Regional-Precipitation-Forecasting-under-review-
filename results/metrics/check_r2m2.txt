@@ -1,0 +1,44 @@
+
+====================================================================================================
+1. INVENTORY (data files, raw downloads, notebooks, preprocessing scripts)
+====================================================================================================
+--- data/*.csv: 4
+  2026-11-02 15:10   1637915861  (big)  data/04-24.csv
+  2026-11-02 15:10      3553637  e1998c7f6a9376f694013cf07dba3acf  data/dublin_regional_2004_2021.csv
+  2026-11-02 15:10      4998681  f9b4f8a22c8b7849f40eb71918fe1fd6  data/dublin_regional_reduced.csv
+  2026-11-03 18:05     63763093  957f99172793a218501cbc2d364e69f0  data/hly532.csv
+--- data/**/*.nc: 12
+  2026-11-02 16:17      9599703  e4013f07f5d6c72458c066ff3b0766eb  data/era5_1992_2003/era5_1992.nc
+  2026-11-02 19:37      9562558  03df4f9aa2eaa5768ec837add0f635ff  data/era5_1992_2003/era5_1993.nc
+  2026-11-02 23:14      9602122  977826639bf7e1954090ce3314f78a47  data/era5_1992_2003/era5_1994.nc
+  2026-11-03 02:34      9464006  f52f1eaef32138d15011faed0b341006  data/era5_1992_2003/era5_1995.nc
+  2026-11-03 06:44      9511177  9d37eeff7b19095c4d4e4806362601ef  data/era5_1992_2003/era5_1996.nc
+  2026-11-03 12:52      9500876  3e841a74ec32f5f6859097fa493d66b2  data/era5_1992_2003/era5_1997.nc
+  2026-11-03 18:12      9611563  0a7ff6b936f1522c307e011b53e0620d  data/era5_1992_2003/era5_1998.nc
+  2026-11-03 22:37      9627338  68077bb8afef39a0ff38caf22de4cf77  data/era5_1992_2003/era5_1999.nc
+  2026-11-04 02:58      9705209  dad6be3c8730309c64752d8aa46249b6  data/era5_1992_2003/era5_2000.nc
+  2026-11-04 07:34      9471335  72f51cfbcba7fb6c0475438ae19173cd  data/era5_1992_2003/era5_2001.nc
+  2026-11-04 15:32      9620303  9c14b7f2bd01ae27a6acbe074b293791  data/era5_1992_2003/era5_2002.nc
+  2026-11-04 21:24      9419487  8a4e541bf06d6a64098895b430535adc  data/era5_1992_2003/era5_2003.nc
+--- *.ipynb: 1
+  2026-11-03 15:33        25384  364f7ae913394cc2cb78af4719cac0b8  Test.ipynb
+--- code/*step2*: 2
+  2026-11-02 15:36        12751  3ff581a333ce33764dd0c62218f892de  code/step2d_feature_selection_windowing.py
+  2026-11-02 17:20         1912  ff1dfc7dfb3f1a73335bcd948417cf6b  code/step2e_lead_time_spearman.py
+--- code/*window*: 4
+  2026-11-13 11:27         4531  cd012c87be492a4dca28ed772cca7f76  code/check_q08_window.py
+  2026-11-04 17:07         3273  a0c3ff38dc197d1eee6b2c8c4c4b50dd  code/q08_check_era5_window.py
+  2026-11-07 14:48         5123  d9e56ff5a0f1b7bc1d3d561faff2d5ac  code/q14b_window_curve.py
+  2026-11-02 15:36        12751  3ff581a333ce33764dd0c62218f892de  code/step2d_feature_selection_windowing.py
+--- code/*feature*: 3
+  2026-11-05 18:04         2217  665d3c5e7d2afdc4669cfe7f6d9b5bb4  code/q06_feature_check.py
+  2026-11-09 12:56        11956  73a71e764f000e7b224b1e2947490001  code/q21_build_features.py
+  2026-11-02 15:36        12751  3ff581a333ce33764dd0c62218f892de  code/step2d_feature_selection_windowing.py
+--- code/q06_audit*: 1
+  2026-11-05 23:24         7455  1ba489f8f7bc3e5d7fdb1bdc235677f6  code/q06_audit.py
+--- code/q09*: 1
+  2026-11-07 17:43         9363  daf7b0987e7336da0f85dd8c1f8a00ae  code/q09_lead_corr.py
+
+====================================================================================================
+2. CSV COLUMNS, TIME AXIS, MAGNITUDES (mxtpr, mntpr, lsp, tp)
+====================================================================================================
