@@ -1,0 +1,8 @@
+Model,Display_name,Color_hex,Marker
+XGBoost,XGBoost,#E69F00,s
+Transformer,Transformer,#CC79A7,^
+BU-LSTM,BU-LSTM,#009E73,D
+BiLSTM-Attention,BiLSTM-Attention,#0072B2,o
+BU-LSTM-Attention,BU-LSTM-Attention,#D55E00,v
+Probabilistic BiLSTM-Attention,Prob. BiLSTM-Attention,#882255,P
+Persistence,Persistence,#000000,x

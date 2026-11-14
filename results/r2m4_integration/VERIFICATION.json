@@ -47,9 +47,9 @@
       ]
     }
   },
-  "visual_100percent_passed": true,
+  "visual_100percent_passed": false,
   "new_figure_number": 5,
-  "new_figure_page": 51,
+  "new_figure_page": null,
   "table_labels": {
     "stab:r2m4_fixed_events": "S28",
     "stab:r2m4_tuned_events": "S29",
@@ -58,7 +58,13 @@
   },
   "no_new_horizontal_overflow_or_undefined_refs": true,
   "prior_images_unchanged": true,
-  "new_manuscript_external_refs_red_verified": [
+  "followup_change_color_only": true,
+  "r2m4_closed": false,
+  "author_figure_pending": true,
+  "final_figure_verified": false,
+  "prior_visual_checks_historical": true,
+  "pdf_status": "draft with explicit author-figure placeholder; final PDF QA pending",
+  "new_manuscript_external_refs_red_verified_historical": [
     {
       "page": 50,
       "text": "(Supplementary Table S28). For example, XGBoost minus Persistence was",
@@ -84,6 +90,5 @@
       "text": "Table S31. The latter use validation cutoffs selected for the mean predictions,",
       "rgb": "FF0000"
     }
-  ],
-  "followup_change_color_only": true
+  ]
 }

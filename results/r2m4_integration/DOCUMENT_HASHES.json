@@ -2,7 +2,7 @@
   {
     "path": "manuscript.tex",
     "before_sha256": "11e6cd8f4966e5c45ea979570a1df3dc1c4f4ad07d85538ee386369a66683d06",
-    "after_sha256": "bbd335b491524075fedd9680fee24307a3e2e05056307324a2f4e0757a392b82"
+    "after_sha256": "fb35ec30a79e72bde91a53dfc65a01b90e49b30e3dfdb9d1a4a7a4a9817ca408"
   },
   {
     "path": "Supplementary.tex",
@@ -12,12 +12,12 @@
   {
     "path": "Response letter.tex",
     "before_sha256": "f291c5002d8be791a9b60adfb4aa53a6967a7e73c454b3b8a9e68089feaeb199",
-    "after_sha256": "72193a5b511b7b1aca533a8c8b3c0ee4a2903ac90e7a85911635ebee0126ded6"
+    "after_sha256": "399800a975be60644dd68468b3bada208e4a86b4d21cae9966a8a6dcc22e2194"
   },
   {
     "path": "FINAL_REVISION_CHECKLIST.md",
     "before_sha256": "7f32d09fb249246fe1c9caf076d18557880034feb2a76a6b55a5d302256f0950",
-    "after_sha256": "32dcfdfc6daa14b1a513d56c692ee1d13aec3711f48d45577cb73e9070a2f6aa"
+    "after_sha256": "b7f4f506af903df5f76dad7664aa0ff42058d3e70d32ef05b9cd639ccc9fcb67"
   },
   {
     "path": "SUPPLEMENTARY_TABLE_REGISTRY.md",
@@ -27,6 +27,6 @@
   {
     "path": "ESI_\u5ba1\u7a3f\u610f\u89c1\u5206\u7c7b_\u4e25\u91cd\u7a0b\u5ea6\u6392\u5e8f_35\u9879.md",
     "before_sha256": "65ea33a5b8b26fb6126442f21092941b9dbfd8982eb18d777a21df97ca48953e",
-    "after_sha256": "7fdf8fd098d76f9cf82e9187cc7fffe50e8140fc19f5c41bcfed87b185b6bcbd"
+    "after_sha256": "936611e30683769b7819336964aca7ab6fa52464483814f96bdea87ae45e6e92"
   }
 ]

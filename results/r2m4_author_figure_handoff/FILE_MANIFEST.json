@@ -1,0 +1,31 @@
+{
+  "files": [
+    {
+      "path": "results/r2m4_author_figure_handoff/r2M4_csi_both_rules_plot.csv",
+      "rows": 77,
+      "md5": "f1506db993a9ff38a8f7714610f63104",
+      "sha256": "25aad5298a87bd151b6711cb9627ce612c20de978dc57111a8f07c280746f874"
+    },
+    {
+      "path": "results/r2m4_author_figure_handoff/r2M4_csi_fixed_plot.csv",
+      "rows": 42,
+      "md5": "2789f9892af31d081f7902181c1aa110",
+      "sha256": "2520874379471fbffee214676470a2ddcace6c876f8fc671c53010e2481914cd"
+    },
+    {
+      "path": "results/r2m4_author_figure_handoff/r2M4_csi_model_style.csv",
+      "rows": 7,
+      "md5": "4e6b5b40eb105579e7bbdf4609e031b2",
+      "sha256": "0c76a70c151ecb03a08a1b0042895539d7d5c0f80ca637ad1a7aacc8fef320c0"
+    },
+    {
+      "path": "results/r2m4_author_figure_handoff/r2M4_csi_validation_selected_plot.csv",
+      "rows": 35,
+      "md5": "60f272d8d2ab857d5fb4cfa43c43ffe1",
+      "sha256": "e4bb3817e9d88c7753db2fbfedf889488f086bc7b5348a1208dbb64cba64416f"
+    }
+  ],
+  "scores_recomputed": false,
+  "r2m4_closed": false,
+  "final_author_figure_pending": true
+}

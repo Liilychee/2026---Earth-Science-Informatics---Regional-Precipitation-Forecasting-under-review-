@@ -1,0 +1,13 @@
+{
+  "exported_rows": 77,
+  "fixed_rows": 42,
+  "tuned_rows": 35,
+  "all_original_CSI_strings_exact": true,
+  "all_other_responses_unchanged": true,
+  "supplementary_unchanged": true,
+  "new_seven_excerpts_match": true,
+  "assistant_graphics_removed": true,
+  "draft_compile_passed": true,
+  "final_graphic_QA_not_performed": true,
+  "r2m4_closed": false
+}

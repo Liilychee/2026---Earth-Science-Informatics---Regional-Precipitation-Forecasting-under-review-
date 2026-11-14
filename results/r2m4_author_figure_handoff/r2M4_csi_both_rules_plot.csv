@@ -1,0 +1,78 @@
+Panel,Decision_rule,Threshold_name,Threshold_mm_h,Model,N_test,N_events_test,Forecast_events,Hits,CSI,Decision_cutoff_mm_h,Source_csv,Source_row,Source_MD5
+A,fixed c_tau=tau,wet>=0.1,0.1,XGBoost,3939,854,1387,653,0.411209068,0.1,r2m4_fixed_event_scores.csv,2,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,wet>=0.1,0.1,Transformer,3939,854,1062,481,0.3351916376,0.1,r2m4_fixed_event_scores.csv,3,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,wet>=0.1,0.1,BU-LSTM,3939,854,1271,596,0.3897972531,0.1,r2m4_fixed_event_scores.csv,4,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,wet>=0.1,0.1,BiLSTM-Attention,3939,854,1214,609,0.4174091844,0.1,r2m4_fixed_event_scores.csv,5,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,wet>=0.1,0.1,BU-LSTM-Attention,3939,854,1332,630,0.4048843188,0.1,r2m4_fixed_event_scores.csv,6,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,wet>=0.1,0.1,Probabilistic BiLSTM-Attention,3939,854,1275,613,0.404353562,0.1,r2m4_fixed_event_scores.csv,7,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,wet>=0.1,0.1,Persistence,3939,854,854,428,0.334375,0.1,r2m4_fixed_event_scores.csv,8,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q90,0.295783996,XGBoost,3939,463,377,162,0.2389380531,0.295783996,r2m4_fixed_event_scores.csv,11,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q90,0.295783996,Transformer,3939,463,79,33,0.06483300589,0.295783996,r2m4_fixed_event_scores.csv,12,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q90,0.295783996,BU-LSTM,3939,463,192,85,0.149122807,0.295783996,r2m4_fixed_event_scores.csv,13,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q90,0.295783996,BiLSTM-Attention,3939,463,369,162,0.2417910448,0.295783996,r2m4_fixed_event_scores.csv,14,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q90,0.295783996,BU-LSTM-Attention,3939,463,342,141,0.2123493976,0.295783996,r2m4_fixed_event_scores.csv,15,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q90,0.295783996,Probabilistic BiLSTM-Attention,3939,463,338,139,0.2099697885,0.295783996,r2m4_fixed_event_scores.csv,16,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q90,0.295783996,Persistence,3939,463,463,171,0.2264900662,0.295783996,r2m4_fixed_event_scores.csv,17,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,0.5,0.5,XGBoost,3939,288,107,40,0.1126760563,0.5,r2m4_fixed_event_scores.csv,38,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,0.5,0.5,Transformer,3939,288,6,4,0.01379310345,0.5,r2m4_fixed_event_scores.csv,39,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,0.5,0.5,BU-LSTM,3939,288,0,0,0,0.5,r2m4_fixed_event_scores.csv,40,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,0.5,0.5,BiLSTM-Attention,3939,288,7,6,0.02076124567,0.5,r2m4_fixed_event_scores.csv,41,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,0.5,0.5,BU-LSTM-Attention,3939,288,0,0,0,0.5,r2m4_fixed_event_scores.csv,42,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,0.5,0.5,Probabilistic BiLSTM-Attention,3939,288,0,0,0,0.5,r2m4_fixed_event_scores.csv,43,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,0.5,0.5,Persistence,3939,288,288,82,0.1659919028,0.5,r2m4_fixed_event_scores.csv,44,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q95,0.574048041,XGBoost,3939,238,50,19,0.07063197026,0.574048041,r2m4_fixed_event_scores.csv,20,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q95,0.574048041,Transformer,3939,238,2,1,0.004184100418,0.574048041,r2m4_fixed_event_scores.csv,21,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q95,0.574048041,BU-LSTM,3939,238,0,0,0,0.574048041,r2m4_fixed_event_scores.csv,22,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q95,0.574048041,BiLSTM-Attention,3939,238,1,1,0.004201680672,0.574048041,r2m4_fixed_event_scores.csv,23,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q95,0.574048041,BU-LSTM-Attention,3939,238,0,0,0,0.574048041,r2m4_fixed_event_scores.csv,24,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q95,0.574048041,Probabilistic BiLSTM-Attention,3939,238,0,0,0,0.574048041,r2m4_fixed_event_scores.csv,25,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q95,0.574048041,Persistence,3939,238,238,58,0.1387559809,0.574048041,r2m4_fixed_event_scores.csv,26,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q97.5,0.9321694997,XGBoost,3939,106,2,1,0.009345794393,0.9321694997,r2m4_fixed_event_scores.csv,29,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q97.5,0.9321694997,Transformer,3939,106,0,0,0,0.9321694997,r2m4_fixed_event_scores.csv,30,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q97.5,0.9321694997,BU-LSTM,3939,106,0,0,0,0.9321694997,r2m4_fixed_event_scores.csv,31,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q97.5,0.9321694997,BiLSTM-Attention,3939,106,0,0,0,0.9321694997,r2m4_fixed_event_scores.csv,32,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q97.5,0.9321694997,BU-LSTM-Attention,3939,106,0,0,0,0.9321694997,r2m4_fixed_event_scores.csv,33,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q97.5,0.9321694997,Probabilistic BiLSTM-Attention,3939,106,0,0,0,0.9321694997,r2m4_fixed_event_scores.csv,34,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q97.5,0.9321694997,Persistence,3939,106,106,15,0.07614213198,0.9321694997,r2m4_fixed_event_scores.csv,35,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,1.0,1,XGBoost,3939,91,1,1,0.01098901099,1,r2m4_fixed_event_scores.csv,47,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,1.0,1,Transformer,3939,91,0,0,0,1,r2m4_fixed_event_scores.csv,48,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,1.0,1,BU-LSTM,3939,91,0,0,0,1,r2m4_fixed_event_scores.csv,49,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,1.0,1,BiLSTM-Attention,3939,91,0,0,0,1,r2m4_fixed_event_scores.csv,50,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,1.0,1,BU-LSTM-Attention,3939,91,0,0,0,1,r2m4_fixed_event_scores.csv,51,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,1.0,1,Probabilistic BiLSTM-Attention,3939,91,0,0,0,1,r2m4_fixed_event_scores.csv,52,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,1.0,1,Persistence,3939,91,91,10,0.05813953488,1,r2m4_fixed_event_scores.csv,53,9062d963e8604283005c81b82bacc6cf
+B,validation-selected c_tau (300 quantile-probability grid),wet>=0.1,0.1,XGBoost,3939,854,998,527,0.39773584905660375,0.14700544949331104,q05e_event_scores.csv,2,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),wet>=0.1,0.1,Transformer,3939,854,1141,510,0.3434343434343434,0.09413155451923746,q05e_event_scores.csv,3,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),wet>=0.1,0.1,BU-LSTM,3939,854,1093,549,0.3927038626609442,0.11842595344735783,q05e_event_scores.csv,4,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),wet>=0.1,0.1,BiLSTM-Attention,3939,854,1126,585,0.41935483870967744,0.11007227997023411,q05e_event_scores.csv,5,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),wet>=0.1,0.1,BU-LSTM-Attention,3939,854,1037,543,0.40281899109792285,0.13831998822936456,q05e_event_scores.csv,6,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),wet>=0.1,0.1,Probabilistic BiLSTM-Attention,3939,854,1125,567,0.40155807365439095,0.11483519945397994,q05e_event_scores.csv,7,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),wet>=0.1,0.1,Persistence,3939,854,1250,550,0.3539253539253539,0.04307287159070025,q05e_event_scores.csv,8,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),Q90,0.29578399653680015,XGBoost,3939,463,740,281,0.3047722342733189,0.19802412407491649,q05e_event_scores.csv,11,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),Q90,0.29578399653680015,Transformer,3939,463,676,217,0.23535791757049893,0.13275978738461544,q05e_event_scores.csv,12,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),Q90,0.29578399653680015,BU-LSTM,3939,463,732,262,0.2808145766345123,0.17021449348361206,q05e_event_scores.csv,13,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),Q90,0.29578399653680015,BiLSTM-Attention,3939,463,751,284,0.3053763440860215,0.1754533147696321,q05e_event_scores.csv,14,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),Q90,0.29578399653680015,BU-LSTM-Attention,3939,463,702,261,0.288716814159292,0.19540952888334448,q05e_event_scores.csv,15,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),Q90,0.29578399653680015,Probabilistic BiLSTM-Attention,3939,463,844,288,0.2826300294406281,0.15793151636695654,q05e_event_scores.csv,16,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),Q90,0.29578399653680015,Persistence,3939,463,667,224,0.24724061810154527,0.16569213925938645,q05e_event_scores.csv,17,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),Q95,0.5740480454979993,XGBoost,3939,238,355,95,0.19076305220883535,0.30562796824802674,q05e_event_scores.csv,20,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),Q95,0.5740480454979993,Transformer,3939,238,340,68,0.13333333333333333,0.19093721316280937,q05e_event_scores.csv,21,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),Q95,0.5740480454979993,BU-LSTM,3939,238,554,125,0.1874062968515742,0.202684838484281,q05e_event_scores.csv,22,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),Q95,0.5740480454979993,BiLSTM-Attention,3939,238,443,105,0.18229166666666666,0.2617558941649498,q05e_event_scores.csv,23,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),Q95,0.5740480454979993,BU-LSTM-Attention,3939,238,702,147,0.1853720050441362,0.19540952888334448,q05e_event_scores.csv,24,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),Q95,0.5740480454979993,Probabilistic BiLSTM-Attention,3939,238,568,126,0.18529411764705883,0.2209065978244816,q05e_event_scores.csv,25,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),Q95,0.5740480454979993,Persistence,3939,238,629,117,0.156,0.1845892091815354,q05e_event_scores.csv,26,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),Q97.5,0.9321694348199979,XGBoost,3939,106,191,32,0.12075471698113208,0.41781385012013467,q05e_event_scores.csv,29,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),Q97.5,0.9321694348199979,Transformer,3939,106,251,27,0.08181818181818182,0.2141066931251505,q05e_event_scores.csv,30,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),Q97.5,0.9321694348199979,BU-LSTM,3939,106,434,48,0.0975609756097561,0.23142311599491644,q05e_event_scores.csv,31,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),Q97.5,0.9321694348199979,BiLSTM-Attention,3939,106,461,57,0.11176470588235295,0.2515486860259532,q05e_event_scores.csv,32,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),Q97.5,0.9321694348199979,BU-LSTM-Attention,3939,106,618,66,0.10030395136778116,0.2142036161937124,q05e_event_scores.csv,33,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),Q97.5,0.9321694348199979,Probabilistic BiLSTM-Attention,3939,106,631,64,0.0950965824665676,0.2037184152037458,q05e_event_scores.csv,34,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),Q97.5,0.9321694348199979,Persistence,3939,106,362,35,0.08083140877598152,0.3895185261579864,q05e_event_scores.csv,35,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),1.0,1.0,XGBoost,3939,91,191,27,0.10588235294117647,0.41781385012013467,q05e_event_scores.csv,38,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),1.0,1.0,Transformer,3939,91,287,24,0.06779661016949153,0.2047852129565217,q05e_event_scores.csv,39,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),1.0,1.0,BU-LSTM,3939,91,434,42,0.08695652173913043,0.23142311599491644,q05e_event_scores.csv,40,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),1.0,1.0,BiLSTM-Attention,3939,91,443,50,0.10330578512396695,0.2617558941649498,q05e_event_scores.csv,41,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),1.0,1.0,BU-LSTM-Attention,3939,91,618,56,0.08575803981623277,0.2142036161937124,q05e_event_scores.csv,42,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),1.0,1.0,Probabilistic BiLSTM-Attention,3939,91,631,55,0.08245877061469266,0.2037184152037458,q05e_event_scores.csv,43,df8e768a265692e597c39ecf7ccf643d
+B,validation-selected c_tau (300 quantile-probability grid),1.0,1.0,Persistence,3939,91,362,28,0.06588235294117648,0.3895185261579864,q05e_event_scores.csv,44,df8e768a265692e597c39ecf7ccf643d

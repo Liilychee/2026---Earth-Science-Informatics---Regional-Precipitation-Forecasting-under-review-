@@ -1,0 +1,26 @@
+{
+  "deleted": [
+    "Figures/r2M4_event_csi_comparison.pdf",
+    "results/r2m4_integration/candidate1.pdf",
+    "results/r2m4_integration/candidate2.pdf",
+    "results/r2m4_integration/figure_preview.png",
+    "results/r2m4_integration/render/manuscript-51.png",
+    "results/r2m4_integration/plot_csi.py"
+  ],
+  "sources": [
+    {
+      "file": "r2m4_fixed_event_scores.csv",
+      "md5": "9062d963e8604283005c81b82bacc6cf",
+      "rows": 42
+    },
+    {
+      "file": "q05e_event_scores.csv",
+      "md5": "df8e768a265692e597c39ecf7ccf643d",
+      "rows": 35
+    }
+  ],
+  "n_fixed": 42,
+  "n_tuned": 35,
+  "n_total": 77,
+  "author_final_figure_pending": true
+}

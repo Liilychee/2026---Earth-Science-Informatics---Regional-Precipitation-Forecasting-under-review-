@@ -1,0 +1,43 @@
+Panel,Decision_rule,Threshold_name,Threshold_mm_h,Model,N_test,N_events_test,Forecast_events,Hits,CSI,Decision_cutoff_mm_h,Source_csv,Source_row,Source_MD5
+A,fixed c_tau=tau,wet>=0.1,0.1,XGBoost,3939,854,1387,653,0.411209068,0.1,r2m4_fixed_event_scores.csv,2,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,wet>=0.1,0.1,Transformer,3939,854,1062,481,0.3351916376,0.1,r2m4_fixed_event_scores.csv,3,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,wet>=0.1,0.1,BU-LSTM,3939,854,1271,596,0.3897972531,0.1,r2m4_fixed_event_scores.csv,4,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,wet>=0.1,0.1,BiLSTM-Attention,3939,854,1214,609,0.4174091844,0.1,r2m4_fixed_event_scores.csv,5,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,wet>=0.1,0.1,BU-LSTM-Attention,3939,854,1332,630,0.4048843188,0.1,r2m4_fixed_event_scores.csv,6,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,wet>=0.1,0.1,Probabilistic BiLSTM-Attention,3939,854,1275,613,0.404353562,0.1,r2m4_fixed_event_scores.csv,7,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,wet>=0.1,0.1,Persistence,3939,854,854,428,0.334375,0.1,r2m4_fixed_event_scores.csv,8,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q90,0.295783996,XGBoost,3939,463,377,162,0.2389380531,0.295783996,r2m4_fixed_event_scores.csv,11,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q90,0.295783996,Transformer,3939,463,79,33,0.06483300589,0.295783996,r2m4_fixed_event_scores.csv,12,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q90,0.295783996,BU-LSTM,3939,463,192,85,0.149122807,0.295783996,r2m4_fixed_event_scores.csv,13,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q90,0.295783996,BiLSTM-Attention,3939,463,369,162,0.2417910448,0.295783996,r2m4_fixed_event_scores.csv,14,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q90,0.295783996,BU-LSTM-Attention,3939,463,342,141,0.2123493976,0.295783996,r2m4_fixed_event_scores.csv,15,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q90,0.295783996,Probabilistic BiLSTM-Attention,3939,463,338,139,0.2099697885,0.295783996,r2m4_fixed_event_scores.csv,16,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q90,0.295783996,Persistence,3939,463,463,171,0.2264900662,0.295783996,r2m4_fixed_event_scores.csv,17,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,0.5,0.5,XGBoost,3939,288,107,40,0.1126760563,0.5,r2m4_fixed_event_scores.csv,38,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,0.5,0.5,Transformer,3939,288,6,4,0.01379310345,0.5,r2m4_fixed_event_scores.csv,39,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,0.5,0.5,BU-LSTM,3939,288,0,0,0,0.5,r2m4_fixed_event_scores.csv,40,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,0.5,0.5,BiLSTM-Attention,3939,288,7,6,0.02076124567,0.5,r2m4_fixed_event_scores.csv,41,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,0.5,0.5,BU-LSTM-Attention,3939,288,0,0,0,0.5,r2m4_fixed_event_scores.csv,42,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,0.5,0.5,Probabilistic BiLSTM-Attention,3939,288,0,0,0,0.5,r2m4_fixed_event_scores.csv,43,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,0.5,0.5,Persistence,3939,288,288,82,0.1659919028,0.5,r2m4_fixed_event_scores.csv,44,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q95,0.574048041,XGBoost,3939,238,50,19,0.07063197026,0.574048041,r2m4_fixed_event_scores.csv,20,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q95,0.574048041,Transformer,3939,238,2,1,0.004184100418,0.574048041,r2m4_fixed_event_scores.csv,21,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q95,0.574048041,BU-LSTM,3939,238,0,0,0,0.574048041,r2m4_fixed_event_scores.csv,22,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q95,0.574048041,BiLSTM-Attention,3939,238,1,1,0.004201680672,0.574048041,r2m4_fixed_event_scores.csv,23,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q95,0.574048041,BU-LSTM-Attention,3939,238,0,0,0,0.574048041,r2m4_fixed_event_scores.csv,24,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q95,0.574048041,Probabilistic BiLSTM-Attention,3939,238,0,0,0,0.574048041,r2m4_fixed_event_scores.csv,25,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q95,0.574048041,Persistence,3939,238,238,58,0.1387559809,0.574048041,r2m4_fixed_event_scores.csv,26,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q97.5,0.9321694997,XGBoost,3939,106,2,1,0.009345794393,0.9321694997,r2m4_fixed_event_scores.csv,29,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q97.5,0.9321694997,Transformer,3939,106,0,0,0,0.9321694997,r2m4_fixed_event_scores.csv,30,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q97.5,0.9321694997,BU-LSTM,3939,106,0,0,0,0.9321694997,r2m4_fixed_event_scores.csv,31,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q97.5,0.9321694997,BiLSTM-Attention,3939,106,0,0,0,0.9321694997,r2m4_fixed_event_scores.csv,32,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q97.5,0.9321694997,BU-LSTM-Attention,3939,106,0,0,0,0.9321694997,r2m4_fixed_event_scores.csv,33,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q97.5,0.9321694997,Probabilistic BiLSTM-Attention,3939,106,0,0,0,0.9321694997,r2m4_fixed_event_scores.csv,34,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,Q97.5,0.9321694997,Persistence,3939,106,106,15,0.07614213198,0.9321694997,r2m4_fixed_event_scores.csv,35,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,1.0,1,XGBoost,3939,91,1,1,0.01098901099,1,r2m4_fixed_event_scores.csv,47,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,1.0,1,Transformer,3939,91,0,0,0,1,r2m4_fixed_event_scores.csv,48,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,1.0,1,BU-LSTM,3939,91,0,0,0,1,r2m4_fixed_event_scores.csv,49,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,1.0,1,BiLSTM-Attention,3939,91,0,0,0,1,r2m4_fixed_event_scores.csv,50,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,1.0,1,BU-LSTM-Attention,3939,91,0,0,0,1,r2m4_fixed_event_scores.csv,51,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,1.0,1,Probabilistic BiLSTM-Attention,3939,91,0,0,0,1,r2m4_fixed_event_scores.csv,52,9062d963e8604283005c81b82bacc6cf
+A,fixed c_tau=tau,1.0,1,Persistence,3939,91,91,10,0.05813953488,1,r2m4_fixed_event_scores.csv,53,9062d963e8604283005c81b82bacc6cf
