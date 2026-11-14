@@ -1,0 +1,1218 @@
+destination_label,row_key,file,line,field,raw,display
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=XGBoost,r2m4_fixed_event_scores.csv,2,thr_mm_h,0.1,0.1000
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=XGBoost,r2m4_fixed_event_scores.csv,2,N_events_test,854,854
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=XGBoost,q05e_event_scores.csv,2,AUC,0.8372357748264436,0.837
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=XGBoost,r2m4_fixed_event_scores.csv,2,Forecast_events,1387,1387
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=XGBoost,r2m4_fixed_event_scores.csv,2,Hits,653,653
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=XGBoost,r2m4_fixed_event_scores.csv,2,POD,0.7646370023,0.765
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=XGBoost,r2m4_fixed_event_scores.csv,2,FAR,0.5291997116,0.529
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=XGBoost,r2m4_fixed_event_scores.csv,2,CSI,0.411209068,0.411
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=XGBoost,r2m4_fixed_event_paired.csv,2,dCSI,0.07683406801,+0.0768
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=XGBoost,r2m4_fixed_event_paired.csv,2,CI_low,0.05639363239,0.0564
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=XGBoost,r2m4_fixed_event_paired.csv,2,CI_high,0.09813694947,0.0981
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,2,A_minus_B,0.0705077450381274,+0.0705
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,2,CI_low,0.05590901901560594,0.0559
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,2,CI_high,0.08561034489302365,0.0856
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Transformer,q05e_event_scores.csv,3,AUC,0.7819918848853142,0.782
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Transformer,r2m4_fixed_event_scores.csv,3,Forecast_events,1062,1062
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Transformer,r2m4_fixed_event_scores.csv,3,Hits,481,481
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Transformer,r2m4_fixed_event_scores.csv,3,POD,0.5632318501,0.563
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Transformer,r2m4_fixed_event_scores.csv,3,FAR,0.5470809793,0.547
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Transformer,r2m4_fixed_event_scores.csv,3,CSI,0.3351916376,0.335
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Transformer,r2m4_fixed_event_paired.csv,3,dCSI,0.0008166376307,+0.0008
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Transformer,r2m4_fixed_event_paired.csv,3,CI_low,-0.02522246931,-0.0252
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Transformer,r2m4_fixed_event_paired.csv,3,CI_high,0.02546597394,0.0255
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,8,A_minus_B,0.015263855096998014,+0.0153
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,8,CI_low,-0.005659835674605767,-0.0057
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,8,CI_high,0.035223668616567394,0.0352
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BU-LSTM,q05e_event_scores.csv,4,AUC,0.8202915823714506,0.820
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BU-LSTM,r2m4_fixed_event_scores.csv,4,Forecast_events,1271,1271
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BU-LSTM,r2m4_fixed_event_scores.csv,4,Hits,596,596
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BU-LSTM,r2m4_fixed_event_scores.csv,4,POD,0.6978922717,0.698
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BU-LSTM,r2m4_fixed_event_scores.csv,4,FAR,0.5310778914,0.531
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BU-LSTM,r2m4_fixed_event_scores.csv,4,CSI,0.3897972531,0.390
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BU-LSTM,r2m4_fixed_event_paired.csv,4,dCSI,0.05542225311,+0.0554
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BU-LSTM,r2m4_fixed_event_paired.csv,4,CI_low,0.035042691,0.0350
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BU-LSTM,r2m4_fixed_event_paired.csv,4,CI_high,0.07618985394,0.0762
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,14,A_minus_B,0.05356355258313439,+0.0536
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,14,CI_low,0.03957347745153314,0.0396
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,14,CI_high,0.06794028423540804,0.0679
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BiLSTM-Attention,q05e_event_scores.csv,5,AUC,0.8242682922200418,0.824
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,5,Forecast_events,1214,1214
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,5,Hits,609,609
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,5,POD,0.7131147541,0.713
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,5,FAR,0.4983525535,0.498
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,5,CSI,0.4174091844,0.417
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BiLSTM-Attention,r2m4_fixed_event_paired.csv,5,dCSI,0.08303418437,+0.0830
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BiLSTM-Attention,r2m4_fixed_event_paired.csv,5,CI_low,0.06324038591,0.0632
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BiLSTM-Attention,r2m4_fixed_event_paired.csv,5,CI_high,0.1031602569,0.1032
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,20,A_minus_B,0.05754026243172561,+0.0575
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,20,CI_low,0.040937687038701195,0.0409
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,20,CI_high,0.07445084937665852,0.0745
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,6,AUC,0.8252005055815136,0.825
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,6,Forecast_events,1332,1332
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,6,Hits,630,630
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,6,POD,0.737704918,0.738
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,6,FAR,0.527027027,0.527
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,6,CSI,0.4048843188,0.405
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BU-LSTM-Attention,r2m4_fixed_event_paired.csv,6,dCSI,0.07050931877,+0.0705
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BU-LSTM-Attention,r2m4_fixed_event_paired.csv,6,CI_low,0.05046046351,0.0505
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=BU-LSTM-Attention,r2m4_fixed_event_paired.csv,6,CI_high,0.09121302115,0.0912
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,26,A_minus_B,0.058472475793197365,+0.0585
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,26,CI_low,0.04417476047342745,0.0442
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,26,CI_high,0.073004034839251,0.0730
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,7,AUC,0.8264238458355949,0.826
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,7,Forecast_events,1275,1275
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,7,Hits,613,613
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,7,POD,0.7177985948,0.718
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,7,FAR,0.5192156863,0.519
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,7,CSI,0.404353562,0.404
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_paired.csv,7,dCSI,0.06997856201,+0.0700
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_paired.csv,7,CI_low,0.05056201806,0.0506
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_paired.csv,7,CI_high,0.09027095621,0.0903
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,32,A_minus_B,0.059695816047278694,+0.0597
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,32,CI_low,0.04649802699820999,0.0465
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,32,CI_high,0.07391484583261765,0.0739
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Persistence,q05e_event_scores.csv,8,AUC,0.7667280297883162,0.767
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Persistence,r2m4_fixed_event_scores.csv,8,Forecast_events,854,854
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Persistence,r2m4_fixed_event_scores.csv,8,Hits,428,428
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Persistence,r2m4_fixed_event_scores.csv,8,POD,0.5011709602,0.501
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Persistence,r2m4_fixed_event_scores.csv,8,FAR,0.4988290398,0.499
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Persistence,r2m4_fixed_event_scores.csv,8,CSI,0.334375,0.334
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,9,Forecast_events,944,944
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,9,Hits,460,460
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,9,POD,0.5386416862,0.539
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,9,FAR,0.5127118644,0.513
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,9,CSI,0.3437967115,0.344
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Climatology (month x hour),r2m4_fixed_event_scores.csv,10,Forecast_events,2268,2268
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Climatology (month x hour),r2m4_fixed_event_scores.csv,10,Hits,555,555
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Climatology (month x hour),r2m4_fixed_event_scores.csv,10,POD,0.649882904,0.650
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Climatology (month x hour),r2m4_fixed_event_scores.csv,10,FAR,0.7552910053,0.755
+stab:r2m4_fixed_events,Threshold=wet>=0.1;Model=Climatology (month x hour),r2m4_fixed_event_scores.csv,10,CSI,0.2162056876,0.216
+stab:r2m4_fixed_events,Threshold=Q90;Model=XGBoost,r2m4_fixed_event_scores.csv,11,thr_mm_h,0.295783996,0.2958
+stab:r2m4_fixed_events,Threshold=Q90;Model=XGBoost,r2m4_fixed_event_scores.csv,11,N_events_test,463,463
+stab:r2m4_fixed_events,Threshold=Q90;Model=XGBoost,q05e_event_scores.csv,11,AUC,0.8482982351055184,0.848
+stab:r2m4_fixed_events,Threshold=Q90;Model=XGBoost,r2m4_fixed_event_scores.csv,11,Forecast_events,377,377
+stab:r2m4_fixed_events,Threshold=Q90;Model=XGBoost,r2m4_fixed_event_scores.csv,11,Hits,162,162
+stab:r2m4_fixed_events,Threshold=Q90;Model=XGBoost,r2m4_fixed_event_scores.csv,11,POD,0.3498920086,0.350
+stab:r2m4_fixed_events,Threshold=Q90;Model=XGBoost,r2m4_fixed_event_scores.csv,11,FAR,0.5702917772,0.570
+stab:r2m4_fixed_events,Threshold=Q90;Model=XGBoost,r2m4_fixed_event_scores.csv,11,CSI,0.2389380531,0.239
+stab:r2m4_fixed_events,Threshold=Q90;Model=XGBoost,r2m4_fixed_event_paired.csv,8,dCSI,0.01244798687,+0.0124
+stab:r2m4_fixed_events,Threshold=Q90;Model=XGBoost,r2m4_fixed_event_paired.csv,8,CI_low,-0.02202101138,-0.0220
+stab:r2m4_fixed_events,Threshold=Q90;Model=XGBoost,r2m4_fixed_event_paired.csv,8,CI_high,0.04674593934,0.0467
+stab:r2m4_fixed_events,Threshold=Q90;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,40,A_minus_B,0.09100291539392613,+0.0910
+stab:r2m4_fixed_events,Threshold=Q90;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,40,CI_low,0.07192277217985842,0.0719
+stab:r2m4_fixed_events,Threshold=Q90;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,40,CI_high,0.11258660442815242,0.1126
+stab:r2m4_fixed_events,Threshold=Q90;Model=Transformer,q05e_event_scores.csv,12,AUC,0.7920992327518287,0.792
+stab:r2m4_fixed_events,Threshold=Q90;Model=Transformer,r2m4_fixed_event_scores.csv,12,Forecast_events,79,79
+stab:r2m4_fixed_events,Threshold=Q90;Model=Transformer,r2m4_fixed_event_scores.csv,12,Hits,33,33
+stab:r2m4_fixed_events,Threshold=Q90;Model=Transformer,r2m4_fixed_event_scores.csv,12,POD,0.07127429806,0.071
+stab:r2m4_fixed_events,Threshold=Q90;Model=Transformer,r2m4_fixed_event_scores.csv,12,FAR,0.582278481,0.582
+stab:r2m4_fixed_events,Threshold=Q90;Model=Transformer,r2m4_fixed_event_scores.csv,12,CSI,0.06483300589,0.065
+stab:r2m4_fixed_events,Threshold=Q90;Model=Transformer,r2m4_fixed_event_paired.csv,9,dCSI,-0.1616570603,-0.1617
+stab:r2m4_fixed_events,Threshold=Q90;Model=Transformer,r2m4_fixed_event_paired.csv,9,CI_low,-0.2010816419,-0.2011
+stab:r2m4_fixed_events,Threshold=Q90;Model=Transformer,r2m4_fixed_event_paired.csv,9,CI_high,-0.1205093699,-0.1205
+stab:r2m4_fixed_events,Threshold=Q90;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,46,A_minus_B,0.034803913040236445,+0.0348
+stab:r2m4_fixed_events,Threshold=Q90;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,46,CI_low,0.00819902032977377,0.0082
+stab:r2m4_fixed_events,Threshold=Q90;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,46,CI_high,0.06280044719617013,0.0628
+stab:r2m4_fixed_events,Threshold=Q90;Model=BU-LSTM,q05e_event_scores.csv,13,AUC,0.8342208342550087,0.834
+stab:r2m4_fixed_events,Threshold=Q90;Model=BU-LSTM,r2m4_fixed_event_scores.csv,13,Forecast_events,192,192
+stab:r2m4_fixed_events,Threshold=Q90;Model=BU-LSTM,r2m4_fixed_event_scores.csv,13,Hits,85,85
+stab:r2m4_fixed_events,Threshold=Q90;Model=BU-LSTM,r2m4_fixed_event_scores.csv,13,POD,0.1835853132,0.184
+stab:r2m4_fixed_events,Threshold=Q90;Model=BU-LSTM,r2m4_fixed_event_scores.csv,13,FAR,0.5572916667,0.557
+stab:r2m4_fixed_events,Threshold=Q90;Model=BU-LSTM,r2m4_fixed_event_scores.csv,13,CSI,0.149122807,0.149
+stab:r2m4_fixed_events,Threshold=Q90;Model=BU-LSTM,r2m4_fixed_event_paired.csv,10,dCSI,-0.07736725921,-0.0774
+stab:r2m4_fixed_events,Threshold=Q90;Model=BU-LSTM,r2m4_fixed_event_paired.csv,10,CI_low,-0.1078107758,-0.1078
+stab:r2m4_fixed_events,Threshold=Q90;Model=BU-LSTM,r2m4_fixed_event_paired.csv,10,CI_high,-0.04569132077,-0.0457
+stab:r2m4_fixed_events,Threshold=Q90;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,52,A_minus_B,0.07692551454341645,+0.0769
+stab:r2m4_fixed_events,Threshold=Q90;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,52,CI_low,0.058701819152865445,0.0587
+stab:r2m4_fixed_events,Threshold=Q90;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,52,CI_high,0.09706183548862035,0.0971
+stab:r2m4_fixed_events,Threshold=Q90;Model=BiLSTM-Attention,q05e_event_scores.csv,14,AUC,0.8383596746092303,0.838
+stab:r2m4_fixed_events,Threshold=Q90;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,14,Forecast_events,369,369
+stab:r2m4_fixed_events,Threshold=Q90;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,14,Hits,162,162
+stab:r2m4_fixed_events,Threshold=Q90;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,14,POD,0.3498920086,0.350
+stab:r2m4_fixed_events,Threshold=Q90;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,14,FAR,0.5609756098,0.561
+stab:r2m4_fixed_events,Threshold=Q90;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,14,CSI,0.2417910448,0.242
+stab:r2m4_fixed_events,Threshold=Q90;Model=BiLSTM-Attention,r2m4_fixed_event_paired.csv,11,dCSI,0.01530097855,+0.0153
+stab:r2m4_fixed_events,Threshold=Q90;Model=BiLSTM-Attention,r2m4_fixed_event_paired.csv,11,CI_low,-0.01332520975,-0.0133
+stab:r2m4_fixed_events,Threshold=Q90;Model=BiLSTM-Attention,r2m4_fixed_event_paired.csv,11,CI_high,0.04273237952,0.0427
+stab:r2m4_fixed_events,Threshold=Q90;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,58,A_minus_B,0.08106435489763808,+0.0811
+stab:r2m4_fixed_events,Threshold=Q90;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,58,CI_low,0.059804498577062104,0.0598
+stab:r2m4_fixed_events,Threshold=Q90;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,58,CI_high,0.10342636237331992,0.1034
+stab:r2m4_fixed_events,Threshold=Q90;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,15,AUC,0.8390307371497737,0.839
+stab:r2m4_fixed_events,Threshold=Q90;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,15,Forecast_events,342,342
+stab:r2m4_fixed_events,Threshold=Q90;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,15,Hits,141,141
+stab:r2m4_fixed_events,Threshold=Q90;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,15,POD,0.3045356371,0.305
+stab:r2m4_fixed_events,Threshold=Q90;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,15,FAR,0.5877192982,0.588
+stab:r2m4_fixed_events,Threshold=Q90;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,15,CSI,0.2123493976,0.212
+stab:r2m4_fixed_events,Threshold=Q90;Model=BU-LSTM-Attention,r2m4_fixed_event_paired.csv,12,dCSI,-0.01414066863,-0.0141
+stab:r2m4_fixed_events,Threshold=Q90;Model=BU-LSTM-Attention,r2m4_fixed_event_paired.csv,12,CI_low,-0.0385998476,-0.0386
+stab:r2m4_fixed_events,Threshold=Q90;Model=BU-LSTM-Attention,r2m4_fixed_event_paired.csv,12,CI_high,0.008782602584,0.0088
+stab:r2m4_fixed_events,Threshold=Q90;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,64,A_minus_B,0.08173541743818147,+0.0817
+stab:r2m4_fixed_events,Threshold=Q90;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,64,CI_low,0.06296389560814555,0.0630
+stab:r2m4_fixed_events,Threshold=Q90;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,64,CI_high,0.10258746055714103,0.1026
+stab:r2m4_fixed_events,Threshold=Q90;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,16,AUC,0.8332303956535031,0.833
+stab:r2m4_fixed_events,Threshold=Q90;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,16,Forecast_events,338,338
+stab:r2m4_fixed_events,Threshold=Q90;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,16,Hits,139,139
+stab:r2m4_fixed_events,Threshold=Q90;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,16,POD,0.3002159827,0.300
+stab:r2m4_fixed_events,Threshold=Q90;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,16,FAR,0.5887573964,0.589
+stab:r2m4_fixed_events,Threshold=Q90;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,16,CSI,0.2099697885,0.210
+stab:r2m4_fixed_events,Threshold=Q90;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_paired.csv,13,dCSI,-0.01652027771,-0.0165
+stab:r2m4_fixed_events,Threshold=Q90;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_paired.csv,13,CI_low,-0.04572781384,-0.0457
+stab:r2m4_fixed_events,Threshold=Q90;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_paired.csv,13,CI_high,0.01347831725,0.0135
+stab:r2m4_fixed_events,Threshold=Q90;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,70,A_minus_B,0.07593507594191085,+0.0759
+stab:r2m4_fixed_events,Threshold=Q90;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,70,CI_low,0.05733029557001646,0.0573
+stab:r2m4_fixed_events,Threshold=Q90;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,70,CI_high,0.09626057339060534,0.0963
+stab:r2m4_fixed_events,Threshold=Q90;Model=Persistence,q05e_event_scores.csv,17,AUC,0.7572953197115923,0.757
+stab:r2m4_fixed_events,Threshold=Q90;Model=Persistence,r2m4_fixed_event_scores.csv,17,Forecast_events,463,463
+stab:r2m4_fixed_events,Threshold=Q90;Model=Persistence,r2m4_fixed_event_scores.csv,17,Hits,171,171
+stab:r2m4_fixed_events,Threshold=Q90;Model=Persistence,r2m4_fixed_event_scores.csv,17,POD,0.3693304536,0.369
+stab:r2m4_fixed_events,Threshold=Q90;Model=Persistence,r2m4_fixed_event_scores.csv,17,FAR,0.6306695464,0.631
+stab:r2m4_fixed_events,Threshold=Q90;Model=Persistence,r2m4_fixed_event_scores.csv,17,CSI,0.2264900662,0.226
+stab:r2m4_fixed_events,Threshold=Q90;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,18,Forecast_events,155,155
+stab:r2m4_fixed_events,Threshold=Q90;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,18,Hits,66,66
+stab:r2m4_fixed_events,Threshold=Q90;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,18,POD,0.1425485961,0.143
+stab:r2m4_fixed_events,Threshold=Q90;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,18,FAR,0.5741935484,0.574
+stab:r2m4_fixed_events,Threshold=Q90;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,18,CSI,0.1195652174,0.120
+stab:r2m4_fixed_events,Threshold=Q90;Model=Climatology (month x hour),r2m4_fixed_event_scores.csv,19,Forecast_events,0,0
+stab:r2m4_fixed_events,Threshold=Q90;Model=Climatology (month x hour),r2m4_fixed_event_scores.csv,19,Hits,0,0
+stab:r2m4_fixed_events,Threshold=Q90;Model=Climatology (month x hour),r2m4_fixed_event_scores.csv,19,POD,0,0.000
+stab:r2m4_fixed_events,Threshold=Q90;Model=Climatology (month x hour),r2m4_fixed_event_scores.csv,19,CSI,0,0.000
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=XGBoost,r2m4_fixed_event_scores.csv,38,thr_mm_h,0.5,0.5000
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=XGBoost,r2m4_fixed_event_scores.csv,38,N_events_test,288,288
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=XGBoost,r2m4_fixed_event_scores.csv,38,Forecast_events,107,107
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=XGBoost,r2m4_fixed_event_scores.csv,38,Hits,40,40
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=XGBoost,r2m4_fixed_event_scores.csv,38,POD,0.1388888889,0.139
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=XGBoost,r2m4_fixed_event_scores.csv,38,FAR,0.6261682243,0.626
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=XGBoost,r2m4_fixed_event_scores.csv,38,CSI,0.1126760563,0.113
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=XGBoost,r2m4_fixed_event_paired.csv,26,dCSI,-0.0533158465,-0.0533
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=XGBoost,r2m4_fixed_event_paired.csv,26,CI_low,-0.09489475174,-0.0949
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=XGBoost,r2m4_fixed_event_paired.csv,26,CI_high,-0.01180737151,-0.0118
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=Transformer,r2m4_fixed_event_scores.csv,39,Forecast_events,6,6
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=Transformer,r2m4_fixed_event_scores.csv,39,Hits,4,4
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=Transformer,r2m4_fixed_event_scores.csv,39,POD,0.01388888889,0.014
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=Transformer,r2m4_fixed_event_scores.csv,39,FAR,0.3333333333,0.333
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=Transformer,r2m4_fixed_event_scores.csv,39,CSI,0.01379310345,0.014
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=Transformer,r2m4_fixed_event_paired.csv,27,dCSI,-0.1521987994,-0.1522
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=Transformer,r2m4_fixed_event_paired.csv,27,CI_low,-0.1912126707,-0.1912
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=Transformer,r2m4_fixed_event_paired.csv,27,CI_high,-0.1129592144,-0.1130
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=BU-LSTM,r2m4_fixed_event_scores.csv,40,Forecast_events,0,0
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=BU-LSTM,r2m4_fixed_event_scores.csv,40,Hits,0,0
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=BU-LSTM,r2m4_fixed_event_scores.csv,40,POD,0,0.000
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=BU-LSTM,r2m4_fixed_event_scores.csv,40,CSI,0,0.000
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=BU-LSTM,r2m4_fixed_event_paired.csv,28,dCSI,-0.1659919028,-0.1660
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=BU-LSTM,r2m4_fixed_event_paired.csv,28,CI_low,-0.2006886387,-0.2007
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=BU-LSTM,r2m4_fixed_event_paired.csv,28,CI_high,-0.1303381674,-0.1303
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,41,Forecast_events,7,7
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,41,Hits,6,6
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,41,POD,0.02083333333,0.021
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,41,FAR,0.1428571429,0.143
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,41,CSI,0.02076124567,0.021
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=BiLSTM-Attention,r2m4_fixed_event_paired.csv,29,dCSI,-0.1452306572,-0.1452
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=BiLSTM-Attention,r2m4_fixed_event_paired.csv,29,CI_low,-0.1793266483,-0.1793
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=BiLSTM-Attention,r2m4_fixed_event_paired.csv,29,CI_high,-0.1094965624,-0.1095
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,42,Forecast_events,0,0
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,42,Hits,0,0
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,42,POD,0,0.000
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,42,CSI,0,0.000
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=BU-LSTM-Attention,r2m4_fixed_event_paired.csv,30,dCSI,-0.1659919028,-0.1660
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=BU-LSTM-Attention,r2m4_fixed_event_paired.csv,30,CI_low,-0.2006886387,-0.2007
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=BU-LSTM-Attention,r2m4_fixed_event_paired.csv,30,CI_high,-0.1303381674,-0.1303
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,43,Forecast_events,0,0
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,43,Hits,0,0
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,43,POD,0,0.000
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,43,CSI,0,0.000
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_paired.csv,31,dCSI,-0.1659919028,-0.1660
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_paired.csv,31,CI_low,-0.2006886387,-0.2007
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_paired.csv,31,CI_high,-0.1303381674,-0.1303
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=Persistence,r2m4_fixed_event_scores.csv,44,Forecast_events,288,288
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=Persistence,r2m4_fixed_event_scores.csv,44,Hits,82,82
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=Persistence,r2m4_fixed_event_scores.csv,44,POD,0.2847222222,0.285
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=Persistence,r2m4_fixed_event_scores.csv,44,FAR,0.7152777778,0.715
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=Persistence,r2m4_fixed_event_scores.csv,44,CSI,0.1659919028,0.166
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,45,Forecast_events,28,28
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,45,Hits,6,6
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,45,POD,0.02083333333,0.021
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,45,FAR,0.7857142857,0.786
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,45,CSI,0.01935483871,0.019
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=Climatology (month x hour),r2m4_fixed_event_scores.csv,46,Forecast_events,0,0
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=Climatology (month x hour),r2m4_fixed_event_scores.csv,46,Hits,0,0
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=Climatology (month x hour),r2m4_fixed_event_scores.csv,46,POD,0,0.000
+stab:r2m4_fixed_events,Threshold=0.5 mm;Model=Climatology (month x hour),r2m4_fixed_event_scores.csv,46,CSI,0,0.000
+stab:r2m4_fixed_events,Threshold=Q95;Model=XGBoost,r2m4_fixed_event_scores.csv,20,thr_mm_h,0.574048041,0.5740
+stab:r2m4_fixed_events,Threshold=Q95;Model=XGBoost,r2m4_fixed_event_scores.csv,20,N_events_test,238,238
+stab:r2m4_fixed_events,Threshold=Q95;Model=XGBoost,q05e_event_scores.csv,20,AUC,0.8477540705555392,0.848
+stab:r2m4_fixed_events,Threshold=Q95;Model=XGBoost,r2m4_fixed_event_scores.csv,20,Forecast_events,50,50
+stab:r2m4_fixed_events,Threshold=Q95;Model=XGBoost,r2m4_fixed_event_scores.csv,20,Hits,19,19
+stab:r2m4_fixed_events,Threshold=Q95;Model=XGBoost,r2m4_fixed_event_scores.csv,20,POD,0.07983193277,0.080
+stab:r2m4_fixed_events,Threshold=Q95;Model=XGBoost,r2m4_fixed_event_scores.csv,20,FAR,0.62,0.620
+stab:r2m4_fixed_events,Threshold=Q95;Model=XGBoost,r2m4_fixed_event_scores.csv,20,CSI,0.07063197026,0.071
+stab:r2m4_fixed_events,Threshold=Q95;Model=XGBoost,r2m4_fixed_event_paired.csv,14,dCSI,-0.0681240106,-0.0681
+stab:r2m4_fixed_events,Threshold=Q95;Model=XGBoost,r2m4_fixed_event_paired.csv,14,CI_low,-0.1131164675,-0.1131
+stab:r2m4_fixed_events,Threshold=Q95;Model=XGBoost,r2m4_fixed_event_paired.csv,14,CI_high,-0.0219449515,-0.0219
+stab:r2m4_fixed_events,Threshold=Q95;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,78,A_minus_B,0.10073248429336612,+0.1007
+stab:r2m4_fixed_events,Threshold=Q95;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,78,CI_low,0.07355736750165491,0.0736
+stab:r2m4_fixed_events,Threshold=Q95;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,78,CI_high,0.12978788285776632,0.1298
+stab:r2m4_fixed_events,Threshold=Q95;Model=Transformer,q05e_event_scores.csv,21,AUC,0.7982455343661377,0.798
+stab:r2m4_fixed_events,Threshold=Q95;Model=Transformer,r2m4_fixed_event_scores.csv,21,Forecast_events,2,2
+stab:r2m4_fixed_events,Threshold=Q95;Model=Transformer,r2m4_fixed_event_scores.csv,21,Hits,1,1
+stab:r2m4_fixed_events,Threshold=Q95;Model=Transformer,r2m4_fixed_event_scores.csv,21,POD,0.004201680672,0.004
+stab:r2m4_fixed_events,Threshold=Q95;Model=Transformer,r2m4_fixed_event_scores.csv,21,FAR,0.5,0.500
+stab:r2m4_fixed_events,Threshold=Q95;Model=Transformer,r2m4_fixed_event_scores.csv,21,CSI,0.004184100418,0.004
+stab:r2m4_fixed_events,Threshold=Q95;Model=Transformer,r2m4_fixed_event_paired.csv,15,dCSI,-0.1345718804,-0.1346
+stab:r2m4_fixed_events,Threshold=Q95;Model=Transformer,r2m4_fixed_event_paired.csv,15,CI_low,-0.1744754292,-0.1745
+stab:r2m4_fixed_events,Threshold=Q95;Model=Transformer,r2m4_fixed_event_paired.csv,15,CI_high,-0.0957903624,-0.0958
+stab:r2m4_fixed_events,Threshold=Q95;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,84,A_minus_B,0.05122394810396458,+0.0512
+stab:r2m4_fixed_events,Threshold=Q95;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,84,CI_low,0.017941376642143143,0.0179
+stab:r2m4_fixed_events,Threshold=Q95;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,84,CI_high,0.08865719440216506,0.0887
+stab:r2m4_fixed_events,Threshold=Q95;Model=BU-LSTM,q05e_event_scores.csv,22,AUC,0.8329159277869483,0.833
+stab:r2m4_fixed_events,Threshold=Q95;Model=BU-LSTM,r2m4_fixed_event_scores.csv,22,Forecast_events,0,0
+stab:r2m4_fixed_events,Threshold=Q95;Model=BU-LSTM,r2m4_fixed_event_scores.csv,22,Hits,0,0
+stab:r2m4_fixed_events,Threshold=Q95;Model=BU-LSTM,r2m4_fixed_event_scores.csv,22,POD,0,0.000
+stab:r2m4_fixed_events,Threshold=Q95;Model=BU-LSTM,r2m4_fixed_event_scores.csv,22,CSI,0,0.000
+stab:r2m4_fixed_events,Threshold=Q95;Model=BU-LSTM,r2m4_fixed_event_paired.csv,16,dCSI,-0.1387559809,-0.1388
+stab:r2m4_fixed_events,Threshold=Q95;Model=BU-LSTM,r2m4_fixed_event_paired.csv,16,CI_low,-0.1768889297,-0.1769
+stab:r2m4_fixed_events,Threshold=Q95;Model=BU-LSTM,r2m4_fixed_event_paired.csv,16,CI_high,-0.1012041106,-0.1012
+stab:r2m4_fixed_events,Threshold=Q95;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,90,A_minus_B,0.08589434152477526,+0.0859
+stab:r2m4_fixed_events,Threshold=Q95;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,90,CI_low,0.06162433964312272,0.0616
+stab:r2m4_fixed_events,Threshold=Q95;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,90,CI_high,0.11125657994534414,0.1113
+stab:r2m4_fixed_events,Threshold=Q95;Model=BiLSTM-Attention,q05e_event_scores.csv,23,AUC,0.8350162004818139,0.835
+stab:r2m4_fixed_events,Threshold=Q95;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,23,Forecast_events,1,1
+stab:r2m4_fixed_events,Threshold=Q95;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,23,Hits,1,1
+stab:r2m4_fixed_events,Threshold=Q95;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,23,POD,0.004201680672,0.004
+stab:r2m4_fixed_events,Threshold=Q95;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,23,FAR,0,0.000
+stab:r2m4_fixed_events,Threshold=Q95;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,23,CSI,0.004201680672,0.004
+stab:r2m4_fixed_events,Threshold=Q95;Model=BiLSTM-Attention,r2m4_fixed_event_paired.csv,17,dCSI,-0.1345543002,-0.1346
+stab:r2m4_fixed_events,Threshold=Q95;Model=BiLSTM-Attention,r2m4_fixed_event_paired.csv,17,CI_low,-0.1711429009,-0.1711
+stab:r2m4_fixed_events,Threshold=Q95;Model=BiLSTM-Attention,r2m4_fixed_event_paired.csv,17,CI_high,-0.09803530004,-0.0980
+stab:r2m4_fixed_events,Threshold=Q95;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,96,A_minus_B,0.08799461421964083,+0.0880
+stab:r2m4_fixed_events,Threshold=Q95;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,96,CI_low,0.0591710165248921,0.0592
+stab:r2m4_fixed_events,Threshold=Q95;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,96,CI_high,0.11750254745336412,0.1175
+stab:r2m4_fixed_events,Threshold=Q95;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,24,AUC,0.8380303756195805,0.838
+stab:r2m4_fixed_events,Threshold=Q95;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,24,Forecast_events,0,0
+stab:r2m4_fixed_events,Threshold=Q95;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,24,Hits,0,0
+stab:r2m4_fixed_events,Threshold=Q95;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,24,POD,0,0.000
+stab:r2m4_fixed_events,Threshold=Q95;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,24,CSI,0,0.000
+stab:r2m4_fixed_events,Threshold=Q95;Model=BU-LSTM-Attention,r2m4_fixed_event_paired.csv,18,dCSI,-0.1387559809,-0.1388
+stab:r2m4_fixed_events,Threshold=Q95;Model=BU-LSTM-Attention,r2m4_fixed_event_paired.csv,18,CI_low,-0.1768889297,-0.1769
+stab:r2m4_fixed_events,Threshold=Q95;Model=BU-LSTM-Attention,r2m4_fixed_event_paired.csv,18,CI_high,-0.1012041106,-0.1012
+stab:r2m4_fixed_events,Threshold=Q95;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,102,A_minus_B,0.09100878935740742,+0.0910
+stab:r2m4_fixed_events,Threshold=Q95;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,102,CI_low,0.0672383039081387,0.0672
+stab:r2m4_fixed_events,Threshold=Q95;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,102,CI_high,0.11626139124533136,0.1163
+stab:r2m4_fixed_events,Threshold=Q95;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,25,AUC,0.8320587894709356,0.832
+stab:r2m4_fixed_events,Threshold=Q95;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,25,Forecast_events,0,0
+stab:r2m4_fixed_events,Threshold=Q95;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,25,Hits,0,0
+stab:r2m4_fixed_events,Threshold=Q95;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,25,POD,0,0.000
+stab:r2m4_fixed_events,Threshold=Q95;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,25,CSI,0,0.000
+stab:r2m4_fixed_events,Threshold=Q95;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_paired.csv,19,dCSI,-0.1387559809,-0.1388
+stab:r2m4_fixed_events,Threshold=Q95;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_paired.csv,19,CI_low,-0.1768889297,-0.1769
+stab:r2m4_fixed_events,Threshold=Q95;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_paired.csv,19,CI_high,-0.1012041106,-0.1012
+stab:r2m4_fixed_events,Threshold=Q95;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,108,A_minus_B,0.08503720320876251,+0.0850
+stab:r2m4_fixed_events,Threshold=Q95;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,108,CI_low,0.05894431906786501,0.0589
+stab:r2m4_fixed_events,Threshold=Q95;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,108,CI_high,0.11217914576075817,0.1122
+stab:r2m4_fixed_events,Threshold=Q95;Model=Persistence,q05e_event_scores.csv,26,AUC,0.7470215862621731,0.747
+stab:r2m4_fixed_events,Threshold=Q95;Model=Persistence,r2m4_fixed_event_scores.csv,26,Forecast_events,238,238
+stab:r2m4_fixed_events,Threshold=Q95;Model=Persistence,r2m4_fixed_event_scores.csv,26,Hits,58,58
+stab:r2m4_fixed_events,Threshold=Q95;Model=Persistence,r2m4_fixed_event_scores.csv,26,POD,0.243697479,0.244
+stab:r2m4_fixed_events,Threshold=Q95;Model=Persistence,r2m4_fixed_event_scores.csv,26,FAR,0.756302521,0.756
+stab:r2m4_fixed_events,Threshold=Q95;Model=Persistence,r2m4_fixed_event_scores.csv,26,CSI,0.1387559809,0.139
+stab:r2m4_fixed_events,Threshold=Q95;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,27,Forecast_events,16,16
+stab:r2m4_fixed_events,Threshold=Q95;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,27,Hits,2,2
+stab:r2m4_fixed_events,Threshold=Q95;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,27,POD,0.008403361345,0.008
+stab:r2m4_fixed_events,Threshold=Q95;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,27,FAR,0.875,0.875
+stab:r2m4_fixed_events,Threshold=Q95;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,27,CSI,0.007936507937,0.008
+stab:r2m4_fixed_events,Threshold=Q95;Model=Climatology (month x hour),r2m4_fixed_event_scores.csv,28,Forecast_events,0,0
+stab:r2m4_fixed_events,Threshold=Q95;Model=Climatology (month x hour),r2m4_fixed_event_scores.csv,28,Hits,0,0
+stab:r2m4_fixed_events,Threshold=Q95;Model=Climatology (month x hour),r2m4_fixed_event_scores.csv,28,POD,0,0.000
+stab:r2m4_fixed_events,Threshold=Q95;Model=Climatology (month x hour),r2m4_fixed_event_scores.csv,28,CSI,0,0.000
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=XGBoost,r2m4_fixed_event_scores.csv,29,thr_mm_h,0.9321694997,0.9322
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=XGBoost,r2m4_fixed_event_scores.csv,29,N_events_test,106,106
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=XGBoost,q05e_event_scores.csv,29,AUC,0.8662902598585275,0.866
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=XGBoost,r2m4_fixed_event_scores.csv,29,Forecast_events,2,2
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=XGBoost,r2m4_fixed_event_scores.csv,29,Hits,1,1
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=XGBoost,r2m4_fixed_event_scores.csv,29,POD,0.009433962264,0.009
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=XGBoost,r2m4_fixed_event_scores.csv,29,FAR,0.5,0.500
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=XGBoost,r2m4_fixed_event_scores.csv,29,CSI,0.009345794393,0.009
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=XGBoost,r2m4_fixed_event_paired.csv,20,dCSI,-0.06679633759,-0.0668
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=XGBoost,r2m4_fixed_event_paired.csv,20,CI_low,-0.09679783689,-0.0968
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=XGBoost,r2m4_fixed_event_paired.csv,20,CI_high,-0.03760026315,-0.0376
+stab:r2m4_fixed_events,Threshold=Q97.5;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,116,A_minus_B,0.12767229964213456,+0.1277
+stab:r2m4_fixed_events,Threshold=Q97.5;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,116,CI_low,0.09135171271474761,0.0914
+stab:r2m4_fixed_events,Threshold=Q97.5;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,116,CI_high,0.16678997437959056,0.1668
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Transformer,q05e_event_scores.csv,30,AUC,0.8197579116805891,0.820
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Transformer,r2m4_fixed_event_scores.csv,30,Forecast_events,0,0
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Transformer,r2m4_fixed_event_scores.csv,30,Hits,0,0
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Transformer,r2m4_fixed_event_scores.csv,30,POD,0,0.000
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Transformer,r2m4_fixed_event_scores.csv,30,CSI,0,0.000
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Transformer,r2m4_fixed_event_paired.csv,21,dCSI,-0.07614213198,-0.0761
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Transformer,r2m4_fixed_event_paired.csv,21,CI_low,-0.1078497615,-0.1078
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Transformer,r2m4_fixed_event_paired.csv,21,CI_high,-0.04430379747,-0.0443
+stab:r2m4_fixed_events,Threshold=Q97.5;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,122,A_minus_B,0.08113995146419617,+0.0811
+stab:r2m4_fixed_events,Threshold=Q97.5;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,122,CI_low,0.0367426295869688,0.0367
+stab:r2m4_fixed_events,Threshold=Q97.5;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,122,CI_high,0.13167542758759634,0.1317
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=BU-LSTM,q05e_event_scores.csv,31,AUC,0.845266282383866,0.845
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=BU-LSTM,r2m4_fixed_event_scores.csv,31,Forecast_events,0,0
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=BU-LSTM,r2m4_fixed_event_scores.csv,31,Hits,0,0
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=BU-LSTM,r2m4_fixed_event_scores.csv,31,POD,0,0.000
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=BU-LSTM,r2m4_fixed_event_scores.csv,31,CSI,0,0.000
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=BU-LSTM,r2m4_fixed_event_paired.csv,22,dCSI,-0.07614213198,-0.0761
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=BU-LSTM,r2m4_fixed_event_paired.csv,22,CI_low,-0.1078497615,-0.1078
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=BU-LSTM,r2m4_fixed_event_paired.csv,22,CI_high,-0.04430379747,-0.0443
+stab:r2m4_fixed_events,Threshold=Q97.5;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,128,A_minus_B,0.10664832216747311,+0.1066
+stab:r2m4_fixed_events,Threshold=Q97.5;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,128,CI_low,0.07523935536817106,0.0752
+stab:r2m4_fixed_events,Threshold=Q97.5;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,128,CI_high,0.14358857916908882,0.1436
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=BiLSTM-Attention,q05e_event_scores.csv,32,AUC,0.8594529138710996,0.859
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,32,Forecast_events,0,0
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,32,Hits,0,0
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,32,POD,0,0.000
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,32,CSI,0,0.000
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=BiLSTM-Attention,r2m4_fixed_event_paired.csv,23,dCSI,-0.07614213198,-0.0761
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=BiLSTM-Attention,r2m4_fixed_event_paired.csv,23,CI_low,-0.1078497615,-0.1078
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=BiLSTM-Attention,r2m4_fixed_event_paired.csv,23,CI_high,-0.04430379747,-0.0443
+stab:r2m4_fixed_events,Threshold=Q97.5;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,134,A_minus_B,0.12083495365470664,+0.1208
+stab:r2m4_fixed_events,Threshold=Q97.5;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,134,CI_low,0.08699089956343481,0.0870
+stab:r2m4_fixed_events,Threshold=Q97.5;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,134,CI_high,0.15922963497736622,0.1592
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,33,AUC,0.8517344412229447,0.852
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,33,Forecast_events,0,0
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,33,Hits,0,0
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,33,POD,0,0.000
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,33,CSI,0,0.000
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=BU-LSTM-Attention,r2m4_fixed_event_paired.csv,24,dCSI,-0.07614213198,-0.0761
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=BU-LSTM-Attention,r2m4_fixed_event_paired.csv,24,CI_low,-0.1078497615,-0.1078
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=BU-LSTM-Attention,r2m4_fixed_event_paired.csv,24,CI_high,-0.04430379747,-0.0443
+stab:r2m4_fixed_events,Threshold=Q97.5;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,140,A_minus_B,0.1131164810065518,+0.1131
+stab:r2m4_fixed_events,Threshold=Q97.5;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,140,CI_low,0.08170645905915916,0.0817
+stab:r2m4_fixed_events,Threshold=Q97.5;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,140,CI_high,0.14964183492218816,0.1496
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,34,AUC,0.8443851557231392,0.844
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,34,Forecast_events,0,0
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,34,Hits,0,0
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,34,POD,0,0.000
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,34,CSI,0,0.000
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_paired.csv,25,dCSI,-0.07614213198,-0.0761
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_paired.csv,25,CI_low,-0.1078497615,-0.1078
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_paired.csv,25,CI_high,-0.04430379747,-0.0443
+stab:r2m4_fixed_events,Threshold=Q97.5;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,146,A_minus_B,0.10576719550674629,+0.1058
+stab:r2m4_fixed_events,Threshold=Q97.5;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,146,CI_low,0.0712311279275986,0.0712
+stab:r2m4_fixed_events,Threshold=Q97.5;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,146,CI_high,0.14666617086773853,0.1467
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Persistence,q05e_event_scores.csv,35,AUC,0.7386179602163929,0.739
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Persistence,r2m4_fixed_event_scores.csv,35,Forecast_events,106,106
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Persistence,r2m4_fixed_event_scores.csv,35,Hits,15,15
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Persistence,r2m4_fixed_event_scores.csv,35,POD,0.141509434,0.142
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Persistence,r2m4_fixed_event_scores.csv,35,FAR,0.858490566,0.858
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Persistence,r2m4_fixed_event_scores.csv,35,CSI,0.07614213198,0.076
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,36,Forecast_events,0,0
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,36,Hits,0,0
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,36,POD,0,0.000
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,36,CSI,0,0.000
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Climatology (month x hour),r2m4_fixed_event_scores.csv,37,Forecast_events,0,0
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Climatology (month x hour),r2m4_fixed_event_scores.csv,37,Hits,0,0
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Climatology (month x hour),r2m4_fixed_event_scores.csv,37,POD,0,0.000
+stab:r2m4_fixed_events,Threshold=Q97.5;Model=Climatology (month x hour),r2m4_fixed_event_scores.csv,37,CSI,0,0.000
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=XGBoost,r2m4_fixed_event_scores.csv,47,thr_mm_h,1,1.0000
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=XGBoost,r2m4_fixed_event_scores.csv,47,N_events_test,91,91
+stab:r2m4_fixed_events,Threshold=1.0;Model=XGBoost,q05e_event_scores.csv,38,AUC,0.8679805122112815,0.868
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=XGBoost,r2m4_fixed_event_scores.csv,47,Forecast_events,1,1
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=XGBoost,r2m4_fixed_event_scores.csv,47,Hits,1,1
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=XGBoost,r2m4_fixed_event_scores.csv,47,POD,0.01098901099,0.011
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=XGBoost,r2m4_fixed_event_scores.csv,47,FAR,0,0.000
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=XGBoost,r2m4_fixed_event_scores.csv,47,CSI,0.01098901099,0.011
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=XGBoost,r2m4_fixed_event_paired.csv,32,dCSI,-0.04715052389,-0.0472
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=XGBoost,r2m4_fixed_event_paired.csv,32,CI_low,-0.0790706228,-0.0791
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=XGBoost,r2m4_fixed_event_paired.csv,32,CI_high,-0.01936590437,-0.0194
+stab:r2m4_fixed_events,Threshold=1.0;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,154,A_minus_B,0.13626744876744878,+0.1363
+stab:r2m4_fixed_events,Threshold=1.0;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,154,CI_low,0.09705336483096154,0.0971
+stab:r2m4_fixed_events,Threshold=1.0;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,154,CI_high,0.1798711931708374,0.1799
+stab:r2m4_fixed_events,Threshold=1.0;Model=Transformer,q05e_event_scores.csv,39,AUC,0.8216398985629755,0.822
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=Transformer,r2m4_fixed_event_scores.csv,48,Forecast_events,0,0
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=Transformer,r2m4_fixed_event_scores.csv,48,Hits,0,0
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=Transformer,r2m4_fixed_event_scores.csv,48,POD,0,0.000
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=Transformer,r2m4_fixed_event_scores.csv,48,CSI,0,0.000
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=Transformer,r2m4_fixed_event_paired.csv,33,dCSI,-0.05813953488,-0.0581
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=Transformer,r2m4_fixed_event_paired.csv,33,CI_low,-0.09357182018,-0.0936
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=Transformer,r2m4_fixed_event_paired.csv,33,CI_high,-0.02468882817,-0.0247
+stab:r2m4_fixed_events,Threshold=1.0;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,160,A_minus_B,0.08992683511914279,+0.0899
+stab:r2m4_fixed_events,Threshold=1.0;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,160,CI_low,0.0402229060964646,0.0402
+stab:r2m4_fixed_events,Threshold=1.0;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,160,CI_high,0.14579054893922894,0.1458
+stab:r2m4_fixed_events,Threshold=1.0;Model=BU-LSTM,q05e_event_scores.csv,40,AUC,0.8480443672751365,0.848
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=BU-LSTM,r2m4_fixed_event_scores.csv,49,Forecast_events,0,0
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=BU-LSTM,r2m4_fixed_event_scores.csv,49,Hits,0,0
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=BU-LSTM,r2m4_fixed_event_scores.csv,49,POD,0,0.000
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=BU-LSTM,r2m4_fixed_event_scores.csv,49,CSI,0,0.000
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=BU-LSTM,r2m4_fixed_event_paired.csv,34,dCSI,-0.05813953488,-0.0581
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=BU-LSTM,r2m4_fixed_event_paired.csv,34,CI_low,-0.09357182018,-0.0936
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=BU-LSTM,r2m4_fixed_event_paired.csv,34,CI_high,-0.02468882817,-0.0247
+stab:r2m4_fixed_events,Threshold=1.0;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,166,A_minus_B,0.11633130383130386,+0.1163
+stab:r2m4_fixed_events,Threshold=1.0;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,166,CI_low,0.08495703676531911,0.0850
+stab:r2m4_fixed_events,Threshold=1.0;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,166,CI_high,0.1529598059721519,0.1530
+stab:r2m4_fixed_events,Threshold=1.0;Model=BiLSTM-Attention,q05e_event_scores.csv,41,AUC,0.8608410819949281,0.861
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,50,Forecast_events,0,0
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,50,Hits,0,0
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,50,POD,0,0.000
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=BiLSTM-Attention,r2m4_fixed_event_scores.csv,50,CSI,0,0.000
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=BiLSTM-Attention,r2m4_fixed_event_paired.csv,35,dCSI,-0.05813953488,-0.0581
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=BiLSTM-Attention,r2m4_fixed_event_paired.csv,35,CI_low,-0.09357182018,-0.0936
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=BiLSTM-Attention,r2m4_fixed_event_paired.csv,35,CI_high,-0.02468882817,-0.0247
+stab:r2m4_fixed_events,Threshold=1.0;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,172,A_minus_B,0.12912801855109546,+0.1291
+stab:r2m4_fixed_events,Threshold=1.0;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,172,CI_low,0.08953631718326675,0.0895
+stab:r2m4_fixed_events,Threshold=1.0;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,172,CI_high,0.1724045915236695,0.1724
+stab:r2m4_fixed_events,Threshold=1.0;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,42,AUC,0.8531362089054396,0.853
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,51,Forecast_events,0,0
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,51,Hits,0,0
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,51,POD,0,0.000
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=BU-LSTM-Attention,r2m4_fixed_event_scores.csv,51,CSI,0,0.000
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=BU-LSTM-Attention,r2m4_fixed_event_paired.csv,36,dCSI,-0.05813953488,-0.0581
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=BU-LSTM-Attention,r2m4_fixed_event_paired.csv,36,CI_low,-0.09357182018,-0.0936
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=BU-LSTM-Attention,r2m4_fixed_event_paired.csv,36,CI_high,-0.02468882817,-0.0247
+stab:r2m4_fixed_events,Threshold=1.0;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,178,A_minus_B,0.12142314546160693,+0.1214
+stab:r2m4_fixed_events,Threshold=1.0;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,178,CI_low,0.08671165444211339,0.0867
+stab:r2m4_fixed_events,Threshold=1.0;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,178,CI_high,0.1614093275359354,0.1614
+stab:r2m4_fixed_events,Threshold=1.0;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,43,AUC,0.8456797879874803,0.846
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,52,Forecast_events,0,0
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,52,Hits,0,0
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,52,POD,0,0.000
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_scores.csv,52,CSI,0,0.000
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_paired.csv,37,dCSI,-0.05813953488,-0.0581
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_paired.csv,37,CI_low,-0.09357182018,-0.0936
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=Probabilistic BiLSTM-Attention,r2m4_fixed_event_paired.csv,37,CI_high,-0.02468882817,-0.0247
+stab:r2m4_fixed_events,Threshold=1.0;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,184,A_minus_B,0.11396672454364765,+0.1140
+stab:r2m4_fixed_events,Threshold=1.0;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,184,CI_low,0.0756565522125786,0.0757
+stab:r2m4_fixed_events,Threshold=1.0;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,184,CI_high,0.15710860149515493,0.1571
+stab:r2m4_fixed_events,Threshold=1.0;Model=Persistence,q05e_event_scores.csv,44,AUC,0.7317130634438327,0.732
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=Persistence,r2m4_fixed_event_scores.csv,53,Forecast_events,91,91
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=Persistence,r2m4_fixed_event_scores.csv,53,Hits,10,10
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=Persistence,r2m4_fixed_event_scores.csv,53,POD,0.1098901099,0.110
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=Persistence,r2m4_fixed_event_scores.csv,53,FAR,0.8901098901,0.890
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=Persistence,r2m4_fixed_event_scores.csv,53,CSI,0.05813953488,0.058
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,54,Forecast_events,0,0
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,54,Hits,0,0
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,54,POD,0,0.000
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=AR(1) (train fit),r2m4_fixed_event_scores.csv,54,CSI,0,0.000
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=Climatology (month x hour),r2m4_fixed_event_scores.csv,55,Forecast_events,0,0
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=Climatology (month x hour),r2m4_fixed_event_scores.csv,55,Hits,0,0
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=Climatology (month x hour),r2m4_fixed_event_scores.csv,55,POD,0,0.000
+stab:r2m4_fixed_events,Threshold=1.0 mm;Model=Climatology (month x hour),r2m4_fixed_event_scores.csv,55,CSI,0,0.000
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=XGBoost,q05e_event_scores.csv,2,thr_mm,0.1,0.1000
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=XGBoost,q05e_event_scores.csv,2,N_events_test,854,854
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=XGBoost,q05e_event_scores.csv,2,cutoff_from_val,0.14700544949331104,0.1470
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=XGBoost,q05e_event_scores.csv,2,Forecast_events,998,998
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=XGBoost,q05e_event_scores.csv,2,Hits,527,527
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=XGBoost,q05e_event_scores.csv,2,POD,0.617096018735363,0.617
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=XGBoost,q05e_event_scores.csv,2,FAR,0.47194388777555113,0.472
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=XGBoost,q05e_event_scores.csv,2,CSI,0.39773584905660375,0.398
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=XGBoost,q05e_event_scores.csv,2,AUC,0.8372357748264436,0.837
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=CSI;A=XGBoost;B=Persistence,q05e_event_paired.csv,3,A_minus_B,0.04381049513124985,+0.0438
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=CSI;A=XGBoost;B=Persistence,q05e_event_paired.csv,3,CI_low,0.023033841133476583,0.0230
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=CSI;A=XGBoost;B=Persistence,q05e_event_paired.csv,3,CI_high,0.06345637747299707,0.0635
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,2,A_minus_B,0.0705077450381274,+0.0705
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,2,CI_low,0.05590901901560594,0.0559
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,2,CI_high,0.08561034489302365,0.0856
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Transformer,q05e_event_scores.csv,3,cutoff_from_val,0.09413155451923746,0.0941
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Transformer,q05e_event_scores.csv,3,Forecast_events,1141,1141
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Transformer,q05e_event_scores.csv,3,Hits,510,510
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Transformer,q05e_event_scores.csv,3,POD,0.5971896955503513,0.597
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Transformer,q05e_event_scores.csv,3,FAR,0.5530236634531113,0.553
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Transformer,q05e_event_scores.csv,3,CSI,0.3434343434343434,0.343
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Transformer,q05e_event_scores.csv,3,AUC,0.7819918848853142,0.782
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=CSI;A=Transformer;B=Persistence,q05e_event_paired.csv,9,A_minus_B,-0.010491010491010477,-0.0105
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=CSI;A=Transformer;B=Persistence,q05e_event_paired.csv,9,CI_low,-0.034986967247781074,-0.0350
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=CSI;A=Transformer;B=Persistence,q05e_event_paired.csv,9,CI_high,0.011827883367368983,0.0118
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,8,A_minus_B,0.015263855096998014,+0.0153
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,8,CI_low,-0.005659835674605767,-0.0057
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,8,CI_high,0.035223668616567394,0.0352
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=BU-LSTM,q05e_event_scores.csv,4,cutoff_from_val,0.11842595344735783,0.1184
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=BU-LSTM,q05e_event_scores.csv,4,Forecast_events,1093,1093
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=BU-LSTM,q05e_event_scores.csv,4,Hits,549,549
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=BU-LSTM,q05e_event_scores.csv,4,POD,0.6428571428571429,0.643
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=BU-LSTM,q05e_event_scores.csv,4,FAR,0.4977127172918573,0.498
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=BU-LSTM,q05e_event_scores.csv,4,CSI,0.3927038626609442,0.393
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=BU-LSTM,q05e_event_scores.csv,4,AUC,0.8202915823714506,0.820
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=CSI;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,15,A_minus_B,0.0387785087355903,+0.0388
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=CSI;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,15,CI_low,0.019188425129566776,0.0192
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=CSI;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,15,CI_high,0.058391696696199376,0.0584
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,14,A_minus_B,0.05356355258313439,+0.0536
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,14,CI_low,0.03957347745153314,0.0396
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,14,CI_high,0.06794028423540804,0.0679
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=BiLSTM-Attention,q05e_event_scores.csv,5,cutoff_from_val,0.11007227997023411,0.1101
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=BiLSTM-Attention,q05e_event_scores.csv,5,Forecast_events,1126,1126
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=BiLSTM-Attention,q05e_event_scores.csv,5,Hits,585,585
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=BiLSTM-Attention,q05e_event_scores.csv,5,POD,0.6850117096018735,0.685
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=BiLSTM-Attention,q05e_event_scores.csv,5,FAR,0.48046181172291297,0.480
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=BiLSTM-Attention,q05e_event_scores.csv,5,CSI,0.41935483870967744,0.419
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=BiLSTM-Attention,q05e_event_scores.csv,5,AUC,0.8242682922200418,0.824
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=CSI;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,21,A_minus_B,0.06542948478432353,+0.0654
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=CSI;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,21,CI_low,0.044534568254980436,0.0445
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=CSI;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,21,CI_high,0.08621739543793323,0.0862
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,20,A_minus_B,0.05754026243172561,+0.0575
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,20,CI_low,0.040937687038701195,0.0409
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,20,CI_high,0.07445084937665852,0.0745
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,6,cutoff_from_val,0.13831998822936456,0.1383
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,6,Forecast_events,1037,1037
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,6,Hits,543,543
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,6,POD,0.6358313817330211,0.636
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,6,FAR,0.476374156219865,0.476
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,6,CSI,0.40281899109792285,0.403
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,6,AUC,0.8252005055815136,0.825
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=CSI;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,27,A_minus_B,0.04889363717256895,+0.0489
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=CSI;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,27,CI_low,0.029517672294440495,0.0295
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=CSI;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,27,CI_high,0.06901610896230939,0.0690
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,26,A_minus_B,0.058472475793197365,+0.0585
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,26,CI_low,0.04417476047342745,0.0442
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,26,CI_high,0.073004034839251,0.0730
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,7,cutoff_from_val,0.11483519945397994,0.1148
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,7,Forecast_events,1125,1125
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,7,Hits,567,567
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,7,POD,0.6639344262295082,0.664
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,7,FAR,0.496,0.496
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,7,CSI,0.40155807365439095,0.402
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,7,AUC,0.8264238458355949,0.826
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=CSI;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,33,A_minus_B,0.04763271972903704,+0.0476
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=CSI;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,33,CI_low,0.025453431421303224,0.0255
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=CSI;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,33,CI_high,0.06841248483851067,0.0684
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,32,A_minus_B,0.059695816047278694,+0.0597
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,32,CI_low,0.04649802699820999,0.0465
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,32,CI_high,0.07391484583261765,0.0739
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Persistence,q05e_event_scores.csv,8,cutoff_from_val,0.04307287159070025,0.0431
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Persistence,q05e_event_scores.csv,8,Forecast_events,1250,1250
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Persistence,q05e_event_scores.csv,8,Hits,550,550
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Persistence,q05e_event_scores.csv,8,POD,0.6440281030444965,0.644
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Persistence,q05e_event_scores.csv,8,FAR,0.56,0.560
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Persistence,q05e_event_scores.csv,8,CSI,0.3539253539253539,0.354
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Persistence,q05e_event_scores.csv,8,AUC,0.7667280297883162,0.767
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=AR(1) (train fit),q05e_event_scores.csv,9,cutoff_from_val,0.08839346349610652,0.0884
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=AR(1) (train fit),q05e_event_scores.csv,9,Forecast_events,1250,1250
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=AR(1) (train fit),q05e_event_scores.csv,9,Hits,550,550
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=AR(1) (train fit),q05e_event_scores.csv,9,POD,0.6440281030444965,0.644
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=AR(1) (train fit),q05e_event_scores.csv,9,FAR,0.56,0.560
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=AR(1) (train fit),q05e_event_scores.csv,9,CSI,0.3539253539253539,0.354
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=AR(1) (train fit),q05e_event_scores.csv,9,AUC,0.7667285991368676,0.767
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Climatology (month x hour),q05e_event_scores.csv,10,cutoff_from_val,0.10178969641460951,0.1018
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Climatology (month x hour),q05e_event_scores.csv,10,Forecast_events,2118,2118
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Climatology (month x hour),q05e_event_scores.csv,10,Hits,520,520
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Climatology (month x hour),q05e_event_scores.csv,10,POD,0.6088992974238876,0.609
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Climatology (month x hour),q05e_event_scores.csv,10,FAR,0.7544853635505193,0.754
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Climatology (month x hour),q05e_event_scores.csv,10,CSI,0.21207177814029363,0.212
+stab:r2m4_tuned_events,Threshold=wet>=0.1;Model=Climatology (month x hour),q05e_event_scores.csv,10,AUC,0.5650974155371424,0.565
+stab:r2m4_tuned_events,Threshold=Q90;Model=XGBoost,q05e_event_scores.csv,11,thr_mm,0.29578399653680015,0.2958
+stab:r2m4_tuned_events,Threshold=Q90;Model=XGBoost,q05e_event_scores.csv,11,N_events_test,463,463
+stab:r2m4_tuned_events,Threshold=Q90;Model=XGBoost,q05e_event_scores.csv,11,cutoff_from_val,0.19802412407491649,0.1980
+stab:r2m4_tuned_events,Threshold=Q90;Model=XGBoost,q05e_event_scores.csv,11,Forecast_events,740,740
+stab:r2m4_tuned_events,Threshold=Q90;Model=XGBoost,q05e_event_scores.csv,11,Hits,281,281
+stab:r2m4_tuned_events,Threshold=Q90;Model=XGBoost,q05e_event_scores.csv,11,POD,0.6069114470842333,0.607
+stab:r2m4_tuned_events,Threshold=Q90;Model=XGBoost,q05e_event_scores.csv,11,FAR,0.6202702702702703,0.620
+stab:r2m4_tuned_events,Threshold=Q90;Model=XGBoost,q05e_event_scores.csv,11,CSI,0.3047722342733189,0.305
+stab:r2m4_tuned_events,Threshold=Q90;Model=XGBoost,q05e_event_scores.csv,11,AUC,0.8482982351055184,0.848
+stab:r2m4_tuned_events,Threshold=Q90;Metric=CSI;A=XGBoost;B=Persistence,q05e_event_paired.csv,41,A_minus_B,0.05753161617177363,+0.0575
+stab:r2m4_tuned_events,Threshold=Q90;Metric=CSI;A=XGBoost;B=Persistence,q05e_event_paired.csv,41,CI_low,0.03378848047499796,0.0338
+stab:r2m4_tuned_events,Threshold=Q90;Metric=CSI;A=XGBoost;B=Persistence,q05e_event_paired.csv,41,CI_high,0.08169232794360155,0.0817
+stab:r2m4_tuned_events,Threshold=Q90;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,40,A_minus_B,0.09100291539392613,+0.0910
+stab:r2m4_tuned_events,Threshold=Q90;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,40,CI_low,0.07192277217985842,0.0719
+stab:r2m4_tuned_events,Threshold=Q90;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,40,CI_high,0.11258660442815242,0.1126
+stab:r2m4_tuned_events,Threshold=Q90;Model=Transformer,q05e_event_scores.csv,12,cutoff_from_val,0.13275978738461544,0.1328
+stab:r2m4_tuned_events,Threshold=Q90;Model=Transformer,q05e_event_scores.csv,12,Forecast_events,676,676
+stab:r2m4_tuned_events,Threshold=Q90;Model=Transformer,q05e_event_scores.csv,12,Hits,217,217
+stab:r2m4_tuned_events,Threshold=Q90;Model=Transformer,q05e_event_scores.csv,12,POD,0.468682505399568,0.469
+stab:r2m4_tuned_events,Threshold=Q90;Model=Transformer,q05e_event_scores.csv,12,FAR,0.6789940828402367,0.679
+stab:r2m4_tuned_events,Threshold=Q90;Model=Transformer,q05e_event_scores.csv,12,CSI,0.23535791757049893,0.235
+stab:r2m4_tuned_events,Threshold=Q90;Model=Transformer,q05e_event_scores.csv,12,AUC,0.7920992327518287,0.792
+stab:r2m4_tuned_events,Threshold=Q90;Metric=CSI;A=Transformer;B=Persistence,q05e_event_paired.csv,47,A_minus_B,-0.011882700531046342,-0.0119
+stab:r2m4_tuned_events,Threshold=Q90;Metric=CSI;A=Transformer;B=Persistence,q05e_event_paired.csv,47,CI_low,-0.0424926537210748,-0.0425
+stab:r2m4_tuned_events,Threshold=Q90;Metric=CSI;A=Transformer;B=Persistence,q05e_event_paired.csv,47,CI_high,0.019799995943351106,0.0198
+stab:r2m4_tuned_events,Threshold=Q90;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,46,A_minus_B,0.034803913040236445,+0.0348
+stab:r2m4_tuned_events,Threshold=Q90;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,46,CI_low,0.00819902032977377,0.0082
+stab:r2m4_tuned_events,Threshold=Q90;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,46,CI_high,0.06280044719617013,0.0628
+stab:r2m4_tuned_events,Threshold=Q90;Model=BU-LSTM,q05e_event_scores.csv,13,cutoff_from_val,0.17021449348361206,0.1702
+stab:r2m4_tuned_events,Threshold=Q90;Model=BU-LSTM,q05e_event_scores.csv,13,Forecast_events,732,732
+stab:r2m4_tuned_events,Threshold=Q90;Model=BU-LSTM,q05e_event_scores.csv,13,Hits,262,262
+stab:r2m4_tuned_events,Threshold=Q90;Model=BU-LSTM,q05e_event_scores.csv,13,POD,0.5658747300215983,0.566
+stab:r2m4_tuned_events,Threshold=Q90;Model=BU-LSTM,q05e_event_scores.csv,13,FAR,0.6420765027322405,0.642
+stab:r2m4_tuned_events,Threshold=Q90;Model=BU-LSTM,q05e_event_scores.csv,13,CSI,0.2808145766345123,0.281
+stab:r2m4_tuned_events,Threshold=Q90;Model=BU-LSTM,q05e_event_scores.csv,13,AUC,0.8342208342550087,0.834
+stab:r2m4_tuned_events,Threshold=Q90;Metric=CSI;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,53,A_minus_B,0.033573958532967046,+0.0336
+stab:r2m4_tuned_events,Threshold=Q90;Metric=CSI;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,53,CI_low,0.015089670717259796,0.0151
+stab:r2m4_tuned_events,Threshold=Q90;Metric=CSI;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,53,CI_high,0.05272843050951589,0.0527
+stab:r2m4_tuned_events,Threshold=Q90;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,52,A_minus_B,0.07692551454341645,+0.0769
+stab:r2m4_tuned_events,Threshold=Q90;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,52,CI_low,0.058701819152865445,0.0587
+stab:r2m4_tuned_events,Threshold=Q90;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,52,CI_high,0.09706183548862035,0.0971
+stab:r2m4_tuned_events,Threshold=Q90;Model=BiLSTM-Attention,q05e_event_scores.csv,14,cutoff_from_val,0.1754533147696321,0.1755
+stab:r2m4_tuned_events,Threshold=Q90;Model=BiLSTM-Attention,q05e_event_scores.csv,14,Forecast_events,751,751
+stab:r2m4_tuned_events,Threshold=Q90;Model=BiLSTM-Attention,q05e_event_scores.csv,14,Hits,284,284
+stab:r2m4_tuned_events,Threshold=Q90;Model=BiLSTM-Attention,q05e_event_scores.csv,14,POD,0.6133909287257019,0.613
+stab:r2m4_tuned_events,Threshold=Q90;Model=BiLSTM-Attention,q05e_event_scores.csv,14,FAR,0.6218375499334221,0.622
+stab:r2m4_tuned_events,Threshold=Q90;Model=BiLSTM-Attention,q05e_event_scores.csv,14,CSI,0.3053763440860215,0.305
+stab:r2m4_tuned_events,Threshold=Q90;Model=BiLSTM-Attention,q05e_event_scores.csv,14,AUC,0.8383596746092303,0.838
+stab:r2m4_tuned_events,Threshold=Q90;Metric=CSI;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,59,A_minus_B,0.05813572598447622,+0.0581
+stab:r2m4_tuned_events,Threshold=Q90;Metric=CSI;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,59,CI_low,0.03461522915265651,0.0346
+stab:r2m4_tuned_events,Threshold=Q90;Metric=CSI;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,59,CI_high,0.08089659556515326,0.0809
+stab:r2m4_tuned_events,Threshold=Q90;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,58,A_minus_B,0.08106435489763808,+0.0811
+stab:r2m4_tuned_events,Threshold=Q90;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,58,CI_low,0.059804498577062104,0.0598
+stab:r2m4_tuned_events,Threshold=Q90;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,58,CI_high,0.10342636237331992,0.1034
+stab:r2m4_tuned_events,Threshold=Q90;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,15,cutoff_from_val,0.19540952888334448,0.1954
+stab:r2m4_tuned_events,Threshold=Q90;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,15,Forecast_events,702,702
+stab:r2m4_tuned_events,Threshold=Q90;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,15,Hits,261,261
+stab:r2m4_tuned_events,Threshold=Q90;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,15,POD,0.5637149028077754,0.564
+stab:r2m4_tuned_events,Threshold=Q90;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,15,FAR,0.6282051282051282,0.628
+stab:r2m4_tuned_events,Threshold=Q90;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,15,CSI,0.288716814159292,0.289
+stab:r2m4_tuned_events,Threshold=Q90;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,15,AUC,0.8390307371497737,0.839
+stab:r2m4_tuned_events,Threshold=Q90;Metric=CSI;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,65,A_minus_B,0.041476196057746745,+0.0415
+stab:r2m4_tuned_events,Threshold=Q90;Metric=CSI;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,65,CI_low,0.02317228240664844,0.0232
+stab:r2m4_tuned_events,Threshold=Q90;Metric=CSI;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,65,CI_high,0.06017516091519516,0.0602
+stab:r2m4_tuned_events,Threshold=Q90;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,64,A_minus_B,0.08173541743818147,+0.0817
+stab:r2m4_tuned_events,Threshold=Q90;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,64,CI_low,0.06296389560814555,0.0630
+stab:r2m4_tuned_events,Threshold=Q90;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,64,CI_high,0.10258746055714103,0.1026
+stab:r2m4_tuned_events,Threshold=Q90;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,16,cutoff_from_val,0.15793151636695654,0.1579
+stab:r2m4_tuned_events,Threshold=Q90;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,16,Forecast_events,844,844
+stab:r2m4_tuned_events,Threshold=Q90;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,16,Hits,288,288
+stab:r2m4_tuned_events,Threshold=Q90;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,16,POD,0.6220302375809935,0.622
+stab:r2m4_tuned_events,Threshold=Q90;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,16,FAR,0.6587677725118484,0.659
+stab:r2m4_tuned_events,Threshold=Q90;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,16,CSI,0.2826300294406281,0.283
+stab:r2m4_tuned_events,Threshold=Q90;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,16,AUC,0.8332303956535031,0.833
+stab:r2m4_tuned_events,Threshold=Q90;Metric=CSI;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,71,A_minus_B,0.03538941133908283,+0.0354
+stab:r2m4_tuned_events,Threshold=Q90;Metric=CSI;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,71,CI_low,0.010939157873745064,0.0109
+stab:r2m4_tuned_events,Threshold=Q90;Metric=CSI;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,71,CI_high,0.05864025966340938,0.0586
+stab:r2m4_tuned_events,Threshold=Q90;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,70,A_minus_B,0.07593507594191085,+0.0759
+stab:r2m4_tuned_events,Threshold=Q90;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,70,CI_low,0.05733029557001646,0.0573
+stab:r2m4_tuned_events,Threshold=Q90;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,70,CI_high,0.09626057339060534,0.0963
+stab:r2m4_tuned_events,Threshold=Q90;Model=Persistence,q05e_event_scores.csv,17,cutoff_from_val,0.16569213925938645,0.1657
+stab:r2m4_tuned_events,Threshold=Q90;Model=Persistence,q05e_event_scores.csv,17,Forecast_events,667,667
+stab:r2m4_tuned_events,Threshold=Q90;Model=Persistence,q05e_event_scores.csv,17,Hits,224,224
+stab:r2m4_tuned_events,Threshold=Q90;Model=Persistence,q05e_event_scores.csv,17,POD,0.4838012958963283,0.484
+stab:r2m4_tuned_events,Threshold=Q90;Model=Persistence,q05e_event_scores.csv,17,FAR,0.664167916041979,0.664
+stab:r2m4_tuned_events,Threshold=Q90;Model=Persistence,q05e_event_scores.csv,17,CSI,0.24724061810154527,0.247
+stab:r2m4_tuned_events,Threshold=Q90;Model=Persistence,q05e_event_scores.csv,17,AUC,0.7572953197115923,0.757
+stab:r2m4_tuned_events,Threshold=Q90;Model=AR(1) (train fit),q05e_event_scores.csv,18,cutoff_from_val,0.12286153327729285,0.1229
+stab:r2m4_tuned_events,Threshold=Q90;Model=AR(1) (train fit),q05e_event_scores.csv,18,Forecast_events,667,667
+stab:r2m4_tuned_events,Threshold=Q90;Model=AR(1) (train fit),q05e_event_scores.csv,18,Hits,224,224
+stab:r2m4_tuned_events,Threshold=Q90;Model=AR(1) (train fit),q05e_event_scores.csv,18,POD,0.4838012958963283,0.484
+stab:r2m4_tuned_events,Threshold=Q90;Model=AR(1) (train fit),q05e_event_scores.csv,18,FAR,0.664167916041979,0.664
+stab:r2m4_tuned_events,Threshold=Q90;Model=AR(1) (train fit),q05e_event_scores.csv,18,CSI,0.24724061810154527,0.247
+stab:r2m4_tuned_events,Threshold=Q90;Model=AR(1) (train fit),q05e_event_scores.csv,18,AUC,0.7572959410657965,0.757
+stab:r2m4_tuned_events,Threshold=Q90;Model=Climatology (month x hour),q05e_event_scores.csv,19,cutoff_from_val,0.10178969641460951,0.1018
+stab:r2m4_tuned_events,Threshold=Q90;Model=Climatology (month x hour),q05e_event_scores.csv,19,Forecast_events,2118,2118
+stab:r2m4_tuned_events,Threshold=Q90;Model=Climatology (month x hour),q05e_event_scores.csv,19,Hits,292,292
+stab:r2m4_tuned_events,Threshold=Q90;Model=Climatology (month x hour),q05e_event_scores.csv,19,POD,0.6306695464362851,0.631
+stab:r2m4_tuned_events,Threshold=Q90;Model=Climatology (month x hour),q05e_event_scores.csv,19,FAR,0.8621340887629839,0.862
+stab:r2m4_tuned_events,Threshold=Q90;Model=Climatology (month x hour),q05e_event_scores.csv,19,CSI,0.12756662297946703,0.128
+stab:r2m4_tuned_events,Threshold=Q90;Model=Climatology (month x hour),q05e_event_scores.csv,19,AUC,0.5615395417388473,0.562
+stab:r2m4_tuned_events,Threshold=Q95;Model=XGBoost,q05e_event_scores.csv,20,thr_mm,0.5740480454979993,0.5740
+stab:r2m4_tuned_events,Threshold=Q95;Model=XGBoost,q05e_event_scores.csv,20,N_events_test,238,238
+stab:r2m4_tuned_events,Threshold=Q95;Model=XGBoost,q05e_event_scores.csv,20,cutoff_from_val,0.30562796824802674,0.3056
+stab:r2m4_tuned_events,Threshold=Q95;Model=XGBoost,q05e_event_scores.csv,20,Forecast_events,355,355
+stab:r2m4_tuned_events,Threshold=Q95;Model=XGBoost,q05e_event_scores.csv,20,Hits,95,95
+stab:r2m4_tuned_events,Threshold=Q95;Model=XGBoost,q05e_event_scores.csv,20,POD,0.39915966386554624,0.399
+stab:r2m4_tuned_events,Threshold=Q95;Model=XGBoost,q05e_event_scores.csv,20,FAR,0.7323943661971831,0.732
+stab:r2m4_tuned_events,Threshold=Q95;Model=XGBoost,q05e_event_scores.csv,20,CSI,0.19076305220883535,0.191
+stab:r2m4_tuned_events,Threshold=Q95;Model=XGBoost,q05e_event_scores.csv,20,AUC,0.8477540705555392,0.848
+stab:r2m4_tuned_events,Threshold=Q95;Metric=CSI;A=XGBoost;B=Persistence,q05e_event_paired.csv,79,A_minus_B,0.034763052208835354,+0.0348
+stab:r2m4_tuned_events,Threshold=Q95;Metric=CSI;A=XGBoost;B=Persistence,q05e_event_paired.csv,79,CI_low,0.0014733053674803372,0.0015
+stab:r2m4_tuned_events,Threshold=Q95;Metric=CSI;A=XGBoost;B=Persistence,q05e_event_paired.csv,79,CI_high,0.07157585550536977,0.0716
+stab:r2m4_tuned_events,Threshold=Q95;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,78,A_minus_B,0.10073248429336612,+0.1007
+stab:r2m4_tuned_events,Threshold=Q95;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,78,CI_low,0.07355736750165491,0.0736
+stab:r2m4_tuned_events,Threshold=Q95;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,78,CI_high,0.12978788285776632,0.1298
+stab:r2m4_tuned_events,Threshold=Q95;Model=Transformer,q05e_event_scores.csv,21,cutoff_from_val,0.19093721316280937,0.1909
+stab:r2m4_tuned_events,Threshold=Q95;Model=Transformer,q05e_event_scores.csv,21,Forecast_events,340,340
+stab:r2m4_tuned_events,Threshold=Q95;Model=Transformer,q05e_event_scores.csv,21,Hits,68,68
+stab:r2m4_tuned_events,Threshold=Q95;Model=Transformer,q05e_event_scores.csv,21,POD,0.2857142857142857,0.286
+stab:r2m4_tuned_events,Threshold=Q95;Model=Transformer,q05e_event_scores.csv,21,FAR,0.8,0.800
+stab:r2m4_tuned_events,Threshold=Q95;Model=Transformer,q05e_event_scores.csv,21,CSI,0.13333333333333333,0.133
+stab:r2m4_tuned_events,Threshold=Q95;Model=Transformer,q05e_event_scores.csv,21,AUC,0.7982455343661377,0.798
+stab:r2m4_tuned_events,Threshold=Q95;Metric=CSI;A=Transformer;B=Persistence,q05e_event_paired.csv,85,A_minus_B,-0.02266666666666667,-0.0227
+stab:r2m4_tuned_events,Threshold=Q95;Metric=CSI;A=Transformer;B=Persistence,q05e_event_paired.csv,85,CI_low,-0.05281635653949933,-0.0528
+stab:r2m4_tuned_events,Threshold=Q95;Metric=CSI;A=Transformer;B=Persistence,q05e_event_paired.csv,85,CI_high,0.008779412719388995,0.0088
+stab:r2m4_tuned_events,Threshold=Q95;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,84,A_minus_B,0.05122394810396458,+0.0512
+stab:r2m4_tuned_events,Threshold=Q95;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,84,CI_low,0.017941376642143143,0.0179
+stab:r2m4_tuned_events,Threshold=Q95;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,84,CI_high,0.08865719440216506,0.0887
+stab:r2m4_tuned_events,Threshold=Q95;Model=BU-LSTM,q05e_event_scores.csv,22,cutoff_from_val,0.202684838484281,0.2027
+stab:r2m4_tuned_events,Threshold=Q95;Model=BU-LSTM,q05e_event_scores.csv,22,Forecast_events,554,554
+stab:r2m4_tuned_events,Threshold=Q95;Model=BU-LSTM,q05e_event_scores.csv,22,Hits,125,125
+stab:r2m4_tuned_events,Threshold=Q95;Model=BU-LSTM,q05e_event_scores.csv,22,POD,0.5252100840336135,0.525
+stab:r2m4_tuned_events,Threshold=Q95;Model=BU-LSTM,q05e_event_scores.csv,22,FAR,0.7743682310469314,0.774
+stab:r2m4_tuned_events,Threshold=Q95;Model=BU-LSTM,q05e_event_scores.csv,22,CSI,0.1874062968515742,0.187
+stab:r2m4_tuned_events,Threshold=Q95;Model=BU-LSTM,q05e_event_scores.csv,22,AUC,0.8329159277869483,0.833
+stab:r2m4_tuned_events,Threshold=Q95;Metric=CSI;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,91,A_minus_B,0.0314062968515742,+0.0314
+stab:r2m4_tuned_events,Threshold=Q95;Metric=CSI;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,91,CI_low,0.014474050461818906,0.0145
+stab:r2m4_tuned_events,Threshold=Q95;Metric=CSI;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,91,CI_high,0.048930583640163,0.0489
+stab:r2m4_tuned_events,Threshold=Q95;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,90,A_minus_B,0.08589434152477526,+0.0859
+stab:r2m4_tuned_events,Threshold=Q95;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,90,CI_low,0.06162433964312272,0.0616
+stab:r2m4_tuned_events,Threshold=Q95;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,90,CI_high,0.11125657994534414,0.1113
+stab:r2m4_tuned_events,Threshold=Q95;Model=BiLSTM-Attention,q05e_event_scores.csv,23,cutoff_from_val,0.2617558941649498,0.2618
+stab:r2m4_tuned_events,Threshold=Q95;Model=BiLSTM-Attention,q05e_event_scores.csv,23,Forecast_events,443,443
+stab:r2m4_tuned_events,Threshold=Q95;Model=BiLSTM-Attention,q05e_event_scores.csv,23,Hits,105,105
+stab:r2m4_tuned_events,Threshold=Q95;Model=BiLSTM-Attention,q05e_event_scores.csv,23,POD,0.4411764705882353,0.441
+stab:r2m4_tuned_events,Threshold=Q95;Model=BiLSTM-Attention,q05e_event_scores.csv,23,FAR,0.7629796839729119,0.763
+stab:r2m4_tuned_events,Threshold=Q95;Model=BiLSTM-Attention,q05e_event_scores.csv,23,CSI,0.18229166666666666,0.182
+stab:r2m4_tuned_events,Threshold=Q95;Model=BiLSTM-Attention,q05e_event_scores.csv,23,AUC,0.8350162004818139,0.835
+stab:r2m4_tuned_events,Threshold=Q95;Metric=CSI;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,97,A_minus_B,0.026291666666666658,+0.0263
+stab:r2m4_tuned_events,Threshold=Q95;Metric=CSI;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,97,CI_low,0.004089845507241762,0.0041
+stab:r2m4_tuned_events,Threshold=Q95;Metric=CSI;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,97,CI_high,0.05035024227272669,0.0504
+stab:r2m4_tuned_events,Threshold=Q95;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,96,A_minus_B,0.08799461421964083,+0.0880
+stab:r2m4_tuned_events,Threshold=Q95;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,96,CI_low,0.0591710165248921,0.0592
+stab:r2m4_tuned_events,Threshold=Q95;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,96,CI_high,0.11750254745336412,0.1175
+stab:r2m4_tuned_events,Threshold=Q95;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,24,cutoff_from_val,0.19540952888334448,0.1954
+stab:r2m4_tuned_events,Threshold=Q95;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,24,Forecast_events,702,702
+stab:r2m4_tuned_events,Threshold=Q95;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,24,Hits,147,147
+stab:r2m4_tuned_events,Threshold=Q95;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,24,POD,0.6176470588235294,0.618
+stab:r2m4_tuned_events,Threshold=Q95;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,24,FAR,0.7905982905982906,0.791
+stab:r2m4_tuned_events,Threshold=Q95;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,24,CSI,0.1853720050441362,0.185
+stab:r2m4_tuned_events,Threshold=Q95;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,24,AUC,0.8380303756195805,0.838
+stab:r2m4_tuned_events,Threshold=Q95;Metric=CSI;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,103,A_minus_B,0.0293720050441362,+0.0294
+stab:r2m4_tuned_events,Threshold=Q95;Metric=CSI;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,103,CI_low,0.012304538854996317,0.0123
+stab:r2m4_tuned_events,Threshold=Q95;Metric=CSI;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,103,CI_high,0.04725783869869043,0.0473
+stab:r2m4_tuned_events,Threshold=Q95;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,102,A_minus_B,0.09100878935740742,+0.0910
+stab:r2m4_tuned_events,Threshold=Q95;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,102,CI_low,0.0672383039081387,0.0672
+stab:r2m4_tuned_events,Threshold=Q95;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,102,CI_high,0.11626139124533136,0.1163
+stab:r2m4_tuned_events,Threshold=Q95;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,25,cutoff_from_val,0.2209065978244816,0.2209
+stab:r2m4_tuned_events,Threshold=Q95;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,25,Forecast_events,568,568
+stab:r2m4_tuned_events,Threshold=Q95;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,25,Hits,126,126
+stab:r2m4_tuned_events,Threshold=Q95;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,25,POD,0.5294117647058824,0.529
+stab:r2m4_tuned_events,Threshold=Q95;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,25,FAR,0.778169014084507,0.778
+stab:r2m4_tuned_events,Threshold=Q95;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,25,CSI,0.18529411764705883,0.185
+stab:r2m4_tuned_events,Threshold=Q95;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,25,AUC,0.8320587894709356,0.832
+stab:r2m4_tuned_events,Threshold=Q95;Metric=CSI;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,109,A_minus_B,0.02929411764705883,+0.0293
+stab:r2m4_tuned_events,Threshold=Q95;Metric=CSI;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,109,CI_low,0.009094222585277112,0.0091
+stab:r2m4_tuned_events,Threshold=Q95;Metric=CSI;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,109,CI_high,0.051231834964016246,0.0512
+stab:r2m4_tuned_events,Threshold=Q95;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,108,A_minus_B,0.08503720320876251,+0.0850
+stab:r2m4_tuned_events,Threshold=Q95;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,108,CI_low,0.05894431906786501,0.0589
+stab:r2m4_tuned_events,Threshold=Q95;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,108,CI_high,0.11217914576075817,0.1122
+stab:r2m4_tuned_events,Threshold=Q95;Model=Persistence,q05e_event_scores.csv,26,cutoff_from_val,0.1845892091815354,0.1846
+stab:r2m4_tuned_events,Threshold=Q95;Model=Persistence,q05e_event_scores.csv,26,Forecast_events,629,629
+stab:r2m4_tuned_events,Threshold=Q95;Model=Persistence,q05e_event_scores.csv,26,Hits,117,117
+stab:r2m4_tuned_events,Threshold=Q95;Model=Persistence,q05e_event_scores.csv,26,POD,0.49159663865546216,0.492
+stab:r2m4_tuned_events,Threshold=Q95;Model=Persistence,q05e_event_scores.csv,26,FAR,0.8139904610492846,0.814
+stab:r2m4_tuned_events,Threshold=Q95;Model=Persistence,q05e_event_scores.csv,26,CSI,0.156,0.156
+stab:r2m4_tuned_events,Threshold=Q95;Model=Persistence,q05e_event_scores.csv,26,AUC,0.7470215862621731,0.747
+stab:r2m4_tuned_events,Threshold=Q95;Model=AR(1) (train fit),q05e_event_scores.csv,27,cutoff_from_val,0.12817346782983402,0.1282
+stab:r2m4_tuned_events,Threshold=Q95;Model=AR(1) (train fit),q05e_event_scores.csv,27,Forecast_events,629,629
+stab:r2m4_tuned_events,Threshold=Q95;Model=AR(1) (train fit),q05e_event_scores.csv,27,Hits,117,117
+stab:r2m4_tuned_events,Threshold=Q95;Model=AR(1) (train fit),q05e_event_scores.csv,27,POD,0.49159663865546216,0.492
+stab:r2m4_tuned_events,Threshold=Q95;Model=AR(1) (train fit),q05e_event_scores.csv,27,FAR,0.8139904610492846,0.814
+stab:r2m4_tuned_events,Threshold=Q95;Model=AR(1) (train fit),q05e_event_scores.csv,27,CSI,0.156,0.156
+stab:r2m4_tuned_events,Threshold=Q95;Model=AR(1) (train fit),q05e_event_scores.csv,27,AUC,0.7470227215447108,0.747
+stab:r2m4_tuned_events,Threshold=Q95;Model=Climatology (month x hour),q05e_event_scores.csv,28,cutoff_from_val,0.10178969641460951,0.1018
+stab:r2m4_tuned_events,Threshold=Q95;Model=Climatology (month x hour),q05e_event_scores.csv,28,Forecast_events,2118,2118
+stab:r2m4_tuned_events,Threshold=Q95;Model=Climatology (month x hour),q05e_event_scores.csv,28,Hits,146,146
+stab:r2m4_tuned_events,Threshold=Q95;Model=Climatology (month x hour),q05e_event_scores.csv,28,POD,0.6134453781512605,0.613
+stab:r2m4_tuned_events,Threshold=Q95;Model=Climatology (month x hour),q05e_event_scores.csv,28,FAR,0.931067044381492,0.931
+stab:r2m4_tuned_events,Threshold=Q95;Model=Climatology (month x hour),q05e_event_scores.csv,28,CSI,0.0660633484162896,0.066
+stab:r2m4_tuned_events,Threshold=Q95;Model=Climatology (month x hour),q05e_event_scores.csv,28,AUC,0.565895204339504,0.566
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=XGBoost,q05e_event_scores.csv,29,thr_mm,0.9321694348199979,0.9322
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=XGBoost,q05e_event_scores.csv,29,N_events_test,106,106
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=XGBoost,q05e_event_scores.csv,29,cutoff_from_val,0.41781385012013467,0.4178
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=XGBoost,q05e_event_scores.csv,29,Forecast_events,191,191
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=XGBoost,q05e_event_scores.csv,29,Hits,32,32
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=XGBoost,q05e_event_scores.csv,29,POD,0.3018867924528302,0.302
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=XGBoost,q05e_event_scores.csv,29,FAR,0.8324607329842932,0.832
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=XGBoost,q05e_event_scores.csv,29,CSI,0.12075471698113208,0.121
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=XGBoost,q05e_event_scores.csv,29,AUC,0.8662902598585275,0.866
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=CSI;A=XGBoost;B=Persistence,q05e_event_paired.csv,117,A_minus_B,0.039923308205150554,+0.0399
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=CSI;A=XGBoost;B=Persistence,q05e_event_paired.csv,117,CI_low,0.00375695554066731,0.0038
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=CSI;A=XGBoost;B=Persistence,q05e_event_paired.csv,117,CI_high,0.07908932436048238,0.0791
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,116,A_minus_B,0.12767229964213456,+0.1277
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,116,CI_low,0.09135171271474761,0.0914
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,116,CI_high,0.16678997437959056,0.1668
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Transformer,q05e_event_scores.csv,30,cutoff_from_val,0.2141066931251505,0.2141
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Transformer,q05e_event_scores.csv,30,Forecast_events,251,251
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Transformer,q05e_event_scores.csv,30,Hits,27,27
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Transformer,q05e_event_scores.csv,30,POD,0.25471698113207547,0.255
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Transformer,q05e_event_scores.csv,30,FAR,0.8924302788844621,0.892
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Transformer,q05e_event_scores.csv,30,CSI,0.08181818181818182,0.082
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Transformer,q05e_event_scores.csv,30,AUC,0.8197579116805891,0.820
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=CSI;A=Transformer;B=Persistence,q05e_event_paired.csv,123,A_minus_B,0.0009867730422002952,+0.0010
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=CSI;A=Transformer;B=Persistence,q05e_event_paired.csv,123,CI_low,-0.031239365333418954,-0.0312
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=CSI;A=Transformer;B=Persistence,q05e_event_paired.csv,123,CI_high,0.0371097176068353,0.0371
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,122,A_minus_B,0.08113995146419617,+0.0811
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,122,CI_low,0.0367426295869688,0.0367
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,122,CI_high,0.13167542758759634,0.1317
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=BU-LSTM,q05e_event_scores.csv,31,cutoff_from_val,0.23142311599491644,0.2314
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=BU-LSTM,q05e_event_scores.csv,31,Forecast_events,434,434
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=BU-LSTM,q05e_event_scores.csv,31,Hits,48,48
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=BU-LSTM,q05e_event_scores.csv,31,POD,0.4528301886792453,0.453
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=BU-LSTM,q05e_event_scores.csv,31,FAR,0.8894009216589862,0.889
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=BU-LSTM,q05e_event_scores.csv,31,CSI,0.0975609756097561,0.098
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=BU-LSTM,q05e_event_scores.csv,31,AUC,0.845266282383866,0.845
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=CSI;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,129,A_minus_B,0.01672956683377458,+0.0167
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=CSI;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,129,CI_low,-0.0020526419093565016,-0.0021
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=CSI;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,129,CI_high,0.036250077414450216,0.0363
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,128,A_minus_B,0.10664832216747311,+0.1066
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,128,CI_low,0.07523935536817106,0.0752
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,128,CI_high,0.14358857916908882,0.1436
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=BiLSTM-Attention,q05e_event_scores.csv,32,cutoff_from_val,0.2515486860259532,0.2515
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=BiLSTM-Attention,q05e_event_scores.csv,32,Forecast_events,461,461
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=BiLSTM-Attention,q05e_event_scores.csv,32,Hits,57,57
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=BiLSTM-Attention,q05e_event_scores.csv,32,POD,0.5377358490566038,0.538
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=BiLSTM-Attention,q05e_event_scores.csv,32,FAR,0.8763557483731019,0.876
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=BiLSTM-Attention,q05e_event_scores.csv,32,CSI,0.11176470588235295,0.112
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=BiLSTM-Attention,q05e_event_scores.csv,32,AUC,0.8594529138710996,0.859
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=CSI;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,135,A_minus_B,0.030933297106371424,+0.0309
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=CSI;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,135,CI_low,0.007284760249321544,0.0073
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=CSI;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,135,CI_high,0.05532597351028862,0.0553
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,134,A_minus_B,0.12083495365470664,+0.1208
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,134,CI_low,0.08699089956343481,0.0870
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,134,CI_high,0.15922963497736622,0.1592
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,33,cutoff_from_val,0.2142036161937124,0.2142
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,33,Forecast_events,618,618
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,33,Hits,66,66
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,33,POD,0.6226415094339622,0.623
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,33,FAR,0.8932038834951457,0.893
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,33,CSI,0.10030395136778116,0.100
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,33,AUC,0.8517344412229447,0.852
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=CSI;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,141,A_minus_B,0.019472542591799633,+0.0195
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=CSI;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,141,CI_low,0.0009352472577172379,0.0009
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=CSI;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,141,CI_high,0.03828861177734495,0.0383
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,140,A_minus_B,0.1131164810065518,+0.1131
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,140,CI_low,0.08170645905915916,0.0817
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,140,CI_high,0.14964183492218816,0.1496
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,34,cutoff_from_val,0.2037184152037458,0.2037
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,34,Forecast_events,631,631
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,34,Hits,64,64
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,34,POD,0.6037735849056604,0.604
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,34,FAR,0.8985736925515055,0.899
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,34,CSI,0.0950965824665676,0.095
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,34,AUC,0.8443851557231392,0.844
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=CSI;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,147,A_minus_B,0.01426517369058608,+0.0143
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=CSI;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,147,CI_low,-0.005901105568933236,-0.0059
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=CSI;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,147,CI_high,0.03562902376930552,0.0356
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,146,A_minus_B,0.10576719550674629,+0.1058
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,146,CI_low,0.0712311279275986,0.0712
+stab:r2m4_tuned_events,Threshold=Q97.5;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,146,CI_high,0.14666617086773853,0.1467
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Persistence,q05e_event_scores.csv,35,cutoff_from_val,0.3895185261579864,0.3895
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Persistence,q05e_event_scores.csv,35,Forecast_events,362,362
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Persistence,q05e_event_scores.csv,35,Hits,35,35
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Persistence,q05e_event_scores.csv,35,POD,0.330188679245283,0.330
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Persistence,q05e_event_scores.csv,35,FAR,0.9033149171270718,0.903
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Persistence,q05e_event_scores.csv,35,CSI,0.08083140877598152,0.081
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Persistence,q05e_event_scores.csv,35,AUC,0.7386179602163929,0.739
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=AR(1) (train fit),q05e_event_scores.csv,36,cutoff_from_val,0.18577875394881974,0.1858
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=AR(1) (train fit),q05e_event_scores.csv,36,Forecast_events,362,362
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=AR(1) (train fit),q05e_event_scores.csv,36,Hits,35,35
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=AR(1) (train fit),q05e_event_scores.csv,36,POD,0.330188679245283,0.330
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=AR(1) (train fit),q05e_event_scores.csv,36,FAR,0.9033149171270718,0.903
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=AR(1) (train fit),q05e_event_scores.csv,36,CSI,0.08083140877598152,0.081
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=AR(1) (train fit),q05e_event_scores.csv,36,AUC,0.7386179602163929,0.739
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Climatology (month x hour),q05e_event_scores.csv,37,cutoff_from_val,0.11063106601368172,0.1106
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Climatology (month x hour),q05e_event_scores.csv,37,Forecast_events,1839,1839
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Climatology (month x hour),q05e_event_scores.csv,37,Hits,57,57
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Climatology (month x hour),q05e_event_scores.csv,37,POD,0.5377358490566038,0.538
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Climatology (month x hour),q05e_event_scores.csv,37,FAR,0.9690048939641109,0.969
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Climatology (month x hour),q05e_event_scores.csv,37,CSI,0.030190677966101694,0.030
+stab:r2m4_tuned_events,Threshold=Q97.5;Model=Climatology (month x hour),q05e_event_scores.csv,37,AUC,0.5630694711763287,0.563
+stab:r2m4_tuned_events,Threshold=1.0;Model=XGBoost,q05e_event_scores.csv,38,thr_mm,1.0,1.0000
+stab:r2m4_tuned_events,Threshold=1.0;Model=XGBoost,q05e_event_scores.csv,38,N_events_test,91,91
+stab:r2m4_tuned_events,Threshold=1.0;Model=XGBoost,q05e_event_scores.csv,38,cutoff_from_val,0.41781385012013467,0.4178
+stab:r2m4_tuned_events,Threshold=1.0;Model=XGBoost,q05e_event_scores.csv,38,Forecast_events,191,191
+stab:r2m4_tuned_events,Threshold=1.0;Model=XGBoost,q05e_event_scores.csv,38,Hits,27,27
+stab:r2m4_tuned_events,Threshold=1.0;Model=XGBoost,q05e_event_scores.csv,38,POD,0.2967032967032967,0.297
+stab:r2m4_tuned_events,Threshold=1.0;Model=XGBoost,q05e_event_scores.csv,38,FAR,0.8586387434554974,0.859
+stab:r2m4_tuned_events,Threshold=1.0;Model=XGBoost,q05e_event_scores.csv,38,CSI,0.10588235294117647,0.106
+stab:r2m4_tuned_events,Threshold=1.0;Model=XGBoost,q05e_event_scores.csv,38,AUC,0.8679805122112815,0.868
+stab:r2m4_tuned_events,Threshold=1.0;Metric=CSI;A=XGBoost;B=Persistence,q05e_event_paired.csv,155,A_minus_B,0.039999999999999994,+0.0400
+stab:r2m4_tuned_events,Threshold=1.0;Metric=CSI;A=XGBoost;B=Persistence,q05e_event_paired.csv,155,CI_low,0.006868268046254029,0.0069
+stab:r2m4_tuned_events,Threshold=1.0;Metric=CSI;A=XGBoost;B=Persistence,q05e_event_paired.csv,155,CI_high,0.07353710154643958,0.0735
+stab:r2m4_tuned_events,Threshold=1.0;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,154,A_minus_B,0.13626744876744878,+0.1363
+stab:r2m4_tuned_events,Threshold=1.0;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,154,CI_low,0.09705336483096154,0.0971
+stab:r2m4_tuned_events,Threshold=1.0;Metric=AUC;A=XGBoost;B=Persistence,q05e_event_paired.csv,154,CI_high,0.1798711931708374,0.1799
+stab:r2m4_tuned_events,Threshold=1.0;Model=Transformer,q05e_event_scores.csv,39,cutoff_from_val,0.2047852129565217,0.2048
+stab:r2m4_tuned_events,Threshold=1.0;Model=Transformer,q05e_event_scores.csv,39,Forecast_events,287,287
+stab:r2m4_tuned_events,Threshold=1.0;Model=Transformer,q05e_event_scores.csv,39,Hits,24,24
+stab:r2m4_tuned_events,Threshold=1.0;Model=Transformer,q05e_event_scores.csv,39,POD,0.26373626373626374,0.264
+stab:r2m4_tuned_events,Threshold=1.0;Model=Transformer,q05e_event_scores.csv,39,FAR,0.9163763066202091,0.916
+stab:r2m4_tuned_events,Threshold=1.0;Model=Transformer,q05e_event_scores.csv,39,CSI,0.06779661016949153,0.068
+stab:r2m4_tuned_events,Threshold=1.0;Model=Transformer,q05e_event_scores.csv,39,AUC,0.8216398985629755,0.822
+stab:r2m4_tuned_events,Threshold=1.0;Metric=CSI;A=Transformer;B=Persistence,q05e_event_paired.csv,161,A_minus_B,0.00191425722831505,+0.0019
+stab:r2m4_tuned_events,Threshold=1.0;Metric=CSI;A=Transformer;B=Persistence,q05e_event_paired.csv,161,CI_low,-0.02629327498858232,-0.0263
+stab:r2m4_tuned_events,Threshold=1.0;Metric=CSI;A=Transformer;B=Persistence,q05e_event_paired.csv,161,CI_high,0.0331999186212353,0.0332
+stab:r2m4_tuned_events,Threshold=1.0;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,160,A_minus_B,0.08992683511914279,+0.0899
+stab:r2m4_tuned_events,Threshold=1.0;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,160,CI_low,0.0402229060964646,0.0402
+stab:r2m4_tuned_events,Threshold=1.0;Metric=AUC;A=Transformer;B=Persistence,q05e_event_paired.csv,160,CI_high,0.14579054893922894,0.1458
+stab:r2m4_tuned_events,Threshold=1.0;Model=BU-LSTM,q05e_event_scores.csv,40,cutoff_from_val,0.23142311599491644,0.2314
+stab:r2m4_tuned_events,Threshold=1.0;Model=BU-LSTM,q05e_event_scores.csv,40,Forecast_events,434,434
+stab:r2m4_tuned_events,Threshold=1.0;Model=BU-LSTM,q05e_event_scores.csv,40,Hits,42,42
+stab:r2m4_tuned_events,Threshold=1.0;Model=BU-LSTM,q05e_event_scores.csv,40,POD,0.46153846153846156,0.462
+stab:r2m4_tuned_events,Threshold=1.0;Model=BU-LSTM,q05e_event_scores.csv,40,FAR,0.9032258064516129,0.903
+stab:r2m4_tuned_events,Threshold=1.0;Model=BU-LSTM,q05e_event_scores.csv,40,CSI,0.08695652173913043,0.087
+stab:r2m4_tuned_events,Threshold=1.0;Model=BU-LSTM,q05e_event_scores.csv,40,AUC,0.8480443672751365,0.848
+stab:r2m4_tuned_events,Threshold=1.0;Metric=CSI;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,167,A_minus_B,0.021074168797953957,+0.0211
+stab:r2m4_tuned_events,Threshold=1.0;Metric=CSI;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,167,CI_low,0.005193643397089694,0.0052
+stab:r2m4_tuned_events,Threshold=1.0;Metric=CSI;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,167,CI_high,0.03713863883913446,0.0371
+stab:r2m4_tuned_events,Threshold=1.0;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,166,A_minus_B,0.11633130383130386,+0.1163
+stab:r2m4_tuned_events,Threshold=1.0;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,166,CI_low,0.08495703676531911,0.0850
+stab:r2m4_tuned_events,Threshold=1.0;Metric=AUC;A=BU-LSTM;B=Persistence,q05e_event_paired.csv,166,CI_high,0.1529598059721519,0.1530
+stab:r2m4_tuned_events,Threshold=1.0;Model=BiLSTM-Attention,q05e_event_scores.csv,41,cutoff_from_val,0.2617558941649498,0.2618
+stab:r2m4_tuned_events,Threshold=1.0;Model=BiLSTM-Attention,q05e_event_scores.csv,41,Forecast_events,443,443
+stab:r2m4_tuned_events,Threshold=1.0;Model=BiLSTM-Attention,q05e_event_scores.csv,41,Hits,50,50
+stab:r2m4_tuned_events,Threshold=1.0;Model=BiLSTM-Attention,q05e_event_scores.csv,41,POD,0.5494505494505495,0.549
+stab:r2m4_tuned_events,Threshold=1.0;Model=BiLSTM-Attention,q05e_event_scores.csv,41,FAR,0.8871331828442438,0.887
+stab:r2m4_tuned_events,Threshold=1.0;Model=BiLSTM-Attention,q05e_event_scores.csv,41,CSI,0.10330578512396695,0.103
+stab:r2m4_tuned_events,Threshold=1.0;Model=BiLSTM-Attention,q05e_event_scores.csv,41,AUC,0.8608410819949281,0.861
+stab:r2m4_tuned_events,Threshold=1.0;Metric=CSI;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,173,A_minus_B,0.03742343218279047,+0.0374
+stab:r2m4_tuned_events,Threshold=1.0;Metric=CSI;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,173,CI_low,0.015963742324873024,0.0160
+stab:r2m4_tuned_events,Threshold=1.0;Metric=CSI;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,173,CI_high,0.05950872551622807,0.0595
+stab:r2m4_tuned_events,Threshold=1.0;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,172,A_minus_B,0.12912801855109546,+0.1291
+stab:r2m4_tuned_events,Threshold=1.0;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,172,CI_low,0.08953631718326675,0.0895
+stab:r2m4_tuned_events,Threshold=1.0;Metric=AUC;A=BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,172,CI_high,0.1724045915236695,0.1724
+stab:r2m4_tuned_events,Threshold=1.0;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,42,cutoff_from_val,0.2142036161937124,0.2142
+stab:r2m4_tuned_events,Threshold=1.0;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,42,Forecast_events,618,618
+stab:r2m4_tuned_events,Threshold=1.0;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,42,Hits,56,56
+stab:r2m4_tuned_events,Threshold=1.0;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,42,POD,0.6153846153846154,0.615
+stab:r2m4_tuned_events,Threshold=1.0;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,42,FAR,0.9093851132686084,0.909
+stab:r2m4_tuned_events,Threshold=1.0;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,42,CSI,0.08575803981623277,0.086
+stab:r2m4_tuned_events,Threshold=1.0;Model=BU-LSTM-Attention (proposed),q05e_event_scores.csv,42,AUC,0.8531362089054396,0.853
+stab:r2m4_tuned_events,Threshold=1.0;Metric=CSI;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,179,A_minus_B,0.019875686875056295,+0.0199
+stab:r2m4_tuned_events,Threshold=1.0;Metric=CSI;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,179,CI_low,0.0020465963198342484,0.0020
+stab:r2m4_tuned_events,Threshold=1.0;Metric=CSI;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,179,CI_high,0.03768776842260154,0.0377
+stab:r2m4_tuned_events,Threshold=1.0;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,178,A_minus_B,0.12142314546160693,+0.1214
+stab:r2m4_tuned_events,Threshold=1.0;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,178,CI_low,0.08671165444211339,0.0867
+stab:r2m4_tuned_events,Threshold=1.0;Metric=AUC;A=BU-LSTM-Attention (proposed);B=Persistence,q05e_event_paired.csv,178,CI_high,0.1614093275359354,0.1614
+stab:r2m4_tuned_events,Threshold=1.0;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,43,cutoff_from_val,0.2037184152037458,0.2037
+stab:r2m4_tuned_events,Threshold=1.0;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,43,Forecast_events,631,631
+stab:r2m4_tuned_events,Threshold=1.0;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,43,Hits,55,55
+stab:r2m4_tuned_events,Threshold=1.0;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,43,POD,0.6043956043956044,0.604
+stab:r2m4_tuned_events,Threshold=1.0;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,43,FAR,0.9128367670364501,0.913
+stab:r2m4_tuned_events,Threshold=1.0;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,43,CSI,0.08245877061469266,0.082
+stab:r2m4_tuned_events,Threshold=1.0;Model=Probabilistic BiLSTM-Attention,q05e_event_scores.csv,43,AUC,0.8456797879874803,0.846
+stab:r2m4_tuned_events,Threshold=1.0;Metric=CSI;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,185,A_minus_B,0.016576417673516183,+0.0166
+stab:r2m4_tuned_events,Threshold=1.0;Metric=CSI;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,185,CI_low,-0.0013511900824339895,-0.0014
+stab:r2m4_tuned_events,Threshold=1.0;Metric=CSI;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,185,CI_high,0.03589062671587747,0.0359
+stab:r2m4_tuned_events,Threshold=1.0;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,184,A_minus_B,0.11396672454364765,+0.1140
+stab:r2m4_tuned_events,Threshold=1.0;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,184,CI_low,0.0756565522125786,0.0757
+stab:r2m4_tuned_events,Threshold=1.0;Metric=AUC;A=Probabilistic BiLSTM-Attention;B=Persistence,q05e_event_paired.csv,184,CI_high,0.15710860149515493,0.1571
+stab:r2m4_tuned_events,Threshold=1.0;Model=Persistence,q05e_event_scores.csv,44,cutoff_from_val,0.3895185261579864,0.3895
+stab:r2m4_tuned_events,Threshold=1.0;Model=Persistence,q05e_event_scores.csv,44,Forecast_events,362,362
+stab:r2m4_tuned_events,Threshold=1.0;Model=Persistence,q05e_event_scores.csv,44,Hits,28,28
+stab:r2m4_tuned_events,Threshold=1.0;Model=Persistence,q05e_event_scores.csv,44,POD,0.3076923076923077,0.308
+stab:r2m4_tuned_events,Threshold=1.0;Model=Persistence,q05e_event_scores.csv,44,FAR,0.9226519337016574,0.923
+stab:r2m4_tuned_events,Threshold=1.0;Model=Persistence,q05e_event_scores.csv,44,CSI,0.06588235294117648,0.066
+stab:r2m4_tuned_events,Threshold=1.0;Model=Persistence,q05e_event_scores.csv,44,AUC,0.7317130634438327,0.732
+stab:r2m4_tuned_events,Threshold=1.0;Model=AR(1) (train fit),q05e_event_scores.csv,45,cutoff_from_val,0.18577875394881974,0.1858
+stab:r2m4_tuned_events,Threshold=1.0;Model=AR(1) (train fit),q05e_event_scores.csv,45,Forecast_events,362,362
+stab:r2m4_tuned_events,Threshold=1.0;Model=AR(1) (train fit),q05e_event_scores.csv,45,Hits,28,28
+stab:r2m4_tuned_events,Threshold=1.0;Model=AR(1) (train fit),q05e_event_scores.csv,45,POD,0.3076923076923077,0.308
+stab:r2m4_tuned_events,Threshold=1.0;Model=AR(1) (train fit),q05e_event_scores.csv,45,FAR,0.9226519337016574,0.923
+stab:r2m4_tuned_events,Threshold=1.0;Model=AR(1) (train fit),q05e_event_scores.csv,45,CSI,0.06588235294117648,0.066
+stab:r2m4_tuned_events,Threshold=1.0;Model=AR(1) (train fit),q05e_event_scores.csv,45,AUC,0.7317130634438327,0.732
+stab:r2m4_tuned_events,Threshold=1.0;Model=Climatology (month x hour),q05e_event_scores.csv,46,cutoff_from_val,0.11063106601368172,0.1106
+stab:r2m4_tuned_events,Threshold=1.0;Model=Climatology (month x hour),q05e_event_scores.csv,46,Forecast_events,1839,1839
+stab:r2m4_tuned_events,Threshold=1.0;Model=Climatology (month x hour),q05e_event_scores.csv,46,Hits,49,49
+stab:r2m4_tuned_events,Threshold=1.0;Model=Climatology (month x hour),q05e_event_scores.csv,46,POD,0.5384615384615384,0.538
+stab:r2m4_tuned_events,Threshold=1.0;Model=Climatology (month x hour),q05e_event_scores.csv,46,FAR,0.9733550842849374,0.973
+stab:r2m4_tuned_events,Threshold=1.0;Model=Climatology (month x hour),q05e_event_scores.csv,46,CSI,0.026049973418394472,0.026
+stab:r2m4_tuned_events,Threshold=1.0;Model=Climatology (month x hour),q05e_event_scores.csv,46,AUC,0.55999405999406,0.560
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,AUC_wet>=0.1_mean,0.8266102125947491,0.827
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,AUC_wet>=0.1_sd,0.0031510631110440953,0.003
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,POD_wet>=0.1_mean,0.6615925058548009,0.662
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,POD_wet>=0.1_sd,0.036337519084737466,0.036
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,FAR_wet>=0.1_mean,0.4832630299144808,0.483
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,FAR_wet>=0.1_sd,0.010640870350585589,0.011
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,CSI_wet>=0.1_mean,0.40814119102147045,0.408
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,CSI_wet>=0.1_sd,0.009552357439562625,0.010
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,NpredGeTau_wet>=0.1_mean,1334.2,1334.200
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,NpredGeTau_wet>=0.1_sd,85.83239481687552,85.832
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,HitsFixed_wet>=0.1_mean,637.0,637.000
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,HitsFixed_wet>=0.1_sd,24.238399287081645,24.238
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,AUC_Q90_mean,0.8401541455509797,0.840
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,AUC_Q90_sd,0.0016315445171636665,0.002
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,POD_Q90_mean,0.619438444924406,0.619
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,POD_Q90_sd,0.046958239891211055,0.047
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,FAR_Q90_mean,0.622222190420579,0.622
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,FAR_Q90_sd,0.007038303136579805,0.007
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,CSI_Q90_mean,0.3059741043560413,0.306
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,CSI_Q90_sd,0.007775500249720891,0.008
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,NpredGeTau_Q90_mean,364.2,364.200
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,NpredGeTau_Q90_sd,21.64948036327893,21.649
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,HitsFixed_Q90_mean,158.8,158.800
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,HitsFixed_Q90_sd,5.93295878967653,5.933
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,AUC_Q95_mean,0.8371012603906735,0.837
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,AUC_Q95_sd,0.002309923030958148,0.002
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,POD_Q95_mean,0.5521008403361345,0.552
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,POD_Q95_sd,0.0741926867223563,0.074
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,FAR_Q95_mean,0.7723551318366828,0.772
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,FAR_Q95_sd,0.008140833022527312,0.008
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,CSI_Q95_mean,0.19105741934082782,0.191
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,CSI_Q95_sd,0.005303400269605919,0.005
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,NpredGeTau_Q95_mean,4.0,4.000
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,NpredGeTau_Q95_sd,4.0,4.000
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,HitsFixed_Q95_mean,2.8,2.800
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,HitsFixed_Q95_sd,2.9495762407505253,2.950
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,AUC_Q97.5_mean,0.8589247301241946,0.859
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,AUC_Q97.5_sd,0.00440596074740394,0.004
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,POD_Q97.5_mean,0.49811320754716987,0.498
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,POD_Q97.5_sd,0.09813134810525165,0.098
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,FAR_Q97.5_mean,0.8750130575710001,0.875
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,FAR_Q97.5_sd,0.007991939309875504,0.008
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,CSI_Q97.5_mean,0.1099668993965766,0.110
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,CSI_Q97.5_sd,0.0033837933421516494,0.003
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,NpredGeTau_Q97.5_mean,0.0,0.000
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,NpredGeTau_Q97.5_sd,0.0,0.000
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,HitsFixed_Q97.5_mean,0.0,0.000
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,HitsFixed_Q97.5_sd,0.0,0.000
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,AUC_1.0_mean,0.8633050421511961,0.863
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,AUC_1.0_sd,0.0053267343483168585,0.005
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,POD_1.0_mean,0.512087912087912,0.512
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,POD_1.0_sd,0.10238078856133728,0.102
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,FAR_1.0_mean,0.888593318972257,0.889
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,FAR_1.0_sd,0.0057880388751314115,0.006
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,CSI_1.0_mean,0.09989896421823041,0.100
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,CSI_1.0_sd,0.0028066889813622205,0.003
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,NpredGeTau_1.0_mean,0.0,0.000
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,NpredGeTau_1.0_sd,0.0,0.000
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,HitsFixed_1.0_mean,0.0,0.000
+stab:r2m4_seed_scores,Arch=bilstm_attn,q05g_multiseed_summary.csv,2,HitsFixed_1.0_sd,0.0,0.000
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,AUC_wet>=0.1_mean,0.823144018613902,0.823
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,AUC_wet>=0.1_sd,0.0036776302533755413,0.004
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,POD_wet>=0.1_mean,0.6491803278688524,0.649
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,POD_wet>=0.1_sd,0.026112674723793257,0.026
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,FAR_wet>=0.1_mean,0.48974015104770513,0.490
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,FAR_wet>=0.1_sd,0.021695661959780642,0.022
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,CSI_wet>=0.1_mean,0.39926546725826106,0.399
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,CSI_wet>=0.1_sd,0.006443911294542059,0.006
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,NpredGeTau_wet>=0.1_mean,1377.2,1377.200
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,NpredGeTau_wet>=0.1_sd,55.183330816470296,55.183
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,HitsFixed_wet>=0.1_mean,635.8,635.800
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,HitsFixed_wet>=0.1_sd,10.425929215182693,10.426
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,AUC_Q90_mean,0.8369458452529782,0.837
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,AUC_Q90_sd,0.002720620247399899,0.003
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,POD_Q90_mean,0.5844492440604752,0.584
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,POD_Q90_sd,0.014775491469967227,0.015
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,FAR_Q90_mean,0.6321042562465258,0.632
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,FAR_Q90_sd,0.012724056718368439,0.013
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,CSI_Q90_mean,0.2914245351191023,0.291
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,CSI_Q90_sd,0.006272509133865206,0.006
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,NpredGeTau_Q90_mean,280.6,280.600
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,NpredGeTau_Q90_sd,133.79947683006836,133.799
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,HitsFixed_Q90_mean,117.8,117.800
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,HitsFixed_Q90_sd,52.58041460467957,52.580
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,AUC_Q95_mean,0.8364984253631201,0.836
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,AUC_Q95_sd,0.0018764605609947662,0.002
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,POD_Q95_mean,0.6016806722689075,0.602
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,POD_Q95_sd,0.08122404090096143,0.081
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,FAR_Q95_mean,0.7842614294740555,0.784
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,FAR_Q95_sd,0.014729486793402193,0.015
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,CSI_Q95_mean,0.18739850384074383,0.187
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,CSI_Q95_sd,0.008200861713645102,0.008
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,NpredGeTau_Q95_mean,0.0,0.000
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,NpredGeTau_Q95_sd,0.0,0.000
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,HitsFixed_Q95_mean,0.0,0.000
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,HitsFixed_Q95_sd,0.0,0.000
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,AUC_Q97.5_mean,0.8480361704955476,0.848
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,AUC_Q97.5_sd,0.002662849078898128,0.003
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,POD_Q97.5_mean,0.5754716981132075,0.575
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,POD_Q97.5_sd,0.11281378059529618,0.113
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,FAR_Q97.5_mean,0.8925178446475369,0.893
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,FAR_Q97.5_sd,0.00766818633326623,0.008
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,CSI_Q97.5_mean,0.09880576742545776,0.099
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,CSI_Q97.5_sd,0.004459875856442332,0.004
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,NpredGeTau_Q97.5_mean,0.0,0.000
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,NpredGeTau_Q97.5_sd,0.0,0.000
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,HitsFixed_Q97.5_mean,0.0,0.000
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,HitsFixed_Q97.5_sd,0.0,0.000
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,AUC_1.0_mean,0.849368303214457,0.849
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,AUC_1.0_sd,0.002486968104497938,0.002
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,POD_1.0_mean,0.6351648351648352,0.635
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,POD_1.0_sd,0.07347039406789796,0.073
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,FAR_1.0_mean,0.9120188697351445,0.912
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,FAR_1.0_sd,0.0054954611217559015,0.005
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,CSI_1.0_mean,0.0835096317793849,0.084
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,CSI_1.0_sd,0.0036860194370551317,0.004
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,NpredGeTau_1.0_mean,0.0,0.000
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,NpredGeTau_1.0_sd,0.0,0.000
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,HitsFixed_1.0_mean,0.0,0.000
+stab:r2m4_seed_scores,Arch=bulstm_attn,q05g_multiseed_summary.csv,3,HitsFixed_1.0_sd,0.0,0.000
+stab:r2m4_ensemble_events,Arch=bilstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,7,POD_wet>=0.1,0.6475409836065574,0.648
+stab:r2m4_ensemble_events,Arch=bilstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,7,FAR_wet>=0.1,0.4713193116634799,0.471
+stab:r2m4_ensemble_events,Arch=bilstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,7,CSI_wet>=0.1,0.4105419450631032,0.411
+stab:r2m4_ensemble_events,Metric=CSI_wet>=0.1;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,3,A_minus_B,0.056616591137749306,+0.0566
+stab:r2m4_ensemble_events,Metric=CSI_wet>=0.1;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,3,CI_low,0.03482125912281263,0.0348
+stab:r2m4_ensemble_events,Metric=CSI_wet>=0.1;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,3,CI_high,0.07872582996079447,0.0787
+stab:r2m4_ensemble_events,Metric=AUC_wet>=0.1;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,2,A_minus_B,0.063834220884464,+0.0638
+stab:r2m4_ensemble_events,Metric=AUC_wet>=0.1;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,2,CI_low,0.04869985043735433,0.0487
+stab:r2m4_ensemble_events,Metric=AUC_wet>=0.1;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,2,CI_high,0.08003643311731304,0.0800
+stab:r2m4_ensemble_events,Metric=CSI_wet>=0.1;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,3,Seeds_above_ref_of_5,5.0,5
+stab:r2m4_ensemble_events,Arch=bilstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,7,POD_Q90,0.6198704103671706,0.620
+stab:r2m4_ensemble_events,Arch=bilstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,7,FAR_Q90,0.6228646517739816,0.623
+stab:r2m4_ensemble_events,Arch=bilstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,7,CSI_Q90,0.3062966915688367,0.306
+stab:r2m4_ensemble_events,Metric=CSI_Q90;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,5,A_minus_B,0.05905607346729144,+0.0591
+stab:r2m4_ensemble_events,Metric=CSI_Q90;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,5,CI_low,0.035381903069757026,0.0354
+stab:r2m4_ensemble_events,Metric=CSI_Q90;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,5,CI_high,0.08391195141461275,0.0839
+stab:r2m4_ensemble_events,Metric=AUC_Q90;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,4,A_minus_B,0.08621910937573785,+0.0862
+stab:r2m4_ensemble_events,Metric=AUC_Q90;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,4,CI_low,0.06625500636777189,0.0663
+stab:r2m4_ensemble_events,Metric=AUC_Q90;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,4,CI_high,0.10822330809340823,0.1082
+stab:r2m4_ensemble_events,Metric=CSI_Q90;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,5,Seeds_above_ref_of_5,5.0,5
+stab:r2m4_ensemble_events,Arch=bilstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,7,POD_Q95,0.453781512605042,0.454
+stab:r2m4_ensemble_events,Arch=bilstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,7,FAR_Q95,0.7488372093023256,0.749
+stab:r2m4_ensemble_events,Arch=bilstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,7,CSI_Q95,0.19285714285714287,0.193
+stab:r2m4_ensemble_events,Metric=CSI_Q95;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,7,A_minus_B,0.036857142857142866,+0.0369
+stab:r2m4_ensemble_events,Metric=CSI_Q95;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,7,CI_low,0.011948269655507491,0.0119
+stab:r2m4_ensemble_events,Metric=CSI_Q95;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,7,CI_high,0.06361378119390527,0.0636
+stab:r2m4_ensemble_events,Metric=AUC_Q95;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,6,A_minus_B,0.09269695449106419,+0.0927
+stab:r2m4_ensemble_events,Metric=AUC_Q95;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,6,CI_low,0.06474592641291178,0.0647
+stab:r2m4_ensemble_events,Metric=AUC_Q95;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,6,CI_high,0.12124365788989888,0.1212
+stab:r2m4_ensemble_events,Metric=CSI_Q95;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,7,Seeds_above_ref_of_5,5.0,5
+stab:r2m4_ensemble_events,Arch=bilstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,7,POD_Q97.5,0.5471698113207547,0.547
+stab:r2m4_ensemble_events,Arch=bilstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,7,FAR_Q97.5,0.8684807256235828,0.868
+stab:r2m4_ensemble_events,Arch=bilstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,7,CSI_Q97.5,0.11860940695296524,0.119
+stab:r2m4_ensemble_events,Metric=CSI_Q97.5;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,9,A_minus_B,0.03777799817698371,+0.0378
+stab:r2m4_ensemble_events,Metric=CSI_Q97.5;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,9,CI_low,0.015199600957172705,0.0152
+stab:r2m4_ensemble_events,Metric=CSI_Q97.5;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,9,CI_high,0.06171043085574321,0.0617
+stab:r2m4_ensemble_events,Metric=AUC_Q97.5;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,8,A_minus_B,0.1244136077460386,+0.1244
+stab:r2m4_ensemble_events,Metric=AUC_Q97.5;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,8,CI_low,0.08987711258524105,0.0899
+stab:r2m4_ensemble_events,Metric=AUC_Q97.5;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,8,CI_high,0.16366148717702,0.1637
+stab:r2m4_ensemble_events,Metric=CSI_Q97.5;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,9,Seeds_above_ref_of_5,5.0,5
+stab:r2m4_ensemble_events,Arch=bilstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,7,POD_1.0,0.5604395604395604,0.560
+stab:r2m4_ensemble_events,Arch=bilstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,7,FAR_1.0,0.8843537414965986,0.884
+stab:r2m4_ensemble_events,Arch=bilstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,7,CSI_1.0,0.10602910602910603,0.106
+stab:r2m4_ensemble_events,Metric=CSI_1.0;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,11,A_minus_B,0.04014675308792956,+0.0401
+stab:r2m4_ensemble_events,Metric=CSI_1.0;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,11,CI_low,0.020294683519411046,0.0203
+stab:r2m4_ensemble_events,Metric=CSI_1.0;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,11,CI_high,0.06219453308495375,0.0622
+stab:r2m4_ensemble_events,Metric=AUC_1.0;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,10,A_minus_B,0.13564774622466924,+0.1356
+stab:r2m4_ensemble_events,Metric=AUC_1.0;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,10,CI_low,0.09796351591216507,0.0980
+stab:r2m4_ensemble_events,Metric=AUC_1.0;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,10,CI_high,0.1774005612647284,0.1774
+stab:r2m4_ensemble_events,Metric=CSI_1.0;A=bilstm_attn;B=Persistence,q05g_multiseed_paired.csv,11,Seeds_above_ref_of_5,5.0,5
+stab:r2m4_ensemble_events,Arch=bulstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,13,POD_wet>=0.1,0.5925058548009368,0.593
+stab:r2m4_ensemble_events,Arch=bulstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,13,FAR_wet>=0.1,0.44699453551912566,0.447
+stab:r2m4_ensemble_events,Arch=bulstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,13,CSI_wet>=0.1,0.4006334125098971,0.401
+stab:r2m4_ensemble_events,Metric=CSI_wet>=0.1;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,23,A_minus_B,0.04670805858454319,+0.0467
+stab:r2m4_ensemble_events,Metric=CSI_wet>=0.1;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,23,CI_low,0.024909523925054414,0.0249
+stab:r2m4_ensemble_events,Metric=CSI_wet>=0.1;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,23,CI_high,0.06807848456240344,0.0681
+stab:r2m4_ensemble_events,Metric=AUC_wet>=0.1;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,22,A_minus_B,0.06099127378453573,+0.0610
+stab:r2m4_ensemble_events,Metric=AUC_wet>=0.1;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,22,CI_low,0.04685552295550396,0.0469
+stab:r2m4_ensemble_events,Metric=AUC_wet>=0.1;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,22,CI_high,0.07517309358797852,0.0752
+stab:r2m4_ensemble_events,Metric=CSI_wet>=0.1;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,23,Seeds_above_ref_of_5,5.0,5
+stab:r2m4_ensemble_events,Arch=bulstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,13,POD_Q90,0.6587473002159827,0.659
+stab:r2m4_ensemble_events,Arch=bulstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,13,FAR_Q90,0.642018779342723,0.642
+stab:r2m4_ensemble_events,Arch=bulstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,13,CSI_Q90,0.30198019801980197,0.302
+stab:r2m4_ensemble_events,Metric=CSI_Q90;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,25,A_minus_B,0.0547395799182567,+0.0547
+stab:r2m4_ensemble_events,Metric=CSI_Q90;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,25,CI_low,0.03580986841876624,0.0358
+stab:r2m4_ensemble_events,Metric=CSI_Q90;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,25,CI_high,0.07429773744848012,0.0743
+stab:r2m4_ensemble_events,Metric=AUC_Q90;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,24,A_minus_B,0.08403567070215512,+0.0840
+stab:r2m4_ensemble_events,Metric=AUC_Q90;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,24,CI_low,0.06586668952822529,0.0659
+stab:r2m4_ensemble_events,Metric=AUC_Q90;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,24,CI_high,0.10480368706210443,0.1048
+stab:r2m4_ensemble_events,Metric=CSI_Q90;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,25,Seeds_above_ref_of_5,5.0,5
+stab:r2m4_ensemble_events,Arch=bulstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,13,POD_Q95,0.6848739495798319,0.685
+stab:r2m4_ensemble_events,Arch=bulstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,13,FAR_Q95,0.7944514501891551,0.794
+stab:r2m4_ensemble_events,Arch=bulstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,13,CSI_Q95,0.18778801843317972,0.188
+stab:r2m4_ensemble_events,Metric=CSI_Q95;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,27,A_minus_B,0.031788018433179716,+0.0318
+stab:r2m4_ensemble_events,Metric=CSI_Q95;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,27,CI_low,0.014497999691078504,0.0145
+stab:r2m4_ensemble_events,Metric=CSI_Q95;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,27,CI_high,0.049927371865449495,0.0499
+stab:r2m4_ensemble_events,Metric=AUC_Q95;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,26,A_minus_B,0.0937039501020619,+0.0937
+stab:r2m4_ensemble_events,Metric=AUC_Q95;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,26,CI_low,0.07033619931126335,0.0703
+stab:r2m4_ensemble_events,Metric=AUC_Q95;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,26,CI_high,0.11859513788375917,0.1186
+stab:r2m4_ensemble_events,Metric=CSI_Q95;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,27,Seeds_above_ref_of_5,5.0,5
+stab:r2m4_ensemble_events,Arch=bulstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,13,POD_Q97.5,0.6320754716981132,0.632
+stab:r2m4_ensemble_events,Arch=bulstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,13,FAR_Q97.5,0.8901639344262295,0.890
+stab:r2m4_ensemble_events,Arch=bulstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,13,CSI_Q97.5,0.10323574730354391,0.103
+stab:r2m4_ensemble_events,Metric=CSI_Q97.5;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,29,A_minus_B,0.022404338527562392,+0.0224
+stab:r2m4_ensemble_events,Metric=CSI_Q97.5;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,29,CI_low,0.0034649238926271362,0.0035
+stab:r2m4_ensemble_events,Metric=CSI_Q97.5;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,29,CI_high,0.04135201798602873,0.0414
+stab:r2m4_ensemble_events,Metric=AUC_Q97.5;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,28,A_minus_B,0.11405421636335888,+0.1141
+stab:r2m4_ensemble_events,Metric=AUC_Q97.5;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,28,CI_low,0.08332537704489443,0.0833
+stab:r2m4_ensemble_events,Metric=AUC_Q97.5;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,28,CI_high,0.15092133348918207,0.1509
+stab:r2m4_ensemble_events,Metric=CSI_Q97.5;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,29,Seeds_above_ref_of_5,5.0,5
+stab:r2m4_ensemble_events,Arch=bulstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,13,POD_1.0,0.6263736263736264,0.626
+stab:r2m4_ensemble_events,Arch=bulstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,13,FAR_1.0,0.9065573770491804,0.907
+stab:r2m4_ensemble_events,Arch=bulstm_attn;Seed=ensemble,q05g_multiseed_per_seed.csv,13,CSI_1.0,0.08850931677018634,0.089
+stab:r2m4_ensemble_events,Metric=CSI_1.0;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,31,A_minus_B,0.02262696382900986,+0.0226
+stab:r2m4_ensemble_events,Metric=CSI_1.0;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,31,CI_low,0.004290484844101863,0.0043
+stab:r2m4_ensemble_events,Metric=CSI_1.0;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,31,CI_high,0.040911270773063495,0.0409
+stab:r2m4_ensemble_events,Metric=AUC_1.0;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,30,A_minus_B,0.12203428068812683,+0.1220
+stab:r2m4_ensemble_events,Metric=AUC_1.0;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,30,CI_low,0.08793017610617633,0.0879
+stab:r2m4_ensemble_events,Metric=AUC_1.0;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,30,CI_high,0.16104347834997934,0.1610
+stab:r2m4_ensemble_events,Metric=CSI_1.0;A=bulstm_attn;B=Persistence,q05g_multiseed_paired.csv,31,Seeds_above_ref_of_5,5.0,5

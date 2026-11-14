@@ -1,0 +1,32 @@
+[
+  {
+    "path": "manuscript.tex",
+    "before_sha256": "11e6cd8f4966e5c45ea979570a1df3dc1c4f4ad07d85538ee386369a66683d06",
+    "after_sha256": "35a22d28680746839d57172fff9c7cf1791b88749322e338b5ad6e127a9fac0c"
+  },
+  {
+    "path": "Supplementary.tex",
+    "before_sha256": "fc26cd1e9bf707e1b6d0d8276d3a122de01516eb91df763c36533691cef1f42b",
+    "after_sha256": "59476d7ed7d8e6ed963ba45a3f14bfab9b8f87086a3093dd028def9904fdd5d5"
+  },
+  {
+    "path": "Response letter.tex",
+    "before_sha256": "f291c5002d8be791a9b60adfb4aa53a6967a7e73c454b3b8a9e68089feaeb199",
+    "after_sha256": "72193a5b511b7b1aca533a8c8b3c0ee4a2903ac90e7a85911635ebee0126ded6"
+  },
+  {
+    "path": "FINAL_REVISION_CHECKLIST.md",
+    "before_sha256": "7f32d09fb249246fe1c9caf076d18557880034feb2a76a6b55a5d302256f0950",
+    "after_sha256": "32dcfdfc6daa14b1a513d56c692ee1d13aec3711f48d45577cb73e9070a2f6aa"
+  },
+  {
+    "path": "SUPPLEMENTARY_TABLE_REGISTRY.md",
+    "before_sha256": "6c4af7478db952251153c2d1274c93dbfc44688c6ce3a2ecd4e3f1aeb77dd447",
+    "after_sha256": "26db28b5b55ab7620318a57a6eee760d2087b707bdf33f554e5b0f2416c7dbe6"
+  },
+  {
+    "path": "ESI_\u5ba1\u7a3f\u610f\u89c1\u5206\u7c7b_\u4e25\u91cd\u7a0b\u5ea6\u6392\u5e8f_35\u9879.md",
+    "before_sha256": "65ea33a5b8b26fb6126442f21092941b9dbfd8982eb18d777a21df97ca48953e",
+    "after_sha256": "7fdf8fd098d76f9cf82e9187cc7fffe50e8140fc19f5c41bcfed87b185b6bcbd"
+  }
+]

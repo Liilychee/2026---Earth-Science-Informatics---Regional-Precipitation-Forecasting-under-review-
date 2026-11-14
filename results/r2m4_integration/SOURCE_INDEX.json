@@ -1,0 +1,121 @@
+[
+  {
+    "path": "code/analysis_r2m4_fixed_paired_ci.py",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e",
+    "md5": "fe3b951eb09c0f3d4f11cef00135535c",
+    "sha256": "8d55886c46d8dcf22c9d577dddffc9c7126df4210eee7a445470b34b949f6ece",
+    "bytes": 9082
+  },
+  {
+    "path": "code/analysis_q05e_event_paired_ci.py",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e",
+    "md5": "b429dd451547da117ff7d7819b49deaf",
+    "sha256": "1fb4a1a4acc11f2c00dfb24f3ec7fe4986ccb6a984b227041e681862c8613ec6",
+    "bytes": 7202
+  },
+  {
+    "path": "code/analysis_q05g_multiseed_events.py",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e",
+    "md5": "01307d3d2c9df238e8f38e07f75ef7a8",
+    "sha256": "1c3cd3387fdc75cc6b228566ee1ae019ef131c84cc547d0a702ec4e176b904bf",
+    "bytes": 9749
+  },
+  {
+    "path": "code/fig_style.py",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e",
+    "md5": "b97ce38e27500160de582a79b7f34a9a",
+    "sha256": "7f53405fd6560c8fcc31a1ef3b220f48fb1a98cfac6e917672be5676b101ea0b",
+    "bytes": 20459
+  },
+  {
+    "path": "results/r2m4_evidence_archive/METHOD_AUDIT.md",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e",
+    "md5": "b1b0021bd6f4c4bf0a8d07cc12c6463a",
+    "sha256": "1065dc4758b5f0307e1651cc86f484b6b9cd9161dd56148fa6a8a1bb10f28764",
+    "bytes": 9908
+  },
+  {
+    "path": "results/metrics/r2m4_fixed_event_paired.csv",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e",
+    "md5": "9739ce1b23215652b3f0204835c7d51b",
+    "sha256": "28dfe4873dd851e3d54b331f69bc7b9474904d3850b4e224786447031f386ba3",
+    "bytes": 5692
+  },
+  {
+    "path": "results/metrics/r2m4_fixed_event_scores.csv",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e",
+    "md5": "9062d963e8604283005c81b82bacc6cf",
+    "sha256": "19804e2bd376fe6f29ecdc969cecbbc115ded18fd9c23336442254e93e2f68b6",
+    "bytes": 4305
+  },
+  {
+    "path": "results/metrics/r2m4_fixed_output.txt",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e",
+    "md5": "5b6fce34f4a05e8b7188c79722009a3b",
+    "sha256": "d62455740a4e512c3952a86b4aaeb005c3b6a661de4aa7ece7b7981301afe9cf",
+    "bytes": 17071
+  },
+  {
+    "path": "results/metrics/q05e_event_scores.csv",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e",
+    "md5": "df8e768a265692e597c39ecf7ccf643d",
+    "sha256": "97f7d07e91617c93249a88c40509a1f6f89d546aedc8bd2c25de85af7f833e47",
+    "bytes": 6507
+  },
+  {
+    "path": "results/metrics/q05e_event_paired.csv",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e",
+    "md5": "305d0bab643fbee5d1f5d5fefe8a25d6",
+    "sha256": "47fe6016a429a50944cc939203d34d5fa90d31bb42dfdbaab97f037c513c5752",
+    "bytes": 21233
+  },
+  {
+    "path": "results/metrics/q05e_output.txt",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e",
+    "md5": "a14fdf1cc1b07f81b02906bed38451b4",
+    "sha256": "e3626abc57af44a3c57bf1974534b2f29cafd31fffa744420578f0d1ff04e168",
+    "bytes": 28705
+  },
+  {
+    "path": "results/metrics/q05g_multiseed_summary.csv",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e",
+    "md5": "3b6ee8c01a97b7141628bb556be9edf3",
+    "sha256": "2176c334db69cbd706139464b12971ad093bbed031a2872f90acbe9d91193054",
+    "bytes": 4326
+  },
+  {
+    "path": "results/metrics/q05g_multiseed_paired.csv",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e",
+    "md5": "9d33d5bb27a598aa6ea709bb74498565",
+    "sha256": "d8f0c43d714c9e84563369a80448df92d006bd47ee170fcbb50a77bae1834763",
+    "bytes": 5491
+  },
+  {
+    "path": "results/metrics/q05g_multiseed_per_seed.csv",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e",
+    "md5": "b3d27be356f024b32948e8bf6cc66421",
+    "sha256": "daeb15bd3dfb5d7908be2bd8b5730d8cf17d1bd77b1493b56d75e66e5c83f8b8",
+    "bytes": 9147
+  },
+  {
+    "path": "results/metrics/q05g_output.txt",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e",
+    "md5": "625714619864fa45f448b5671900292f",
+    "sha256": "ba1dfd142a0e20026d02d3709407832d697625f9ca5362ba6383a1f9a9358bcd",
+    "bytes": 11095
+  },
+  {
+    "path": "results/metrics/q05_spread_calibration.csv",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e",
+    "md5": "a0150c8bf8f666950e3635d6921cccdc",
+    "sha256": "43220e9aa5dd77cef67c17d2880858d1b94ef590767285c22946e73ef6a64e03",
+    "bytes": 2965
+  },
+  {
+    "path": "results/figures/revision/r1M1_prediction_distribution_stats.csv",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e",
+    "md5": "39dee70a92fb1433ffaa774274c8f9a8",
+    "sha256": "0a8908d3dba6b358a305716637c72727022b12a061bcb595865fe5cf9b23064a",
+    "bytes": 426
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "file": "Figures/r2M4_event_csi_comparison.pdf",
+  "width_mm": 119.00005764431424,
+  "height_mm": 145.0001286824544,
+  "native_inclusion": true,
+  "base_text_min_pt": 8,
+  "fonts": [
+    "LMMathItalic6-Regular",
+    "LMMathItalic8-Regular",
+    "LMMathItalic9-Regular",
+    "LMMathSymbols6-Regular",
+    "LMRoman12-Regular",
+    "LMRoman6-Regular",
+    "LMRoman8-Regular",
+    "LMRoman9-Bold",
+    "LMRoman9-Regular"
+  ],
+  "points": 77,
+  "missing_optimized_05_not_zero": true,
+  "style_adapter": "Archived fig_style colors/markers/fonts/sizes; PGF/pdflatex PDF backend because dvipng and Poppler CLI unavailable; fitz rendering."
+}

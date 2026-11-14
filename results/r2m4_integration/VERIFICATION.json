@@ -1,0 +1,61 @@
+{
+  "numeric_transcriptions": 1217,
+  "figure_points": 77,
+  "prior_exact_excerpts_preserved": 62,
+  "new_exact_excerpts": 7,
+  "other_responses_unchanged": true,
+  "manuscript_scope_verified": true,
+  "original_tables_preserved": 27,
+  "auc_event_labels_match": true,
+  "all_24_high_fixed_differences_negative_pointwise_ci": true,
+  "holm_not_reported": true,
+  "no_formal_predictions_generated": true,
+  "pdf": {
+    "Supplementary": {
+      "pages": 30,
+      "checked_pages": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    "manuscript": {
+      "pages": 82,
+      "checked_pages": [
+        1,
+        2,
+        26,
+        27,
+        50,
+        51,
+        52,
+        65,
+        75
+      ]
+    },
+    "Response letter": {
+      "pages": 60,
+      "checked_pages": [
+        34,
+        35,
+        36
+      ]
+    }
+  },
+  "visual_100percent_passed": true,
+  "new_figure_number": 5,
+  "new_figure_page": 51,
+  "table_labels": {
+    "stab:r2m4_fixed_events": "S28",
+    "stab:r2m4_tuned_events": "S29",
+    "stab:r2m4_seed_scores": "S30",
+    "stab:r2m4_ensemble_events": "S31"
+  },
+  "no_new_horizontal_overflow_or_undefined_refs": true,
+  "prior_images_unchanged": true
+}

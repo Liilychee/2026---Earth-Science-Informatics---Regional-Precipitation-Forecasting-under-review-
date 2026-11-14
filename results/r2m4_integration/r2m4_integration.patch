@@ -1,0 +1,441 @@
+--- a/manuscript.tex
++++ b/manuscript.tex
+@@ -50,7 +50,7 @@
+ \affil*[3]{\orgdiv{School of Computer Science and Statistics}, \orgname{Trinity College Dublin}, \orgaddress{\city{Dublin}, \country{Ireland}}}
+ 
+ \abstract{
+-Short-term precipitation forecasting over Dublin is challenging because of the strong temporal variability of rainfall and the maritime influence on regional weather conditions. Using hourly European Centre for Medium-Range Weather Forecasts Reanalysis v5 (ERA5) data from 2004 to 2021 subsampled every 6~h without temporal aggregation, this study systematically evaluates reference forecasts, XGBoost, Transformer, deterministic bidirectional long short-term memory (BiLSTM) models, and probabilistic recurrent models for 6-hour-ahead prediction of hourly ERA5-derived regional-mean precipitation over Dublin, expressed as an hourly-mean rate in mm\,h$^{-1}$ rather than as a total over the next 6~h. Model performance is assessed using repeated training with five fixed random seeds, rainfall-regime and threshold-based evaluation, probabilistic metrics, SHapley Additive exPlanations (SHAP) attribution, and feature ablation. BiLSTM-Attention achieved the lowest mean test root mean squared error (RMSE) of 0.2429~mm\,h$^{-1}$, closely followed by XGBoost at 0.2439~mm\,h$^{-1}$, while bootstrap analysis showed no clear difference between the two models for the full test set. \textcolor{red}{Under upper-tail precipitation, however, XGBoost achieved lower error, while predicted amplitudes were compressed. Validation-selected event cutoffs recovered some detections but incurred high false-alarm ratios, and tested loss and weighting strategies exposed model-dependent tradeoffs rather than resolving upper-tail underestimation.} The probabilistic recurrent models produced empirical 95\% coverage close to the nominal level over the full test set, but coverage deteriorated markedly for upper-tail precipitation events, revealing substantial undercoverage. Matched five-seed SHAP and ablation analyses in two architectures revealed regime-dependent model reliance and overlapping predictive information among precipitation-related inputs, rather than a universally dominant predictor. These results highlight the importance of regime-specific evaluation, repeated-run robustness analysis, and complementary interpretability methods in regional precipitation forecasting.
++Short-term precipitation forecasting over Dublin is challenging because of the strong temporal variability of rainfall and the maritime influence on regional weather conditions. Using hourly European Centre for Medium-Range Weather Forecasts Reanalysis v5 (ERA5) data from 2004 to 2021 subsampled every 6~h without temporal aggregation, this study systematically evaluates reference forecasts, XGBoost, Transformer, deterministic bidirectional long short-term memory (BiLSTM) models, and probabilistic recurrent models for 6-hour-ahead prediction of hourly ERA5-derived regional-mean precipitation over Dublin, expressed as an hourly-mean rate in mm\,h$^{-1}$ rather than as a total over the next 6~h. Model performance is assessed using repeated training with five fixed random seeds, rainfall-regime and threshold-based evaluation, probabilistic metrics, SHapley Additive exPlanations (SHAP) attribution, and feature ablation. BiLSTM-Attention achieved the lowest mean test root mean squared error (RMSE) of 0.2429~mm\,h$^{-1}$, closely followed by XGBoost at 0.2439~mm\,h$^{-1}$, while bootstrap analysis showed no clear difference between the two models for the full test set. \textcolor{red}{Under upper-tail precipitation, however, XGBoost achieved lower error, while predicted amplitudes were compressed. Validation-selected event cutoffs recovered some detections but incurred high false-alarm ratios, and tested loss and weighting strategies exposed model-dependent tradeoffs rather than resolving upper-tail underestimation.} \textcolor{red}{Under fixed high-intensity decision thresholds, learning-model CSI was lower than Persistence, limiting their interpretation as event-warning systems.} The probabilistic recurrent models produced empirical 95\% coverage close to the nominal level over the full test set, but coverage deteriorated markedly for upper-tail precipitation events, revealing substantial undercoverage. Matched five-seed SHAP and ablation analyses in two architectures revealed regime-dependent model reliance and overlapping predictive information among precipitation-related inputs, rather than a universally dominant predictor. These results highlight the importance of regime-specific evaluation, repeated-run robustness analysis, and complementary interpretability methods in regional precipitation forecasting.
+ }
+ 
+ \keywords{Short-term precipitation forecasting, ERA5 reanalysis data, Model robustness, Probabilistic forecasting, Predictor attribution}
+@@ -432,7 +432,7 @@
+ Event intensity and the forecast decision cutoff were distinguished explicitly. An observed event is $y\geq\tau$, where $\tau$ is 0.1~mm\,h$^{-1}$, a training-derived Q90, Q95 or Q97.5 threshold, or 1.0~mm\,h$^{-1}$. A predicted event is $\hat{\mu}\geq c_\tau$, where $\hat{\mu}$ is the point forecast (the predictive mean for Gaussian models). We evaluated both the fixed rule $c_\tau=\tau$ and a cutoff selected to maximize CSI on validation data for each model and intensity threshold, then held fixed on the test set. The test set was not used to optimize cutoffs. ROC AUC evaluates ranking from the continuous predicted means for a given observed-event definition and does not depend on a single decision cutoff. These mean-based scores are distinct from scores of Gaussian exceedance probabilities. For each rule, outcomes were classified as true positives (TP), false positives (FP), false negatives (FN), and true negatives (TN).
+ \par}
+ 
+-Event detection was evaluated using accuracy, precision, probability of detection (POD), F1 score, critical success index (CSI), and false alarm ratio (FAR). POD is equivalent to recall and represents the proportion of observed rainfall events that were correctly identified. CSI accounts for both missed events and false alarms and is defined as
++\textcolor{red}{Event detection is reported using probability of detection (POD), false alarm ratio (FAR), critical success index (CSI), and ROC AUC.} POD is equivalent to recall and represents the proportion of observed rainfall events that were correctly identified. CSI accounts for both missed events and false alarms and is defined as
+ 
+ \begin{equation}
+ \mathrm{CSI}
+@@ -452,7 +452,15 @@
+ \label{eq:far}
+ \end{equation}
+ 
+-Accuracy, precision, POD, and F1 score were calculated using their standard definitions. The threshold analysis was performed directly on the saved test predictions and therefore did not require additional model training.
++\textcolor{red}{The threshold analyses use saved test predictions and do not require additional model training.}
++{\color{red}\hypersetup{linkcolor=red,citecolor=red}
++The additional fixed-rule comparison includes $\tau=0.5$~mm\,h$^{-1}$; no validation-optimized result was saved for that intensity threshold. For the optimized rule, each model's validation predictions define candidates at 300 equally spaced quantile probabilities from 0.5 to 0.999; duplicate candidate values are removed. The candidate maximizing validation CSI is retained, with the first (lowest) candidate retained in a tie, and applied unchanged to test predictions. POD is $\mathrm{TP}/(\mathrm{TP}+\mathrm{FN})$; FAR is the false alarm ratio $\mathrm{FP}/(\mathrm{TP}+\mathrm{FP})$, not the false positive rate $\mathrm{FP}/(\mathrm{FP}+\mathrm{TN})$. ROC AUC measures the probability that a randomly chosen observed event receives a higher continuous forecast score than a non-event, with half credit for ties. CSI and AUC are dimensionless. FAR is undefined when no events are forecast and is displayed as a dash, whereas CSI is zero when there are observed events but no forecasts.
++\par}
++
++{\color{red}\hypersetup{linkcolor=red,citecolor=red}
++For event-score differences from Persistence, the saved single-run analyses use paired circular-block bootstrap resampling of all 3,939 test targets: block length 28 consecutive six-hourly samples (seven days), 2,000 replicates and random seed 42. Blocks wrap around the end of the series, and the same resampled indices are used for all models and intensity thresholds. Differences are model minus Persistence, with pointwise 95\% percentile intervals; they are not adjusted for multiple comparisons and are not simultaneous confidence intervals. Decision cutoffs are held fixed during resampling. Confidence intervals are conditional on the selected decision thresholds and do not account for uncertainty in threshold selection. Separate q05g results summarize five seed-level scores for each Attention architecture; their paired intervals instead evaluate the five-seed mean prediction, with a new cutoff selected on its validation mean prediction and then held fixed. They are neither single-run intervals nor intervals for the mean of five seed-level scores.
++\par}
++
+ 
+ {\color{red}
+ The saved-prediction distribution and event diagnostics used XGBoost, Transformer, BU-LSTM, BiLSTM-Attention, BU-LSTM-Attention and Probabilistic BiLSTM-Attention. Separate five-seed diagnostics of prediction maxima were available for BiLSTM-Attention and BU-LSTM-Attention. They are identified separately from the single saved runs and the main five-seed comparison. Additional controlled training-objective experiments compared MSE with Huber loss ($\delta\in\{0.5,1,2\}$ in standardized target units) for BiLSTM-Attention and Transformer, with five seeds per setting and selection by validation RMSE. The separate XGBoost sensitivity comparison examined sample weighting, pseudo-Huber, log1p-target and Tweedie objectives against its own MSE control. Its metrics were computed on the predictions averaged across five seeds (seed-averaged predictions), not by averaging five seed-level RMSE values, and were not substituted into the main comparison. Inverse-frequency weights were computed from three training-period precipitation classes ($y<0.1$, $0.1\leq y<\mathrm{Q95}$ and $y\geq\mathrm{Q95}$, in mm\,h$^{-1}$) and normalized to have mean one over the training samples. Reported paired differences use unrounded results.
+@@ -796,7 +804,29 @@
+ {\color{red}
+ At the fixed mean-based rule $c_\tau=\tau=1.0$~mm\,h$^{-1}$, XGBoost detected only one of the 91 test events, whereas the other learning models in the saved-prediction diagnostic detected none. Selecting $c_\tau$ on the validation set instead increased test POD to approximately 0.26--0.62 across these models, but FAR was approximately 0.86--0.92. Their test ROC AUC values were approximately 0.82--0.87, compared with 0.73 for persistence. Thus, the forecasts retained information for ranking exceedance events, even when their means rarely reached the event-intensity threshold. Lowering the decision cutoff recovered detections at the cost of many false alarms; it did not resolve the high-threshold event-prediction problem.
+ \par}
+-% TODO[R1-M1-TABLES]: Tables S9/S9c/S9d, including fixed and validation-selected cutoffs, event counts and run identities; not yet inserted.
++% R2-M4: saved-event evidence is now in the labelled supplementary tables below.
++
++{\color{red}\hypersetup{linkcolor=red,citecolor=red}
++Figure~\ref{fig:r2m4_event_csi} distinguishes two decision rules on the saved single-run forecasts. Under the fixed rule, Persistence CSI was 0.139 at Q95, 0.076 at Q97.5, 0.166 at 0.5~mm\,h$^{-1}$ and 0.058 at 1.0~mm\,h$^{-1}$; the six learning models reached at most 0.071, 0.009, 0.113 and 0.011, respectively. All 24 learning-model differences at these four thresholds were negative, with each pointwise 95\% paired circular-block interval below zero; this is not a multiple-comparison-adjusted claim (Supplementary Table~\ref{supp-stab:r2m4_fixed_events}). For example, XGBoost minus Persistence was $-0.0681$ at Q95, with interval $[-0.1131,-0.0219]$, and $-0.0533$ at 0.5~mm\,h$^{-1}$, with interval $[-0.0949,-0.0118]$. At 1.0~mm\,h$^{-1}$, the corresponding difference was $-0.0472$ with interval $[-0.0791,-0.0194]$. Several zero CSI values occurred because the predicted means never reached the fixed threshold and no event forecast was issued, not because missing scores were replaced by zero.
++\par}
++
++\begin{figure}[!htbp]
++\centering
++\includegraphics{r2M4_event_csi_comparison.pdf}
++\begingroup\color{red}\hypersetup{linkcolor=red}
++\caption{CSI from the original saved single-run predictions on 3,939 test targets for six learning models and Persistence. Panel A uses the fixed rule $c_\tau=\tau$; Panel B uses each model's validation-CSI-maximizing cutoff from a 300-quantile-probability candidate grid, then freezes it for testing. Points are discrete evaluated thresholds, horizontally offset by model for visibility; no continuous threshold response is implied. Q90, Q95 and Q97.5 are derived from 18,404 windowed training targets; the actual intensities are printed in mm\,h$^{-1}$. Fixed-rule zeros are retained. Panel B has no 0.5 result, so that category contains no points, rather than zeros. These are neither five-seed means nor uncertainty intervals; paired pointwise intervals are reported in Supplementary Tables~\ref{supp-stab:r2m4_fixed_events} and~\ref{supp-stab:r2m4_tuned_events}.}
++\label{fig:r2m4_event_csi}
++\endgroup
++\end{figure}
++
++{\color{red}\hypersetup{linkcolor=red,citecolor=red}
++Validation-selected cutoffs changed the operating rule rather than removing the fixed-rule failure. At Q95, five learning models had higher CSI than the separately optimized Persistence forecast; the Transformer's difference was negative and its interval included zero. At 1.0~mm\,h$^{-1}$, four learning-model intervals supported higher CSI, while those for Transformer and Probabilistic BiLSTM-Attention included zero. Learning-model FAR was approximately 0.73--0.80 at Q95 and 0.86--0.92 at 1.0~mm\,h$^{-1}$. Their AUCs were approximately 0.80--0.85 and 0.82--0.87, respectively, compared with Persistence values of 0.747 and 0.732. This ranking information does not establish an advantage in fixed-rule CSI. Supplementary Table~\ref{supp-stab:r2m4_tuned_events} reports the selected cutoffs, full scores and paired intervals. Confidence intervals are conditional on the selected decision thresholds and do not account for uncertainty in threshold selection.
++\par}
++
++{\color{red}\hypersetup{linkcolor=red,citecolor=red}
++The separate five-seed diagnostics must not be read as repetitions of those single saved runs. At Q95, validation-tuned seed-level mean CSI was $0.1911\pm0.0053$ for BiLSTM-Attention and $0.1874\pm0.0082$ for BU-LSTM-Attention (mean $\pm$ seed SD). Under the fixed Q95 rule, BU-LSTM-Attention issued no event forecast in any of its five runs; at 1.0~mm\,h$^{-1}$, neither architecture issued an event forecast in any run. Supplementary Table~\ref{supp-stab:r2m4_seed_scores} separates seed summaries from the five-seed mean-prediction paired comparisons in Table~\ref{supp-stab:r2m4_ensemble_events}. The latter use validation cutoffs selected for the mean predictions, not averages of seed-specific cutoffs or scores.
++\par}
++
+ 
+ \subsubsection{Sensitivity to Training Objectives}
+ \label{sec:training_objective_sensitivity}
+@@ -996,6 +1026,11 @@
+ The objective-sensitivity comparison also shows why improving upper-tail error alone is insufficient. XGBoost inverse-frequency weighting reduced upper-tail RMSE on seed-averaged predictions, but increased overall RMSE and produced a positive bias of $+0.1282$~mm\,h$^{-1}$ in M3 itself. No statistically supported improvement in AUC or CSI was detected. The Huber comparison was model dependent: BiLSTM-Attention deteriorated, whereas the Transformer improved in overall RMSE within the fixed training budget. Both Transformer configurations frequently approached the epoch limit, and seed-based intervals for its wet and upper-tail differences included zero. These results do not establish a general or fully converged-training advantage for Huber.
+ \par}
+ 
++
++{\color{red}\hypersetup{linkcolor=red,citecolor=red}
++The fixed-rule event results sharpen the limitation identified by the amplitude diagnostics. Compressed forecast amplitudes led to few or no forecasts at high fixed thresholds and consequently many misses. This is an observed property of these saved predictions, not a causal diagnosis of why their amplitudes are compressed. Persistence achieved higher fixed-rule CSI at the four thresholds examined above, yet its own FAR ranged from approximately 0.72 to 0.89, so it was not a reliable high-intensity warning system either. Higher learning-model AUC indicates useful event ranking but does not guarantee skill when the predicted mean is compared directly with the physical intensity threshold. Validation-selected cutoffs constitute another operating rule and recover some detections at a large false-alarm cost; their intervals omit selection uncertainty. The existing experiments do not identify whether predictors, event scarcity, loss functions or other modelling choices are the dominant cause of amplitude compression.
++\par}
++
+ The performance of XGBoost in the upper-tail subset should not be interpreted as evidence that tree-based models were generally superior to the deep-learning models. BiLSTM-Attention remained numerically best for the overall point-forecast comparison, and the difference from XGBoost was small. The clearer advantage of XGBoost appeared only in the upper tail of the precipitation distribution. One possible explanation is that tree-based models can partition predictor space effectively without requiring the same amount of repeated examples needed to estimate complex neural-network representations. This pattern is broadly consistent with evidence that tree-based methods can match or exceed deep neural networks on tabular data, particularly under limited or imbalanced sample sizes \citep{grinsztajn2022tree}. This may be useful when high-intensity rainfall events are relatively sparse, although the present experiments do not establish the underlying mechanism directly.
+ 
+ {\color{red}\hypersetup{linkcolor=red,citecolor=red}
+@@ -1074,6 +1109,11 @@
+ BiLSTM-Attention achieved the lowest overall point-forecast error across five fixed random seeds, although its advantage over XGBoost was small and was not clearly separated by the block-bootstrap analysis for the full test set. Model behaviour changed under stronger precipitation. XGBoost performed more favourably for upper-tail samples, while all models showed substantial deterioration as the rainfall threshold increased. The probabilistic recurrent models achieved empirical 95\% coverage close to the nominal level over the complete test set, but coverage decreased markedly in the upper tail of the precipitation distribution. The occurrence of negative lower prediction bounds also highlighted a limitation of the Gaussian predictive assumption for a non-negative and strongly skewed variable such as precipitation. \textcolor{red}{Amplitude diagnostics confirmed upper-tail underestimation. Validation-selected decision cutoffs recovered some events but produced many false alarms, and the tested loss and weighting strategies showed model-dependent tradeoffs rather than resolving this limitation.}
+ 
+ Matched five-seed SHAP and ablation analyses in BiLSTM-Attention and BU-LSTM-Attention distinguished regime-dependent model reliance from incremental predictive utility. Upper-tail attribution was largest for mntpr, while individually removing precipitation-related predictors had small or unstable effects. Removing the precipitation group nevertheless worsened BiLSTM-Attention performance, supporting overlapping predictive information. The weaker stability of BU-LSTM-Attention ablations and the fixed-background setting preclude a universal importance ranking or causal interpretation.
++
++
++{\color{red}\hypersetup{linkcolor=red,citecolor=red}
++In the saved single-run comparison, all six learning models had lower CSI than Persistence under fixed Q95, Q97.5, 0.5 and 1.0~mm\,h$^{-1}$ decision rules. Better AUC and improvements obtained with validation-selected cutoffs do not remove this limitation, particularly given the associated high false-alarm ratios.
++\par}
+ 
+ Spatial averaging across the Dublin domain may smooth localized high-intensity rainfall, the 6-hour subsampling omits the intervening hourly evolution and limits the representation of rapidly evolving events, and upper-tail precipitation remains relatively sparse in the dataset. The controlled Bernoulli--Gamma comparison improved overall probabilistic scores but retained upper-tail undercoverage. Future work should assess higher-resolution observations and the transferability of the tested training and distribution choices to other settings, with joint evaluation of overall accuracy, event detection and false alarms. Evaluation across additional regions would also help determine how well the observed model behaviour generalizes beyond the Dublin setting.
+ 
+--- a/Supplementary.tex
++++ b/Supplementary.tex
+@@ -31,6 +31,16 @@
+     {\bfseries ##1}\hskip2mm ##2\vphantom{y}\par}%
+     \vskip\belowcaptionskip}%
+ }{\end{table}}
++\makeatother
++
++
++% R2-M4: page-breaking native tables; existing revisiontable appearance is unchanged.
++\makeatletter
++\newenvironment{revisionlongtable}{\begingroup\color{red}\small
++\setlength{\tabcolsep}{3pt}\setlength{\LTcapwidth}{\linewidth}
++\renewcommand{\arraystretch}{1.1}
++\long\def\LT@makecaption##1##2##3{\LT@mcol\LT@cols c{\hbox to\z@{\hss\parbox[t]\LTcapwidth{{\fontsize{8bp}{9.5bp}\selectfont\raggedright ##1{\bfseries ##2}\hskip2mm ##3\par}\vskip6pt}\hss}}}
++}{\endgroup}
+ \makeatother
+ 
+ \begin{document}
+@@ -878,4 +888,214 @@
+ \end{tabularx}
+ \end{revisiontable}
+ 
++\clearpage
++\begin{revisionlongtable}
++\begin{longtable}{@{}>{\raggedright\arraybackslash}p{30mm}rrrrrp{29mm}p{29mm}@{}}
++\caption{Fixed-rule event scores on 3,939 original single-run test predictions, $c_\tau=\tau$. All differences are learning model minus Persistence, with pointwise 95\% paired circular-block percentile intervals (28 six-hourly samples, 2,000 replicates, seed 42; shared indices across models/thresholds), without multiplicity adjustment. FAR means FP/(TP+FP); a dash denotes undefined FAR for zero forecasts or an unavailable metric/paired comparison, not zero. AUC and its paired intervals are taken from the same continuous saved model/Persistence scores in q05e and do not depend on the cutoff; no AUC at 0.5 or matching fixed-reference AR(1)/climatology AUC was saved in these tables, so those cells remain dashes. New fixed-rule AR(1) and month-by-hour climatology are training-fitted references; missing paired intervals are not inferred. Q thresholds use 18,404 training targets. This table does not use ensemble predictions or five-seed means. No Holm-adjusted inference is presented.}\label{stab:r2m4_fixed_events}\\
++\hline
++\shortstack{\textbf{Threshold/}\\\textbf{model}} & \shortstack{\textbf{Forecasts/}\\\textbf{hits}} & \textbf{POD} & \textbf{FAR} & \textbf{CSI} & \textbf{AUC} & \shortstack{\textbf{$\Delta$CSI}\\\textbf{[95\% CI]}} & \shortstack{\textbf{$\Delta$AUC}\\\textbf{[95\% CI]}} \\
++\hline
++\endfirsthead
++\multicolumn{8}{@{}l}{\textbf{Table~\thetable{} (continued)}}\\
++\hline
++\shortstack{\textbf{Threshold/}\\\textbf{model}} & \shortstack{\textbf{Forecasts/}\\\textbf{hits}} & \textbf{POD} & \textbf{FAR} & \textbf{CSI} & \textbf{AUC} & \shortstack{\textbf{$\Delta$CSI}\\\textbf{[95\% CI]}} & \shortstack{\textbf{$\Delta$AUC}\\\textbf{[95\% CI]}} \\
++\hline
++\endhead
++\hline
++\multicolumn{8}{r@{}}{Continued on next page}\\
++\endfoot
++\hline
++\endlastfoot
++\multicolumn{8}{@{}l}{\textbf{Wet ($\geq0.1$)}: $\tau=0.1000$~mm\,h$^{-1}$; observed events $854$}\\*
++\textit{Wet}: XGBoost & $1387$/$653$ & $0.765$ & $0.529$ & $0.411$ & $0.837$ & \shortstack{$+0.0768$\\$[0.0564,0.0981]$} & \shortstack{$+0.0705$\\$[0.0559,0.0856]$} \\
++\textit{Wet}: Transformer & $1062$/$481$ & $0.563$ & $0.547$ & $0.335$ & $0.782$ & \shortstack{$+0.0008$\\$[-0.0252,0.0255]$} & \shortstack{$+0.0153$\\$[-0.0057,0.0352]$} \\
++\textit{Wet}: BU-LSTM & $1271$/$596$ & $0.698$ & $0.531$ & $0.390$ & $0.820$ & \shortstack{$+0.0554$\\$[0.0350,0.0762]$} & \shortstack{$+0.0536$\\$[0.0396,0.0679]$} \\
++\textit{Wet}: BiLSTM-Attention & $1214$/$609$ & $0.713$ & $0.498$ & $0.417$ & $0.824$ & \shortstack{$+0.0830$\\$[0.0632,0.1032]$} & \shortstack{$+0.0575$\\$[0.0409,0.0745]$} \\
++\textit{Wet}: BU-LSTM-Attention & $1332$/$630$ & $0.738$ & $0.527$ & $0.405$ & $0.825$ & \shortstack{$+0.0705$\\$[0.0505,0.0912]$} & \shortstack{$+0.0585$\\$[0.0442,0.0730]$} \\
++\textit{Wet}: Prob. BiLSTM-Attention & $1275$/$613$ & $0.718$ & $0.519$ & $0.404$ & $0.826$ & \shortstack{$+0.0700$\\$[0.0506,0.0903]$} & \shortstack{$+0.0597$\\$[0.0465,0.0739]$} \\
++\textit{Wet}: Persistence & $854$/$428$ & $0.501$ & $0.499$ & $0.334$ & $0.767$ & -- & -- \\
++\textit{Wet}: AR(1) (train fit) & $944$/$460$ & $0.539$ & $0.513$ & $0.344$ & -- & -- & -- \\
++\textit{Wet}: Month-by-hour climatology & $2268$/$555$ & $0.650$ & $0.755$ & $0.216$ & -- & -- & -- \\
++\hline
++\multicolumn{8}{@{}l}{\textbf{Q90}: $\tau=0.2958$~mm\,h$^{-1}$; observed events $463$}\\*
++\textit{Q90}: XGBoost & $377$/$162$ & $0.350$ & $0.570$ & $0.239$ & $0.848$ & \shortstack{$+0.0124$\\$[-0.0220,0.0467]$} & \shortstack{$+0.0910$\\$[0.0719,0.1126]$} \\
++\textit{Q90}: Transformer & $79$/$33$ & $0.071$ & $0.582$ & $0.065$ & $0.792$ & \shortstack{$-0.1617$\\$[-0.2011,-0.1205]$} & \shortstack{$+0.0348$\\$[0.0082,0.0628]$} \\
++\textit{Q90}: BU-LSTM & $192$/$85$ & $0.184$ & $0.557$ & $0.149$ & $0.834$ & \shortstack{$-0.0774$\\$[-0.1078,-0.0457]$} & \shortstack{$+0.0769$\\$[0.0587,0.0971]$} \\
++\textit{Q90}: BiLSTM-Attention & $369$/$162$ & $0.350$ & $0.561$ & $0.242$ & $0.838$ & \shortstack{$+0.0153$\\$[-0.0133,0.0427]$} & \shortstack{$+0.0811$\\$[0.0598,0.1034]$} \\
++\textit{Q90}: BU-LSTM-Attention & $342$/$141$ & $0.305$ & $0.588$ & $0.212$ & $0.839$ & \shortstack{$-0.0141$\\$[-0.0386,0.0088]$} & \shortstack{$+0.0817$\\$[0.0630,0.1026]$} \\
++\textit{Q90}: Prob. BiLSTM-Attention & $338$/$139$ & $0.300$ & $0.589$ & $0.210$ & $0.833$ & \shortstack{$-0.0165$\\$[-0.0457,0.0135]$} & \shortstack{$+0.0759$\\$[0.0573,0.0963]$} \\
++\textit{Q90}: Persistence & $463$/$171$ & $0.369$ & $0.631$ & $0.226$ & $0.757$ & -- & -- \\
++\textit{Q90}: AR(1) (train fit) & $155$/$66$ & $0.143$ & $0.574$ & $0.120$ & -- & -- & -- \\
++\textit{Q90}: Month-by-hour climatology & $0$/$0$ & $0.000$ & -- & $0.000$ & -- & -- & -- \\
++\hline
++\multicolumn{8}{@{}l}{\textbf{0.5}: $\tau=0.5000$~mm\,h$^{-1}$; observed events $288$}\\*
++\textit{0.5}: XGBoost & $107$/$40$ & $0.139$ & $0.626$ & $0.113$ & -- & \shortstack{$-0.0533$\\$[-0.0949,-0.0118]$} & -- \\
++\textit{0.5}: Transformer & $6$/$4$ & $0.014$ & $0.333$ & $0.014$ & -- & \shortstack{$-0.1522$\\$[-0.1912,-0.1130]$} & -- \\
++\textit{0.5}: BU-LSTM & $0$/$0$ & $0.000$ & -- & $0.000$ & -- & \shortstack{$-0.1660$\\$[-0.2007,-0.1303]$} & -- \\
++\textit{0.5}: BiLSTM-Attention & $7$/$6$ & $0.021$ & $0.143$ & $0.021$ & -- & \shortstack{$-0.1452$\\$[-0.1793,-0.1095]$} & -- \\
++\textit{0.5}: BU-LSTM-Attention & $0$/$0$ & $0.000$ & -- & $0.000$ & -- & \shortstack{$-0.1660$\\$[-0.2007,-0.1303]$} & -- \\
++\textit{0.5}: Prob. BiLSTM-Attention & $0$/$0$ & $0.000$ & -- & $0.000$ & -- & \shortstack{$-0.1660$\\$[-0.2007,-0.1303]$} & -- \\
++\textit{0.5}: Persistence & $288$/$82$ & $0.285$ & $0.715$ & $0.166$ & -- & -- & -- \\
++\textit{0.5}: AR(1) (train fit) & $28$/$6$ & $0.021$ & $0.786$ & $0.019$ & -- & -- & -- \\
++\textit{0.5}: Month-by-hour climatology & $0$/$0$ & $0.000$ & -- & $0.000$ & -- & -- & -- \\
++\hline
++\multicolumn{8}{@{}l}{\textbf{Q95}: $\tau=0.5740$~mm\,h$^{-1}$; observed events $238$}\\*
++\textit{Q95}: XGBoost & $50$/$19$ & $0.080$ & $0.620$ & $0.071$ & $0.848$ & \shortstack{$-0.0681$\\$[-0.1131,-0.0219]$} & \shortstack{$+0.1007$\\$[0.0736,0.1298]$} \\
++\textit{Q95}: Transformer & $2$/$1$ & $0.004$ & $0.500$ & $0.004$ & $0.798$ & \shortstack{$-0.1346$\\$[-0.1745,-0.0958]$} & \shortstack{$+0.0512$\\$[0.0179,0.0887]$} \\
++\textit{Q95}: BU-LSTM & $0$/$0$ & $0.000$ & -- & $0.000$ & $0.833$ & \shortstack{$-0.1388$\\$[-0.1769,-0.1012]$} & \shortstack{$+0.0859$\\$[0.0616,0.1113]$} \\
++\textit{Q95}: BiLSTM-Attention & $1$/$1$ & $0.004$ & $0.000$ & $0.004$ & $0.835$ & \shortstack{$-0.1346$\\$[-0.1711,-0.0980]$} & \shortstack{$+0.0880$\\$[0.0592,0.1175]$} \\
++\textit{Q95}: BU-LSTM-Attention & $0$/$0$ & $0.000$ & -- & $0.000$ & $0.838$ & \shortstack{$-0.1388$\\$[-0.1769,-0.1012]$} & \shortstack{$+0.0910$\\$[0.0672,0.1163]$} \\
++\textit{Q95}: Prob. BiLSTM-Attention & $0$/$0$ & $0.000$ & -- & $0.000$ & $0.832$ & \shortstack{$-0.1388$\\$[-0.1769,-0.1012]$} & \shortstack{$+0.0850$\\$[0.0589,0.1122]$} \\
++\textit{Q95}: Persistence & $238$/$58$ & $0.244$ & $0.756$ & $0.139$ & $0.747$ & -- & -- \\
++\textit{Q95}: AR(1) (train fit) & $16$/$2$ & $0.008$ & $0.875$ & $0.008$ & -- & -- & -- \\
++\textit{Q95}: Month-by-hour climatology & $0$/$0$ & $0.000$ & -- & $0.000$ & -- & -- & -- \\
++\hline
++\multicolumn{8}{@{}l}{\textbf{Q97.5}: $\tau=0.9322$~mm\,h$^{-1}$; observed events $106$}\\*
++\textit{Q97.5}: XGBoost & $2$/$1$ & $0.009$ & $0.500$ & $0.009$ & $0.866$ & \shortstack{$-0.0668$\\$[-0.0968,-0.0376]$} & \shortstack{$+0.1277$\\$[0.0914,0.1668]$} \\
++\textit{Q97.5}: Transformer & $0$/$0$ & $0.000$ & -- & $0.000$ & $0.820$ & \shortstack{$-0.0761$\\$[-0.1078,-0.0443]$} & \shortstack{$+0.0811$\\$[0.0367,0.1317]$} \\
++\textit{Q97.5}: BU-LSTM & $0$/$0$ & $0.000$ & -- & $0.000$ & $0.845$ & \shortstack{$-0.0761$\\$[-0.1078,-0.0443]$} & \shortstack{$+0.1066$\\$[0.0752,0.1436]$} \\
++\textit{Q97.5}: BiLSTM-Attention & $0$/$0$ & $0.000$ & -- & $0.000$ & $0.859$ & \shortstack{$-0.0761$\\$[-0.1078,-0.0443]$} & \shortstack{$+0.1208$\\$[0.0870,0.1592]$} \\
++\textit{Q97.5}: BU-LSTM-Attention & $0$/$0$ & $0.000$ & -- & $0.000$ & $0.852$ & \shortstack{$-0.0761$\\$[-0.1078,-0.0443]$} & \shortstack{$+0.1131$\\$[0.0817,0.1496]$} \\
++\textit{Q97.5}: Prob. BiLSTM-Attention & $0$/$0$ & $0.000$ & -- & $0.000$ & $0.844$ & \shortstack{$-0.0761$\\$[-0.1078,-0.0443]$} & \shortstack{$+0.1058$\\$[0.0712,0.1467]$} \\
++\textit{Q97.5}: Persistence & $106$/$15$ & $0.142$ & $0.858$ & $0.076$ & $0.739$ & -- & -- \\
++\textit{Q97.5}: AR(1) (train fit) & $0$/$0$ & $0.000$ & -- & $0.000$ & -- & -- & -- \\
++\textit{Q97.5}: Month-by-hour climatology & $0$/$0$ & $0.000$ & -- & $0.000$ & -- & -- & -- \\
++\hline
++\multicolumn{8}{@{}l}{\textbf{1.0}: $\tau=1.0000$~mm\,h$^{-1}$; observed events $91$}\\*
++\textit{1.0}: XGBoost & $1$/$1$ & $0.011$ & $0.000$ & $0.011$ & $0.868$ & \shortstack{$-0.0472$\\$[-0.0791,-0.0194]$} & \shortstack{$+0.1363$\\$[0.0971,0.1799]$} \\
++\textit{1.0}: Transformer & $0$/$0$ & $0.000$ & -- & $0.000$ & $0.822$ & \shortstack{$-0.0581$\\$[-0.0936,-0.0247]$} & \shortstack{$+0.0899$\\$[0.0402,0.1458]$} \\
++\textit{1.0}: BU-LSTM & $0$/$0$ & $0.000$ & -- & $0.000$ & $0.848$ & \shortstack{$-0.0581$\\$[-0.0936,-0.0247]$} & \shortstack{$+0.1163$\\$[0.0850,0.1530]$} \\
++\textit{1.0}: BiLSTM-Attention & $0$/$0$ & $0.000$ & -- & $0.000$ & $0.861$ & \shortstack{$-0.0581$\\$[-0.0936,-0.0247]$} & \shortstack{$+0.1291$\\$[0.0895,0.1724]$} \\
++\textit{1.0}: BU-LSTM-Attention & $0$/$0$ & $0.000$ & -- & $0.000$ & $0.853$ & \shortstack{$-0.0581$\\$[-0.0936,-0.0247]$} & \shortstack{$+0.1214$\\$[0.0867,0.1614]$} \\
++\textit{1.0}: Prob. BiLSTM-Attention & $0$/$0$ & $0.000$ & -- & $0.000$ & $0.846$ & \shortstack{$-0.0581$\\$[-0.0936,-0.0247]$} & \shortstack{$+0.1140$\\$[0.0757,0.1571]$} \\
++\textit{1.0}: Persistence & $91$/$10$ & $0.110$ & $0.890$ & $0.058$ & $0.732$ & -- & -- \\
++\textit{1.0}: AR(1) (train fit) & $0$/$0$ & $0.000$ & -- & $0.000$ & -- & -- & -- \\
++\textit{1.0}: Month-by-hour climatology & $0$/$0$ & $0.000$ & -- & $0.000$ & -- & -- & -- \\
++\hline
++\end{longtable}
++\end{revisionlongtable}
++\clearpage
++\begin{revisionlongtable}
++\begin{longtable}{@{}>{\raggedright\arraybackslash}p{30mm}rrrrrp{29mm}p{29mm}@{}}
++\caption{Validation-selected event decisions for the original single saved runs, with cutoffs $c_\tau$ printed below model names in mm\,h$^{-1}$. Observed-event intensity $\tau$ is distinct from the decision cutoff. Each cutoff maximizes validation CSI over up to 300 distinct candidates at equally spaced quantile probabilities 0.5--0.999 and is frozen on the test set. No 0.5-intensity result is available. Differences and pointwise, unadjusted intervals use the paired circular-block configuration in Table~\ref{stab:r2m4_fixed_events}. Confidence intervals are conditional on the selected decision thresholds and do not account for uncertainty in threshold selection. Dashes indicate unavailable paired comparisons. AR(1) is a positive-slope affine transform of the persistence input; its quantile candidate rule is theoretically equivalent to Persistence up to numerical tie effects, and the saved forecast counts, hits, POD, FAR and CSI coincide. This is not independent corroborating skill. Tiny saved AUC differences can reflect numerical ties; they are not relabelled as exact equality. Fixed-rule and optimized-rule CSI must not be interchanged.}\label{stab:r2m4_tuned_events}\\
++\hline
++\shortstack{\textbf{Threshold/}\\\textbf{model}} & \shortstack{\textbf{Forecasts/}\\\textbf{hits}} & \textbf{POD} & \textbf{FAR} & \textbf{CSI} & \textbf{AUC} & \shortstack{\textbf{$\Delta$CSI}\\\textbf{[95\% CI]}} & \shortstack{\textbf{$\Delta$AUC}\\\textbf{[95\% CI]}} \\
++\hline
++\endfirsthead
++\multicolumn{8}{@{}l}{\textbf{Table~\thetable{} (continued)}}\\
++\hline
++\shortstack{\textbf{Threshold/}\\\textbf{model}} & \shortstack{\textbf{Forecasts/}\\\textbf{hits}} & \textbf{POD} & \textbf{FAR} & \textbf{CSI} & \textbf{AUC} & \shortstack{\textbf{$\Delta$CSI}\\\textbf{[95\% CI]}} & \shortstack{\textbf{$\Delta$AUC}\\\textbf{[95\% CI]}} \\
++\hline
++\endhead
++\hline
++\multicolumn{8}{r@{}}{Continued on next page}\\
++\endfoot
++\hline
++\endlastfoot
++\multicolumn{8}{@{}l}{\textbf{Wet ($\geq0.1$)}: $\tau=0.1000$~mm\,h$^{-1}$; observed events $854$}\\*
++\textit{Wet}: XGBoost\newline $c_\tau=$$0.1470$ & $998$/$527$ & $0.617$ & $0.472$ & $0.398$ & $0.837$ & \shortstack{$+0.0438$\\$[0.0230,0.0635]$} & \shortstack{$+0.0705$\\$[0.0559,0.0856]$} \\
++\textit{Wet}: Transformer\newline $c_\tau=$$0.0941$ & $1141$/$510$ & $0.597$ & $0.553$ & $0.343$ & $0.782$ & \shortstack{$-0.0105$\\$[-0.0350,0.0118]$} & \shortstack{$+0.0153$\\$[-0.0057,0.0352]$} \\
++\textit{Wet}: BU-LSTM\newline $c_\tau=$$0.1184$ & $1093$/$549$ & $0.643$ & $0.498$ & $0.393$ & $0.820$ & \shortstack{$+0.0388$\\$[0.0192,0.0584]$} & \shortstack{$+0.0536$\\$[0.0396,0.0679]$} \\
++\textit{Wet}: BiLSTM-Attention\newline $c_\tau=$$0.1101$ & $1126$/$585$ & $0.685$ & $0.480$ & $0.419$ & $0.824$ & \shortstack{$+0.0654$\\$[0.0445,0.0862]$} & \shortstack{$+0.0575$\\$[0.0409,0.0745]$} \\
++\textit{Wet}: BU-LSTM-Attention\newline $c_\tau=$$0.1383$ & $1037$/$543$ & $0.636$ & $0.476$ & $0.403$ & $0.825$ & \shortstack{$+0.0489$\\$[0.0295,0.0690]$} & \shortstack{$+0.0585$\\$[0.0442,0.0730]$} \\
++\textit{Wet}: Prob. BiLSTM-Attention\newline $c_\tau=$$0.1148$ & $1125$/$567$ & $0.664$ & $0.496$ & $0.402$ & $0.826$ & \shortstack{$+0.0476$\\$[0.0255,0.0684]$} & \shortstack{$+0.0597$\\$[0.0465,0.0739]$} \\
++\textit{Wet}: Persistence\newline $c_\tau=$$0.0431$ & $1250$/$550$ & $0.644$ & $0.560$ & $0.354$ & $0.767$ & -- & -- \\
++\textit{Wet}: AR(1) (train fit)\newline $c_\tau=$$0.0884$ & $1250$/$550$ & $0.644$ & $0.560$ & $0.354$ & $0.767$ & -- & -- \\
++\textit{Wet}: Month-by-hour climatology\newline $c_\tau=$$0.1018$ & $2118$/$520$ & $0.609$ & $0.754$ & $0.212$ & $0.565$ & -- & -- \\
++\hline
++\multicolumn{8}{@{}l}{\textbf{Q90}: $\tau=0.2958$~mm\,h$^{-1}$; observed events $463$}\\*
++\textit{Q90}: XGBoost\newline $c_\tau=$$0.1980$ & $740$/$281$ & $0.607$ & $0.620$ & $0.305$ & $0.848$ & \shortstack{$+0.0575$\\$[0.0338,0.0817]$} & \shortstack{$+0.0910$\\$[0.0719,0.1126]$} \\
++\textit{Q90}: Transformer\newline $c_\tau=$$0.1328$ & $676$/$217$ & $0.469$ & $0.679$ & $0.235$ & $0.792$ & \shortstack{$-0.0119$\\$[-0.0425,0.0198]$} & \shortstack{$+0.0348$\\$[0.0082,0.0628]$} \\
++\textit{Q90}: BU-LSTM\newline $c_\tau=$$0.1702$ & $732$/$262$ & $0.566$ & $0.642$ & $0.281$ & $0.834$ & \shortstack{$+0.0336$\\$[0.0151,0.0527]$} & \shortstack{$+0.0769$\\$[0.0587,0.0971]$} \\
++\textit{Q90}: BiLSTM-Attention\newline $c_\tau=$$0.1755$ & $751$/$284$ & $0.613$ & $0.622$ & $0.305$ & $0.838$ & \shortstack{$+0.0581$\\$[0.0346,0.0809]$} & \shortstack{$+0.0811$\\$[0.0598,0.1034]$} \\
++\textit{Q90}: BU-LSTM-Attention\newline $c_\tau=$$0.1954$ & $702$/$261$ & $0.564$ & $0.628$ & $0.289$ & $0.839$ & \shortstack{$+0.0415$\\$[0.0232,0.0602]$} & \shortstack{$+0.0817$\\$[0.0630,0.1026]$} \\
++\textit{Q90}: Prob. BiLSTM-Attention\newline $c_\tau=$$0.1579$ & $844$/$288$ & $0.622$ & $0.659$ & $0.283$ & $0.833$ & \shortstack{$+0.0354$\\$[0.0109,0.0586]$} & \shortstack{$+0.0759$\\$[0.0573,0.0963]$} \\
++\textit{Q90}: Persistence\newline $c_\tau=$$0.1657$ & $667$/$224$ & $0.484$ & $0.664$ & $0.247$ & $0.757$ & -- & -- \\
++\textit{Q90}: AR(1) (train fit)\newline $c_\tau=$$0.1229$ & $667$/$224$ & $0.484$ & $0.664$ & $0.247$ & $0.757$ & -- & -- \\
++\textit{Q90}: Month-by-hour climatology\newline $c_\tau=$$0.1018$ & $2118$/$292$ & $0.631$ & $0.862$ & $0.128$ & $0.562$ & -- & -- \\
++\hline
++\multicolumn{8}{@{}l}{\textbf{Q95}: $\tau=0.5740$~mm\,h$^{-1}$; observed events $238$}\\*
++\textit{Q95}: XGBoost\newline $c_\tau=$$0.3056$ & $355$/$95$ & $0.399$ & $0.732$ & $0.191$ & $0.848$ & \shortstack{$+0.0348$\\$[0.0015,0.0716]$} & \shortstack{$+0.1007$\\$[0.0736,0.1298]$} \\
++\textit{Q95}: Transformer\newline $c_\tau=$$0.1909$ & $340$/$68$ & $0.286$ & $0.800$ & $0.133$ & $0.798$ & \shortstack{$-0.0227$\\$[-0.0528,0.0088]$} & \shortstack{$+0.0512$\\$[0.0179,0.0887]$} \\
++\textit{Q95}: BU-LSTM\newline $c_\tau=$$0.2027$ & $554$/$125$ & $0.525$ & $0.774$ & $0.187$ & $0.833$ & \shortstack{$+0.0314$\\$[0.0145,0.0489]$} & \shortstack{$+0.0859$\\$[0.0616,0.1113]$} \\
++\textit{Q95}: BiLSTM-Attention\newline $c_\tau=$$0.2618$ & $443$/$105$ & $0.441$ & $0.763$ & $0.182$ & $0.835$ & \shortstack{$+0.0263$\\$[0.0041,0.0504]$} & \shortstack{$+0.0880$\\$[0.0592,0.1175]$} \\
++\textit{Q95}: BU-LSTM-Attention\newline $c_\tau=$$0.1954$ & $702$/$147$ & $0.618$ & $0.791$ & $0.185$ & $0.838$ & \shortstack{$+0.0294$\\$[0.0123,0.0473]$} & \shortstack{$+0.0910$\\$[0.0672,0.1163]$} \\
++\textit{Q95}: Prob. BiLSTM-Attention\newline $c_\tau=$$0.2209$ & $568$/$126$ & $0.529$ & $0.778$ & $0.185$ & $0.832$ & \shortstack{$+0.0293$\\$[0.0091,0.0512]$} & \shortstack{$+0.0850$\\$[0.0589,0.1122]$} \\
++\textit{Q95}: Persistence\newline $c_\tau=$$0.1846$ & $629$/$117$ & $0.492$ & $0.814$ & $0.156$ & $0.747$ & -- & -- \\
++\textit{Q95}: AR(1) (train fit)\newline $c_\tau=$$0.1282$ & $629$/$117$ & $0.492$ & $0.814$ & $0.156$ & $0.747$ & -- & -- \\
++\textit{Q95}: Month-by-hour climatology\newline $c_\tau=$$0.1018$ & $2118$/$146$ & $0.613$ & $0.931$ & $0.066$ & $0.566$ & -- & -- \\
++\hline
++\multicolumn{8}{@{}l}{\textbf{Q97.5}: $\tau=0.9322$~mm\,h$^{-1}$; observed events $106$}\\*
++\textit{Q97.5}: XGBoost\newline $c_\tau=$$0.4178$ & $191$/$32$ & $0.302$ & $0.832$ & $0.121$ & $0.866$ & \shortstack{$+0.0399$\\$[0.0038,0.0791]$} & \shortstack{$+0.1277$\\$[0.0914,0.1668]$} \\
++\textit{Q97.5}: Transformer\newline $c_\tau=$$0.2141$ & $251$/$27$ & $0.255$ & $0.892$ & $0.082$ & $0.820$ & \shortstack{$+0.0010$\\$[-0.0312,0.0371]$} & \shortstack{$+0.0811$\\$[0.0367,0.1317]$} \\
++\textit{Q97.5}: BU-LSTM\newline $c_\tau=$$0.2314$ & $434$/$48$ & $0.453$ & $0.889$ & $0.098$ & $0.845$ & \shortstack{$+0.0167$\\$[-0.0021,0.0363]$} & \shortstack{$+0.1066$\\$[0.0752,0.1436]$} \\
++\textit{Q97.5}: BiLSTM-Attention\newline $c_\tau=$$0.2515$ & $461$/$57$ & $0.538$ & $0.876$ & $0.112$ & $0.859$ & \shortstack{$+0.0309$\\$[0.0073,0.0553]$} & \shortstack{$+0.1208$\\$[0.0870,0.1592]$} \\
++\textit{Q97.5}: BU-LSTM-Attention\newline $c_\tau=$$0.2142$ & $618$/$66$ & $0.623$ & $0.893$ & $0.100$ & $0.852$ & \shortstack{$+0.0195$\\$[0.0009,0.0383]$} & \shortstack{$+0.1131$\\$[0.0817,0.1496]$} \\
++\textit{Q97.5}: Prob. BiLSTM-Attention\newline $c_\tau=$$0.2037$ & $631$/$64$ & $0.604$ & $0.899$ & $0.095$ & $0.844$ & \shortstack{$+0.0143$\\$[-0.0059,0.0356]$} & \shortstack{$+0.1058$\\$[0.0712,0.1467]$} \\
++\textit{Q97.5}: Persistence\newline $c_\tau=$$0.3895$ & $362$/$35$ & $0.330$ & $0.903$ & $0.081$ & $0.739$ & -- & -- \\
++\textit{Q97.5}: AR(1) (train fit)\newline $c_\tau=$$0.1858$ & $362$/$35$ & $0.330$ & $0.903$ & $0.081$ & $0.739$ & -- & -- \\
++\textit{Q97.5}: Month-by-hour climatology\newline $c_\tau=$$0.1106$ & $1839$/$57$ & $0.538$ & $0.969$ & $0.030$ & $0.563$ & -- & -- \\
++\hline
++\multicolumn{8}{@{}l}{\textbf{1.0}: $\tau=1.0000$~mm\,h$^{-1}$; observed events $91$}\\*
++\textit{1.0}: XGBoost\newline $c_\tau=$$0.4178$ & $191$/$27$ & $0.297$ & $0.859$ & $0.106$ & $0.868$ & \shortstack{$+0.0400$\\$[0.0069,0.0735]$} & \shortstack{$+0.1363$\\$[0.0971,0.1799]$} \\
++\textit{1.0}: Transformer\newline $c_\tau=$$0.2048$ & $287$/$24$ & $0.264$ & $0.916$ & $0.068$ & $0.822$ & \shortstack{$+0.0019$\\$[-0.0263,0.0332]$} & \shortstack{$+0.0899$\\$[0.0402,0.1458]$} \\
++\textit{1.0}: BU-LSTM\newline $c_\tau=$$0.2314$ & $434$/$42$ & $0.462$ & $0.903$ & $0.087$ & $0.848$ & \shortstack{$+0.0211$\\$[0.0052,0.0371]$} & \shortstack{$+0.1163$\\$[0.0850,0.1530]$} \\
++\textit{1.0}: BiLSTM-Attention\newline $c_\tau=$$0.2618$ & $443$/$50$ & $0.549$ & $0.887$ & $0.103$ & $0.861$ & \shortstack{$+0.0374$\\$[0.0160,0.0595]$} & \shortstack{$+0.1291$\\$[0.0895,0.1724]$} \\
++\textit{1.0}: BU-LSTM-Attention\newline $c_\tau=$$0.2142$ & $618$/$56$ & $0.615$ & $0.909$ & $0.086$ & $0.853$ & \shortstack{$+0.0199$\\$[0.0020,0.0377]$} & \shortstack{$+0.1214$\\$[0.0867,0.1614]$} \\
++\textit{1.0}: Prob. BiLSTM-Attention\newline $c_\tau=$$0.2037$ & $631$/$55$ & $0.604$ & $0.913$ & $0.082$ & $0.846$ & \shortstack{$+0.0166$\\$[-0.0014,0.0359]$} & \shortstack{$+0.1140$\\$[0.0757,0.1571]$} \\
++\textit{1.0}: Persistence\newline $c_\tau=$$0.3895$ & $362$/$28$ & $0.308$ & $0.923$ & $0.066$ & $0.732$ & -- & -- \\
++\textit{1.0}: AR(1) (train fit)\newline $c_\tau=$$0.1858$ & $362$/$28$ & $0.308$ & $0.923$ & $0.066$ & $0.732$ & -- & -- \\
++\textit{1.0}: Month-by-hour climatology\newline $c_\tau=$$0.1106$ & $1839$/$49$ & $0.538$ & $0.973$ & $0.026$ & $0.560$ & -- & -- \\
++\hline
++\end{longtable}
++\end{revisionlongtable}
++\clearpage
++\begin{revisiontable}
++\renewcommand{\arraystretch}{1.15}
++\caption{Seed-level event-score means with seed SD in parentheses for five full-model runs of each Attention architecture (q05g; seeds 42, 123, 7, 2024, 99; 3,939 common test targets). AUC, POD, FAR and CSI columns use per-seed validation-selected decisions on the 300-probability grid. The final two columns instead report forecasts and hits at the fixed $c_\tau=\tau$ rule and must not be read as optimized-rule counts. Fractional counts are seed means, not individual-run event counts. This is not a table of ensemble predictions or sampling intervals. No 0.5-intensity result was saved. All scores are dimensionless; fixed counts are numbers of samples.}
++\label{stab:r2m4_seed_scores}
++\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}Xrrrrrr@{}}
++\hline
++\textbf{Threshold} & \textbf{AUC} & \textbf{POD} & \textbf{FAR} & \textbf{CSI} & \shortstack{\textbf{Fixed}\\\textbf{forecasts}} & \shortstack{\textbf{Fixed}\\\textbf{hits}}\\
++\hline
++\multicolumn{7}{@{}l}{\textbf{BiLSTM-Attention}}\\
++Wet $\geq0.1$ & \shortstack{$0.827$\\($0.003$)} & \shortstack{$0.662$\\($0.036$)} & \shortstack{$0.483$\\($0.011$)} & \shortstack{$0.408$\\($0.010$)} & \shortstack{$1334.200$\\($85.832$)} & \shortstack{$637.000$\\($24.238$)}\\
++Q90 & \shortstack{$0.840$\\($0.002$)} & \shortstack{$0.619$\\($0.047$)} & \shortstack{$0.622$\\($0.007$)} & \shortstack{$0.306$\\($0.008$)} & \shortstack{$364.200$\\($21.649$)} & \shortstack{$158.800$\\($5.933$)}\\
++Q95 & \shortstack{$0.837$\\($0.002$)} & \shortstack{$0.552$\\($0.074$)} & \shortstack{$0.772$\\($0.008$)} & \shortstack{$0.191$\\($0.005$)} & \shortstack{$4.000$\\($4.000$)} & \shortstack{$2.800$\\($2.950$)}\\
++Q97.5 & \shortstack{$0.859$\\($0.004$)} & \shortstack{$0.498$\\($0.098$)} & \shortstack{$0.875$\\($0.008$)} & \shortstack{$0.110$\\($0.003$)} & \shortstack{$0.000$\\($0.000$)} & \shortstack{$0.000$\\($0.000$)}\\
++1.0 & \shortstack{$0.863$\\($0.005$)} & \shortstack{$0.512$\\($0.102$)} & \shortstack{$0.889$\\($0.006$)} & \shortstack{$0.100$\\($0.003$)} & \shortstack{$0.000$\\($0.000$)} & \shortstack{$0.000$\\($0.000$)}\\
++\multicolumn{7}{@{}l}{\textbf{BU-LSTM-Attention}}\\
++Wet $\geq0.1$ & \shortstack{$0.823$\\($0.004$)} & \shortstack{$0.649$\\($0.026$)} & \shortstack{$0.490$\\($0.022$)} & \shortstack{$0.399$\\($0.006$)} & \shortstack{$1377.200$\\($55.183$)} & \shortstack{$635.800$\\($10.426$)}\\
++Q90 & \shortstack{$0.837$\\($0.003$)} & \shortstack{$0.584$\\($0.015$)} & \shortstack{$0.632$\\($0.013$)} & \shortstack{$0.291$\\($0.006$)} & \shortstack{$280.600$\\($133.799$)} & \shortstack{$117.800$\\($52.580$)}\\
++Q95 & \shortstack{$0.836$\\($0.002$)} & \shortstack{$0.602$\\($0.081$)} & \shortstack{$0.784$\\($0.015$)} & \shortstack{$0.187$\\($0.008$)} & \shortstack{$0.000$\\($0.000$)} & \shortstack{$0.000$\\($0.000$)}\\
++Q97.5 & \shortstack{$0.848$\\($0.003$)} & \shortstack{$0.575$\\($0.113$)} & \shortstack{$0.893$\\($0.008$)} & \shortstack{$0.099$\\($0.004$)} & \shortstack{$0.000$\\($0.000$)} & \shortstack{$0.000$\\($0.000$)}\\
++1.0 & \shortstack{$0.849$\\($0.002$)} & \shortstack{$0.635$\\($0.073$)} & \shortstack{$0.912$\\($0.005$)} & \shortstack{$0.084$\\($0.004$)} & \shortstack{$0.000$\\($0.000$)} & \shortstack{$0.000$\\($0.000$)}\\
++\hline
++\end{tabularx}
++\end{revisiontable}
++\clearpage
++\begin{revisiontable}
++\renewcommand{\arraystretch}{1.15}
++\caption{Five-seed mean-prediction event decisions and paired comparisons from q05g, kept distinct from the seed-level summaries in Table~\ref{stab:r2m4_seed_scores}. Each architecture's five continuous predictions are averaged first, then a cutoff is selected on that mean validation prediction and frozen for the 3,939 test targets. Differences are mean-prediction score minus the separately optimized Persistence score, not the mean of seed-level differences. Pointwise 95\% paired circular-block percentile intervals use block 28, 2,000 replicates and seed 42, without multiplicity adjustment. Confidence intervals are conditional on the selected decision thresholds and do not account for uncertainty in threshold selection. The final column is a separate descriptive count of individual seed CSI values above optimized Persistence, not a bootstrap statistic. No 0.5-intensity result was saved.}
++\label{stab:r2m4_ensemble_events}
++\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}Xrrrrrr@{}}
++\hline
++\textbf{Threshold} & \textbf{POD} & \textbf{FAR} & \textbf{CSI} & \shortstack{\textbf{$\Delta$CSI}\\\textbf{[95\% CI]}} & \shortstack{\textbf{$\Delta$AUC}\\\textbf{[95\% CI]}} & \shortstack{\textbf{Seeds with}\\\textbf{higher CSI}}\\
++\hline
++\multicolumn{7}{@{}l}{\textbf{BiLSTM-Attention}}\\
++Wet $\geq0.1$ & $0.648$ & $0.471$ & $0.411$ & \shortstack{$+0.0566$\\$[0.0348,0.0787]$} & \shortstack{$+0.0638$\\$[0.0487,0.0800]$} & $5$/5\\
++Q90 & $0.620$ & $0.623$ & $0.306$ & \shortstack{$+0.0591$\\$[0.0354,0.0839]$} & \shortstack{$+0.0862$\\$[0.0663,0.1082]$} & $5$/5\\
++Q95 & $0.454$ & $0.749$ & $0.193$ & \shortstack{$+0.0369$\\$[0.0119,0.0636]$} & \shortstack{$+0.0927$\\$[0.0647,0.1212]$} & $5$/5\\
++Q97.5 & $0.547$ & $0.868$ & $0.119$ & \shortstack{$+0.0378$\\$[0.0152,0.0617]$} & \shortstack{$+0.1244$\\$[0.0899,0.1637]$} & $5$/5\\
++1.0 & $0.560$ & $0.884$ & $0.106$ & \shortstack{$+0.0401$\\$[0.0203,0.0622]$} & \shortstack{$+0.1356$\\$[0.0980,0.1774]$} & $5$/5\\
++\multicolumn{7}{@{}l}{\textbf{BU-LSTM-Attention}}\\
++Wet $\geq0.1$ & $0.593$ & $0.447$ & $0.401$ & \shortstack{$+0.0467$\\$[0.0249,0.0681]$} & \shortstack{$+0.0610$\\$[0.0469,0.0752]$} & $5$/5\\
++Q90 & $0.659$ & $0.642$ & $0.302$ & \shortstack{$+0.0547$\\$[0.0358,0.0743]$} & \shortstack{$+0.0840$\\$[0.0659,0.1048]$} & $5$/5\\
++Q95 & $0.685$ & $0.794$ & $0.188$ & \shortstack{$+0.0318$\\$[0.0145,0.0499]$} & \shortstack{$+0.0937$\\$[0.0703,0.1186]$} & $5$/5\\
++Q97.5 & $0.632$ & $0.890$ & $0.103$ & \shortstack{$+0.0224$\\$[0.0035,0.0414]$} & \shortstack{$+0.1141$\\$[0.0833,0.1509]$} & $5$/5\\
++1.0 & $0.626$ & $0.907$ & $0.089$ & \shortstack{$+0.0226$\\$[0.0043,0.0409]$} & \shortstack{$+0.1220$\\$[0.0879,0.1610]$} & $5$/5\\
++\hline
++\end{tabularx}
++\end{revisiontable}
++
+ \end{document}
+--- a/Response letter.tex
++++ b/Response letter.tex
+@@ -654,9 +654,48 @@
+ 
+ \ReviewerComment{4. The models show substantially reduced event-detection performance at higher rainfall thresholds, sometimes underperforming persistence. This limitation should be discussed more explicitly, with stronger emphasis on event-based metrics.}
+ 
+-\PendingResponse
+-
+-\ChangeLocation
++\makeatletter
++\expandafter\let\csname r@fig:r2m4_event_csi\expandafter\endcsname\csname r@manuscript-fig:r2m4_event_csi\endcsname
++\makeatother
++\AuthorResponse{We thank the reviewer and agree: lower aggregate RMSE or better event ranking does not establish better high-threshold detection than Persistence. We now report this failure explicitly and distinguish fixed intensity-based decisions from validation-selected decisions.
++
++Under the fixed rule, Persistence CSI is 0.139 at Q95, 0.166 at 0.5~mm\,h$^{-1}$ and 0.058 at 1.0~mm\,h$^{-1}$, whereas all six learning-model CSI values are at most 0.071, 0.113 and 0.011, respectively. At Q97.5 the comparison is 0.076 versus 0--0.009. All 24 differences at these four thresholds are negative with pointwise 95\% paired circular-block intervals below zero. For example, XGBoost minus Persistence is $-0.0681$ at Q95 ($[-0.1131,-0.0219]$), $-0.0533$ at 0.5 ($[-0.0949,-0.0118]$) and $-0.0472$ at 1.0 ($[-0.0791,-0.0194]$). These are unadjusted, pointwise comparisons; we make no Holm-adjusted or family-wise error-control claim. Several learning models never issue a forecast at these fixed thresholds, giving CSI zero and undefined FAR, which we retain as dashes rather than zero FAR.
++
++The saved continuous forecasts still contain ranking information: learning-model AUC is approximately 0.80--0.85 at Q95 and 0.82--0.87 at 1.0, compared with 0.747 and 0.732 for Persistence. These AUC advantages do not replace the adverse fixed-rule CSI result. With each model's decision cutoff selected by validation CSI from the formal 300-probability grid and then frozen, five models have higher CSI than optimized Persistence at Q95; the Transformer interval includes zero. At 1.0, four models' intervals support higher CSI, while Transformer and Probabilistic BiLSTM-Attention remain unclear. Learning-model FAR is approximately 0.73--0.80 and 0.86--0.92, respectively; FAR is FP/(TP+FP), not false positive rate. Confidence intervals are conditional on the selected decision thresholds and do not account for uncertainty in threshold selection.
++
++New Figure~\ref{manuscript-fig:r2m4_event_csi} contrasts both rules for all six learning models and Persistence, retaining fixed-rule zeros and leaving the unavailable optimized 0.5 category empty. Supplementary Tables~\ref{supp-stab:r2m4_fixed_events} and~\ref{supp-stab:r2m4_tuned_events} provide counts, POD/FAR/CSI/AUC and available paired intervals, including AR(1) and month-by-hour climatology without inventing missing metrics. Tables~\ref{supp-stab:r2m4_seed_scores} and~\ref{supp-stab:r2m4_ensemble_events} distinguish the two Attention architectures' five-seed summaries from paired intervals for five-seed mean predictions. Bootstrap settings are circular blocks of 28 six-hourly samples, 2,000 replicates, seed 42 and common paired indices, with 95\% percentile intervals.
++
++Methods (Section~\ref{manuscript-sec:experimental_setup}) clarify the event intensity and decision cutoff, score definitions and resampling limitations; Results (Section~\ref{manuscript-sec:event_detection}) and Discussion (Section~\ref{manuscript-sec:upper_tail_discussion}) emphasize missed events and the false-alarm tradeoff. The Abstract and Conclusion now explicitly limit high-threshold warning claims. Prediction-amplitude compression is documented, but its dominant cause is not established by these experiments. No models were retrained and no formal predictions were regenerated.}
++
++\ManuscriptChange{Event-evaluation Methods, Section~\ref{manuscript-sec:event_detection}, Figure~\ref{manuscript-fig:r2m4_event_csi}, Supplementary Tables~\ref{supp-stab:r2m4_fixed_events}--\ref{supp-stab:r2m4_ensemble_events}, Section~\ref{manuscript-sec:upper_tail_discussion}, Abstract and Conclusion. Final page and line numbers await full-manuscript assembly.}
++
++\EvidenceBox{Event decisions and score definitions}{
++\RevisedExcerpt{The additional fixed-rule comparison includes $\tau=0.5$~mm\,h$^{-1}$; no validation-optimized result was saved for that intensity threshold. For the optimized rule, each model's validation predictions define candidates at 300 equally spaced quantile probabilities from 0.5 to 0.999; duplicate candidate values are removed. The candidate maximizing validation CSI is retained, with the first (lowest) candidate retained in a tie, and applied unchanged to test predictions. POD is $\mathrm{TP}/(\mathrm{TP}+\mathrm{FN})$; FAR is the false alarm ratio $\mathrm{FP}/(\mathrm{TP}+\mathrm{FP})$, not the false positive rate $\mathrm{FP}/(\mathrm{FP}+\mathrm{TN})$. ROC AUC measures the probability that a randomly chosen observed event receives a higher continuous forecast score than a non-event, with half credit for ties. CSI and AUC are dimensionless. FAR is undefined when no events are forecast and is displayed as a dash, whereas CSI is zero when there are observed events but no forecasts.}
++}
++
++\EvidenceBox{Paired event uncertainty and its boundary}{
++\RevisedExcerpt{For event-score differences from Persistence, the saved single-run analyses use paired circular-block bootstrap resampling of all 3,939 test targets: block length 28 consecutive six-hourly samples (seven days), 2,000 replicates and random seed 42. Blocks wrap around the end of the series, and the same resampled indices are used for all models and intensity thresholds. Differences are model minus Persistence, with pointwise 95\% percentile intervals; they are not adjusted for multiple comparisons and are not simultaneous confidence intervals. Decision cutoffs are held fixed during resampling. Confidence intervals are conditional on the selected decision thresholds and do not account for uncertainty in threshold selection. Separate q05g results summarize five seed-level scores for each Attention architecture; their paired intervals instead evaluate the five-seed mean prediction, with a new cutoff selected on its validation mean prediction and then held fixed. They are neither single-run intervals nor intervals for the mean of five seed-level scores.}
++}
++
++\EvidenceBox{Fixed-rule failure relative to Persistence}{
++\RevisedExcerpt{Figure~\ref{fig:r2m4_event_csi} distinguishes two decision rules on the saved single-run forecasts. Under the fixed rule, Persistence CSI was 0.139 at Q95, 0.076 at Q97.5, 0.166 at 0.5~mm\,h$^{-1}$ and 0.058 at 1.0~mm\,h$^{-1}$; the six learning models reached at most 0.071, 0.009, 0.113 and 0.011, respectively. All 24 learning-model differences at these four thresholds were negative, with each pointwise 95\% paired circular-block interval below zero; this is not a multiple-comparison-adjusted claim (Supplementary Table~\ref{supp-stab:r2m4_fixed_events}). For example, XGBoost minus Persistence was $-0.0681$ at Q95, with interval $[-0.1131,-0.0219]$, and $-0.0533$ at 0.5~mm\,h$^{-1}$, with interval $[-0.0949,-0.0118]$. At 1.0~mm\,h$^{-1}$, the corresponding difference was $-0.0472$ with interval $[-0.0791,-0.0194]$. Several zero CSI values occurred because the predicted means never reached the fixed threshold and no event forecast was issued, not because missing scores were replaced by zero.}
++}
++
++\EvidenceBox{Validation-selected decisions and false alarms}{
++\RevisedExcerpt{Validation-selected cutoffs changed the operating rule rather than removing the fixed-rule failure. At Q95, five learning models had higher CSI than the separately optimized Persistence forecast; the Transformer's difference was negative and its interval included zero. At 1.0~mm\,h$^{-1}$, four learning-model intervals supported higher CSI, while those for Transformer and Probabilistic BiLSTM-Attention included zero. Learning-model FAR was approximately 0.73--0.80 at Q95 and 0.86--0.92 at 1.0~mm\,h$^{-1}$. Their AUCs were approximately 0.80--0.85 and 0.82--0.87, respectively, compared with Persistence values of 0.747 and 0.732. This ranking information does not establish an advantage in fixed-rule CSI. Supplementary Table~\ref{supp-stab:r2m4_tuned_events} reports the selected cutoffs, full scores and paired intervals. Confidence intervals are conditional on the selected decision thresholds and do not account for uncertainty in threshold selection.}
++}
++
++\EvidenceBox{Separate five-seed evidence}{
++\RevisedExcerpt{The separate five-seed diagnostics must not be read as repetitions of those single saved runs. At Q95, validation-tuned seed-level mean CSI was $0.1911\pm0.0053$ for BiLSTM-Attention and $0.1874\pm0.0082$ for BU-LSTM-Attention (mean $\pm$ seed SD). Under the fixed Q95 rule, BU-LSTM-Attention issued no event forecast in any of its five runs; at 1.0~mm\,h$^{-1}$, neither architecture issued an event forecast in any run. Supplementary Table~\ref{supp-stab:r2m4_seed_scores} separates seed summaries from the five-seed mean-prediction paired comparisons in Table~\ref{supp-stab:r2m4_ensemble_events}. The latter use validation cutoffs selected for the mean predictions, not averages of seed-specific cutoffs or scores.}
++}
++
++\EvidenceBox{Interpretation and causal limits}{
++\RevisedExcerpt{The fixed-rule event results sharpen the limitation identified by the amplitude diagnostics. Compressed forecast amplitudes led to few or no forecasts at high fixed thresholds and consequently many misses. This is an observed property of these saved predictions, not a causal diagnosis of why their amplitudes are compressed. Persistence achieved higher fixed-rule CSI at the four thresholds examined above, yet its own FAR ranged from approximately 0.72 to 0.89, so it was not a reliable high-intensity warning system either. Higher learning-model AUC indicates useful event ranking but does not guarantee skill when the predicted mean is compared directly with the physical intensity threshold. Validation-selected cutoffs constitute another operating rule and recover some detections at a large false-alarm cost; their intervals omit selection uncertainty. The existing experiments do not identify whether predictors, event scarcity, loss functions or other modelling choices are the dominant cause of amplitude compression.}
++}
++
++\EvidenceBox{Conclusion qualification}{
++\RevisedExcerpt{In the saved single-run comparison, all six learning models had lower CSI than Persistence under fixed Q95, Q97.5, 0.5 and 1.0~mm\,h$^{-1}$ decision rules. Better AUC and improvements obtained with validation-selected cutoffs do not remove this limitation, particularly given the associated high false-alarm ratios.}
++}
+ 
+ % Review ID: R2 M5
+ \Needspace{5\baselineskip}
+--- a/FINAL_REVISION_CHECKLIST.md
++++ b/FINAL_REVISION_CHECKLIST.md
+@@ -426,3 +426,14 @@
+ - 三PDF已按顺序编译：22／78／57页；新增表及相关正文、回复100%比例检查通过，无未定义或重复引用、横向溢出及过大float。旧模板字体、书签及轻微纵向盒警告保留。
+ - R2-M3可关闭；任务09共享的R3候选变量文献依据、季节性结果整合与R4相关变量实验/回复仍未完成，不能据此关闭整个共享任务。页码行号仍待全稿定稿统一补注。
+ - 报告、逐格索引、来源MD5/Git版本和本轮独立patch位于results/r2m3_integration/。R1、R2-M1/M2回复及原有S1–S22、图件和数值保持原样。
++
++
++### R2-M4／任务05+12：固定规则事件局限正式整合（2026-11-14）
++
++- 已保留R1-M1原有结果及EvidenceBox，新增§3.4判定规则/300候选网格/指标与循环块设置，修正未实际报告accuracy、precision、F1的泛称。§4.3.2新增固定与优化规则CSI、配对pointwise区间和误报代价；§5.2、Abstract及Conclusion增加预警局限，不宣称预测幅度压缩根因已证实。
++- 新正文Figure 5，label fig:r2m4_event_csi：七方法、77个原CSV离散CSI点，保留固定零值，优化0.5缺失不画成0；原生119.0×145.0mm，Latin Modern、项目固定颜色及至少8pt基础标签，无LaTeX缩放。原覆盖率/SHAP/消融图自动顺延6/7/8，label和源图不变。
++- Supplementary自动新增S28固定、S29验证优化、S30五种子均值/SD、S31五种子平均预测配对。固定和优化为原生分页长表；FAR未定义及缺项用横线，不替代为0。优化区间均明确不包含阈值选择不确定性。所有区间pointwise且未多重校正；不报告Holm结论。
++- 1,217个数值转录与77图点逐格溯源；62段先前可直接匹配的摘录继续匹配，R2-M4七段新EvidenceBox逐字相同，其他审稿回复整块不变。原S1–S27内容保持原样。
++- 三PDF顺序编译和100%相关页面核验通过：Supplementary30页、manuscript82页、Response letter60页。新Figure 5在正文51页；表S28–S31起于补充23/26/29/30页。无未定义/重复引用、横向溢出、过大float或阻断错误，旧模板字体/书签及1.41457pt纵向盒警告保留。
++- 本轮R2-M4整合核验通过，新图/patch/证据索引和报告按本记录正式选择性Git归档，R2-M4完成并关闭。任务05/12共享的R2 minor、R3/R4等独立待办不整体关闭，R2-M5未启动。旧667d6f8中的“准备阶段”状态由本轮正式整合记录取代。
++- 详见results/r2m4_integration/REPORT.md、CELL_INDEX.csv、SOURCE_INDEX.json及r2m4_integration.patch；当前完整LaTeX仍采用本地整合＋远程独立patch归档，不声称整篇远程源码已同步。
+--- a/SUPPLEMENTARY_TABLE_REGISTRY.md
++++ b/SUPPLEMENTARY_TABLE_REGISTRY.md
+@@ -36,7 +36,12 @@
+ | S26 | 21 | R2-M3：XGBoost上游敏感性 | `stab:r2m3_upstream_xgboost` |
+ | S27 | 22 | R2-M3：BiLSTM-Attention上游敏感性 | `stab:r2m3_upstream_bilstm_attn` |
+ 
+-每轮新增或移动表格后，按Supplementary → manuscript → Response letter顺序编译，更新本表并核对唯一label、唯一显示表号、未定义引用及三份PDF的实际引用。当前若末尾追加，下一表自动为S28；若前插，后续自动顺延，引用无需手工重编号。
++| S28 | 23–25 | R2-M4：固定规则，分页长表 | `stab:r2m4_fixed_events` |
++| S29 | 26–28 | R2-M4：验证选阈值，分页长表 | `stab:r2m4_tuned_events` |
++| S30 | 29 | R2-M4：五种子指标均值/SD | `stab:r2m4_seed_scores` |
++| S31 | 30 | R2-M4：五种子平均预测及配对区间 | `stab:r2m4_ensemble_events` |
++
++每轮新增或移动表格后，按Supplementary → manuscript → Response letter顺序编译，更新本表并核对唯一label、唯一显示表号、未定义引用及三份PDF的实际引用。当前若末尾追加，下一表自动为S32；若前插，后续自动顺延，引用无需手工重编号。
+ 
+ 历史任务记录、源码TODO、快照及patch中的S编号不是预留槽位。尤其旧R1-M1计划S8/S9/S10等已与当前编号不同，后续按内容和label识别，不照旧编号新建。已存在的共享证据表优先复用，不重复制表。图计数器与表计数器分开，Figure S1与Table S1共存正常。
+ 
+@@ -44,3 +49,5 @@
+ 
+ 
+ 本轮R2-M3自动追加S23–S27；原S1–S22及Figure S1保持原样。所有主文及回复引用均由label/ref生成，未按历史计划预占表号。三份PDF已顺序编译并核验。
++
++R2-M4本轮新增S28–S31；原S1–S27和Figure S1保持原样。分页长表仅在首caption递增，continued页不重复编号；主文/回复均引用永久label。
+--- a/ESI_审稿意见分类_严重程度排序_35项.md
++++ b/ESI_审稿意见分类_严重程度排序_35项.md
+@@ -1305,6 +1305,9 @@
+ - [ ] 图表编号仍暂定，Main Figure X、Fig S3/S4、Tables S8/S8b/S8c/S9/S9b/S9c/S9d/S10/S24均待制作；本轮不绘图、不排补充表、不填最终页码/行号。
+ - [x] 本轮三个EvidenceBox与正文逐字一致，Training strategies使用最新版完整段落；论文、回复信及累计diff均编译成功，无未定义引用。训练策略证据框已检查分页，无溢出；其他审稿回复、宏、Table 3/4及其他任务MD未改。本轮补丁为`build/r1-m1-evidence-sync.patch`。
+ 
++
++**2026-11-14：R2-M4范围化正式整合核验通过。** 本轮固定规则负面结果、验证选阈值的高FAR代价、正文Figure 5、自动Supplementary S28–S31和英文回复均完成；1,217转录条目、77图点及七段新EvidenceBox核验通过。无Holm确认性声明，不混用单次、五种子指标均值和五种子平均预测。旧表号规划不作为预占编号；当前label映射见SUPPLEMENTARY_TABLE_REGISTRY.md。本记录对应正式Git归档只关闭R2-M4，当前条目涉及的R1、R2 minor、R3、R4等其他独立待办不整体勾选，R2-M5不进入本轮。详见results/r2m4_integration/REPORT.md。
++
+ ### 06. 训练年份不足与时间泛化
+ 
+ **状态：按提供记录，实验已完成；证据归档及实际改稿尚未完成。以下是回复草稿，不表示稿件已落实。**
+@@ -2626,6 +2629,9 @@
+ 
+ **R1-M1共享改稿位置（2026-11-11）**：事件强度τ与均值决策cutoff cτ已在§3.4/§4.2.2区分；摘要与§5.2/结论共享。原高斯超过概率在§4.3独立说明，不将其或BG结果冒充同一指标。 此处仅记录共享正文进展，不表示本任务对应的其他审稿回复已完成。证据缺口和本条图表待办见05完成检查C/D。
+ 
++
++**2026-11-14：R2-M4范围化正式整合核验通过。** 本轮固定规则负面结果、验证选阈值的高FAR代价、正文Figure 5、自动Supplementary S28–S31和英文回复均完成；1,217转录条目、77图点及七段新EvidenceBox核验通过。无Holm确认性声明，不混用单次、五种子指标均值和五种子平均预测。旧表号规划不作为预占编号；当前label映射见SUPPLEMENTARY_TABLE_REGISTRY.md。本记录对应正式Git归档只关闭R2-M4，当前条目涉及的R1、R2 minor、R3、R4等其他独立待办不整体勾选，R2-M5不进入本轮。详见results/r2m4_integration/REPORT.md。
++
+ ### 13. 缺少季节性降水分布和性能分析
+ 
+ （2026-11-09，六段格式；已并入 03 的 q03d 结果和 AR(1) 核对）

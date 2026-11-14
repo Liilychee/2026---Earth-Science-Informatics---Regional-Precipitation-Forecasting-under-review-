@@ -1,0 +1,541 @@
+[
+  {
+    "panel": "fixed",
+    "model": "XGBoost",
+    "threshold": "wet>=0.1",
+    "CSI": 0.411209068,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "XGBoost",
+    "threshold": "Q90",
+    "CSI": 0.2389380531,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "XGBoost",
+    "threshold": "0.5 mm",
+    "CSI": 0.1126760563,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "XGBoost",
+    "threshold": "Q95",
+    "CSI": 0.07063197026,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "XGBoost",
+    "threshold": "Q97.5",
+    "CSI": 0.009345794393,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "XGBoost",
+    "threshold": "1.0 mm",
+    "CSI": 0.01098901099,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "Transformer",
+    "threshold": "wet>=0.1",
+    "CSI": 0.3351916376,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "Transformer",
+    "threshold": "Q90",
+    "CSI": 0.06483300589,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "Transformer",
+    "threshold": "0.5 mm",
+    "CSI": 0.01379310345,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "Transformer",
+    "threshold": "Q95",
+    "CSI": 0.004184100418,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "Transformer",
+    "threshold": "Q97.5",
+    "CSI": 0.0,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "Transformer",
+    "threshold": "1.0 mm",
+    "CSI": 0.0,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "BU-LSTM",
+    "threshold": "wet>=0.1",
+    "CSI": 0.3897972531,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "BU-LSTM",
+    "threshold": "Q90",
+    "CSI": 0.149122807,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "BU-LSTM",
+    "threshold": "0.5 mm",
+    "CSI": 0.0,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "BU-LSTM",
+    "threshold": "Q95",
+    "CSI": 0.0,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "BU-LSTM",
+    "threshold": "Q97.5",
+    "CSI": 0.0,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "BU-LSTM",
+    "threshold": "1.0 mm",
+    "CSI": 0.0,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "BiLSTM-Attention",
+    "threshold": "wet>=0.1",
+    "CSI": 0.4174091844,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "BiLSTM-Attention",
+    "threshold": "Q90",
+    "CSI": 0.2417910448,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "BiLSTM-Attention",
+    "threshold": "0.5 mm",
+    "CSI": 0.02076124567,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "BiLSTM-Attention",
+    "threshold": "Q95",
+    "CSI": 0.004201680672,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "BiLSTM-Attention",
+    "threshold": "Q97.5",
+    "CSI": 0.0,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "BiLSTM-Attention",
+    "threshold": "1.0 mm",
+    "CSI": 0.0,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "BU-LSTM-Attention",
+    "threshold": "wet>=0.1",
+    "CSI": 0.4048843188,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "BU-LSTM-Attention",
+    "threshold": "Q90",
+    "CSI": 0.2123493976,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "BU-LSTM-Attention",
+    "threshold": "0.5 mm",
+    "CSI": 0.0,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "BU-LSTM-Attention",
+    "threshold": "Q95",
+    "CSI": 0.0,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "BU-LSTM-Attention",
+    "threshold": "Q97.5",
+    "CSI": 0.0,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "BU-LSTM-Attention",
+    "threshold": "1.0 mm",
+    "CSI": 0.0,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "Prob. BiLSTM-Attention",
+    "threshold": "wet>=0.1",
+    "CSI": 0.404353562,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "Prob. BiLSTM-Attention",
+    "threshold": "Q90",
+    "CSI": 0.2099697885,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "Prob. BiLSTM-Attention",
+    "threshold": "0.5 mm",
+    "CSI": 0.0,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "Prob. BiLSTM-Attention",
+    "threshold": "Q95",
+    "CSI": 0.0,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "Prob. BiLSTM-Attention",
+    "threshold": "Q97.5",
+    "CSI": 0.0,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "Prob. BiLSTM-Attention",
+    "threshold": "1.0 mm",
+    "CSI": 0.0,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "Persistence",
+    "threshold": "wet>=0.1",
+    "CSI": 0.334375,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "Persistence",
+    "threshold": "Q90",
+    "CSI": 0.2264900662,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "Persistence",
+    "threshold": "0.5 mm",
+    "CSI": 0.1659919028,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "Persistence",
+    "threshold": "Q95",
+    "CSI": 0.1387559809,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "Persistence",
+    "threshold": "Q97.5",
+    "CSI": 0.07614213198,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "fixed",
+    "model": "Persistence",
+    "threshold": "1.0 mm",
+    "CSI": 0.05813953488,
+    "source": "r2m4_fixed_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "XGBoost",
+    "threshold": "wet>=0.1",
+    "CSI": 0.3977358490566037,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "XGBoost",
+    "threshold": "Q90",
+    "CSI": 0.3047722342733189,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "XGBoost",
+    "threshold": "Q95",
+    "CSI": 0.1907630522088353,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "XGBoost",
+    "threshold": "Q97.5",
+    "CSI": 0.120754716981132,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "XGBoost",
+    "threshold": "1.0",
+    "CSI": 0.1058823529411764,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "Transformer",
+    "threshold": "wet>=0.1",
+    "CSI": 0.3434343434343434,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "Transformer",
+    "threshold": "Q90",
+    "CSI": 0.2353579175704989,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "Transformer",
+    "threshold": "Q95",
+    "CSI": 0.1333333333333333,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "Transformer",
+    "threshold": "Q97.5",
+    "CSI": 0.0818181818181818,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "Transformer",
+    "threshold": "1.0",
+    "CSI": 0.0677966101694915,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "BU-LSTM",
+    "threshold": "wet>=0.1",
+    "CSI": 0.3927038626609442,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "BU-LSTM",
+    "threshold": "Q90",
+    "CSI": 0.2808145766345123,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "BU-LSTM",
+    "threshold": "Q95",
+    "CSI": 0.1874062968515742,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "BU-LSTM",
+    "threshold": "Q97.5",
+    "CSI": 0.0975609756097561,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "BU-LSTM",
+    "threshold": "1.0",
+    "CSI": 0.0869565217391304,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "BiLSTM-Attention",
+    "threshold": "wet>=0.1",
+    "CSI": 0.4193548387096774,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "BiLSTM-Attention",
+    "threshold": "Q90",
+    "CSI": 0.3053763440860215,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "BiLSTM-Attention",
+    "threshold": "Q95",
+    "CSI": 0.1822916666666666,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "BiLSTM-Attention",
+    "threshold": "Q97.5",
+    "CSI": 0.1117647058823529,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "BiLSTM-Attention",
+    "threshold": "1.0",
+    "CSI": 0.1033057851239669,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "BU-LSTM-Attention",
+    "threshold": "wet>=0.1",
+    "CSI": 0.4028189910979228,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "BU-LSTM-Attention",
+    "threshold": "Q90",
+    "CSI": 0.288716814159292,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "BU-LSTM-Attention",
+    "threshold": "Q95",
+    "CSI": 0.1853720050441362,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "BU-LSTM-Attention",
+    "threshold": "Q97.5",
+    "CSI": 0.1003039513677811,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "BU-LSTM-Attention",
+    "threshold": "1.0",
+    "CSI": 0.0857580398162327,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "Prob. BiLSTM-Attention",
+    "threshold": "wet>=0.1",
+    "CSI": 0.4015580736543909,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "Prob. BiLSTM-Attention",
+    "threshold": "Q90",
+    "CSI": 0.2826300294406281,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "Prob. BiLSTM-Attention",
+    "threshold": "Q95",
+    "CSI": 0.1852941176470588,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "Prob. BiLSTM-Attention",
+    "threshold": "Q97.5",
+    "CSI": 0.0950965824665676,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "Prob. BiLSTM-Attention",
+    "threshold": "1.0",
+    "CSI": 0.0824587706146926,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "Persistence",
+    "threshold": "wet>=0.1",
+    "CSI": 0.3539253539253539,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "Persistence",
+    "threshold": "Q90",
+    "CSI": 0.2472406181015452,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "Persistence",
+    "threshold": "Q95",
+    "CSI": 0.156,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "Persistence",
+    "threshold": "Q97.5",
+    "CSI": 0.0808314087759815,
+    "source": "q05e_event_scores.csv"
+  },
+  {
+    "panel": "validation-selected",
+    "model": "Persistence",
+    "threshold": "1.0",
+    "CSI": 0.0658823529411764,
+    "source": "q05e_event_scores.csv"
+  }
+]
