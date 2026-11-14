@@ -1,0 +1,156 @@
+[
+  {
+    "path": "code/q09_lead_corr.py",
+    "ref": "fb7e55ca89edb72779a3525c4dc0f72ab280228d",
+    "last_change_commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "daf7b0987e7336da0f85dd8c1f8a00ae",
+    "bytes": 9363,
+    "archive_exact_match": true
+  },
+  {
+    "path": "code/q09_stability_check.py",
+    "ref": "fb7e55ca89edb72779a3525c4dc0f72ab280228d",
+    "last_change_commit": "66516cd97bb021a92e2e8e53a03eeb33ad3a9164",
+    "md5": "1838913b33d6f0a377937c99a7819d52",
+    "bytes": 5072,
+    "archive_exact_match": true
+  },
+  {
+    "path": "code/q21_build_features.py",
+    "ref": "fb7e55ca89edb72779a3525c4dc0f72ab280228d",
+    "last_change_commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "73a71e764f000e7b224b1e2947490001",
+    "bytes": 11956,
+    "archive_exact_match": true
+  },
+  {
+    "path": "code/q21_train.py",
+    "ref": "fb7e55ca89edb72779a3525c4dc0f72ab280228d",
+    "last_change_commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "3e0fbf44821862514be54ecd0db7632a",
+    "bytes": 9749,
+    "archive_exact_match": true
+  },
+  {
+    "path": "code/q21_stats.py",
+    "ref": "fb7e55ca89edb72779a3525c4dc0f72ab280228d",
+    "last_change_commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "558e20d8fad4fa150495fd4f3276c489",
+    "bytes": 9801,
+    "archive_exact_match": true
+  },
+  {
+    "path": "results/metrics/q09_selection_table.csv",
+    "ref": "fb7e55ca89edb72779a3525c4dc0f72ab280228d",
+    "last_change_commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "1dfe2161ae5ca88adbb2fc913862f6f8",
+    "bytes": 2249,
+    "archive_exact_match": true
+  },
+  {
+    "path": "results/metrics/q09_output.txt",
+    "ref": "fb7e55ca89edb72779a3525c4dc0f72ab280228d",
+    "last_change_commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "c0456ec554f55af03405d6bb6ee3e1bf",
+    "bytes": 6124,
+    "archive_exact_match": true
+  },
+  {
+    "path": "results/metrics/q09_stability_check.csv",
+    "ref": "fb7e55ca89edb72779a3525c4dc0f72ab280228d",
+    "last_change_commit": "66516cd97bb021a92e2e8e53a03eeb33ad3a9164",
+    "md5": "13f9101368827f51b83d03987cdebda6",
+    "bytes": 2021,
+    "archive_exact_match": true
+  },
+  {
+    "path": "results/metrics/q09_stability_check_output.txt",
+    "ref": "fb7e55ca89edb72779a3525c4dc0f72ab280228d",
+    "last_change_commit": "66516cd97bb021a92e2e8e53a03eeb33ad3a9164",
+    "md5": "3957acd6638ddf5962713061d12081d5",
+    "bytes": 1171,
+    "archive_exact_match": true
+  },
+  {
+    "path": "results/metrics/q09_lead_spearman.csv",
+    "ref": "fb7e55ca89edb72779a3525c4dc0f72ab280228d",
+    "last_change_commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "8c9033ddf39c3500182ec9357384d744",
+    "bytes": 3180,
+    "archive_exact_match": true
+  },
+  {
+    "path": "results/metrics/q21_effect.csv",
+    "ref": "fb7e55ca89edb72779a3525c4dc0f72ab280228d",
+    "last_change_commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "3b71b76b2997c6c386b4a05d34c12863",
+    "bytes": 15642,
+    "archive_exact_match": true
+  },
+  {
+    "path": "results/metrics/q21_runs.csv",
+    "ref": "fb7e55ca89edb72779a3525c4dc0f72ab280228d",
+    "last_change_commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "88a3d1ea00849d6b419e6e7e7947f73a",
+    "bytes": 27967,
+    "archive_exact_match": true
+  },
+  {
+    "path": "results/metrics/q21_stats_output.txt",
+    "ref": "fb7e55ca89edb72779a3525c4dc0f72ab280228d",
+    "last_change_commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "89b96656822849acfef368c5f23c0003",
+    "bytes": 20334,
+    "archive_exact_match": true
+  },
+  {
+    "path": "results/metrics/q21_summary.csv",
+    "ref": "fb7e55ca89edb72779a3525c4dc0f72ab280228d",
+    "last_change_commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "69555a167ac6b8d6489bcc909106be9b",
+    "bytes": 8943,
+    "archive_exact_match": true
+  },
+  {
+    "path": "results/metrics/q21_build_output.txt",
+    "ref": "fb7e55ca89edb72779a3525c4dc0f72ab280228d",
+    "last_change_commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "27fb28bf4a64ea4e3f82e325f8f29c66",
+    "bytes": 9297,
+    "archive_exact_match": true
+  },
+  {
+    "path": "results/metrics/q21_train_output.txt",
+    "ref": "fb7e55ca89edb72779a3525c4dc0f72ab280228d",
+    "last_change_commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "ea6d5926dcc87ba42dfb59adadeea66d",
+    "bytes": 105223,
+    "archive_exact_match": true
+  },
+  {
+    "path": "results/metrics/q21_train_c3ab_output.txt",
+    "ref": "fb7e55ca89edb72779a3525c4dc0f72ab280228d",
+    "last_change_commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "2ee8d45a9be54c4932f2f0c2a8534e4d",
+    "bytes": 31859,
+    "archive_exact_match": true
+  },
+  {
+    "path": "code/q06_train.py",
+    "ref": "fb7e55ca89edb72779a3525c4dc0f72ab280228d",
+    "md5": "fc5c0797007f3181edb6d2955a002b18",
+    "bytes": 10087
+  },
+  {
+    "path": "code/q06_common.py",
+    "ref": "fb7e55ca89edb72779a3525c4dc0f72ab280228d",
+    "md5": "fd11bd85160fe9118bc945a40feffa28",
+    "bytes": 1428
+  },
+  {
+    "path": "code/q10_train.py",
+    "ref": "fb7e55ca89edb72779a3525c4dc0f72ab280228d",
+    "md5": "a9a7c4ffa10303e11e835655c5a2ac5b",
+    "bytes": 10576
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "scope_unchanged": true,
+  "exact_excerpts": 6,
+  "numeric_cells": 374,
+  "paired_groups": 24,
+  "pdf": {
+    "Supplementary": {
+      "pages": 22,
+      "checked_pages": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    "manuscript": {
+      "pages": 78,
+      "checked_pages": [
+        14,
+        15,
+        16,
+        36,
+        37,
+        64,
+        65,
+        66
+      ]
+    },
+    "Response letter": {
+      "pages": 57,
+      "checked_pages": [
+        31,
+        32,
+        33
+      ]
+    }
+  },
+  "no_undefined_or_hbox_overflow": true,
+  "visual_100percent_passed": true,
+  "original_supplementary_tables_preserved": 22,
+  "source_run_files_verified": 50
+}

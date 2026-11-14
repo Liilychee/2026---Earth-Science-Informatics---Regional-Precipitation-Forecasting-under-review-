@@ -1,0 +1,375 @@
+destination_label,source_row_key,file,line,field,raw,display
+stab:r2m3_associations,var=lsp,q09_selection_table.csv,2,rank_contemp,3,3
+stab:r2m3_associations,var=lsp,q09_selection_table.csv,2,rank_lead,1,1
+stab:r2m3_associations,var=lsp,q09_selection_table.csv,2,rank_partial,5,5
+stab:r2m3_associations,var=lsp,q09_selection_table.csv,2,rho_contemp,0.8988951980114962,0.8989
+stab:r2m3_associations,var=lsp,q09_selection_table.csv,2,rho_lead_k0,0.5304697972362352,0.5305
+stab:r2m3_associations,var=lsp,q09_selection_table.csv,2,lead_k0_lo,0.5139602891494863,0.5140
+stab:r2m3_associations,var=lsp,q09_selection_table.csv,2,lead_k0_hi,0.5463886064341027,0.5464
+stab:r2m3_associations,var=lsp,q09_selection_table.csv,2,rho_partial_given_tp_t,0.15715930169043266,0.1572
+stab:r2m3_associations,var=lsp,q09_selection_table.csv,2,partial_lo,0.14113112762509622,0.1411
+stab:r2m3_associations,var=lsp,q09_selection_table.csv,2,partial_hi,0.17387971784472672,0.1739
+stab:r2m3_associations,var=mntpr,q09_selection_table.csv,3,rank_contemp,2,2
+stab:r2m3_associations,var=mntpr,q09_selection_table.csv,3,rank_lead,2,2
+stab:r2m3_associations,var=mntpr,q09_selection_table.csv,3,rank_partial,8,8
+stab:r2m3_associations,var=mntpr,q09_selection_table.csv,3,rho_contemp,0.9425851400189124,0.9426
+stab:r2m3_associations,var=mntpr,q09_selection_table.csv,3,rho_lead_k0,0.525290397051295,0.5253
+stab:r2m3_associations,var=mntpr,q09_selection_table.csv,3,lead_k0_lo,0.5093024394583854,0.5093
+stab:r2m3_associations,var=mntpr,q09_selection_table.csv,3,lead_k0_hi,0.5413290146301246,0.5413
+stab:r2m3_associations,var=mntpr,q09_selection_table.csv,3,rho_partial_given_tp_t,0.10729418239046974,0.1073
+stab:r2m3_associations,var=mntpr,q09_selection_table.csv,3,partial_lo,0.09067058053869152,0.0907
+stab:r2m3_associations,var=mntpr,q09_selection_table.csv,3,partial_hi,0.12424253097657706,0.1242
+stab:r2m3_associations,var=mxtpr,q09_selection_table.csv,4,rank_contemp,1,1
+stab:r2m3_associations,var=mxtpr,q09_selection_table.csv,4,rank_lead,3,3
+stab:r2m3_associations,var=mxtpr,q09_selection_table.csv,4,rank_partial,13,13
+stab:r2m3_associations,var=mxtpr,q09_selection_table.csv,4,rho_contemp,0.9867740748085724,0.9868
+stab:r2m3_associations,var=mxtpr,q09_selection_table.csv,4,rho_lead_k0,0.5146503338338687,0.5147
+stab:r2m3_associations,var=mxtpr,q09_selection_table.csv,4,lead_k0_lo,0.4969146665000407,0.4969
+stab:r2m3_associations,var=mxtpr,q09_selection_table.csv,4,lead_k0_hi,0.5316207052153112,0.5316
+stab:r2m3_associations,var=mxtpr,q09_selection_table.csv,4,rho_partial_given_tp_t,-0.024187468139525714,-0.0242
+stab:r2m3_associations,var=mxtpr,q09_selection_table.csv,4,partial_lo,-0.039732988607571726,-0.0397
+stab:r2m3_associations,var=mxtpr,q09_selection_table.csv,4,partial_hi,-0.007598192104677861,-0.0076
+stab:r2m3_associations,var=tcc,q09_selection_table.csv,5,rank_contemp,5,5
+stab:r2m3_associations,var=tcc,q09_selection_table.csv,5,rank_lead,4,4
+stab:r2m3_associations,var=tcc,q09_selection_table.csv,5,rank_partial,1,1
+stab:r2m3_associations,var=tcc,q09_selection_table.csv,5,rho_contemp,0.4754719511298504,0.4755
+stab:r2m3_associations,var=tcc,q09_selection_table.csv,5,rho_lead_k0,0.4378017555023401,0.4378
+stab:r2m3_associations,var=tcc,q09_selection_table.csv,5,lead_k0_lo,0.4189933879193814,0.4190
+stab:r2m3_associations,var=tcc,q09_selection_table.csv,5,lead_k0_hi,0.4554710505578132,0.4555
+stab:r2m3_associations,var=tcc,q09_selection_table.csv,5,rho_partial_given_tp_t,0.25134950125718714,0.2513
+stab:r2m3_associations,var=tcc,q09_selection_table.csv,5,partial_lo,0.2350550572325171,0.2351
+stab:r2m3_associations,var=tcc,q09_selection_table.csv,5,partial_hi,0.2672357381547009,0.2672
+stab:r2m3_associations,var=cp,q09_selection_table.csv,6,rank_contemp,4,4
+stab:r2m3_associations,var=cp,q09_selection_table.csv,6,rank_lead,5,5
+stab:r2m3_associations,var=cp,q09_selection_table.csv,6,rank_partial,7,7
+stab:r2m3_associations,var=cp,q09_selection_table.csv,6,rho_contemp,0.8428954889490062,0.8429
+stab:r2m3_associations,var=cp,q09_selection_table.csv,6,rho_lead_k0,0.3878663277416191,0.3879
+stab:r2m3_associations,var=cp,q09_selection_table.csv,6,lead_k0_lo,0.3683797641653697,0.3684
+stab:r2m3_associations,var=cp,q09_selection_table.csv,6,lead_k0_hi,0.4083655803375802,0.4084
+stab:r2m3_associations,var=cp,q09_selection_table.csv,6,rho_partial_given_tp_t,-0.11920811443917374,-0.1192
+stab:r2m3_associations,var=cp,q09_selection_table.csv,6,partial_lo,-0.13388679549280683,-0.1339
+stab:r2m3_associations,var=cp,q09_selection_table.csv,6,partial_hi,-0.10482221198883952,-0.1048
+stab:r2m3_associations,var=sp,q09_selection_table.csv,7,rank_contemp,6,6
+stab:r2m3_associations,var=sp,q09_selection_table.csv,7,rank_lead,6,6
+stab:r2m3_associations,var=sp,q09_selection_table.csv,7,rank_partial,2,2
+stab:r2m3_associations,var=sp,q09_selection_table.csv,7,rho_contemp,-0.42773062213023466,-0.4277
+stab:r2m3_associations,var=sp,q09_selection_table.csv,7,rho_lead_k0,-0.36910226542403257,-0.3691
+stab:r2m3_associations,var=sp,q09_selection_table.csv,7,lead_k0_lo,-0.391749499806579,-0.3917
+stab:r2m3_associations,var=sp,q09_selection_table.csv,7,lead_k0_hi,-0.34547610061738615,-0.3455
+stab:r2m3_associations,var=sp,q09_selection_table.csv,7,rho_partial_given_tp_t,-0.1879150329652956,-0.1879
+stab:r2m3_associations,var=sp,q09_selection_table.csv,7,partial_lo,-0.2034019005983114,-0.2034
+stab:r2m3_associations,var=sp,q09_selection_table.csv,7,partial_hi,-0.17221559538293854,-0.1722
+stab:r2m3_associations,var=v10,q09_selection_table.csv,8,rank_contemp,9,9
+stab:r2m3_associations,var=v10,q09_selection_table.csv,8,rank_lead,7,7
+stab:r2m3_associations,var=v10,q09_selection_table.csv,8,rank_partial,3,3
+stab:r2m3_associations,var=v10,q09_selection_table.csv,8,rho_contemp,0.181582185760466,0.1816
+stab:r2m3_associations,var=v10,q09_selection_table.csv,8,rho_lead_k0,0.2510960135883028,0.2511
+stab:r2m3_associations,var=v10,q09_selection_table.csv,8,lead_k0_lo,0.2231331522211694,0.2231
+stab:r2m3_associations,var=v10,q09_selection_table.csv,8,lead_k0_hi,0.27674570136666565,0.2767
+stab:r2m3_associations,var=v10,q09_selection_table.csv,8,rho_partial_given_tp_t,0.1861129007667213,0.1861
+stab:r2m3_associations,var=v10,q09_selection_table.csv,8,partial_lo,0.16769595002972687,0.1677
+stab:r2m3_associations,var=v10,q09_selection_table.csv,8,partial_hi,0.20378805569120237,0.2038
+stab:r2m3_associations,var=ws,q09_selection_table.csv,9,rank_contemp,7,7
+stab:r2m3_associations,var=ws,q09_selection_table.csv,9,rank_lead,8,8
+stab:r2m3_associations,var=ws,q09_selection_table.csv,9,rank_partial,9,9
+stab:r2m3_associations,var=ws,q09_selection_table.csv,9,rho_contemp,0.33551630462102167,0.3355
+stab:r2m3_associations,var=ws,q09_selection_table.csv,9,rho_lead_k0,0.2376005339009481,0.2376
+stab:r2m3_associations,var=ws,q09_selection_table.csv,9,lead_k0_lo,0.21602925935871595,0.2160
+stab:r2m3_associations,var=ws,q09_selection_table.csv,9,lead_k0_hi,0.26124272983082064,0.2612
+stab:r2m3_associations,var=ws,q09_selection_table.csv,9,rho_partial_given_tp_t,0.07666389718016142,0.0767
+stab:r2m3_associations,var=ws,q09_selection_table.csv,9,partial_lo,0.061883051802276254,0.0619
+stab:r2m3_associations,var=ws,q09_selection_table.csv,9,partial_hi,0.09231831440397675,0.0923
+stab:r2m3_associations,var=d2m,q09_selection_table.csv,10,rank_contemp,8,8
+stab:r2m3_associations,var=d2m,q09_selection_table.csv,10,rank_lead,9,9
+stab:r2m3_associations,var=d2m,q09_selection_table.csv,10,rank_partial,12,12
+stab:r2m3_associations,var=d2m,q09_selection_table.csv,10,rho_contemp,0.21894134539497556,0.2189
+stab:r2m3_associations,var=d2m,q09_selection_table.csv,10,rho_lead_k0,0.14949867746325216,0.1495
+stab:r2m3_associations,var=d2m,q09_selection_table.csv,10,lead_k0_lo,0.1184263387343146,0.1184
+stab:r2m3_associations,var=d2m,q09_selection_table.csv,10,lead_k0_hi,0.18104983372850794,0.1810
+stab:r2m3_associations,var=d2m,q09_selection_table.csv,10,rho_partial_given_tp_t,0.0416144294821453,0.0416
+stab:r2m3_associations,var=d2m,q09_selection_table.csv,10,partial_lo,0.02353710746221916,0.0235
+stab:r2m3_associations,var=d2m,q09_selection_table.csv,10,partial_hi,0.060642370866569005,0.0606
+stab:r2m3_associations,var=ssr,q09_selection_table.csv,11,rank_contemp,12,12
+stab:r2m3_associations,var=ssr,q09_selection_table.csv,11,rank_lead,10,10
+stab:r2m3_associations,var=ssr,q09_selection_table.csv,11,rank_partial,6,6
+stab:r2m3_associations,var=ssr,q09_selection_table.csv,11,rho_contemp,0.060663565190050714,0.0607
+stab:r2m3_associations,var=ssr,q09_selection_table.csv,11,rho_lead_k0,-0.09105883722757835,-0.0911
+stab:r2m3_associations,var=ssr,q09_selection_table.csv,11,lead_k0_lo,-0.10856062649375375,-0.1086
+stab:r2m3_associations,var=ssr,q09_selection_table.csv,11,lead_k0_hi,-0.07276179555268943,-0.0728
+stab:r2m3_associations,var=ssr,q09_selection_table.csv,11,rho_partial_given_tp_t,-0.14466309445386222,-0.1447
+stab:r2m3_associations,var=ssr,q09_selection_table.csv,11,partial_lo,-0.16027642991296487,-0.1603
+stab:r2m3_associations,var=ssr,q09_selection_table.csv,11,partial_hi,-0.12902198626809336,-0.1290
+stab:r2m3_associations,var=e,q09_selection_table.csv,12,rank_contemp,10,10
+stab:r2m3_associations,var=e,q09_selection_table.csv,12,rank_lead,11,11
+stab:r2m3_associations,var=e,q09_selection_table.csv,12,rank_partial,4,4
+stab:r2m3_associations,var=e,q09_selection_table.csv,12,rho_contemp,-0.13568841802205853,-0.1357
+stab:r2m3_associations,var=e,q09_selection_table.csv,12,rho_lead_k0,0.06629676486788226,0.0663
+stab:r2m3_associations,var=e,q09_selection_table.csv,12,lead_k0_lo,0.047763394702813454,0.0478
+stab:r2m3_associations,var=e,q09_selection_table.csv,12,lead_k0_hi,0.08416789310180209,0.0842
+stab:r2m3_associations,var=e,q09_selection_table.csv,12,rho_partial_given_tp_t,0.1630826774479288,0.1631
+stab:r2m3_associations,var=e,q09_selection_table.csv,12,partial_lo,0.14824711253424605,0.1482
+stab:r2m3_associations,var=e,q09_selection_table.csv,12,partial_hi,0.17839334859714856,0.1784
+stab:r2m3_associations,var=u10,q09_selection_table.csv,13,rank_contemp,13,13
+stab:r2m3_associations,var=u10,q09_selection_table.csv,13,rank_lead,12,12
+stab:r2m3_associations,var=u10,q09_selection_table.csv,13,rank_partial,10,10
+stab:r2m3_associations,var=u10,q09_selection_table.csv,13,rho_contemp,-0.0062805696329007845,-0.0063
+stab:r2m3_associations,var=u10,q09_selection_table.csv,13,rho_lead_k0,-0.05801954723334235,-0.0580
+stab:r2m3_associations,var=u10,q09_selection_table.csv,13,lead_k0_lo,-0.09175162413826704,-0.0918
+stab:r2m3_associations,var=u10,q09_selection_table.csv,13,lead_k0_hi,-0.025679692839076187,-0.0257
+stab:r2m3_associations,var=u10,q09_selection_table.csv,13,rho_partial_given_tp_t,-0.06430042670447429,-0.0643
+stab:r2m3_associations,var=u10,q09_selection_table.csv,13,partial_lo,-0.08619359923513936,-0.0862
+stab:r2m3_associations,var=u10,q09_selection_table.csv,13,partial_hi,-0.043799486313445934,-0.0438
+stab:r2m3_associations,var=t2m,q09_selection_table.csv,14,rank_contemp,11,11
+stab:r2m3_associations,var=t2m,q09_selection_table.csv,14,rank_lead,13,13
+stab:r2m3_associations,var=t2m,q09_selection_table.csv,14,rank_partial,11,11
+stab:r2m3_associations,var=t2m,q09_selection_table.csv,14,rho_contemp,0.1265717011980203,0.1266
+stab:r2m3_associations,var=t2m,q09_selection_table.csv,14,rho_lead_k0,0.02514018866351052,0.0251
+stab:r2m3_associations,var=t2m,q09_selection_table.csv,14,lead_k0_lo,-0.005454019476670672,-0.0055
+stab:r2m3_associations,var=t2m,q09_selection_table.csv,14,lead_k0_hi,0.05773427778424487,0.0577
+stab:r2m3_associations,var=t2m,q09_selection_table.csv,14,rho_partial_given_tp_t,-0.04893067629734051,-0.0489
+stab:r2m3_associations,var=t2m,q09_selection_table.csv,14,partial_lo,-0.06690269126948017,-0.0669
+stab:r2m3_associations,var=t2m,q09_selection_table.csv,14,partial_hi,-0.03090771324819625,-0.0309
+stab:r2m3_selection_stability,pool=11 candidates; table=per_variable; var=lsp,q09_stability_check.csv,14,freq_top7,1.0,1.0000
+stab:r2m3_selection_stability,pool=13 candidates; table=per_variable; var=lsp,q09_stability_check.csv,25,freq_top7,1.0,1.0000
+stab:r2m3_selection_stability,pool=11 candidates; table=per_variable; var=mntpr,q09_stability_check.csv,11,freq_top7,1.0,1.0000
+stab:r2m3_selection_stability,pool=13 candidates; table=per_variable; var=mntpr,q09_stability_check.csv,22,freq_top7,1.0,1.0000
+stab:r2m3_selection_stability,pool=11 candidates; table=per_variable; var=mxtpr,q09_stability_check.csv,10,freq_top7,1.0,1.0000
+stab:r2m3_selection_stability,pool=13 candidates; table=per_variable; var=mxtpr,q09_stability_check.csv,21,freq_top7,1.0,1.0000
+stab:r2m3_selection_stability,pool=11 candidates; table=per_variable; var=tcc,q09_stability_check.csv,12,freq_top7,1.0,1.0000
+stab:r2m3_selection_stability,pool=13 candidates; table=per_variable; var=tcc,q09_stability_check.csv,23,freq_top7,1.0,1.0000
+stab:r2m3_selection_stability,pool=13 candidates; table=per_variable; var=cp,q09_stability_check.csv,27,freq_top7,1.0,1.0000
+stab:r2m3_selection_stability,pool=11 candidates; table=per_variable; var=sp,q09_stability_check.csv,8,freq_top7,1.0,1.0000
+stab:r2m3_selection_stability,pool=13 candidates; table=per_variable; var=sp,q09_stability_check.csv,19,freq_top7,1.0,1.0000
+stab:r2m3_selection_stability,pool=11 candidates; table=per_variable; var=v10,q09_stability_check.csv,5,freq_top7,1.0,1.0000
+stab:r2m3_selection_stability,pool=13 candidates; table=per_variable; var=v10,q09_stability_check.csv,16,freq_top7,0.797,0.7970
+stab:r2m3_selection_stability,pool=13 candidates; table=per_variable; var=ws,q09_stability_check.csv,26,freq_top7,0.203,0.2030
+stab:r2m3_selection_stability,pool=11 candidates; table=per_variable; var=d2m,q09_stability_check.csv,6,freq_top7,0.9965,0.9965
+stab:r2m3_selection_stability,pool=13 candidates; table=per_variable; var=d2m,q09_stability_check.csv,17,freq_top7,0.0,0.0000
+stab:r2m3_selection_stability,pool=11 candidates; table=per_variable; var=ssr,q09_stability_check.csv,13,freq_top7,0.003,0.0030
+stab:r2m3_selection_stability,pool=13 candidates; table=per_variable; var=ssr,q09_stability_check.csv,24,freq_top7,0.0,0.0000
+stab:r2m3_selection_stability,pool=11 candidates; table=per_variable; var=e,q09_stability_check.csv,9,freq_top7,0.0,0.0000
+stab:r2m3_selection_stability,pool=13 candidates; table=per_variable; var=e,q09_stability_check.csv,20,freq_top7,0.0,0.0000
+stab:r2m3_selection_stability,pool=11 candidates; table=per_variable; var=u10,q09_stability_check.csv,4,freq_top7,0.0005,0.0005
+stab:r2m3_selection_stability,pool=13 candidates; table=per_variable; var=u10,q09_stability_check.csv,15,freq_top7,0.0,0.0000
+stab:r2m3_selection_stability,pool=11 candidates; table=per_variable; var=t2m,q09_stability_check.csv,7,freq_top7,0.0,0.0000
+stab:r2m3_selection_stability,pool=13 candidates; table=per_variable; var=t2m,q09_stability_check.csv,18,freq_top7,0.0,0.0000
+stab:r2m3_selection_stability,pool=11 candidates; table=summary,q09_stability_check.csv,2,freq_exact_original_set,0.9965,0.9965
+stab:r2m3_selection_stability,pool=11 candidates; table=summary,q09_stability_check.csv,2,gap_rank7_rank8,0.05843984023567381,0.0584
+stab:r2m3_selection_stability,pool=13 candidates; table=summary,q09_stability_check.csv,3,freq_exact_original_set,0.0,0.0000
+stab:r2m3_selection_stability,pool=13 candidates; table=summary,q09_stability_check.csv,3,gap_rank7_rank8,0.013495479687354706,0.0135
+stab:r2m3_c6,model=xgboost; config=C0,q21_summary.csv,11,rmse_all_mean,0.24392022977174013,0.243920
+stab:r2m3_c6,model=xgboost; config=C6,q21_summary.csv,19,rmse_all_mean,0.24405214158015948,0.244052
+stab:r2m3_c6,model=xgboost; config=C6; ref=C0; subset=all,q21_effect.csv,17,d_rmse_mean,0.00013191290719091197,+0.000132
+stab:r2m3_c6,model=xgboost; config=C6; ref=C0; subset=all,q21_effect.csv,17,d_rmse_pct,0.05408034721611887,+0.054
+stab:r2m3_c6,model=xgboost; config=C6; ref=C0; subset=all,q21_effect.csv,17,t_lo,-0.0007759660502260346,-0.000776
+stab:r2m3_c6,model=xgboost; config=C6; ref=C0; subset=all,q21_effect.csv,17,t_hi,0.0010397918646078586,+0.001040
+stab:r2m3_c6,model=xgboost; config=C6; ref=C0; subset=all,q21_effect.csv,17,boot_lo,-0.0013662915676832198,-0.001366
+stab:r2m3_c6,model=xgboost; config=C6; ref=C0; subset=all,q21_effect.csv,17,boot_hi,0.0016133724153041837,+0.001613
+stab:r2m3_c6,model=xgboost; config=C6; ref=C0; subset=all,q21_effect.csv,17,n_better_of_5,2,2
+stab:r2m3_c6,model=xgboost; config=C0,q21_summary.csv,11,rmse_wet_mean,0.47348780299693605,0.473488
+stab:r2m3_c6,model=xgboost; config=C6,q21_summary.csv,19,rmse_wet_mean,0.47371448402271266,0.473714
+stab:r2m3_c6,model=xgboost; config=C6; ref=C0; subset=wet,q21_effect.csv,18,d_rmse_mean,0.00022668067994746632,+0.000227
+stab:r2m3_c6,model=xgboost; config=C6; ref=C0; subset=wet,q21_effect.csv,18,d_rmse_pct,0.047874660870394846,+0.048
+stab:r2m3_c6,model=xgboost; config=C6; ref=C0; subset=wet,q21_effect.csv,18,t_lo,-0.0016881451935596564,-0.001688
+stab:r2m3_c6,model=xgboost; config=C6; ref=C0; subset=wet,q21_effect.csv,18,t_hi,0.002141506553454589,+0.002142
+stab:r2m3_c6,model=xgboost; config=C6; ref=C0; subset=wet,q21_effect.csv,18,boot_lo,-0.003098736256361008,-0.003099
+stab:r2m3_c6,model=xgboost; config=C6; ref=C0; subset=wet,q21_effect.csv,18,boot_hi,0.00399865999817848,+0.003999
+stab:r2m3_c6,model=xgboost; config=C6; ref=C0; subset=wet,q21_effect.csv,18,n_better_of_5,2,2
+stab:r2m3_c6,model=xgboost; config=C0,q21_summary.csv,11,rmse_tail_mean,0.8428057477429896,0.842806
+stab:r2m3_c6,model=xgboost; config=C6,q21_summary.csv,19,rmse_tail_mean,0.844258725348795,0.844259
+stab:r2m3_c6,model=xgboost; config=C6; ref=C0; subset=tail,q21_effect.csv,19,d_rmse_mean,0.0014529700799280176,+0.001453
+stab:r2m3_c6,model=xgboost; config=C6; ref=C0; subset=tail,q21_effect.csv,19,d_rmse_pct,0.17239679295247226,+0.172
+stab:r2m3_c6,model=xgboost; config=C6; ref=C0; subset=tail,q21_effect.csv,19,t_lo,-0.0029098503742034385,-0.002910
+stab:r2m3_c6,model=xgboost; config=C6; ref=C0; subset=tail,q21_effect.csv,19,t_hi,0.005815790534059474,+0.005816
+stab:r2m3_c6,model=xgboost; config=C6; ref=C0; subset=tail,q21_effect.csv,19,boot_lo,-0.004407528340816497,-0.004408
+stab:r2m3_c6,model=xgboost; config=C6; ref=C0; subset=tail,q21_effect.csv,19,boot_hi,0.008534468114376064,+0.008534
+stab:r2m3_c6,model=xgboost; config=C6; ref=C0; subset=tail,q21_effect.csv,19,n_better_of_5,1,1
+stab:r2m3_c6,model=bilstm_attn; config=C0,q21_summary.csv,2,rmse_all_mean,0.24286369751627265,0.242864
+stab:r2m3_c6,model=bilstm_attn; config=C6,q21_summary.csv,10,rmse_all_mean,0.24397647618137858,0.243976
+stab:r2m3_c6,model=bilstm_attn; config=C6; ref=C0; subset=all,q21_effect.csv,47,d_rmse_mean,0.0011127772490227672,+0.001113
+stab:r2m3_c6,model=bilstm_attn; config=C6; ref=C0; subset=all,q21_effect.csv,47,d_rmse_pct,0.4581900302115789,+0.458
+stab:r2m3_c6,model=bilstm_attn; config=C6; ref=C0; subset=all,q21_effect.csv,47,t_lo,0.000592330250968834,+0.000592
+stab:r2m3_c6,model=bilstm_attn; config=C6; ref=C0; subset=all,q21_effect.csv,47,t_hi,0.0016332242470767002,+0.001633
+stab:r2m3_c6,model=bilstm_attn; config=C6; ref=C0; subset=all,q21_effect.csv,47,boot_lo,9.491309523582459e-05,+0.000095
+stab:r2m3_c6,model=bilstm_attn; config=C6; ref=C0; subset=all,q21_effect.csv,47,boot_hi,0.0021192771941423412,+0.002119
+stab:r2m3_c6,model=bilstm_attn; config=C6; ref=C0; subset=all,q21_effect.csv,47,n_better_of_5,0,0
+stab:r2m3_c6,model=bilstm_attn; config=C0,q21_summary.csv,2,rmse_wet_mean,0.48496302169307726,0.484963
+stab:r2m3_c6,model=bilstm_attn; config=C6,q21_summary.csv,10,rmse_wet_mean,0.48816050221299756,0.488161
+stab:r2m3_c6,model=bilstm_attn; config=C6; ref=C0; subset=wet,q21_effect.csv,48,d_rmse_mean,0.003197486190480092,+0.003197
+stab:r2m3_c6,model=bilstm_attn; config=C6; ref=C0; subset=wet,q21_effect.csv,48,d_rmse_pct,0.6593257727810251,+0.659
+stab:r2m3_c6,model=bilstm_attn; config=C6; ref=C0; subset=wet,q21_effect.csv,48,t_lo,-0.0004980799773198485,-0.000498
+stab:r2m3_c6,model=bilstm_attn; config=C6; ref=C0; subset=wet,q21_effect.csv,48,t_hi,0.006893052358280033,+0.006893
+stab:r2m3_c6,model=bilstm_attn; config=C6; ref=C0; subset=wet,q21_effect.csv,48,boot_lo,0.0011454012989997864,+0.001145
+stab:r2m3_c6,model=bilstm_attn; config=C6; ref=C0; subset=wet,q21_effect.csv,48,boot_hi,0.005171821564435957,+0.005172
+stab:r2m3_c6,model=bilstm_attn; config=C6; ref=C0; subset=wet,q21_effect.csv,48,n_better_of_5,1,1
+stab:r2m3_c6,model=bilstm_attn; config=C0,q21_summary.csv,2,rmse_tail_mean,0.8732036619290267,0.873204
+stab:r2m3_c6,model=bilstm_attn; config=C6,q21_summary.csv,10,rmse_tail_mean,0.8794623063325144,0.879462
+stab:r2m3_c6,model=bilstm_attn; config=C6; ref=C0; subset=tail,q21_effect.csv,49,d_rmse_mean,0.0062586555108159695,+0.006259
+stab:r2m3_c6,model=bilstm_attn; config=C6; ref=C0; subset=tail,q21_effect.csv,49,d_rmse_pct,0.7167463655603253,+0.717
+stab:r2m3_c6,model=bilstm_attn; config=C6; ref=C0; subset=tail,q21_effect.csv,49,t_lo,-0.0013463694873314235,-0.001346
+stab:r2m3_c6,model=bilstm_attn; config=C6; ref=C0; subset=tail,q21_effect.csv,49,t_hi,0.013863680508963363,+0.013864
+stab:r2m3_c6,model=bilstm_attn; config=C6; ref=C0; subset=tail,q21_effect.csv,49,boot_lo,0.0024395954608917234,+0.002440
+stab:r2m3_c6,model=bilstm_attn; config=C6; ref=C0; subset=tail,q21_effect.csv,49,boot_hi,0.009960279166698454,+0.009960
+stab:r2m3_c6,model=bilstm_attn; config=C6; ref=C0; subset=tail,q21_effect.csv,49,n_better_of_5,1,1
+stab:r2m3_upstream_xgboost,model=xgboost; config=C0,q21_summary.csv,11,rmse_all_mean,0.24392022977174013,0.243920
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3,q21_summary.csv,14,rmse_all_mean,0.22824135870007572,0.228241
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3; ref=C0; subset=all,q21_effect.csv,8,d_rmse_mean,-0.01567887309931057,-0.015679
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3; ref=C0; subset=all,q21_effect.csv,8,d_rmse_pct,-6.427869108676562,-6.428
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3; ref=C0; subset=all,q21_effect.csv,8,t_lo,-0.0169738087405335,-0.016974
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3; ref=C0; subset=all,q21_effect.csv,8,t_hi,-0.01438393745808764,-0.014384
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3; ref=C0; subset=all,q21_effect.csv,8,boot_lo,-0.02147093437612057,-0.021471
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3; ref=C0; subset=all,q21_effect.csv,8,boot_hi,-0.009971245303750044,-0.009971
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3; ref=C0; subset=all,q21_effect.csv,8,n_better_of_5,5,5
+stab:r2m3_upstream_xgboost,model=xgboost; config=C0,q21_summary.csv,11,rmse_wet_mean,0.47348780299693605,0.473488
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3,q21_summary.csv,14,rmse_wet_mean,0.44238349236347096,0.442383
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3; ref=C0; subset=wet,q21_effect.csv,9,d_rmse_mean,-0.031104303429093594,-0.031104
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3; ref=C0; subset=wet,q21_effect.csv,9,d_rmse_pct,-6.569187892955054,-6.569
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3; ref=C0; subset=wet,q21_effect.csv,9,t_lo,-0.03317944167324875,-0.033179
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3; ref=C0; subset=wet,q21_effect.csv,9,t_hi,-0.02902916518493844,-0.029029
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3; ref=C0; subset=wet,q21_effect.csv,9,boot_lo,-0.04252616420388222,-0.042526
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3; ref=C0; subset=wet,q21_effect.csv,9,boot_hi,-0.019419233202934313,-0.019419
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3; ref=C0; subset=wet,q21_effect.csv,9,n_better_of_5,5,5
+stab:r2m3_upstream_xgboost,model=xgboost; config=C0,q21_summary.csv,11,rmse_tail_mean,0.8428057477429896,0.842806
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3,q21_summary.csv,14,rmse_tail_mean,0.7732183376165166,0.773218
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3; ref=C0; subset=tail,q21_effect.csv,10,d_rmse_mean,-0.06958741600152576,-0.069587
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3; ref=C0; subset=tail,q21_effect.csv,10,d_rmse_pct,-8.256637568962827,-8.257
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3; ref=C0; subset=tail,q21_effect.csv,10,t_lo,-0.07582213633824228,-0.075822
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3; ref=C0; subset=tail,q21_effect.csv,10,t_hi,-0.06335269566480925,-0.063353
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3; ref=C0; subset=tail,q21_effect.csv,10,boot_lo,-0.09017693459987641,-0.090177
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3; ref=C0; subset=tail,q21_effect.csv,10,boot_hi,-0.04856955230236056,-0.048570
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3; ref=C0; subset=tail,q21_effect.csv,10,n_better_of_5,5,5
+stab:r2m3_upstream_xgboost,model=xgboost; config=C0,q21_summary.csv,11,rmse_all_mean,0.24392022977174013,0.243920
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3a,q21_summary.csv,15,rmse_all_mean,0.2283774043563222,0.228377
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3a; ref=C0; subset=all,q21_effect.csv,20,d_rmse_mean,-0.015542829594265773,-0.015543
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3a; ref=C0; subset=all,q21_effect.csv,20,d_rmse_pct,-6.372095339862017,-6.372
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3a; ref=C0; subset=all,q21_effect.csv,20,t_lo,-0.016016205786919833,-0.016016
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3a; ref=C0; subset=all,q21_effect.csv,20,t_hi,-0.015069453401611713,-0.015069
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3a; ref=C0; subset=all,q21_effect.csv,20,boot_lo,-0.021317193582654,-0.021317
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3a; ref=C0; subset=all,q21_effect.csv,20,boot_hi,-0.009926946237683303,-0.009927
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3a; ref=C0; subset=all,q21_effect.csv,20,n_better_of_5,5,5
+stab:r2m3_upstream_xgboost,model=xgboost; config=C0,q21_summary.csv,11,rmse_wet_mean,0.47348780299693605,0.473488
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3a,q21_summary.csv,15,rmse_wet_mean,0.44321703741454854,0.443217
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3a; ref=C0; subset=wet,q21_effect.csv,21,d_rmse_mean,-0.03027076384990297,-0.030271
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3a; ref=C0; subset=wet,q21_effect.csv,21,d_rmse_pct,-6.393145432322543,-6.393
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3a; ref=C0; subset=wet,q21_effect.csv,21,t_lo,-0.03128398418896547,-0.031284
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3a; ref=C0; subset=wet,q21_effect.csv,21,t_hi,-0.02925754351084047,-0.029258
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3a; ref=C0; subset=wet,q21_effect.csv,21,boot_lo,-0.04201964542269707,-0.042020
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3a; ref=C0; subset=wet,q21_effect.csv,21,boot_hi,-0.01824230864644052,-0.018242
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3a; ref=C0; subset=wet,q21_effect.csv,21,n_better_of_5,5,5
+stab:r2m3_upstream_xgboost,model=xgboost; config=C0,q21_summary.csv,11,rmse_tail_mean,0.8428057477429896,0.842806
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3a,q21_summary.csv,15,rmse_tail_mean,0.7735609109055506,0.773561
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3a; ref=C0; subset=tail,q21_effect.csv,22,d_rmse_mean,-0.06924484754043973,-0.069245
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3a; ref=C0; subset=tail,q21_effect.csv,22,d_rmse_pct,-8.215991374747443,-8.216
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3a; ref=C0; subset=tail,q21_effect.csv,22,t_lo,-0.07195687568121956,-0.071957
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3a; ref=C0; subset=tail,q21_effect.csv,22,t_hi,-0.06653281939965991,-0.066533
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3a; ref=C0; subset=tail,q21_effect.csv,22,boot_lo,-0.08987431496381759,-0.089874
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3a; ref=C0; subset=tail,q21_effect.csv,22,boot_hi,-0.04853803157806397,-0.048538
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3a; ref=C0; subset=tail,q21_effect.csv,22,n_better_of_5,5,5
+stab:r2m3_upstream_xgboost,model=xgboost; config=C0,q21_summary.csv,11,rmse_all_mean,0.24392022977174013,0.243920
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3b,q21_summary.csv,16,rmse_all_mean,0.23948945549697695,0.239489
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3b; ref=C0; subset=all,q21_effect.csv,23,d_rmse_mean,-0.004430775584415297,-0.004431
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3b; ref=C0; subset=all,q21_effect.csv,23,d_rmse_pct,-1.8164854914090582,-1.816
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3b; ref=C0; subset=all,q21_effect.csv,23,t_lo,-0.0054601840563878535,-0.005460
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3b; ref=C0; subset=all,q21_effect.csv,23,t_hi,-0.0034013671124427406,-0.003401
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3b; ref=C0; subset=all,q21_effect.csv,23,boot_lo,-0.0068163017183542245,-0.006816
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3b; ref=C0; subset=all,q21_effect.csv,23,boot_hi,-0.002225899025797845,-0.002226
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3b; ref=C0; subset=all,q21_effect.csv,23,n_better_of_5,5,5
+stab:r2m3_upstream_xgboost,model=xgboost; config=C0,q21_summary.csv,11,rmse_wet_mean,0.47348780299693605,0.473488
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3b,q21_summary.csv,16,rmse_wet_mean,0.4648472601319972,0.464847
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3b; ref=C0; subset=wet,q21_effect.csv,24,d_rmse_mean,-0.008640545254487009,-0.008641
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3b; ref=C0; subset=wet,q21_effect.csv,24,d_rmse_pct,-1.8248717706764084,-1.825
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3b; ref=C0; subset=wet,q21_effect.csv,24,t_lo,-0.011001612259018726,-0.011002
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3b; ref=C0; subset=wet,q21_effect.csv,24,t_hi,-0.006279478249955292,-0.006279
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3b; ref=C0; subset=wet,q21_effect.csv,24,boot_lo,-0.013515475988388061,-0.013515
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3b; ref=C0; subset=wet,q21_effect.csv,24,boot_hi,-0.0037081301212310803,-0.003708
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3b; ref=C0; subset=wet,q21_effect.csv,24,n_better_of_5,5,5
+stab:r2m3_upstream_xgboost,model=xgboost; config=C0,q21_summary.csv,11,rmse_tail_mean,0.8428057477429896,0.842806
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3b,q21_summary.csv,16,rmse_tail_mean,0.8240653105637904,0.824065
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3b; ref=C0; subset=tail,q21_effect.csv,25,d_rmse_mean,-0.018740437111744244,-0.018740
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3b; ref=C0; subset=tail,q21_effect.csv,25,d_rmse_pct,-2.2235772788605925,-2.224
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3b; ref=C0; subset=tail,q21_effect.csv,25,t_lo,-0.0226354089873804,-0.022635
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3b; ref=C0; subset=tail,q21_effect.csv,25,t_hi,-0.01484546523610809,-0.014845
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3b; ref=C0; subset=tail,q21_effect.csv,25,boot_lo,-0.02908845067024231,-0.029088
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3b; ref=C0; subset=tail,q21_effect.csv,25,boot_hi,-0.008383601009845735,-0.008384
+stab:r2m3_upstream_xgboost,model=xgboost; config=C3b; ref=C0; subset=tail,q21_effect.csv,25,n_better_of_5,5,5
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C0,q21_summary.csv,2,rmse_all_mean,0.24286369751627265,0.242864
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3,q21_summary.csv,5,rmse_all_mean,0.22597282097526034,0.225973
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3; ref=C0; subset=all,q21_effect.csv,38,d_rmse_mean,-0.016890877711969905,-0.016891
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3; ref=C0; subset=all,q21_effect.csv,38,d_rmse_pct,-6.954879582543686,-6.955
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3; ref=C0; subset=all,q21_effect.csv,38,t_lo,-0.018171083360866154,-0.018171
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3; ref=C0; subset=all,q21_effect.csv,38,t_hi,-0.015610672063073658,-0.015611
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3; ref=C0; subset=all,q21_effect.csv,38,boot_lo,-0.023206955567002297,-0.023207
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3; ref=C0; subset=all,q21_effect.csv,38,boot_hi,-0.010999740138649941,-0.011000
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3; ref=C0; subset=all,q21_effect.csv,38,n_better_of_5,5,5
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C0,q21_summary.csv,2,rmse_wet_mean,0.48496302169307726,0.484963
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3,q21_summary.csv,5,rmse_wet_mean,0.4424136617005498,0.442414
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3; ref=C0; subset=wet,q21_effect.csv,39,d_rmse_mean,-0.04254935607218593,-0.042549
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3; ref=C0; subset=wet,q21_effect.csv,39,d_rmse_pct,-8.773732051495362,-8.774
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3; ref=C0; subset=wet,q21_effect.csv,39,t_lo,-0.04708312271982337,-0.047083
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3; ref=C0; subset=wet,q21_effect.csv,39,t_hi,-0.03801558942454848,-0.038016
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3; ref=C0; subset=wet,q21_effect.csv,39,boot_lo,-0.055669555068016054,-0.055670
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3; ref=C0; subset=wet,q21_effect.csv,39,boot_hi,-0.029973376691341418,-0.029973
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3; ref=C0; subset=wet,q21_effect.csv,39,n_better_of_5,5,5
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C0,q21_summary.csv,2,rmse_tail_mean,0.8732036619290267,0.873204
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3,q21_summary.csv,5,rmse_tail_mean,0.7822631750580371,0.782263
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3; ref=C0; subset=tail,q21_effect.csv,40,d_rmse_mean,-0.09094049025516682,-0.090940
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3; ref=C0; subset=tail,q21_effect.csv,40,d_rmse_pct,-10.414579578636536,-10.415
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3; ref=C0; subset=tail,q21_effect.csv,40,t_lo,-0.1021734850701605,-0.102173
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3; ref=C0; subset=tail,q21_effect.csv,40,t_hi,-0.07970749544017314,-0.079707
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3; ref=C0; subset=tail,q21_effect.csv,40,boot_lo,-0.11418895423412323,-0.114189
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3; ref=C0; subset=tail,q21_effect.csv,40,boot_hi,-0.06881839513778687,-0.068818
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3; ref=C0; subset=tail,q21_effect.csv,40,n_better_of_5,5,5
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C0,q21_summary.csv,2,rmse_all_mean,0.24286369751627265,0.242864
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3a,q21_summary.csv,6,rmse_all_mean,0.2298478198135892,0.229848
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3a; ref=C0; subset=all,q21_effect.csv,50,d_rmse_mean,-0.013015878922309414,-0.013016
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3a; ref=C0; subset=all,q21_effect.csv,50,d_rmse_pct,-5.359334909013031,-5.359
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3a; ref=C0; subset=all,q21_effect.csv,50,t_lo,-0.01510453379499865,-0.015105
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3a; ref=C0; subset=all,q21_effect.csv,50,t_hi,-0.010927224049620179,-0.010927
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3a; ref=C0; subset=all,q21_effect.csv,50,boot_lo,-0.017923510745167733,-0.017924
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3a; ref=C0; subset=all,q21_effect.csv,50,boot_hi,-0.008610241115093231,-0.008610
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3a; ref=C0; subset=all,q21_effect.csv,50,n_better_of_5,5,5
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C0,q21_summary.csv,2,rmse_wet_mean,0.48496302169307726,0.484963
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3a,q21_summary.csv,6,rmse_wet_mean,0.45413337381548163,0.454133
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3a; ref=C0; subset=wet,q21_effect.csv,51,d_rmse_mean,-0.03082964556182789,-0.030830
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3a; ref=C0; subset=wet,q21_effect.csv,51,d_rmse_pct,-6.357112642155078,-6.357
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3a; ref=C0; subset=wet,q21_effect.csv,51,t_lo,-0.03717502174063734,-0.037175
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3a; ref=C0; subset=wet,q21_effect.csv,51,t_hi,-0.024484269383018443,-0.024484
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3a; ref=C0; subset=wet,q21_effect.csv,51,boot_lo,-0.041582621335983276,-0.041583
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3a; ref=C0; subset=wet,q21_effect.csv,51,boot_hi,-0.021001024544239053,-0.021001
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3a; ref=C0; subset=wet,q21_effect.csv,51,n_better_of_5,5,5
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C0,q21_summary.csv,2,rmse_tail_mean,0.8732036619290267,0.873204
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3a,q21_summary.csv,6,rmse_tail_mean,0.8066500985859447,0.806650
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3a; ref=C0; subset=tail,q21_effect.csv,52,d_rmse_mean,-0.06655357106554094,-0.066554
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3a; ref=C0; subset=tail,q21_effect.csv,52,d_rmse_pct,-7.621769578761841,-7.622
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3a; ref=C0; subset=tail,q21_effect.csv,52,t_lo,-0.08151322541509409,-0.081513
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3a; ref=C0; subset=tail,q21_effect.csv,52,t_hi,-0.05159391671598778,-0.051594
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3a; ref=C0; subset=tail,q21_effect.csv,52,boot_lo,-0.0854299107193947,-0.085430
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3a; ref=C0; subset=tail,q21_effect.csv,52,boot_hi,-0.05020434945821763,-0.050204
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3a; ref=C0; subset=tail,q21_effect.csv,52,n_better_of_5,5,5
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C0,q21_summary.csv,2,rmse_all_mean,0.24286369751627265,0.242864
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3b,q21_summary.csv,7,rmse_all_mean,0.23478135713043158,0.234781
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3b; ref=C0; subset=all,q21_effect.csv,53,d_rmse_mean,-0.008082339857237341,-0.008082
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3b; ref=C0; subset=all,q21_effect.csv,53,d_rmse_pct,-3.3279324740148937,-3.328
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3b; ref=C0; subset=all,q21_effect.csv,53,t_lo,-0.009825108277526626,-0.009825
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3b; ref=C0; subset=all,q21_effect.csv,53,t_hi,-0.006339571436948056,-0.006340
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3b; ref=C0; subset=all,q21_effect.csv,53,boot_lo,-0.0112919220328331,-0.011292
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3b; ref=C0; subset=all,q21_effect.csv,53,boot_hi,-0.004903970435261728,-0.004904
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3b; ref=C0; subset=all,q21_effect.csv,53,n_better_of_5,5,5
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C0,q21_summary.csv,2,rmse_wet_mean,0.48496302169307726,0.484963
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3b,q21_summary.csv,7,rmse_wet_mean,0.46720802400695377,0.467208
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3b; ref=C0; subset=wet,q21_effect.csv,54,d_rmse_mean,-0.01775499775506274,-0.017755
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3b; ref=C0; subset=wet,q21_effect.csv,54,d_rmse_pct,-3.661103416313564,-3.661
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3b; ref=C0; subset=wet,q21_effect.csv,54,t_lo,-0.021832297307363857,-0.021832
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3b; ref=C0; subset=wet,q21_effect.csv,54,t_hi,-0.013677698202761622,-0.013678
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3b; ref=C0; subset=wet,q21_effect.csv,54,boot_lo,-0.025314875245094296,-0.025315
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3b; ref=C0; subset=wet,q21_effect.csv,54,boot_hi,-0.010315312594175343,-0.010315
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3b; ref=C0; subset=wet,q21_effect.csv,54,n_better_of_5,5,5
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C0,q21_summary.csv,2,rmse_tail_mean,0.8732036619290267,0.873204
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3b,q21_summary.csv,7,rmse_tail_mean,0.8377991506104536,0.837799
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3b; ref=C0; subset=tail,q21_effect.csv,55,d_rmse_mean,-0.035404526570261385,-0.035405
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3b; ref=C0; subset=tail,q21_effect.csv,55,d_rmse_pct,-4.054555439225705,-4.055
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3b; ref=C0; subset=tail,q21_effect.csv,55,t_lo,-0.04553178405257944,-0.045532
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3b; ref=C0; subset=tail,q21_effect.csv,55,t_hi,-0.02527726908794333,-0.025277
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3b; ref=C0; subset=tail,q21_effect.csv,55,boot_lo,-0.04941052377223969,-0.049411
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3b; ref=C0; subset=tail,q21_effect.csv,55,boot_hi,-0.020605402886867526,-0.020605
+stab:r2m3_upstream_bilstm_attn,model=bilstm_attn; config=C3b; ref=C0; subset=tail,q21_effect.csv,55,n_better_of_5,5,5
