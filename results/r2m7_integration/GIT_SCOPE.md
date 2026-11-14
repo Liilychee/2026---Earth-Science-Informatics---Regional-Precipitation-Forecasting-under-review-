@@ -8,3 +8,6 @@ Archive only explicitly enumerated files under results/r2m7_integration. R2M7_LO
 Author Figure is already archived at base commit under results/figures/revision/r2M7_spatial_quantiles.pdf; local Figures PDF is byte-identical (AUTHOR_FIGURE_SOURCE.json). A duplicate binary is unnecessary. Fixed dc85083 statistics remain unchanged.
 
 Original paper worktree and index are not pulled, reset, staged or overwritten. Fetch updates only remote metadata; all commits occur in isolated worktree. Normal fast-forward push only; any conflict/permission failure stops closure. First remote archive verification precedes CLOSED; closure receipt is subsequently committed and final closure commit re-read. Receipt does not claim to contain its own commit hash.
+
+
+Retry update: origin/main advanced to558da58341bcd8d1aedc9f6cd9754b58774b56fa (49 task22 additions, no overlap). New worktree /private/tmp/esi-r2m7-retry-sync, branch codex/r2m7-retry-sync. Clean cherry-pick09de6bb produced2268b154ee3f3a6cc302ee8093b6e44f406c5327; pushed normally and verified31/31 through GitHub. Root documents/index remain unchanged. Subsequent closure commit adds only the explicitly listed R2-M7 receipt/status/report/closure patch metadata, never raw data or other tasks.

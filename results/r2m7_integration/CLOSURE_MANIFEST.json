@@ -1,0 +1,12 @@
+{
+  "archive_commit": "2268b154ee3f3a6cc302ee8093b6e44f406c5327",
+  "first_archive_remote_verification": "31/31",
+  "closure_files_sha256": {
+    "STATUS.md": "0906abca6847f4d43128ad78338ecb0460130af582162d368fe5d51a4f7a8399",
+    "REMOTE_RECEIPT.json": "d0d7ef5943ef2917ed33eef1ace21e82a0d24c279176288fe0cf6b099ca45371",
+    "GIT_RETRY_REPORT.json": "9beb5df2b44b1f31831cb9e138b166e95e5ab140d3abb2f14595dfed2b05784d",
+    "CLOSURE_STATUS.patch": "623691c88972592f50b02377368c09b26c713b3db9da7d6aeed7f5ef61c09966",
+    "FINAL_REPORT.md": "fe029db88c54ba774c77eef291d34cf0702a23f80f8f813fcbc15130335395f9",
+    "GIT_SCOPE.md": "ba2fe3715d9c27a26c433fb1c0dda9138c2d8aeccb8f81ab1ff59aa095d03b77"
+  }
+}

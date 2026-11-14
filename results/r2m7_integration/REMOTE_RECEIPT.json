@@ -1,0 +1,263 @@
+{
+  "archive_commit": "2268b154ee3f3a6cc302ee8093b6e44f406c5327",
+  "original_local_commit": "09de6bb475300292473bcc7bae75e72e34fb32f1",
+  "base_commit": "558da58341bcd8d1aedc9f6cd9754b58774b56fa",
+  "remote": "origin/main",
+  "files_verified": 31,
+  "all_match": true,
+  "verification": "GitHub fixed-commit fetch_file remote SHA-1 blob identities match each of the 31 original archive files. Cherry-pick changed commit ancestry only; all 31 file bytes identical to 09de6bb.",
+  "checks": [
+    {
+      "path": "results/r2m7_integration/ARCHIVE_MANIFEST.json",
+      "expected_blob": "1501944ace6192d2a115fa9220061f9434c2491f",
+      "md5": "2a99ee4a111753ad144ccee737f042be",
+      "remote_blob": "1501944ace6192d2a115fa9220061f9434c2491f",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/AUTHOR_FIGURE_SOURCE.json",
+      "expected_blob": "34aeb7e2ab476b37b6c31f4df1400518a17a27ce",
+      "md5": "bfd572bb6f3e9a5b8c896971fd012896",
+      "remote_blob": "34aeb7e2ab476b37b6c31f4df1400518a17a27ce",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/CAPTIONS.json",
+      "expected_blob": "6f3f6cd52f87af025db4eb5d669a57c7db3ad9d5",
+      "md5": "b257324487fbde77a950b8b117f4085f",
+      "remote_blob": "6f3f6cd52f87af025db4eb5d669a57c7db3ad9d5",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/CELL_INDEX.json",
+      "expected_blob": "a43a326815b33d52e0ae9f34aabe4234161de404",
+      "md5": "dce2d436f95c6eea17170e9f08e484a1",
+      "remote_blob": "a43a326815b33d52e0ae9f34aabe4234161de404",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/DATA_CHECK.json",
+      "expected_blob": "bdb9f711ed2c27dbbf691ed9c7206cfb10d16ca8",
+      "md5": "ac225aff7b1b8985db358d802ece7dd9",
+      "remote_blob": "bdb9f711ed2c27dbbf691ed9c7206cfb10d16ca8",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/DOCUMENT_HASHES.json",
+      "expected_blob": "5fe61ff3e8ec1016e26bbf1fe16a1e1ae7ba508e",
+      "md5": "44962543f11e16a0b63773eeff1b691a",
+      "remote_blob": "5fe61ff3e8ec1016e26bbf1fe16a1e1ae7ba508e",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/EVIDENCE_INDEX.md",
+      "expected_blob": "a5155b0e4fcc075523444334e9c272756cbca7fe",
+      "md5": "ed5f860c0007d85aba05c271908c323a",
+      "remote_blob": "a5155b0e4fcc075523444334e9c272756cbca7fe",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/FIGURE_METADATA.json",
+      "expected_blob": "3170a0f9db282ec4348974dc1b6dd46477c9c482",
+      "md5": "ac9f4a1de46ee3cbce95bf7b364104b1",
+      "remote_blob": "3170a0f9db282ec4348974dc1b6dd46477c9c482",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/FIGURE_POINT_CHECK.csv",
+      "expected_blob": "7ac75d1dd78a44367dfb80fc7b01c988bce0a26c",
+      "md5": "4c79b3b7fc27d05af9d8411106b09a32",
+      "remote_blob": "7ac75d1dd78a44367dfb80fc7b01c988bce0a26c",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/FINAL_EXCERPTS.json",
+      "expected_blob": "e982fd454d2d37d0bc53eaa390c32d3ff9ab60bd",
+      "md5": "733524ba1fb33db7606cf7029aeda708",
+      "remote_blob": "e982fd454d2d37d0bc53eaa390c32d3ff9ab60bd",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/FINAL_REPORT.md",
+      "expected_blob": "d67eb12132ab9c23d0aa80092349986c84d4a9a3",
+      "md5": "d5aa473844c0c1a1d06dfd7dbddaa44b",
+      "remote_blob": "d67eb12132ab9c23d0aa80092349986c84d4a9a3",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/GIT_SCOPE.md",
+      "expected_blob": "3668703a9e43f300af12cedf00972a6b43e6e607",
+      "md5": "0b6ca7d7380ecfa91e9d62e5d834d071",
+      "remote_blob": "3668703a9e43f300af12cedf00972a6b43e6e607",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/GIT_STATUS.txt",
+      "expected_blob": "11e1a23528791dc6d53f49e55af2004c285279c9",
+      "md5": "1ba44ddb7e928e394ebfef9fe362ae5c",
+      "remote_blob": "11e1a23528791dc6d53f49e55af2004c285279c9",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/LOCATIONS.json",
+      "expected_blob": "611844bb7256f0cf1fcd4ce27781b47177260ab9",
+      "md5": "5683ee4854689fb893df8a497bf803f6",
+      "remote_blob": "611844bb7256f0cf1fcd4ce27781b47177260ab9",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/PDF_CHECK.json",
+      "expected_blob": "80f3157554d14df40d5064b2a5eee5b48b534810",
+      "md5": "9509be8da261bde69f302dc0cd02570d",
+      "remote_blob": "80f3157554d14df40d5064b2a5eee5b48b534810",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/PDF_PAGES.json",
+      "expected_blob": "7e1112f8282752e33f7039f31b6f9baf4df6c85c",
+      "md5": "0aa904a528aed93d3d5a3dc0d6c2a591",
+      "remote_blob": "7e1112f8282752e33f7039f31b6f9baf4df6c85c",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/PROSE_FACT_INDEX.json",
+      "expected_blob": "c3111258104af1caab770239eed998c5b1c7dfaa",
+      "md5": "f52ff2ac4bc716571a0a88424da94be7",
+      "remote_blob": "c3111258104af1caab770239eed998c5b1c7dfaa",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/PROTECTED_HASHES.json",
+      "expected_blob": "e9559e1ecf27522d548d527aced82dc27aea35bc",
+      "md5": "756e1fa052fa5143cb1509466983c055",
+      "remote_blob": "e9559e1ecf27522d548d527aced82dc27aea35bc",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/R2M7_LOCAL.patch",
+      "expected_blob": "e93131645b99b583931f7943ddadf1b104039233",
+      "md5": "75144fbf044fd725f66b7e8abd15f67a",
+      "remote_blob": "e93131645b99b583931f7943ddadf1b104039233",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/R2M7_PORTABLE.patch",
+      "expected_blob": "fc8b931099d8720118755af0d6ffa4dc3ec1b0e3",
+      "md5": "1f3ad0728adae5c75e197e9cff8bcc10",
+      "remote_blob": "fc8b931099d8720118755af0d6ffa4dc3ec1b0e3",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/REVIEW_SOURCE.json",
+      "expected_blob": "c229ce09d6ccd7ccb71655dc76047afb13a4685e",
+      "md5": "2b3f4d1705e7953a7f91b9ffc4cd4abc",
+      "remote_blob": "c229ce09d6ccd7ccb71655dc76047afb13a4685e",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/ROW_INDEX.json",
+      "expected_blob": "0bc74bf3aafad25e6d8e3dd381fdbf50cc0fc1b8",
+      "md5": "6e121babf8fe4bbf320617d4c6f3bd7f",
+      "remote_blob": "0bc74bf3aafad25e6d8e3dd381fdbf50cc0fc1b8",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/SOURCE_INDEX.json",
+      "expected_blob": "50d6b12f49ead9c4f5589878d35bdf7e88a1945f",
+      "md5": "24cdb1961478a8b44c393def9e74a742",
+      "remote_blob": "50d6b12f49ead9c4f5589878d35bdf7e88a1945f",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/STATUS.md",
+      "expected_blob": "cfdc82398d18cef652ffd1f2dd9f2072e67958b9",
+      "md5": "c2576fda2fd760e85eb79ed3cf6f97cf",
+      "remote_blob": "cfdc82398d18cef652ffd1f2dd9f2072e67958b9",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/VERIFICATION.json",
+      "expected_blob": "9aa61e87351dde578e304294a4c80af0901ae47d",
+      "md5": "f059d677b527fadbee8d78b4833b9083",
+      "remote_blob": "9aa61e87351dde578e304294a4c80af0901ae47d",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/check_integration.py",
+      "expected_blob": "1071cb28a2a4c73b6f7e455e12057c2371681b92",
+      "md5": "fd8290389b1a9cf5b8188dd8e96ef66b",
+      "remote_blob": "1071cb28a2a4c73b6f7e455e12057c2371681b92",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/check_pdf.py",
+      "expected_blob": "91540e2ede0976738725cf5d5f9795616a9628ed",
+      "md5": "3f1fb6c5757bee61ce0fce01233e317f",
+      "remote_blob": "91540e2ede0976738725cf5d5f9795616a9628ed",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/check_sources.py",
+      "expected_blob": "29db274ff984682051928af25ded8e9aad96076e",
+      "md5": "8b5698bc9f0a9ea10fbcc64b8cd8a256",
+      "remote_blob": "29db274ff984682051928af25ded8e9aad96076e",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/compile_Response_letter.txt",
+      "expected_blob": "31d326cbd512c8b4ea93363c27e0e18c9dab35fe",
+      "md5": "01e9a3ef676454cdc31bdd49c818d9ca",
+      "remote_blob": "31d326cbd512c8b4ea93363c27e0e18c9dab35fe",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/compile_Supplementary.txt",
+      "expected_blob": "16b150ddaf4631158b5cce9e34c2415633fc34f2",
+      "md5": "a548beb71db1e563ee414d51a085b0f1",
+      "remote_blob": "16b150ddaf4631158b5cce9e34c2415633fc34f2",
+      "match": true,
+      "isError": false
+    },
+    {
+      "path": "results/r2m7_integration/compile_manuscript.txt",
+      "expected_blob": "877a34f474a53f4f9bfca8d649d4486d279f432d",
+      "md5": "a7825062ec18271ca5df88b3754b3f19",
+      "remote_blob": "877a34f474a53f4f9bfca8d649d4486d279f432d",
+      "match": true,
+      "isError": false
+    }
+  ],
+  "task22_files_preserved": 49,
+  "task22_commit_preserved": "558da58341bcd8d1aedc9f6cd9754b58774b56fa",
+  "scientific_evidence_commit": "dc850836b486e8f326ddcb432a3602fe8b8448b6",
+  "closure_metadata": "Added in a subsequent normal commit only after this successful archive verification; receipt describes the first archive commit, not itself."
+}

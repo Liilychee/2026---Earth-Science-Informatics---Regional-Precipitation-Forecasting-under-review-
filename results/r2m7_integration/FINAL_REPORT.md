@@ -90,3 +90,15 @@ check_integration.py通过，结果见VERIFICATION.json：
 3. 归档通过后再更新R2-M7正式关闭状态；最终全文页码/行号仍待全稿统一补齐。
 
 **当前结论：R2-M7本地最终核验通过，等待作者审核及授权归档，尚不满足包含Git归档在内的正式关闭条件。**
+
+
+## 作者授权后的Git归档尝试：远端并发更新，已停止
+
+2026-11-14：从当时origin/main `8005ab08506dc8e0f9123f81e1861fdacc9de942`建立独立worktree，31个明确列举的R2-M7证据/patch/状态文件形成本地提交`09de6bb475300292473bcc7bae75e72e34fb32f1`。正常push被拒绝（fetch first，远端已新增提交）。按作者指令立即停止，未pull/reset/merge/rebase/强推；未成功推送，未进行远程逐文件核验，**仍不关闭R2-M7**。失败状态见REMOTE_RECEIPT.json及STATUS.md。本地原论文工作区、LaTeX/PDF、既有关闭成果未改动。
+
+
+## Git冲突修复及正式关闭（作者授权后）
+
+实际冲突原因已确认：初始基线8005ab0之后仅新增任务22提交558da58341bcd8d1aedc9f6cd9754b58774b56fa，新增49个q22脚本/实验文件，与R2-M7归档31文件无路径交集，也未修改R2-M7科学证据。新独立worktree以558da58为基线，无冲突cherry-pick原09de6bb，得到2268b154ee3f3a6cc302ee8093b6e44f406c5327。31文件与原提交逐字节一致，49个任务22文件全部不变；正常push已成功，GitHub固定提交31/31 blob回读一致。REMOTE_RECEIPT.json记录成功归档，GIT_RETRY_REPORT.json记录冲突及任务22保护证据。
+
+原92段摘录、5段新摘录、206个数值及S47/S2、112保护哈希与三PDF源码对应关系再次核验通过。原论文根目录文件及Git index未改动。此后关闭记录/receipt采用单独增量提交；CLOSURE_STATUS.patch仅记录任务03、清单、注册表本轮关闭增量，不整份提交或覆盖其余内容。历史失败/待审核文字保留为阶段记录，由此及STATUS.md的当前状态取代。**R2-M7本轮正式CLOSED；R3/R4共享事项仍Pending，R2-M8未开始。**

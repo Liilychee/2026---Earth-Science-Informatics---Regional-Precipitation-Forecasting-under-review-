@@ -1,0 +1,258 @@
+{
+  "conflict_actual_cause": "origin/main advanced from 8005ab0 to task22 commit558da58 while the first archive was prepared; no R2-M7 path conflict",
+  "old_parent": "8005ab08506dc8e0f9123f81e1861fdacc9de942",
+  "new_base": "558da58341bcd8d1aedc9f6cd9754b58774b56fa",
+  "old_commit": "09de6bb475300292473bcc7bae75e72e34fb32f1",
+  "new_commit": "2268b154ee3f3a6cc302ee8093b6e44f406c5327",
+  "archived_files_identical": 31,
+  "task22_files_preserved": [
+    {
+      "path": "code/q22_build_hourly.py",
+      "blob": "92b95f3932e986b2765e93ee7e47c49ef666ebe2",
+      "unchanged": true
+    },
+    {
+      "path": "code/q22_stats.py",
+      "blob": "79147ba70bd817983f079fa0d72f773ad317b2e2",
+      "unchanged": true
+    },
+    {
+      "path": "code/q22_train.py",
+      "blob": "cf8db52c37f326670e42a2ecfeea13d539204690",
+      "unchanged": true
+    },
+    {
+      "path": "results/metrics/q22_build_output.txt",
+      "blob": "46b80a700edd5984c3792b0e459f7e5afddb62b0",
+      "unchanged": true
+    },
+    {
+      "path": "results/metrics/q22_check_output.txt",
+      "blob": "d50e2c2bc62f7bc5dcf5009f9a187671e75abb34",
+      "unchanged": true
+    },
+    {
+      "path": "results/metrics/q22_effect.csv",
+      "blob": "a5c25a4599172168dfdd96d1e4a5d91cf4147954",
+      "unchanged": true
+    },
+    {
+      "path": "results/metrics/q22_runs.csv",
+      "blob": "4f8847aac3bc5b15fd3d63f58701c400c4dd7832",
+      "unchanged": true
+    },
+    {
+      "path": "results/metrics/q22_stats_output.txt",
+      "blob": "5a669ec9bece31fa085d07c9632c91e65ead0bec",
+      "unchanged": true
+    },
+    {
+      "path": "results/metrics/q22_train_output.txt",
+      "blob": "82e4432e18f80735ad00c7722becc0ee95e9ab9b",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/preds/bilstm_attn__A__s123.csv",
+      "blob": "b35e1eefb3f423517f279f67b32a5b8db6530d98",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/preds/bilstm_attn__A__s2024.csv",
+      "blob": "3d48dc6e53b44ad9754a49e247bf5283b92fe388",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/preds/bilstm_attn__A__s42.csv",
+      "blob": "d9022a22e5e2edf60ed1def18b206e4a58cda432",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/preds/bilstm_attn__A__s7.csv",
+      "blob": "81dfabe026e43059ac301485db90bf6cb2b57bd8",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/preds/bilstm_attn__A__s99.csv",
+      "blob": "b24cf668326f861ef764f9b964fcf4fc39e16027",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/preds/bilstm_attn__B__s123.csv",
+      "blob": "e6744311d9a83d79ce6960d63cbcddf8228dacae",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/preds/bilstm_attn__B__s2024.csv",
+      "blob": "e5817939cd82ea05083b88381a40c4ca20e3c7c7",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/preds/bilstm_attn__B__s42.csv",
+      "blob": "7bd3ab794b1eaf5b6f44b79d6302535466a1f043",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/preds/bilstm_attn__B__s7.csv",
+      "blob": "620e953336e4e2ab2d0e7983cb75bd8edf0656aa",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/preds/bilstm_attn__B__s99.csv",
+      "blob": "371dc13df14dde2cabaf95250ea2745c52256f0b",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/preds/xgboost__A__s123.csv",
+      "blob": "bf8cc523bb59d61e869b42c3b02a468d1f134016",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/preds/xgboost__A__s2024.csv",
+      "blob": "90c74cf03188cb47adcc27c084e2dd7cc06f1729",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/preds/xgboost__A__s42.csv",
+      "blob": "bc5dac825b64ad1a081760c000d98c929aeffb08",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/preds/xgboost__A__s7.csv",
+      "blob": "d1d0c5fce818f848aba4b67ab0e7cb038a8b7118",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/preds/xgboost__A__s99.csv",
+      "blob": "4fb37e53dfc1335a200583badcfacbfbe0794386",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/preds/xgboost__B__s123.csv",
+      "blob": "7dfd80ea833119ef2db7809a08a07f70f5f17183",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/preds/xgboost__B__s2024.csv",
+      "blob": "74c9859aa07fa30e15879338824a1b79744890f5",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/preds/xgboost__B__s42.csv",
+      "blob": "b06d67bdd6998d9a5eea2a60a14d2df7b6e43d55",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/preds/xgboost__B__s7.csv",
+      "blob": "9ea1e7b0cae1a16276940f880cab3254ce5cf3eb",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/preds/xgboost__B__s99.csv",
+      "blob": "aff9732c84d09c1d70db291078c87e251d9a1777",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/runs/bilstm_attn__A__s123.json",
+      "blob": "5478bd30ac31a5ae4c5a7f145a860fffe9b73eb2",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/runs/bilstm_attn__A__s2024.json",
+      "blob": "5dd417dec32251fd6a55f1628bb7853832e4e9ac",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/runs/bilstm_attn__A__s42.json",
+      "blob": "1b63285cc711ac0d81f7c1e669ba4db1b7ca02ef",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/runs/bilstm_attn__A__s7.json",
+      "blob": "fd7440b496e694dc1f33fcc8c7038502c6cb3a66",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/runs/bilstm_attn__A__s99.json",
+      "blob": "e9596361ab1bcc32042d8df62ed9e1131d0e1b35",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/runs/bilstm_attn__B__s123.json",
+      "blob": "aa638bea0cee467e9ff60aa6c8d4507632f7d5ab",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/runs/bilstm_attn__B__s2024.json",
+      "blob": "54f3129d2e25d5c82f56f9f2dd478b08d0e09aaf",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/runs/bilstm_attn__B__s42.json",
+      "blob": "f6341ff23aa645c5dc8f257cc4857b6c72866b78",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/runs/bilstm_attn__B__s7.json",
+      "blob": "a4d64a81ebadb850cbb5d2b41ea786b45cb5e590",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/runs/bilstm_attn__B__s99.json",
+      "blob": "99d854a05cf37b30bf6c06b4ff621a307285883b",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/runs/xgboost__A__s123.json",
+      "blob": "90afe9e6dceff30cc7cfef33e5fb802d3efb05e3",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/runs/xgboost__A__s2024.json",
+      "blob": "3a62266b76b4a4fa75b16d9513d20a3423baced4",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/runs/xgboost__A__s42.json",
+      "blob": "2cca453c938940598b54bc972dfc305a51b3f93b",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/runs/xgboost__A__s7.json",
+      "blob": "e50a1a953ba2f5326638cd91cb8ab3bc73f73a26",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/runs/xgboost__A__s99.json",
+      "blob": "b0e1d76b58b03651b335bf0a54cc59f6d7dcdd71",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/runs/xgboost__B__s123.json",
+      "blob": "a459325c2ea3b8b38a0482a94632a6a500b27a96",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/runs/xgboost__B__s2024.json",
+      "blob": "270a1ad97e3d41cf4b158d0ddf64583a1787fd15",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/runs/xgboost__B__s42.json",
+      "blob": "b4c5cca7671fe1f69e598372cc5f6b037211ad3f",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/runs/xgboost__B__s7.json",
+      "blob": "5d5488016ebef0629bd709a8e6af4ce1d630d658",
+      "unchanged": true
+    },
+    {
+      "path": "results/q22/runs/xgboost__B__s99.json",
+      "blob": "bda7011cdd860e593e2fc1959c18cefa9b2cc2f7",
+      "unchanged": true
+    }
+  ],
+  "root_documents_unchanged": true,
+  "no_training_or_plotting": true,
+  "no_pull_reset_force_or_history_rewrite": true
+}
