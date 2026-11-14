@@ -1,0 +1,506 @@
+[
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "code/q111415_batch.sh",
+    "md5": "29b574893389fc01c28ff0d070af0efe",
+    "sha256": "7cbd520d34a8e54e014a618bce160e91c5ee7798b5c1766de59f87c8eefcd8cd",
+    "bytes": 2624
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "code/q11_stats.py",
+    "md5": "5ad200a4a78ed2a1ada1b59ea4305ca7",
+    "sha256": "e3083b89cbcc42fefa9e5aa669a9c1fe3de7a6da51a9efa7247123586f436ffe",
+    "bytes": 10385
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "code/q11_train.py",
+    "md5": "e59bff8daba12117db1ce73da1b0d737",
+    "sha256": "2199c0779263246d8a49425a4ab835f5e0cd89a7143e4c81514d4131dd0a8d37",
+    "bytes": 14078
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "code/q11_twcrps.py",
+    "md5": "a88c6a5a59bae87ea3de4cb2e0e1d707",
+    "sha256": "9a02b98052826f4679055a1a0135b5c6599c05a13ba01b39780a7d67bf23547e",
+    "bytes": 6912
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q11_paired_bootstrap.csv",
+    "md5": "5ea9e6735d21b3e538dc5e56156644e6",
+    "sha256": "3219664b04e26091ecb9c9ff80930f465380862aea62f72930f5779417f7cda1",
+    "bytes": 5390
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q11_paired_seed.csv",
+    "md5": "aabe73e17e621fab3316ec16fa45389d",
+    "sha256": "e4cbc70a384c7af55136776e81475534e0eb0af22b3390abd784c7ad85124411",
+    "bytes": 12008
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q11_per_seed.csv",
+    "md5": "f5531dafe83f4dda2f5bed2325787232",
+    "sha256": "0166b823994cbd94abab9e14ff65a2cc66c6b8529a4aaddb785a26a4368eceb2",
+    "bytes": 16794
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q11_stats_output.txt",
+    "md5": "6272e798e6ed2c04fcc6b0bd0f297f37",
+    "sha256": "28abcff28a3e208521fae54aa0a6b2207d3fdc3739de50b01b2f3947e49e385d",
+    "bytes": 11121
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q11_summary.csv",
+    "md5": "0448a9536a3c87edc0ab4e4c5c6f757e",
+    "sha256": "12e504341db6531c8891e577dd4dcdd24a783bd26e7c3a950970d39e640f05a8",
+    "bytes": 5346
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q11_twcrps_output.txt",
+    "md5": "90fe10979671e0267a157675622ff49e",
+    "sha256": "f12924c1f1f6949d4d41465c9ab9a6276e99dae58ad45c64f1ce1e5b04043a41",
+    "bytes": 2817
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q11_twcrps_paired.csv",
+    "md5": "92942f1e0a3d1e87c54d5aea691fbdc7",
+    "sha256": "eae17c4b6dfc51c57cb09aa8d3ea35cfdbd604f6a4987b513d287f3e3cb5f87a",
+    "bytes": 2807
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q11_twcrps_per_seed.csv",
+    "md5": "3f39755dbe60f8506347c62eb8c977cb",
+    "sha256": "d0f62c7af9e3286854a8f629c40158c45b12d354bde6f0483d857420873654e1",
+    "bytes": 2536
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/bergamma__dry0.001__s123.csv",
+    "md5": "33a362c4eec67092903c22cb5e8d03d8",
+    "sha256": "aeb0bfebd3a4d5bc1d1fc9774c520454bf55533805addf59f94eac08c919659b",
+    "bytes": 1983808
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/bergamma__dry0.001__s2024.csv",
+    "md5": "00cc0a7346d6e862b96625dd5f6507a5",
+    "sha256": "f758c8ba8748c086e5cb042d313b56ad47fede6ac3ae00a28cdd7312d2dff074",
+    "bytes": 1989484
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/bergamma__dry0.001__s42.csv",
+    "md5": "53cdff90625a67a9394c865668d99a7f",
+    "sha256": "b9c26238be4439c15b1dce945fcc9070bdaf7cf46c260f495d3d23b9c4a77b5d",
+    "bytes": 2005958
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/bergamma__dry0.001__s7.csv",
+    "md5": "97a877fd803b7fc4ef13c1beadd9ccf4",
+    "sha256": "2c5af86c505f3bebe735e50219e3d97e291d4f6feea0c29c9e3907408da6ba1a",
+    "bytes": 2004379
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/bergamma__dry0.001__s99.csv",
+    "md5": "f24cc96110b94509ff514fda5d0ba34a",
+    "sha256": "1aba697bc30b98b41fae1044d2cd1af1b6ca42449f60d7eb80f6b6e9114e22a1",
+    "bytes": 1995301
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/bergamma__dry0.01__s42.csv",
+    "md5": "12a14e45ffebf73656c9aa9fa0a41dff",
+    "sha256": "6a4efc0dc9e5dfa6a92d8258e9bac2b738b4caae19facf098d0f362b90755410",
+    "bytes": 1935864
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/bergamma__dry0__s123.csv",
+    "md5": "0032f9fb149ef2508d785a1ebf717223",
+    "sha256": "f6c36330c53a9fab58323ddd1bf6a2dcbc86f649afc6b47904131324e388fded",
+    "bytes": 2047195
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/bergamma__dry0__s2024.csv",
+    "md5": "c42b7eca1734571156283afb8475aac4",
+    "sha256": "c48c38ef82f7a10c15b8c959350fba546f704c2d21d37bfb6657e46c42ab4443",
+    "bytes": 2073724
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/bergamma__dry0__s42.csv",
+    "md5": "0576ffd6b9cbb83f71f320a37a7b9391",
+    "sha256": "1da09f77021ec3e0940131fc8f1a3c075e210e62a374ffdd8837076011543147",
+    "bytes": 2074244
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/bergamma__dry0__s7.csv",
+    "md5": "7ac9a38ba2b54f13883a959336360a9a",
+    "sha256": "161411330e118b2bf93cc65fcc2459535edef1e4ea61affed91e61f988372072",
+    "bytes": 2069323
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/bergamma__dry0__s99.csv",
+    "md5": "e6d431db0fa4f7702523d395440190a3",
+    "sha256": "627ac29d412637fc4197ba003784e8215ee1768274d39de04051b585801bd4bf",
+    "bytes": 2066448
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/gaussian__s123.csv",
+    "md5": "bdc99e4b900bff66e329e7bc9ec52d0b",
+    "sha256": "9659519c5d066dd5af0992f4c8766a3721c974435b85235a3f65842d8a72e7dd",
+    "bytes": 2110696
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/gaussian__s2024.csv",
+    "md5": "34f961d318756df3fa27a0cedce51aab",
+    "sha256": "185be7150b9e553df2efc7b49747978e291e371224a446168d2f460a08a5ddb8",
+    "bytes": 2124372
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/gaussian__s42.csv",
+    "md5": "73730b0c9931e6aaa15edd71cc609c64",
+    "sha256": "57b4e6ea8d093edad7e0a89d68ce38209fade6496ed389b241552e269a1b6173",
+    "bytes": 2121391
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/gaussian__s7.csv",
+    "md5": "323ef304a3ceef51745d86f56e23cce3",
+    "sha256": "ab49123446ece76d415ca388aa08878004faec8655eaf78712be24c6398f1840",
+    "bytes": 2114976
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/gaussian__s99.csv",
+    "md5": "cb47a3818a035f299e99511a7a4803a7",
+    "sha256": "698f5010e07b7605fcae20fcb1f3fe7c97e0abe92019a08322c937239888b19a",
+    "bytes": 2121916
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/tobit__dry0.001__s123.csv",
+    "md5": "2baf44e4e6946cf76330bf6a1afc4a7b",
+    "sha256": "00313a470c5674ae1b2ea57d05b0fbe7de3e8d25db6fdbd92214a25640e185a3",
+    "bytes": 1798001
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/tobit__dry0.001__s2024.csv",
+    "md5": "2f6e2e59f3eb5eb55f1932b047f3ce9c",
+    "sha256": "3c60a0e736c0615555c46f518dc137c23d7ab7e85387f1bc24007350ca41a5cb",
+    "bytes": 1807002
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/tobit__dry0.001__s42.csv",
+    "md5": "55a9bd8f147bc331e9618bd375dcade1",
+    "sha256": "36ae7e2025fc65340e55c84b0f05c4cf1ed995622d57668de04976bea49cc6c8",
+    "bytes": 1798658
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/tobit__dry0.001__s7.csv",
+    "md5": "531e85551d3db53577ffbd4538235368",
+    "sha256": "e8f39ab143eef0c10d31918348f145293153f86e3d6067e750073843789bb736",
+    "bytes": 1809721
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/tobit__dry0.001__s99.csv",
+    "md5": "27f9129f7415975633cad4c11dfcc9fe",
+    "sha256": "61f4e0430eedb2a7d7b97aa65d29428f87396515a4f1af8cd2a768df7a51fcfa",
+    "bytes": 1810496
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/tobit__dry0.01__s42.csv",
+    "md5": "590f1dbb9b513a4829967eac7ae2d0ee",
+    "sha256": "cc9bdeac0eda241badc0423d99c85750b05ff6cfa43d365d01161b82ef414537",
+    "bytes": 1769949
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/tobit__dry0__s123.csv",
+    "md5": "11c4e3700968f8583b555e33be08c577",
+    "sha256": "bbca9a80ec407fa7c76d68fd00e2521d1e10e5c33b29696df624024341825c19",
+    "bytes": 1823168
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/tobit__dry0__s2024.csv",
+    "md5": "2a5ad90a481b11526f23635ead0d3350",
+    "sha256": "e8574c08c7edc05f4f0f8e7c5786bebb18780cc2eb2e96f5a00770c1a9342f98",
+    "bytes": 1830979
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/tobit__dry0__s42.csv",
+    "md5": "fa8747d640cfd2614273a8b7ceb9538c",
+    "sha256": "9e04f5bfcd3938713333a05217ffc333fdae26e9fcaa9f172bd1b21a12e3123a",
+    "bytes": 1818373
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/tobit__dry0__s7.csv",
+    "md5": "cb1786331cf86844f4085b851c2b0211",
+    "sha256": "4d85b09d9303e6714b0aab3397dde54a1bc6e87bc4d4ebcca5a07e220bf3c71a",
+    "bytes": 1828966
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/preds/tobit__dry0__s99.csv",
+    "md5": "34530ad8634720f988449fec24053d45",
+    "sha256": "32e029b551283939319abba42798131e383dc69049da6f54addcf45c1c99e80b",
+    "bytes": 1821288
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/bergamma__dry0.001__s123.json",
+    "md5": "08b101d1a9d23abc9a644556011657af",
+    "sha256": "6a47d25121d27d61909d15c6989c4002609bc059b9d2d8dee84b35a3bb4255ce",
+    "bytes": 10308
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/bergamma__dry0.001__s2024.json",
+    "md5": "b6c86598e06dbcdb3ae546049d12f0c5",
+    "sha256": "b1443e73ec6bcd5cc210584c8aa409aa3443a6099e453f81ae16d9c927a44e5a",
+    "bytes": 10437
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/bergamma__dry0.001__s42.json",
+    "md5": "c7273b8d1b36d71c0c1a5ce9fe84499c",
+    "sha256": "40f469ecb8e268540011d203bea07ebd5ca320f7a641c1ba485944b91ba3d071",
+    "bytes": 10386
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/bergamma__dry0.001__s7.json",
+    "md5": "4c053a0d8f59a07950b3533785eee93c",
+    "sha256": "565f7cc85a42ceed6b92185a6f80feedf27a07f4b4b670027622c2d657b7734a",
+    "bytes": 10490
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/bergamma__dry0.001__s99.json",
+    "md5": "9575b2b3cf9346cacb5c96b00346324e",
+    "sha256": "f1286e7c8b08f113fd9f4920afb0ed476ac7a1ce31fa005d6b0c3f2f1c7b2a21",
+    "bytes": 10518
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/bergamma__dry0.01__s42.json",
+    "md5": "50a49efd0a4456c1eda382877e62b848",
+    "sha256": "278acd50ada4411a5058d496381723c2f0f1d7bca618e665ce08442aff1c8350",
+    "bytes": 10177
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/bergamma__dry0__s123.json",
+    "md5": "90752d12a4ab6d7ddedbb37982478867",
+    "sha256": "015257531fb2c0716fb4c38bd19192965a02114d20edc20147a348c9504d902c",
+    "bytes": 10403
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/bergamma__dry0__s2024.json",
+    "md5": "db01523fdc23fcfa823e89281ebde1e3",
+    "sha256": "6a7ff17503036a74137d8c49518a57d7599c134e4f448decc23d10f1335367db",
+    "bytes": 10462
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/bergamma__dry0__s42.json",
+    "md5": "fb0ce2aa2f4648f436cead6a61812fbe",
+    "sha256": "d9b9cec97f27367676d7df6ae3feb28d2ae0bc653034b0ea8b261e9be8ddf7f6",
+    "bytes": 10514
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/bergamma__dry0__s7.json",
+    "md5": "c33554fca8ebd8c9fb261e408ae991dc",
+    "sha256": "6a40cfa73634981c6d3ea0d425f6689ff127060c15b8b4b6da4251540c40af5a",
+    "bytes": 10368
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/bergamma__dry0__s99.json",
+    "md5": "28ab4fa108179d58f83cb03cc2e79d35",
+    "sha256": "f5e7895554c82f89e01f317153b53a9149fa0acf4f5e743820e4d3b95b8bbf53",
+    "bytes": 10507
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/gaussian__s123.json",
+    "md5": "ec0df945032355f732bbfc0f311e5a06",
+    "sha256": "6f99741a2ee06039de6783635ec05f6d40f6916e609db724ee43cdc9b7413838",
+    "bytes": 9867
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/gaussian__s2024.json",
+    "md5": "819d81af1a59b807457a4fbfd8b49b46",
+    "sha256": "12069de9344a93b555720ba9a44ed8c0c6df2a8f432f16c8a1d904e1049f4058",
+    "bytes": 9568
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/gaussian__s42.json",
+    "md5": "12de6f3d16bf2769244422fc156a89c6",
+    "sha256": "933d0c3fbca568c6f5a5b594a3cb70b30889ccfae150a48d5a633a687b7505c0",
+    "bytes": 10001
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/gaussian__s7.json",
+    "md5": "793d93def8f82b1e8e9f58b543c39091",
+    "sha256": "b050cf092641c3046ce5d64a7a1f76b92cda5455eb45859e809a48fea9947d21",
+    "bytes": 10150
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/gaussian__s99.json",
+    "md5": "266a13c92be82ddd8f9a3f060db14fb0",
+    "sha256": "52ce2d55367d6c44aeb350ad455d9047245a3af348616ff7b318b4c0a3cf1e89",
+    "bytes": 9496
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/tobit__dry0.001__s123.json",
+    "md5": "58673ced6f32ee633868d757d6c8ac5e",
+    "sha256": "c614040105ef0abd2bdbe48889b9db5c099b9634891e1cc9643ab95bac30c9cd",
+    "bytes": 9673
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/tobit__dry0.001__s2024.json",
+    "md5": "548278bcba15373b3ab887730693c7ff",
+    "sha256": "3f52d4f818a73fa62dd49e4c4ceae29ecccc0d38ffa514e9b0c87c4468b8bda3",
+    "bytes": 9787
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/tobit__dry0.001__s42.json",
+    "md5": "171b38973c65c8a1a34ec58ecde0e24d",
+    "sha256": "f6e84a8b1d8f4771b998fb8a48a284d521a93a07b2b142ba2a0941699bfcf242",
+    "bytes": 9895
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/tobit__dry0.001__s7.json",
+    "md5": "15ba4787071ec15e0667b94c7979840d",
+    "sha256": "f7e2787fcbb4f09482da871724bf25c8e4f855e1f59b915341fe55ca327fba36",
+    "bytes": 9957
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/tobit__dry0.001__s99.json",
+    "md5": "c99decc9b8f8a1d8be105d55f504a1b4",
+    "sha256": "0238c0af7df55187cb0323ba9aa85a852b25b648960df12c066a45b0e11473e6",
+    "bytes": 9997
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/tobit__dry0.01__s42.json",
+    "md5": "a7b82eb7d9116742226c5cb2f12b9beb",
+    "sha256": "0fbb6d7f864fa2283208d7460bcc322674fa16e498911363f779bd2f644b9afc",
+    "bytes": 9879
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/tobit__dry0__s123.json",
+    "md5": "44748d18b4ce423e7f49fdd585588dca",
+    "sha256": "d0f4d7dbc29a46f1b23f0446ad3da259961ab12f082edd052507e425df85f112",
+    "bytes": 9719
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/tobit__dry0__s2024.json",
+    "md5": "89ef5f04b25c6b7cde6c5eac65fbc429",
+    "sha256": "960a4de6de6a5623627ee45bea98c10236703e798894ac1276ae9e497bd0a84c",
+    "bytes": 9822
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/tobit__dry0__s42.json",
+    "md5": "40a67d6a0cea4a4ed9e0d4fd4eabc173",
+    "sha256": "79d2e62221418e748e8f17f038d208449f641eb87f1c919b89e7416f75c881a5",
+    "bytes": 9932
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/tobit__dry0__s7.json",
+    "md5": "86d14793a5f3ef1376e2563abc65a5eb",
+    "sha256": "e1d4a91e4263c49674b74b638b67181745cdf51d89add248c8e59a42742b0eae",
+    "bytes": 10087
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q11/runs/tobit__dry0__s99.json",
+    "md5": "906157a4224b10926b5a37d6faf652bb",
+    "sha256": "5d8706ceb47cd05d6a0691d2fb653e15386ad3b9e1f779e69efacc4b30c17d11",
+    "bytes": 9821
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/prob_bilstm_attention_preds.csv",
+    "md5": "e40b252a4cddacc04613746cdfd0335c",
+    "sha256": "0542837f143f23bbaa3d2559d4b0a9db18b6ac511ff7276ce164fb6be178963b",
+    "bytes": 1592163
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/xgboost_preds.csv",
+    "md5": "8af1fbe1bde1124f4eb8bd2e9778b9d7",
+    "sha256": "3ed75bf4eb8a49ae9161a21c3b76c8095aca6230bd6870f97246ad97b5708870",
+    "bytes": 1323166
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "code/q16_intervals.py",
+    "md5": "d9892d88af57b5c3e0f2a8a92092d3c4",
+    "sha256": "d96209e054daf3acdeb64a29adf70122656d9f26fa3c3a7405b35cc7bfcde1da",
+    "bytes": 4474
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q16_interval_per_run.csv",
+    "md5": "4535a1e2be0012b118b9d501b5a21fee",
+    "sha256": "65fa05abc2e55af5cf3837171925aee297777fed50ab3c6d48300a7d6bb4b80a",
+    "bytes": 12577
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q16_interval_summary.csv",
+    "md5": "c7377d7eca9d675bb9d660e93f7e7a25",
+    "sha256": "3bc2174dc15fc333fc40c9ddf7d00217b20e79beae9908aa8d656fbeada39207",
+    "bytes": 4657
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q16_output.txt",
+    "md5": "49d399cf66b8dbe4c068d8545f91922c",
+    "sha256": "028e80ef5e247f7097d324ff08ec8f4913a46b2d95d094af3191bd02d731ebd5",
+    "bytes": 3173
+  }
+]

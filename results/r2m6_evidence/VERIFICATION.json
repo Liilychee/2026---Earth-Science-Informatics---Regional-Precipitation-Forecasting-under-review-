@@ -1,0 +1,24 @@
+{
+  "evidence_preparation_only": true,
+  "paper_and_task_files_unchanged": true,
+  "no_training_or_figures": true,
+  "CRPS_primary_means_four_dp": [
+    "0.0961",
+    "0.0847",
+    "0.0773"
+  ],
+  "primary_max_seed_abs_difference": 4.316150951329256e-05,
+  "independent_formula_validation_max_abs_error": 3.769665135600064e-12,
+  "full_paired_rows_verified": 4,
+  "paired_boot_interval_max_abs_reproduction_error": 1.0001765041178778e-16,
+  "width90_runs_verified": 15,
+  "all_wet_event_sets_equal": true,
+  "seed42_dry_checks_precede_additional_seeds": true,
+  "bootstrap_actual_length": 3948,
+  "diagnostic_truncated_n_max_interval_endpoint_change": 1.4685515432100171e-05,
+  "formal_integrations_performed": false,
+  "R2_M6_closed": false,
+  "task11_modified": false,
+  "evidence_ready_for_formal_integration": true,
+  "diagnostic_truncation_zero_crossing_unchanged_for_four_full_pairs": true
+}

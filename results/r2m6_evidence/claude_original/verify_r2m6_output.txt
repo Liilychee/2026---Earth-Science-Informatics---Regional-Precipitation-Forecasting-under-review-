@@ -1,0 +1,112 @@
+/private/tmp/claude-501/-Users-yue-codex-proj-2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/329fe4d9-e057-425e-895d-64a985af76b7/scratchpad/verify_r2m6.py:90: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  out[i:i + 200] = np.trapz((F - H) ** 2, z, axis=1)
+max |y_true(q11) - y_true(main saved Prob BiLSTM-Attn)| = 1.3319088187913053e-07
+n test 3939 | exact zeros 711 | |y-0.1|<1e-9: 0 | n(y>0.1) 854 n(y>=0.1) 854 | n(y>=Q95) 238
+all 25 runs share the same 3,939 test times and targets
+
+exact CRPS (independent) vs q11_twcrps_per_seed.csv 'full'
+  Gaussian  0.09610 ± 0.00308 | archived 0.09607 ± 0.00308 | max per-seed |diff| 4.3e-05
+  Tobit     0.08468 ± 0.00225 | archived 0.08467 ± 0.00225 | max per-seed |diff| 4.5e-06
+  BG        0.07726 ± 0.00046 | archived 0.07725 ± 0.00046 | max per-seed |diff| 6.1e-06
+  Tobit001  0.08223 ± 0.00120 | archived 0.08223 ± 0.00120 | max per-seed |diff| 4.8e-06
+  BG001     0.07725 ± 0.00039 | archived 0.07724 ± 0.00039 | max per-seed |diff| 5.0e-06
+  BG vs Gaussian -19.60%; Tobit vs Gaussian -11.88%; BG vs Tobit -8.76%
+  Gaussian: min(mu - 6 sd) = -5.551 mm (archived integration lower limit -4 mm); max sd = 1.001
+parameters valid in all runs: BG p in (0,1), shape>0, scale>0; Tobit/Gaussian sd>0
+
+BG seed 42: max |F(q975)-0.975| where q975>0: 8.881784197001252e-16 | q975==0 requires 1-p>=0.975: True | q025==0 share: 0.7781162731657781
+   max |p_geQ95 - p*(1-P(a,Q95/b))|: 1.199040866595169e-14 | max rel |mean - p*a*b|: 0.0
+Gaussian seed 42: max |q975 - (mu+1.95996 sd)|: 3.8585090678111555e-10 | y_pred_mean == mu: True
+
+recomputed seed means vs q11_summary.csv
+  Gaussian:
+     neg_lower95      1.0000 ± 0.0000   archived 1.0000  diff +0.0e+00
+     picp95_all       0.9565 ± 0.0052   archived 0.9565  diff +0.0e+00
+     picp95_wet       0.8042 ± 0.0211   archived 0.8042  diff +0.0e+00
+     picp95_upper     0.4941 ± 0.0367   archived 0.4941  diff +0.0e+00
+     picp90_all       0.9459 ± 0.0073   archived 0.9459  diff +0.0e+00
+     picp90_upper     0.3958 ± 0.0450   archived 0.3958  diff +0.0e+00
+     width95_all      0.7989 ± 0.0684   archived 0.7989  diff -1.1e-16
+     width95_upper    1.5462 ± 0.0728   archived 1.5462  diff +0.0e+00
+     is95_all         1.3977 ± 0.0389   archived 1.3977  diff +0.0e+00
+     is95_upper       10.6946 ± 0.9463   archived 10.6946  diff +1.8e-15
+     above95_upper    0.5059 ± 0.0367   archived 0.5059  diff +0.0e+00
+     brier_gt0.1      0.1628 ± 0.0099   archived 0.1628  diff -2.8e-17
+     brier_ge0.1_alt  0.1628 ± 0.0099
+     brier_geQ95      0.0523 ± 0.0005   archived 0.0523  diff +0.0e+00
+     brier_ge1.0      0.0220 ± 0.0002   archived 0.0220  diff +0.0e+00
+     rmse             0.2494 ± 0.0011   archived 0.2494  diff +0.0e+00
+     max_pred_mean    0.4509 ± 0.0280   archived 0.4509  diff +0.0e+00
+     crps_wet_exact   0.2617 ± 0.0052
+     crps_upper_exact 0.6198 ± 0.0157
+  Tobit:
+     neg_lower95      0.0000 ± 0.0000   archived 0.0000  diff +0.0e+00
+     picp95_all       0.9611 ± 0.0064   archived 0.9611  diff +0.0e+00
+     picp95_wet       0.8258 ± 0.0258   archived 0.8258  diff +0.0e+00
+     picp95_upper     0.5454 ± 0.0482   archived 0.5454  diff +0.0e+00
+     picp90_all       0.9496 ± 0.0084   archived 0.9496  diff +0.0e+00
+     picp90_upper     0.4571 ± 0.0521   archived 0.4571  diff +0.0e+00
+     width95_all      0.5202 ± 0.0494   archived 0.5202  diff +0.0e+00
+     width95_upper    1.0654 ± 0.0693   archived 1.0654  diff +0.0e+00
+     is95_all         1.0330 ± 0.0406   archived 1.0330  diff +0.0e+00
+     is95_upper       8.9612 ± 1.1716   archived 8.9612  diff +1.8e-15
+     above95_upper    0.4546 ± 0.0482   archived 0.4546  diff +0.0e+00
+     brier_gt0.1      0.1526 ± 0.0094   archived 0.1526  diff +0.0e+00
+     brier_ge0.1_alt  0.1526 ± 0.0094
+     brier_geQ95      0.0516 ± 0.0004   archived 0.0516  diff +0.0e+00
+     brier_ge1.0      0.0217 ± 0.0002   archived 0.0217  diff +0.0e+00
+     rmse             0.2460 ± 0.0018   archived 0.2460  diff +0.0e+00
+     max_pred_mean    0.6864 ± 0.0765   archived 0.6864  diff +1.1e-16
+     crps_wet_exact   0.2477 ± 0.0065
+     crps_upper_exact 0.5865 ± 0.0194
+  Bernoulli-gamma:
+     neg_lower95      0.0000 ± 0.0000   archived 0.0000  diff +0.0e+00
+     picp95_all       0.9560 ± 0.0075   archived 0.9560  diff +0.0e+00
+     picp95_wet       0.8328 ± 0.0296   archived 0.8328  diff +1.1e-16
+     picp95_upper     0.6445 ± 0.0519   archived 0.6445  diff -1.1e-16
+     picp90_all       0.9242 ± 0.0106   archived 0.9242  diff +0.0e+00
+     picp90_upper     0.4908 ± 0.0626   archived 0.4908  diff +0.0e+00
+     width95_all      0.5408 ± 0.0516   archived 0.5408  diff +0.0e+00
+     width95_upper    1.3343 ± 0.1062   archived 1.3343  diff +0.0e+00
+     is95_all         0.9928 ± 0.0315   archived 0.9928  diff +0.0e+00
+     is95_upper       7.7706 ± 1.0223   archived 7.7706  diff +0.0e+00
+     above95_upper    0.3555 ± 0.0519   archived 0.3555  diff +0.0e+00
+     brier_gt0.1      0.1225 ± 0.0005   archived 0.1225  diff +0.0e+00
+     brier_ge0.1_alt  0.1225 ± 0.0005
+     brier_geQ95      0.0505 ± 0.0004   archived 0.0505  diff +0.0e+00
+     brier_ge1.0      0.0211 ± 0.0001   archived 0.0211  diff +0.0e+00
+     rmse             0.2417 ± 0.0012   archived 0.2417  diff +0.0e+00
+     max_pred_mean    0.8568 ± 0.1013   archived 0.8568  diff +0.0e+00
+     crps_wet_exact   0.2805 ± 0.0073
+     crps_upper_exact 0.6676 ± 0.0185
+  Bernoulli-gamma (dry 0.001):
+     neg_lower95      0.0000 ± 0.0000   archived 0.0000  diff +0.0e+00
+     picp95_all       0.9572 ± 0.0059   archived 0.9572  diff +0.0e+00
+     picp95_wet       0.8262 ± 0.0200   archived 0.8262  diff +0.0e+00
+     picp95_upper     0.6403 ± 0.0280   archived 0.6403  diff -1.1e-16
+     picp90_all       0.9310 ± 0.0071   archived 0.9310  diff +2.2e-16
+     picp90_upper     0.4832 ± 0.0303   archived 0.4832  diff +0.0e+00
+     width95_all      0.5276 ± 0.0317   archived 0.5276  diff -1.1e-16
+     width95_upper    1.2963 ± 0.0614   archived 1.2963  diff -2.2e-16
+     is95_all         0.9956 ± 0.0308   archived 0.9956  diff +0.0e+00
+     is95_upper       7.9329 ± 0.8107   archived 7.9329  diff +0.0e+00
+     above95_upper    0.3597 ± 0.0280   archived 0.3597  diff +1.1e-16
+     brier_gt0.1      0.1223 ± 0.0008   archived 0.1223  diff -2.8e-17
+     brier_ge0.1_alt  0.1223 ± 0.0008
+     brier_geQ95      0.0504 ± 0.0003   archived 0.0504  diff +6.9e-18
+     brier_ge1.0      0.0211 ± 0.0002   archived 0.0211  diff +0.0e+00
+     rmse             0.2414 ± 0.0011   archived 0.2414  diff +0.0e+00
+     max_pred_mean    0.8297 ± 0.1094   archived 0.8297  diff +0.0e+00
+     crps_wet_exact   0.2788 ± 0.0039
+     crps_upper_exact 0.6641 ± 0.0105
+
+exact CRPS BG-Gaussian: -0.01884 seed-t [-0.02313,-0.01455] boot [-0.02048,-0.01723] seeds better 5/5
+exact CRPS Tobit-Gaussian: -0.01142 seed-t [-0.01403,-0.00881] boot [-0.01209,-0.01077] seeds better 5/5
+exact CRPS BG-Tobit: -0.00742 seed-t [-0.01052,-0.00432] boot [-0.00896,-0.00588] seeds better 5/5
+
+run metadata
+  Gaussian  best [12, 10, 17, 4, 3] trained [22, 20, 27, 14, 13] tf ['2.21.0'] gpu ['NVIDIA GeForce RTX 5090'] clip ['None'] finite True 2026-11-06T00:37:22+00:00..2026-11-06T01:43:34+00:00
+  Tobit     best [11, 7, 14, 9, 9] trained [21, 17, 24, 19, 19] tf ['2.21.0'] gpu ['NVIDIA GeForce RTX 5090'] clip ['None'] finite True 2026-11-06T00:37:13+00:00..2026-11-06T01:44:44+00:00
+  BG        best [20, 18, 17, 19, 20] trained [30, 28, 27, 29, 30] tf ['2.21.0'] gpu ['NVIDIA GeForce RTX 5090'] clip ['None'] finite True 2026-11-06T00:38:13+00:00..2026-11-06T01:46:58+00:00
+  Tobit001  best [11, 7, 12, 9, 13] trained [21, 17, 22, 19, 23] tf ['2.21.0'] gpu ['NVIDIA GeForce RTX 5090'] clip ['None'] finite True 2026-11-06T00:39:28+00:00..2026-11-06T01:47:47+00:00
+  BG001     best [17, 16, 19, 18, 20] trained [27, 26, 29, 28, 30] tf ['2.21.0'] gpu ['NVIDIA GeForce RTX 5090'] clip ['None'] finite True 2026-11-06T00:41:11+00:00..2026-11-06T01:49:51+00:00

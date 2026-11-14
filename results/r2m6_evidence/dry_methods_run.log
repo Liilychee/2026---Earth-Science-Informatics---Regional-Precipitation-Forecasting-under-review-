@@ -1,0 +1,116 @@
+    dist  train_dry  seed evaluation_key  val_crps_199_quantile  test_crps_199_quantile              finished_utc  zero_tol                                   source_path                       source_md5
+   tobit      0.000    42           dry0               0.077941                0.082616 2026-11-06T00:37:13+00:00  0.000001        results/q11/runs/tobit__dry0__s42.json 40a67d6a0cea4a4ed9e0d4fd4eabc173
+   tobit      0.001    42           dry0               0.076659                0.081309 2026-11-06T00:39:28+00:00  0.000001    results/q11/runs/tobit__dry0.001__s42.json 171b38973c65c8a1a34ec58ecde0e24d
+   tobit      0.010    42           dry0               0.074926                0.079772 2026-11-06T00:41:43+00:00  0.000001     results/q11/runs/tobit__dry0.01__s42.json a7b82eb7d9116742226c5cb2f12b9beb
+bergamma      0.000    42           dry0               0.071675                0.078335 2026-11-06T00:38:13+00:00  0.000001     results/q11/runs/bergamma__dry0__s42.json fb0ce2aa2f4648f436cead6a61812fbe
+bergamma      0.001    42           dry0               0.071482                0.077976 2026-11-06T00:41:11+00:00  0.000001 results/q11/runs/bergamma__dry0.001__s42.json c7273b8d1b36d71c0c1a5ce9fe84499c
+bergamma      0.010    42           dry0               0.071802                0.078305 2026-11-06T00:43:27+00:00  0.000001  results/q11/runs/bergamma__dry0.01__s42.json 50a49efd0a4456c1eda382877e62b848
+{
+  "source_commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+  "dry_counts": [
+    {
+      "dist": "tobit",
+      "dry": "0",
+      "seeds": [
+        7,
+        42,
+        99,
+        123,
+        2024
+      ],
+      "n": 5
+    },
+    {
+      "dist": "tobit",
+      "dry": "0.001",
+      "seeds": [
+        7,
+        42,
+        99,
+        123,
+        2024
+      ],
+      "n": 5
+    },
+    {
+      "dist": "tobit",
+      "dry": "0.01",
+      "seeds": [
+        42
+      ],
+      "n": 1
+    },
+    {
+      "dist": "bergamma",
+      "dry": "0",
+      "seeds": [
+        7,
+        42,
+        99,
+        123,
+        2024
+      ],
+      "n": 5
+    },
+    {
+      "dist": "bergamma",
+      "dry": "0.001",
+      "seeds": [
+        7,
+        42,
+        99,
+        123,
+        2024
+      ],
+      "n": 5
+    },
+    {
+      "dist": "bergamma",
+      "dry": "0.01",
+      "seeds": [
+        42
+      ],
+      "n": 1
+    }
+  ],
+  "last_seed42_sensitivity_finished": "2026-11-06T00:43:27+00:00",
+  "first_additional_seed_finished": "2026-11-06T01:38:27+00:00",
+  "seed42_precedes_other_seeds": true,
+  "pre_specification_record": "No verifiable prespecification record identified; timestamps show exploratory checks before expansion to additional seeds, not preregistration.",
+  "numerical_zero_tolerance": 1e-06,
+  "test_raw_count_le_zero_tol": 711,
+  "test_small_positive_le_tol": 0,
+  "test_min_positive_above_tol": 1.907636991664574e-05,
+  "largest_abs_raw_target_snapped": 3.5304081325016053e-09,
+  "n_wet_strict_gt01": 854,
+  "n_wet_ge01": 854,
+  "threshold01_event_sets_equal": true,
+  "n_upper": 238,
+  "q95_training_saved_target_count": 18404,
+  "q95_training_recomputed_for_provenance_only": 0.5740480409999992,
+  "q95_analysis_constant": 0.574048,
+  "original_test_target_max_abs_difference": 1.3319088187913053e-07,
+  "full_score_method": "CDF-squared trapezoid integral, not closed-form and not 199-quantile; Gaussian [-4,8], nonnegative distributions [0,8]; 4000+1000 grid points.",
+  "twcrps_sample_population": "All 3939 test cases for every threshold, not conditional observed-wet/upper samples.",
+  "brier_wet_event": "y>0.1 in source; on these test targets identical event set to y>=0.1.",
+  "bootstrap": {
+    "type": "paired non-circular moving blocks",
+    "block_length": 28,
+    "replicates": 5000,
+    "seed": 42,
+    "n_original": 3939,
+    "n_blocks": 141,
+    "n_actual": 3948,
+    "extra": 9,
+    "extra_fraction": 0.002284843869002285,
+    "start_support_inclusive": [
+      0,
+      3911
+    ],
+    "final_block_truncated": false,
+    "aggregation": "arithmetic mean of five per-case scores first, then paired resampling; not mean predictions",
+    "interval": "pointwise 95% percentile, no multiplicity correction",
+    "seed_t": "separate paired five-seed mean-difference Student t, df4",
+    "limitation": "Retains 9 extra observations (0.2285%); non-circular endpoints have lower sampling weight. Does not implement standard resample length n; no automatic inference that effect is negligible. Same-index truncated-n sensitivity in paired_full_verification.csv is diagnostic only; formal CSV remains unchanged."
+  }
+}

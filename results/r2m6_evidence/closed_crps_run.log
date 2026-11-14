@@ -1,0 +1,49 @@
+Gaussian 42 closed= 0.092862676986 full= 0.092843482674 delta= 1.92e-05
+Gaussian 123 closed= 0.098659140513 full= 0.098621869864 delta= 3.73e-05
+Gaussian 7 closed= 0.092777671462 full= 0.092734509953 delta= 4.32e-05
+Gaussian 2024 closed= 0.097123249078 full= 0.097090746443 delta= 3.25e-05
+Gaussian 99 closed= 0.099064724993 full= 0.099040500931 delta= 2.42e-05
+Tobit 42 closed= 0.082240595600 full= 0.082237694243 delta= 2.9e-06
+Tobit 123 closed= 0.087979686362 full= 0.087976015941 delta= 3.67e-06
+Tobit 7 closed= 0.084064708761 full= 0.084061260537 delta= 3.45e-06
+Tobit 2024 closed= 0.083308013642 full= 0.083304756212 delta= 3.26e-06
+Tobit 99 closed= 0.085795242551 full= 0.085792225379 delta= 3.02e-06
+Bernoulli-gamma 42 closed= 0.077962265118 full= 0.077956181983 delta= 6.08e-06
+Bernoulli-gamma 123 closed= 0.077119254887 full= 0.077113545267 delta= 5.71e-06
+Bernoulli-gamma 7 closed= 0.077434089674 full= 0.077428170967 delta= 5.92e-06
+Bernoulli-gamma 2024 closed= 0.076759020391 full= 0.076753386981 delta= 5.63e-06
+Bernoulli-gamma 99 closed= 0.077014385047 full= 0.077008518302 delta= 5.87e-06
+Tobit (dry 0.001) 42 closed= 0.080937035387 full= 0.080934843151 delta= 2.19e-06
+Tobit (dry 0.001) 123 closed= 0.083507618851 full= 0.083504980073 delta= 2.64e-06
+Tobit (dry 0.001) 7 closed= 0.081790781632 full= 0.081788218041 delta= 2.56e-06
+Tobit (dry 0.001) 2024 closed= 0.081428696753 full= 0.081426289205 delta= 2.41e-06
+Tobit (dry 0.001) 99 closed= 0.083491027119 full= 0.083488327690 delta= 2.7e-06
+Bernoulli-gamma (dry 0.001) 42 closed= 0.077605877442 full= 0.077600900936 delta= 4.98e-06
+Bernoulli-gamma (dry 0.001) 123 closed= 0.077649664814 full= 0.077645341695 delta= 4.32e-06
+Bernoulli-gamma (dry 0.001) 7 closed= 0.076943423558 full= 0.076938726800 delta= 4.7e-06
+Bernoulli-gamma (dry 0.001) 2024 closed= 0.076760657214 full= 0.076756234559 delta= 4.42e-06
+Bernoulli-gamma (dry 0.001) 99 closed= 0.077285202404 full= 0.077280804313 delta= 4.4e-06
+{
+  "source_commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+  "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "numpy": "2.0.2",
+  "scipy": "1.13.1",
+  "n": 3939,
+  "block": 28,
+  "replicates": 5000,
+  "seed": 42,
+  "blocks_per_replicate": 141,
+  "actual_resample_length": 3948,
+  "extra_samples": 9,
+  "targets_at_or_below_zero_tol": 711,
+  "primary_max_seed_abs_difference": 4.316150951329256e-05,
+  "all_configs_max_seed_abs_difference": 4.316150951329256e-05,
+  "max_formula_quadrature_error": 3.769665135600064e-12,
+  "all_full_rows_matched": true
+}
+                     config  closed_mean  closed_sd  full_mean  full_sd closed_4dp full_4dp  max_seed_abs_difference
+                   Gaussian     0.096097   0.003078   0.096066 0.003079     0.0961   0.0961                 0.000043
+                      Tobit     0.084678   0.002255   0.084674 0.002255     0.0847   0.0847                 0.000004
+            Bernoulli-gamma     0.077258   0.000462   0.077252 0.000462     0.0773   0.0773                 0.000006
+          Tobit (dry 0.001)     0.082231   0.001197   0.082229 0.001197     0.0822   0.0822                 0.000003
+Bernoulli-gamma (dry 0.001)     0.077249   0.000394   0.077244 0.000394     0.0772   0.0772                 0.000005

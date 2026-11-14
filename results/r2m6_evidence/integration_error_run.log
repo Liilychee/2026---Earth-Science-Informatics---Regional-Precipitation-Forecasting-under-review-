@@ -1,0 +1,4 @@
+         config  seed  archived_grid_full  analytic_crps  archived_grid_error  same_grid_smooth_F_squared_with_analytic_step_integral  smooth_grid_abs_error  mean_omitted_tail_upper_bound
+       Gaussian     7            0.092735       0.092778             0.000043                                                0.092778           5.229435e-08                   1.028771e-18
+          Tobit   123            0.087976       0.087980             0.000004                                                0.087980           1.007494e-07                   1.376721e-44
+Bernoulli-gamma    42            0.077956       0.077962             0.000006                                                0.077957           5.251323e-06                   8.902214e-10
