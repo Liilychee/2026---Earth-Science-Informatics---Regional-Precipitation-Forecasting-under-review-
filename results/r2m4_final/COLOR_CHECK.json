@@ -1,0 +1,86 @@
+[
+  {
+    "document": "manuscript",
+    "page": 50,
+    "color": "0xff0000",
+    "text": "(Supplementary Table S28). For example, XGBoost minus Persistence was"
+  },
+  {
+    "document": "manuscript",
+    "page": 51,
+    "color": "0xff0000",
+    "text": "95% intervals without multiplicity adjustment are reported in Supplementary Tables S28"
+  },
+  {
+    "document": "manuscript",
+    "page": 51,
+    "color": "0xff0000",
+    "text": "and S29. Panel (b) intervals are conditional on the selected cutoffs and do not account for"
+  },
+  {
+    "document": "manuscript",
+    "page": 51,
+    "color": "0xff0000",
+    "text": "in fixed-rule CSI. Supplementary Table S29 reports the selected cutoffs, full"
+  },
+  {
+    "document": "manuscript",
+    "page": 52,
+    "color": "0xff0000",
+    "text": "ture issued an event forecast in any run. Supplementary Table S30 separates"
+  },
+  {
+    "document": "manuscript",
+    "page": 52,
+    "color": "0xff0000",
+    "text": "Table S31. The latter use validation cutoffs selected for the mean predictions,"
+  },
+  {
+    "document": "Response letter",
+    "page": 34,
+    "color": "0xff0000",
+    "text": "has its own validation-selected cutoff in Panel (b). Supplementary Tables S28 and S29 provide counts,"
+  },
+  {
+    "document": "Response letter",
+    "page": 34,
+    "color": "0xff0000",
+    "text": "Tables S30 and S31 distinguish the two Attention architectures\u2019"
+  },
+  {
+    "document": "Response letter",
+    "page": 34,
+    "color": "0xff",
+    "text": "Event-evaluation Methods, Section 4.3.2, Figure 5, Supplementary Tables S28\u2013S31, Section 5.2, Abstract and Con-"
+  },
+  {
+    "document": "Response letter",
+    "page": 35,
+    "color": "0xff",
+    "text": "block interval below zero; this is not a multiple-comparison-adjusted claim (Supplementary Table S28)."
+  },
+  {
+    "document": "Response letter",
+    "page": 36,
+    "color": "0xff",
+    "text": "CSI. Supplementary Table S29 reports the selected cutoffs, full scores and paired intervals. Confidence"
+  },
+  {
+    "document": "Response letter",
+    "page": 36,
+    "color": "0xff",
+    "text": "run. Supplementary Table S30 separates seed summaries from the five-seed mean-prediction paired"
+  },
+  {
+    "document": "Response letter",
+    "page": 36,
+    "color": "0xff",
+    "text": "comparisons in Table S31. The latter use validation cutoffs selected for the mean predictions, not"
+  },
+  {
+    "document": "Response letter",
+    "page": 37,
+    "color": "0xff",
+    "text": "multiplicity adjustment are reported in Supplementary Tables S28 and S29. Panel (b) intervals are"
+  }
+]

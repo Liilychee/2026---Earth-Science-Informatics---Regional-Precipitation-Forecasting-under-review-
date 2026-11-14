@@ -1,0 +1,29 @@
+{
+  "author_pdf_unchanged": true,
+  "prior_figures_paths_labels_and_captions_unchanged": true,
+  "all_other_responses_unchanged": true,
+  "supplementary_source_unchanged": true,
+  "reviewer_comment_exact": true,
+  "new_evidence_boxes": 8,
+  "new_evidence_boxes_exact": true,
+  "prior_literal_excerpts_preserved": 62,
+  "supplementary_numeric_entries_verified": 1217,
+  "supplementary_tables": 31,
+  "point_input_check_this_round": "77 handoff rows compared with archived CSV, zero CSI/hits/forecasts differences",
+  "final_pdf_point_check": "Author prior independent 77-point confirmation, not a fresh extraction of final plot values CSV; author values CSV unavailable",
+  "no_undefined_refs_hbox_overflow_or_blocking_errors": true,
+  "author_final_graph_visual_check_passed": true,
+  "three_final_pdfs_visual_100percent_passed": true,
+  "r2m4_closed": true,
+  "shared_task05_12_not_globally_closed": true,
+  "r2m5_not_started": true,
+  "figure_number": 5,
+  "figure_page": 51,
+  "figure_label": "fig:r2m4_event_csi",
+  "table_labels": {
+    "S28": "stab:r2m4_fixed_events",
+    "S29": "stab:r2m4_tuned_events",
+    "S30": "stab:r2m4_seed_scores",
+    "S31": "stab:r2m4_ensemble_events"
+  }
+}

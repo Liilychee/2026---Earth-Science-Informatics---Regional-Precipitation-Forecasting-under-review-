@@ -1,0 +1,22 @@
+[
+  {
+    "path": "manuscript.tex",
+    "before_sha256": "fb35ec30a79e72bde91a53dfc65a01b90e49b30e3dfdb9d1a4a7a4a9817ca408",
+    "after_sha256": "5d97519ec00f6fdd9a545d134b36d7b01c379b9b530d99fbd5df8ddfe7170f49"
+  },
+  {
+    "path": "Response letter.tex",
+    "before_sha256": "399800a975be60644dd68468b3bada208e4a86b4d21cae9966a8a6dcc22e2194",
+    "after_sha256": "08ea4568993bccded3529a6e18f2635e1850741cd86ecce1e1a00f96ecc6f43b"
+  },
+  {
+    "path": "FINAL_REVISION_CHECKLIST.md",
+    "before_sha256": "b7f4f506af903df5f76dad7664aa0ff42058d3e70d32ef05b9cd639ccc9fcb67",
+    "after_sha256": "b3d3f300c5f28f6292710afc2d65df326b9fe270e034110e6632af6246b22597"
+  },
+  {
+    "path": "ESI_\u5ba1\u7a3f\u610f\u89c1\u5206\u7c7b_\u4e25\u91cd\u7a0b\u5ea6\u6392\u5e8f_35\u9879.md",
+    "before_sha256": "936611e30683769b7819336964aca7ab6fa52464483814f96bdea87ae45e6e92",
+    "after_sha256": "3edda995dd5f6fee2b4f931a32b5e9e58b682625e1396a879387b961c5be9a37"
+  }
+]

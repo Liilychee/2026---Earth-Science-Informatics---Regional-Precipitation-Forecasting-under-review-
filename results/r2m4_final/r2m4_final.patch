@@ -1,0 +1,117 @@
+--- a/manuscript.tex
++++ b/manuscript.tex
+@@ -807,21 +807,15 @@
+ % R2-M4: saved-event evidence is now in the labelled supplementary tables below.
+ 
+ {\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
+-The two decision rules reserved for the author-supplied Figure~\ref{fig:r2m4_event_csi} are compared here using saved single-run forecasts. Under the fixed rule, Persistence CSI was 0.139 at Q95, 0.076 at Q97.5, 0.166 at 0.5~mm\,h$^{-1}$ and 0.058 at 1.0~mm\,h$^{-1}$; the six learning models reached at most 0.071, 0.009, 0.113 and 0.011, respectively. All 24 learning-model differences at these four thresholds were negative, with each pointwise 95\% paired circular-block interval below zero; this is not a multiple-comparison-adjusted claim (Supplementary Table~\ref{supp-stab:r2m4_fixed_events}). For example, XGBoost minus Persistence was $-0.0681$ at Q95, with interval $[-0.1131,-0.0219]$, and $-0.0533$ at 0.5~mm\,h$^{-1}$, with interval $[-0.0949,-0.0118]$. At 1.0~mm\,h$^{-1}$, the corresponding difference was $-0.0472$ with interval $[-0.0791,-0.0194]$. Several zero CSI values occurred because the predicted means never reached the fixed threshold and no event forecast was issued, not because missing scores were replaced by zero.
++Figure~\ref{fig:r2m4_event_csi} compares the two decision rules using saved single-run forecasts. Under the fixed rule, Persistence CSI was 0.139 at Q95, 0.076 at Q97.5, 0.166 at 0.5~mm\,h$^{-1}$ and 0.058 at 1.0~mm\,h$^{-1}$; the six learning models reached at most 0.071, 0.009, 0.113 and 0.011, respectively. All 24 learning-model differences at these four thresholds were negative, with each pointwise 95\% paired circular-block interval below zero; this is not a multiple-comparison-adjusted claim (Supplementary Table~\ref{supp-stab:r2m4_fixed_events}). For example, XGBoost minus Persistence was $-0.0681$ at Q95, with interval $[-0.1131,-0.0219]$, and $-0.0533$ at 0.5~mm\,h$^{-1}$, with interval $[-0.0949,-0.0118]$. At 1.0~mm\,h$^{-1}$, the corresponding difference was $-0.0472$ with interval $[-0.0791,-0.0194]$. Several zero CSI values occurred because the predicted means never reached the fixed threshold and no event forecast was issued, not because missing scores were replaced by zero.
+ \par}
+ 
+ \begin{figure}[!htbp]
+ \centering
+-% AUTHOR-FIGURE-PENDING[R2-M4]: supplied by the author; do not generate or substitute a graphic.
+-% Expected final asset: Figures/r2M4_event_csi_comparison.pdf
+-% Restore only after checking the author's final PDF: \includegraphics{r2M4_event_csi_comparison.pdf}
+-\fbox{\begin{minipage}[c][100mm][c]{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}
+-\centering\textbf{AUTHOR-SUPPLIED CSI FIGURE PENDING}\par\medskip
+-No temporary graphic is included.\par
+-Final author artwork and PDF verification are pending.
+-\end{minipage}}
++% Author-confirmed final vector PDF; native 119.0 x 75.0 mm, no scaling or cropping.
++\includegraphics{Figures/r2M4_event_csi.pdf}
+ \begingroup\color{red}\hypersetup{linkcolor=red,filecolor=red,urlcolor=red}
+-\caption{\textbf{Author-supplied figure pending.} CSI from the original saved single-run predictions on 3,939 test targets for six learning models and Persistence. Panel A uses the fixed rule $c_\tau=\tau$; Panel B uses each model's validation-CSI-maximizing cutoff from a 300-quantile-probability candidate grid, then freezes it for testing. Points are discrete evaluated thresholds, horizontally offset by model for visibility; no continuous threshold response is implied. Q90, Q95 and Q97.5 are derived from 18,404 windowed training targets; the actual intensities are printed in mm\,h$^{-1}$. Fixed-rule zeros are retained. Panel B has no 0.5 result, so that category contains no points, rather than zeros. These are neither five-seed means nor uncertainty intervals; paired pointwise intervals are reported in Supplementary Tables~\ref{supp-stab:r2m4_fixed_events} and~\ref{supp-stab:r2m4_tuned_events}.}
++\caption{CSI of six learning models and Persistence on 3,939 test targets using the original saved single-run forecasts. Panel~(a) uses the fixed decision rule $c_\tau=\tau$; Panel~(b) uses a separate validation-CSI-maximizing cutoff for each method and event threshold, selected from a 300-quantile-probability grid and frozen for testing. Training-derived thresholds are Q90 $=0.2958$, Q95 $=0.5740$ and Q97.5 $=0.9322$~mm\,h$^{-1}$, based on 18,404 windowed training targets. The horizontal axis comprises equally spaced discrete categories, not a continuous numerical scale. Horizontal marker offsets only prevent overlap and do not change the original CSI values. The 0.5~mm\,h$^{-1}$ category in Panel~(b) was not evaluated and is not filled with zeros; fixed-rule zero CSI points are retained. Under the fixed rule, all six learning models have lower CSI than persistence at Q95 and higher event thresholds, with their predicted means rarely or never exceeding the corresponding cutoffs. In Panel~(b), all learning models except Transformer have higher CSI than Persistence at Q95. Persistence also has its own validation-selected cutoff, explaining its different CSI between panels. Paired pointwise 95\% intervals without multiplicity adjustment are reported in Supplementary Tables~\ref{supp-stab:r2m4_fixed_events} and~\ref{supp-stab:r2m4_tuned_events}. Panel~(b) intervals are conditional on the selected cutoffs and do not account for cutoff-selection uncertainty.}
+ \label{fig:r2m4_event_csi}
+ \endgroup
+ \end{figure}
+--- a/Response letter.tex
++++ b/Response letter.tex
+@@ -663,11 +663,11 @@
+ 
+ The saved continuous forecasts still contain ranking information: learning-model AUC is approximately 0.80--0.85 at Q95 and 0.82--0.87 at 1.0, compared with 0.747 and 0.732 for Persistence. These AUC advantages do not replace the adverse fixed-rule CSI result. With each model's decision cutoff selected by validation CSI from the formal 300-probability grid and then frozen, five models have higher CSI than optimized Persistence at Q95; the Transformer interval includes zero. At 1.0, four models' intervals support higher CSI, while Transformer and Probabilistic BiLSTM-Attention remain unclear. Learning-model FAR is approximately 0.73--0.80 and 0.86--0.92, respectively; FAR is FP/(TP+FP), not false positive rate. Confidence intervals are conditional on the selected decision thresholds and do not account for uncertainty in threshold selection.
+ 
+-The insertion position and label for Figure~\ref{manuscript-fig:r2m4_event_csi} are reserved for the final artwork supplied by the author. Its intended scope is both rules for all six learning models and Persistence, retaining fixed-rule zeros and leaving the unavailable optimized 0.5 category empty. The author-supplied figure and its final PDF verification remain pending. Supplementary Tables~\ref{supp-stab:r2m4_fixed_events} and~\ref{supp-stab:r2m4_tuned_events} provide counts, POD/FAR/CSI/AUC and available paired intervals, including AR(1) and month-by-hour climatology without inventing missing metrics. Tables~\ref{supp-stab:r2m4_seed_scores} and~\ref{supp-stab:r2m4_ensemble_events} distinguish the two Attention architectures' five-seed summaries from paired intervals for five-seed mean predictions. Bootstrap settings are circular blocks of 28 six-hourly samples, 2,000 replicates, seed 42 and common paired indices, with 95\% percentile intervals.
++The author-confirmed final Figure~\ref{manuscript-fig:r2m4_event_csi} now compares both rules for all six learning models and Persistence. It retains fixed-rule zero CSI points and explicitly marks 0.5~mm\,h$^{-1}$ as not evaluated under the validation-selected rule. The categorical axis and horizontal offsets do not alter the saved scores; Persistence has its own validation-selected cutoff in Panel~(b). Supplementary Tables~\ref{supp-stab:r2m4_fixed_events} and~\ref{supp-stab:r2m4_tuned_events} provide counts, POD/FAR/CSI/AUC and available paired intervals, including AR(1) and month-by-hour climatology without inventing missing metrics. Tables~\ref{supp-stab:r2m4_seed_scores} and~\ref{supp-stab:r2m4_ensemble_events} distinguish the two Attention architectures' five-seed summaries from paired intervals for five-seed mean predictions. Bootstrap settings are circular blocks of 28 six-hourly samples, 2,000 replicates, seed 42 and common paired indices, with 95\% percentile intervals.
+ 
+ Methods (Section~\ref{manuscript-sec:experimental_setup}) clarify the event intensity and decision cutoff, score definitions and resampling limitations; Results (Section~\ref{manuscript-sec:event_detection}) and Discussion (Section~\ref{manuscript-sec:upper_tail_discussion}) emphasize missed events and the false-alarm tradeoff. The Abstract and Conclusion now explicitly limit high-threshold warning claims. Prediction-amplitude compression is documented, but its dominant cause is not established by these experiments. No models were retrained and no formal predictions were regenerated.}
+ 
+-\ManuscriptChange{Event-evaluation Methods, Section~\ref{manuscript-sec:event_detection}, Figure~\ref{manuscript-fig:r2m4_event_csi}, Supplementary Tables~\ref{supp-stab:r2m4_fixed_events}--\ref{supp-stab:r2m4_ensemble_events}, Section~\ref{manuscript-sec:upper_tail_discussion}, Abstract and Conclusion. The figure remains pending author artwork and final PDF verification. Final page and line numbers await full-manuscript assembly.}
++\ManuscriptChange{Event-evaluation Methods, Section~\ref{manuscript-sec:event_detection}, Figure~\ref{manuscript-fig:r2m4_event_csi}, Supplementary Tables~\ref{supp-stab:r2m4_fixed_events}--\ref{supp-stab:r2m4_ensemble_events}, Section~\ref{manuscript-sec:upper_tail_discussion}, Abstract and Conclusion. Final page and line numbers await full-manuscript assembly.}
+ 
+ \EvidenceBox{Event decisions and score definitions}{
+ \RevisedExcerpt{The additional fixed-rule comparison includes $\tau=0.5$~mm\,h$^{-1}$; no validation-optimized result was saved for that intensity threshold. For the optimized rule, each model's validation predictions define candidates at 300 equally spaced quantile probabilities from 0.5 to 0.999; duplicate candidate values are removed. The candidate maximizing validation CSI is retained, with the first (lowest) candidate retained in a tie, and applied unchanged to test predictions. POD is $\mathrm{TP}/(\mathrm{TP}+\mathrm{FN})$; FAR is the false alarm ratio $\mathrm{FP}/(\mathrm{TP}+\mathrm{FP})$, not the false positive rate $\mathrm{FP}/(\mathrm{FP}+\mathrm{TN})$. ROC AUC measures the probability that a randomly chosen observed event receives a higher continuous forecast score than a non-event, with half credit for ties. CSI and AUC are dimensionless. FAR is undefined when no events are forecast and is displayed as a dash, whereas CSI is zero when there are observed events but no forecasts.}
+@@ -678,7 +678,7 @@
+ }
+ 
+ \EvidenceBox{Fixed-rule failure relative to Persistence}{
+-\RevisedExcerpt{The two decision rules reserved for the author-supplied Figure~\ref{fig:r2m4_event_csi} are compared here using saved single-run forecasts. Under the fixed rule, Persistence CSI was 0.139 at Q95, 0.076 at Q97.5, 0.166 at 0.5~mm\,h$^{-1}$ and 0.058 at 1.0~mm\,h$^{-1}$; the six learning models reached at most 0.071, 0.009, 0.113 and 0.011, respectively. All 24 learning-model differences at these four thresholds were negative, with each pointwise 95\% paired circular-block interval below zero; this is not a multiple-comparison-adjusted claim (Supplementary Table~\ref{supp-stab:r2m4_fixed_events}). For example, XGBoost minus Persistence was $-0.0681$ at Q95, with interval $[-0.1131,-0.0219]$, and $-0.0533$ at 0.5~mm\,h$^{-1}$, with interval $[-0.0949,-0.0118]$. At 1.0~mm\,h$^{-1}$, the corresponding difference was $-0.0472$ with interval $[-0.0791,-0.0194]$. Several zero CSI values occurred because the predicted means never reached the fixed threshold and no event forecast was issued, not because missing scores were replaced by zero.}
++\RevisedExcerpt{Figure~\ref{fig:r2m4_event_csi} compares the two decision rules using saved single-run forecasts. Under the fixed rule, Persistence CSI was 0.139 at Q95, 0.076 at Q97.5, 0.166 at 0.5~mm\,h$^{-1}$ and 0.058 at 1.0~mm\,h$^{-1}$; the six learning models reached at most 0.071, 0.009, 0.113 and 0.011, respectively. All 24 learning-model differences at these four thresholds were negative, with each pointwise 95\% paired circular-block interval below zero; this is not a multiple-comparison-adjusted claim (Supplementary Table~\ref{supp-stab:r2m4_fixed_events}). For example, XGBoost minus Persistence was $-0.0681$ at Q95, with interval $[-0.1131,-0.0219]$, and $-0.0533$ at 0.5~mm\,h$^{-1}$, with interval $[-0.0949,-0.0118]$. At 1.0~mm\,h$^{-1}$, the corresponding difference was $-0.0472$ with interval $[-0.0791,-0.0194]$. Several zero CSI values occurred because the predicted means never reached the fixed threshold and no event forecast was issued, not because missing scores were replaced by zero.}
+ }
+ 
+ \EvidenceBox{Validation-selected decisions and false alarms}{
+@@ -695,6 +695,10 @@
+ 
+ \EvidenceBox{Conclusion qualification}{
+ \RevisedExcerpt{In the saved single-run comparison, all six learning models had lower CSI than Persistence under fixed Q95, Q97.5, 0.5 and 1.0~mm\,h$^{-1}$ decision rules. Better AUC and improvements obtained with validation-selected cutoffs do not remove this limitation, particularly given the associated high false-alarm ratios.}
++}
++
++\EvidenceBox{Author-confirmed final CSI figure (Figure~\ref{manuscript-fig:r2m4_event_csi})}{
++\RevisedExcerpt{CSI of six learning models and Persistence on 3,939 test targets using the original saved single-run forecasts. Panel~(a) uses the fixed decision rule $c_\tau=\tau$; Panel~(b) uses a separate validation-CSI-maximizing cutoff for each method and event threshold, selected from a 300-quantile-probability grid and frozen for testing. Training-derived thresholds are Q90 $=0.2958$, Q95 $=0.5740$ and Q97.5 $=0.9322$~mm\,h$^{-1}$, based on 18,404 windowed training targets. The horizontal axis comprises equally spaced discrete categories, not a continuous numerical scale. Horizontal marker offsets only prevent overlap and do not change the original CSI values. The 0.5~mm\,h$^{-1}$ category in Panel~(b) was not evaluated and is not filled with zeros; fixed-rule zero CSI points are retained. Under the fixed rule, all six learning models have lower CSI than persistence at Q95 and higher event thresholds, with their predicted means rarely or never exceeding the corresponding cutoffs. In Panel~(b), all learning models except Transformer have higher CSI than Persistence at Q95. Persistence also has its own validation-selected cutoff, explaining its different CSI between panels. Paired pointwise 95\% intervals without multiplicity adjustment are reported in Supplementary Tables~\ref{supp-stab:r2m4_fixed_events} and~\ref{supp-stab:r2m4_tuned_events}. Panel~(b) intervals are conditional on the selected cutoffs and do not account for cutoff-selection uncertainty.}
+ }
+ 
+ % Review ID: R2 M5
+--- a/FINAL_REVISION_CHECKLIST.md
++++ b/FINAL_REVISION_CHECKLIST.md
+@@ -428,14 +428,16 @@
+ - 报告、逐格索引、来源MD5/Git版本和本轮独立patch位于results/r2m3_integration/。R1、R2-M1/M2回复及原有S1–S22、图件和数值保持原样。
+ 
+ 
+-### R2-M4／任务05+12：文字与表格已整合，待作者最终图及PDF核验（2026-11-14）
++### R2-M4／任务05+12：作者最终Figure整合与核验完成（2026-11-14）
+ 
+ - 已保留R1-M1原有结果及EvidenceBox，新增§3.4判定规则/300候选网格/指标与循环块设置，修正未实际报告accuracy、precision、F1的泛称。§4.3.2新增固定与优化规则CSI、配对pointwise区间和误报代价；§5.2、Abstract及Conclusion增加预警局限，不宣称预测幅度压缩根因已证实。
+-- Figure 5由作者绘制；保留fig:r2m4_event_csi与明确待图占位，已删除助手生成的图和候选。77个原CSV绘图点已交接；待作者上传最终矢量PDF后检查原生尺寸、排版与交叉引用。原覆盖率/SHAP/消融的label保留。
++- Figure 5已嵌入作者最终Figures/r2M4_event_csi.pdf，label fig:r2m4_event_csi不变；626,022字节，MD5 f73dd3d355084727bb13bf644ce332d3，原生119.0×75.0mm无缩放/裁剪。旧助手图未恢复，其他图件、路径和label均保留。
+ - Supplementary自动新增S28固定、S29验证优化、S30五种子均值/SD、S31五种子平均预测配对。固定和优化为原生分页长表；FAR未定义及缺项用横线，不替代为0。优化区间均明确不包含阈值选择不确定性。所有区间pointwise且未多重校正；不报告Holm结论。
+-- 1,217个数值转录与77图点逐格溯源；62段先前可直接匹配的摘录继续匹配，R2-M4七段新EvidenceBox逐字相同，其他审稿回复整块不变。原S1–S27内容保持原样。
++- 本轮回查1,217个既有表数值及77行交接输入，0差异；最终图片77点精确一致性引用作者此前独立核验。62段可直接匹配的旧摘录继续匹配，R2-M4八段EvidenceBox逐字相同，其他审稿回复整块不变。原S1–S27内容保持原样。
+ - 历史候选版曾顺序编译及检查（不代表作者最终图核验通过）：Supplementary30页、manuscript82页、Response letter60页。当时候选Figure 5在正文51页；表S28–S31起于补充23/26/29/30页。无未定义/重复引用、横向溢出、过大float或阻断错误，旧模板字体/书签及1.41457pt纵向盒警告保留。
+-- 用户补充指令撤销此前关闭状态：R2-M4尚未全部完成，待作者最终图片、三份最终PDF与图文一致性核验。现有文字/表格/数值保留。任务05/12共享的R2 minor、R3/R4等独立待办不整体关闭，R2-M5未启动。旧667d6f8中的“准备阶段”状态由本轮正式整合记录取代。
++- 此前等待作者图片的状态已解决：作者最终图、caption、八段R2-M4 EvidenceBox、正文/补充/回复及三PDF均通过本轮核验；随本轮授权文件正式Git归档核验后，R2-M4完成并关闭。现有科学数值保留。任务05/12共享的R2 minor、R3/R4等独立待办不整体关闭，R2-M5未启动。旧667d6f8中的“准备阶段”状态由本轮正式整合记录取代。
+ - 详见results/r2m4_integration/REPORT.md、CELL_INDEX.csv、SOURCE_INDEX.json及r2m4_integration.patch；当前完整LaTeX仍采用本地整合＋远程独立patch归档，不声称整篇远程源码已同步。
+ 
+-- 后续图件绘制责任归作者；不再由助手生成最终图片。交接CSV及规范见results/r2m4_author_figure_handoff/。此前含助手图的PDF检查仅为历史记录，不作为最终图核验通过。
++- 最终图由作者提供，助手未重绘或修改图片；此前助手图检查仅属历史。当前最终核验见results/r2m4_final/。本轮对交接CSV的77行回查归档CSI/命中/预报次数，0差异；作者最终点值CSV未找到，最终PDF的精确77点一致性明确引用作者此前独立核验，不冒称本轮从图片恢复数值。
++
++- 最终caption已补Q90/Q95/Q97.5实际值、等距分类轴、纯视觉横移、优化0.5 not evaluated、Persistence独立cutoff及未经多重校正/条件区间限制。三PDF最终82/30/60页，Figure 5正文51页；事件表仍S28–S31，任务05/12其他共享待办保留，R2-M5未开始。
+--- a/ESI_审稿意见分类_严重程度排序_35项.md
++++ b/ESI_审稿意见分类_严重程度排序_35项.md
+@@ -1306,7 +1306,7 @@
+ - [x] 本轮三个EvidenceBox与正文逐字一致，Training strategies使用最新版完整段落；论文、回复信及累计diff均编译成功，无未定义引用。训练策略证据框已检查分页，无溢出；其他审稿回复、宏、Table 3/4及其他任务MD未改。本轮补丁为`build/r1-m1-evidence-sync.patch`。
+ 
+ 
+-**2026-11-14更新：R2-M4文字/表格已整合，作者最终图待提供，尚未完成。** 本轮负面结果与高FAR文字、S28–S31和回复已整合；正文Figure 5仅保留位置，最终图片待作者提供；1,217转录条目、77图点及七段新EvidenceBox核验通过。无Holm确认性声明，不混用单次、五种子指标均值和五种子平均预测。旧表号规划不作为预占编号；当前label映射见SUPPLEMENTARY_TABLE_REGISTRY.md。此前关闭声明撤销；仅在作者最终图片及最终PDF核验通过后才关闭R2-M4，当前条目涉及的R1、R2 minor、R3、R4等其他独立待办不整体勾选，R2-M5不进入本轮。详见results/r2m4_integration/REPORT.md。
++**2026-11-14最终更新：R2-M4作者最终图及文档核验完成。** 本轮负面结果与高FAR文字、S28–S31和回复已整合；作者最终Figure 5（r2M4_event_csi.pdf）已嵌入并核验，label保留；1,217既有转录、本轮77行交接输入及八段EvidenceBox核验通过；最终图片精确点值一致性引用作者此前独立核验。无Holm确认性声明，不混用单次、五种子指标均值和五种子平均预测。旧表号规划不作为预占编号；当前label映射见SUPPLEMENTARY_TABLE_REGISTRY.md。此前等待作者图片的过渡状态已解决，本次只关闭R2-M4，当前条目涉及的R1、R2 minor、R3、R4等其他独立待办不整体勾选，R2-M5不进入本轮。详见results/r2m4_integration/REPORT.md。
+ 
+ ### 06. 训练年份不足与时间泛化
+ 
+@@ -2630,7 +2630,7 @@
+ **R1-M1共享改稿位置（2026-11-11）**：事件强度τ与均值决策cutoff cτ已在§3.4/§4.2.2区分；摘要与§5.2/结论共享。原高斯超过概率在§4.3独立说明，不将其或BG结果冒充同一指标。 此处仅记录共享正文进展，不表示本任务对应的其他审稿回复已完成。证据缺口和本条图表待办见05完成检查C/D。
+ 
+ 
+-**2026-11-14更新：R2-M4文字/表格已整合，作者最终图待提供，尚未完成。** 本轮负面结果与高FAR文字、S28–S31和回复已整合；正文Figure 5仅保留位置，最终图片待作者提供；1,217转录条目、77图点及七段新EvidenceBox核验通过。无Holm确认性声明，不混用单次、五种子指标均值和五种子平均预测。旧表号规划不作为预占编号；当前label映射见SUPPLEMENTARY_TABLE_REGISTRY.md。此前关闭声明撤销；仅在作者最终图片及最终PDF核验通过后才关闭R2-M4，当前条目涉及的R1、R2 minor、R3、R4等其他独立待办不整体勾选，R2-M5不进入本轮。详见results/r2m4_integration/REPORT.md。
++**2026-11-14最终更新：R2-M4作者最终图及文档核验完成。** 本轮负面结果与高FAR文字、S28–S31和回复已整合；作者最终Figure 5（r2M4_event_csi.pdf）已嵌入并核验，label保留；1,217既有转录、本轮77行交接输入及八段EvidenceBox核验通过；最终图片精确点值一致性引用作者此前独立核验。无Holm确认性声明，不混用单次、五种子指标均值和五种子平均预测。旧表号规划不作为预占编号；当前label映射见SUPPLEMENTARY_TABLE_REGISTRY.md。此前等待作者图片的过渡状态已解决，本次只关闭R2-M4，当前条目涉及的R1、R2 minor、R3、R4等其他独立待办不整体勾选，R2-M5不进入本轮。详见results/r2m4_integration/REPORT.md。
+ 
+ ### 13. 缺少季节性降水分布和性能分析
+ 
+@@ -4360,4 +4360,7 @@
+ 审计包：results/r1m3_integration/，含before快照、figure_mapping.json、figure_data_checks.csv、source_hashes.json、figure_hashes.json、updated_passages.json、verification.json、最终页面渲染、audit.md及changes.patch。原始实验目录只读；没有训练、重算预测或重绘。未进入下一审稿意见。
+ 
+ 
+-R2-M4图件责任更新：作者绘制双面板CSI图，助手候选已删除；LaTeX仅保留待图占位和label。任务05/12其他共享待办保持原状，R2-M5未启动。
++R2-M4图件责任更新：作者绘制双面板CSI图，助手候选已删除；LaTeX已使用作者最终r2M4_event_csi.pdf，label保持。任务05/12其他共享待办保持原状，R2-M5未启动。
++
++
++R2-M4最终证据与关闭记录：results/r2m4_final/。作者PDF MD5=f73dd3d355084727bb13bf644ce332d3；本轮77行交接输入与归档CSI/命中/预报次数0差异，作者最终点值CSV未取得，最终图片精确点值对应性引用作者此前独立核验。八段EvidenceBox和三PDF核验通过，只关闭R2-M4，不整体关闭05/12共享任务。

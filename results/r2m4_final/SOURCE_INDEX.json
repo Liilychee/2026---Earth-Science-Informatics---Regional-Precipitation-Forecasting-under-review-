@@ -1,0 +1,87 @@
+{
+  "code/analysis_r2m4_fixed_paired_ci.py": {
+    "local_path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r2m4_integration/evidence/analysis_r2m4_fixed_paired_ci.py",
+    "md5": "fe3b951eb09c0f3d4f11cef00135535c",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e"
+  },
+  "code/analysis_q05e_event_paired_ci.py": {
+    "local_path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r2m4_integration/evidence/analysis_q05e_event_paired_ci.py",
+    "md5": "b429dd451547da117ff7d7819b49deaf",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e"
+  },
+  "code/analysis_q05g_multiseed_events.py": {
+    "local_path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r2m4_integration/evidence/analysis_q05g_multiseed_events.py",
+    "md5": "01307d3d2c9df238e8f38e07f75ef7a8",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e"
+  },
+  "code/fig_style.py": {
+    "local_path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r2m4_integration/evidence/fig_style.py",
+    "md5": "b97ce38e27500160de582a79b7f34a9a",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e"
+  },
+  "results/r2m4_evidence_archive/METHOD_AUDIT.md": {
+    "local_path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r2m4_integration/evidence/METHOD_AUDIT.md",
+    "md5": "b1b0021bd6f4c4bf0a8d07cc12c6463a",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e"
+  },
+  "results/metrics/r2m4_fixed_event_paired.csv": {
+    "local_path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r2m4_integration/evidence/r2m4_fixed_event_paired.csv",
+    "md5": "9739ce1b23215652b3f0204835c7d51b",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e"
+  },
+  "results/metrics/r2m4_fixed_event_scores.csv": {
+    "local_path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r2m4_integration/evidence/r2m4_fixed_event_scores.csv",
+    "md5": "9062d963e8604283005c81b82bacc6cf",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e"
+  },
+  "results/metrics/r2m4_fixed_output.txt": {
+    "local_path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r2m4_integration/evidence/r2m4_fixed_output.txt",
+    "md5": "5b6fce34f4a05e8b7188c79722009a3b",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e"
+  },
+  "results/metrics/q05e_event_scores.csv": {
+    "local_path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r2m4_integration/evidence/q05e_event_scores.csv",
+    "md5": "df8e768a265692e597c39ecf7ccf643d",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e"
+  },
+  "results/metrics/q05e_event_paired.csv": {
+    "local_path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r2m4_integration/evidence/q05e_event_paired.csv",
+    "md5": "305d0bab643fbee5d1f5d5fefe8a25d6",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e"
+  },
+  "results/metrics/q05e_output.txt": {
+    "local_path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r2m4_integration/evidence/q05e_output.txt",
+    "md5": "a14fdf1cc1b07f81b02906bed38451b4",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e"
+  },
+  "results/metrics/q05g_multiseed_summary.csv": {
+    "local_path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r2m4_integration/evidence/q05g_multiseed_summary.csv",
+    "md5": "3b6ee8c01a97b7141628bb556be9edf3",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e"
+  },
+  "results/metrics/q05g_multiseed_paired.csv": {
+    "local_path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r2m4_integration/evidence/q05g_multiseed_paired.csv",
+    "md5": "9d33d5bb27a598aa6ea709bb74498565",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e"
+  },
+  "results/metrics/q05g_multiseed_per_seed.csv": {
+    "local_path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r2m4_integration/evidence/q05g_multiseed_per_seed.csv",
+    "md5": "b3d27be356f024b32948e8bf6cc66421",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e"
+  },
+  "results/metrics/q05g_output.txt": {
+    "local_path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r2m4_integration/evidence/q05g_output.txt",
+    "md5": "625714619864fa45f448b5671900292f",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e"
+  },
+  "results/metrics/q05_spread_calibration.csv": {
+    "local_path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r2m4_integration/evidence/q05_spread_calibration.csv",
+    "md5": "a0150c8bf8f666950e3635d6921cccdc",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e"
+  },
+  "results/figures/revision/r1M1_prediction_distribution_stats.csv": {
+    "local_path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r2m4_integration/evidence/r1M1_prediction_distribution_stats.csv",
+    "md5": "39dee70a92fb1433ffaa774274c8f9a8",
+    "git": "667d6f80e64076dc6812ca630654a24d1aab5b4e"
+  }
+}

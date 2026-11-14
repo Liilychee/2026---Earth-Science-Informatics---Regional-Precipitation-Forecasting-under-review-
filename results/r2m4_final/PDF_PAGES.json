@@ -1,0 +1,39 @@
+{
+  "Supplementary": {
+    "pages": 30,
+    "check_pages": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ]
+  },
+  "manuscript": {
+    "pages": 82,
+    "check_pages": [
+      1,
+      2,
+      26,
+      27,
+      50,
+      51,
+      52,
+      64,
+      65,
+      74
+    ]
+  },
+  "Response letter": {
+    "pages": 60,
+    "check_pages": [
+      34,
+      35,
+      36,
+      37
+    ]
+  }
+}
