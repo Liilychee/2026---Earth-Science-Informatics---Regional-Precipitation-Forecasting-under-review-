@@ -1,0 +1,92 @@
+[
+  {
+    "source": "/Users/yue/Downloads/r2m4_fixed_event_paired.csv",
+    "archive": "results/metrics/r2m4_fixed_event_paired.csv",
+    "md5": "9739ce1b23215652b3f0204835c7d51b",
+    "sha256": "28dfe4873dd851e3d54b331f69bc7b9474904d3850b4e224786447031f386ba3",
+    "bytes": 5692
+  },
+  {
+    "source": "/Users/yue/Downloads/r2m4_fixed_event_scores.csv",
+    "archive": "results/metrics/r2m4_fixed_event_scores.csv",
+    "md5": "9062d963e8604283005c81b82bacc6cf",
+    "sha256": "19804e2bd376fe6f29ecdc969cecbbc115ded18fd9c23336442254e93e2f68b6",
+    "bytes": 4305
+  },
+  {
+    "source": "/Users/yue/Downloads/r2m4_fixed_output.txt",
+    "archive": "results/metrics/r2m4_fixed_output.txt",
+    "md5": "5b6fce34f4a05e8b7188c79722009a3b",
+    "sha256": "d62455740a4e512c3952a86b4aaeb005c3b6a661de4aa7ece7b7981301afe9cf",
+    "bytes": 17071
+  },
+  {
+    "source": "/Users/yue/Downloads/analysis_r2m4_fixed_paired_ci.py",
+    "archive": "code/analysis_r2m4_fixed_paired_ci.py",
+    "md5": "fe3b951eb09c0f3d4f11cef00135535c",
+    "sha256": "8d55886c46d8dcf22c9d577dddffc9c7126df4210eee7a445470b34b949f6ece",
+    "bytes": 9082
+  },
+  {
+    "protected_file": "manuscript.tex",
+    "sha256": "11e6cd8f4966e5c45ea979570a1df3dc1c4f4ad07d85538ee386369a66683d06"
+  },
+  {
+    "protected_file": "Supplementary.tex",
+    "sha256": "fc26cd1e9bf707e1b6d0d8276d3a122de01516eb91df763c36533691cef1f42b"
+  },
+  {
+    "protected_file": "Response letter.tex",
+    "sha256": "f291c5002d8be791a9b60adfb4aa53a6967a7e73c454b3b8a9e68089feaeb199"
+  },
+  {
+    "input": "results/xgboost_preds.csv",
+    "ref": "ac2c4eb5287749c6c08ca9f9772c6b29c743b4fb",
+    "md5": "8af1fbe1bde1124f4eb8bd2e9778b9d7",
+    "downloads_equal_git": true
+  },
+  {
+    "input": "results/transformer_preds.csv",
+    "ref": "ac2c4eb5287749c6c08ca9f9772c6b29c743b4fb",
+    "md5": "fba327035970d9c0d758081f37d0a1fd",
+    "downloads_equal_git": true
+  },
+  {
+    "input": "results/bulstm_preds.csv",
+    "ref": "ac2c4eb5287749c6c08ca9f9772c6b29c743b4fb",
+    "md5": "24c40dd8a4e1f29cd8de9ddc3975c98d",
+    "downloads_equal_git": true
+  },
+  {
+    "input": "results/bilstm_attention_preds.csv",
+    "ref": "ac2c4eb5287749c6c08ca9f9772c6b29c743b4fb",
+    "md5": "61d820961694b35b59cff41c012833fe",
+    "downloads_equal_git": true
+  },
+  {
+    "input": "results/proposed_model_preds.csv",
+    "ref": "ac2c4eb5287749c6c08ca9f9772c6b29c743b4fb",
+    "md5": "52e340cf000f8373b78d125335b3af6e",
+    "downloads_equal_git": true
+  },
+  {
+    "input": "results/prob_bilstm_attention_preds.csv",
+    "ref": "ac2c4eb5287749c6c08ca9f9772c6b29c743b4fb",
+    "md5": "e40b252a4cddacc04613746cdfd0335c",
+    "downloads_equal_git": true
+  },
+  {
+    "input": "results/persistence_preds.csv",
+    "ref": "ac2c4eb5287749c6c08ca9f9772c6b29c743b4fb",
+    "md5": "0090b05e10f588d858a933581af8bca8",
+    "downloads_equal_git": true
+  },
+  {
+    "q05e_formal_path": "code/analysis_q05e_event_paired_ci.py",
+    "ref": "ac2c4eb5287749c6c08ca9f9772c6b29c743b4fb",
+    "md5": "b429dd451547da117ff7d7819b49deaf",
+    "grid": 300,
+    "matching_download": "analysis_q05e_event_paired_ci (1).py",
+    "excluded_500_grid_md5": "cfc873efcecdb23bd6b7ddfc4186e34f"
+  }
+]

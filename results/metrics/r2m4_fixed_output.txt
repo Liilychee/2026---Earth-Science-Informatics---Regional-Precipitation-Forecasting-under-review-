@@ -1,0 +1,106 @@
+note: Persistence train y_true differs from XGBoost file by at most 4.36e-07 mm/h; XGBoost y_true is used
+note: Persistence test y_true differs from XGBoost file by at most 1.64e-07 mm/h; XGBoost y_true is used
+AR(1): y = 0.0763 + 0.2811 * y_lag
+thresholds: {'wet>=0.1': 0.1, 'Q90': 0.2958, 'Q95': 0.574, 'Q97.5': 0.9322, '0.5 mm': 0.5, '1.0 mm': 1.0} | test events: {'wet>=0.1': 854, 'Q90': 463, 'Q95': 238, 'Q97.5': 106, '0.5 mm': 288, '1.0 mm': 91}
+cross-check: 48 rows identical to revision_event_detection.csv (hits, forecast events, CSI)
+
+===== fixed rule (predicted mean >= tau), test N=3939 =====
+Threshold  thr_mm_h                          Model  N_events_test  Forecast_events  Hits  False_alarms  Misses    POD    FAR    CSI  Frequency_bias
+ wet>=0.1    0.1000                        XGBoost            854             1387   653           734     201 0.7646 0.5292 0.4112          1.6241
+ wet>=0.1    0.1000                    Transformer            854             1062   481           581     373 0.5632 0.5471 0.3352          1.2436
+ wet>=0.1    0.1000                        BU-LSTM            854             1271   596           675     258 0.6979 0.5311 0.3898          1.4883
+ wet>=0.1    0.1000               BiLSTM-Attention            854             1214   609           605     245 0.7131 0.4984 0.4174          1.4215
+ wet>=0.1    0.1000              BU-LSTM-Attention            854             1332   630           702     224 0.7377 0.5270 0.4049          1.5597
+ wet>=0.1    0.1000 Probabilistic BiLSTM-Attention            854             1275   613           662     241 0.7178 0.5192 0.4044          1.4930
+ wet>=0.1    0.1000                    Persistence            854              854   428           426     426 0.5012 0.4988 0.3344          1.0000
+ wet>=0.1    0.1000              AR(1) (train fit)            854              944   460           484     394 0.5386 0.5127 0.3438          1.1054
+ wet>=0.1    0.1000     Climatology (month x hour)            854             2268   555          1713     299 0.6499 0.7553 0.2162          2.6557
+      Q90    0.2958                        XGBoost            463              377   162           215     301 0.3499 0.5703 0.2389          0.8143
+      Q90    0.2958                    Transformer            463               79    33            46     430 0.0713 0.5823 0.0648          0.1706
+      Q90    0.2958                        BU-LSTM            463              192    85           107     378 0.1836 0.5573 0.1491          0.4147
+      Q90    0.2958               BiLSTM-Attention            463              369   162           207     301 0.3499 0.5610 0.2418          0.7970
+      Q90    0.2958              BU-LSTM-Attention            463              342   141           201     322 0.3045 0.5877 0.2123          0.7387
+      Q90    0.2958 Probabilistic BiLSTM-Attention            463              338   139           199     324 0.3002 0.5888 0.2100          0.7300
+      Q90    0.2958                    Persistence            463              463   171           292     292 0.3693 0.6307 0.2265          1.0000
+      Q90    0.2958              AR(1) (train fit)            463              155    66            89     397 0.1425 0.5742 0.1196          0.3348
+      Q90    0.2958     Climatology (month x hour)            463                0     0             0     463 0.0000    NaN 0.0000          0.0000
+      Q95    0.5740                        XGBoost            238               50    19            31     219 0.0798 0.6200 0.0706          0.2101
+      Q95    0.5740                    Transformer            238                2     1             1     237 0.0042 0.5000 0.0042          0.0084
+      Q95    0.5740                        BU-LSTM            238                0     0             0     238 0.0000    NaN 0.0000          0.0000
+      Q95    0.5740               BiLSTM-Attention            238                1     1             0     237 0.0042 0.0000 0.0042          0.0042
+      Q95    0.5740              BU-LSTM-Attention            238                0     0             0     238 0.0000    NaN 0.0000          0.0000
+      Q95    0.5740 Probabilistic BiLSTM-Attention            238                0     0             0     238 0.0000    NaN 0.0000          0.0000
+      Q95    0.5740                    Persistence            238              238    58           180     180 0.2437 0.7563 0.1388          1.0000
+      Q95    0.5740              AR(1) (train fit)            238               16     2            14     236 0.0084 0.8750 0.0079          0.0672
+      Q95    0.5740     Climatology (month x hour)            238                0     0             0     238 0.0000    NaN 0.0000          0.0000
+    Q97.5    0.9322                        XGBoost            106                2     1             1     105 0.0094 0.5000 0.0093          0.0189
+    Q97.5    0.9322                    Transformer            106                0     0             0     106 0.0000    NaN 0.0000          0.0000
+    Q97.5    0.9322                        BU-LSTM            106                0     0             0     106 0.0000    NaN 0.0000          0.0000
+    Q97.5    0.9322               BiLSTM-Attention            106                0     0             0     106 0.0000    NaN 0.0000          0.0000
+    Q97.5    0.9322              BU-LSTM-Attention            106                0     0             0     106 0.0000    NaN 0.0000          0.0000
+    Q97.5    0.9322 Probabilistic BiLSTM-Attention            106                0     0             0     106 0.0000    NaN 0.0000          0.0000
+    Q97.5    0.9322                    Persistence            106              106    15            91      91 0.1415 0.8585 0.0761          1.0000
+    Q97.5    0.9322              AR(1) (train fit)            106                0     0             0     106 0.0000    NaN 0.0000          0.0000
+    Q97.5    0.9322     Climatology (month x hour)            106                0     0             0     106 0.0000    NaN 0.0000          0.0000
+   0.5 mm    0.5000                        XGBoost            288              107    40            67     248 0.1389 0.6262 0.1127          0.3715
+   0.5 mm    0.5000                    Transformer            288                6     4             2     284 0.0139 0.3333 0.0138          0.0208
+   0.5 mm    0.5000                        BU-LSTM            288                0     0             0     288 0.0000    NaN 0.0000          0.0000
+   0.5 mm    0.5000               BiLSTM-Attention            288                7     6             1     282 0.0208 0.1429 0.0208          0.0243
+   0.5 mm    0.5000              BU-LSTM-Attention            288                0     0             0     288 0.0000    NaN 0.0000          0.0000
+   0.5 mm    0.5000 Probabilistic BiLSTM-Attention            288                0     0             0     288 0.0000    NaN 0.0000          0.0000
+   0.5 mm    0.5000                    Persistence            288              288    82           206     206 0.2847 0.7153 0.1660          1.0000
+   0.5 mm    0.5000              AR(1) (train fit)            288               28     6            22     282 0.0208 0.7857 0.0194          0.0972
+   0.5 mm    0.5000     Climatology (month x hour)            288                0     0             0     288 0.0000    NaN 0.0000          0.0000
+   1.0 mm    1.0000                        XGBoost             91                1     1             0      90 0.0110 0.0000 0.0110          0.0110
+   1.0 mm    1.0000                    Transformer             91                0     0             0      91 0.0000    NaN 0.0000          0.0000
+   1.0 mm    1.0000                        BU-LSTM             91                0     0             0      91 0.0000    NaN 0.0000          0.0000
+   1.0 mm    1.0000               BiLSTM-Attention             91                0     0             0      91 0.0000    NaN 0.0000          0.0000
+   1.0 mm    1.0000              BU-LSTM-Attention             91                0     0             0      91 0.0000    NaN 0.0000          0.0000
+   1.0 mm    1.0000 Probabilistic BiLSTM-Attention             91                0     0             0      91 0.0000    NaN 0.0000          0.0000
+   1.0 mm    1.0000                    Persistence             91               91    10            81      81 0.1099 0.8901 0.0581          1.0000
+   1.0 mm    1.0000              AR(1) (train fit)             91                0     0             0      91 0.0000    NaN 0.0000          0.0000
+   1.0 mm    1.0000     Climatology (month x hour)             91                0     0             0      91 0.0000    NaN 0.0000          0.0000
+
+===== CSI(model) - CSI(Persistence), circular block 28, 2000 reps, seed 42 =====
+Threshold                          Model  CSI_model  CSI_reference  Forecast_events_model    dCSI  CI_low  CI_high  CI_excludes_0  n_boot_ge0  n_boot_le0  p_two_sided  In_high_family  p_holm_all36  p_holm_high24
+ wet>=0.1                        XGBoost     0.4112         0.3344                   1387  0.0768  0.0564   0.0981           True        2000           0       0.0010           False         0.036            NaN
+ wet>=0.1                    Transformer     0.3352         0.3344                   1062  0.0008 -0.0252   0.0255          False        1049         951       0.9515           False         1.000            NaN
+ wet>=0.1                        BU-LSTM     0.3898         0.3344                   1271  0.0554  0.0350   0.0762           True        2000           0       0.0010           False         0.036            NaN
+ wet>=0.1               BiLSTM-Attention     0.4174         0.3344                   1214  0.0830  0.0632   0.1032           True        2000           0       0.0010           False         0.036            NaN
+ wet>=0.1              BU-LSTM-Attention     0.4049         0.3344                   1332  0.0705  0.0505   0.0912           True        2000           0       0.0010           False         0.036            NaN
+ wet>=0.1 Probabilistic BiLSTM-Attention     0.4044         0.3344                   1275  0.0700  0.0506   0.0903           True        2000           0       0.0010           False         0.036            NaN
+      Q90                        XGBoost     0.2389         0.2265                    377  0.0124 -0.0220   0.0467          False        1527         473       0.4738           False         1.000            NaN
+      Q90                    Transformer     0.0648         0.2265                     79 -0.1617 -0.2011  -0.1205           True           0        2000       0.0010           False         0.036            NaN
+      Q90                        BU-LSTM     0.1491         0.2265                    192 -0.0774 -0.1078  -0.0457           True           0        2000       0.0010           False         0.036            NaN
+      Q90               BiLSTM-Attention     0.2418         0.2265                    369  0.0153 -0.0133   0.0427          False        1721         279       0.2799           False         1.000            NaN
+      Q90              BU-LSTM-Attention     0.2123         0.2265                    342 -0.0141 -0.0386   0.0088          False         230        1771       0.2309           False         1.000            NaN
+      Q90 Probabilistic BiLSTM-Attention     0.2100         0.2265                    338 -0.0165 -0.0457   0.0135          False         265        1735       0.2659           False         1.000            NaN
+      Q95                        XGBoost     0.0706         0.1388                     50 -0.0681 -0.1131  -0.0219           True           2        1998       0.0030            True         0.036          0.024
+      Q95                    Transformer     0.0042         0.1388                      2 -0.1346 -0.1745  -0.0958           True           0        2000       0.0010            True         0.036          0.024
+      Q95                        BU-LSTM     0.0000         0.1388                      0 -0.1388 -0.1769  -0.1012           True           0        2000       0.0010            True         0.036          0.024
+      Q95               BiLSTM-Attention     0.0042         0.1388                      1 -0.1346 -0.1711  -0.0980           True           0        2000       0.0010            True         0.036          0.024
+      Q95              BU-LSTM-Attention     0.0000         0.1388                      0 -0.1388 -0.1769  -0.1012           True           0        2000       0.0010            True         0.036          0.024
+      Q95 Probabilistic BiLSTM-Attention     0.0000         0.1388                      0 -0.1388 -0.1769  -0.1012           True           0        2000       0.0010            True         0.036          0.024
+    Q97.5                        XGBoost     0.0093         0.0761                      2 -0.0668 -0.0968  -0.0376           True           0        2000       0.0010            True         0.036          0.024
+    Q97.5                    Transformer     0.0000         0.0761                      0 -0.0761 -0.1078  -0.0443           True           0        2000       0.0010            True         0.036          0.024
+    Q97.5                        BU-LSTM     0.0000         0.0761                      0 -0.0761 -0.1078  -0.0443           True           0        2000       0.0010            True         0.036          0.024
+    Q97.5               BiLSTM-Attention     0.0000         0.0761                      0 -0.0761 -0.1078  -0.0443           True           0        2000       0.0010            True         0.036          0.024
+    Q97.5              BU-LSTM-Attention     0.0000         0.0761                      0 -0.0761 -0.1078  -0.0443           True           0        2000       0.0010            True         0.036          0.024
+    Q97.5 Probabilistic BiLSTM-Attention     0.0000         0.0761                      0 -0.0761 -0.1078  -0.0443           True           0        2000       0.0010            True         0.036          0.024
+   0.5 mm                        XGBoost     0.1127         0.1660                    107 -0.0533 -0.0949  -0.0118           True           8        1992       0.0090            True         0.054          0.024
+   0.5 mm                    Transformer     0.0138         0.1660                      6 -0.1522 -0.1912  -0.1130           True           0        2000       0.0010            True         0.036          0.024
+   0.5 mm                        BU-LSTM     0.0000         0.1660                      0 -0.1660 -0.2007  -0.1303           True           0        2000       0.0010            True         0.036          0.024
+   0.5 mm               BiLSTM-Attention     0.0208         0.1660                      7 -0.1452 -0.1793  -0.1095           True           0        2000       0.0010            True         0.036          0.024
+   0.5 mm              BU-LSTM-Attention     0.0000         0.1660                      0 -0.1660 -0.2007  -0.1303           True           0        2000       0.0010            True         0.036          0.024
+   0.5 mm Probabilistic BiLSTM-Attention     0.0000         0.1660                      0 -0.1660 -0.2007  -0.1303           True           0        2000       0.0010            True         0.036          0.024
+   1.0 mm                        XGBoost     0.0110         0.0581                      1 -0.0472 -0.0791  -0.0194           True           0        2000       0.0010            True         0.036          0.024
+   1.0 mm                    Transformer     0.0000         0.0581                      0 -0.0581 -0.0936  -0.0247           True           0        2000       0.0010            True         0.036          0.024
+   1.0 mm                        BU-LSTM     0.0000         0.0581                      0 -0.0581 -0.0936  -0.0247           True           0        2000       0.0010            True         0.036          0.024
+   1.0 mm               BiLSTM-Attention     0.0000         0.0581                      0 -0.0581 -0.0936  -0.0247           True           0        2000       0.0010            True         0.036          0.024
+   1.0 mm              BU-LSTM-Attention     0.0000         0.0581                      0 -0.0581 -0.0936  -0.0247           True           0        2000       0.0010            True         0.036          0.024
+   1.0 mm Probabilistic BiLSTM-Attention     0.0000         0.0581                      0 -0.0581 -0.0936  -0.0247           True           0        2000       0.0010            True         0.036          0.024
+
+high family (24): CIs excluding 0 24/24; Holm p<0.05 24/24; max Holm p 0.0240; p floor 0.0010
+all (36): Holm p<0.05 30/36; high-threshold tests failing under the 36 family: [['0.5 mm', 'XGBoost']]
+Note: models with zero forecast events have CSI = 0 by definition; their dCSI equals -CSI(Persistence).
+Saved results/metrics/r2m4_fixed_event_scores.csv and results/metrics/r2m4_fixed_event_paired.csv
