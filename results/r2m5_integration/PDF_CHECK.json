@@ -1,0 +1,35 @@
+{
+  "Supplementary": {
+    "pages": 41,
+    "md5": "5092056181e21e6708d4586214af78ab",
+    "sha256": "03453e79d002ab7ee8f2daeef339ab45537742405c4f0cdeebccc6008a307186",
+    "no_undefined_references_or_blocking_error": true,
+    "overfull_hbox": 0,
+    "overfull_vbox_heights": []
+  },
+  "manuscript": {
+    "pages": 86,
+    "md5": "b8c9e2e700362f8d9b3f7d7213802e62",
+    "sha256": "2da2809a26f74abef83d5a7b22f754991abe5b64ad37859fb74621075b2c7eb8",
+    "no_undefined_references_or_blocking_error": true,
+    "overfull_hbox": 0,
+    "overfull_vbox_heights": [
+      "1.41457pt too high"
+    ],
+    "key_pages": [
+      33,
+      48,
+      72
+    ]
+  },
+  "Response letter": {
+    "pages": 63,
+    "md5": "23149f9cb75250a85224e235006cecd0",
+    "sha256": "ca8a991551ef62500b724dad0e45fcbe97dcb70c01e47ac39364e14b5dab198b",
+    "no_undefined_references_or_blocking_error": true,
+    "overfull_hbox": 0,
+    "overfull_vbox_heights": [],
+    "R2_M5_start": 37,
+    "R2_M5_end": 40
+  }
+}

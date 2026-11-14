@@ -1,0 +1,16 @@
+{
+  "new_tables": 7,
+  "transcribed_numeric_cells_verified": 1541,
+  "new_evidence_boxes_exact": 10,
+  "prior_excerpts_preserved": 72,
+  "prior_literal_excerpts_still_in_manuscript": 70,
+  "all_prior_response_sections_unchanged": true,
+  "prior_tables_and_figures_identical": true,
+  "prior_supplementary_unchanged": true,
+  "source_files_pinned_and_hash_verified": 214,
+  "run_metadata_checked": 150,
+  "formal_statistics_recomputed": false,
+  "original_F4_overlap_correction": true,
+  "all_excerpts_match_ignoring_color_markup": 82,
+  "statistical_rows_numeric_column_positions_verified": 267
+}

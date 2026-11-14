@@ -1,0 +1,47 @@
+{
+  "stab:r2m5_design": {
+    "number": "S32",
+    "page": 31,
+    "document": "Supplementary"
+  },
+  "stab:r2m5_performance": {
+    "number": "S33",
+    "page": 32,
+    "document": "Supplementary"
+  },
+  "stab:r2m5_history": {
+    "number": "S34",
+    "page": 34,
+    "document": "Supplementary"
+  },
+  "stab:r2m5_pairs_all": {
+    "number": "S35",
+    "page": 35,
+    "document": "Supplementary"
+  },
+  "stab:r2m5_pairs_wet": {
+    "number": "S36",
+    "page": 37,
+    "document": "Supplementary"
+  },
+  "stab:r2m5_block_sensitivity": {
+    "number": "S37",
+    "page": 39,
+    "document": "Supplementary"
+  },
+  "stab:r2m5_coverage": {
+    "number": "S38",
+    "page": 40,
+    "document": "Supplementary"
+  },
+  "sec:rolling_origin_methods": {
+    "number": "3.4.1",
+    "page": 33,
+    "document": "manuscript"
+  },
+  "sec:rolling_origin_results": {
+    "number": "4.2.5",
+    "page": 48,
+    "document": "manuscript"
+  }
+}

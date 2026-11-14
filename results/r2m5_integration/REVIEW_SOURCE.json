@@ -1,0 +1,26 @@
+{
+  "original_comment": "Insufficient Temporal Robustness Evaluation. Five random seeds are insufficient to demonstrate temporal generalization. Rolling-window or multi-year testing is recommended, and the block-bootstrap settings should be specified.",
+  "comment_txt_md5": "c4f2f1233cda7110d4f5ce78ceb0c35c",
+  "documents": [
+    {
+      "path": "/Users/yue/Downloads/ESI Revisions.docx",
+      "md5": "5a8a1653ef8fc65025bf754fbcd15b07",
+      "matches": [
+        {
+          "paragraph": 47,
+          "text": "5. Insufficient Temporal Robustness Evaluation. Five random seeds are insufficient to demonstrate temporal generalization. Rolling-window or multi-year testing is recommended, and the block-bootstrap settings should be specified."
+        }
+      ]
+    },
+    {
+      "path": "/Users/yue/Downloads/ESI_85条审稿意见_35项任务_完整对应核查表.docx",
+      "md5": "6b336a0f792b792f309d34a5c4b52727",
+      "matches": [
+        {
+          "paragraph": 64,
+          "text": "R2-M5"
+        }
+      ]
+    }
+  ]
+}

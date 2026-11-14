@@ -1,0 +1,643 @@
+--- a/manuscript.tex
++++ b/manuscript.tex
+@@ -51,7 +51,7 @@
+ 
+ \abstract{
+ Short-term precipitation forecasting over Dublin is challenging because of the strong temporal variability of rainfall and the maritime influence on regional weather conditions. Using hourly European Centre for Medium-Range Weather Forecasts Reanalysis v5 (ERA5) data from 2004 to 2021 subsampled every 6~h without temporal aggregation, this study systematically evaluates reference forecasts, XGBoost, Transformer, deterministic bidirectional long short-term memory (BiLSTM) models, and probabilistic recurrent models for 6-hour-ahead prediction of hourly ERA5-derived regional-mean precipitation over Dublin, expressed as an hourly-mean rate in mm\,h$^{-1}$ rather than as a total over the next 6~h. Model performance is assessed using repeated training with five fixed random seeds, rainfall-regime and threshold-based evaluation, probabilistic metrics, SHapley Additive exPlanations (SHAP) attribution, and feature ablation. BiLSTM-Attention achieved the lowest mean test root mean squared error (RMSE) of 0.2429~mm\,h$^{-1}$, closely followed by XGBoost at 0.2439~mm\,h$^{-1}$, while bootstrap analysis showed no clear difference between the two models for the full test set. \textcolor{red}{Under upper-tail precipitation, however, XGBoost achieved lower error, while predicted amplitudes were compressed. Validation-selected event cutoffs recovered some detections but incurred high false-alarm ratios, and tested loss and weighting strategies exposed model-dependent tradeoffs rather than resolving upper-tail underestimation.} \textcolor{red}{Under fixed high-intensity decision thresholds, learning-model CSI was lower than Persistence, limiting their interpretation as event-warning systems.} The probabilistic recurrent models produced empirical 95\% coverage close to the nominal level over the full test set, but coverage deteriorated markedly for upper-tail precipitation events, revealing substantial undercoverage. Matched five-seed SHAP and ablation analyses in two architectures revealed regime-dependent model reliance and overlapping predictive information among precipitation-related inputs, rather than a universally dominant predictor. These results highlight the importance of regime-specific evaluation, repeated-run robustness analysis, and complementary interpretability methods in regional precipitation forecasting.
+-}
++ \textcolor{red}{BiLSTM-Attention achieved the numerically lowest RMSE on the original test period, but its advantage over XGBoost was small and did not persist consistently across the rolling-origin evaluation. All six models in the rolling-origin evaluation retained positive climatological skill across four test periods, while upper-tail undercoverage persisted.}}
+ 
+ \keywords{Short-term precipitation forecasting, ERA5 reanalysis data, Model robustness, Probabilistic forecasting, Predictor attribution}
+ 
+@@ -128,6 +128,10 @@
+ Meteorological conditions over the study region were characterized using the ERA5 single-level reanalysis dataset from ECMWF. We used the Copernicus Climate Data Store (CDS) product ``ERA5 hourly data on single levels'' with the ``reanalysis'' product option. \textcolor{red}{The original ERA5 product has an hourly temporal resolution. We selected only the hourly values at 00:00, 06:00, 12:00, and 18:00 UTC, giving a 6-hour sampling interval; no 6-hour accumulation, temporal averaging, or temporal interpolation was performed.} Following data-quality screening, the complete period from January 2004 to December 2021 was retained, yielding 26,300 consecutive timestamps with no missing values in the variables used for subsequent analysis. Eleven meteorological variables were initially considered as candidate predictors: 10-metre u-component of wind (u10), 10-metre v-component of wind (v10), 2-metre dewpoint temperature (d2m), 2-metre temperature (t2m), surface pressure (sp), evaporation (e), maximum total precipitation rate (mxtpr), minimum total precipitation rate (mntpr), total cloud cover (tcc), surface net solar radiation (ssr), and large-scale precipitation (lsp). Total precipitation (tp) was used as the prediction target, as summarized in Table~\ref{tab:variables}.
+ 
+ For each timestamp, the meteorological variables were spatially averaged across the 25 ERA5 grid points within the Dublin study domain to construct a regional mean time series. Each retained total-precipitation value represents the accumulation during the hour ending at its timestamp. Total precipitation was multiplied by 1000 to convert metres to millimetres. This length-unit conversion does not change the accumulation window. Dividing the one-hour amount by its one-hour duration gives the hourly-mean rate in mm\,h$^{-1}$; its numerical value is unchanged. The prediction target and all precipitation-valued forecast metrics are reported in mm\,h$^{-1}$ throughout. No temporal interpolation or forward-filling was applied because the retained 2004--2021 period formed a complete and continuous 6-hourly time series. The resulting regional time series was chronologically divided into training (70\%), validation (15\%), and testing (15\%) subsets to preserve temporal ordering and prevent future observations from influencing model development. Standardization was performed using statistics estimated exclusively from the training subset, and the same transformation was subsequently applied to the validation and test subsets.
++
++{\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
++The main 2004--2021 experiment contains 18,410/3,945/3,945 raw training/validation/test timestamps and 18,404/3,939/3,939 forecast targets after six-snapshot windows are constructed separately within each partition. The target-time ranges (UTC) are 2 January 2004 12:00--7 August 2016 06:00 for training, 9 August 2016 00:00--20 April 2019 12:00 for validation, and 22 April 2019 06:00--31 December 2021 18:00 for testing. These are forecast target times, not input-window start times. The 1992--2003 extension is used only in the supplementary rolling-origin evaluation.
++\par}
+ 
+ {\color{red}\hypersetup{linkcolor=red,citecolor=red,urlcolor=red}
+ For the retrospective input sequence, every predictor has a valid time at or before the forecast origin $t_0$. Large-scale precipitation (lsp) is accumulated over the hour ending at its valid time, while mxtpr and mntpr are the maximum and minimum total precipitation rates within that hour. These precipitation inputs and the tp target come from ERA5 short forecasts initialized at 06 and 18~UTC; the instantaneous inputs sp, tcc, v10 and d2m are supplied as analysis fields in the CDS product \citep{ecmwf_era5_documentation}. Thus, the latest precipitation input represents $(t_0-1\,\mathrm{h},t_0]$, whereas the target represents $(t_0+5\,\mathrm{h},t_0+6\,\mathrm{h}]$; no target-hour precipitation value is directly included in the input window. At 00 and 12~UTC origins, however, the latest precipitation input and target are steps 6 and 12 of the same short-forecast cycle. Feature screening and standardization use training-period data only. Valid-time ordering does not establish that the reanalysis inputs were available in real time at $t_0$.
+@@ -487,6 +491,10 @@
+ 
+ Negative values of $\Delta\mathrm{RMSE}$ indicate lower RMSE for BiLSTM-Attention, whereas positive values indicate lower RMSE for XGBoost. The resulting bootstrap distribution was used to derive 95\% confidence intervals for the difference in RMSE between the two models.
+ 
++{\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
++The main saved-run BiLSTM-Attention--XGBoost RMSE comparison uses a paired circular-block bootstrap with 28 consecutive six-hourly samples (7 days), 10,000 replicates and resampling seed 42. Blocks wrap around the full test series and are truncated to the original sample length; rainfall-subset masks are applied after resampling the complete timeline. The reported 95\% percentile intervals are pointwise and are conditional on the original single saved predictions, not five-seed mean scores. Five-seed sample standard deviations instead measure training-initialization variability on a fixed chronological split; they do not measure uncertainty in cross-year generalization.
++\par}
++
+ {\color{red}\hypersetup{linkcolor=red}
+ Additional comparisons preserve their distinct sample and run definitions. The main five-seed results use all 3,939 test samples and report seed-level means and standard deviations; the Ridge paired comparisons instead use the original single saved prediction series. The saved BU-LSTM-Attention series is not the seed-42 run of the five-seed set. Seasonal model evaluation uses the $W=6$ five-seed reruns of XGBoost, Transformer, BiLSTM-Attention, BU-LSTM, BU-LSTM-Attention and Probabilistic BiLSTM-Attention, with six input snapshots spanning 30~h, rather than treating the saved single run as the five-seed mean. RMSE skill score is defined as $\mathrm{SS}=1-\mathrm{RMSE}_{\mathrm{model}}/\mathrm{RMSE}_{\mathrm{month\times hour}}$, using training-fitted month-by-hour climatology evaluated on exactly the same test samples. Scores are calculated before rounding; the HRES subset has its own recomputed denominator.
+ \par}
+@@ -515,6 +523,19 @@
+ % EVIDENCE[R1-M2]: q07 circular28/script2000; q07b circular28/2000; q08/q08b/q08c moving14/10000 per confirmed formal configuration; HRES block length and replicate count confirmed in run logs per the latest user-verified record; q13 moving28/script5000; q03d circular28/2000; seeds42. A locally available older q08c script uses default2000 and circular wrapping, so archive the formal executed version/log rather than substituting that older default.
+ 
+ All evaluation metrics were calculated after reversing standardization. Precipitation-valued outputs, RMSE, MAE, CRPS, interval widths and SHAP attributions are expressed in the hourly-mean-rate unit mm\,h$^{-1}$; dimensionless scores retain their definitions. Comparisons follow the stated sample, run and target definitions; in particular, the HRES accumulation window differs from the learning-model target window.
++
++{\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
++\subsubsection{Retrospective Rolling-Origin Evaluation}
++\label{sec:rolling_origin_methods}
++
++We conducted a retrospective rolling-origin robustness evaluation using the extended 1992--2021 ERA5 archive. Expanding training periods were 1992--2007, 1992--2010, 1992--2013 and 1992--2016; their validation periods were 2008--2009, 2011--2012, 2014--2015 and 2017--2018, and their non-overlapping test periods were 2010--2012, 2013--2015, 2016--2018 and 2019--2021, respectively (F1--F4). F4$\prime$ instead trained on 2004--2016 and shared F4\textquotesingle s validation and test targets, isolating the addition of 1992--2003 training history within this protocol. The longest training history was 25 years; F1 and F2 used 16 and 19 years. Six models and five fixed seeds (42, 123, 7, 2024, 99) yielded 150 runs. The six models were XGBoost, Transformer, BiLSTM-Attention, BU-LSTM, BU-LSTM-Attention and Probabilistic BiLSTM-Attention; the plain BiLSTM control was not included.
++
++Scalers, Q95, month-by-hour climatology and AR(1) coefficients were estimated from each fold\textquotesingle s training data only. A training-only check of the original 11-candidate contemporaneous screening rule recovered the same seven predictors in every fold; training retained that fixed set. Windows did not cross partition boundaries. Architectures and hyperparameters were reused from the original study, without fold-specific retuning; recurrent models retained the 30-epoch cap and validation-based early stopping. This preserves temporal separation at the preprocessing and model-fitting stages but does not make model-design choices independent of these retrospectively selected periods.
++
++Rolling-origin RMSE comparisons used a paired non-circular moving-block bootstrap: 28 six-hourly samples (7 days), 5,000 replicates and resampling seed 42, with additional pooled checks at 56 and 120 samples (14 and 30 days). Blocks were sampled on the full chronological sequence before wet-subset masking; each replicate used $\lceil n/L\rceil$ complete blocks of length $L$, without truncating its final block. Common sampled indices were applied across compared forecasts and seeds; RMSE differences were calculated per seed and then averaged, rather than averaging predictions first. Pooled comparisons concatenated F1--F4 targets before scoring and can sample blocks across the short fold-boundary gaps. All intervals are pointwise 95\% percentile intervals without multiplicity adjustment. Paired seed-$t$ intervals for the history comparison separately describe training variability across five seeds (four degrees of freedom); neither interval combines both uncertainty sources.
++
++Supplementary Tables~\ref{supp-stab:r2m5_design}--\ref{supp-stab:r2m5_coverage} provide configuration counts, performance, paired comparisons, history effects and conditional coverage, separately from the main experiment. F4$\prime$ uses 13 complete calendar training years and is not the original 70/15/15 main split; it does not replace Table~\ref{tab:seed_stability}.
++\par}
+ %---------------------------------------------------
+ {\color{red}\hypersetup{linkcolor=red}
+ \subsection{Model Interpretability and Diagnostic Analysis}
+@@ -752,6 +773,23 @@
+ On the 3,939 station test targets, XGBoost trained on station labels (S) had RMSE 0.423532~mm\,h$^{-1}$, compared with 0.420649~mm\,h$^{-1}$ for ERA5-label training (E), after averaging predictions across the same five seeds within each configuration before scoring. The RMSE difference (S$-$E) was $+0.002884$~mm\,h$^{-1}$, with a pointwise 95\% paired circular-block bootstrap interval of $[-0.001544,+0.007715]$~mm\,h$^{-1}$ (28 six-hourly samples per block, seven days; 2,000 replicates; resampling seed 42), applied to those mean predictions. This is not the mean of the five seed-level RMSE differences. Each individual seed also gave higher RMSE for S than E (S better: 0/5), but the sampling interval for the mean predictions includes zero. The difference is small and is not statistically distinguishable from zero under this analysis; changing labels alone did not demonstrate improved station-target accuracy under the tested inputs and unchanged training settings.
+ \par}
+ 
++
++{\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
++\subsubsection{Retrospective Rolling-Origin Robustness}
++\label{sec:rolling_origin_results}
++
++Across the four rolling test periods, all six learning models retained positive RMSE skill relative to training-fitted month-by-hour climatology (0.077--0.125). AR(1) also had positive skill (0.031--0.055), whereas Persistence had negative skill in every period. XGBoost had the numerically lowest RMSE in F1--F3, and BiLSTM-Attention in F4; pairwise Kendall rank correlations among the six-model rankings ranged from 0.60 to 0.87. Only F1\textquotesingle s BiLSTM-Attention--XGBoost all-target interval clearly excluded zero among the four period-specific comparisons. These results do not identify a uniformly best model.
++
++Supplementary Tables~\ref{supp-stab:r2m5_design} and~\ref{supp-stab:r2m5_performance} report all configurations and forecasts; Tables~\ref{supp-stab:r2m5_pairs_all} and~\ref{supp-stab:r2m5_pairs_wet} retain all saved paired comparisons.
++
++On the 17,508 pooled test targets, the mean seed-level RMSE difference (BiLSTM-Attention minus XGBoost) was $+0.00204$~mm\,h$^{-1}$. Its 7-day interval was $[+0.00007,+0.00398]$, its 14-day interval $[-0.00003,+0.00402]$, and its 30-day interval $[+0.00006,+0.00404]$~mm\,h$^{-1}$. The small all-target separation is therefore sensitive to block length. On the distinct wet subset ($\geq0.1$~mm\,h$^{-1}$; $n=3,610$), the difference was $+0.0093$~mm\,h$^{-1}$ with a 7-day interval of $[+0.0048,+0.0137]$~mm\,h$^{-1}$, supporting lower XGBoost RMSE within that subset rather than an overall superiority claim.
++
++Block-length sensitivity is given in Supplementary Table~\ref{supp-stab:r2m5_block_sensitivity}.
++
++On matched F4/F4$\prime$ test targets, extending training from 13 to 25 years reduced the six learning models\textquotesingle{} mean all-target RMSE by approximately 0.4--2.3\%. Upper-tail gains were not uniform, and seed-$t$ and test-sample bootstrap intervals did not always agree; both are retained. Conditional 95\% Gaussian coverage across F1--F4 was 0.953--0.963 overall, but only 0.801--0.828 for wet targets and 0.473--0.592 for upper-tail targets. Under the fixed Q95 rule, every learning model\textquotesingle s mean CSI was lower than Persistence in each period. The coverage and fixed-event diagnostics use fold-specific training Q95, whereas the history comparison uses the common original-main Q95 $=0.574048$~mm\,h$^{-1}$ for upper-tail targets. Fixed-cutoff event scores are distinct from the validation-selected decisions reported elsewhere.
++
++Supplementary Tables~\ref{supp-stab:r2m5_history} and~\ref{supp-stab:r2m5_coverage} retain the history and conditional-coverage evidence.
++\par}
+ \subsection{Performance Across Rainfall Regimes}
+ \label{sec:regime_results}
+ 
+@@ -1012,6 +1050,10 @@
+ The observational checks distinguish within-reanalysis predictability from agreement with local measurements (Section~\ref{sec:observational_checks}). Moderate ERA5--station correspondence and limited gains over a constant training-mean reference constrain external interpretation. The constant is the ERA5 training-period mean, 0.1061~mm\,h$^{-1}$, not a station-derived mean. The small, non-significant XGBoost label-training difference does not support a conclusion that observations lack value. Changing labels while retaining regional ERA5 inputs and untuned settings would in any case be a restricted test, not an optimized station forecast. A related distinction is made by \citet{https://doi.org/10.1029/2026JH001291}, who treated ERA5-referenced precipitation evaluation as a model-consistency check and used satellite-derived IMERG as an independent observational benchmark. Their global forecasting design and observational product differ from ours; the citation supports separating reanalysis and observational verification rather than transferring their skill to this study.
+ \par}
+ 
++
++{\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
++BiLSTM-Attention achieved the numerically lowest RMSE on the original test period, but its advantage over XGBoost was small and did not persist consistently across the rolling-origin evaluation. The six-model rankings had moderate-to-high agreement across periods, but the small pooled BiLSTM-Attention--XGBoost difference changed its zero-crossing conclusion at 14-day blocks. Wet-subset and history effects are therefore interpreted separately from all-target rankings (Section~\ref{sec:rolling_origin_results}).
++\par}
+ \subsection{Performance under Upper-Tail Precipitation and Probabilistic Reliability}
+ \label{sec:upper_tail_discussion}
+ 
+@@ -1065,6 +1107,10 @@
+ 
+ \subsection{Limitations and Future Work}
+ \label{sec:limitations}
++
++{\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
++The rolling-origin analysis is retrospective rather than a fully prospective or fully independent validation of model-design choices. The original training targets extended through 7 August 2016 and validation targets through 20 April 2019; these development data overlap the F1--F3 test years. F4 begins on 2 January 2019, so its early-2019 targets also overlap the original validation period; the original test targets begin only on 22 April 2019. The original test portion was not used for initial hyperparameter selection but had already informed the original model comparisons. Fold-specific fitting and preprocessing therefore do not remove development-stage overlap. Models were not retuned per fold; F1/F2 had only 16/19 training years. No ENSO-phase stratification, rolling plain-BiLSTM control or rolling Bernoulli--Gamma alternative was evaluated. Pooled bootstrap blocks can cross the 42-hour gaps between adjacent fold target sequences. These boundaries limit claims of temporal independence, attention-specific benefit and robustness to distributional formulation.
++\par}
+ 
+ Several limitations affect the interpretation and generalization of the present results. The first concerns the spatial representation of precipitation. All meteorological variables, including the prediction target, were spatially averaged across the 25 ERA5 grid points within the study domain. The resulting forecasts therefore represent Dublin regional mean precipitation rather than rainfall at individual locations. \textcolor{red}{Spatial averaging provides a compact regional forecasting problem but can smooth localized rainfall maxima and reduce the apparent intensity of small-scale precipitation events. Consequently, upper-tail precipitation events ($\geq$Q95) of the ERA5 regional mean must not be equated with heavy rainfall measured at an individual station. This distinction limits the interpretation of the upper-tail results as local high-impact rainfall forecasts.}
+ 
+@@ -1104,6 +1150,10 @@
+ %----------------------------------------------------------
+ \section{Conclusion}
+ \label{sec:conclusion}
++
++{\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
++BiLSTM-Attention achieved the numerically lowest RMSE on the original test period, but its advantage over XGBoost was small and did not persist consistently across the rolling-origin evaluation. The supplementary retrospective evaluation retained positive climatological skill for all six models evaluated there in each test period, but did not remove upper-tail detection and interval-coverage deficits; it does not establish prospective independence of the model-design choices.
++\par}
+ 
+ This study presented a systematic evaluation of machine-learning and deep-learning approaches for short-term regional precipitation forecasting over Dublin using hourly ERA5 data from 2004 to 2021 subsampled at 6-hour intervals to predict hourly regional-mean precipitation at a 6-hour lead time. The analysis considered deterministic and probabilistic forecasting, repeated-run robustness, rainfall-regime performance, event-based evaluation, and model interpretation. Its conclusions concern ERA5-derived regional-mean precipitation; the observational checks do not establish equivalent station-forecast skill. Rather than focusing on a single model architecture, the study examined how different modelling choices affect forecast accuracy and reliability under a common experimental setting.
+ 
+--- a/Supplementary.tex
++++ b/Supplementary.tex
+@@ -1098,4 +1098,407 @@
+ \end{tabularx}
+ \end{revisiontable}
+ 
++
++% R2-M5: archived q06 retrospective robustness evidence; automatic numbering only.
++{\color{red}\section*{Retrospective rolling-origin robustness evaluation}\par}
++
++\clearpage
++\begin{revisionlongtable}
++\begin{longtable}{@{}lrrrrrrr@{}}
++\caption{Rolling-origin configurations from the archived q06 fold JSON files. Counts are forecast targets after constructing six-snapshot windows separately within each partition; UTC targets begin on 2 January at 12:00 in each calendar-year partition, not on 1 January. Q95 (mm\,h$^{-1}$) is estimated from each fold\textquotesingle s windowed training targets. F4$\prime$ is stored as F4s. The 1992--2021 archive spans 30 years; training histories are 16, 19, 22 and 25 years, versus 13 years for F4$\prime$. F4 and F4$\prime$ share their validation and test timestamps. Six models and five seeds (42, 123, 7, 2024, 99) give 150 runs.}\label{stab:r2m5_design}\\
++\hline
++\textbf{Fold} & \textbf{Train} & \textbf{Valid.} & \textbf{Test} & \textbf{$n_{tr}$} & \textbf{$n_{val}$} & \textbf{$n_{te}$} & \textbf{Q95}\\
++\hline
++\endfirsthead
++\multicolumn{8}{l}{\textbf{Table~\thetable{} (continued)}}\\
++\hline
++\textbf{Fold} & \textbf{Train} & \textbf{Valid.} & \textbf{Test} & \textbf{$n_{tr}$} & \textbf{$n_{val}$} & \textbf{$n_{te}$} & \textbf{Q95}\\
++\hline
++\endhead
++\hline
++\endfoot
++F1 & 1992--2007 & 2008--2009 & 2010--2012 & 23370 & 2918 & 4378 & 0.5679\\
++F2 & 1992--2010 & 2011--2012 & 2013--2015 & 27754 & 2918 & 4374 & 0.5765\\
++F3 & 1992--2013 & 2014--2015 & 2016--2018 & 32138 & 2914 & 4378 & 0.5742\\
++F4 & 1992--2016 & 2017--2018 & 2019--2021 & 36522 & 2914 & 4378 & 0.5775\\
++F4$'$ & 2004--2016 & 2017--2018 & 2019--2021 & 18990 & 2914 & 4378 & 0.5739\\
++\end{longtable}
++\end{revisionlongtable}
++
++\clearpage
++\begin{revisionlongtable}
++\begin{longtable}{@{}llrrrrrrr@{}}
++\caption{Four rolling test periods: all six models and three references. Forecast codes: XGB, XGBoost; BU, BU-LSTM; BA, BiLSTM-Attention; TR, Transformer; BUA, BU-LSTM-Attention; PBA, Probabilistic BiLSTM-Attention; PERS, Persistence; CLIM, training-fitted month$\times$hour climatology; AR1, training-fitted AR(1). RMSE and MAE are in mm\,h$^{-1}$; parentheses below RMSE give the sample SD across five seed-level scores, not a confidence interval. References each have one deterministic score and no seed SD. Rank is ascending mean RMSE among the six learning models only. SS is $1-\mathrm{RMSE}/\mathrm{RMSE}_{CLIM}$ on the same targets; $R^2$ and SS are dimensionless. Upper-tail RMSE and CSI use each fold\textquotesingle s training Q95 in Table~\ref{stab:r2m5_design}, with fixed decision cutoff equal to the event threshold, not a validation-selected cutoff. Test counts are 4,378/4,374/4,378/4,378 for F1--F4.}\label{stab:r2m5_performance}\\
++\hline
++\textbf{Fold} & \textbf{Code} & \textbf{RMSE} & \textbf{MAE} & \textbf{$R^2$} & \textbf{SS} & \textbf{Rank} & \shortstack{\textbf{Upper}\\\textbf{RMSE}} & \shortstack{\textbf{Upper}\\\textbf{CSI}}\\
++\hline
++\endfirsthead
++\multicolumn{9}{l}{\textbf{Table~\thetable{} (continued)}}\\
++\hline
++\textbf{Fold} & \textbf{Code} & \textbf{RMSE} & \textbf{MAE} & \textbf{$R^2$} & \textbf{SS} & \textbf{Rank} & \shortstack{\textbf{Upper}\\\textbf{RMSE}} & \shortstack{\textbf{Upper}\\\textbf{CSI}}\\
++\hline
++\endhead
++\hline
++\endfoot
++F1 & XGB & \shortstack{$0.2463$\\($0.0005$)} & $0.1120$ & $0.2347$ & $0.1250$ & 1 & $0.9614$ & $0.084$\\
++F1 & BU & \shortstack{$0.2520$\\($0.0007$)} & $0.1123$ & $0.1986$ & $0.1045$ & 2 & $1.0042$ & $0.000$\\
++F1 & BA & \shortstack{$0.2522$\\($0.0011$)} & $0.1129$ & $0.1979$ & $0.1041$ & 3 & $0.9987$ & $0.063$\\
++F1 & TR & \shortstack{$0.2583$\\($0.0006$)} & $0.1182$ & $0.1585$ & $0.0824$ & 6 & $1.0359$ & $0.038$\\
++F1 & BUA & \shortstack{$0.2522$\\($0.0006$)} & $0.1158$ & $0.1975$ & $0.1039$ & 4 & $0.9906$ & $0.000$\\
++F1 & PBA & \shortstack{$0.2534$\\($0.0016$)} & $0.1115$ & $0.1898$ & $0.0997$ & 5 & $1.0095$ & $0.000$\\
++F1 & PERS & $0.3259$ & $0.1281$ & $-0.3400$ & $-0.1579$ & --- & $0.9775$ & $0.145$\\
++F1 & CLIM & $0.2815$ & $0.1428$ & $0.0006$ & $0.0000$ & --- & $1.1491$ & $0.000$\\
++F1 & AR1 & $0.2661$ & $0.1304$ & $0.1066$ & $0.0545$ & --- & $1.0672$ & $0.025$\\
++F2 & XGB & \shortstack{$0.2615$\\($0.0008$)} & $0.1187$ & $0.2032$ & $0.1046$ & 1 & $1.0065$ & $0.087$\\
++F2 & BU & \shortstack{$0.2654$\\($0.0010$)} & $0.1193$ & $0.1791$ & $0.0912$ & 5 & $1.0547$ & $0.000$\\
++F2 & BA & \shortstack{$0.2619$\\($0.0009$)} & $0.1175$ & $0.2007$ & $0.1032$ & 2 & $1.0192$ & $0.060$\\
++F2 & TR & \shortstack{$0.2694$\\($0.0022$)} & $0.1248$ & $0.1539$ & $0.0774$ & 6 & $1.0457$ & $0.048$\\
++F2 & BUA & \shortstack{$0.2643$\\($0.0013$)} & $0.1180$ & $0.1857$ & $0.0948$ & 3 & $1.0477$ & $0.000$\\
++F2 & PBA & \shortstack{$0.2652$\\($0.0010$)} & $0.1156$ & $0.1803$ & $0.0919$ & 4 & $1.0562$ & $0.000$\\
++F2 & PERS & $0.3510$ & $0.1362$ & $-0.4355$ & $-0.2018$ & --- & $1.0684$ & $0.149$\\
++F2 & CLIM & $0.2920$ & $0.1490$ & $0.0061$ & $0.0000$ & --- & $1.1839$ & $0.000$\\
++F2 & AR1 & $0.2810$ & $0.1369$ & $0.0796$ & $0.0377$ & --- & $1.1188$ & $0.037$\\
++F3 & XGB & \shortstack{$0.2444$\\($0.0007$)} & $0.1107$ & $0.1790$ & $0.0945$ & 1 & $0.9719$ & $0.070$\\
++F3 & BU & \shortstack{$0.2478$\\($0.0002$)} & $0.1091$ & $0.1560$ & $0.0819$ & 3 & $1.0192$ & $0.000$\\
++F3 & BA & \shortstack{$0.2466$\\($0.0003$)} & $0.1105$ & $0.1642$ & $0.0864$ & 2 & $1.0056$ & $0.031$\\
++F3 & TR & \shortstack{$0.2484$\\($0.0008$)} & $0.1126$ & $0.1522$ & $0.0799$ & 6 & $1.0095$ & $0.025$\\
++F3 & BUA & \shortstack{$0.2482$\\($0.0010$)} & $0.1145$ & $0.1536$ & $0.0806$ & 4 & $1.0017$ & $0.000$\\
++F3 & PBA & \shortstack{$0.2482$\\($0.0009$)} & $0.1094$ & $0.1533$ & $0.0804$ & 5 & $1.0263$ & $0.000$\\
++F3 & PERS & $0.3306$ & $0.1296$ & $-0.5025$ & $-0.2250$ & --- & $1.0397$ & $0.090$\\
++F3 & CLIM & $0.2699$ & $0.1409$ & $-0.0013$ & $0.0000$ & --- & $1.1299$ & $0.000$\\
++F3 & AR1 & $0.2615$ & $0.1287$ & $0.0603$ & $0.0312$ & --- & $1.0802$ & $0.022$\\
++F4 & XGB & \shortstack{$0.2407$\\($0.0006$)} & $0.1165$ & $0.2182$ & $0.1146$ & 2 & $0.8510$ & $0.077$\\
++F4 & BU & \shortstack{$0.2428$\\($0.0013$)} & $0.1188$ & $0.2046$ & $0.1069$ & 3 & $0.8760$ & $0.002$\\
++F4 & BA & \shortstack{$0.2404$\\($0.0012$)} & $0.1186$ & $0.2202$ & $0.1157$ & 1 & $0.8585$ & $0.055$\\
++F4 & TR & \shortstack{$0.2487$\\($0.0040$)} & $0.1191$ & $0.1656$ & $0.0853$ & 6 & $0.8921$ & $0.037$\\
++F4 & BUA & \shortstack{$0.2434$\\($0.0010$)} & $0.1220$ & $0.2009$ & $0.1048$ & 4 & $0.8577$ & $0.000$\\
++F4 & PBA & \shortstack{$0.2434$\\($0.0015$)} & $0.1203$ & $0.2007$ & $0.1047$ & 5 & $0.8723$ & $0.000$\\
++F4 & PERS & $0.3289$ & $0.1394$ & $-0.4600$ & $-0.2100$ & --- & $0.9185$ & $0.130$\\
++F4 & CLIM & $0.2719$ & $0.1499$ & $0.0028$ & $0.0000$ & --- & $1.0135$ & $0.000$\\
++F4 & AR1 & $0.2622$ & $0.1383$ & $0.0724$ & $0.0355$ & --- & $0.9645$ & $0.007$\\
++\end{longtable}
++\end{revisionlongtable}
++
++\clearpage
++\begin{revisionlongtable}
++\setlength{\tabcolsep}{2pt}
++\begin{longtable}{@{}llrrrrrrr@{}}
++\caption{Training-history comparison on matched F4/F4$\prime$ targets, with forecast codes as in Table~\ref{stab:r2m5_performance}. Columns 13y and 25y are means of seed-level RMSE (mm\,h$^{-1}$); $\Delta$ is 25y minus 13y, so negative values favour longer training. Wet means $\geq0.1$; Upper uses the common original-main Q95 $=0.574048$~mm\,h$^{-1}$, not either fold-specific Q95. Both pointwise 95\% intervals are retained: seed-$t$ describes paired training variability (five seeds, four degrees of freedom), whereas moving-block bootstrap describes test-sample uncertainty conditional on fitted models (28 six-hourly samples, 5,000 replicates, seed 42). In each replicate, RMSE differences are calculated per seed then averaged; predictions are not averaged first. Neither interval combines all uncertainty sources or adjusts for multiplicity. Better counts seeds with lower 25y RMSE; deterministic references have one comparison and no seed-$t$ interval.}\label{stab:r2m5_history}\\
++\hline
++\textbf{Code} & \textbf{Subset} & \textbf{$n$} & \textbf{13y} & \textbf{25y} & \textbf{$\Delta$} & \shortstack{\textbf{Seed-$t$}\\\textbf{95\% CI}} & \shortstack{\textbf{Bootstrap}\\\textbf{95\% CI}} & \textbf{Better}\\
++\hline
++\endfirsthead
++\multicolumn{9}{l}{\textbf{Table~\thetable{} (continued)}}\\
++\hline
++\textbf{Code} & \textbf{Subset} & \textbf{$n$} & \textbf{13y} & \textbf{25y} & \textbf{$\Delta$} & \shortstack{\textbf{Seed-$t$}\\\textbf{95\% CI}} & \shortstack{\textbf{Bootstrap}\\\textbf{95\% CI}} & \textbf{Better}\\
++\hline
++\endhead
++\hline
++\endfoot
++XGB & All & 4378 & $0.2426$ & $0.2407$ & $-0.00187$ & $[-0.003530,-0.000203]$ & $[-0.003515,-0.000086]$ & 5/5\\
++XGB & Wet & 935 & $0.4746$ & $0.4740$ & $-0.00063$ & $[-0.004014,+0.002755]$ & $[-0.004445,+0.003090]$ & 3/5\\
++XGB & Upper & 257 & $0.8497$ & $0.8497$ & $-0.00002$ & $[-0.006535,+0.006492]$ & $[-0.007188,+0.007179]$ & 3/5\\
++BU & All & 4378 & $0.2449$ & $0.2428$ & $-0.00211$ & $[-0.004926,+0.000714]$ & $[-0.003071,-0.001117]$ & 5/5\\
++BU & Wet & 935 & $0.4916$ & $0.4824$ & $-0.00914$ & $[-0.023518,+0.005241]$ & $[-0.011183,-0.006920]$ & 4/5\\
++BU & Upper & 257 & $0.8941$ & $0.8745$ & $-0.01958$ & $[-0.048989,+0.009823]$ & $[-0.023376,-0.015558]$ & 3/5\\
++BA & All & 4378 & $0.2429$ & $0.2404$ & $-0.00247$ & $[-0.004947,-0.000002]$ & $[-0.003652,-0.001218]$ & 5/5\\
++BA & Wet & 935 & $0.4824$ & $0.4750$ & $-0.00744$ & $[-0.016981,+0.002110]$ & $[-0.010020,-0.004473]$ & 4/5\\
++BA & Upper & 257 & $0.8746$ & $0.8571$ & $-0.01753$ & $[-0.040480,+0.005422]$ & $[-0.022276,-0.011894]$ & 4/5\\
++TR & All & 4378 & $0.2546$ & $0.2487$ & $-0.00594$ & $[-0.010498,-0.001391]$ & $[-0.008259,-0.003722]$ & 5/5\\
++TR & Wet & 935 & $0.5137$ & $0.4970$ & $-0.01676$ & $[-0.038521,+0.004994]$ & $[-0.021460,-0.011673]$ & 4/5\\
++TR & Upper & 257 & $0.9258$ & $0.8906$ & $-0.03523$ & $[-0.078343,+0.007891]$ & $[-0.043536,-0.026626]$ & 4/5\\
++BUA & All & 4378 & $0.2442$ & $0.2434$ & $-0.00087$ & $[-0.002599,+0.000851]$ & $[-0.001965,+0.000265]$ & 3/5\\
++BUA & Wet & 935 & $0.4830$ & $0.4741$ & $-0.00899$ & $[-0.025532,+0.007546]$ & $[-0.011282,-0.006652]$ & 4/5\\
++BUA & Upper & 257 & $0.8771$ & $0.8562$ & $-0.02092$ & $[-0.057973,+0.016125]$ & $[-0.025084,-0.016915]$ & 4/5\\
++PBA & All & 4378 & $0.2476$ & $0.2434$ & $-0.00419$ & $[-0.007613,-0.000767]$ & $[-0.005830,-0.002554]$ & 5/5\\
++PBA & Wet & 935 & $0.4991$ & $0.4803$ & $-0.01878$ & $[-0.028292,-0.009263]$ & $[-0.021754,-0.015759]$ & 5/5\\
++PBA & Upper & 257 & $0.9081$ & $0.8708$ & $-0.03731$ & $[-0.055815,-0.018812]$ & $[-0.042530,-0.032292]$ & 5/5\\
++CLIM & All & 4378 & $0.2719$ & $0.2719$ & $-0.00004$ & --- & $[-0.000383,+0.000308]$ & 1/1\\
++CLIM & Wet & 935 & $0.5591$ & $0.5592$ & $+0.00015$ & --- & $[-0.000719,+0.001074]$ & 0/1\\
++CLIM & Upper & 257 & $1.0116$ & $1.0120$ & $+0.00032$ & --- & $[-0.001140,+0.001883]$ & 0/1\\
++AR1 & All & 4378 & $0.2622$ & $0.2622$ & $+0.00001$ & --- & $[-0.000054,+0.000071]$ & 0/1\\
++AR1 & Wet & 935 & $0.5338$ & $0.5335$ & $-0.00025$ & --- & $[-0.000379,-0.000131]$ & 1/1\\
++AR1 & Upper & 257 & $0.9637$ & $0.9631$ & $-0.00070$ & --- & $[-0.000901,-0.000511]$ & 1/1\\
++\end{longtable}
++\end{revisionlongtable}
++
++\clearpage
++\begin{revisionlongtable}
++\begin{longtable}{@{}llrrr@{}}
++\caption{All-target paired RMSE comparisons from q06. Forecast codes are defined in Table~\ref{stab:r2m5_performance}. $\Delta=\mathrm{RMSE}(A)-\mathrm{RMSE}(B)$ in mm\,h$^{-1}$, averaged across seed-level RMSE differences; Pooled concatenates the four test sequences before scoring each seed, rather than averaging fold RMSE or ensemble predictions. Paired non-circular moving-block percentile intervals are pointwise 95\%, without multiplicity adjustment: 28 samples (7 days), 5,000 replicates, seed 42. Common blocks are used across paired forecasts and seeds, drawn on the full chronological sequence before subset masking. Each replicate concatenates $\lceil n/28\rceil$ complete blocks without truncating the last block. Pooled blocks can cross the 42-hour gaps between folds caused by within-partition window construction. No model is declared uniformly best.}\label{stab:r2m5_pairs_all}\\
++\hline
++\textbf{Period} & \textbf{$A-B$} & \textbf{$n$} & \textbf{$\Delta$RMSE} & \textbf{95\% CI}\\
++\hline
++\endfirsthead
++\multicolumn{5}{l}{\textbf{Table~\thetable{} (continued)}}\\
++\hline
++\textbf{Period} & \textbf{$A-B$} & \textbf{$n$} & \textbf{$\Delta$RMSE} & \textbf{95\% CI}\\
++\hline
++\endhead
++\hline
++\endfoot
++F1 & BA $-$ XGB & 4378 & $+0.00586$ & $[+0.00198,+0.01005]$\\
++F1 & BUA $-$ BA & 4378 & $+0.00007$ & $[-0.00254,+0.00292]$\\
++F1 & BUA $-$ XGB & 4378 & $+0.00593$ & $[+0.00234,+0.00976]$\\
++F1 & XGB $-$ AR1 & 4378 & $-0.01982$ & $[-0.02577,-0.01443]$\\
++F1 & BU $-$ AR1 & 4378 & $-0.01407$ & $[-0.01818,-0.01028]$\\
++F1 & BA $-$ AR1 & 4378 & $-0.01396$ & $[-0.02014,-0.00828]$\\
++F1 & TR $-$ AR1 & 4378 & $-0.00784$ & $[-0.01361,-0.00196]$\\
++F1 & BUA $-$ AR1 & 4378 & $-0.01390$ & $[-0.01815,-0.01002]$\\
++F1 & PBA $-$ AR1 & 4378 & $-0.01270$ & $[-0.01685,-0.00858]$\\
++F1 & XGB $-$ CLIM & 4378 & $-0.03517$ & $[-0.04285,-0.02869]$\\
++F1 & BU $-$ CLIM & 4378 & $-0.02942$ & $[-0.03505,-0.02461]$\\
++F1 & BA $-$ CLIM & 4378 & $-0.02931$ & $[-0.03598,-0.02375]$\\
++F1 & TR $-$ CLIM & 4378 & $-0.02319$ & $[-0.02805,-0.01873]$\\
++F1 & BUA $-$ CLIM & 4378 & $-0.02924$ & $[-0.03515,-0.02403]$\\
++F1 & PBA $-$ CLIM & 4378 & $-0.02805$ & $[-0.03368,-0.02311]$\\
++F2 & BA $-$ XGB & 4374 & $+0.00041$ & $[-0.00379,+0.00361]$\\
++F2 & BUA $-$ BA & 4374 & $+0.00245$ & $[+0.00005,+0.00519]$\\
++F2 & BUA $-$ XGB & 4374 & $+0.00286$ & $[-0.00096,+0.00596]$\\
++F2 & XGB $-$ AR1 & 4374 & $-0.01955$ & $[-0.02461,-0.01396]$\\
++F2 & BU $-$ AR1 & 4374 & $-0.01562$ & $[-0.01880,-0.01261]$\\
++F2 & BA $-$ AR1 & 4374 & $-0.01914$ & $[-0.02422,-0.01448]$\\
++F2 & TR $-$ AR1 & 4374 & $-0.01160$ & $[-0.01649,-0.00684]$\\
++F2 & BUA $-$ AR1 & 4374 & $-0.01669$ & $[-0.02014,-0.01327]$\\
++F2 & PBA $-$ AR1 & 4374 & $-0.01583$ & $[-0.01874,-0.01292]$\\
++F2 & XGB $-$ CLIM & 4374 & $-0.03056$ & $[-0.03634,-0.02365]$\\
++F2 & BU $-$ CLIM & 4374 & $-0.02663$ & $[-0.03085,-0.02195]$\\
++F2 & BA $-$ CLIM & 4374 & $-0.03014$ & $[-0.03585,-0.02426]$\\
++F2 & TR $-$ CLIM & 4374 & $-0.02260$ & $[-0.02709,-0.01739]$\\
++F2 & BUA $-$ CLIM & 4374 & $-0.02769$ & $[-0.03195,-0.02281]$\\
++F2 & PBA $-$ CLIM & 4374 & $-0.02683$ & $[-0.03154,-0.02180]$\\
++F3 & BA $-$ XGB & 4378 & $+0.00219$ & $[-0.00140,+0.00564]$\\
++F3 & BUA $-$ BA & 4378 & $+0.00156$ & $[-0.00081,+0.00364]$\\
++F3 & BUA $-$ XGB & 4378 & $+0.00374$ & $[+0.00049,+0.00668]$\\
++F3 & XGB $-$ AR1 & 4378 & $-0.01707$ & $[-0.02122,-0.01217]$\\
++F3 & BU $-$ AR1 & 4378 & $-0.01367$ & $[-0.01620,-0.01074]$\\
++F3 & BA $-$ AR1 & 4378 & $-0.01489$ & $[-0.01832,-0.01078]$\\
++F3 & TR $-$ AR1 & 4378 & $-0.01312$ & $[-0.01640,-0.00936]$\\
++F3 & BUA $-$ AR1 & 4378 & $-0.01333$ & $[-0.01609,-0.01003]$\\
++F3 & PBA $-$ AR1 & 4378 & $-0.01327$ & $[-0.01558,-0.01052]$\\
++F3 & XGB $-$ CLIM & 4378 & $-0.02551$ & $[-0.03115,-0.01928]$\\
++F3 & BU $-$ CLIM & 4378 & $-0.02210$ & $[-0.02607,-0.01794]$\\
++F3 & BA $-$ CLIM & 4378 & $-0.02332$ & $[-0.02754,-0.01863]$\\
++F3 & TR $-$ CLIM & 4378 & $-0.02156$ & $[-0.02580,-0.01708]$\\
++F3 & BUA $-$ CLIM & 4378 & $-0.02176$ & $[-0.02618,-0.01718]$\\
++F3 & PBA $-$ CLIM & 4378 & $-0.02171$ & $[-0.02559,-0.01776]$\\
++F4 & BA $-$ XGB & 4378 & $-0.00030$ & $[-0.00425,+0.00373]$\\
++F4 & BUA $-$ BA & 4378 & $+0.00296$ & $[+0.00108,+0.00483]$\\
++F4 & BUA $-$ XGB & 4378 & $+0.00266$ & $[-0.00086,+0.00617]$\\
++F4 & XGB $-$ AR1 & 4378 & $-0.02149$ & $[-0.02693,-0.01567]$\\
++F4 & BU $-$ AR1 & 4378 & $-0.01940$ & $[-0.02256,-0.01614]$\\
++F4 & BA $-$ AR1 & 4378 & $-0.02179$ & $[-0.02572,-0.01774]$\\
++F4 & TR $-$ AR1 & 4378 & $-0.01354$ & $[-0.01768,-0.00895]$\\
++F4 & BUA $-$ AR1 & 4378 & $-0.01884$ & $[-0.02277,-0.01481]$\\
++F4 & PBA $-$ AR1 & 4378 & $-0.01881$ & $[-0.02222,-0.01539]$\\
++F4 & XGB $-$ CLIM & 4378 & $-0.03115$ & $[-0.03801,-0.02441]$\\
++F4 & BU $-$ CLIM & 4378 & $-0.02906$ & $[-0.03390,-0.02424]$\\
++F4 & BA $-$ CLIM & 4378 & $-0.03145$ & $[-0.03695,-0.02599]$\\
++F4 & TR $-$ CLIM & 4378 & $-0.02319$ & $[-0.02779,-0.01842]$\\
++F4 & BUA $-$ CLIM & 4378 & $-0.02849$ & $[-0.03379,-0.02318]$\\
++F4 & PBA $-$ CLIM & 4378 & $-0.02846$ & $[-0.03341,-0.02361]$\\
++Pooled & BA $-$ XGB & 17508 & $+0.00204$ & $[+0.00007,+0.00398]$\\
++Pooled & BUA $-$ BA & 17508 & $+0.00175$ & $[+0.00050,+0.00292]$\\
++Pooled & BUA $-$ XGB & 17508 & $+0.00379$ & $[+0.00203,+0.00552]$\\
++Pooled & XGB $-$ AR1 & 17508 & $-0.01947$ & $[-0.02215,-0.01686]$\\
++Pooled & BU $-$ AR1 & 17508 & $-0.01567$ & $[-0.01726,-0.01401]$\\
++Pooled & BA $-$ AR1 & 17508 & $-0.01744$ & $[-0.01977,-0.01503]$\\
++Pooled & TR $-$ AR1 & 17508 & $-0.01149$ & $[-0.01381,-0.00913]$\\
++Pooled & BUA $-$ AR1 & 17508 & $-0.01568$ & $[-0.01746,-0.01387]$\\
++Pooled & PBA $-$ AR1 & 17508 & $-0.01514$ & $[-0.01679,-0.01345]$\\
++Pooled & XGB $-$ CLIM & 17508 & $-0.03061$ & $[-0.03407,-0.02728]$\\
++Pooled & BU $-$ CLIM & 17508 & $-0.02680$ & $[-0.02915,-0.02449]$\\
++Pooled & BA $-$ CLIM & 17508 & $-0.02857$ & $[-0.03139,-0.02581]$\\
++Pooled & TR $-$ CLIM & 17508 & $-0.02262$ & $[-0.02501,-0.02036]$\\
++Pooled & BUA $-$ CLIM & 17508 & $-0.02681$ & $[-0.02938,-0.02436]$\\
++Pooled & PBA $-$ CLIM & 17508 & $-0.02627$ & $[-0.02870,-0.02388]$\\
++\end{longtable}
++\end{revisionlongtable}
++
++\clearpage
++\begin{revisionlongtable}
++\begin{longtable}{@{}llrrr@{}}
++\caption{Wet-target ($\geq0.1$~mm\,h$^{-1}$) paired RMSE comparisons from q06. Forecast codes are defined in Table~\ref{stab:r2m5_performance}. $\Delta=\mathrm{RMSE}(A)-\mathrm{RMSE}(B)$ in mm\,h$^{-1}$, averaged across seed-level RMSE differences; Pooled concatenates the four test sequences before scoring each seed, rather than averaging fold RMSE or ensemble predictions. Paired non-circular moving-block percentile intervals are pointwise 95\%, without multiplicity adjustment: 28 samples (7 days), 5,000 replicates, seed 42. Common blocks are used across paired forecasts and seeds, drawn on the full chronological sequence before subset masking. Each replicate concatenates $\lceil n/28\rceil$ complete blocks without truncating the last block. Pooled blocks can cross the 42-hour gaps between folds caused by within-partition window construction. No model is declared uniformly best.}\label{stab:r2m5_pairs_wet}\\
++\hline
++\textbf{Period} & \textbf{$A-B$} & \textbf{$n$} & \textbf{$\Delta$RMSE} & \textbf{95\% CI}\\
++\hline
++\endfirsthead
++\multicolumn{5}{l}{\textbf{Table~\thetable{} (continued)}}\\
++\hline
++\textbf{Period} & \textbf{$A-B$} & \textbf{$n$} & \textbf{$\Delta$RMSE} & \textbf{95\% CI}\\
++\hline
++\endhead
++\hline
++\endfoot
++F1 & BA $-$ XGB & 933 & $+0.01817$ & $[+0.00876,+0.02731]$\\
++F1 & BUA $-$ BA & 933 & $-0.00605$ & $[-0.01125,-0.00011]$\\
++F1 & BUA $-$ XGB & 933 & $+0.01212$ & $[+0.00372,+0.02090]$\\
++F1 & XGB $-$ AR1 & 933 & $-0.05170$ & $[-0.06327,-0.03961]$\\
++F1 & BU $-$ AR1 & 933 & $-0.03368$ & $[-0.04355,-0.02398]$\\
++F1 & BA $-$ AR1 & 933 & $-0.03353$ & $[-0.04713,-0.02030]$\\
++F1 & TR $-$ AR1 & 933 & $-0.01500$ & $[-0.02811,-0.00163]$\\
++F1 & BUA $-$ AR1 & 933 & $-0.03958$ & $[-0.04978,-0.02979]$\\
++F1 & PBA $-$ AR1 & 933 & $-0.03057$ & $[-0.04068,-0.02010]$\\
++F1 & XGB $-$ CLIM & 933 & $-0.09099$ & $[-0.10634,-0.07778]$\\
++F1 & BU $-$ CLIM & 933 & $-0.07297$ & $[-0.08466,-0.06309]$\\
++F1 & BA $-$ CLIM & 933 & $-0.07282$ & $[-0.08690,-0.06153]$\\
++F1 & TR $-$ CLIM & 933 & $-0.05430$ & $[-0.06500,-0.04426]$\\
++F1 & BUA $-$ CLIM & 933 & $-0.07887$ & $[-0.09097,-0.06843]$\\
++F1 & PBA $-$ CLIM & 933 & $-0.06986$ & $[-0.08145,-0.05986]$\\
++F2 & BA $-$ XGB & 859 & $+0.00446$ & $[-0.00572,+0.01131]$\\
++F2 & BUA $-$ BA & 859 & $+0.00975$ & $[+0.00486,+0.01611]$\\
++F2 & BUA $-$ XGB & 859 & $+0.01421$ & $[+0.00561,+0.02082]$\\
++F2 & XGB $-$ AR1 & 859 & $-0.05698$ & $[-0.06629,-0.04653]$\\
++F2 & BU $-$ AR1 & 859 & $-0.03969$ & $[-0.04632,-0.03425]$\\
++F2 & BA $-$ AR1 & 859 & $-0.05252$ & $[-0.06376,-0.04364]$\\
++F2 & TR $-$ AR1 & 859 & $-0.03923$ & $[-0.05054,-0.02947]$\\
++F2 & BUA $-$ AR1 & 859 & $-0.04278$ & $[-0.05025,-0.03619]$\\
++F2 & PBA $-$ AR1 & 859 & $-0.03663$ & $[-0.04304,-0.03086]$\\
++F2 & XGB $-$ CLIM & 859 & $-0.08748$ & $[-0.09896,-0.07263]$\\
++F2 & BU $-$ CLIM & 859 & $-0.07018$ & $[-0.07878,-0.06043]$\\
++F2 & BA $-$ CLIM & 859 & $-0.08302$ & $[-0.09552,-0.07008]$\\
++F2 & TR $-$ CLIM & 859 & $-0.06972$ & $[-0.08054,-0.05855]$\\
++F2 & BUA $-$ CLIM & 859 & $-0.07327$ & $[-0.08206,-0.06286]$\\
++F2 & PBA $-$ CLIM & 859 & $-0.06712$ & $[-0.07724,-0.05577]$\\
++F3 & BA $-$ XGB & 883 & $+0.01312$ & $[+0.00523,+0.02102]$\\
++F3 & BUA $-$ BA & 883 & $-0.00502$ & $[-0.01023,-0.00060]$\\
++F3 & BUA $-$ XGB & 883 & $+0.00811$ & $[+0.00059,+0.01505]$\\
++F3 & XGB $-$ AR1 & 883 & $-0.04956$ & $[-0.05891,-0.03921]$\\
++F3 & BU $-$ AR1 & 883 & $-0.03331$ & $[-0.03875,-0.02740]$\\
++F3 & BA $-$ AR1 & 883 & $-0.03644$ & $[-0.04418,-0.02762]$\\
++F3 & TR $-$ AR1 & 883 & $-0.03504$ & $[-0.04267,-0.02690]$\\
++F3 & BUA $-$ AR1 & 883 & $-0.04146$ & $[-0.04744,-0.03499]$\\
++F3 & PBA $-$ AR1 & 883 & $-0.02952$ & $[-0.03454,-0.02394]$\\
++F3 & XGB $-$ CLIM & 883 & $-0.07338$ & $[-0.08542,-0.06008]$\\
++F3 & BU $-$ CLIM & 883 & $-0.05713$ & $[-0.06533,-0.04836]$\\
++F3 & BA $-$ CLIM & 883 & $-0.06026$ & $[-0.06921,-0.05010]$\\
++F3 & TR $-$ CLIM & 883 & $-0.05886$ & $[-0.06774,-0.04957]$\\
++F3 & BUA $-$ CLIM & 883 & $-0.06527$ & $[-0.07427,-0.05546]$\\
++F3 & PBA $-$ CLIM & 883 & $-0.05334$ & $[-0.06118,-0.04469]$\\
++F4 & BA $-$ XGB & 935 & $+0.00104$ & $[-0.00728,+0.00938]$\\
++F4 & BUA $-$ BA & 935 & $-0.00094$ & $[-0.00496,+0.00307]$\\
++F4 & BUA $-$ XGB & 935 & $+0.00010$ & $[-0.00791,+0.00838]$\\
++F4 & XGB $-$ AR1 & 935 & $-0.05955$ & $[-0.07013,-0.04805]$\\
++F4 & BU $-$ AR1 & 935 & $-0.05108$ & $[-0.05669,-0.04481]$\\
++F4 & BA $-$ AR1 & 935 & $-0.05851$ & $[-0.06572,-0.05064]$\\
++F4 & TR $-$ AR1 & 935 & $-0.03653$ & $[-0.04477,-0.02675]$\\
++F4 & BUA $-$ AR1 & 935 & $-0.05945$ & $[-0.06610,-0.05216]$\\
++F4 & PBA $-$ AR1 & 935 & $-0.05316$ & $[-0.05875,-0.04693]$\\
++F4 & XGB $-$ CLIM & 935 & $-0.08529$ & $[-0.09910,-0.07107]$\\
++F4 & BU $-$ CLIM & 935 & $-0.07682$ & $[-0.08598,-0.06709]$\\
++F4 & BA $-$ CLIM & 935 & $-0.08425$ & $[-0.09489,-0.07307]$\\
++F4 & TR $-$ CLIM & 935 & $-0.06227$ & $[-0.07163,-0.05192]$\\
++F4 & BUA $-$ CLIM & 935 & $-0.08519$ & $[-0.09469,-0.07507]$\\
++F4 & PBA $-$ CLIM & 935 & $-0.07890$ & $[-0.08796,-0.06931]$\\
++Pooled & BA $-$ XGB & 3610 & $+0.00926$ & $[+0.00478,+0.01372]$\\
++Pooled & BUA $-$ BA & 3610 & $-0.00045$ & $[-0.00321,+0.00215]$\\
++Pooled & BUA $-$ XGB & 3610 & $+0.00881$ & $[+0.00466,+0.01286]$\\
++Pooled & XGB $-$ AR1 & 3610 & $-0.05442$ & $[-0.05978,-0.04898]$\\
++Pooled & BU $-$ AR1 & 3610 & $-0.03933$ & $[-0.04300,-0.03553]$\\
++Pooled & BA $-$ AR1 & 3610 & $-0.04516$ & $[-0.05050,-0.03979]$\\
++Pooled & TR $-$ AR1 & 3610 & $-0.03125$ & $[-0.03655,-0.02571]$\\
++Pooled & BUA $-$ AR1 & 3610 & $-0.04561$ & $[-0.04958,-0.04155]$\\
++Pooled & PBA $-$ AR1 & 3610 & $-0.03734$ & $[-0.04104,-0.03342]$\\
++Pooled & XGB $-$ CLIM & 3610 & $-0.08435$ & $[-0.09132,-0.07747]$\\
++Pooled & BU $-$ CLIM & 3610 & $-0.06926$ & $[-0.07411,-0.06460]$\\
++Pooled & BA $-$ CLIM & 3610 & $-0.07509$ & $[-0.08111,-0.06937]$\\
++Pooled & TR $-$ CLIM & 3610 & $-0.06118$ & $[-0.06624,-0.05615]$\\
++Pooled & BUA $-$ CLIM & 3610 & $-0.07554$ & $[-0.08064,-0.07045]$\\
++Pooled & PBA $-$ CLIM & 3610 & $-0.06727$ & $[-0.07235,-0.06231]$\\
++\end{longtable}
++\end{revisionlongtable}
++
++\clearpage
++\begin{revisionlongtable}
++\begin{longtable}{@{}lrrrr@{}}
++\caption{Pooled 2010--2021 all-target block-length sensitivity ($n=17,508$), using the same paired non-circular moving-block scheme as Table~\ref{stab:r2m5_pairs_all}: 5,000 replicates and seed 42 for each block length. Differences are means of seed-level RMSE differences in mm\,h$^{-1}$. Intervals are pointwise 95\% percentile intervals without multiplicity adjustment. Five decimal places preserve the zero-crossing distinction: the BA--XGB interval includes zero for 14-day blocks. Forecast codes follow Table~\ref{stab:r2m5_performance}.}\label{stab:r2m5_block_sensitivity}\\
++\hline
++\textbf{$A-B$} & \textbf{Samples} & \textbf{Days} & \textbf{$\Delta$RMSE} & \textbf{95\% CI}\\
++\hline
++\endfirsthead
++\multicolumn{5}{l}{\textbf{Table~\thetable{} (continued)}}\\
++\hline
++\textbf{$A-B$} & \textbf{Samples} & \textbf{Days} & \textbf{$\Delta$RMSE} & \textbf{95\% CI}\\
++\hline
++\endhead
++\hline
++\endfoot
++BA $-$ XGB & 28 & 7 & $+0.00204$ & $[+0.00007,+0.00398]$\\
++BA $-$ XGB & 56 & 14 & $+0.00204$ & $[-0.00003,+0.00402]$\\
++BA $-$ XGB & 120 & 30 & $+0.00204$ & $[+0.00006,+0.00404]$\\
++BA $-$ AR1 & 28 & 7 & $-0.01744$ & $[-0.01977,-0.01503]$\\
++BA $-$ AR1 & 56 & 14 & $-0.01744$ & $[-0.01987,-0.01498]$\\
++BA $-$ AR1 & 120 & 30 & $-0.01744$ & $[-0.01971,-0.01492]$\\
++XGB $-$ AR1 & 28 & 7 & $-0.01947$ & $[-0.02215,-0.01686]$\\
++XGB $-$ AR1 & 56 & 14 & $-0.01947$ & $[-0.02221,-0.01674]$\\
++XGB $-$ AR1 & 120 & 30 & $-0.01947$ & $[-0.02207,-0.01667]$\\
++BUA $-$ BA & 28 & 7 & $+0.00175$ & $[+0.00050,+0.00292]$\\
++BUA $-$ BA & 56 & 14 & $+0.00175$ & $[+0.00052,+0.00297]$\\
++BUA $-$ BA & 120 & 30 & $+0.00175$ & $[+0.00056,+0.00296]$\\
++\end{longtable}
++\end{revisionlongtable}
++
++\clearpage
++\begin{revisionlongtable}
++\begin{longtable}{@{}lllrrrrrrr@{}}
++\caption{Conditional Gaussian prediction-interval coverage from q06, across all five configurations and three probabilistic models. Forecast codes follow Table~\ref{stab:r2m5_performance}. PICP95 and PICP90 are empirical coverage proportions, with five-seed sample SD in parentheses, not confidence intervals. Width is mean 95\% interval width (mm\,h$^{-1}$); Above/Below are proportions above/below the 95\% interval, and Neg. is the proportion with a negative lower 95\% bound. Wet means $\geq0.1$~mm\,h$^{-1}$; Upper uses each configuration\textquotesingle s training Q95 in Table~\ref{stab:r2m5_design}. Consequently F4 and F4$\prime$ upper-tail subsets need not have identical counts; they are not the common-Q95 history comparison in Table~\ref{stab:r2m5_history}. Intervals use $\mu\pm1.959964\sigma$ (95\%) and $\mu\pm1.644854\sigma$ (90\%), without recalibration or clipping.}\label{stab:r2m5_coverage}\\
++\hline
++\textbf{Fold} & \textbf{Code} & \textbf{Subset} & \textbf{$n$} & \textbf{PICP95} & \textbf{PICP90} & \textbf{Width} & \textbf{Above} & \textbf{Below} & \textbf{Neg.}\\
++\hline
++\endfirsthead
++\multicolumn{10}{l}{\textbf{Table~\thetable{} (continued)}}\\
++\hline
++\textbf{Fold} & \textbf{Code} & \textbf{Subset} & \textbf{$n$} & \textbf{PICP95} & \textbf{PICP90} & \textbf{Width} & \textbf{Above} & \textbf{Below} & \textbf{Neg.}\\
++\hline
++\endhead
++\hline
++\endfoot
++F1 & BU & All & 4378 & \shortstack{$0.954$\\($0.007$)} & \shortstack{$0.942$\\($0.009$)} & $0.680$ & $0.046$ & $0.000$ & $1.000$\\
++F1 & BU & Upper & 221 & \shortstack{$0.521$\\($0.048$)} & \shortstack{$0.427$\\($0.055$)} & $1.575$ & $0.479$ & $0.000$ & $1.000$\\
++F1 & BU & Wet & 933 & \shortstack{$0.801$\\($0.024$)} & \shortstack{$0.754$\\($0.031$)} & $1.210$ & $0.199$ & $0.000$ & $1.000$\\
++F1 & BUA & All & 4378 & \shortstack{$0.953$\\($0.008$)} & \shortstack{$0.943$\\($0.009$)} & $0.684$ & $0.047$ & $0.000$ & $1.000$\\
++F1 & BUA & Upper & 221 & \shortstack{$0.524$\\($0.074$)} & \shortstack{$0.453$\\($0.072$)} & $1.607$ & $0.476$ & $0.000$ & $1.000$\\
++F1 & BUA & Wet & 933 & \shortstack{$0.802$\\($0.024$)} & \shortstack{$0.761$\\($0.025$)} & $1.234$ & $0.198$ & $0.000$ & $1.000$\\
++F1 & PBA & All & 4378 & \shortstack{$0.954$\\($0.005$)} & \shortstack{$0.942$\\($0.005$)} & $0.693$ & $0.046$ & $0.000$ & $1.000$\\
++F1 & PBA & Upper & 221 & \shortstack{$0.521$\\($0.064$)} & \shortstack{$0.425$\\($0.077$)} & $1.643$ & $0.479$ & $0.000$ & $1.000$\\
++F1 & PBA & Wet & 933 & \shortstack{$0.804$\\($0.019$)} & \shortstack{$0.756$\\($0.021$)} & $1.253$ & $0.196$ & $0.000$ & $1.000$\\
++F2 & BU & All & 4374 & \shortstack{$0.962$\\($0.004$)} & \shortstack{$0.952$\\($0.005$)} & $0.743$ & $0.038$ & $0.000$ & $1.000$\\
++F2 & BU & Upper & 224 & \shortstack{$0.574$\\($0.024$)} & \shortstack{$0.482$\\($0.035$)} & $1.631$ & $0.426$ & $0.000$ & $1.000$\\
++F2 & BU & Wet & 859 & \shortstack{$0.818$\\($0.015$)} & \shortstack{$0.772$\\($0.020$)} & $1.340$ & $0.182$ & $0.000$ & $1.000$\\
++F2 & BUA & All & 4374 & \shortstack{$0.958$\\($0.003$)} & \shortstack{$0.947$\\($0.005$)} & $0.704$ & $0.042$ & $0.000$ & $1.000$\\
++F2 & BUA & Upper & 224 & \shortstack{$0.562$\\($0.018$)} & \shortstack{$0.465$\\($0.032$)} & $1.582$ & $0.438$ & $0.000$ & $1.000$\\
++F2 & BUA & Wet & 859 & \shortstack{$0.806$\\($0.014$)} & \shortstack{$0.759$\\($0.023$)} & $1.292$ & $0.194$ & $0.000$ & $1.000$\\
++F2 & PBA & All & 4374 & \shortstack{$0.958$\\($0.005$)} & \shortstack{$0.947$\\($0.005$)} & $0.710$ & $0.042$ & $0.000$ & $1.000$\\
++F2 & PBA & Upper & 224 & \shortstack{$0.554$\\($0.027$)} & \shortstack{$0.468$\\($0.026$)} & $1.639$ & $0.446$ & $0.000$ & $1.000$\\
++F2 & PBA & Wet & 859 & \shortstack{$0.804$\\($0.020$)} & \shortstack{$0.759$\\($0.020$)} & $1.307$ & $0.196$ & $0.000$ & $1.000$\\
++F3 & BU & All & 4378 & \shortstack{$0.960$\\($0.003$)} & \shortstack{$0.951$\\($0.003$)} & $0.694$ & $0.040$ & $0.000$ & $1.000$\\
++F3 & BU & Upper & 206 & \shortstack{$0.473$\\($0.011$)} & \shortstack{$0.403$\\($0.015$)} & $1.471$ & $0.527$ & $0.000$ & $1.000$\\
++F3 & BU & Wet & 883 & \shortstack{$0.806$\\($0.012$)} & \shortstack{$0.765$\\($0.014$)} & $1.231$ & $0.194$ & $0.000$ & $1.000$\\
++F3 & BUA & All & 4378 & \shortstack{$0.963$\\($0.003$)} & \shortstack{$0.955$\\($0.003$)} & $0.751$ & $0.037$ & $0.000$ & $1.000$\\
++F3 & BUA & Upper & 206 & \shortstack{$0.513$\\($0.033$)} & \shortstack{$0.433$\\($0.041$)} & $1.539$ & $0.487$ & $0.000$ & $1.000$\\
++F3 & BUA & Wet & 883 & \shortstack{$0.823$\\($0.014$)} & \shortstack{$0.782$\\($0.015$)} & $1.290$ & $0.177$ & $0.000$ & $1.000$\\
++F3 & PBA & All & 4378 & \shortstack{$0.961$\\($0.001$)} & \shortstack{$0.952$\\($0.003$)} & $0.726$ & $0.039$ & $0.000$ & $1.000$\\
++F3 & PBA & Upper & 206 & \shortstack{$0.473$\\($0.029$)} & \shortstack{$0.391$\\($0.016$)} & $1.516$ & $0.527$ & $0.000$ & $1.000$\\
++F3 & PBA & Wet & 883 & \shortstack{$0.810$\\($0.006$)} & \shortstack{$0.768$\\($0.013$)} & $1.245$ & $0.190$ & $0.000$ & $1.000$\\
++F4 & BU & All & 4378 & \shortstack{$0.959$\\($0.005$)} & \shortstack{$0.950$\\($0.006$)} & $0.767$ & $0.041$ & $0.000$ & $1.000$\\
++F4 & BU & Upper & 256 & \shortstack{$0.571$\\($0.060$)} & \shortstack{$0.477$\\($0.077$)} & $1.644$ & $0.429$ & $0.000$ & $1.000$\\
++F4 & BU & Wet & 935 & \shortstack{$0.819$\\($0.021$)} & \shortstack{$0.778$\\($0.024$)} & $1.408$ & $0.181$ & $0.000$ & $1.000$\\
++F4 & BUA & All & 4378 & \shortstack{$0.959$\\($0.003$)} & \shortstack{$0.947$\\($0.004$)} & $0.775$ & $0.041$ & $0.000$ & $1.000$\\
++F4 & BUA & Upper & 256 & \shortstack{$0.592$\\($0.066$)} & \shortstack{$0.492$\\($0.082$)} & $1.671$ & $0.408$ & $0.000$ & $1.000$\\
++F4 & BUA & Wet & 935 & \shortstack{$0.817$\\($0.018$)} & \shortstack{$0.768$\\($0.022$)} & $1.432$ & $0.183$ & $0.000$ & $1.000$\\
++F4 & PBA & All & 4378 & \shortstack{$0.960$\\($0.005$)} & \shortstack{$0.949$\\($0.007$)} & $0.797$ & $0.040$ & $0.000$ & $1.000$\\
++F4 & PBA & Upper & 256 & \shortstack{$0.585$\\($0.030$)} & \shortstack{$0.492$\\($0.057$)} & $1.708$ & $0.415$ & $0.000$ & $1.000$\\
++F4 & PBA & Wet & 935 & \shortstack{$0.828$\\($0.014$)} & \shortstack{$0.784$\\($0.019$)} & $1.459$ & $0.172$ & $0.000$ & $1.000$\\
++F4$'$ & BU & All & 4378 & \shortstack{$0.957$\\($0.004$)} & \shortstack{$0.946$\\($0.005$)} & $0.766$ & $0.043$ & $0.000$ & $1.000$\\
++F4$'$ & BU & Upper & 257 & \shortstack{$0.514$\\($0.037$)} & \shortstack{$0.418$\\($0.042$)} & $1.524$ & $0.486$ & $0.000$ & $1.000$\\
++F4$'$ & BU & Wet & 935 & \shortstack{$0.800$\\($0.016$)} & \shortstack{$0.756$\\($0.021$)} & $1.326$ & $0.200$ & $0.000$ & $1.000$\\
++F4$'$ & BUA & All & 4378 & \shortstack{$0.957$\\($0.004$)} & \shortstack{$0.947$\\($0.004$)} & $0.749$ & $0.043$ & $0.000$ & $1.000$\\
++F4$'$ & BUA & Upper & 257 & \shortstack{$0.535$\\($0.022$)} & \shortstack{$0.434$\\($0.035$)} & $1.501$ & $0.465$ & $0.000$ & $1.000$\\
++F4$'$ & BUA & Wet & 935 & \shortstack{$0.806$\\($0.013$)} & \shortstack{$0.760$\\($0.013$)} & $1.314$ & $0.194$ & $0.000$ & $1.000$\\
++F4$'$ & PBA & All & 4378 & \shortstack{$0.955$\\($0.002$)} & \shortstack{$0.945$\\($0.002$)} & $0.764$ & $0.045$ & $0.000$ & $1.000$\\
++F4$'$ & PBA & Upper & 257 & \shortstack{$0.493$\\($0.029$)} & \shortstack{$0.395$\\($0.018$)} & $1.522$ & $0.507$ & $0.000$ & $1.000$\\
++F4$'$ & PBA & Wet & 935 & \shortstack{$0.796$\\($0.009$)} & \shortstack{$0.753$\\($0.008$)} & $1.316$ & $0.204$ & $0.000$ & $1.000$\\
++\end{longtable}
++\end{revisionlongtable}
++
+ \end{document}
+--- a/Response letter.tex
++++ b/Response letter.tex
+@@ -707,9 +707,57 @@
+ 
+ \ReviewerComment{5. Insufficient Temporal Robustness Evaluation. Five random seeds are insufficient to demonstrate temporal generalization. Rolling-window or multi-year testing is recommended, and the block-bootstrap settings should be specified.}
+ 
+-\PendingResponse
+-
+-\ChangeLocation
++\AuthorResponse{We agree that five random seeds quantify initialization variability on one split, not temporal generalization. We added a retrospective expanding-window rolling-origin evaluation using the archived 1992--2021 ERA5 series: four non-overlapping three-year tests spanning 2010--2021, with 16/19/22/25-year training histories and separate two-year validation periods. F4$\prime$ supplies a matched 13-year history comparison. Six models and five fixed seeds give 150 runs. Fold-specific scalers, Q95 and statistical references use training data only; training-only screening recovered the same seven predictors in each fold. Architectures and hyperparameters were retained without fold-specific tuning. The six-model q06 set includes Transformer but not the plain BiLSTM control.
++
++All six models retain positive RMSE skill against month-by-hour climatology in every period (0.077--0.125); AR(1) retains smaller positive skill, whereas Persistence has negative skill. XGBoost has the numerically lowest RMSE in F1--F3 and BiLSTM-Attention in F4, with Kendall rank correlations 0.60--0.87. The pooled BiLSTM-Attention--XGBoost difference is small ($+0.00204$~mm\,h$^{-1}$) and its interval includes zero at 14-day blocks, although not at 7 or 30 days. Only F1 clearly separates them in period-specific all-target comparisons. The wet-target comparison is separately reported ($+0.0093$, 95\% interval $[+0.0048,+0.0137]$~mm\,h$^{-1}$), not generalized to overall superiority. Longer training gives approximately 0.4--2.3\% lower overall RMSE, with mixed upper-tail and uncertainty results. Upper-tail detection and coverage defects persist across periods.
++
++We explicitly distinguish the main saved-run paired circular-block comparison (28 samples, 10,000 replicates, seed 42) from q06 paired non-circular moving blocks (28 samples, 5,000 replicates, seed 42; sensitivity at 56/120 samples). Both use pointwise 95\% percentile intervals without multiplicity adjustment. q06 scores each seed within a replicate and then averages its RMSE differences, rather than scoring an ensemble mean. Pooled blocks can cross short gaps between fold target sequences. Seed-$t$ and bootstrap intervals are retained separately for training-history effects.
++
++The evaluation is retrospective: original development data overlap F1--F3 and, as the exact target timestamps show, early F4 in January--April 2019. F4 is therefore not identical to the original April-2019-onward test sample. The original test portion was not used for initial hyperparameter selection but had already informed model comparison. These facts preclude describing q06 as fully independent validation of model-design choices. We narrowed the Abstract, Discussion and Conclusion accordingly and disclose the lack of fold-specific tuning, ENSO stratification, a rolling plain-BiLSTM control and a rolling Bernoulli--Gamma comparison.
++
++The added methods and results are in Sections~\ref{manuscript-sec:rolling_origin_methods} and~\ref{manuscript-sec:rolling_origin_results}; Supplementary Tables~\ref{supp-stab:r2m5_design}--\ref{supp-stab:r2m5_coverage} provide the full evidence. No new model fitting or formal statistic recomputation was performed during integration.}
++
++\ManuscriptChange{Sections~\ref{manuscript-sec:dataset}, \ref{manuscript-sec:rolling_origin_methods}, \ref{manuscript-sec:rolling_origin_results}, Discussion, Limitations and Conclusion; Supplementary Tables~\ref{supp-stab:r2m5_design}--\ref{supp-stab:r2m5_coverage}. Final page and line numbers pending.}
++
++\EvidenceBox{Original target timestamps}{
++\RevisedExcerpt{The main 2004--2021 experiment contains 18,410/3,945/3,945 raw training/validation/test timestamps and 18,404/3,939/3,939 forecast targets after six-snapshot windows are constructed separately within each partition. The target-time ranges (UTC) are 2 January 2004 12:00--7 August 2016 06:00 for training, 9 August 2016 00:00--20 April 2019 12:00 for validation, and 22 April 2019 06:00--31 December 2021 18:00 for testing. These are forecast target times, not input-window start times. The 1992--2003 extension is used only in the supplementary rolling-origin evaluation.}
++}
++
++\EvidenceBox{Main saved-run resampling and seed variability}{
++\RevisedExcerpt{The main saved-run BiLSTM-Attention--XGBoost RMSE comparison uses a paired circular-block bootstrap with 28 consecutive six-hourly samples (7 days), 10,000 replicates and resampling seed 42. Blocks wrap around the full test series and are truncated to the original sample length; rainfall-subset masks are applied after resampling the complete timeline. The reported 95\% percentile intervals are pointwise and are conditional on the original single saved predictions, not five-seed mean scores. Five-seed sample standard deviations instead measure training-initialization variability on a fixed chronological split; they do not measure uncertainty in cross-year generalization.}
++}
++
++\EvidenceBox{Retrospective rolling-origin design}{
++\RevisedExcerpt{We conducted a retrospective rolling-origin robustness evaluation using the extended 1992--2021 ERA5 archive. Expanding training periods were 1992--2007, 1992--2010, 1992--2013 and 1992--2016; their validation periods were 2008--2009, 2011--2012, 2014--2015 and 2017--2018, and their non-overlapping test periods were 2010--2012, 2013--2015, 2016--2018 and 2019--2021, respectively (F1--F4). F4$\prime$ instead trained on 2004--2016 and shared F4\textquotesingle s validation and test targets, isolating the addition of 1992--2003 training history within this protocol. The longest training history was 25 years; F1 and F2 used 16 and 19 years. Six models and five fixed seeds (42, 123, 7, 2024, 99) yielded 150 runs. The six models were XGBoost, Transformer, BiLSTM-Attention, BU-LSTM, BU-LSTM-Attention and Probabilistic BiLSTM-Attention; the plain BiLSTM control was not included.}
++}
++
++\EvidenceBox{Training-only preprocessing and retained model settings}{
++\RevisedExcerpt{Scalers, Q95, month-by-hour climatology and AR(1) coefficients were estimated from each fold\textquotesingle s training data only. A training-only check of the original 11-candidate contemporaneous screening rule recovered the same seven predictors in every fold; training retained that fixed set. Windows did not cross partition boundaries. Architectures and hyperparameters were reused from the original study, without fold-specific retuning; recurrent models retained the 30-epoch cap and validation-based early stopping. This preserves temporal separation at the preprocessing and model-fitting stages but does not make model-design choices independent of these retrospectively selected periods.}
++}
++
++\EvidenceBox{Rolling-origin paired resampling}{
++\RevisedExcerpt{Rolling-origin RMSE comparisons used a paired non-circular moving-block bootstrap: 28 six-hourly samples (7 days), 5,000 replicates and resampling seed 42, with additional pooled checks at 56 and 120 samples (14 and 30 days). Blocks were sampled on the full chronological sequence before wet-subset masking; each replicate used $\lceil n/L\rceil$ complete blocks of length $L$, without truncating its final block. Common sampled indices were applied across compared forecasts and seeds; RMSE differences were calculated per seed and then averaged, rather than averaging predictions first. Pooled comparisons concatenated F1--F4 targets before scoring and can sample blocks across the short fold-boundary gaps. All intervals are pointwise 95\% percentile intervals without multiplicity adjustment. Paired seed-$t$ intervals for the history comparison separately describe training variability across five seeds (four degrees of freedom); neither interval combines both uncertainty sources.}
++}
++
++\EvidenceBox{Cross-period performance and rankings}{
++\RevisedExcerpt{Across the four rolling test periods, all six learning models retained positive RMSE skill relative to training-fitted month-by-hour climatology (0.077--0.125). AR(1) also had positive skill (0.031--0.055), whereas Persistence had negative skill in every period. XGBoost had the numerically lowest RMSE in F1--F3, and BiLSTM-Attention in F4; pairwise Kendall rank correlations among the six-model rankings ranged from 0.60 to 0.87. Only F1\textquotesingle s BiLSTM-Attention--XGBoost all-target interval clearly excluded zero among the four period-specific comparisons. These results do not identify a uniformly best model.}
++}
++
++\EvidenceBox{Pooled all-target and wet-target comparisons}{
++\RevisedExcerpt{On the 17,508 pooled test targets, the mean seed-level RMSE difference (BiLSTM-Attention minus XGBoost) was $+0.00204$~mm\,h$^{-1}$. Its 7-day interval was $[+0.00007,+0.00398]$, its 14-day interval $[-0.00003,+0.00402]$, and its 30-day interval $[+0.00006,+0.00404]$~mm\,h$^{-1}$. The small all-target separation is therefore sensitive to block length. On the distinct wet subset ($\geq0.1$~mm\,h$^{-1}$; $n=3,610$), the difference was $+0.0093$~mm\,h$^{-1}$ with a 7-day interval of $[+0.0048,+0.0137]$~mm\,h$^{-1}$, supporting lower XGBoost RMSE within that subset rather than an overall superiority claim.}
++}
++
++\EvidenceBox{Training history and conditional reliability}{
++\RevisedExcerpt{On matched F4/F4$\prime$ test targets, extending training from 13 to 25 years reduced the six learning models\textquotesingle{} mean all-target RMSE by approximately 0.4--2.3\%. Upper-tail gains were not uniform, and seed-$t$ and test-sample bootstrap intervals did not always agree; both are retained. Conditional 95\% Gaussian coverage across F1--F4 was 0.953--0.963 overall, but only 0.801--0.828 for wet targets and 0.473--0.592 for upper-tail targets. Under the fixed Q95 rule, every learning model\textquotesingle s mean CSI was lower than Persistence in each period. The coverage and fixed-event diagnostics use fold-specific training Q95, whereas the history comparison uses the common original-main Q95 $=0.574048$~mm\,h$^{-1}$ for upper-tail targets. Fixed-cutoff event scores are distinct from the validation-selected decisions reported elsewhere.}
++}
++
++\EvidenceBox{Development-overlap and evaluation limits}{
++\RevisedExcerpt{The rolling-origin analysis is retrospective rather than a fully prospective or fully independent validation of model-design choices. The original training targets extended through 7 August 2016 and validation targets through 20 April 2019; these development data overlap the F1--F3 test years. F4 begins on 2 January 2019, so its early-2019 targets also overlap the original validation period; the original test targets begin only on 22 April 2019. The original test portion was not used for initial hyperparameter selection but had already informed the original model comparisons. Fold-specific fitting and preprocessing therefore do not remove development-stage overlap. Models were not retuned per fold; F1/F2 had only 16/19 training years. No ENSO-phase stratification, rolling plain-BiLSTM control or rolling Bernoulli--Gamma alternative was evaluated. Pooled bootstrap blocks can cross the 42-hour gaps between adjacent fold target sequences. These boundaries limit claims of temporal independence, attention-specific benefit and robustness to distributional formulation.}
++}
++
++\EvidenceBox{Qualified model comparison}{
++\RevisedExcerpt{BiLSTM-Attention achieved the numerically lowest RMSE on the original test period, but its advantage over XGBoost was small and did not persist consistently across the rolling-origin evaluation.}
++}
+ 
+ % Review ID: R2 M6
+ \Needspace{5\baselineskip}
+--- a/FINAL_REVISION_CHECKLIST.md
++++ b/FINAL_REVISION_CHECKLIST.md
+@@ -441,3 +441,14 @@
+ - 最终图由作者提供，助手未重绘或修改图片；此前助手图检查仅属历史。当前最终核验见results/r2m4_final/。本轮对交接CSV的77行回查归档CSI/命中/预报次数，0差异；作者最终点值CSV未找到，最终PDF的精确77点一致性明确引用作者此前独立核验，不冒称本轮从图片恢复数值。
+ 
+ - 最终caption已补Q90/Q95/Q97.5实际值、等距分类轴、纯视觉横移、优化0.5 not evaluated、Persistence独立cutoff及未经多重校正/条件区间限制。三PDF最终82/30/60页，Figure 5正文51页；事件表仍S28–S31，任务05/12其他共享待办保留，R2-M5未开始。
++
++
++### R2-M5：跨期稳健性正式整合核验通过，待本轮Git归档核验后关闭（2026-11-14）
++
++- 任务06＋28仅R2-M5范围：Methods §3.2精确目标时刻、§3.4主研究circular28/10000/42及新§3.4.1；Results新§4.2.5；Abstract/Discussion/Limitations/Conclusion同步增加结论边界。原Table 3、旧图、S1–S31、其他回复均保留。
++- q06固定证据提交395234ebcce2269a71bfcfc6bff5bcdf14ce0086；150运行元数据及150预测CSV的时间/目标对齐已核对。没有训练或重算正式统计；F4/F4′逆标准化目标微差低于原脚本1e-6容差，不声称逐位相同。
++- 自动表S32–S38：设计、36行模型/基线表现、24行训练历史、75行全样本配对、75行湿时配对、12行块长敏感性、45行条件覆盖；1,541个数值转录核验，10段新增EvidenceBox逐字匹配，原72段摘录保持。
++- 主研究单次预测circular28/10000与q06逐种子统计moving28/5000不混用；q06块保留末块，合并块可跨折间42小时空档；区间pointwise未校正多重比较。7/14/30天BiLSTM-Attention–XGBoost分离不稳定，不宣称总体最佳。
++- 重要核正：F4从2019-01-02起，原验证目标至2019-04-20，二者早2019也重叠。原测试从2019-04-22起；不能说整个F4与原测试完全相同或完全未参与开发。q06为retrospective robustness；无ENSO分层、无滚动plain-BiLSTM或Bernoulli–Gamma。
++- 本轮关闭不等于共享任务06/28全部完成：保留R3 §3.2(a)、R2 Minor 1、R4，以及其他审稿人相关的训练年限、分布模型与方法细节待办。未开始R2-M6。
++- 三PDF、数值索引、范围保护、patch和Git回执见results/r2m5_integration/；最终页码行号留待全文定稿统一补注。
+--- a/ESI_审稿意见分类_严重程度排序_35项.md
++++ b/ESI_审稿意见分类_严重程度排序_35项.md
+@@ -1310,6 +1310,9 @@
+ 
+ ### 06. 训练年份不足与时间泛化
+ 
++> **R2-M5整合核验（2026-11-14）：** 本条中R2-M5范围已完成正文、Supplementary自动表S32–S38及回复整合；数值、方法与PDF核验通过，Git必要归档完成并核验后才正式关闭。任务06/28共享的R3 §3.2(a)、R2 Minor 1及R4事项保留待处理，不随R2-M5关闭。未重新训练、绘图或重算正式统计。证据和局限见`results/r2m5_integration/`。
++
++
+ **状态：按提供记录，实验已完成；证据归档及实际改稿尚未完成。以下是回复草稿，不表示稿件已落实。**
+ 
+ #### 1 问题
+@@ -4174,6 +4177,9 @@
+ 
+ ### 28. 数据划分和不确定性细节不完整
+ 
++> **R2-M5整合核验（2026-11-14）：** 本条中R2-M5范围已完成正文、Supplementary自动表S32–S38及回复整合；数值、方法与PDF核验通过，Git必要归档完成并核验后才正式关闭。任务06/28共享的R3 §3.2(a)、R2 Minor 1及R4事项保留待处理，不随R2-M5关闭。未重新训练、绘图或重算正式统计。证据和局限见`results/r2m5_integration/`。
++
++
+ 列出具体训练/验证/测试年份、样本量、block-bootstrap参数及五种子标准差含义。
+ 
+ 原始意见位置：R2 M5、m1；R4 m23、m27
+--- a/SUPPLEMENTARY_TABLE_REGISTRY.md
++++ b/SUPPLEMENTARY_TABLE_REGISTRY.md
+@@ -51,3 +51,18 @@
+ 本轮R2-M3自动追加S23–S27；原S1–S22及Figure S1保持原样。所有主文及回复引用均由label/ref生成，未按历史计划预占表号。三份PDF已顺序编译并核验。
+ 
+ R2-M4本轮新增S28–S31；原S1–S27和Figure S1保持原样。分页长表仅在首caption递增，continued页不重复编号；主文/回复均引用永久label。
++
++
++### R2-M5追加（实际aux，2026-11-14）
++
++既有S1–S31不变；以下由caption自动编号，不手写设定计数器。
++
++| 当前编号 | 稳定label | 页 |
++|---|---|---|
++| S32 | `stab:r2m5_design` | 31 |
++| S33 | `stab:r2m5_performance` | 32 |
++| S34 | `stab:r2m5_history` | 34 |
++| S35 | `stab:r2m5_pairs_all` | 35 |
++| S36 | `stab:r2m5_pairs_wet` | 37 |
++| S37 | `stab:r2m5_block_sensitivity` | 39 |
++| S38 | `stab:r2m5_coverage` | 40 |
