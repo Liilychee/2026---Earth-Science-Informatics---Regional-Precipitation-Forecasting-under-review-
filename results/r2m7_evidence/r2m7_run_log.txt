@@ -1,0 +1,62 @@
+python 3.9.6 | numpy 2.0.2 | pandas 2.3.3
+MD5 raw_era5: f788445e030ab7bcd4617d97aff52656  /Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/data/04-24.csv
+MD5 regional_reduced: f9b4f8a22c8b7849f40eb71918fe1fd6  /Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/data/dublin_regional_reduced.csv
+MD5 prob_bilstm_attention_preds: e40b252a4cddacc04613746cdfd0335c  /Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/esi_github/results/prob_bilstm_attention_preds.csv
+MD5 script: c18dc37e7a83e9624ca46df02b3f48f2  /Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r2m7_evidence/r2m7_spatial_quantiles.py
+raw rows read 10,869,579; rows in box and period 657,500
+duplicate (time, lat, lon) rows: 0 | NaN tp: 0 | negative tp: 0
+grid (26300, 25) 2004-01-01 00:00:00 -> 2021-12-31 18:00:00 | lats [52.75, 53.0, 53.25, 53.5, 53.75] | lons [-6.75, -6.5, -6.25, -6.0, -5.75]
+max |regional (here) - dublin_regional_reduced.csv| = 1.01e-13 mm
+training targets 18404 (2004-01-02 12:00:00 -> 2016-08-07 06:00:00); identical to prediction-file train times: True; max |y_true - regional| = 4.36e-07
+
+=== 26 series on the 18,404 training targets (mm h-1; wet = fraction) ===
+                                Series     N   Mean  Wet_freq_ge_0.1    Q90    Q95    Q99  Q99.9    Max            Max_time
+Regional mean (25 cells, equal weight) 18404 0.1061           0.2040 0.2958 0.5740 1.4402 2.8642 4.1345 2010-09-06 18:00:00
+                   Cell (52.75, -6.75) 18404 0.1022           0.1677 0.2403 0.6098 1.6577 3.4177 7.1120 2009-08-31 12:00:00
+                   Cell (52.75, -6.50) 18404 0.1033           0.1802 0.2648 0.6046 1.6431 3.0911 6.2318 2009-08-31 12:00:00
+                   Cell (52.75, -6.25) 18404 0.1028           0.1782 0.2480 0.5830 1.6498 3.2538 5.2819 2007-06-19 18:00:00
+                   Cell (52.75, -6.00) 18404 0.1104           0.1810 0.2869 0.6351 1.7180 3.4980 5.8522 2010-09-06 18:00:00
+                   Cell (52.75, -5.75) 18404 0.1102           0.1723 0.2842 0.6674 1.7431 3.5326 7.0348 2010-09-06 18:00:00
+                   Cell (53.00, -6.75) 18404 0.1021           0.1764 0.2559 0.5930 1.6135 3.2579 6.0287 2014-05-25 18:00:00
+                   Cell (53.00, -6.50) 18404 0.1095           0.1907 0.2918 0.6318 1.6680 3.2069 6.1851 2009-08-31 12:00:00
+                   Cell (53.00, -6.25) 18404 0.1157           0.1912 0.2995 0.6714 1.7900 3.3789 6.6705 2009-08-31 12:00:00
+                   Cell (53.00, -6.00) 18404 0.1168           0.1912 0.3233 0.6704 1.7362 3.3268 5.8155 2014-07-18 06:00:00
+                   Cell (53.00, -5.75) 18404 0.1149           0.1815 0.3108 0.6876 1.7502 3.3614 6.8421 2010-09-06 18:00:00
+                   Cell (53.25, -6.75) 18404 0.0978           0.1663 0.2353 0.5441 1.6229 3.2845 6.1927 2008-07-29 06:00:00
+                   Cell (53.25, -6.50) 18404 0.1017           0.1798 0.2618 0.5922 1.5559 3.0325 6.2232 2008-07-29 06:00:00
+                   Cell (53.25, -6.25) 18404 0.1057           0.1781 0.2718 0.6189 1.6660 3.2411 6.1011 2008-07-29 06:00:00
+                   Cell (53.25, -6.00) 18404 0.1102           0.1816 0.3076 0.6504 1.6638 3.3616 6.0720 2012-08-15 12:00:00
+                   Cell (53.25, -5.75) 18404 0.1124           0.1785 0.3037 0.6761 1.6970 3.3489 6.1731 2012-08-15 12:00:00
+                   Cell (53.50, -6.75) 18404 0.0947           0.1573 0.2289 0.5528 1.5801 3.2313 5.5175 2010-10-29 12:00:00
+                   Cell (53.50, -6.50) 18404 0.0951           0.1650 0.2330 0.5608 1.5429 3.1724 4.8947 2012-08-15 12:00:00
+                   Cell (53.50, -6.25) 18404 0.0970           0.1635 0.2292 0.5612 1.6007 3.5527 5.5590 2013-10-16 12:00:00
+                   Cell (53.50, -6.00) 18404 0.1088           0.1794 0.2942 0.6537 1.6250 3.4968 5.6744 2013-10-16 12:00:00
+                   Cell (53.50, -5.75) 18404 0.1158           0.1858 0.3144 0.6766 1.7194 3.4426 5.5637 2013-10-16 12:00:00
+                   Cell (53.75, -6.75) 18404 0.1005           0.1689 0.2422 0.5977 1.6537 3.3234 5.4073 2013-10-02 00:00:00
+                   Cell (53.75, -6.50) 18404 0.0976           0.1734 0.2459 0.5806 1.5372 3.1163 5.5037 2013-10-16 12:00:00
+                   Cell (53.75, -6.25) 18404 0.0964           0.1704 0.2365 0.5574 1.5521 3.1223 6.1665 2013-10-16 12:00:00
+                   Cell (53.75, -6.00) 18404 0.1119           0.1846 0.2975 0.6522 1.6584 3.3674 5.4579 2013-10-16 12:00:00
+                   Cell (53.75, -5.75) 18404 0.1195           0.1903 0.3208 0.6990 1.7891 3.5816 5.8069 2013-06-27 12:00:00
+
+=== regional vs 25 cells; pct = (regional - cell) / cell * 100 ===
+      Statistic  Regional  Cell_min  Cell_median  Cell_max  Pct_vs_cell_median  Pct_min_over_25_cells  Pct_max_over_25_cells  N_cells_regional_below  N_cells  Airport_cell_53.50_-6.25  Pct_vs_airport_cell  City_cell_53.25_-6.25  Pct_vs_city_cell
+           Mean    0.1061    0.0947       0.1057    0.1195              0.3840               -11.1731                12.1022                      12       25                    0.0970               9.3407                 0.1057            0.3840
+Wet_freq_ge_0.1    0.2040    0.1573       0.1785    0.1912             14.2727                 6.7368                29.7064                       0       25                    0.1635              24.7923                 0.1781           14.5865
+            Q90    0.2958    0.2289       0.2718    0.3233              8.8253                -8.5097                29.2300                       8       25                    0.2292              29.0418                 0.2718            8.8253
+            Q95    0.5740    0.5441       0.6189    0.6990             -7.2522               -17.8809                 5.5097                      20       25                    0.5612               2.2956                 0.6189           -7.2522
+            Q99    1.4402    1.5372       1.6577    1.7900            -13.1188               -19.5382                -6.3042                      25       25                    1.6007             -10.0231                 1.6660          -13.5515
+          Q99.9    2.8642    3.0325       3.3268    3.5816            -13.9057               -20.0284                -5.5489                      25       25                    3.5527             -19.3787                 3.2411          -11.6284
+            Max    4.1345    4.8947       6.0287    7.1120            -31.4185               -41.8655               -15.5308                      25       25                    5.5590             -25.6239                 6.1011          -32.2332
+
+P(single cell >= regional Q95): 4.79..6.23% (median 5.35%); P(any of 25 cells >= regional Q95) = 15.28%
+log1p-space value of Q95 would be 0.4537 (manuscript reports 0.5740 -> threshold is in mm h-1)
+CHECK regional_Q95     0.574048 vs 0.574048  PASS
+CHECK cell_Q95_min     0.544071 vs 0.5441  PASS
+CHECK cell_Q95_max     0.699043 vs 0.699  PASS
+CHECK cell_Q95_median  0.618935 vs 0.6189  PASS
+CHECK regional_Q99     1.440246 vs 1.4402  PASS
+CHECK regional_Q99.9   2.864223 vs 2.8642  PASS
+CHECK regional_Max     4.134541 vs 4.1345  PASS
+CHECK cell_Max_max     7.112026 vs 7.112  PASS
+
+Saved: r2m7_series_stats.csv, r2m7_pct_by_cell.csv, r2m7_summary_comparison.csv + r2m7_run_manifest.json -> results/r2m7_evidence

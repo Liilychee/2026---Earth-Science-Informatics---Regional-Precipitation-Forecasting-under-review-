@@ -1,0 +1,97 @@
+{
+  "inputs": {
+    "raw_era5": {
+      "path": "/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/data/04-24.csv",
+      "md5": "f788445e030ab7bcd4617d97aff52656"
+    },
+    "regional_reduced": {
+      "path": "/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/data/dublin_regional_reduced.csv",
+      "md5": "f9b4f8a22c8b7849f40eb71918fe1fd6"
+    },
+    "prob_bilstm_attention_preds": {
+      "path": "/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/esi_github/results/prob_bilstm_attention_preds.csv",
+      "md5": "e40b252a4cddacc04613746cdfd0335c"
+    },
+    "script": {
+      "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r2m7_evidence/r2m7_spatial_quantiles.py",
+      "md5": "c18dc37e7a83e9624ca46df02b3f48f2"
+    }
+  },
+  "environment": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "pandas": "2.3.3"
+  },
+  "time_set": {
+    "n_targets": 18404,
+    "first": "2004-01-02 12:00:00",
+    "last": "2016-08-07 06:00:00",
+    "rows": "6..18409 of 26300",
+    "identical_to_prediction_train_times": true,
+    "max_abs_diff_vs_prediction_y_true": 4.3599999965948655e-07,
+    "max_abs_diff_vs_regional_reduced": 1.0080825063596421e-13
+  },
+  "nearest_cells": {
+    "airport": [
+      53.5,
+      -6.25
+    ],
+    "city": [
+      53.25,
+      -6.25
+    ]
+  },
+  "pct_formula": "(regional_value - cell_value) / cell_value * 100",
+  "single_cell_exceed_regional_Q95_range": [
+    0.047870028254727234,
+    0.062269071940882416
+  ],
+  "any_cell_exceed_regional_Q95": 0.15284720712888503,
+  "checks": {
+    "regional_Q95": {
+      "value": 0.5740480454979993,
+      "expected": 0.574048,
+      "pass": true
+    },
+    "cell_Q95_min": {
+      "value": 0.5440712,
+      "expected": 0.5441,
+      "pass": true
+    },
+    "cell_Q95_max": {
+      "value": 0.6990433,
+      "expected": 0.699,
+      "pass": true
+    },
+    "cell_Q95_median": {
+      "value": 0.61893463,
+      "expected": 0.6189,
+      "pass": true
+    },
+    "regional_Q99": {
+      "value": 1.4402460159480004,
+      "expected": 1.4402,
+      "pass": true
+    },
+    "regional_Q99.9": {
+      "value": 2.864223054452056,
+      "expected": 2.8642,
+      "pass": true
+    },
+    "regional_Max": {
+      "value": 4.134540564,
+      "expected": 4.1345,
+      "pass": true
+    },
+    "cell_Max_max": {
+      "value": 7.112025999999999,
+      "expected": 7.112,
+      "pass": true
+    }
+  },
+  "outputs": {
+    "r2m7_series_stats.csv": "167750324c60c51d19150c4c13ba9dc8",
+    "r2m7_pct_by_cell.csv": "b2b00e14dde9a0f7ad8c312260f9dc1e",
+    "r2m7_summary_comparison.csv": "115852d177d2b46426bcb170d5262836"
+  }
+}

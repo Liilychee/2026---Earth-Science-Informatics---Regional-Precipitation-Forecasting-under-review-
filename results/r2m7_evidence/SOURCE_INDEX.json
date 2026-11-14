@@ -1,0 +1,47 @@
+{
+  "external_inputs_md5": {
+    "data/04-24.csv (raw ERA5, not in Git)": "f788445e030ab7bcd4617d97aff52656",
+    "data/dublin_regional_reduced.csv (not in Git)": "f9b4f8a22c8b7849f40eb71918fe1fd6"
+  },
+  "repository_sources": {
+    "results/prob_bilstm_attention_preds.csv": {
+      "md5": "e40b252a4cddacc04613746cdfd0335c",
+      "commit": "d02519c"
+    },
+    "code/analysis_q03_spatial_averaging.py": {
+      "md5": "1bc8543d2d9a74ede651dfd1632471d6",
+      "commit": "8982e8e"
+    },
+    "results/metrics/q03_spatial_averaging_summary.csv": {
+      "md5": "2a038f30e58dcf1e54cced2df53181bc",
+      "commit": "8982e8e"
+    },
+    "results/metrics/q03_cell_stats.csv": {
+      "md5": "330bcfa00fc3581f8b905ddb46e10557",
+      "commit": "8982e8e"
+    },
+    "results/metrics/q03_intensity_class_counts_wmo.csv": {
+      "md5": "d393c1df1a067507679b51c17e93433c",
+      "commit": "d02519c"
+    },
+    "code/Interpretable_analysis.ipynb": {
+      "md5": "18d2f49b5f7399f9bf1dd3e53b308cf9",
+      "commit": "8982e8e"
+    }
+  },
+  "archive_files_md5": {
+    "GIT_SCOPE.md": "8cf702fc23ee9065c35577107e7d76c6",
+    "README_METHODS.md": "cd48dbfcb3e8b13a306dfd9d668a0b38",
+    "REPORT.md": "be6afb50edb48206689cd4cda046305b",
+    "r2m7_crosscheck_log.txt": "fb601dceb0c7e352dbc9bde2802ae363",
+    "r2m7_pct_by_cell.csv": "b2b00e14dde9a0f7ad8c312260f9dc1e",
+    "r2m7_q03_rerun_log.txt": "f2c50aa9e7b0ce37830d65bf340934d0",
+    "r2m7_run_log.txt": "3a0faaf70c50160aa0c871ca626758f4",
+    "r2m7_run_manifest.json": "b2cea2d24ec7a884ed38da24d4f5ad69",
+    "r2m7_series_stats.csv": "167750324c60c51d19150c4c13ba9dc8",
+    "r2m7_spatial_quantiles.py": "c18dc37e7a83e9624ca46df02b3f48f2",
+    "r2m7_summary_comparison.csv": "115852d177d2b46426bcb170d5262836"
+  },
+  "audit_crosscheck": "scratchpad verify_r2m7.py / verify_r2m7_output.txt (session-local, not archived)",
+  "status": "R2-M7 OPEN; evidence only"
+}

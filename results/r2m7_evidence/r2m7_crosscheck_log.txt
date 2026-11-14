@@ -1,0 +1,8 @@
+(1) vs independent audit recomputation: 25 cells, max |diff| at 4 dp = 0.0e+00
+(2) q03 rerun q03_spatial_averaging_summary.csv: shape (8, 16)==(8, 16), max |diff| = 3.2e-13
+(2b) q03 rerun of the unmodified script stopped before writing q03_cell_stats.csv: pandas Spearman needs scipy, which is not installed locally and was not installed (read-only environment). Summary CSV reproduced above.
+(3) Q90: max |18,404-target value - archived q03_cell_stats (18,410 stamps; Max over 2004-2021)| = 5.72e-04
+(3) Q95: max |18,404-target value - archived q03_cell_stats (18,410 stamps; Max over 2004-2021)| = 5.72e-04
+(3) Q99: max |18,404-target value - archived q03_cell_stats (18,410 stamps; Max over 2004-2021)| = 1.06e-03
+(3) Max: max |18,404-target value - archived q03_cell_stats (18,410 stamps; Max over 2004-2021)| = 5.00e-07
+(3) all 25 cell maxima and the regional maximum fall inside the 18,404 training targets: True
