@@ -1,0 +1,22 @@
+test N = 3939; issue-hour counts: 00 UTC 985, 06 UTC 985, 12 UTC 985, 18 UTC 984
+check: month x hour climatology RMSE on all test = 0.273057 (Table 3 / q07: 0.273057)
+check: seed-42 RMSE XGBoost 0.243750 (orig 0.243750), BiLSTM-Attention 0.242848 (orig 0.242848)
+
+RMSE skill score against the month x hour climatology (within subset); models: mean and SD over 5 seeds
+         subset    n  RMSE_clim  SS_persistence  SS_XGBoost_mean  SS_XGBoost_sd  SS_BiLSTM-Attention_mean  SS_BiLSTM-Attention_sd
+   issue 00 UTC  985     0.2943         -0.2108           0.1246         0.0026                    0.1154                  0.0058
+   issue 06 UTC  985     0.2588         -0.2745           0.1167         0.0042                    0.1264                  0.0062
+   issue 12 UTC  985     0.2524         -0.1425           0.0860         0.0089                    0.1073                  0.0033
+   issue 18 UTC  984     0.2845         -0.1758           0.0961         0.0044                    0.0952                  0.0044
+group A (00,12) 1970     0.2742         -0.1823           0.1081         0.0030                    0.1119                  0.0035
+group B (06,18) 1969     0.2719         -0.2215           0.1053         0.0027                    0.1092                  0.0046
+            all 3939     0.2731         -0.2019           0.1067         0.0009                    0.1106                  0.0035
+
+SS(group A: issue 00/12 UTC) - SS(group B: issue 06/18 UTC); moving-block bootstrap, block 28 (7 days), 5000 resamples, seed 42, per-seed differences averaged over seeds
+                  model  SS_A_minus_B_mean                                per_seed  seeds_A_better  boot_low  boot_high
+                XGBoost             0.0027 +0.0030 -0.0028 +0.0106 -0.0019 +0.0046             3.0   -0.0356     0.0366
+       BiLSTM-Attention             0.0027 +0.0073 -0.0028 -0.0000 +0.0046 +0.0047             3.0   -0.0281     0.0287
+Persistence (reference)             0.0392                                                     NaN   -0.1572     0.2139
+
+VERDICT (criterion fixed in advance): skill did not differ systematically between issue times affected and unaffected by the look-ahead
+CHECK COMPLETE

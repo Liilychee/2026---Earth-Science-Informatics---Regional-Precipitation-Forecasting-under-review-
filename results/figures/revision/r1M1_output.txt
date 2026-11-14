@@ -1,0 +1,22 @@
+  provenance OK: XGBoost                  All-RMSE 0.243750 = single saved run xgboost_preds.csv
+  provenance OK: BiLSTM-Attention         All-RMSE 0.242848 = single saved run bilstm_attention_preds.csv
+  provenance OK: BU-LSTM                  All-RMSE 0.248730 = single saved run bulstm_preds.csv
+  provenance OK: BU-LSTM-Attention        All-RMSE 0.246445 = single saved run proposed_model_preds.csv
+  provenance OK: Prob. BiLSTM-Attention   All-RMSE 0.248129 = single saved run prob_bilstm_attention_preds.csv
+[r1M1_stratified_rmse] GROUPING=legacy; RMSE (mm h-1) plotted:
+                           All     Wet  Heavy_Q95
+XGBoost                 0.2437  0.2674     0.8417
+BiLSTM-Attention        0.2428  0.2672     0.8784
+BU-LSTM                 0.2487  0.2736     0.9146
+BU-LSTM-Attention       0.2464  0.2710     0.8859
+Prob. BiLSTM-Attention  0.2481  0.2729     0.8980
+[fig] r1M1_stratified_rmse: 119.0 x 72.0 mm; font sizes [8.0, 9.0] pt; embedded fonts ['LMMathItalic8-Regular', 'LMMathSymbols6-Regular', 'LMMathSymbols8-Regular', 'LMRoman6-Regular', 'LMRoman8-Regular', 'LMRoman9-Regular'] -> results/figures/revision
+[fig] r1M1_stratified_rmse: automatic checks passed (sizes, colours, text overlap/clipping, fonts); text over data NOT checked -> inspect r1M1_stratified_rmse.pdf at 100 %
+observed targets stored as tiny negatives (> -1e-6, counted in the first non-negative bin): 711
+[r1M1_prediction_distribution] N=3939, Q95(train)=0.5740, 32 bins of 0.1, x range (np.float64(-0.1), np.float64(3.1)), y range (0.0001, 1.0)
+            Model    N  Max_obs  Max_pred  Min_pred  N_pred_negative  SD_ratio  Share_obs_ge_Q95  Share_pred_ge_Q95
+          XGBoost 3939   2.9865    1.0166   -0.0083               19    0.5019            0.0604             0.0127
+ BiLSTM-Attention 3939   2.9865    0.5766   -0.0566              144    0.4082            0.0604             0.0003
+BU-LSTM-Attention 3939   2.9865    0.4867   -0.0040               40    0.4129            0.0604             0.0000
+[fig] r1M1_prediction_distribution: 119.0 x 135.0 mm; font sizes [8.0, 9.0] pt; embedded fonts ['LMMathItalic8-Regular', 'LMMathSymbols6-Regular', 'LMRoman10-Bold', 'LMRoman6-Regular', 'LMRoman8-Regular', 'LMRoman9-Regular'] -> results/figures/revision
+[fig] r1M1_prediction_distribution: automatic checks passed (sizes, colours, text overlap/clipping, fonts); text over data NOT checked -> inspect r1M1_prediction_distribution.pdf at 100 %

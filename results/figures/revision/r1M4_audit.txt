@@ -1,0 +1,5 @@
+q10_shap_global.csv: 28 rows (2 architectures x 2 subsets x 7 predictors); n = 300 random, 238 upper; mean_abs_phi = mean of the five seed columns; ranks consistent; unit mm h-1 (q10_shap.py inverse-scales the model output).
+grouped-SHAP npz (10 files): identical 519 explained samples; upper 238, random 300, overlap 19 (the subsets are NOT disjoint).
+q10 full-model controls (five-seed mean RMSE, mm h-1; used as the reference of every dRMSE, NOT the Table 3 values): BiLSTM-Attention all 0.242864; BiLSTM-Attention upper_geQ95 0.873204; BU-LSTM-Attention all 0.247207; BU-LSTM-Attention upper_geQ95 0.896482
+Table 3 for comparison: BiLSTM-Attention 0.2429 (same runs), BU-LSTM-Attention 0.2469 (different runs: q10 = 0.247207).
+Fig. A uncertainty: thick = seed mean +- 1 SD (sd_seeds); thin with caps = calendar-day cluster bootstrap 95% (2,000 resamples). Fig. B uncertainty: thick = seed t-interval 95% (df = 4); thin with caps = moving-block bootstrap 95% (block 28 = 7 days, 10,000 resamples, per-seed paired differences averaged over seeds). boot_significant not used. Wet (>=0.1) rows of the ablation files not plotted.
