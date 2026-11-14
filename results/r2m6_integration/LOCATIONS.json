@@ -1,0 +1,52 @@
+{
+  "stab:r2m6_q16_intervals": {
+    "number": "S39",
+    "page": 42,
+    "document": "Supplementary"
+  },
+  "stab:r2m6_seed_scores": {
+    "number": "S40",
+    "page": 43,
+    "document": "Supplementary"
+  },
+  "stab:r2m6_seed_intervals": {
+    "number": "S41",
+    "page": 44,
+    "document": "Supplementary"
+  },
+  "stab:r2m6_score_pairs": {
+    "number": "S42",
+    "page": 45,
+    "document": "Supplementary"
+  },
+  "stab:r2m6_other_pairs": {
+    "number": "S43",
+    "page": 46,
+    "document": "Supplementary"
+  },
+  "stab:r2m6_dry001": {
+    "number": "S44",
+    "page": 47,
+    "document": "Supplementary"
+  },
+  "stab:r2m6_dry_history": {
+    "number": "S45",
+    "page": 48,
+    "document": "Supplementary"
+  },
+  "stab:r2m6_conditional_history": {
+    "number": "S46",
+    "page": 49,
+    "document": "Supplementary"
+  },
+  "tab:probabilistic_results": {
+    "number": "5",
+    "page": 60,
+    "document": "manuscript"
+  },
+  "sec:r2m6_likelihood_results": {
+    "number": "4.4.1",
+    "page": 63,
+    "document": "manuscript"
+  }
+}

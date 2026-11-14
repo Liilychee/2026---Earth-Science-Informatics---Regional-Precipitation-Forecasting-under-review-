@@ -1,0 +1,589 @@
+--- a/manuscript.tex
++++ b/manuscript.tex
+@@ -51,7 +51,7 @@
+ 
+ \abstract{
+ Short-term precipitation forecasting over Dublin is challenging because of the strong temporal variability of rainfall and the maritime influence on regional weather conditions. Using hourly European Centre for Medium-Range Weather Forecasts Reanalysis v5 (ERA5) data from 2004 to 2021 subsampled every 6~h without temporal aggregation, this study systematically evaluates reference forecasts, XGBoost, Transformer, deterministic bidirectional long short-term memory (BiLSTM) models, and probabilistic recurrent models for 6-hour-ahead prediction of hourly ERA5-derived regional-mean precipitation over Dublin, expressed as an hourly-mean rate in mm\,h$^{-1}$ rather than as a total over the next 6~h. Model performance is assessed using repeated training with five fixed random seeds, rainfall-regime and threshold-based evaluation, probabilistic metrics, SHapley Additive exPlanations (SHAP) attribution, and feature ablation. BiLSTM-Attention achieved the lowest mean test root mean squared error (RMSE) of 0.2429~mm\,h$^{-1}$, closely followed by XGBoost at 0.2439~mm\,h$^{-1}$, while bootstrap analysis showed no clear difference between the two models for the full test set. \textcolor{red}{Under upper-tail precipitation, however, XGBoost achieved lower error, while predicted amplitudes were compressed. Validation-selected event cutoffs recovered some detections but incurred high false-alarm ratios, and tested loss and weighting strategies exposed model-dependent tradeoffs rather than resolving upper-tail underestimation.} \textcolor{red}{Under fixed high-intensity decision thresholds, learning-model CSI was lower than Persistence, limiting their interpretation as event-warning systems.} The probabilistic recurrent models produced empirical 95\% coverage close to the nominal level over the full test set, but coverage deteriorated markedly for upper-tail precipitation events, revealing substantial undercoverage. Matched five-seed SHAP and ablation analyses in two architectures revealed regime-dependent model reliance and overlapping predictive information among precipitation-related inputs, rather than a universally dominant predictor. These results highlight the importance of regime-specific evaluation, repeated-run robustness analysis, and complementary interpretability methods in regional precipitation forecasting.
+- \textcolor{red}{BiLSTM-Attention achieved the numerically lowest RMSE on the original test period, but its advantage over XGBoost was small and did not persist consistently across the rolling-origin evaluation. All six models in the rolling-origin evaluation retained positive climatological skill across four test periods, while upper-tail undercoverage persisted.}}
++ \textcolor{red}{BiLSTM-Attention achieved the numerically lowest RMSE on the original test period, but its advantage over XGBoost was small and did not persist consistently across the rolling-origin evaluation. All six models in the rolling-origin evaluation retained positive climatological skill across four test periods, while upper-tail undercoverage persisted.} \textcolor{red}{An alternative precipitation-appropriate likelihood improved overall probabilistic skill and eliminated negative prediction bounds by construction, but substantial upper-tail undercoverage remained.}}
+ 
+ \keywords{Short-term precipitation forecasting, ERA5 reanalysis data, Model robustness, Probabilistic forecasting, Predictor attribution}
+ 
+@@ -82,6 +82,7 @@
+     \item Probabilistic recurrent models are evaluated using negative log-likelihood \revminor{(NLL)}, continuous ranked probability score, prediction-interval coverage, and interval width. Their reliability is examined separately for the full test distribution and the upper tail of the precipitation distribution.
+ 
+     \item Predictor relevance is examined using training-period correlation diagnostics and matched five-seed SHAP, single-variable ablation and group ablation in two architectures, distinguishing statistical association, regime-dependent model attribution and incremental or shared predictive utility.
++    \item \textcolor{red}{A comparison of Gaussian, Tobit and Bernoulli--Gamma likelihoods within one probabilistic backbone assesses non-negative support, overall proper scores and remaining upper-tail undercoverage, while disclosing scale and dry-definition limitations.}
+ \end{itemize}
+ 
+ The remainder of this paper is organized as follows. Section~2 reviews related work on precipitation forecasting, machine-learning methods, probabilistic prediction, and model interpretability. Section~3 describes the study region, ERA5 dataset, feature selection, forecasting models, experimental setup, and diagnostic analyses. Section~4 presents the forecasting, robustness, probabilistic, and interpretability results. Section~5 discusses the main findings, their implications, and the limitations of the study. Section~6 summarizes the conclusions and directions for future work.
+@@ -328,6 +329,16 @@
+ These intervals characterize predictive dispersion under the assumed Gaussian likelihood. Because precipitation is non-negative while the Gaussian distribution is not, calibration is assessed empirically, using coverage and rainfall-regime analysis, rather than assumed from the nominal interval alone.
+ 
+ 
++
++{\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
++The likelihood comparison reused the Probabilistic BiLSTM-Attention backbone: one bidirectional LSTM layer with 64 units, dropout 0.2 and additive temporal attention. Inputs, chronological partitions, five seeds (42, 123, 7, 2024, 99), Adam settings, batch size 32, 30-epoch cap and validation-loss early stopping (patience 10) were matched. Gaussian training used standardized targets, whereas Tobit and Bernoulli--Gamma training used precipitation in mm. Output heads, likelihood losses and target scales therefore changed together; this was not a strict single-factor experiment in which only the output distribution changed. These established probability families are alternatives within one tested network, not new forecasting methods.
++
++For the Tobit alternative, $Y=\max(0,Z)$ with $Z\sim\mathcal N(\mu,s^2)$ \citep{tobin1958limited}. For Bernoulli--Gamma, $P(Y=0)=1-p$ and $f(y)=p\,y^{a-1}e^{-y/b}/[\Gamma(a)b^a]$ for $y>0$ \citep{cannon2008bernoulli}. The Tobit outputs are $\mu$ and $s=\operatorname{softplus}(h_s)+10^{-3}$; BG outputs are $p=\operatorname{clip}(\operatorname{sigmoid}(h_p),10^{-5},1-10^{-5})$, $a=\operatorname{softplus}(h_a)+10^{-2}$ and $b=\operatorname{softplus}(h_b)+10^{-3}$. Each model minimizes its sample negative log likelihood: Tobit uses $-\log\Phi(-\mu/s)$ at zero and the negative Gaussian log density at positive targets; BG uses $-\log(1-p)$ at zero and $-\log p-\log f_\Gamma(y;a,b)$ at positive targets. These point-mass terms are not a Gaussian density evaluated at zero. For numerical stability, the Tobit zero probability is clipped to $[10^{-12},1]$ before taking its logarithm; conditional Gamma quantile probabilities are clipped to $[0,1-10^{-9}]$ in the saved implementation.
++
++Here $\phi$ and $\Phi$ denote the standard-normal density and CDF, and $G_{a,b}$ and $f_\Gamma$ denote the Gamma CDF and density with shape $a$ and scale $b$. For $0<q<1$, Tobit quantiles are $\max(0,\mu+s\Phi^{-1}(q))$. BG quantiles equal zero for $q\leq1-p$ and $G_{a,b}^{-1}((q-1+p)/p)$ otherwise. For a positive threshold $u$, exceedance probabilities are $1-\Phi((u-\mu)/s)$ for Tobit and $p[1-G_{a,b}(u)]$ for BG; their predictive means are $\mu\Phi(\mu/s)+s\phi(\mu/s)$ and $pab$, respectively. The Gaussian rerun transforms its standardized mean and standard deviation back to precipitation units before scoring.
++
++The main alternative-likelihood setting used dry $=0$, meaning exact-zero precipitation after the archived $10^{-6}$~mm\,h$^{-1}$ numerical-zero tolerance; every positive ERA5 target above that numerical tolerance entered the positive component. A seed-42 exploration of dry $=0$, 0.001 and 0.01 preceded expansion to the other seeds. No verifiable prespecification record was identified, and dry $=0$ did not give the best validation or test CRPS for either alternative distribution. Dry $=0.001$ has five seeds, whereas dry $=0.01$ has only seed 42. This exploration is disclosed rather than represented as an independent, prespecified choice.
++\par}
+ \subsubsection{Model Configurations}
+ \label{sec:model_configurations}
+ \label{sec:deterministic_control}
+@@ -372,6 +383,8 @@
+ %---------------------------------------------------------
+ \subsection{Experimental Setup and Evaluation}
+ \label{sec:experimental_setup}
++
++{\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}The main-comparison training protocol below describes the original deterministic and Gaussian models. The alternative-likelihood reruns retain that training budget but use the distinct output heads, losses and target scales defined in Section~\ref{sec:probabilistic_output}.\par}
+ 
+ The deep-learning models were implemented in TensorFlow/Keras and trained using the Adam optimizer. Unless otherwise specified by the model architecture, the learning rate was set to 0.001, the batch size to 32, and the maximum number of training epochs to 30. Validation loss was monitored during training, and early stopping was applied when no improvement was observed for ten consecutive epochs. The model weights associated with the lowest validation loss were restored before evaluation. Deterministic neural networks were trained using mean squared error, whereas the probabilistic models were optimized using Gaussian negative log-likelihood. Hyperparameter settings were fixed before evaluation on the test set.
+ 
+@@ -477,6 +490,16 @@
+ The robustness of model performance was examined using repeated runs with different random seeds. Six models were included in this analysis: XGBoost, BiLSTM, BiLSTM-Attention, BU-LSTM, BU-LSTM-Attention, and Probabilistic BiLSTM-Attention. Five fixed random seeds were used: 42, 123, 7, 2024, and 99. The data partitions, preprocessing procedure, model architecture, and training settings were kept unchanged across runs. RMSE, MAE, and $R^2$ were recorded for each seed, and the mean and standard deviation across the five runs were used to assess the robustness of model performance. For BU-LSTM, BU-LSTM-Attention, and Probabilistic BiLSTM-Attention, NLL, CRPS, and empirical 95\% interval coverage were also calculated for each run.
+ 
+ {\color{red}\hypersetup{linkcolor=red}
++
++{\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
++With predictive CDF $F$, $\mathrm{CRPS}(F,y)=\int_{-\infty}^{\infty}[F(z)-\mathbf1\{y\leq z\}]^2\,dz$, and $\mathrm{twCRPS}_u$ uses the same integrand over $[u,\infty)$ \citep{gneiting2007proper,gneiting2011weighted}. For interval bounds $l,h$ and miscoverage $\alpha$, $\mathrm{IS}_\alpha=(h-l)+(2/\alpha)(l-y)\mathbf1\{y<l\}+(2/\alpha)(y-h)\mathbf1\{y>h\}$. For event probability $p_u$, the Brier score is $(p_u-\mathbf1\{y>u\})^2$; Q95 and 1.0 events use the archived $\geq$ definition. These scores are averaged across all targets before comparing distributions.
++
++For the likelihood reruns, full CRPS and threshold-weighted CRPS were evaluated from the predictive CDF on all 3,939 test targets. The formal full scores use the archived numerical-integration column, not the historical 199-quantile approximation; Gaussian integration was over $[-4,8]$~mm\,h$^{-1}$ and the non-negative families over $[0,8]$~mm\,h$^{-1}$. Independent closed-form calculations differed from the full scores by at most $4.31615\times10^{-5}$~mm\,h$^{-1}$ per seed and gave the same four-decimal model means. The integration scores are not described as closed-form or mathematically exact. Conditioning a score on observed wet or upper-tail cases is retained only as a diagnostic, not as a proper criterion for ranking the full predictive distribution.
++
++For Brier scores, the archived wet-event code used $y>0.1$~mm\,h$^{-1}$. No test target equalled 0.1, so this event set equals $y\geq0.1$ on these 3,939 targets (854 events); this equivalence is not assumed for other datasets. Q95 remained training-derived. Coverage and mean widths were reported for central 90\% and 95\% intervals using saved quantiles; Width90 is the mean of $q_{0.95}-q_{0.05}$ and is not Width95. Negative-bound frequency is the proportion of lower 95\% bounds below zero. Raw NLL values were not used to rank continuous Gaussian densities against mixed discrete--continuous likelihoods, particularly across the different training scales.
++
++The likelihood comparison used paired non-circular moving blocks of 28 six-hourly samples, 5,000 replicates and resampling seed 42. The five per-case scores were averaged before applying the same resampled indices to each compared model; predictions were not averaged before scoring. Each replicate retained 141 complete blocks, giving 3,948 positions, without truncating to the original 3,939 targets. This implementation differs from a length-$n$ bootstrap and changes tail-block contributions; non-circular sampling also weights endpoints differently. Pointwise 95\% percentile intervals were not adjusted for multiple comparisons. Paired seed-$t$ intervals (five seeds, four degrees of freedom) describe training variability separately from test-sample block intervals; neither interval combines both sources of uncertainty. Only intervals matched to the archived full scores are used for full CRPS.
++\par}
+ A paired block-bootstrap analysis was additionally conducted to assess the uncertainty in the RMSE difference between BiLSTM-Attention and XGBoost while retaining the paired structure of their test predictions and accounting for temporal dependence in the time series. The comparison was performed separately for the complete test set, legacy wet observations ($>0$~mm\,h$^{-1}$), revised wet observations ($\geq0.1$~mm\,h$^{-1}$), and the upper-tail subset defined by the training-derived Q95 threshold. The same resampled observations were used for both models within each bootstrap replicate, and the RMSE difference was defined as
+ \par}
+ 
+@@ -886,14 +909,14 @@
+ 
+ The three probabilistic recurrent models produced similar uncertainty scores when averaged across five random seeds. BU-LSTM achieved the lowest mean NLL and CRPS, with values of $-0.4874\pm0.0233$ and $0.0943\pm0.0013$, respectively. BU-LSTM-Attention produced an NLL of $-0.4675\pm0.0758$ and a CRPS of $0.0950\pm0.0014$, while Probabilistic BiLSTM-Attention obtained $-0.4356\pm0.1190$ and $0.0964\pm0.0032$. Mean empirical coverage of the nominal 95\% prediction intervals was 0.9559 for BU-LSTM, 0.9581 for BU-LSTM-Attention, and 0.9568 for Probabilistic BiLSTM-Attention. These probabilistic results are summarized in Table~\ref{tab:probabilistic_results}.
+ 
+-\begin{table}[htbp]
++\begin{table}[!htbp]
+ \centering
+-\caption{Probabilistic performance across five fixed random seeds. Values are reported as mean $\pm$ standard deviation. Cov$_{95}$ denotes empirical coverage of the nominal 95\% prediction interval.}
++\begingroup\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
++\caption{Probabilistic results kept separate by run set. A1 retains the original five-seed Gaussian-model NLL, CRPS and Cov95 values unchanged. A2 adds q16 interval diagnostics from separate q14 $W=6$ five-seed Gaussian reruns, not from A1 or B. B compares the q11 Gaussian, Tobit and Bernoulli--Gamma (BG) reruns on 3,939 targets; its Gaussian is not the A1 run set. Entries are mean $\pm$ sample SD. Widths, CRPS and IS95 are in mm\,h$^{-1}$; coverage and negative-bound frequency are proportions. B uses the archived numerical-integral full CRPS and independently verified saved-quantile Width90; it does not use 199-quantile CRPS. Wet is $y\geq0.1$; Upper is $y\geq$training Q95 $=0.5740$~mm\,h$^{-1}$. NLL is not compared across B likelihoods. Additional proper scores and matched intervals are given in Supplementary Tables~\ref{supp-stab:r2m6_seed_scores}--\ref{supp-stab:r2m6_other_pairs}.}
+ \label{tab:probabilistic_results}
+-
+-\small
+-\setlength{\tabcolsep}{4pt}
+-
++\endgroup
++\small\setlength{\tabcolsep}{3pt}
++{\color{red}\textbf{A1. Original Gaussian-model five-seed results}}\par\medskip
+ \begin{tabular}{@{}lccc@{}}
+ \hline
+ \textbf{Model} &
+@@ -918,7 +941,31 @@
+ $0.9568 \pm 0.0077$ \\
+ 
+ \hline
+-\end{tabular}
++\end{tabular}\par
++\medskip
++{\color{red}\textbf{A2. Separate q16/q14 Gaussian interval reruns}}\par\smallskip
++{\color{red}\begin{tabular}{@{}lrrr@{}}\hline
++Model & Cov90 & Width90 & Width95\\
++\hline
++BU-LSTM & $0.9456\pm0.0033$ & $0.6526\pm0.0233$ & $0.7776\pm0.0278$\\
++BU-LSTM-Attention & $0.9464\pm0.0029$ & $0.6608\pm0.0234$ & $0.7874\pm0.0279$\\
++Prob. BiLSTM-Attention & $0.9459\pm0.0073$ & $0.6705\pm0.0574$ & $0.7989\pm0.0684$\\
++\hline\end{tabular}\par}
++\medskip
++{\color{red}\textbf{B. Likelihood reruns: Probabilistic BiLSTM-Attention}}\par\smallskip
++{\color{red}\begin{tabular}{@{}lrrr@{}}\hline
++Metric & Gaussian & Tobit & BG\\
++\hline
++Full CRPS & $0.0961\pm0.0031$ & $0.0847\pm0.0023$ & $0.0773\pm0.0005$\\
++IS95 & $1.3977\pm0.0389$ & $1.0330\pm0.0406$ & $0.9928\pm0.0315$\\
++Cov$_{95}$ All & $0.9565\pm0.0052$ & $0.9611\pm0.0064$ & $0.9560\pm0.0075$\\
++Cov$_{95}$ Wet & $0.8042\pm0.0211$ & $0.8258\pm0.0258$ & $0.8328\pm0.0296$\\
++Cov$_{95}$ Upper & $0.4941\pm0.0367$ & $0.5454\pm0.0482$ & $0.6445\pm0.0519$\\
++Cov$_{90}$ All & $0.9459\pm0.0073$ & $0.9496\pm0.0084$ & $0.9242\pm0.0106$\\
++Width95 & $0.7989\pm0.0684$ & $0.5202\pm0.0494$ & $0.5408\pm0.0516$\\
++Width90 & $0.6705\pm0.0574$ & $0.4495\pm0.0429$ & $0.4067\pm0.0379$\\
++Negative lower95 & $1.0000\pm0.0000$ & $0.0000\pm0.0000$ & $0.0000\pm0.0000$\\
++\hline\end{tabular}\par}
+ \end{table}
+ 
+ {\color{red}\hypersetup{linkcolor=red,citecolor=red}
+@@ -949,6 +996,21 @@
+ \par}
+ % TODO[R1-M1-PROBABILITY]: Fig. S4 and Table S10 require the original exceedance-score/reliability CSVs; neither is inserted here.
+ 
++
++{\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
++\subsubsection{Comparison of Precipitation-Appropriate Likelihoods}
++\label{sec:r2m6_likelihood_results}
++
++In the matched likelihood reruns, full CRPS was 0.0961 for Gaussian, 0.0847 for Tobit and 0.0773~mm\,h$^{-1}$ for Bernoulli--Gamma. Relative to Gaussian, Bernoulli--Gamma reduced full CRPS by approximately 19.6\%, IS95 by 29\% and Width95 by 32\%; overall Cov95 remained similar (0.9565 versus 0.9560). Both non-negative likelihoods eliminated negative bounds by construction. Bernoulli--Gamma increased upper-tail Cov95 from 0.4941 to 0.6445, still far below 0.95; Tobit gave 0.5454. The observed upper-tail reliability deficit was therefore reduced but not resolved.
++
++Part B of Table~\ref{tab:probabilistic_results} reports these reruns separately from Part A1; Part A2 uses the existing q16 interval reruns. Supplementary Tables~\ref{supp-stab:r2m6_seed_scores} and~\ref{supp-stab:r2m6_seed_intervals} give per-seed evidence; Tables~\ref{supp-stab:r2m6_score_pairs} and~\ref{supp-stab:r2m6_other_pairs} retain both uncertainty summaries.
++
++Bernoulli--Gamma reduced the Q95 and 1.0~mm\,h$^{-1}$ threshold-weighted CRPS by only about 2.8\% and 1.9\%, respectively, on all test cases. Its full CRPS was lower than Tobit under both paired uncertainty summaries, but their high-threshold block intervals included zero despite seed-$t$ intervals excluding zero. The historical observed-wet and upper-tail conditional CRPS diagnostics instead ranked Bernoulli--Gamma worse than Gaussian; these outcome-conditioned diagnostics are not proper scores for the full predictive distribution. We retain this adverse result separately from the full/twCRPS comparison.
++
++Tobit was more sensitive to the explored dry definitions than Bernoulli--Gamma. The dry $=0.001$ five-seed full scores are retained alongside the main setting; a matching Tobit dry-0.001 minus dry-0 full block interval was not saved and is not inferred from approximate-CRPS intervals. The dry $=0.01$ result is only a historical seed-42 exploration, not a five-seed robustness result. Historical validation CRPS did not favour dry $=0$ for either family.
++
++Supplementary Tables~\ref{supp-stab:r2m6_dry001}--\ref{supp-stab:r2m6_conditional_history} separate the five-seed sensitivity from historical single-seed and conditional-score diagnostics.
++\par}
+ \subsection{SHAP-Based Feature Attribution}
+ \label{sec:shap_results}
+ {\color{red}\hypersetup{linkcolor=red}
+@@ -1085,6 +1147,10 @@
+ The Gaussian likelihood also imposes a structural limitation on the uncertainty estimates. Precipitation is non-negative and strongly right-skewed, whereas the Gaussian distribution is symmetric and unbounded. In the single-run diagnostic, the lower bound of the nominal 95\% interval extended below 0~mm\,h$^{-1}$ throughout the test set. Negative interval bounds do not correspond to physically meaningful precipitation and indicate a mismatch between the assumed predictive distribution and the support of the target variable. The Gaussian formulation remains a baseline. The controlled Bernoulli--Gamma comparison removed negative bounds and improved overall probabilistic scores, but substantial upper-tail undercoverage remained. This comparison was limited to Probabilistic BiLSTM-Attention; it does not establish the same benefit for other architectures, test periods or event-detection rules.
+ 
+ {\color{red}\hypersetup{linkcolor=red}
++
++{\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
++An alternative precipitation-appropriate likelihood improved overall probabilistic skill and eliminated negative prediction bounds by construction, but substantial upper-tail undercoverage remained. The comparison does not isolate the likelihood family from changes in output parameterization, loss and training-target scale. It supports the tested Bernoulli--Gamma formulation within this backbone, not a general claim that it improves every architecture or rare-event diagnostic.
++\par}
+ \subsection{Predictor Attribution and Incremental Contribution}
+ \label{sec:predictor_complementarity}
+ 
+@@ -1107,6 +1173,10 @@
+ 
+ \subsection{Limitations and Future Work}
+ \label{sec:limitations}
++
++{\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
++The alternative-likelihood evidence is limited to one Probabilistic BiLSTM-Attention backbone and the original chronological test period. Target scales differed between Gaussian and the non-negative likelihoods, the dry definition lacks a verifiable prespecification record, and the dry-0.01 check has only one seed. No rolling-origin Bernoulli--Gamma test was performed; these results cannot be transferred to the 12-year Gaussian-model evaluation. The retained 3,948-position block implementation and pointwise intervals limit uncertainty interpretation. Better overall scores and non-negative support did not eliminate systematic upper-tail undercoverage.
++\par}
+ 
+ {\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
+ The rolling-origin analysis is retrospective rather than a fully prospective or fully independent validation of model-design choices. The original training targets extended through 7 August 2016 and validation targets through 20 April 2019; these development data overlap the F1--F3 test years. F4 begins on 2 January 2019, so its early-2019 targets also overlap the original validation period; the original test targets begin only on 22 April 2019. The original test portion was not used for initial hyperparameter selection but had already informed the original model comparisons. Fold-specific fitting and preprocessing therefore do not remove development-stage overlap. Models were not retuned per fold; F1/F2 had only 16/19 training years. No ENSO-phase stratification, rolling plain-BiLSTM control or rolling Bernoulli--Gamma alternative was evaluated. Pooled bootstrap blocks can cross the 42-hour gaps between adjacent fold target sequences. These boundaries limit claims of temporal independence, attention-specific benefit and robustness to distributional formulation.
+@@ -1150,6 +1220,10 @@
+ %----------------------------------------------------------
+ \section{Conclusion}
+ \label{sec:conclusion}
++{\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
++An alternative precipitation-appropriate likelihood improved overall probabilistic skill and eliminated negative prediction bounds by construction, but substantial upper-tail undercoverage remained. This result is limited to one network and does not establish its transfer to other periods or architectures.
++\par}
++
+ 
+ {\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
+ BiLSTM-Attention achieved the numerically lowest RMSE on the original test period, but its advantage over XGBoost was small and did not persist consistently across the rolling-origin evaluation. The supplementary retrospective evaluation retained positive climatological skill for all six models evaluated there in each test period, but did not remove upper-tail detection and interval-coverage deficits; it does not establish prospective independence of the model-design choices.
+--- a/Supplementary.tex
++++ b/Supplementary.tex
+@@ -1501,4 +1501,246 @@
+ \end{longtable}
+ \end{revisionlongtable}
+ 
++
++% R2-M6: source-pinned likelihood-comparison evidence; no manual S numbering.
++{\color{red}\section*{Precipitation-appropriate predictive likelihoods}\par}
++
++\clearpage
++\begin{revisionlongtable}
++\begin{longtable}{@{}llrrrrrr@{}}
++\caption{Existing Gaussian interval evidence from q16, kept distinct from the likelihood reruns. BU is BU-LSTM, BUA is BU-LSTM-Attention and PBA is Probabilistic BiLSTM-Attention. Every located summary row is from the q14 $W=6$ five-seed reruns (source \texttt{q14\_rerun\_5seed}), not the original main five-seed NLL/CRPS run set and not q11. Entries are seed mean $\pm$ sample SD. Widths are in mm\,h$^{-1}$; coverage is dimensionless. Wet means $y\geq0.1$, Upper means $y\geq$training Q95 $=0.5740$~mm\,h$^{-1}$. These rows support the separate interval extension in Part A2 of the main probabilistic table; they do not replace Part A1.}\label{stab:r2m6_q16_intervals}\\
++\hline
++\textbf{Model} & \textbf{Subset} & \textbf{Seeds} & \textbf{$n$} & \textbf{Cov90} & \textbf{Width90} & \textbf{Cov95} & \textbf{Width95}\\
++\hline
++\endfirsthead
++\multicolumn{8}{l}{\textbf{Table~\thetable{} (continued)}}\\
++\hline
++\textbf{Model} & \textbf{Subset} & \textbf{Seeds} & \textbf{$n$} & \textbf{Cov90} & \textbf{Width90} & \textbf{Cov95} & \textbf{Width95}\\
++\hline
++\endhead
++\hline
++\endfoot
++BU & All & 5 & 3939 & $0.9456\pm0.0033$ & $0.6526\pm0.0233$ & $0.9560\pm0.0031$ & $0.7776\pm0.0278$\\
++BU & Wet & 5 & 854 & $0.7546\pm0.0152$ & $1.1129\pm0.0524$ & $0.8002\pm0.0144$ & $1.3261\pm0.0624$\\
++BU & Upper & 5 & 238 & $0.4101\pm0.0499$ & $1.2774\pm0.0608$ & $0.5042\pm0.0384$ & $1.5222\pm0.0725$\\
++BUA & All & 5 & 3939 & $0.9464\pm0.0029$ & $0.6608\pm0.0234$ & $0.9571\pm0.0015$ & $0.7874\pm0.0279$\\
++BUA & Wet & 5 & 854 & $0.7560\pm0.0151$ & $1.0967\pm0.0394$ & $0.8037\pm0.0088$ & $1.3068\pm0.0469$\\
++BUA & Upper & 5 & 238 & $0.3983\pm0.0338$ & $1.2478\pm0.0460$ & $0.5000\pm0.0236$ & $1.4869\pm0.0548$\\
++PBA & All & 5 & 3939 & $0.9459\pm0.0073$ & $0.6705\pm0.0574$ & $0.9565\pm0.0052$ & $0.7989\pm0.0684$\\
++PBA & Wet & 5 & 854 & $0.7571\pm0.0292$ & $1.1271\pm0.0667$ & $0.8042\pm0.0211$ & $1.3430\pm0.0795$\\
++PBA & Upper & 5 & 238 & $0.3958\pm0.0450$ & $1.2976\pm0.0611$ & $0.4941\pm0.0367$ & $1.5462\pm0.0728$\\
++\end{longtable}
++\end{revisionlongtable}
++
++\clearpage
++\begin{revisionlongtable}
++\begin{longtable}{@{}lrrrrrrrrr@{}}
++\caption{Per-seed proper-score evidence for the q11 reruns on all 3,939 test targets: G, Gaussian; T, Tobit; BG, Bernoulli--Gamma. Full and threshold-weighted CRPS use the archived CDF-squared numerical integration in \texttt{q11\_twcrps\_per\_seed.csv}; they are not the historical 199-quantile approximation. CRPS, twCRPS and IS95 have units mm\,h$^{-1}$. Thresholds are 0.1, training Q95 $=0.574048$, and 1.0~mm\,h$^{-1}$; all weighted scores retain every target. Brier scores are dimensionless; the wet source event is $y>0.1$, identical here to $y\geq0.1$ (854 events). G is a separate rerun, not Part A1 of the main probabilistic table.}\label{stab:r2m6_seed_scores}\\
++\hline
++\textbf{Dist.} & \textbf{Seed} & \textbf{Full} & \textbf{tw0.1} & \textbf{twQ95} & \textbf{tw1.0} & \textbf{IS95} & \textbf{BS0.1} & \textbf{BSQ95} & \textbf{BS1.0}\\
++\hline
++\endfirsthead
++\multicolumn{10}{l}{\textbf{Table~\thetable{} (continued)}}\\
++\hline
++\textbf{Dist.} & \textbf{Seed} & \textbf{Full} & \textbf{tw0.1} & \textbf{twQ95} & \textbf{tw1.0} & \textbf{IS95} & \textbf{BS0.1} & \textbf{BSQ95} & \textbf{BS1.0}\\
++\hline
++\endhead
++\hline
++\endfoot
++G & 42 & $0.092843$ & $0.066518$ & $0.025004$ & $0.009759$ & $1.386702$ & $0.153866$ & $0.051867$ & $0.021806$\\
++G & 123 & $0.098622$ & $0.069372$ & $0.025036$ & $0.009837$ & $1.357908$ & $0.172858$ & $0.052640$ & $0.021881$\\
++G & 7 & $0.092735$ & $0.066784$ & $0.025099$ & $0.009802$ & $1.367208$ & $0.150678$ & $0.052424$ & $0.021981$\\
++G & 2024 & $0.097091$ & $0.068444$ & $0.025442$ & $0.009900$ & $1.430152$ & $0.166935$ & $0.052869$ & $0.022402$\\
++G & 99 & $0.099041$ & $0.068511$ & $0.025008$ & $0.009794$ & $1.446343$ & $0.169865$ & $0.051751$ & $0.021949$\\
++T & 42 & $0.082238$ & $0.065101$ & $0.024852$ & $0.009774$ & $1.094003$ & $0.143038$ & $0.051215$ & $0.021761$\\
++T & 123 & $0.087976$ & $0.068562$ & $0.024651$ & $0.009673$ & $0.992002$ & $0.167024$ & $0.051945$ & $0.021429$\\
++T & 7 & $0.084061$ & $0.066022$ & $0.024640$ & $0.009690$ & $1.000402$ & $0.150312$ & $0.051277$ & $0.021542$\\
++T & 2024 & $0.083305$ & $0.065543$ & $0.024838$ & $0.009752$ & $1.044688$ & $0.146695$ & $0.051526$ & $0.021807$\\
++T & 99 & $0.085792$ & $0.067309$ & $0.024962$ & $0.009696$ & $1.034044$ & $0.155860$ & $0.052243$ & $0.021776$\\
++BG & 42 & $0.077956$ & $0.063174$ & $0.024552$ & $0.009658$ & $1.044516$ & $0.122969$ & $0.051004$ & $0.021159$\\
++BG & 123 & $0.077114$ & $0.062189$ & $0.024335$ & $0.009615$ & $0.959112$ & $0.123023$ & $0.050256$ & $0.021058$\\
++BG & 7 & $0.077428$ & $0.062711$ & $0.024453$ & $0.009626$ & $0.991896$ & $0.122462$ & $0.050713$ & $0.021148$\\
++BG & 2024 & $0.076753$ & $0.062083$ & $0.024319$ & $0.009622$ & $0.987607$ & $0.121770$ & $0.050073$ & $0.020979$\\
++BG & 99 & $0.077009$ & $0.062225$ & $0.024385$ & $0.009655$ & $0.981000$ & $0.122113$ & $0.050269$ & $0.021093$\\
++\end{longtable}
++\end{revisionlongtable}
++
++\clearpage
++\begin{revisionlongtable}
++\begin{longtable}{@{}lrrrrrrrr@{}}
++\caption{Per-seed q11 interval diagnostics; distribution codes follow Table~\ref{stab:r2m6_seed_scores}. Cov95 is shown for All, Wet ($\geq0.1$; 854 targets) and Upper ($\geq$training Q95; 238 targets). Cov90 and both widths refer to all 3,939 targets. Width90 is the mean of unchanged saved $q_{0.95}-q_{0.05}$, independently verified in the evidence archive; it is not Width95. Negative is the frequency of lower 95\% bounds below zero. Widths are mm\,h$^{-1}$; all coverage/frequency columns are proportions. Saved quantiles were used unchanged; no additional post-hoc clipping or recalibration was applied.}\label{stab:r2m6_seed_intervals}\\
++\hline
++\textbf{Dist.} & \textbf{Seed} & \shortstack{\textbf{Cov95}\\\textbf{All}} & \shortstack{\textbf{Cov95}\\\textbf{Wet}} & \shortstack{\textbf{Cov95}\\\textbf{Upper}} & \textbf{Cov90} & \textbf{Width95} & \textbf{Width90} & \textbf{Negative}\\
++\hline
++\endfirsthead
++\multicolumn{9}{l}{\textbf{Table~\thetable{} (continued)}}\\
++\hline
++\textbf{Dist.} & \textbf{Seed} & \shortstack{\textbf{Cov95}\\\textbf{All}} & \shortstack{\textbf{Cov95}\\\textbf{Wet}} & \shortstack{\textbf{Cov95}\\\textbf{Upper}} & \textbf{Cov90} & \textbf{Width95} & \textbf{Width90} & \textbf{Negative}\\
++\hline
++\endhead
++\hline
++\endfoot
++G & 42 & $0.951257$ & $0.785714$ & $0.483193$ & $0.936532$ & $0.723613$ & $0.607275$ & $1.000$\\
++G & 123 & $0.963696$ & $0.837237$ & $0.554622$ & $0.955319$ & $0.875545$ & $0.734780$ & $1.000$\\
++G & 7 & $0.951764$ & $0.786885$ & $0.500000$ & $0.940848$ & $0.735152$ & $0.616959$ & $1.000$\\
++G & 2024 & $0.956842$ & $0.800937$ & $0.462185$ & $0.948464$ & $0.806196$ & $0.676581$ & $1.000$\\
++G & 99 & $0.958873$ & $0.810304$ & $0.470588$ & $0.948464$ & $0.854006$ & $0.716705$ & $1.000$\\
++T & 42 & $0.952272$ & $0.789227$ & $0.462185$ & $0.937548$ & $0.464024$ & $0.399716$ & $0.000$\\
++T & 123 & $0.968774$ & $0.855972$ & $0.584034$ & $0.959634$ & $0.585795$ & $0.506662$ & $0.000$\\
++T & 7 & $0.961919$ & $0.827869$ & $0.571429$ & $0.948718$ & $0.510930$ & $0.442070$ & $0.000$\\
++T & 2024 & $0.957603$ & $0.813817$ & $0.550420$ & $0.946941$ & $0.486753$ & $0.421665$ & $0.000$\\
++T & 99 & $0.964966$ & $0.841920$ & $0.558824$ & $0.955065$ & $0.553550$ & $0.477285$ & $0.000$\\
++BG & 42 & $0.947956$ & $0.802108$ & $0.575630$ & $0.912414$ & $0.475084$ & $0.357879$ & $0.000$\\
++BG & 123 & $0.967758$ & $0.878220$ & $0.714286$ & $0.941102$ & $0.612685$ & $0.458513$ & $0.000$\\
++BG & 7 & $0.951764$ & $0.812646$ & $0.617647$ & $0.919777$ & $0.511186$ & $0.384586$ & $0.000$\\
++BG & 2024 & $0.955065$ & $0.829040$ & $0.663866$ & $0.924854$ & $0.552414$ & $0.416298$ & $0.000$\\
++BG & 99 & $0.957350$ & $0.841920$ & $0.651261$ & $0.922823$ & $0.552469$ & $0.416360$ & $0.000$\\
++\end{longtable}
++\end{revisionlongtable}
++
++\clearpage
++\begin{revisionlongtable}
++\begin{longtable}{@{}llrrrr@{}}
++\caption{All saved full/twCRPS pairwise comparisons, in mm\,h$^{-1}$, from \texttt{q11\_twcrps\_paired.csv}; negative differences favour the first configuration. Codes are as in Table~\ref{stab:r2m6_seed_scores}; BG.001 is BG trained with dry $=0.001$. Seed-$t$ intervals describe five paired seed-level means (df 4). Test-sample intervals average the five per-case scores first, then apply paired non-circular moving blocks: 28 six-hourly samples, 5,000 replicates, seed 42. Each replicate retains 141 complete blocks, or 3,948 positions, without truncation to 3,939. All intervals are pointwise 95\%, without multiplicity adjustment, conditional on fitted models. Better counts seeds with lower score. No Tobit.001--Tobit full paired interval was saved.}\label{stab:r2m6_score_pairs}\\
++\hline
++\textbf{Pair} & \textbf{Score} & \textbf{$\Delta$} & \textbf{Seed-$t$ CI} & \textbf{Block CI} & \textbf{Better}\\
++\hline
++\endfirsthead
++\multicolumn{6}{l}{\textbf{Table~\thetable{} (continued)}}\\
++\hline
++\textbf{Pair} & \textbf{Score} & \textbf{$\Delta$} & \textbf{Seed-$t$ CI} & \textbf{Block CI} & \textbf{Better}\\
++\hline
++\endhead
++\hline
++\endfoot
++T $-$ G & Full & $-0.011392$ & $[-0.014007,-0.008777]$ & $[-0.012063,-0.010736]$ & 5/5\\
++T $-$ G & tw0.1 & $-0.001418$ & $[-0.002502,-0.000335]$ & $[-0.001929,-0.000951]$ & 5/5\\
++T $-$ G & twQ95 & $-0.000329$ & $[-0.000612,-0.000047]$ & $[-0.000569,-0.000102]$ & 5/5\\
++T $-$ G & tw1.0 & $-0.000102$ & $[-0.000189,-0.000014]$ & $[-0.000180,-0.000027]$ & 4/5\\
++BG $-$ G & Full & $-0.018814$ & $[-0.023100,-0.014528]$ & $[-0.020450,-0.017198]$ & 5/5\\
++BG $-$ G & tw0.1 & $-0.005449$ & $[-0.007496,-0.003403]$ & $[-0.006743,-0.004154]$ & 5/5\\
++BG $-$ G & twQ95 & $-0.000709$ & $[-0.001019,-0.000400]$ & $[-0.001048,-0.000333]$ & 5/5\\
++BG $-$ G & tw1.0 & $-0.000184$ & $[-0.000270,-0.000097]$ & $[-0.000339,-0.000034]$ & 5/5\\
++BG $-$ T & Full & $-0.007422$ & $[-0.010522,-0.004322]$ & $[-0.008962,-0.005879]$ & 5/5\\
++BG $-$ T & tw0.1 & $-0.004031$ & $[-0.006169,-0.001893]$ & $[-0.005393,-0.002613]$ & 5/5\\
++BG $-$ T & twQ95 & $-0.000380$ & $[-0.000582,-0.000178]$ & $[-0.000738,+0.000026]$ & 5/5\\
++BG $-$ T & tw1.0 & $-0.000082$ & $[-0.000130,-0.000034]$ & $[-0.000204,+0.000035]$ & 5/5\\
++BG.001 $-$ BG & Full & $-0.000008$ & $[-0.000535,+0.000520]$ & $[-0.000278,+0.000261]$ & 2/5\\
++BG.001 $-$ BG & tw0.1 & $-0.000094$ & $[-0.000518,+0.000331]$ & $[-0.000343,+0.000149]$ & 3/5\\
++BG.001 $-$ BG & twQ95 & $-0.000017$ & $[-0.000112,+0.000077]$ & $[-0.000120,+0.000085]$ & 3/5\\
++BG.001 $-$ BG & tw1.0 & $-0.000008$ & $[-0.000055,+0.000039]$ & $[-0.000046,+0.000034]$ & 2/5\\
++\end{longtable}
++\end{revisionlongtable}
++
++\clearpage
++\begin{revisionlongtable}
++\begin{longtable}{@{}llrrr@{}}
++\caption{All saved all-target paired interval-score, coverage, width and Brier comparisons for the three primary likelihoods, excluding historical approximate CRPS and unrelated point-error statistics. Differences are first minus second; codes follow Table~\ref{stab:r2m6_seed_scores}. IS95/width95 have units mm\,h$^{-1}$, coverage/Brier differences are dimensionless. Coverage differences are not themselves calibration improvements: proximity to nominal coverage must also be considered. Source seed-$t$ and block intervals are kept separate; the block procedure and 3,948-position implementation are exactly those in Table~\ref{stab:r2m6_score_pairs}. All intervals are pointwise 95\%, unadjusted.}\label{stab:r2m6_other_pairs}\\
++\hline
++\textbf{Pair} & \textbf{Metric} & \textbf{$\Delta$} & \textbf{Seed-$t$ CI} & \textbf{Block CI}\\
++\hline
++\endfirsthead
++\multicolumn{5}{l}{\textbf{Table~\thetable{} (continued)}}\\
++\hline
++\textbf{Pair} & \textbf{Metric} & \textbf{$\Delta$} & \textbf{Seed-$t$ CI} & \textbf{Block CI}\\
++\hline
++\endhead
++\hline
++\endfoot
++T $-$ G & is95 & $-0.36463$ & $[-0.41977,-0.30950]$ & $[-0.39652,-0.33156]$\\
++T $-$ G & cov95 & $+0.00462$ & $[-0.00022,+0.00947]$ & $[+0.00268,+0.00653]$\\
++T $-$ G & width95 & $-0.27869$ & $[-0.32510,-0.23228]$ & $[-0.29455,-0.26068]$\\
++T $-$ G & bs\_gt0.1 & $-0.01025$ & $[-0.01970,-0.00081]$ & $[-0.01150,-0.00909]$\\
++T $-$ G & bs\_geQ95 & $-0.00067$ & $[-0.00155,+0.00022]$ & $[-0.00126,-0.00013]$\\
++T $-$ G & bs\_ge1.0 & $-0.00034$ & $[-0.00062,-0.00006]$ & $[-0.00060,-0.00008]$\\
++BG $-$ G & is95 & $-0.40484$ & $[-0.46666,-0.34301]$ & $[-0.46903,-0.34870]$\\
++BG $-$ G & cov95 & $-0.00051$ & $[-0.00400,+0.00298]$ & $[-0.00476,+0.00370]$\\
++BG $-$ G & width95 & $-0.25813$ & $[-0.29317,-0.22310]$ & $[-0.26864,-0.24641]$\\
++BG $-$ G & bs\_gt0.1 & $-0.04037$ & $[-0.05286,-0.02789]$ & $[-0.04522,-0.03613]$\\
++BG $-$ G & bs\_geQ95 & $-0.00185$ & $[-0.00279,-0.00090]$ & $[-0.00305,-0.00040]$\\
++BG $-$ G & bs\_ge1.0 & $-0.00092$ & $[-0.00128,-0.00055]$ & $[-0.00141,-0.00045]$\\
++BG $-$ T & is95 & $-0.04020$ & $[-0.06499,-0.01541]$ & $[-0.08697,+0.00087]$\\
++BG $-$ T & cov95 & $-0.00513$ & $[-0.00976,-0.00049]$ & $[-0.00917,-0.00117]$\\
++BG $-$ T & width95 & $+0.02056$ & $[-0.01370,+0.05482]$ & $[+0.00664,+0.03423]$\\
++BG $-$ T & bs\_gt0.1 & $-0.03012$ & $[-0.04155,-0.01869]$ & $[-0.03451,-0.02623]$\\
++BG $-$ T & bs\_geQ95 & $-0.00118$ & $[-0.00212,-0.00024]$ & $[-0.00257,+0.00053]$\\
++BG $-$ T & bs\_ge1.0 & $-0.00058$ & $[-0.00082,-0.00033]$ & $[-0.00101,-0.00017]$\\
++\end{longtable}
++\end{revisionlongtable}
++
++\clearpage
++\begin{revisionlongtable}
++\begin{longtable}{@{}lrrrrrrrr@{}}
++\caption{All ten dry $=0.001$ sensitivity runs (T.001 and BG.001), evaluated on the same numerical-zero-adjusted targets as dry $=0$. Each configuration has five seeds. Full/tw scores are the archived numerical-integral scores, not 199-quantile approximations. Coverage and Width95 come from the saved run scores; widths are mm\,h$^{-1}$. The BG.001--BG matched score intervals are in Table~\ref{stab:r2m6_score_pairs}; a same-definition Tobit.001--Tobit full block interval was not computed in the archive and is not supplied here. Do not substitute a historical approximate-CRPS interval.}\label{stab:r2m6_dry001}\\
++\hline
++\textbf{Dist.} & \textbf{Seed} & \textbf{Full} & \textbf{tw0.1} & \textbf{twQ95} & \textbf{tw1.0} & \textbf{Cov95} & \shortstack{\textbf{Cov95}\\\textbf{Upper}} & \textbf{Width95}\\
++\hline
++\endfirsthead
++\multicolumn{9}{l}{\textbf{Table~\thetable{} (continued)}}\\
++\hline
++\textbf{Dist.} & \textbf{Seed} & \textbf{Full} & \textbf{tw0.1} & \textbf{twQ95} & \textbf{tw1.0} & \textbf{Cov95} & \shortstack{\textbf{Cov95}\\\textbf{Upper}} & \textbf{Width95}\\
++\hline
++\endhead
++\hline
++\endfoot
++T.001 & 42 & $0.080935$ & $0.064411$ & $0.024781$ & $0.009727$ & $0.952780$ & $0.478992$ & $0.470950$\\
++T.001 & 123 & $0.083505$ & $0.065909$ & $0.024419$ & $0.009653$ & $0.965727$ & $0.563025$ & $0.573869$\\
++T.001 & 7 & $0.081788$ & $0.064917$ & $0.024730$ & $0.009732$ & $0.955319$ & $0.533613$ & $0.487487$\\
++T.001 & 2024 & $0.081426$ & $0.064532$ & $0.024646$ & $0.009699$ & $0.960396$ & $0.563025$ & $0.499270$\\
++T.001 & 99 & $0.083488$ & $0.066032$ & $0.024998$ & $0.009744$ & $0.964458$ & $0.579832$ & $0.536552$\\
++BG.001 & 42 & $0.077601$ & $0.062770$ & $0.024561$ & $0.009672$ & $0.952780$ & $0.605042$ & $0.491027$\\
++BG.001 & 123 & $0.077645$ & $0.062527$ & $0.024436$ & $0.009636$ & $0.965981$ & $0.672269$ & $0.562036$\\
++BG.001 & 7 & $0.076939$ & $0.062250$ & $0.024375$ & $0.009647$ & $0.951003$ & $0.617647$ & $0.497321$\\
++BG.001 & 2024 & $0.076756$ & $0.062013$ & $0.024234$ & $0.009561$ & $0.957603$ & $0.655462$ & $0.538929$\\
++BG.001 & 99 & $0.077281$ & $0.062354$ & $0.024348$ & $0.009619$ & $0.958619$ & $0.651261$ & $0.548748$\\
++\end{longtable}
++\end{revisionlongtable}
++
++\clearpage
++\begin{revisionlongtable}
++\begin{longtable}{@{}lrrrr@{}}
++\caption{Historical seed-42 dry-definition exploration, reproduced from the original run JSON (evaluation key dry0). These validation/test values are the original 199-quantile CRPS approximation, explicitly retained only as selection-history diagnostics; they are not full CRPS and are not mixed with the main proper-score comparison. Dry 0.01 has only this one seed, whereas dry 0 and 0.001 later have five seeds each. The seed-42 checks preceded expansion to other seeds, but no verifiable prespecification record was identified. Dry 0 was not the best validation or test CRPS setting for either distribution. Units are mm\,h$^{-1}$.}\label{stab:r2m6_dry_history}\\
++\hline
++\textbf{Dist.} & \textbf{Dry} & \textbf{Seed} & \shortstack{\textbf{Historical}\\\textbf{validation}\\\textbf{CRPS}} & \shortstack{\textbf{Historical}\\\textbf{test}\\\textbf{CRPS}}\\
++\hline
++\endfirsthead
++\multicolumn{5}{l}{\textbf{Table~\thetable{} (continued)}}\\
++\hline
++\textbf{Dist.} & \textbf{Dry} & \textbf{Seed} & \shortstack{\textbf{Historical}\\\textbf{validation}\\\textbf{CRPS}} & \shortstack{\textbf{Historical}\\\textbf{test}\\\textbf{CRPS}}\\
++\hline
++\endhead
++\hline
++\endfoot
++T & 0.000 & 42 & $0.077941$ & $0.082616$\\
++T & 0.001 & 42 & $0.076659$ & $0.081309$\\
++T & 0.010 & 42 & $0.074926$ & $0.079772$\\
++BG & 0.000 & 42 & $0.071675$ & $0.078335$\\
++BG & 0.001 & 42 & $0.071482$ & $0.077976$\\
++BG & 0.010 & 42 & $0.071802$ & $0.078305$\\
++\end{longtable}
++\end{revisionlongtable}
++
++\clearpage
++\begin{revisionlongtable}
++\begin{longtable}{@{}lrr@{}}
++\caption{Historical observed-subset CRPS diagnostics (199-quantile approximation), seed mean $\pm$ sample SD in mm\,h$^{-1}$. Codes follow Table~\ref{stab:r2m6_seed_scores}; T.001/BG.001 use dry $=0.001$. Wet is $y\geq0.1$ (854 targets), Upper is $y\geq$training Q95 (238). These scores condition on observed outcomes and are not proper scores for ranking the full predictive distribution. They are shown to retain the adverse diagnostic that BG has higher conditional CRPS than G, not to replace full/twCRPS or their paired intervals. No historical approximate-CRPS number is used in the main proper-score table.}\label{stab:r2m6_conditional_history}\\
++\hline
++\textbf{Dist.} & \textbf{Conditional Wet} & \textbf{Conditional Upper}\\
++\hline
++\endfirsthead
++\multicolumn{3}{l}{\textbf{Table~\thetable{} (continued)}}\\
++\hline
++\textbf{Dist.} & \textbf{Conditional Wet} & \textbf{Conditional Upper}\\
++\hline
++\endhead
++\hline
++\endfoot
++G & $0.2628\pm0.0052$ & $0.6224\pm0.0157$\\
++T & $0.2488\pm0.0065$ & $0.5890\pm0.0194$\\
++BG & $0.2818\pm0.0073$ & $0.6708\pm0.0186$\\
++T.001 & $0.2535\pm0.0065$ & $0.5978\pm0.0193$\\
++BG.001 & $0.2801\pm0.0039$ & $0.6672\pm0.0106$\\
++\end{longtable}
++\end{revisionlongtable}
++
+ \end{document}
+--- a/Response letter.tex
++++ b/Response letter.tex
+@@ -765,9 +765,57 @@
+ 
+ \ReviewerComment{6.The Gaussian assumption produces negative prediction bounds and severe undercoverage for heavy rainfall. Please evaluate a precipitation-appropriate distribution or provide stronger justification for the chosen formulation.}
+ 
+-\PendingResponse
+-
+-\ChangeLocation
++\AuthorResponse{We agree that the unbounded Gaussian baseline can yield physically inappropriate negative bounds and that nominal overall coverage does not ensure upper-tail reliability. We added Gaussian, zero-censored Gaussian (Tobit) and Bernoulli--Gamma reruns in the same Probabilistic BiLSTM-Attention backbone, with matched inputs, partitions, seeds and training budget. The output heads, likelihood losses and target scales differ: Gaussian uses standardized targets, while the alternatives use precipitation units. We therefore do not describe this as a strict distribution-only single-factor comparison.
++
++Bernoulli--Gamma improves full CRPS from 0.0961 to 0.0773~mm\,h$^{-1}$ (about 19.6\%), with matched full-score seed-$t$ and temporal block intervals supporting lower scores. Tobit gives 0.0847. Bernoulli--Gamma also reduces IS95 by about 29\% and Width95 by 32\%, while overall Cov95 is similar (0.9565 versus 0.9560). Both alternatives eliminate negative bounds through non-negative support. However, upper-tail Cov95 improves only from 0.4941 to 0.6445 (Tobit 0.5454), well below 0.95. Q95 and 1.0 twCRPS improve by only about 2.8\% and 1.9\%. Although BG has lower overall CRPS than Tobit, their high-threshold block intervals include zero. We retain the adverse observed-subset CRPS diagnostics, which favour Gaussian, but do not use those outcome-conditioned scores to rank complete forecast distributions.
++
++The exact-zero setting includes the archived numerical tolerance. A seed-42 exploration preceded expansion to five seeds, but no verifiable prespecification record exists; dry 0 did not minimize validation or test CRPS. Dry 0.001 has five seeds and dry 0.01 only seed 42. Tobit is more sensitive to this choice. Missing same-definition Tobit sensitivity full intervals are explicitly unavailable, rather than replaced with historical approximate-score intervals.
++
++Formal CRPS and its paired intervals use the archived full numerical-integral scores. Independent closed-form validation agrees to four decimals, with maximum per-seed difference $4.31615\times10^{-5}$~mm\,h$^{-1}$; we do not call the original integration closed-form or exact. The paired non-circular block procedure uses block 28, 5,000 replicates and seed 42, after averaging five per-case scores. It retains 3,948 positions rather than truncating to 3,939. All intervals are pointwise and unadjusted; seed-$t$ and test-sample uncertainty remain separate. Raw NLL values are not used for comparisons between continuous and mixed likelihoods on different training scales.
++
++Section~\ref{manuscript-sec:probabilistic_output} defines the alternatives, Section~\ref{manuscript-sec:experimental_setup} defines the scores and resampling, and Section~\ref{manuscript-sec:r2m6_likelihood_results} reports the results. Table~\ref{manuscript-tab:probabilistic_results}, Part A1 preserves the original Gaussian-model scores, Part A2 separately adds existing q16 interval reruns, and Part B gives q11 likelihood reruns. Supplementary Tables~\ref{supp-stab:r2m6_q16_intervals}--\ref{supp-stab:r2m6_conditional_history} supply per-seed, pairwise, weighted-score and sensitivity evidence. Discussion, Abstract, contributions and Conclusion now state both the improvement and the unresolved upper-tail deficit; no benefit is extrapolated to other networks or the rolling-origin periods.}
++
++\ManuscriptChange{Sections~\ref{manuscript-sec:probabilistic_output},~\ref{manuscript-sec:experimental_setup} and~\ref{manuscript-sec:r2m6_likelihood_results}; Table~\ref{manuscript-tab:probabilistic_results} Parts A1/A2/B; Supplementary Tables~\ref{supp-stab:r2m6_q16_intervals}--\ref{supp-stab:r2m6_conditional_history}; Abstract, contributions, Discussion and Conclusion. Final page and line numbers pending.}
++
++\EvidenceBox{Matched backbone and changed training scales}{
++\RevisedExcerpt{The likelihood comparison reused the Probabilistic BiLSTM-Attention backbone: one bidirectional LSTM layer with 64 units, dropout 0.2 and additive temporal attention. Inputs, chronological partitions, five seeds (42, 123, 7, 2024, 99), Adam settings, batch size 32, 30-epoch cap and validation-loss early stopping (patience 10) were matched. Gaussian training used standardized targets, whereas Tobit and Bernoulli--Gamma training used precipitation in mm. Output heads, likelihood losses and target scales therefore changed together; this was not a strict single-factor experiment in which only the output distribution changed. These established probability families are alternatives within one tested network, not new forecasting methods.}
++}
++
++\EvidenceBox{Exploratory dry definition}{
++\RevisedExcerpt{The main alternative-likelihood setting used dry $=0$, meaning exact-zero precipitation after the archived $10^{-6}$~mm\,h$^{-1}$ numerical-zero tolerance; every positive ERA5 target above that numerical tolerance entered the positive component. A seed-42 exploration of dry $=0$, 0.001 and 0.01 preceded expansion to the other seeds. No verifiable prespecification record was identified, and dry $=0$ did not give the best validation or test CRPS for either alternative distribution. Dry $=0.001$ has five seeds, whereas dry $=0.01$ has only seed 42. This exploration is disclosed rather than represented as an independent, prespecified choice.}
++}
++
++\EvidenceBox{Formal full-score definition}{
++\RevisedExcerpt{For the likelihood reruns, full CRPS and threshold-weighted CRPS were evaluated from the predictive CDF on all 3,939 test targets. The formal full scores use the archived numerical-integration column, not the historical 199-quantile approximation; Gaussian integration was over $[-4,8]$~mm\,h$^{-1}$ and the non-negative families over $[0,8]$~mm\,h$^{-1}$. Independent closed-form calculations differed from the full scores by at most $4.31615\times10^{-5}$~mm\,h$^{-1}$ per seed and gave the same four-decimal model means. The integration scores are not described as closed-form or mathematically exact. Conditioning a score on observed wet or upper-tail cases is retained only as a diagnostic, not as a proper criterion for ranking the full predictive distribution.}
++}
++
++\EvidenceBox{Intervals, Brier event and NLL boundary}{
++\RevisedExcerpt{For Brier scores, the archived wet-event code used $y>0.1$~mm\,h$^{-1}$. No test target equalled 0.1, so this event set equals $y\geq0.1$ on these 3,939 targets (854 events); this equivalence is not assumed for other datasets. Q95 remained training-derived. Coverage and mean widths were reported for central 90\% and 95\% intervals using saved quantiles; Width90 is the mean of $q_{0.95}-q_{0.05}$ and is not Width95. Negative-bound frequency is the proportion of lower 95\% bounds below zero. Raw NLL values were not used to rank continuous Gaussian densities against mixed discrete--continuous likelihoods, particularly across the different training scales.}
++}
++
++\EvidenceBox{Actual 3,948-position paired block procedure}{
++\RevisedExcerpt{The likelihood comparison used paired non-circular moving blocks of 28 six-hourly samples, 5,000 replicates and resampling seed 42. The five per-case scores were averaged before applying the same resampled indices to each compared model; predictions were not averaged before scoring. Each replicate retained 141 complete blocks, giving 3,948 positions, without truncating to the original 3,939 targets. This implementation differs from a length-$n$ bootstrap and changes tail-block contributions; non-circular sampling also weights endpoints differently. Pointwise 95\% percentile intervals were not adjusted for multiple comparisons. Paired seed-$t$ intervals (five seeds, four degrees of freedom) describe training variability separately from test-sample block intervals; neither interval combines both sources of uncertainty. Only intervals matched to the archived full scores are used for full CRPS.}
++}
++
++\EvidenceBox{Likelihood rerun results}{
++\RevisedExcerpt{In the matched likelihood reruns, full CRPS was 0.0961 for Gaussian, 0.0847 for Tobit and 0.0773~mm\,h$^{-1}$ for Bernoulli--Gamma. Relative to Gaussian, Bernoulli--Gamma reduced full CRPS by approximately 19.6\%, IS95 by 29\% and Width95 by 32\%; overall Cov95 remained similar (0.9565 versus 0.9560). Both non-negative likelihoods eliminated negative bounds by construction. Bernoulli--Gamma increased upper-tail Cov95 from 0.4941 to 0.6445, still far below 0.95; Tobit gave 0.5454. The observed upper-tail reliability deficit was therefore reduced but not resolved.}
++}
++
++\EvidenceBox{Residual upper-tail and adverse conditional diagnostics}{
++\RevisedExcerpt{Bernoulli--Gamma reduced the Q95 and 1.0~mm\,h$^{-1}$ threshold-weighted CRPS by only about 2.8\% and 1.9\%, respectively, on all test cases. Its full CRPS was lower than Tobit under both paired uncertainty summaries, but their high-threshold block intervals included zero despite seed-$t$ intervals excluding zero. The historical observed-wet and upper-tail conditional CRPS diagnostics instead ranked Bernoulli--Gamma worse than Gaussian; these outcome-conditioned diagnostics are not proper scores for the full predictive distribution. We retain this adverse result separately from the full/twCRPS comparison.}
++}
++
++\EvidenceBox{Sensitivity and missing matched intervals}{
++\RevisedExcerpt{Tobit was more sensitive to the explored dry definitions than Bernoulli--Gamma. The dry $=0.001$ five-seed full scores are retained alongside the main setting; a matching Tobit dry-0.001 minus dry-0 full block interval was not saved and is not inferred from approximate-CRPS intervals. The dry $=0.01$ result is only a historical seed-42 exploration, not a five-seed robustness result. Historical validation CRPS did not favour dry $=0$ for either family.}
++}
++
++\EvidenceBox{Interpretation of the likelihood comparison}{
++\RevisedExcerpt{An alternative precipitation-appropriate likelihood improved overall probabilistic skill and eliminated negative prediction bounds by construction, but substantial upper-tail undercoverage remained. The comparison does not isolate the likelihood family from changes in output parameterization, loss and training-target scale. It supports the tested Bernoulli--Gamma formulation within this backbone, not a general claim that it improves every architecture or rare-event diagnostic.}
++}
++
++\EvidenceBox{Scope and uncertainty limitations}{
++\RevisedExcerpt{The alternative-likelihood evidence is limited to one Probabilistic BiLSTM-Attention backbone and the original chronological test period. Target scales differed between Gaussian and the non-negative likelihoods, the dry definition lacks a verifiable prespecification record, and the dry-0.01 check has only one seed. No rolling-origin Bernoulli--Gamma test was performed; these results cannot be transferred to the 12-year Gaussian-model evaluation. The retained 3,948-position block implementation and pointwise intervals limit uncertainty interpretation. Better overall scores and non-negative support did not eliminate systematic upper-tail undercoverage.}
++}
+ 
+ % Review ID: R2 M7
+ \Needspace{5\baselineskip}
+--- a/sn-bibliography.bib
++++ b/sn-bibliography.bib
+@@ -1176,3 +1176,29 @@
+   url = {https://confluence.ecmwf.int/spaces/CKB/pages/76414402/ERA5+data+documentation},
+   note = {Updated 8 September 2026; accessed 14 November 2026}
+ }
++
++% R2-M6 original method/scoring references; publisher metadata verified.
++@article{tobin1958limited,
++ author={Tobin, James},
++ title={Estimation of Relationships for Limited Dependent Variables},
++ journal={Econometrica}, year={1958}, volume={26}, number={1}, pages={24--36},
++ doi={10.2307/1907382}
++}
++@article{cannon2008bernoulli,
++ author={Cannon, Alex J.},
++ title={Probabilistic Multisite Precipitation Downscaling by an Expanded {Bernoulli--Gamma} Density Network},
++ journal={Journal of Hydrometeorology}, year={2008}, volume={9}, number={6}, pages={1284--1300},
++ doi={10.1175/2008JHM960.1}
++}
++@article{gneiting2007proper,
++ author={Gneiting, Tilmann and Raftery, Adrian E.},
++ title={Strictly Proper Scoring Rules, Prediction, and Estimation},
++ journal={Journal of the American Statistical Association}, year={2007}, volume={102}, number={477}, pages={359--378},
++ doi={10.1198/016214506000001437}
++}
++@article{gneiting2011weighted,
++ author={Gneiting, Tilmann and Ranjan, Roopesh},
++ title={Comparing Density Forecasts Using Threshold- and Quantile-Weighted Scoring Rules},
++ journal={Journal of Business \& Economic Statistics}, year={2011}, volume={29}, number={3}, pages={411--422},
++ doi={10.1198/jbes.2010.08110}
++}
+--- a/FINAL_REVISION_CHECKLIST.md
++++ b/FINAL_REVISION_CHECKLIST.md
+@@ -454,3 +454,14 @@
+ - 三PDF、数值索引、范围保护、patch和Git回执见results/r2m5_integration/；最终页码行号留待全文定稿统一补注。
+ 
+ R2-M5关闭回执：必要证据归档提交`130870a604db0bae1110ede4e3fb23576c351d8b`已推送origin/main；GitHub固定提交回读24/24文件Git blob与本地一致。正文/统计/PDF及82段摘录全部通过。仅R2-M5完成，共享任务06/28中R3、R2 Minor1、R4保留。
++
++
++### R2-M6：正式整合和PDF核验通过，待必要Git归档远程核验后关闭（2026-11-14）
++
++- 任务11的原审稿引用纠正为heavy rainfall，与Word和comment原文一致。仅R2-M6回复更新；其他回复原文保持。
++- §3.3.3新增Tobit/Bernoulli–Gamma定义、NLL、CDF/quantile及参数化；§3.4新增评分/数值积分和实际3948项非循环moving28/5000/42实现；§4.4.1新增完整结果及不利诊断。Abstract/Contributions/Discussion/Limitations/Conclusion同步边界。
++- 当前Table5（原概率表label不变）：A1保留原Gaussian五种子NLL/CRPS/Cov95数值；A2为另组q16/q14区间reruns；B为q11的Gaussian/Tobit/BG。Table4仍为已关闭R1-M2强基线，未改。原规划Table4A/B不强制覆盖现编号。
++- Supplementary自动S39–S46对应stab:r2m6系列，覆盖94行新数据；685个转录条目逐值验证，主表B27项指标独立匹配；原A1的18个均值/SD标量保持。S1–S38及R2-M5结果保持。
++- 正式full积分CRPS/匹配CI不与199分位混用；S45/S46仅明确标记为历史选择/条件诊断。Tobit(.001)没有匹配full block区间，不挪用；dry.01只有seed42。无可核实事先指定，dry0不是验证/测试CRPS最佳。数值零容差1e-6说明保留。
++- 92段EvidenceBox摘录核验通过（原82保护、新10逐字），Response红、证据和位置蓝；新正文/表/caption红。
++- 三PDF按顺序编译并100%相关页检查；新表编号/位置见results/r2m6_integration/LOCATIONS.json。未训练、重绘或改变原实验输出；任务05/06/12/16/30等共享待办保留，未开始R2-M7。最终页码/行号待全稿定稿。
+--- a/SUPPLEMENTARY_TABLE_REGISTRY.md
++++ b/SUPPLEMENTARY_TABLE_REGISTRY.md
+@@ -66,3 +66,19 @@
+ | S36 | `stab:r2m5_pairs_wet` | 37 |
+ | S37 | `stab:r2m5_block_sensitivity` | 39 |
+ | S38 | `stab:r2m5_coverage` | 40 |
++
++
++### R2-M6追加（实际aux，2026-11-14）
++
++S1–S38保留；按caption自动编号，不占用旧S22。
++
++| 当前编号 | 永久label | 起始页 |
++|---|---|---|
++| S39 | `stab:r2m6_q16_intervals` | 42 |
++| S40 | `stab:r2m6_seed_scores` | 43 |
++| S41 | `stab:r2m6_seed_intervals` | 44 |
++| S42 | `stab:r2m6_score_pairs` | 45 |
++| S43 | `stab:r2m6_other_pairs` | 46 |
++| S44 | `stab:r2m6_dry001` | 47 |
++| S45 | `stab:r2m6_dry_history` | 48 |
++| S46 | `stab:r2m6_conditional_history` | 49 |
+--- a/ESI_审稿意见分类_严重程度排序_35项.md
++++ b/ESI_审稿意见分类_严重程度排序_35项.md
+@@ -2218,10 +2218,13 @@
+ 
+ ### 11. 高斯概率分布不适合降水
+ 
++> **R2-M6正式整合核验（2026-11-14）：** 本轮正文、概率结果表的A1/A2/B、自动Supplementary S39–S46及回复已整合，数值/公式/引用/PDF核验通过；待本轮必要Git归档远程核验后才正式关闭。原审稿措辞已按Word/comment纠正为“heavy rainfall”。原“Table4A/B”为规划名，现实际概率表为自动Table5（tab:probabilistic_results），已关闭的强基线Table4不变。下文历史计划、旧行号和S22等旧计划号不作为当前排版依据。任务05、06、12、16、30等共享待办保留，未开始R2-M7。
++
++
+ #### 1 问题
+ 
+ **R2 M6**：
+-> "The Gaussian assumption produces negative prediction bounds and severe undercoverage for upper-tail precipitation. Please evaluate a precipitation-appropriate distribution or provide stronger justification for the chosen formulation."
++> "The Gaussian assumption produces negative prediction bounds and severe undercoverage for heavy rainfall. Please evaluate a precipitation-appropriate distribution or provide stronger justification for the chosen formulation."
+ 
+ 拆成三个子问题：
+ - (a) 区间下界为负；
+@@ -2231,7 +2234,7 @@
+ #### 2 答案
+ 
+ **实验设计**
+-- 在同一个 Probabilistic BiLSTM-Attention 结构上做受控比较，数据、划分、输入、超参数和训练预算都相同，只换输出分布。三种分布都用极大似然训练，各跑 5 个种子：
++- 在同一个 Probabilistic BiLSTM-Attention 结构上做受控比较，网络主体、数据、划分、输入、五种子和训练预算匹配；输出层、似然损失与目标尺度同时改变，不是严格只替换分布的单因素比较。三种分布都用极大似然训练，各跑 5 个种子：
+   - 高斯（原稿的设定，用同一流程重跑）；
+   - Bernoulli–Gamma：先给有雨概率，再用 Gamma 分布描述雨量（Williams 1998；Cannon 2008）；
+   - Tobit（在 0 处删失的高斯），作为第三种对照。
+@@ -2241,7 +2244,7 @@
+ **结论**
+ 1. **(a) 负下界完全消除**：高斯的负下界比例是 1.00，两种替代分布都是 0。
+ 2. **概率预测质量有实质提高**：Bernoulli–Gamma 相对高斯
+-   - CRPS 降低 19.6%（精确 CRPS，0.0961 → 0.0773），而且种子间波动小得多（标准差 0.0031 → 0.0005）；95% 区间评分降低 29%；
++   - CRPS 降低 19.6%（归档full数值积分CRPS，另有闭式独立验证，0.0961 → 0.0773），而且种子间波动小得多（标准差 0.0031 → 0.0005）；95% 区间评分降低 29%；
+    - 区间窄了 32%，总体覆盖率不变（0.956）；
+    - 有雨事件的 Brier 分数降低 25%；
+    - 以上 5 个种子全部更好，自助法区间都不含 0。

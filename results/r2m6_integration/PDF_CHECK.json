@@ -1,0 +1,29 @@
+{
+  "Supplementary": {
+    "pages": 49,
+    "md5": "984efab5631d56b25d0e1175d59ea811",
+    "sha256": "9c7b8323b8e3f06b86e855fa8a8c360ec37e83df5382ccf00c289760f6f591bf",
+    "no_undefined_or_duplicate_references": true,
+    "overfull_hbox": 0,
+    "vbox_warnings": []
+  },
+  "manuscript": {
+    "pages": 92,
+    "md5": "0dc98f52bce7afa39ead6dd91fe68ccd",
+    "sha256": "8d32d71c3efdb3226eb0d126f2a045297c4a25cb7f88a1902bd0b68c614438b5",
+    "no_undefined_or_duplicate_references": true,
+    "overfull_hbox": 0,
+    "vbox_warnings": [
+      "1.41457pt too high"
+    ],
+    "probabilistic_table_page": 60
+  },
+  "Response letter": {
+    "pages": 66,
+    "md5": "79877f5242a9a622105b67e20320225d",
+    "sha256": "a825a81851b3e183f619e66c7387fe376e05a930eadb05797b5ad4c6e2d07c24",
+    "no_undefined_or_duplicate_references": true,
+    "overfull_hbox": 0,
+    "vbox_warnings": []
+  }
+}

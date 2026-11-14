@@ -1,0 +1,53 @@
+{
+  "records": [
+    {
+      "key": "tobin1958limited",
+      "author": "James Tobin",
+      "year": 1958,
+      "title": "Estimation of Relationships for Limited Dependent Variables",
+      "journal": "Econometrica",
+      "volume": "26",
+      "issue": "1",
+      "pages": "24–36",
+      "doi": "10.2307/1907382",
+      "verified_primary_url": "https://www.jstor.org/stable/i332610"
+    },
+    {
+      "key": "cannon2008bernoulli",
+      "author": "Alex J. Cannon",
+      "year": 2008,
+      "title": "Probabilistic Multisite Precipitation Downscaling by an Expanded Bernoulli–Gamma Density Network",
+      "journal": "Journal of Hydrometeorology",
+      "volume": "9",
+      "issue": "6",
+      "pages": "1284–1300",
+      "doi": "10.1175/2008JHM960.1",
+      "verified_primary_url": "https://journals.ametsoc.org/view/journals/hydr/9/6/2008jhm960_1.xml"
+    },
+    {
+      "key": "gneiting2007proper",
+      "authors": "Tilmann Gneiting; Adrian E. Raftery",
+      "year": 2007,
+      "title": "Strictly Proper Scoring Rules, Prediction, and Estimation",
+      "journal": "Journal of the American Statistical Association",
+      "volume": "102",
+      "issue": "477",
+      "pages": "359–378",
+      "doi": "10.1198/016214506000001437",
+      "verified_primary_url": "https://www.tandfonline.com/doi/permissions/10.1198/016214506000001437?scroll=top"
+    },
+    {
+      "key": "gneiting2011weighted",
+      "authors": "Tilmann Gneiting; Roopesh Ranjan",
+      "year": 2011,
+      "title": "Comparing Density Forecasts Using Threshold- and Quantile-Weighted Scoring Rules",
+      "journal": "Journal of Business & Economic Statistics",
+      "volume": "29",
+      "issue": "3",
+      "pages": "411–422",
+      "doi": "10.1198/jbes.2010.08110",
+      "verified_primary_url": "https://www.tandfonline.com/doi/abs/10.1198/jbes.2010.08110"
+    }
+  ],
+  "notes": "Primary publisher search extracts/issue pages used where direct requests returned403. Print-volume years retained, not later platform online dates; no metadata guessed."
+}

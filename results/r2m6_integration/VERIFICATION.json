@@ -1,0 +1,17 @@
+{
+  "numeric_transcriptions_verified": 685,
+  "new_supplementary_tables": 8,
+  "supplementary_data_rows_verified": 94,
+  "all_evidence_excerpts_verified": 92,
+  "previous_excerpts_preserved": 82,
+  "new_excerpts_exact": 10,
+  "old_table_A1_numeric_tabular_identical": true,
+  "all_other_main_tables_and_figures_identical": true,
+  "all_supplementary_S1_S38_source_unchanged": true,
+  "all_other_response_sections_unchanged": true,
+  "original_review_heavy_rainfall_correct": true,
+  "independent_numeric_column_checks_all_new_tables": true,
+  "main_B_metrics_checked": 27,
+  "main_A2_metrics_checked": 9,
+  "original_A1_scalars_preserved": 18
+}
