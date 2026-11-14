@@ -51,3 +51,7 @@
 - `Supplementary.tex:1056`
 - `Supplementary.tex:1080`
 - `Response letter.tex:651`
+
+## 最终链接颜色复核
+
+最后PDF检查发现Springer跨文档引用默认呈青色，已仅在本轮新增正文段落及图注的局部分组中补filecolor/urlcolor=red。正文S28–S31引用经PDF文字颜色提取确认为RGB FF0000；回复Response仍红、EvidenceBox仍蓝。复核证明此追加修改只涉及颜色命令，正文科学文字、所有数值、Supplementary和回复信源文件均与前次核验一致；按既定顺序编译通过。通过追加提交归档，不改写前一提交历史。

@@ -24,11 +24,11 @@
  
 -Accuracy, precision, POD, and F1 score were calculated using their standard definitions. The threshold analysis was performed directly on the saved test predictions and therefore did not require additional model training.
 +\textcolor{red}{The threshold analyses use saved test predictions and do not require additional model training.}
-+{\color{red}\hypersetup{linkcolor=red,citecolor=red}
++{\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
 +The additional fixed-rule comparison includes $\tau=0.5$~mm\,h$^{-1}$; no validation-optimized result was saved for that intensity threshold. For the optimized rule, each model's validation predictions define candidates at 300 equally spaced quantile probabilities from 0.5 to 0.999; duplicate candidate values are removed. The candidate maximizing validation CSI is retained, with the first (lowest) candidate retained in a tie, and applied unchanged to test predictions. POD is $\mathrm{TP}/(\mathrm{TP}+\mathrm{FN})$; FAR is the false alarm ratio $\mathrm{FP}/(\mathrm{TP}+\mathrm{FP})$, not the false positive rate $\mathrm{FP}/(\mathrm{FP}+\mathrm{TN})$. ROC AUC measures the probability that a randomly chosen observed event receives a higher continuous forecast score than a non-event, with half credit for ties. CSI and AUC are dimensionless. FAR is undefined when no events are forecast and is displayed as a dash, whereas CSI is zero when there are observed events but no forecasts.
 +\par}
 +
-+{\color{red}\hypersetup{linkcolor=red,citecolor=red}
++{\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
 +For event-score differences from Persistence, the saved single-run analyses use paired circular-block bootstrap resampling of all 3,939 test targets: block length 28 consecutive six-hourly samples (seven days), 2,000 replicates and random seed 42. Blocks wrap around the end of the series, and the same resampled indices are used for all models and intensity thresholds. Differences are model minus Persistence, with pointwise 95\% percentile intervals; they are not adjusted for multiple comparisons and are not simultaneous confidence intervals. Decision cutoffs are held fixed during resampling. Confidence intervals are conditional on the selected decision thresholds and do not account for uncertainty in threshold selection. Separate q05g results summarize five seed-level scores for each Attention architecture; their paired intervals instead evaluate the five-seed mean prediction, with a new cutoff selected on its validation mean prediction and then held fixed. They are neither single-run intervals nor intervals for the mean of five seed-level scores.
 +\par}
 +
@@ -42,24 +42,24 @@
 -% TODO[R1-M1-TABLES]: Tables S9/S9c/S9d, including fixed and validation-selected cutoffs, event counts and run identities; not yet inserted.
 +% R2-M4: saved-event evidence is now in the labelled supplementary tables below.
 +
-+{\color{red}\hypersetup{linkcolor=red,citecolor=red}
++{\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
 +Figure~\ref{fig:r2m4_event_csi} distinguishes two decision rules on the saved single-run forecasts. Under the fixed rule, Persistence CSI was 0.139 at Q95, 0.076 at Q97.5, 0.166 at 0.5~mm\,h$^{-1}$ and 0.058 at 1.0~mm\,h$^{-1}$; the six learning models reached at most 0.071, 0.009, 0.113 and 0.011, respectively. All 24 learning-model differences at these four thresholds were negative, with each pointwise 95\% paired circular-block interval below zero; this is not a multiple-comparison-adjusted claim (Supplementary Table~\ref{supp-stab:r2m4_fixed_events}). For example, XGBoost minus Persistence was $-0.0681$ at Q95, with interval $[-0.1131,-0.0219]$, and $-0.0533$ at 0.5~mm\,h$^{-1}$, with interval $[-0.0949,-0.0118]$. At 1.0~mm\,h$^{-1}$, the corresponding difference was $-0.0472$ with interval $[-0.0791,-0.0194]$. Several zero CSI values occurred because the predicted means never reached the fixed threshold and no event forecast was issued, not because missing scores were replaced by zero.
 +\par}
 +
 +\begin{figure}[!htbp]
 +\centering
 +\includegraphics{r2M4_event_csi_comparison.pdf}
-+\begingroup\color{red}\hypersetup{linkcolor=red}
++\begingroup\color{red}\hypersetup{linkcolor=red,filecolor=red,urlcolor=red}
 +\caption{CSI from the original saved single-run predictions on 3,939 test targets for six learning models and Persistence. Panel A uses the fixed rule $c_\tau=\tau$; Panel B uses each model's validation-CSI-maximizing cutoff from a 300-quantile-probability candidate grid, then freezes it for testing. Points are discrete evaluated thresholds, horizontally offset by model for visibility; no continuous threshold response is implied. Q90, Q95 and Q97.5 are derived from 18,404 windowed training targets; the actual intensities are printed in mm\,h$^{-1}$. Fixed-rule zeros are retained. Panel B has no 0.5 result, so that category contains no points, rather than zeros. These are neither five-seed means nor uncertainty intervals; paired pointwise intervals are reported in Supplementary Tables~\ref{supp-stab:r2m4_fixed_events} and~\ref{supp-stab:r2m4_tuned_events}.}
 +\label{fig:r2m4_event_csi}
 +\endgroup
 +\end{figure}
 +
-+{\color{red}\hypersetup{linkcolor=red,citecolor=red}
++{\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
 +Validation-selected cutoffs changed the operating rule rather than removing the fixed-rule failure. At Q95, five learning models had higher CSI than the separately optimized Persistence forecast; the Transformer's difference was negative and its interval included zero. At 1.0~mm\,h$^{-1}$, four learning-model intervals supported higher CSI, while those for Transformer and Probabilistic BiLSTM-Attention included zero. Learning-model FAR was approximately 0.73--0.80 at Q95 and 0.86--0.92 at 1.0~mm\,h$^{-1}$. Their AUCs were approximately 0.80--0.85 and 0.82--0.87, respectively, compared with Persistence values of 0.747 and 0.732. This ranking information does not establish an advantage in fixed-rule CSI. Supplementary Table~\ref{supp-stab:r2m4_tuned_events} reports the selected cutoffs, full scores and paired intervals. Confidence intervals are conditional on the selected decision thresholds and do not account for uncertainty in threshold selection.
 +\par}
 +
-+{\color{red}\hypersetup{linkcolor=red,citecolor=red}
++{\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
 +The separate five-seed diagnostics must not be read as repetitions of those single saved runs. At Q95, validation-tuned seed-level mean CSI was $0.1911\pm0.0053$ for BiLSTM-Attention and $0.1874\pm0.0082$ for BU-LSTM-Attention (mean $\pm$ seed SD). Under the fixed Q95 rule, BU-LSTM-Attention issued no event forecast in any of its five runs; at 1.0~mm\,h$^{-1}$, neither architecture issued an event forecast in any run. Supplementary Table~\ref{supp-stab:r2m4_seed_scores} separates seed summaries from the five-seed mean-prediction paired comparisons in Table~\ref{supp-stab:r2m4_ensemble_events}. The latter use validation cutoffs selected for the mean predictions, not averages of seed-specific cutoffs or scores.
 +\par}
 +
@@ -71,7 +71,7 @@
  \par}
  
 +
-+{\color{red}\hypersetup{linkcolor=red,citecolor=red}
++{\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
 +The fixed-rule event results sharpen the limitation identified by the amplitude diagnostics. Compressed forecast amplitudes led to few or no forecasts at high fixed thresholds and consequently many misses. This is an observed property of these saved predictions, not a causal diagnosis of why their amplitudes are compressed. Persistence achieved higher fixed-rule CSI at the four thresholds examined above, yet its own FAR ranged from approximately 0.72 to 0.89, so it was not a reliable high-intensity warning system either. Higher learning-model AUC indicates useful event ranking but does not guarantee skill when the predicted mean is compared directly with the physical intensity threshold. Validation-selected cutoffs constitute another operating rule and recover some detections at a large false-alarm cost; their intervals omit selection uncertainty. The existing experiments do not identify whether predictors, event scarcity, loss functions or other modelling choices are the dominant cause of amplitude compression.
 +\par}
 +
@@ -84,7 +84,7 @@
  Matched five-seed SHAP and ablation analyses in BiLSTM-Attention and BU-LSTM-Attention distinguished regime-dependent model reliance from incremental predictive utility. Upper-tail attribution was largest for mntpr, while individually removing precipitation-related predictors had small or unstable effects. Removing the precipitation group nevertheless worsened BiLSTM-Attention performance, supporting overlapping predictive information. The weaker stability of BU-LSTM-Attention ablations and the fixed-background setting preclude a universal importance ranking or causal interpretation.
 +
 +
-+{\color{red}\hypersetup{linkcolor=red,citecolor=red}
++{\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
 +In the saved single-run comparison, all six learning models had lower CSI than Persistence under fixed Q95, Q97.5, 0.5 and 1.0~mm\,h$^{-1}$ decision rules. Better AUC and improvements obtained with validation-selected cutoffs do not remove this limitation, particularly given the associated high false-alarm ratios.
 +\par}
  

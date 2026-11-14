@@ -57,5 +57,33 @@
     "stab:r2m4_ensemble_events": "S31"
   },
   "no_new_horizontal_overflow_or_undefined_refs": true,
-  "prior_images_unchanged": true
+  "prior_images_unchanged": true,
+  "new_manuscript_external_refs_red_verified": [
+    {
+      "page": 50,
+      "text": "(Supplementary Table S28). For example, XGBoost minus Persistence was",
+      "rgb": "FF0000"
+    },
+    {
+      "page": 51,
+      "text": "wise intervals are reported in Supplementary Tables S28 and S29.",
+      "rgb": "FF0000"
+    },
+    {
+      "page": 52,
+      "text": "in fixed-rule CSI. Supplementary Table S29 reports the selected cutoffs, full",
+      "rgb": "FF0000"
+    },
+    {
+      "page": 52,
+      "text": "ture issued an event forecast in any run. Supplementary Table S30 separates",
+      "rgb": "FF0000"
+    },
+    {
+      "page": 52,
+      "text": "Table S31. The latter use validation cutoffs selected for the mean predictions,",
+      "rgb": "FF0000"
+    }
+  ],
+  "followup_change_color_only": true
 }
