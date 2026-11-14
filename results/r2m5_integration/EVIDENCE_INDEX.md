@@ -46,3 +46,7 @@
 F4并非与ORIG测试目标完全相同。ORIG验证至2019-04-20 12:00，测试自2019-04-22 06:00；F4从2019-01-02 12:00开始，其早2019部分亦参与过原开发。各折拟合/预处理隔离不等于模型设计独立。F4prime13完整训练年也不是主研究原70/15/15划分。
 
 q06的CLIM是逐折训练拟合的month×hour参考，不是Table3原overall-mean climatology；history上尾用common Q95=.574048，coverage/event用各配置Q95。q06 Bootstrap逐种子RMSE差取均值，不是平均预测后计分；非循环完整末块，5000重复，与主比较circular10000不同。
+
+## 必要归档核验与关闭
+
+本轮证据/增量patch归档提交`130870a604db0bae1110ede4e3fb23576c351d8b`已推送origin/main；GitHub API固定提交逐文件回读24/24 Git blob与本地一致，见REMOTE_RECEIPT.json。全部必要检查通过后正式关闭R2-M5，保留共享待办。原始q06固定证据仍为395234e，不改写。

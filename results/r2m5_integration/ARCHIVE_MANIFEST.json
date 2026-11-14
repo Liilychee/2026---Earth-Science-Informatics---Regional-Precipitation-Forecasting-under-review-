@@ -1,15 +1,15 @@
 [
   {
     "path": "results/r2m5_integration/REPORT.md",
-    "md5": "e8da486e3b4a1cefd1fa6b48ceb7db36",
-    "sha256": "7690779ba2aad3d377f57964d8a864eb29c687f32765c13a75e2f38df843fdf6",
-    "bytes": 5766
+    "md5": "04d8666c1a7e156767d46733212e77bc",
+    "sha256": "dfe6a908be6265220a2fe22bf2e0f1ac2fae45c4118e3497cf2986f1e34c0f9c",
+    "bytes": 5866
   },
   {
     "path": "results/r2m5_integration/EVIDENCE_INDEX.md",
-    "md5": "9cf3341e273d61b7f9ca32605f9ea6c2",
-    "sha256": "c90d5b91a435ccf879de54444a17a61d34737e8b1b3012a1145ee77ea21bdc9a",
-    "bytes": 4084
+    "md5": "05c3b5d41c1812963ad8e2c733eb8c86",
+    "sha256": "8e8ed10f5991827eb4846887899c267997e4bf649da3b570cdba65d2ba1cf4f3",
+    "bytes": 4430
   },
   {
     "path": "results/r2m5_integration/GIT_SCOPE.md",
@@ -19,9 +19,9 @@
   },
   {
     "path": "results/r2m5_integration/STATUS.md",
-    "md5": "4828c4329381c10e270afd57107e53fc",
-    "sha256": "4683c3cad057cedafa7db89d55bb9c21bb641c7bc05db2e794ce613df9a041d2",
-    "bytes": 338
+    "md5": "20a64519503fe4ed19022c21ec3c1f09",
+    "sha256": "f5b91b243a810e333426f46290e05a55744013d3688b509ca5ae2038d3100a23",
+    "bytes": 551
   },
   {
     "path": "results/r2m5_integration/SOURCE_INDEX.json",
@@ -97,15 +97,15 @@
   },
   {
     "path": "results/r2m5_integration/DOCUMENT_HASHES.json",
-    "md5": "f45a9ad6bf80259035d74d54a3e41d7a",
-    "sha256": "3449492f2b30b38ed0e56c8803f33a1f7e80a933a27c7d29318dff518ec72132",
+    "md5": "2e96d66325ca733b6471c964315db81f",
+    "sha256": "dd41042ce58a0e967801c9fccc24dfda0add90f0aff79d0b5a450b0952925c98",
     "bytes": 1975
   },
   {
     "path": "results/r2m5_integration/r2m5_integration.patch",
-    "md5": "e279cae390696f2382e3385c9d0e81d4",
-    "sha256": "310201251efba7a515c6a4bb152c288f34e993eac8a079cde0ff1deecbd05231",
-    "bytes": 72613
+    "md5": "44085cffc3d09e120848057c700157b0",
+    "sha256": "6b385ae0d1da6a908eebb14068b2e7cebb90fb22bc48bf5f43875c7817f2f26d",
+    "bytes": 72969
   },
   {
     "path": "results/r2m5_integration/check_integration.py",
@@ -136,5 +136,11 @@
     "md5": "afe5afbf82537b7bb9cfe5647addacc8",
     "sha256": "6790de97829fc088e3552312ace7d4989cdc4c5ad50b2af3417a3be10eb82ec6",
     "bytes": 216
+  },
+  {
+    "path": "results/r2m5_integration/REMOTE_RECEIPT.json",
+    "md5": "69082ddf43e5b303ede781addc6a5e09",
+    "sha256": "1c5235d02f9af0f0410743c569c36b77e6ead86555c7df20b58d703f28e62383",
+    "bytes": 6000
   }
 ]

@@ -1,0 +1,156 @@
+{
+  "evidence_archive_commit": "130870a604db0bae1110ede4e3fb23576c351d8b",
+  "remote": "origin/main",
+  "repository": "Liilychee/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-",
+  "verification": "GitHub fetch_commit + fetch_file at fixed commit; all 24 blob SHA-1 identities match local bytes",
+  "files_verified": 24,
+  "all_match": true,
+  "checks": [
+    {
+      "path": "results/r2m5_integration/REPORT.md",
+      "expected_blob": "08cff742e2607b84d07fe077e010bd4f6a142049",
+      "remote_blob": "08cff742e2607b84d07fe077e010bd4f6a142049",
+      "match": true
+    },
+    {
+      "path": "results/r2m5_integration/EVIDENCE_INDEX.md",
+      "expected_blob": "6e7be11c7ddb9e6f0b3f0dba403e484cb764ae56",
+      "remote_blob": "6e7be11c7ddb9e6f0b3f0dba403e484cb764ae56",
+      "match": true
+    },
+    {
+      "path": "results/r2m5_integration/GIT_SCOPE.md",
+      "expected_blob": "4a4f0cbe6f09a06b1764a151cb936c7896876aae",
+      "remote_blob": "4a4f0cbe6f09a06b1764a151cb936c7896876aae",
+      "match": true
+    },
+    {
+      "path": "results/r2m5_integration/STATUS.md",
+      "expected_blob": "10aba6d1a26c2f82b1b0068d0ff14d2fd64fcc72",
+      "remote_blob": "10aba6d1a26c2f82b1b0068d0ff14d2fd64fcc72",
+      "match": true
+    },
+    {
+      "path": "results/r2m5_integration/SOURCE_INDEX.json",
+      "expected_blob": "4fc04bc52185a96b2ab9d647315ff70d9eeeb928",
+      "remote_blob": "4fc04bc52185a96b2ab9d647315ff70d9eeeb928",
+      "match": true
+    },
+    {
+      "path": "results/r2m5_integration/CELL_INDEX.json",
+      "expected_blob": "21537415596c227d49ea9dcf463eba0bf55914e0",
+      "remote_blob": "21537415596c227d49ea9dcf463eba0bf55914e0",
+      "match": true
+    },
+    {
+      "path": "results/r2m5_integration/CELL_INDEX.csv",
+      "expected_blob": "b9327fecd6cbfb30f1a71f54d95d2ef1eea52c21",
+      "remote_blob": "b9327fecd6cbfb30f1a71f54d95d2ef1eea52c21",
+      "match": true
+    },
+    {
+      "path": "results/r2m5_integration/ROW_INDEX.json",
+      "expected_blob": "c718c24e76e24ff9eb3e010d61fef832234a09b0",
+      "remote_blob": "c718c24e76e24ff9eb3e010d61fef832234a09b0",
+      "match": true
+    },
+    {
+      "path": "results/r2m5_integration/PREDICTION_ALIGNMENT.json",
+      "expected_blob": "038416889d1f2da3fa72cbb50534b1663ca108b3",
+      "remote_blob": "038416889d1f2da3fa72cbb50534b1663ca108b3",
+      "match": true
+    },
+    {
+      "path": "results/r2m5_integration/MAIN_BOOTSTRAP_SOURCE.json",
+      "expected_blob": "cdb57a4581af961ee24c7e68e569cbce7d9f3c69",
+      "remote_blob": "cdb57a4581af961ee24c7e68e569cbce7d9f3c69",
+      "match": true
+    },
+    {
+      "path": "results/r2m5_integration/REVIEW_SOURCE.json",
+      "expected_blob": "9f83bf937814e169d8023be96a43360621a5f54c",
+      "remote_blob": "9f83bf937814e169d8023be96a43360621a5f54c",
+      "match": true
+    },
+    {
+      "path": "results/r2m5_integration/FINAL_EXCERPTS.json",
+      "expected_blob": "03c8b1761749fb1ba1fca2ccafb10c15945fa8f8",
+      "remote_blob": "03c8b1761749fb1ba1fca2ccafb10c15945fa8f8",
+      "match": true
+    },
+    {
+      "path": "results/r2m5_integration/VERIFICATION.json",
+      "expected_blob": "d86222c03d589294f78efb2e8f40a38463e98001",
+      "remote_blob": "d86222c03d589294f78efb2e8f40a38463e98001",
+      "match": true
+    },
+    {
+      "path": "results/r2m5_integration/PDF_CHECK.json",
+      "expected_blob": "9ef334dea40a061f5eee25ba97d94d815871d17d",
+      "remote_blob": "9ef334dea40a061f5eee25ba97d94d815871d17d",
+      "match": true
+    },
+    {
+      "path": "results/r2m5_integration/COLOR_CHECK.json",
+      "expected_blob": "85ebfbe1c3a58e53953ddb20ad99d2d5394df896",
+      "remote_blob": "85ebfbe1c3a58e53953ddb20ad99d2d5394df896",
+      "match": true
+    },
+    {
+      "path": "results/r2m5_integration/LOCATIONS.json",
+      "expected_blob": "97e23e5c9926dc9455dd1e617e7bd14b32ef1b8d",
+      "remote_blob": "97e23e5c9926dc9455dd1e617e7bd14b32ef1b8d",
+      "match": true
+    },
+    {
+      "path": "results/r2m5_integration/DOCUMENT_HASHES.json",
+      "expected_blob": "69555fa704e078feae190f3ec4397fe1693dd198",
+      "remote_blob": "69555fa704e078feae190f3ec4397fe1693dd198",
+      "match": true
+    },
+    {
+      "path": "results/r2m5_integration/r2m5_integration.patch",
+      "expected_blob": "ace1129a167cb29c2664c6c637937f896f4a54ba",
+      "remote_blob": "ace1129a167cb29c2664c6c637937f896f4a54ba",
+      "match": true
+    },
+    {
+      "path": "results/r2m5_integration/check_integration.py",
+      "expected_blob": "7ac8d93d4a7d11a72f1479710c055f0c232c59e6",
+      "remote_blob": "7ac8d93d4a7d11a72f1479710c055f0c232c59e6",
+      "match": true
+    },
+    {
+      "path": "results/r2m5_integration/check_pdf.py",
+      "expected_blob": "971703605358de63aa187a802f7eb4746f5e92c4",
+      "remote_blob": "971703605358de63aa187a802f7eb4746f5e92c4",
+      "match": true
+    },
+    {
+      "path": "results/r2m5_integration/compile_Supplementary.txt",
+      "expected_blob": "72842cf99fe7a336f9f03012cf38a2d6ef8d3875",
+      "remote_blob": "72842cf99fe7a336f9f03012cf38a2d6ef8d3875",
+      "match": true
+    },
+    {
+      "path": "results/r2m5_integration/compile_manuscript.txt",
+      "expected_blob": "139e369e3ec8160d9d19c8229ef48f0ff849ff2c",
+      "remote_blob": "139e369e3ec8160d9d19c8229ef48f0ff849ff2c",
+      "match": true
+    },
+    {
+      "path": "results/r2m5_integration/compile_Response_letter.txt",
+      "expected_blob": "39d46169ec7496947baf6f3bda4611dccbe0abb5",
+      "remote_blob": "39d46169ec7496947baf6f3bda4611dccbe0abb5",
+      "match": true
+    },
+    {
+      "path": "results/r2m5_integration/ARCHIVE_MANIFEST.json",
+      "expected_blob": "214ebfa6cccfe882d04a531f7cf34e9ec9635ce1",
+      "remote_blob": "214ebfa6cccfe882d04a531f7cf34e9ec9635ce1",
+      "match": true
+    }
+  ],
+  "decision": "Necessary archive verified; R2-M5 closure authorized by completed source, numerical, document, excerpt and PDF checks. Shared tasks remain open.",
+  "date": "2026-11-14"
+}
