@@ -29,7 +29,7 @@
 +
 +Here $\phi$ and $\Phi$ denote the standard-normal density and CDF, and $G_{a,b}$ and $f_\Gamma$ denote the Gamma CDF and density with shape $a$ and scale $b$. For $0<q<1$, Tobit quantiles are $\max(0,\mu+s\Phi^{-1}(q))$. BG quantiles equal zero for $q\leq1-p$ and $G_{a,b}^{-1}((q-1+p)/p)$ otherwise. For a positive threshold $u$, exceedance probabilities are $1-\Phi((u-\mu)/s)$ for Tobit and $p[1-G_{a,b}(u)]$ for BG; their predictive means are $\mu\Phi(\mu/s)+s\phi(\mu/s)$ and $pab$, respectively. The Gaussian rerun transforms its standardized mean and standard deviation back to precipitation units before scoring.
 +
-+The main alternative-likelihood setting used dry $=0$, meaning exact-zero precipitation after the archived $10^{-6}$~mm\,h$^{-1}$ numerical-zero tolerance; every positive ERA5 target above that numerical tolerance entered the positive component. A seed-42 exploration of dry $=0$, 0.001 and 0.01 preceded expansion to the other seeds. No verifiable prespecification record was identified, and dry $=0$ did not give the best validation or test CRPS for either alternative distribution. Dry $=0.001$ has five seeds, whereas dry $=0.01$ has only seed 42. This exploration is disclosed rather than represented as an independent, prespecified choice.
++The main alternative-likelihood setting used dry $=0$, meaning exact-zero precipitation after the archived $10^{-6}$~mm\,h$^{-1}$ numerical-zero tolerance; every positive ERA5 target above that numerical tolerance entered the positive component. A seed-42 exploration of dry $=0$, 0.001 and 0.01 preceded expansion to the other seeds. No verifiable prespecification record was identified, and dry $=0$ did not give the best historical 199-quantile validation or test CRPS for either alternative distribution. Dry $=0.001$ has five seeds, whereas dry $=0.01$ has only seed 42. This exploration is disclosed rather than represented as an independent, prespecified choice.
 +\par}
  \subsubsection{Model Configurations}
  \label{sec:model_configurations}
@@ -55,7 +55,7 @@
 +
 +For Brier scores, the archived wet-event code used $y>0.1$~mm\,h$^{-1}$. No test target equalled 0.1, so this event set equals $y\geq0.1$ on these 3,939 targets (854 events); this equivalence is not assumed for other datasets. Q95 remained training-derived. Coverage and mean widths were reported for central 90\% and 95\% intervals using saved quantiles; Width90 is the mean of $q_{0.95}-q_{0.05}$ and is not Width95. Negative-bound frequency is the proportion of lower 95\% bounds below zero. Raw NLL values were not used to rank continuous Gaussian densities against mixed discrete--continuous likelihoods, particularly across the different training scales.
 +
-+The likelihood comparison used paired non-circular moving blocks of 28 six-hourly samples, 5,000 replicates and resampling seed 42. The five per-case scores were averaged before applying the same resampled indices to each compared model; predictions were not averaged before scoring. Each replicate retained 141 complete blocks, giving 3,948 positions, without truncating to the original 3,939 targets. This implementation differs from a length-$n$ bootstrap and changes tail-block contributions; non-circular sampling also weights endpoints differently. Pointwise 95\% percentile intervals were not adjusted for multiple comparisons. Paired seed-$t$ intervals (five seeds, four degrees of freedom) describe training variability separately from test-sample block intervals; neither interval combines both sources of uncertainty. Only intervals matched to the archived full scores are used for full CRPS.
++The likelihood comparison used paired non-circular moving blocks of 28 six-hourly samples, 5,000 replicates and resampling seed 42. The five per-case scores were averaged before applying the same resampled indices to each compared model; predictions were not averaged before scoring. Each replicate retained 141 complete blocks, giving 3,948 positions, without truncating to the original 3,939 targets. This implementation differs from a length-$n$ bootstrap and changes the contribution of the final sampled block; non-circular sampling also weights endpoints differently. Pointwise 95\% percentile intervals were not adjusted for multiple comparisons. Paired seed-$t$ intervals (five seeds, four degrees of freedom) describe training variability separately from test-sample block intervals; neither interval combines both sources of uncertainty. Only intervals matched to the archived full scores are used for full CRPS.
 +\par}
  A paired block-bootstrap analysis was additionally conducted to assess the uncertainty in the RMSE difference between BiLSTM-Attention and XGBoost while retaining the paired structure of their test predictions and accounting for temporal dependence in the time series. The comparison was performed separately for the complete test set, legacy wet observations ($>0$~mm\,h$^{-1}$), revised wet observations ($\geq0.1$~mm\,h$^{-1}$), and the upper-tail subset defined by the training-derived Q95 threshold. The same resampled observations were used for both models within each bootstrap replicate, and the RMSE difference was defined as
  \par}
@@ -431,7 +431,7 @@
 +
 +Bernoulli--Gamma improves full CRPS from 0.0961 to 0.0773~mm\,h$^{-1}$ (about 19.6\%), with matched full-score seed-$t$ and temporal block intervals supporting lower scores. Tobit gives 0.0847. Bernoulli--Gamma also reduces IS95 by about 29\% and Width95 by 32\%, while overall Cov95 is similar (0.9565 versus 0.9560). Both alternatives eliminate negative bounds through non-negative support. However, upper-tail Cov95 improves only from 0.4941 to 0.6445 (Tobit 0.5454), well below 0.95. Q95 and 1.0 twCRPS improve by only about 2.8\% and 1.9\%. Although BG has lower overall CRPS than Tobit, their high-threshold block intervals include zero. We retain the adverse observed-subset CRPS diagnostics, which favour Gaussian, but do not use those outcome-conditioned scores to rank complete forecast distributions.
 +
-+The exact-zero setting includes the archived numerical tolerance. A seed-42 exploration preceded expansion to five seeds, but no verifiable prespecification record exists; dry 0 did not minimize validation or test CRPS. Dry 0.001 has five seeds and dry 0.01 only seed 42. Tobit is more sensitive to this choice. Missing same-definition Tobit sensitivity full intervals are explicitly unavailable, rather than replaced with historical approximate-score intervals.
++The exact-zero setting includes the archived numerical tolerance. A seed-42 exploration preceded expansion to five seeds, but no verifiable prespecification record exists; dry 0 did not minimize validation or test CRPS in those historical 199-quantile diagnostics. Dry 0.001 has five seeds and dry 0.01 only seed 42. Tobit is more sensitive to this choice. Missing same-definition Tobit sensitivity full intervals are explicitly unavailable, rather than replaced with historical approximate-score intervals.
 +
 +Formal CRPS and its paired intervals use the archived full numerical-integral scores. Independent closed-form validation agrees to four decimals, with maximum per-seed difference $4.31615\times10^{-5}$~mm\,h$^{-1}$; we do not call the original integration closed-form or exact. The paired non-circular block procedure uses block 28, 5,000 replicates and seed 42, after averaging five per-case scores. It retains 3,948 positions rather than truncating to 3,939. All intervals are pointwise and unadjusted; seed-$t$ and test-sample uncertainty remain separate. Raw NLL values are not used for comparisons between continuous and mixed likelihoods on different training scales.
 +
@@ -444,7 +444,7 @@
 +}
 +
 +\EvidenceBox{Exploratory dry definition}{
-+\RevisedExcerpt{The main alternative-likelihood setting used dry $=0$, meaning exact-zero precipitation after the archived $10^{-6}$~mm\,h$^{-1}$ numerical-zero tolerance; every positive ERA5 target above that numerical tolerance entered the positive component. A seed-42 exploration of dry $=0$, 0.001 and 0.01 preceded expansion to the other seeds. No verifiable prespecification record was identified, and dry $=0$ did not give the best validation or test CRPS for either alternative distribution. Dry $=0.001$ has five seeds, whereas dry $=0.01$ has only seed 42. This exploration is disclosed rather than represented as an independent, prespecified choice.}
++\RevisedExcerpt{The main alternative-likelihood setting used dry $=0$, meaning exact-zero precipitation after the archived $10^{-6}$~mm\,h$^{-1}$ numerical-zero tolerance; every positive ERA5 target above that numerical tolerance entered the positive component. A seed-42 exploration of dry $=0$, 0.001 and 0.01 preceded expansion to the other seeds. No verifiable prespecification record was identified, and dry $=0$ did not give the best historical 199-quantile validation or test CRPS for either alternative distribution. Dry $=0.001$ has five seeds, whereas dry $=0.01$ has only seed 42. This exploration is disclosed rather than represented as an independent, prespecified choice.}
 +}
 +
 +\EvidenceBox{Formal full-score definition}{
@@ -456,7 +456,7 @@
 +}
 +
 +\EvidenceBox{Actual 3,948-position paired block procedure}{
-+\RevisedExcerpt{The likelihood comparison used paired non-circular moving blocks of 28 six-hourly samples, 5,000 replicates and resampling seed 42. The five per-case scores were averaged before applying the same resampled indices to each compared model; predictions were not averaged before scoring. Each replicate retained 141 complete blocks, giving 3,948 positions, without truncating to the original 3,939 targets. This implementation differs from a length-$n$ bootstrap and changes tail-block contributions; non-circular sampling also weights endpoints differently. Pointwise 95\% percentile intervals were not adjusted for multiple comparisons. Paired seed-$t$ intervals (five seeds, four degrees of freedom) describe training variability separately from test-sample block intervals; neither interval combines both sources of uncertainty. Only intervals matched to the archived full scores are used for full CRPS.}
++\RevisedExcerpt{The likelihood comparison used paired non-circular moving blocks of 28 six-hourly samples, 5,000 replicates and resampling seed 42. The five per-case scores were averaged before applying the same resampled indices to each compared model; predictions were not averaged before scoring. Each replicate retained 141 complete blocks, giving 3,948 positions, without truncating to the original 3,939 targets. This implementation differs from a length-$n$ bootstrap and changes the contribution of the final sampled block; non-circular sampling also weights endpoints differently. Pointwise 95\% percentile intervals were not adjusted for multiple comparisons. Paired seed-$t$ intervals (five seeds, four degrees of freedom) describe training variability separately from test-sample block intervals; neither interval combines both sources of uncertainty. Only intervals matched to the archived full scores are used for full CRPS.}
 +}
 +
 +\EvidenceBox{Likelihood rerun results}{
@@ -515,13 +515,13 @@
 +}
 --- a/FINAL_REVISION_CHECKLIST.md
 +++ b/FINAL_REVISION_CHECKLIST.md
-@@ -454,3 +454,14 @@
+@@ -454,3 +454,16 @@
  - 三PDF、数值索引、范围保护、patch和Git回执见results/r2m5_integration/；最终页码行号留待全文定稿统一补注。
  
  R2-M5关闭回执：必要证据归档提交`130870a604db0bae1110ede4e3fb23576c351d8b`已推送origin/main；GitHub固定提交回读24/24文件Git blob与本地一致。正文/统计/PDF及82段摘录全部通过。仅R2-M5完成，共享任务06/28中R3、R2 Minor1、R4保留。
 +
 +
-+### R2-M6：正式整合和PDF核验通过，待必要Git归档远程核验后关闭（2026-11-14）
++### R2-M6：正式整合、数值、PDF及Git核验通过，正式关闭（2026-11-14）
 +
 +- 任务11的原审稿引用纠正为heavy rainfall，与Word和comment原文一致。仅R2-M6回复更新；其他回复原文保持。
 +- §3.3.3新增Tobit/Bernoulli–Gamma定义、NLL、CDF/quantile及参数化；§3.4新增评分/数值积分和实际3948项非循环moving28/5000/42实现；§4.4.1新增完整结果及不利诊断。Abstract/Contributions/Discussion/Limitations/Conclusion同步边界。
@@ -530,6 +530,8 @@
 +- 正式full积分CRPS/匹配CI不与199分位混用；S45/S46仅明确标记为历史选择/条件诊断。Tobit(.001)没有匹配full block区间，不挪用；dry.01只有seed42。无可核实事先指定，dry0不是验证/测试CRPS最佳。数值零容差1e-6说明保留。
 +- 92段EvidenceBox摘录核验通过（原82保护、新10逐字），Response红、证据和位置蓝；新正文/表/caption红。
 +- 三PDF按顺序编译并100%相关页检查；新表编号/位置见results/r2m6_integration/LOCATIONS.json。未训练、重绘或改变原实验输出；任务05/06/12/16/30等共享待办保留，未开始R2-M7。最终页码/行号待全稿定稿。
++
++R2-M6关闭回执：必要整合归档`86fdcfb3ef039be31c685346510b5a3ab023a463`已推送origin/main，GitHub回读24/24文件blob一致；最终稿明确dry选择属于历史199分位诊断，未改任何正式数值。仅任务11的R2-M6范围完成，任务05/06/12/16/30等共享待办保持。
 --- a/SUPPLEMENTARY_TABLE_REGISTRY.md
 +++ b/SUPPLEMENTARY_TABLE_REGISTRY.md
 @@ -66,3 +66,19 @@
@@ -558,7 +560,7 @@
  
  ### 11. 高斯概率分布不适合降水
  
-+> **R2-M6正式整合核验（2026-11-14）：** 本轮正文、概率结果表的A1/A2/B、自动Supplementary S39–S46及回复已整合，数值/公式/引用/PDF核验通过；待本轮必要Git归档远程核验后才正式关闭。原审稿措辞已按Word/comment纠正为“heavy rainfall”。原“Table4A/B”为规划名，现实际概率表为自动Table5（tab:probabilistic_results），已关闭的强基线Table4不变。下文历史计划、旧行号和S22等旧计划号不作为当前排版依据。任务05、06、12、16、30等共享待办保留，未开始R2-M7。
++> **R2-M6正式整合核验（2026-11-14）：** 本轮正文、概率结果表A1/A2/B、自动Supplementary S39–S46、回复、数值/公式/引用/PDF核验均通过；必要归档`86fdcfb`已推送origin/main并24/24文件回读一致，R2-M6（任务11本轮范围）正式关闭。原审稿措辞已按Word/comment纠正为“heavy rainfall”。原“Table4A/B”为规划名，现实际概率表为自动Table5（tab:probabilistic_results），已关闭的强基线Table4不变。下文历史计划、旧行号和S22等旧计划号不作为当前排版依据。任务05、06、12、16、30等共享待办保留，未开始R2-M7。
 +
 +
  #### 1 问题

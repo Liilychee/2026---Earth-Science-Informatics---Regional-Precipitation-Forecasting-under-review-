@@ -9,8 +9,8 @@
   },
   "manuscript": {
     "pages": 92,
-    "md5": "0dc98f52bce7afa39ead6dd91fe68ccd",
-    "sha256": "8d32d71c3efdb3226eb0d126f2a045297c4a25cb7f88a1902bd0b68c614438b5",
+    "md5": "234fb3be2c07859af1a8277e06067038",
+    "sha256": "9553e79b02bdb406db21a700c69190dc93908b05f7d8db435aef726dcf20bd1c",
     "no_undefined_or_duplicate_references": true,
     "overfull_hbox": 0,
     "vbox_warnings": [
@@ -20,8 +20,8 @@
   },
   "Response letter": {
     "pages": 66,
-    "md5": "79877f5242a9a622105b67e20320225d",
-    "sha256": "a825a81851b3e183f619e66c7387fe376e05a930eadb05797b5ad4c6e2d07c24",
+    "md5": "9463f649b1ae159bd63d56051e768ead",
+    "sha256": "ad827c8b2195de82a941394b8921033e4958a955fc2e399bcc0b9a8578cbf084",
     "no_undefined_or_duplicate_references": true,
     "overfull_hbox": 0,
     "vbox_warnings": []

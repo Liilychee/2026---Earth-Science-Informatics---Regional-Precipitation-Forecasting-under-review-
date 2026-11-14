@@ -28,3 +28,7 @@ CELL_INDEX.csv/json逐条给出685个数值转录的源文件、原始CSV行号/
 | `sec:r2m6_likelihood_results` | 4.4.1 | 63 |
 
 最终全稿页码/行号尚未写入Response位置说明；此处为当前核验PDF定位。旧R1/R2-M1–M5摘录、S1–S38、其他主表及旧图保持，见VERIFICATION和DOCUMENT_HASHES。
+
+## 归档与关闭
+
+首轮必要整合归档`86fdcfb3ef039be31c685346510b5a3ab023a463`已推送origin/main，24/24固定提交GitHub blob与本地一致（REMOTE_RECEIPT）。最终关闭提交补充历史CRPS措辞、当前PDF哈希和限定任务状态；正式实验数据未改变。原始科学输入仍为d02519c/7923bfe，不改写。

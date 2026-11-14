@@ -1,0 +1,155 @@
+{
+  "archive_commit": "86fdcfb3ef039be31c685346510b5a3ab023a463",
+  "remote": "origin/main",
+  "files_verified": 24,
+  "all_match": true,
+  "verification": "GitHub fixed-commit fetch_file SHA-1 blob identities matched local bytes for all 24 first integration archive files.",
+  "checks": [
+    {
+      "path": "results/r2m6_integration/REPORT.md",
+      "expected_blob": "ab1a3d53fe66cc3a44f6aab4fdc955408da00a86",
+      "remote_blob": "ab1a3d53fe66cc3a44f6aab4fdc955408da00a86",
+      "match": true
+    },
+    {
+      "path": "results/r2m6_integration/EVIDENCE_INDEX.md",
+      "expected_blob": "418177418c4fd3c357b5a4def053f60806739f3e",
+      "remote_blob": "418177418c4fd3c357b5a4def053f60806739f3e",
+      "match": true
+    },
+    {
+      "path": "results/r2m6_integration/GIT_SCOPE.md",
+      "expected_blob": "b666038818ebb648f097027e95b38cb14e1dee23",
+      "remote_blob": "b666038818ebb648f097027e95b38cb14e1dee23",
+      "match": true
+    },
+    {
+      "path": "results/r2m6_integration/STATUS.md",
+      "expected_blob": "170f96fb2702ecaa36d57b2b77968d13849b1327",
+      "remote_blob": "170f96fb2702ecaa36d57b2b77968d13849b1327",
+      "match": true
+    },
+    {
+      "path": "results/r2m6_integration/SOURCE_INDEX.json",
+      "expected_blob": "999849f9e5f0ccf4791fb82fca59bf792db86c4d",
+      "remote_blob": "999849f9e5f0ccf4791fb82fca59bf792db86c4d",
+      "match": true
+    },
+    {
+      "path": "results/r2m6_integration/CELL_INDEX.json",
+      "expected_blob": "73199b13bba9bf7e40115939e0e0f776dec18b1f",
+      "remote_blob": "73199b13bba9bf7e40115939e0e0f776dec18b1f",
+      "match": true
+    },
+    {
+      "path": "results/r2m6_integration/CELL_INDEX.csv",
+      "expected_blob": "d7e75cc836f7a5fffe1ebaf99bfc73153b23ad5e",
+      "remote_blob": "d7e75cc836f7a5fffe1ebaf99bfc73153b23ad5e",
+      "match": true
+    },
+    {
+      "path": "results/r2m6_integration/ROW_INDEX.json",
+      "expected_blob": "5e5766deca12d40c66567eb99bc058f73b8418bf",
+      "remote_blob": "5e5766deca12d40c66567eb99bc058f73b8418bf",
+      "match": true
+    },
+    {
+      "path": "results/r2m6_integration/BIB_VERIFICATION.json",
+      "expected_blob": "bd6e7e412873ce8445a52740c5121fca752a6afa",
+      "remote_blob": "bd6e7e412873ce8445a52740c5121fca752a6afa",
+      "match": true
+    },
+    {
+      "path": "results/r2m6_integration/REVIEW_SOURCE.json",
+      "expected_blob": "3770ac94b11e25d91bcc21157a7c9108f6eb876b",
+      "remote_blob": "3770ac94b11e25d91bcc21157a7c9108f6eb876b",
+      "match": true
+    },
+    {
+      "path": "results/r2m6_integration/FINAL_EXCERPTS.json",
+      "expected_blob": "fdc7a52d50a96aabaf6f3a013e935bb6415dcf15",
+      "remote_blob": "fdc7a52d50a96aabaf6f3a013e935bb6415dcf15",
+      "match": true
+    },
+    {
+      "path": "results/r2m6_integration/ORIGINAL_A_TABULAR.tex",
+      "expected_blob": "585d552aa9fdc984d4db16baf6988a1df9de89b3",
+      "remote_blob": "585d552aa9fdc984d4db16baf6988a1df9de89b3",
+      "match": true
+    },
+    {
+      "path": "results/r2m6_integration/VERIFICATION.json",
+      "expected_blob": "ae3049fa0e8ab7e698882c578f649353932f7f2f",
+      "remote_blob": "ae3049fa0e8ab7e698882c578f649353932f7f2f",
+      "match": true
+    },
+    {
+      "path": "results/r2m6_integration/PDF_CHECK.json",
+      "expected_blob": "9ae4ba4619264da80c4bd559955f77fc7f7ffcab",
+      "remote_blob": "9ae4ba4619264da80c4bd559955f77fc7f7ffcab",
+      "match": true
+    },
+    {
+      "path": "results/r2m6_integration/COLOR_CHECK.json",
+      "expected_blob": "8415190a697e7431d034a3d0c116644089c29fbf",
+      "remote_blob": "8415190a697e7431d034a3d0c116644089c29fbf",
+      "match": true
+    },
+    {
+      "path": "results/r2m6_integration/LOCATIONS.json",
+      "expected_blob": "e072bdd098597ea3e0c0e58fafabcabc6c7fd110",
+      "remote_blob": "e072bdd098597ea3e0c0e58fafabcabc6c7fd110",
+      "match": true
+    },
+    {
+      "path": "results/r2m6_integration/DOCUMENT_HASHES.json",
+      "expected_blob": "fbd045c8da98f3c2445513f823e1372d9227c851",
+      "remote_blob": "fbd045c8da98f3c2445513f823e1372d9227c851",
+      "match": true
+    },
+    {
+      "path": "results/r2m6_integration/r2m6_integration.patch",
+      "expected_blob": "a503191f52a0d5e78e08b8b726f7fa966b6049e0",
+      "remote_blob": "a503191f52a0d5e78e08b8b726f7fa966b6049e0",
+      "match": true
+    },
+    {
+      "path": "results/r2m6_integration/check_integration.py",
+      "expected_blob": "2b24969e7135fcf557bf2244d89db200c4ade893",
+      "remote_blob": "2b24969e7135fcf557bf2244d89db200c4ade893",
+      "match": true
+    },
+    {
+      "path": "results/r2m6_integration/check_pdf.py",
+      "expected_blob": "3bb21d7c7aaad6d9ea3f5ab0f6c7faf34da725a1",
+      "remote_blob": "3bb21d7c7aaad6d9ea3f5ab0f6c7faf34da725a1",
+      "match": true
+    },
+    {
+      "path": "results/r2m6_integration/compile_Supplementary.txt",
+      "expected_blob": "42c279e3c06aed08e903fcac2688712d8a025414",
+      "remote_blob": "42c279e3c06aed08e903fcac2688712d8a025414",
+      "match": true
+    },
+    {
+      "path": "results/r2m6_integration/compile_manuscript.txt",
+      "expected_blob": "e71e9c135324520513fdf551300d17747da3125e",
+      "remote_blob": "e71e9c135324520513fdf551300d17747da3125e",
+      "match": true
+    },
+    {
+      "path": "results/r2m6_integration/compile_Response_letter.txt",
+      "expected_blob": "39d46169ec7496947baf6f3bda4611dccbe0abb5",
+      "remote_blob": "39d46169ec7496947baf6f3bda4611dccbe0abb5",
+      "match": true
+    },
+    {
+      "path": "results/r2m6_integration/ARCHIVE_MANIFEST.json",
+      "expected_blob": "b62b4bd18b137b5f20d30fdc3eba2aee40f2e9b6",
+      "remote_blob": "b62b4bd18b137b5f20d30fdc3eba2aee40f2e9b6",
+      "match": true
+    }
+  ],
+  "date": "2026-11-14",
+  "note": "This is the first integration archive receipt. Final closure commit also carries precise historical-CRPS wording, final PDF hashes, and scoped task status; final remote readback is reported in the final answer."
+}
