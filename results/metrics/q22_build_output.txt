@@ -1,0 +1,36 @@
+read /root/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/era5_hourly_2004_2021/raw/2017_accum.nc  md5 a732d90e48771ba05154b82ac1100fb6
+read /root/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/era5_hourly_2004_2021/raw/2017_maxmin.nc  md5 20f81ed44a22c548d4eab215ae6cdbfd
+read /root/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/era5_hourly_2004_2021/raw/2017_instantA.nc  md5 0bc2c763cf3c473c673c69564905708c
+read /root/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/era5_hourly_2004_2021/raw/2017_instantB.nc  md5 382ccb18ad1acb2a27fc18295caa0411
+read /root/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/era5_hourly_2004_2021/raw/2018_accum.nc  md5 194f228723c849dd4eff9f92449282e4
+read /root/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/era5_hourly_2004_2021/raw/2018_maxmin.nc  md5 c2d95aeb05e749aef6c614ba26677935
+read /root/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/era5_hourly_2004_2021/raw/2018_instantA.nc  md5 0846d9652c3192f18943bf830e0cde16
+read /root/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/era5_hourly_2004_2021/raw/2018_instantB.nc  md5 ae12e1f18602763b448981800740bed1
+read /root/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/era5_hourly_2004_2021/raw/2019_accum.nc  md5 56e485b1a114bc9603584f116cd304fd
+read /root/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/era5_hourly_2004_2021/raw/2019_maxmin.nc  md5 12b9dd784d09f69c455c57d64f56f7a6
+read /root/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/era5_hourly_2004_2021/raw/2019_instantA.nc  md5 3fa50213821ceb858709470ca9664f8d
+read /root/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/era5_hourly_2004_2021/raw/2019_instantB.nc  md5 c69d4080271d2bccfdf27ddd4add59a3
+read /root/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/era5_hourly_2004_2021/raw/2020_accum.nc  md5 01d40d11f0db45d0d65f7ab9f3fdc405
+read /root/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/era5_hourly_2004_2021/raw/2020_maxmin.nc  md5 fa79aa752bfa0a0a1f6a836d5b0f6898
+read /root/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/era5_hourly_2004_2021/raw/2020_instantA.nc  md5 621c1b04fec7eda6770f067a69c03327
+read /root/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/era5_hourly_2004_2021/raw/2020_instantB.nc  md5 3a7f0fb590d899903e4980f0174b7b32
+read /root/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/era5_hourly_2004_2021/raw/2021_accum.nc  md5 661eeca5c625605b661a54770377254a
+read /root/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/era5_hourly_2004_2021/raw/2021_maxmin.nc  md5 e63642998a100a97cd33d8c014e67177
+read /root/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/era5_hourly_2004_2021/raw/2021_instantA.nc  md5 4f2256940f1bc81bec7088187712312d
+read /root/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/era5_hourly_2004_2021/raw/2021_instantB.nc  md5 b7a93a8517cb491c1702d6853787fe17
+hourly box means: 43,824 rows, 2017-01-01 00:00:00 to 2021-12-31 23:00:00, 25 cells, no NaN
+
+reproduction gate: 7,304 stamps at 00/06/12/18 UTC vs dublin_regional_reduced.csv
+var      max|diff|      ref SD      ratio
+tp       1.225e-10   2.792e-04   4.39e-07
+lsp      1.265e-10   2.192e-04   5.77e-07
+mxtpr    5.189e-11   1.209e-04   4.29e-07
+mntpr    3.229e-11   5.559e-05   5.81e-07
+tcc      3.585e-08   3.011e-01   1.19e-07
+v10      1.136e-06   3.798e+00   2.99e-07
+sp       6.781e-02   1.218e+03   5.57e-05
+d2m      1.429e-04   4.351e+00   3.28e-05
+event label tp >= 0.1 mm/h identical at 7304/7304 stamps
+event label tp >= 0.574 mm/h identical at 7304/7304 stamps
+
+Saved data/q22/q22_hourly_boxmean_2017_2021.csv  md5 44aa4baa89219c914dbea75c08df6ca4
