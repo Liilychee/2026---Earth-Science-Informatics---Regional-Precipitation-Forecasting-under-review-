@@ -1,0 +1,17 @@
+regional series (26300, 14); training times 18410 (2004-01-01 00:00:00 to 2016-08-07 06:00:00); pairs with target 18409
+check: point estimates and 13-candidate top-7 frequencies reproduce q09_selection_table.csv exactly
+
+===== 11 candidates =====
+point-estimate top 7: ['lsp', 'mntpr', 'mxtpr', 'tcc', 'sp', 'v10', 'd2m']  (equal to original seven: True)
+rank 7 d2m |rho| 0.149; rank 8 ssr |rho| 0.091; gap 0.058
+bootstrap: top 7 exactly equal to the original seven in 99.7% of 2000 resamples
+frequency of entering the top 7: v10 1.000, sp 1.000, mxtpr 1.000, mntpr 1.000, tcc 1.000, lsp 1.000, d2m 0.997, ssr 0.003, u10 0.001, t2m 0.000, e 0.000
+
+===== 13 candidates =====
+point-estimate top 7: ['lsp', 'mntpr', 'mxtpr', 'tcc', 'cp', 'sp', 'v10']  (equal to original seven: False)
+rank 7 v10 |rho| 0.251; rank 8 ws |rho| 0.238; gap 0.013
+bootstrap: top 7 exactly equal to the original seven in 0.0% of 2000 resamples
+frequency of entering the top 7: sp 1.000, mxtpr 1.000, mntpr 1.000, tcc 1.000, lsp 1.000, cp 1.000, v10 0.797, ws 0.203, u10 0.000, d2m 0.000, t2m 0.000, e 0.000, ssr 0.000
+
+saved /root/autodl-tmp/results/metrics/q09_stability_check.csv
+CHECK COMPLETE
