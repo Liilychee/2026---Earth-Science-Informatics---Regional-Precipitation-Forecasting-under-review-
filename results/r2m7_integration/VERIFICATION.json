@@ -1,0 +1,17 @@
+{
+  "protected_file_hashes": 112,
+  "old_excerpts_unchanged": 92,
+  "total_excerpts_matched": 97,
+  "new_excerpts": 5,
+  "all_original_manuscript_bytes_preserved": true,
+  "all_original_tables_figures_unchanged": true,
+  "supplementary_S1_S46_unchanged": true,
+  "other_responses_unchanged": true,
+  "table_rows": 26,
+  "table_fields": 208,
+  "numeric_fields": 206,
+  "missing_coordinate_markers": 2,
+  "table": "S47",
+  "figure": "S2",
+  "git_mutations": false
+}

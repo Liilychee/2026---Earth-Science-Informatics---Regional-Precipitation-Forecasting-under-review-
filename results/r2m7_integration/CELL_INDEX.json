@@ -1,0 +1,1666 @@
+[
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 2,
+    "field": "Latitude",
+    "raw": "",
+    "display": "---",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 2,
+    "field": "Longitude",
+    "raw": "",
+    "display": "---",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 2,
+    "field": "Q90",
+    "raw": "0.295784",
+    "display": "0.295784",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 2,
+    "field": "Q95",
+    "raw": "0.574048",
+    "display": "0.574048",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 2,
+    "field": "Q99",
+    "raw": "1.440246",
+    "display": "1.440246",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 2,
+    "field": "Q99.9",
+    "raw": "2.864223",
+    "display": "2.864223",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 2,
+    "field": "Max",
+    "raw": "4.134541",
+    "display": "4.134541",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 2,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.204032",
+    "display": "0.204032",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 3,
+    "field": "Latitude",
+    "raw": "52.750000",
+    "display": "52.75",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 3,
+    "field": "Longitude",
+    "raw": "-6.750000",
+    "display": "-6.75",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 3,
+    "field": "Q90",
+    "raw": "0.240326",
+    "display": "0.240326",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 3,
+    "field": "Q95",
+    "raw": "0.609803",
+    "display": "0.609803",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 3,
+    "field": "Q99",
+    "raw": "1.657720",
+    "display": "1.657720",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 3,
+    "field": "Q99.9",
+    "raw": "3.417669",
+    "display": "3.417669",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 3,
+    "field": "Max",
+    "raw": "7.112026",
+    "display": "7.112026",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 3,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.167681",
+    "display": "0.167681",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 4,
+    "field": "Latitude",
+    "raw": "52.750000",
+    "display": "52.75",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 4,
+    "field": "Longitude",
+    "raw": "-6.500000",
+    "display": "-6.50",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 4,
+    "field": "Q90",
+    "raw": "0.264835",
+    "display": "0.264835",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 4,
+    "field": "Q95",
+    "raw": "0.604558",
+    "display": "0.604558",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 4,
+    "field": "Q99",
+    "raw": "1.643138",
+    "display": "1.643138",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 4,
+    "field": "Q99.9",
+    "raw": "3.091128",
+    "display": "3.091128",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 4,
+    "field": "Max",
+    "raw": "6.231785",
+    "display": "6.231785",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 4,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.180178",
+    "display": "0.180178",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 5,
+    "field": "Latitude",
+    "raw": "52.750000",
+    "display": "52.75",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 5,
+    "field": "Longitude",
+    "raw": "-6.250000",
+    "display": "-6.25",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 5,
+    "field": "Q90",
+    "raw": "0.247955",
+    "display": "0.247955",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 5,
+    "field": "Q95",
+    "raw": "0.582957",
+    "display": "0.582957",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 5,
+    "field": "Q99",
+    "raw": "1.649799",
+    "display": "1.649799",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 5,
+    "field": "Q99.9",
+    "raw": "3.253787",
+    "display": "3.253787",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 5,
+    "field": "Max",
+    "raw": "5.281925",
+    "display": "5.281925",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 5,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.178222",
+    "display": "0.178222",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 6,
+    "field": "Latitude",
+    "raw": "52.750000",
+    "display": "52.75",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 6,
+    "field": "Longitude",
+    "raw": "-6.000000",
+    "display": "-6.00",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 6,
+    "field": "Q90",
+    "raw": "0.286913",
+    "display": "0.286913",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 6,
+    "field": "Q95",
+    "raw": "0.635076",
+    "display": "0.635076",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 6,
+    "field": "Q99",
+    "raw": "1.717958",
+    "display": "1.717958",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 6,
+    "field": "Q99.9",
+    "raw": "3.498042",
+    "display": "3.498042",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 6,
+    "field": "Max",
+    "raw": "5.852222",
+    "display": "5.852222",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 6,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.181048",
+    "display": "0.181048",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 7,
+    "field": "Latitude",
+    "raw": "52.750000",
+    "display": "52.75",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 7,
+    "field": "Longitude",
+    "raw": "-5.750000",
+    "display": "-5.75",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 7,
+    "field": "Q90",
+    "raw": "0.284195",
+    "display": "0.284195",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 7,
+    "field": "Q95",
+    "raw": "0.667429",
+    "display": "0.667429",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 7,
+    "field": "Q99",
+    "raw": "1.743131",
+    "display": "1.743131",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 7,
+    "field": "Q99.9",
+    "raw": "3.532622",
+    "display": "3.532622",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 7,
+    "field": "Max",
+    "raw": "7.034779",
+    "display": "7.034779",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 7,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.172300",
+    "display": "0.172300",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 8,
+    "field": "Latitude",
+    "raw": "53.000000",
+    "display": "53.00",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 8,
+    "field": "Longitude",
+    "raw": "-6.750000",
+    "display": "-6.75",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 8,
+    "field": "Q90",
+    "raw": "0.255919",
+    "display": "0.255919",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 8,
+    "field": "Q95",
+    "raw": "0.593042",
+    "display": "0.593042",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 8,
+    "field": "Q99",
+    "raw": "1.613545",
+    "display": "1.613545",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 8,
+    "field": "Q99.9",
+    "raw": "3.257900",
+    "display": "3.257900",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 8,
+    "field": "Max",
+    "raw": "6.028652",
+    "display": "6.028652",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 8,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.176429",
+    "display": "0.176429",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 9,
+    "field": "Latitude",
+    "raw": "53.000000",
+    "display": "53.00",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 9,
+    "field": "Longitude",
+    "raw": "-6.500000",
+    "display": "-6.50",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 9,
+    "field": "Q90",
+    "raw": "0.291824",
+    "display": "0.291824",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 9,
+    "field": "Q95",
+    "raw": "0.631809",
+    "display": "0.631809",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 9,
+    "field": "Q99",
+    "raw": "1.667976",
+    "display": "1.667976",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 9,
+    "field": "Q99.9",
+    "raw": "3.206879",
+    "display": "3.206879",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 9,
+    "field": "Max",
+    "raw": "6.185055",
+    "display": "6.185055",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 9,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.190719",
+    "display": "0.190719",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 10,
+    "field": "Latitude",
+    "raw": "53.000000",
+    "display": "53.00",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 10,
+    "field": "Longitude",
+    "raw": "-6.250000",
+    "display": "-6.25",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 10,
+    "field": "Q90",
+    "raw": "0.299454",
+    "display": "0.299454",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 10,
+    "field": "Q95",
+    "raw": "0.671387",
+    "display": "0.671387",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 10,
+    "field": "Q99",
+    "raw": "1.789975",
+    "display": "1.789975",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 10,
+    "field": "Q99.9",
+    "raw": "3.378903",
+    "display": "3.378903",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 10,
+    "field": "Max",
+    "raw": "6.670475",
+    "display": "6.670475",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 10,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.191154",
+    "display": "0.191154",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 11,
+    "field": "Latitude",
+    "raw": "53.000000",
+    "display": "53.00",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 11,
+    "field": "Longitude",
+    "raw": "-6.000000",
+    "display": "-6.00",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 11,
+    "field": "Q90",
+    "raw": "0.323296",
+    "display": "0.323296",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 11,
+    "field": "Q95",
+    "raw": "0.670433",
+    "display": "0.670433",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 11,
+    "field": "Q99",
+    "raw": "1.736164",
+    "display": "1.736164",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 11,
+    "field": "Q99.9",
+    "raw": "3.326842",
+    "display": "3.326842",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 11,
+    "field": "Max",
+    "raw": "5.815506",
+    "display": "5.815506",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 11,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.191154",
+    "display": "0.191154",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 12,
+    "field": "Latitude",
+    "raw": "53.000000",
+    "display": "53.00",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 12,
+    "field": "Longitude",
+    "raw": "-5.750000",
+    "display": "-5.75",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 12,
+    "field": "Q90",
+    "raw": "0.310755",
+    "display": "0.310755",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 12,
+    "field": "Q95",
+    "raw": "0.687599",
+    "display": "0.687599",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 12,
+    "field": "Q99",
+    "raw": "1.750226",
+    "display": "1.750226",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 12,
+    "field": "Q99.9",
+    "raw": "3.361360",
+    "display": "3.361360",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 12,
+    "field": "Max",
+    "raw": "6.842136",
+    "display": "6.842136",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 12,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.181537",
+    "display": "0.181537",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 13,
+    "field": "Latitude",
+    "raw": "53.250000",
+    "display": "53.25",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 13,
+    "field": "Longitude",
+    "raw": "-6.750000",
+    "display": "-6.75",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 13,
+    "field": "Q90",
+    "raw": "0.235271",
+    "display": "0.235271",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 13,
+    "field": "Q95",
+    "raw": "0.544071",
+    "display": "0.544071",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 13,
+    "field": "Q99",
+    "raw": "1.622911",
+    "display": "1.622911",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 13,
+    "field": "Q99.9",
+    "raw": "3.284468",
+    "display": "3.284468",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 13,
+    "field": "Max",
+    "raw": "6.192684",
+    "display": "6.192684",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 13,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.166268",
+    "display": "0.166268",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 14,
+    "field": "Latitude",
+    "raw": "53.250000",
+    "display": "53.25",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 14,
+    "field": "Longitude",
+    "raw": "-6.500000",
+    "display": "-6.50",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 14,
+    "field": "Q90",
+    "raw": "0.261784",
+    "display": "0.261784",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 14,
+    "field": "Q95",
+    "raw": "0.592160",
+    "display": "0.592160",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 14,
+    "field": "Q99",
+    "raw": "1.555877",
+    "display": "1.555877",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 14,
+    "field": "Q99.9",
+    "raw": "3.032492",
+    "display": "3.032492",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 14,
+    "field": "Max",
+    "raw": "6.223202",
+    "display": "6.223202",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 14,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.179798",
+    "display": "0.179798",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 15,
+    "field": "Latitude",
+    "raw": "53.250000",
+    "display": "53.25",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 15,
+    "field": "Longitude",
+    "raw": "-6.250000",
+    "display": "-6.25",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 15,
+    "field": "Q90",
+    "raw": "0.271797",
+    "display": "0.271797",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 15,
+    "field": "Q95",
+    "raw": "0.618935",
+    "display": "0.618935",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 15,
+    "field": "Q99",
+    "raw": "1.666017",
+    "display": "1.666017",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 15,
+    "field": "Q99.9",
+    "raw": "3.241111",
+    "display": "3.241111",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 15,
+    "field": "Max",
+    "raw": "6.101131",
+    "display": "6.101131",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 15,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.178059",
+    "display": "0.178059",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 16,
+    "field": "Latitude",
+    "raw": "53.250000",
+    "display": "53.25",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 16,
+    "field": "Longitude",
+    "raw": "-6.000000",
+    "display": "-6.00",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 16,
+    "field": "Q90",
+    "raw": "0.307560",
+    "display": "0.307560",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 16,
+    "field": "Q95",
+    "raw": "0.650406",
+    "display": "0.650406",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 16,
+    "field": "Q99",
+    "raw": "1.663818",
+    "display": "1.663818",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 16,
+    "field": "Q99.9",
+    "raw": "3.361630",
+    "display": "3.361630",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 16,
+    "field": "Max",
+    "raw": "6.072044",
+    "display": "6.072044",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 16,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.181645",
+    "display": "0.181645",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 17,
+    "field": "Latitude",
+    "raw": "53.250000",
+    "display": "53.25",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 17,
+    "field": "Longitude",
+    "raw": "-5.750000",
+    "display": "-5.75",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 17,
+    "field": "Q90",
+    "raw": "0.303745",
+    "display": "0.303745",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 17,
+    "field": "Q95",
+    "raw": "0.676084",
+    "display": "0.676084",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 17,
+    "field": "Q99",
+    "raw": "1.697049",
+    "display": "1.697049",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 17,
+    "field": "Q99.9",
+    "raw": "3.348905",
+    "display": "3.348905",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 17,
+    "field": "Max",
+    "raw": "6.173134",
+    "display": "6.173134",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 17,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.178548",
+    "display": "0.178548",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 18,
+    "field": "Latitude",
+    "raw": "53.500000",
+    "display": "53.50",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 18,
+    "field": "Longitude",
+    "raw": "-6.750000",
+    "display": "-6.75",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 18,
+    "field": "Q90",
+    "raw": "0.228882",
+    "display": "0.228882",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 18,
+    "field": "Q95",
+    "raw": "0.552845",
+    "display": "0.552845",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 18,
+    "field": "Q99",
+    "raw": "1.580138",
+    "display": "1.580138",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 18,
+    "field": "Q99.9",
+    "raw": "3.231290",
+    "display": "3.231290",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 18,
+    "field": "Max",
+    "raw": "5.517483",
+    "display": "5.517483",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 18,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.157303",
+    "display": "0.157303",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 19,
+    "field": "Latitude",
+    "raw": "53.500000",
+    "display": "53.50",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 19,
+    "field": "Longitude",
+    "raw": "-6.500000",
+    "display": "-6.50",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 19,
+    "field": "Q90",
+    "raw": "0.233030",
+    "display": "0.233030",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 19,
+    "field": "Q95",
+    "raw": "0.560761",
+    "display": "0.560761",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 19,
+    "field": "Q99",
+    "raw": "1.542945",
+    "display": "1.542945",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 19,
+    "field": "Q99.9",
+    "raw": "3.172419",
+    "display": "3.172419",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 19,
+    "field": "Max",
+    "raw": "4.894733",
+    "display": "4.894733",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 19,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.165018",
+    "display": "0.165018",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 20,
+    "field": "Latitude",
+    "raw": "53.500000",
+    "display": "53.50",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 20,
+    "field": "Longitude",
+    "raw": "-6.250000",
+    "display": "-6.25",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 20,
+    "field": "Q90",
+    "raw": "0.229216",
+    "display": "0.229216",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 20,
+    "field": "Q95",
+    "raw": "0.561166",
+    "display": "0.561166",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 20,
+    "field": "Q99",
+    "raw": "1.600685",
+    "display": "1.600685",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 20,
+    "field": "Q99.9",
+    "raw": "3.552690",
+    "display": "3.552690",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 20,
+    "field": "Max",
+    "raw": "5.558968",
+    "display": "5.558968",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 20,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.163497",
+    "display": "0.163497",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 21,
+    "field": "Latitude",
+    "raw": "53.500000",
+    "display": "53.50",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 21,
+    "field": "Longitude",
+    "raw": "-6.000000",
+    "display": "-6.00",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 21,
+    "field": "Q90",
+    "raw": "0.294209",
+    "display": "0.294209",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 21,
+    "field": "Q95",
+    "raw": "0.653672",
+    "display": "0.653672",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 21,
+    "field": "Q99",
+    "raw": "1.625032",
+    "display": "1.625032",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 21,
+    "field": "Q99.9",
+    "raw": "3.496817",
+    "display": "3.496817",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 21,
+    "field": "Max",
+    "raw": "5.674362",
+    "display": "5.674362",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 21,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.179363",
+    "display": "0.179363",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 22,
+    "field": "Latitude",
+    "raw": "53.500000",
+    "display": "53.50",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 22,
+    "field": "Longitude",
+    "raw": "-5.750000",
+    "display": "-5.75",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 22,
+    "field": "Q90",
+    "raw": "0.314426",
+    "display": "0.314426",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 22,
+    "field": "Q95",
+    "raw": "0.676632",
+    "display": "0.676632",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 22,
+    "field": "Q99",
+    "raw": "1.719432",
+    "display": "1.719432",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 22,
+    "field": "Q99.9",
+    "raw": "3.442558",
+    "display": "3.442558",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 22,
+    "field": "Max",
+    "raw": "5.563736",
+    "display": "5.563736",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 22,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.185775",
+    "display": "0.185775",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 23,
+    "field": "Latitude",
+    "raw": "53.750000",
+    "display": "53.75",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 23,
+    "field": "Longitude",
+    "raw": "-6.750000",
+    "display": "-6.75",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 23,
+    "field": "Q90",
+    "raw": "0.242233",
+    "display": "0.242233",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 23,
+    "field": "Q95",
+    "raw": "0.597739",
+    "display": "0.597739",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 23,
+    "field": "Q99",
+    "raw": "1.653671",
+    "display": "1.653671",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 23,
+    "field": "Q99.9",
+    "raw": "3.323412",
+    "display": "3.323412",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 23,
+    "field": "Max",
+    "raw": "5.407333",
+    "display": "5.407333",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 23,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.168931",
+    "display": "0.168931",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 24,
+    "field": "Latitude",
+    "raw": "53.750000",
+    "display": "53.75",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 24,
+    "field": "Longitude",
+    "raw": "-6.500000",
+    "display": "-6.50",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 24,
+    "field": "Q90",
+    "raw": "0.245905",
+    "display": "0.245905",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 24,
+    "field": "Q95",
+    "raw": "0.580645",
+    "display": "0.580645",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 24,
+    "field": "Q99",
+    "raw": "1.537151",
+    "display": "1.537151",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 24,
+    "field": "Q99.9",
+    "raw": "3.116265",
+    "display": "3.116265",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 24,
+    "field": "Max",
+    "raw": "5.503654",
+    "display": "5.503654",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 24,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.173441",
+    "display": "0.173441",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 25,
+    "field": "Latitude",
+    "raw": "53.750000",
+    "display": "53.75",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 25,
+    "field": "Longitude",
+    "raw": "-6.250000",
+    "display": "-6.25",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 25,
+    "field": "Q90",
+    "raw": "0.236511",
+    "display": "0.236511",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 25,
+    "field": "Q95",
+    "raw": "0.557351",
+    "display": "0.557351",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 25,
+    "field": "Q99",
+    "raw": "1.552091",
+    "display": "1.552091",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 25,
+    "field": "Q99.9",
+    "raw": "3.122286",
+    "display": "3.122286",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 25,
+    "field": "Max",
+    "raw": "6.166458",
+    "display": "6.166458",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 25,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.170398",
+    "display": "0.170398",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 26,
+    "field": "Latitude",
+    "raw": "53.750000",
+    "display": "53.75",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 26,
+    "field": "Longitude",
+    "raw": "-6.000000",
+    "display": "-6.00",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 26,
+    "field": "Q90",
+    "raw": "0.297546",
+    "display": "0.297546",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 26,
+    "field": "Q95",
+    "raw": "0.652170",
+    "display": "0.652170",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 26,
+    "field": "Q99",
+    "raw": "1.658382",
+    "display": "1.658382",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 26,
+    "field": "Q99.9",
+    "raw": "3.367388",
+    "display": "3.367388",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 26,
+    "field": "Max",
+    "raw": "5.457878",
+    "display": "5.457878",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 26,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.184579",
+    "display": "0.184579",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 27,
+    "field": "Latitude",
+    "raw": "53.750000",
+    "display": "53.75",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 27,
+    "field": "Longitude",
+    "raw": "-5.750000",
+    "display": "-5.75",
+    "digits": 2
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 27,
+    "field": "Q90",
+    "raw": "0.320768",
+    "display": "0.320768",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 27,
+    "field": "Q95",
+    "raw": "0.699043",
+    "display": "0.699043",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 27,
+    "field": "Q99",
+    "raw": "1.789064",
+    "display": "1.789064",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 27,
+    "field": "Q99.9",
+    "raw": "3.581551",
+    "display": "3.581551",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 27,
+    "field": "Max",
+    "raw": "5.806923",
+    "display": "5.806923",
+    "digits": 6
+  },
+  {
+    "file": "r2m7_series_stats.csv",
+    "line": 27,
+    "field": "Wet_freq_ge_0.1",
+    "raw": "0.190339",
+    "display": "0.190339",
+    "digits": 6
+  }
+]

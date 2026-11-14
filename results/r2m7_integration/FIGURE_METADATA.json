@@ -1,0 +1,27 @@
+{
+  "path": "Figures/r2M7_spatial_quantiles.pdf",
+  "pages": 1,
+  "bytes": 311767,
+  "md5": "0b59c59d8b25a4eeb725c552a12c26fb",
+  "sha256": "db90227a5991059d3feb0dbd01bc24a1ef9f697a5ba7f4972c61b2b23878ba1d",
+  "width_mm": 118.99999304877386,
+  "height_mm": 70.00000161064995,
+  "embedded_raster_images": 0,
+  "fonts": [
+    "LMRoman8-Regular",
+    "LMRoman9-Regular",
+    "LMMathItalic8-Regular",
+    "LMMathSymbols8-Regular",
+    "LMRoman8-Regular"
+  ],
+  "font_pdf_bp": [
+    7.97,
+    8.966
+  ],
+  "plot_markers_verified": 130,
+  "gray_markers": 125,
+  "black_diamonds": 5,
+  "max_abs_ratio_error": 1.100573608914246e-07,
+  "ratio_tolerance": 1e-05,
+  "ratio_tolerance_reason": "Six-decimal source CSV rounding and PDF coordinate precision; no raw prediction or figure regeneration."
+}

@@ -1,0 +1,35 @@
+{
+  "patch_applies_exactly": true,
+  "documents": [
+    {
+      "path": "Response letter.tex",
+      "before_sha256": "a432769daaf252bafe4580bf7c626d0c47d85bdda9b4855eefaf12b1e0d9d100",
+      "after_sha256": "e4aa65abd10d23d337d44ad23777c913c73274fef20ed509d87c4ba9f8cd8afa"
+    },
+    {
+      "path": "Supplementary.tex",
+      "before_sha256": "6455944230356e27c38d4c00ef91e83939c7ea887be4ee23d67ea19a97da61e3",
+      "after_sha256": "05b2dd1ef0748892be1d2fb0c0bc5ba02778113c391cccb22cc62f0bc1515531"
+    },
+    {
+      "path": "ESI_\u5ba1\u7a3f\u610f\u89c1\u5206\u7c7b_\u4e25\u91cd\u7a0b\u5ea6\u6392\u5e8f_35\u9879.md",
+      "before_sha256": "a239797bdf2a27ab692b83d7fb95d2a6f1cbc13f825c95913465087f8b06c4a8",
+      "after_sha256": "24ec3eafae5940e19f3d35e603e9bbcf7d0047e254de30c467aff423550b871c"
+    },
+    {
+      "path": "FINAL_REVISION_CHECKLIST.md",
+      "before_sha256": "9307fe895924a6be662242d3c23b2ab23e68c9e02088ecec938fabd7f84add83",
+      "after_sha256": "6ebe0b87c3070b24e8c620d799e12484f83fa4002aa97783f54899aabf03de50"
+    },
+    {
+      "path": "manuscript.tex",
+      "before_sha256": "5efbda68222297d46dbe11e22c478c9149420d12470dd380f99072f0db7b1c20",
+      "after_sha256": "e82ef67f18f4b075388104a5967f313e8503b42cb078d2a62ab26d076e9fd005"
+    },
+    {
+      "path": "SUPPLEMENTARY_TABLE_REGISTRY.md",
+      "before_sha256": "f5937b48091d5c18b16f6119668a909aa5156bf207ccd9edcb0942be9d56eb79",
+      "after_sha256": "a8ce8a7570dbd7e160f4253404ea30dddb12cfdc59bb54345726b1d5668f9710"
+    }
+  ]
+}

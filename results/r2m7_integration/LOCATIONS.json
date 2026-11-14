@@ -1,0 +1,52 @@
+{
+  "manuscript.tex": [
+    {
+      "line": 447,
+      "text": "For the spatial-support diagnostic, all 25 grid-cell series and their equal-weight regional mean use the same 18,404 training pred"
+    },
+    {
+      "line": 824,
+      "text": "A separate descriptive spatial comparison uses the training targets, rather than the forecast-test samples. Relative to the median"
+    },
+    {
+      "line": 826,
+      "text": "Supplementary Table~\\ref{supp-stab:r2m7_spatial_quantiles} lists the 26 series on the common training-time set. Supplementary Figu"
+    },
+    {
+      "line": 1166,
+      "text": "The spatial contrasts depend on the position in the precipitation distribution: wet frequency and Q90 increase relative to the cel"
+    },
+    {
+      "line": 1201,
+      "text": "On the common training-target set, the regional Q99, Q99.9 and maximum are 13.1\\%, 13.9\\% and 31.4\\% below their respective 25-cel"
+    }
+  ],
+  "Supplementary.tex": [
+    {
+      "line": 1747,
+      "text": "% R2-M7 local integration; author-final PDF unchanged, native size."
+    },
+    {
+      "line": 1752,
+      "text": "\\caption{Spatial precipitation statistics for the equal-weight mean of 25 ERA5 grid cells and all 25 individual cells. Every stati"
+    },
+    {
+      "line": 1796,
+      "text": "\\includegraphics{Figures/r2M7_spatial_quantiles.pdf}"
+    },
+    {
+      "line": 1799,
+      "text": "\\label{sfig:r2m7_spatial_quantiles}"
+    }
+  ],
+  "Response letter.tex": [
+    {
+      "line": 820,
+      "text": "% Review ID: R2 M7"
+    },
+    {
+      "line": 826,
+      "text": "\\AuthorResponse{We agree that this numerical threshold should not be interpreted as a meteorologically defined heavy-rainfall inte"
+    }
+  ]
+}

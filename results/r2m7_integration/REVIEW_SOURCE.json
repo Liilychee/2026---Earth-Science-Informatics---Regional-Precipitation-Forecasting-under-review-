@@ -1,0 +1,22 @@
+[
+  {
+    "path": "/Users/yue/Downloads/ESI Revisions.docx",
+    "md5": "5a8a1653ef8fc65025bf754fbcd15b07",
+    "matches": [
+      {
+        "paragraph": 49,
+        "text": "7. The Q95 threshold of 0.5740 mm may not represent meteorologically significant heavy rainfall. Please justify this threshold and clarify the influence of spatial averaging on extreme precipitation."
+      }
+    ]
+  },
+  {
+    "path": "/Users/yue/Downloads/ESI_85条审稿意见_35项任务_完整对应核查表.docx",
+    "md5": "6b336a0f792b792f309d34a5c4b52727",
+    "matches": [
+      {
+        "paragraph": 70,
+        "text": "R2-M7"
+      }
+    ]
+  }
+]

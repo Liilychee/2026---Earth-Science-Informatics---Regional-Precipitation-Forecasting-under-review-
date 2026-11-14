@@ -1,0 +1,126 @@
+{
+  "base_commit": "8005ab08506dc8e0f9123f81e1861fdacc9de942",
+  "files": [
+    {
+      "path": "results/r2m7_integration/AUTHOR_FIGURE_SOURCE.json",
+      "sha256": "c0b01d650d6845f7ecd38dc9a114a17dceed6eee1be28c896e903ac2debb5a1d"
+    },
+    {
+      "path": "results/r2m7_integration/CAPTIONS.json",
+      "sha256": "e2140173479fbfc5276800a4121577975ece593ab984a2157c58bcc32272fe96"
+    },
+    {
+      "path": "results/r2m7_integration/CELL_INDEX.json",
+      "sha256": "eb160caa12b5fd0c654a53ecde064717d104f519628d45d3bd2fc073d5db91a8"
+    },
+    {
+      "path": "results/r2m7_integration/DATA_CHECK.json",
+      "sha256": "77b1cb6834b328a0802fedaf56c2e76f55b2dcf3097986a94ca777adb6cbc048"
+    },
+    {
+      "path": "results/r2m7_integration/DOCUMENT_HASHES.json",
+      "sha256": "30fad3127133623bdc621451b2aeadabd17e42fceafd08cc0fa2dd83216c4466"
+    },
+    {
+      "path": "results/r2m7_integration/EVIDENCE_INDEX.md",
+      "sha256": "71a89ca90376545abaa47aa154d322cbb18348baafda7f079e32ce1e164f23ad"
+    },
+    {
+      "path": "results/r2m7_integration/FIGURE_METADATA.json",
+      "sha256": "1b32263b968dbadd98d745da36086693f7695c37c566bbde3cb3cc4ca9a5ec91"
+    },
+    {
+      "path": "results/r2m7_integration/FIGURE_POINT_CHECK.csv",
+      "sha256": "3680cab6a38af5865638e291644b87dcbacb5b7e8b776b1dcc55ebe577c95b4c"
+    },
+    {
+      "path": "results/r2m7_integration/FINAL_EXCERPTS.json",
+      "sha256": "d8201e4a4e4592391fae30b8f5cdf1b403b7d23abd906c85194dba94def72ccc"
+    },
+    {
+      "path": "results/r2m7_integration/FINAL_REPORT.md",
+      "sha256": "3c033a171c4f630a6aec544b21c9874da7a3f35ea514dcd060c3979960ffaf30"
+    },
+    {
+      "path": "results/r2m7_integration/GIT_SCOPE.md",
+      "sha256": "45526ad63cce1dea8c9fc4555253d3169a63c492fefc2dda18ad38ebe815c1bd"
+    },
+    {
+      "path": "results/r2m7_integration/GIT_STATUS.txt",
+      "sha256": "f597d9e0410504925ae276d8309e2601f4a7a725e28f6e84c22e1a0608668f6a"
+    },
+    {
+      "path": "results/r2m7_integration/LOCATIONS.json",
+      "sha256": "1be452f0aee39effe49c22fc8102c6f2dc2edb65121ff25d1ffd41ce4a2b97ce"
+    },
+    {
+      "path": "results/r2m7_integration/PDF_CHECK.json",
+      "sha256": "a778f5f4349e82820b2098f642b56855eff95d16427a9348bca59983a9096e79"
+    },
+    {
+      "path": "results/r2m7_integration/PDF_PAGES.json",
+      "sha256": "947e6dcc510119e39521c7e516b9ea6a359deb24fea683ca52415784ee9a02ab"
+    },
+    {
+      "path": "results/r2m7_integration/PROSE_FACT_INDEX.json",
+      "sha256": "cd11e57554ba289e262e818b409b907224fb36f28e61e30805bfb0b5cefdb9de"
+    },
+    {
+      "path": "results/r2m7_integration/PROTECTED_HASHES.json",
+      "sha256": "da0a6e7dfc7b37dd986fe8c91ecba7d724b09baaf1da9a7408aaf6e8d84422b5"
+    },
+    {
+      "path": "results/r2m7_integration/R2M7_LOCAL.patch",
+      "sha256": "a017be625719ba46417a6e63b2874f4392f91df4ab6b6673f223ae051ff282b9"
+    },
+    {
+      "path": "results/r2m7_integration/R2M7_PORTABLE.patch",
+      "sha256": "b40fbaba450ec56be98d451363eac7281e6590b2790aa4f0915b25cf8a0fff33"
+    },
+    {
+      "path": "results/r2m7_integration/REVIEW_SOURCE.json",
+      "sha256": "287840d6191a54db7f26aa322a56b924a17a154a4d812b95613377a29f87750f"
+    },
+    {
+      "path": "results/r2m7_integration/ROW_INDEX.json",
+      "sha256": "b915e3a668d15229aff19429ed118e78292451f4c3f5ad28080d4e6d8ca30a27"
+    },
+    {
+      "path": "results/r2m7_integration/SOURCE_INDEX.json",
+      "sha256": "029bd6c4995ede6e825407807180b2a158e225d7e7e5cf0071102ee25cbc319c"
+    },
+    {
+      "path": "results/r2m7_integration/STATUS.md",
+      "sha256": "0b8c17dd6199f7af70635bf8b95fed4c5793c84dc6a6892856658801848db583"
+    },
+    {
+      "path": "results/r2m7_integration/VERIFICATION.json",
+      "sha256": "f26ba9b890a2dd27754b63ab64bb694216e7d088c00a8875f8aa4b9aa2191a0f"
+    },
+    {
+      "path": "results/r2m7_integration/check_integration.py",
+      "sha256": "777ed88e0803fe54cc1008cbd61d9055f23462f7f8b5552ce5ab1b407615622b"
+    },
+    {
+      "path": "results/r2m7_integration/check_pdf.py",
+      "sha256": "c05b31ecb2c788a7258106980c22ce4e93d7d0aebd269dbf21bbe10b1b7bee4a"
+    },
+    {
+      "path": "results/r2m7_integration/check_sources.py",
+      "sha256": "d780429750ee1843e72d0367779774a73c4374f3f613654d66def9a286b4238d"
+    },
+    {
+      "path": "results/r2m7_integration/compile_Response_letter.txt",
+      "sha256": "3aabcd4842271d18213184ca60a281c268d02d4e5d06a1f9419661687c94214d"
+    },
+    {
+      "path": "results/r2m7_integration/compile_Supplementary.txt",
+      "sha256": "06b6e5b09544ce2f0e3808efdf761fc9b8cc1d4fc46017de5b45ead6506000d4"
+    },
+    {
+      "path": "results/r2m7_integration/compile_manuscript.txt",
+      "sha256": "84018d9d8bb78c3bcbe45915306525af9f011ff07e3a6f402f6e1f3e76dd606c"
+    }
+  ],
+  "scope": "Only enumerated integration evidence/patch/status; no before snapshots or root documents"
+}

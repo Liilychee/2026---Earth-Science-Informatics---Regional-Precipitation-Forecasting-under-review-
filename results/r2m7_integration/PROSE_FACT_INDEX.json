@@ -1,0 +1,102 @@
+[
+  {
+    "file": "r2m7_summary_comparison.csv",
+    "line": 5,
+    "statistic": "Q95",
+    "field": "Regional",
+    "raw": "0.574048",
+    "absolute": false,
+    "digits": 6,
+    "display": "0.574048"
+  },
+  {
+    "file": "r2m7_summary_comparison.csv",
+    "line": 5,
+    "statistic": "Q95",
+    "field": "Cell_min",
+    "raw": "0.544071",
+    "absolute": false,
+    "digits": 4,
+    "display": "0.5441"
+  },
+  {
+    "file": "r2m7_summary_comparison.csv",
+    "line": 5,
+    "statistic": "Q95",
+    "field": "Cell_max",
+    "raw": "0.699043",
+    "absolute": false,
+    "digits": 4,
+    "display": "0.6990"
+  },
+  {
+    "file": "r2m7_summary_comparison.csv",
+    "line": 5,
+    "statistic": "Q95",
+    "field": "Cell_median",
+    "raw": "0.618935",
+    "absolute": false,
+    "digits": 6,
+    "display": "0.618935"
+  },
+  {
+    "file": "r2m7_summary_comparison.csv",
+    "line": 3,
+    "statistic": "Wet_freq_ge_0.1",
+    "field": "Pct_vs_cell_median",
+    "raw": "14.272672",
+    "absolute": false,
+    "digits": 1,
+    "display": "14.3"
+  },
+  {
+    "file": "r2m7_summary_comparison.csv",
+    "line": 4,
+    "statistic": "Q90",
+    "field": "Pct_vs_cell_median",
+    "raw": "8.825263",
+    "absolute": false,
+    "digits": 1,
+    "display": "8.8"
+  },
+  {
+    "file": "r2m7_summary_comparison.csv",
+    "line": 5,
+    "statistic": "Q95",
+    "field": "Pct_vs_cell_median",
+    "raw": "-7.252233",
+    "absolute": true,
+    "digits": 1,
+    "display": "7.3"
+  },
+  {
+    "file": "r2m7_summary_comparison.csv",
+    "line": 6,
+    "statistic": "Q99",
+    "field": "Pct_vs_cell_median",
+    "raw": "-13.118841",
+    "absolute": true,
+    "digits": 1,
+    "display": "13.1"
+  },
+  {
+    "file": "r2m7_summary_comparison.csv",
+    "line": 7,
+    "statistic": "Q99.9",
+    "field": "Pct_vs_cell_median",
+    "raw": "-13.905657",
+    "absolute": true,
+    "digits": 1,
+    "display": "13.9"
+  },
+  {
+    "file": "r2m7_summary_comparison.csv",
+    "line": 8,
+    "statistic": "Max",
+    "field": "Pct_vs_cell_median",
+    "raw": "-31.418490",
+    "absolute": true,
+    "digits": 1,
+    "display": "31.4"
+  }
+]

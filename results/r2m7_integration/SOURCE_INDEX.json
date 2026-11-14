@@ -1,0 +1,41 @@
+{
+  "commit": "dc850836b486e8f326ddcb432a3602fe8b8448b6",
+  "remote_verification": "GitHub fetch_file at fixed commit; blob SHA-1 of local bytes matches each remote file",
+  "files": [
+    {
+      "path": "results/r2m7_evidence/r2m7_series_stats.csv",
+      "md5": "167750324c60c51d19150c4c13ba9dc8",
+      "blob": "5861f4bf52349e0391e97a1a03d5f288d256d864",
+      "remote_blob": "5861f4bf52349e0391e97a1a03d5f288d256d864",
+      "match": true
+    },
+    {
+      "path": "results/r2m7_evidence/r2m7_summary_comparison.csv",
+      "md5": "115852d177d2b46426bcb170d5262836",
+      "blob": "dace49a658b587a766199e0bba105a4fe788c01f",
+      "remote_blob": "dace49a658b587a766199e0bba105a4fe788c01f",
+      "match": true
+    },
+    {
+      "path": "results/r2m7_evidence/r2m7_pct_by_cell.csv",
+      "md5": "b2b00e14dde9a0f7ad8c312260f9dc1e",
+      "blob": "bde294a6e4d35d5dc9d0545d8465327d9f8695ab",
+      "remote_blob": "bde294a6e4d35d5dc9d0545d8465327d9f8695ab",
+      "match": true
+    },
+    {
+      "path": "results/r2m7_evidence/README_METHODS.md",
+      "md5": "cd48dbfcb3e8b13a306dfd9d668a0b38",
+      "blob": "d6311abec04cae9ce6be4db9a6191c132c699761",
+      "remote_blob": "d6311abec04cae9ce6be4db9a6191c132c699761",
+      "match": true
+    },
+    {
+      "path": "results/r2m7_evidence/r2m7_spatial_quantiles.py",
+      "md5": "c18dc37e7a83e9624ca46df02b3f48f2",
+      "blob": "d856768d8d7e34b50e41386d19cb96575c948e65",
+      "remote_blob": "d856768d8d7e34b50e41386d19cb96575c948e65",
+      "match": true
+    }
+  ]
+}

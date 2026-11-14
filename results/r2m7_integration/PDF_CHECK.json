@@ -1,0 +1,285 @@
+{
+  "workflow": "Reuse successful sequential builds; no TeX/PDF changed after compilation. Read-only final verification.",
+  "documents": {
+    "Supplementary": {
+      "pages": 51,
+      "pdf_md5": "8af9b43ccd851fafa786565a8493d87e",
+      "source_md5_matches_successful_build": "924a467c018d20157ddde9bd93d613c5",
+      "build_inputs_source_match": true,
+      "warnings": [],
+      "blocking_log_errors": [],
+      "reviewed_pages": [
+        {
+          "page": 50,
+          "visual_check": "Previously rendered at 72 dpi (1 PDF point = 1 pixel), actually inspected; no cropping, overlap or illegible new text.",
+          "text_colors_hex": [
+            "000000",
+            "ff0000"
+          ],
+          "page_size_pt": [
+            595.2760009765625,
+            841.8900146484375
+          ]
+        },
+        {
+          "page": 51,
+          "visual_check": "Previously rendered at 72 dpi (1 PDF point = 1 pixel), actually inspected; no cropping, overlap or illegible new text.",
+          "text_colors_hex": [
+            "000000",
+            "666666",
+            "ff0000"
+          ],
+          "page_size_pt": [
+            595.2760009765625,
+            841.8900146484375
+          ]
+        }
+      ]
+    },
+    "manuscript": {
+      "pages": 94,
+      "pdf_md5": "098573d73bfc31e13910a9876222369a",
+      "source_md5_matches_successful_build": "f057b075d8df975ad95bf06063eba948",
+      "build_inputs_source_match": true,
+      "warnings": [
+        "LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <16> not available",
+        "LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <16> not available",
+        "LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <16> not available",
+        "LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <16> not available",
+        "LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <8.43146> not available",
+        "LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.52061> not available",
+        "LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.51686> not available",
+        "LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <> not available",
+        "LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <0.7> not available",
+        "LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <0.5> not available",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.015> not available",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Package hyperref Warning: Difference (4) between bookmark levels is greater ",
+        "Package hyperref Warning: Difference (3) between bookmark levels is greater ",
+        "Package hyperref Warning: Difference (2) between bookmark levels is greater ",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "Overfull \\vbox (1.41457pt too high) has occurred while \\output is active []",
+        "LaTeX Font Warning: Size substitutions with differences"
+      ],
+      "blocking_log_errors": [],
+      "reviewed_pages": [
+        {
+          "page": 27,
+          "visual_check": "Previously rendered at 72 dpi (1 PDF point = 1 pixel), actually inspected; no cropping, overlap or illegible new text.",
+          "text_colors_hex": [
+            "000000",
+            "ff0000"
+          ],
+          "page_size_pt": [
+            439.3699951171875,
+            666.1420288085938
+          ]
+        },
+        {
+          "page": 28,
+          "visual_check": "Previously rendered at 72 dpi (1 PDF point = 1 pixel), actually inspected; no cropping, overlap or illegible new text.",
+          "text_colors_hex": [
+            "000000",
+            "ff0000"
+          ],
+          "page_size_pt": [
+            439.3699951171875,
+            666.1420288085938
+          ]
+        },
+        {
+          "page": 53,
+          "visual_check": "Previously rendered at 72 dpi (1 PDF point = 1 pixel), actually inspected; no cropping, overlap or illegible new text.",
+          "text_colors_hex": [
+            "000000",
+            "0000ff",
+            "ff0000"
+          ],
+          "page_size_pt": [
+            439.3699951171875,
+            666.1420288085938
+          ]
+        },
+        {
+          "page": 76,
+          "visual_check": "Previously rendered at 72 dpi (1 PDF point = 1 pixel), actually inspected; no cropping, overlap or illegible new text.",
+          "text_colors_hex": [
+            "000000",
+            "ff0000"
+          ],
+          "page_size_pt": [
+            439.3699951171875,
+            666.1420288085938
+          ]
+        },
+        {
+          "page": 80,
+          "visual_check": "Previously rendered at 72 dpi (1 PDF point = 1 pixel), actually inspected; no cropping, overlap or illegible new text.",
+          "text_colors_hex": [
+            "000000",
+            "ff0000"
+          ],
+          "page_size_pt": [
+            439.3699951171875,
+            666.1420288085938
+          ]
+        }
+      ]
+    },
+    "Response letter": {
+      "pages": 68,
+      "pdf_md5": "eeb9664651ff9fdeb0bbc4d355b35c95",
+      "source_md5_matches_successful_build": "8f8b16494498ebd17889d70e42ae2b7a",
+      "build_inputs_source_match": true,
+      "warnings": [],
+      "blocking_log_errors": [],
+      "reviewed_pages": [
+        {
+          "page": 44,
+          "visual_check": "Previously rendered at 72 dpi (1 PDF point = 1 pixel), actually inspected; no cropping, overlap or illegible new text.",
+          "text_colors_hex": [
+            "000000",
+            "0000ff",
+            "ff0000"
+          ],
+          "page_size_pt": [
+            612.0,
+            792.0
+          ]
+        },
+        {
+          "page": 45,
+          "visual_check": "Previously rendered at 72 dpi (1 PDF point = 1 pixel), actually inspected; no cropping, overlap or illegible new text.",
+          "text_colors_hex": [
+            "000000",
+            "0000ff",
+            "7f807f",
+            "ff0000"
+          ],
+          "page_size_pt": [
+            612.0,
+            792.0
+          ]
+        }
+      ]
+    }
+  },
+  "supplementary_figure_xobject_boxes_pt": [
+    [
+      0.0,
+      0.0,
+      337.32281494140625,
+      198.42520141601562
+    ],
+    [
+      -3.0999999046325684,
+      -3.0999999046325684,
+      3.0999999046325684,
+      3.0999999046325684
+    ],
+    [
+      -7.596193790435791,
+      -7.596193790435791,
+      7.596193790435791,
+      7.596193790435791
+    ]
+  ],
+  "supplementary_table": "S47",
+  "supplementary_figure": "S2",
+  "old_table_figure_labels_preserved": true,
+  "author_figure_md5": "0b59c59d8b25a4eeb725c552a12c26fb",
+  "author_figure_unscaled": true,
+  "visual_qa_reused": true,
+  "no_recompile_required": true,
+  "limitations": "Actual-size PDF raster review does not measure every physical monitor zoom. Existing template font/bookmark warnings and repeated 1.41457pt overfull vbox warnings remain; no horizontal overflow or blocking errors."
+}

@@ -1,0 +1,205 @@
+--- a/Response letter.tex
++++ b/Response letter.tex
+@@ -823,9 +823,35 @@
+ 
+ \ReviewerComment{7. The Q95 threshold of 0.5740 mm may not represent meteorologically significant heavy rainfall. Please justify this threshold and clarify the influence of spatial averaging on extreme precipitation.}
+ 
+-\PendingResponse
+-
+-\ChangeLocation
++\AuthorResponse{We agree that this numerical threshold should not be interpreted as a meteorologically defined heavy-rainfall intensity. Q95 is a training-derived empirical 95th-percentile cutoff used to assess the relative upper tail of the regional forecast target, held fixed for the reported test diagnostics. We report it as 0.5740~mm\,h$^{-1}$ because the target is the hourly-mean rate for a single hour; it is not a six-hour precipitation total. The existing percentile terminology and WMO time-scale/spatial-support qualification are retained.
++
++No logarithmic transformation was used to define Q95. We first form the equal-weight mean of the 25 cells at each time, then take its percentile over the 18,404 training prediction-target times; this is not an average of cell quantiles. On these identical times, regional Q95 is 0.574048~mm\,h$^{-1}$, versus a cell range of 0.5441--0.6990 and a median of 0.618935~mm\,h$^{-1}$. Thus the regional Q95 is 7.3\% below the cell median while still lying within the cell range. We do not attribute its low absolute magnitude solely to spatial averaging.
++
++The distributional contrasts are not uniform. Regional wet-hour frequency and Q90 are 14.3\% and 8.8\% above their respective cell medians. Q99, Q99.9 and the maximum are 13.1\%, 13.9\% and 31.4\% below the corresponding medians and are each below all 25 cells. These are descriptive statistics on matched training times, not significance statements or estimates of a causal mechanism. Each maximum belongs to its own series and need not occur at a common event time.
++
++We added Supplementary Table~\ref{supp-stab:r2m7_spatial_quantiles} with all 25 cells and the regional mean, and the author-confirmed Supplementary Figure~\ref{supp-sfig:r2m7_spatial_quantiles}. The figure normalizes each of Q90/Q95/Q99/Q99.9/Max by the median of that same statistic across the 25 cells; the dashed ratio-one line marks the corresponding median. The table, figure and text use the same 18,404 targets, including all maxima, avoiding mixed statistical periods. Section~\ref{manuscript-sec:experimental_setup} explains the threshold construction, Section~\ref{manuscript-sec:regime_results} reports the comparison, and the Discussion and Section~\ref{manuscript-sec:limitations} qualify spatial smoothing and transfer to station-level extremes. A gridded ERA5 cell is not a gauge, and these contrasts do not establish station-scale extreme-rainfall skill.}
++
++\ManuscriptChange{Section~\ref{manuscript-sec:experimental_setup} (threshold construction), Section~\ref{manuscript-sec:regime_results} (spatial statistics), Discussion and Section~\ref{manuscript-sec:limitations}; Supplementary Table~\ref{supp-stab:r2m7_spatial_quantiles} and Figure~\ref{supp-sfig:r2m7_spatial_quantiles}. Final page and line numbers pending.}
++
++\EvidenceBox{Training-derived Q95 on the original precipitation scale}{
++\RevisedExcerpt{For the spatial-support diagnostic, all 25 grid-cell series and their equal-weight regional mean use the same 18,404 training prediction-target times. We first form the regional mean at each time and then take its empirical 95th percentile, rather than averaging grid-cell quantiles. This gives Q95 $=0.574048$~mm\,h$^{-1}$ on the original precipitation scale, without a logarithmic transformation. Individual-cell Q95 values range from 0.5441 to 0.6990~mm\,h$^{-1}$. Q95 defines a fixed relative upper-tail regime of the regional hourly target, not a meteorological heavy-rainfall category.}
++}
++
++\EvidenceBox{Distribution-dependent spatial contrasts}{
++\RevisedExcerpt{A separate descriptive spatial comparison uses the training targets, rather than the forecast-test samples. Relative to the median of the corresponding statistic across the 25 cells, regional wet-hour frequency ($\geq0.1$~mm\,h$^{-1}$) is 14.3\% higher and Q90 is 8.8\% higher. Regional Q95 is 7.3\% lower than the cell median but remains within the individual-cell range. Regional Q99, Q99.9 and the maximum are lower by 13.1\%, 13.9\% and 31.4\%, respectively, and all three are below the corresponding values of every one of the 25 cells. These percentages are relative changes, not percentage-point differences.}
++}
++
++\EvidenceBox{Matched-time supplementary table and per-statistic normalization}{
++\RevisedExcerpt{Supplementary Table~\ref{supp-stab:r2m7_spatial_quantiles} lists the 26 series on the common training-time set. Supplementary Figure~\ref{supp-sfig:r2m7_spatial_quantiles} divides each displayed statistic by the median of that same statistic across the 25 cells. Its five categories therefore have separate normalizing denominators, with a reference ratio of one.}
++}
++
++\EvidenceBox{Descriptive interpretation of spatial averaging}{
++\RevisedExcerpt{The spatial contrasts depend on the position in the precipitation distribution: wet frequency and Q90 increase relative to the cell medians, while the higher quantiles and maxima decrease. Spatial averaging should therefore not be described as reducing every precipitation intensity. These are descriptive contrasts between matched-time series summaries; the individual maxima need not occur at the same time, and the comparison does not identify an event-scale causal mechanism.}
++}
++
++\EvidenceBox{Quantitative spatial-support limitation}{
++\RevisedExcerpt{On the common training-target set, the regional Q99, Q99.9 and maximum are 13.1\%, 13.9\% and 31.4\% below their respective 25-cell medians. The opposite-direction contrasts in wet frequency and Q90 qualify a blanket smoothing interpretation. A single ERA5 cell is itself a gridded estimate rather than a rain-gauge measurement, so these grid-to-region comparisons do not quantify station-level extreme-rainfall attenuation. The conclusions concern ERA5-derived regional-mean hourly precipitation and do not directly represent station-scale extremes.}
++}
+ 
+ % Review ID: R2 M8
+ \Needspace{5\baselineskip}
+--- a/Supplementary.tex
++++ b/Supplementary.tex
+@@ -1743,4 +1743,61 @@
+ \end{longtable}
+ \end{revisionlongtable}
+ 
++
++% R2-M7 local integration; author-final PDF unchanged, native size.
++\clearpage
++{\color{red}\section*{Spatial averaging and training-period precipitation quantiles}\par}
++\begin{revisionlongtable}
++\begin{longtable}{@{}lrrrrrrrr@{}}
++\caption{Spatial precipitation statistics for the equal-weight mean of 25 ERA5 grid cells and all 25 individual cells. Every statistic uses the identical 18,404 training prediction-target times (2 January 2004 12:00--7 August 2016 06:00 UTC), not 18,410 raw training timestamps or a mixture of training and full-period data. Regional precipitation is averaged across the 25 cells at each time before its quantiles are calculated. Quantiles use linear interpolation on the untransformed precipitation scale. Precipitation statistics are in mm\,h$^{-1}$; wet frequency is the proportion of retained target hours with $y\geq0.1$~mm\,h$^{-1}$. Each maximum is the maximum of its own series over these times and need not occur at a common timestamp. Longitude is signed degrees east (negative denotes west); the regional row has no single grid-cell coordinate.}\label{stab:r2m7_spatial_quantiles}\\
++\hline
++\textbf{Series} & \shortstack{\textbf{Latitude}\\\textbf{($^\circ$N)}} & \shortstack{\textbf{Longitude}\\\textbf{($^\circ$E)}} & \textbf{Q90} & \textbf{Q95} & \textbf{Q99} & \textbf{Q99.9} & \textbf{Max} & \shortstack{\textbf{Wet}\\\textbf{frequency}}\\
++\hline
++\endfirsthead
++\multicolumn{9}{l}{\textbf{Table~\thetable{} (continued)}}\\
++\hline
++\textbf{Series} & \shortstack{\textbf{Latitude}\\\textbf{($^\circ$N)}} & \shortstack{\textbf{Longitude}\\\textbf{($^\circ$E)}} & \textbf{Q90} & \textbf{Q95} & \textbf{Q99} & \textbf{Q99.9} & \textbf{Max} & \shortstack{\textbf{Wet}\\\textbf{frequency}}\\
++\hline
++\endhead
++\hline
++\endfoot
++\textbf{Regional} & --- & --- & $0.295784$ & $0.574048$ & $1.440246$ & $2.864223$ & $4.134541$ & $0.204032$\\
++Cell & 52.75 & -6.75 & $0.240326$ & $0.609803$ & $1.657720$ & $3.417669$ & $7.112026$ & $0.167681$\\
++Cell & 52.75 & -6.50 & $0.264835$ & $0.604558$ & $1.643138$ & $3.091128$ & $6.231785$ & $0.180178$\\
++Cell & 52.75 & -6.25 & $0.247955$ & $0.582957$ & $1.649799$ & $3.253787$ & $5.281925$ & $0.178222$\\
++Cell & 52.75 & -6.00 & $0.286913$ & $0.635076$ & $1.717958$ & $3.498042$ & $5.852222$ & $0.181048$\\
++Cell & 52.75 & -5.75 & $0.284195$ & $0.667429$ & $1.743131$ & $3.532622$ & $7.034779$ & $0.172300$\\
++Cell & 53.00 & -6.75 & $0.255919$ & $0.593042$ & $1.613545$ & $3.257900$ & $6.028652$ & $0.176429$\\
++Cell & 53.00 & -6.50 & $0.291824$ & $0.631809$ & $1.667976$ & $3.206879$ & $6.185055$ & $0.190719$\\
++Cell & 53.00 & -6.25 & $0.299454$ & $0.671387$ & $1.789975$ & $3.378903$ & $6.670475$ & $0.191154$\\
++Cell & 53.00 & -6.00 & $0.323296$ & $0.670433$ & $1.736164$ & $3.326842$ & $5.815506$ & $0.191154$\\
++Cell & 53.00 & -5.75 & $0.310755$ & $0.687599$ & $1.750226$ & $3.361360$ & $6.842136$ & $0.181537$\\
++Cell & 53.25 & -6.75 & $0.235271$ & $0.544071$ & $1.622911$ & $3.284468$ & $6.192684$ & $0.166268$\\
++Cell & 53.25 & -6.50 & $0.261784$ & $0.592160$ & $1.555877$ & $3.032492$ & $6.223202$ & $0.179798$\\
++Cell & 53.25 & -6.25 & $0.271797$ & $0.618935$ & $1.666017$ & $3.241111$ & $6.101131$ & $0.178059$\\
++Cell & 53.25 & -6.00 & $0.307560$ & $0.650406$ & $1.663818$ & $3.361630$ & $6.072044$ & $0.181645$\\
++Cell & 53.25 & -5.75 & $0.303745$ & $0.676084$ & $1.697049$ & $3.348905$ & $6.173134$ & $0.178548$\\
++Cell & 53.50 & -6.75 & $0.228882$ & $0.552845$ & $1.580138$ & $3.231290$ & $5.517483$ & $0.157303$\\
++Cell & 53.50 & -6.50 & $0.233030$ & $0.560761$ & $1.542945$ & $3.172419$ & $4.894733$ & $0.165018$\\
++Cell & 53.50 & -6.25 & $0.229216$ & $0.561166$ & $1.600685$ & $3.552690$ & $5.558968$ & $0.163497$\\
++Cell & 53.50 & -6.00 & $0.294209$ & $0.653672$ & $1.625032$ & $3.496817$ & $5.674362$ & $0.179363$\\
++Cell & 53.50 & -5.75 & $0.314426$ & $0.676632$ & $1.719432$ & $3.442558$ & $5.563736$ & $0.185775$\\
++Cell & 53.75 & -6.75 & $0.242233$ & $0.597739$ & $1.653671$ & $3.323412$ & $5.407333$ & $0.168931$\\
++Cell & 53.75 & -6.50 & $0.245905$ & $0.580645$ & $1.537151$ & $3.116265$ & $5.503654$ & $0.173441$\\
++Cell & 53.75 & -6.25 & $0.236511$ & $0.557351$ & $1.552091$ & $3.122286$ & $6.166458$ & $0.170398$\\
++Cell & 53.75 & -6.00 & $0.297546$ & $0.652170$ & $1.658382$ & $3.367388$ & $5.457878$ & $0.184579$\\
++Cell & 53.75 & -5.75 & $0.320768$ & $0.699043$ & $1.789064$ & $3.581551$ & $5.806923$ & $0.190339$\\
++\end{longtable}
++\end{revisionlongtable}
++
++\clearpage
++\begin{figure}[!htbp]
++\centering
++\includegraphics{Figures/r2M7_spatial_quantiles.pdf}
++\begingroup\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
++\caption{Spatial contrasts in training-period precipitation statistics. Grey points show the 25 individual ERA5 cells and black diamonds show the equal-weight regional mean. For each horizontal category separately, Q90, Q95, Q99, Q99.9 or the maximum is divided by the median of that same statistic across the 25 cells; the vertical axis is therefore a dimensionless ratio. The dashed line at one marks the corresponding cell median. The five percentage annotations are the regional statistic relative to its corresponding cell median, not a common precipitation denominator. All statistics use the same 18,404 training prediction-target times as Table~\ref{stab:r2m7_spatial_quantiles}; each series contributes its own maximum, not a value at a shared event time. The figure contains descriptive distribution summaries, not statistical-significance tests.}
++\label{sfig:r2m7_spatial_quantiles}
++\endgroup
++\end{figure}
++
+ \end{document}
+--- a/ESI_审稿意见分类_严重程度排序_35项.md
++++ b/ESI_审稿意见分类_严重程度排序_35项.md
+@@ -606,6 +606,15 @@
+ - [ ] 回复信写入
+ 
+ ##### 2. R2 M7（Q95 的依据与空间平均的影响）
++
++> **2026-11-14 R2-M7本地正式整合状态：已完成本地科学/数值/摘录/PDF核验，待作者审核与后续选择性Git归档，尚未正式关闭。** 当前权威来源为固定提交`dc850836b486e8f326ddcb432a3602fe8b8448b6`的`results/r2m7_evidence/`五文件。26个序列均使用相同18,404个训练预测目标时刻；不采用混合时期的旧q03_cell_stats制表。自动Table S47（`stab:r2m7_spatial_quantiles`）、Figure S2（`sfig:r2m7_spatial_quantiles`）已加入。相对25格对应统计量中位数：湿频率+14.3%、Q90+8.8%、Q95−7.3%、Q99−13.1%、Q99.9−13.9%、Max−31.4%。远端三项低于全部25格；这些是描述性差异，不是显著性检验。原下方S1、混合时期旧文件及10–14%等范围为历史计划/代表格点比较，不作为本轮正式统计；不能据此宣称空间平均解释或不解释低Q95的主要成因。正文、回复及五段新摘录已同步；92段旧摘录及S1–S46保持。详见`results/r2m7_integration/FINAL_REPORT.md`。本轮未暂存、提交或推送；任务03的R3-C14、R4-m12/m20/m26/m36保持Pending，R1既有关闭状态不变。
++
++- [x] 本轮统一时期数据/固定Git版本核验及206个数值转录核验
++- [x] 本轮自动补充表/作者最终图/Methods/Results/Discussion/Limitations及回复本地整合
++- [x] 本轮三PDF编译、实际100%相关页检查、97段摘录匹配
++- [ ] 作者审核后授权选择性Git提交/推送及远程回读，随后才能关闭R2-M7
++
++以下保留历史计划，不代表当前排版编号或完成状态：
+ 
+ **审稿人原文：**
+ > "The Q95 threshold of 0.5740 mm may not represent meteorologically significant heavy rainfall. Please justify this threshold and clarify the influence of spatial averaging on extreme precipitation."
+--- a/FINAL_REVISION_CHECKLIST.md
++++ b/FINAL_REVISION_CHECKLIST.md
+@@ -467,3 +467,15 @@
+ - 三PDF按顺序编译并100%相关页检查；新表编号/位置见results/r2m6_integration/LOCATIONS.json。未训练、重绘或改变原实验输出；任务05/06/12/16/30等共享待办保留，未开始R2-M7。最终页码/行号待全稿定稿。
+ 
+ R2-M6关闭回执：必要整合归档`86fdcfb3ef039be31c685346510b5a3ab023a463`已推送origin/main，GitHub回读24/24文件blob一致；最终稿明确dry选择属于历史199分位诊断，未改任何正式数值。仅任务11的R2-M6范围完成，任务05/06/12/16/30等共享待办保持。
++
++
++### R2-M7 / 任务03：本地核验通过，待作者审核及授权归档（2026-11-14）
++
++- [x] 固定证据提交`dc850836b486e8f326ddcb432a3602fe8b8448b6`五个文件与远程blob逐一一致；MD5见`results/r2m7_integration/SOURCE_INDEX.json`。
++- [x] 同一18,404训练目标时刻的26行空间表：206个数值及2个缺省坐标标记逐格核验；10项正文/回复数值事实核验；175个逐格百分比和130个作者图矢量标记独立核查。
++- [x] 自动Table S47（PDF50页）/Figure S2（51页），统一label/ref；图119×70 mm原生插入，原PDF未改动。
++- [x] Methods/Results/Discussion/Limitations采用追加文字；所有原正文字符、Table5完整A1/A2/B、S1–S46、旧图及92段RevisedExcerpt保留；新增5段与正文完全一致。112个保护文件哈希不变。
++- [x] 三PDF顺序编译与相关页面100%检查通过；保留原模板字体/bookmark及1.41457pt vbox警告，无未定义引用/重复label/新增横向溢出。
++- [ ] 作者审核报告后授权本轮选择性提交、推送和远程回读；**目前不正式关闭R2-M7**。
++
++权威量化：湿频率+14.3%、Q90+8.8%、Q95−7.3%、Q99−13.1%、Q99.9−13.9%、最大值−31.4%，均相对各自25格中位数，不是百分点或因果/显著性结论。Q95原尺度0.574048，单格0.5441–0.6990 mm h⁻¹。任务03内R3-C14、R4-m12/m20/m26/m36仍Pending；未开始R2-M8。报告和patch见`results/r2m7_integration/`。
+--- a/manuscript.tex
++++ b/manuscript.tex
+@@ -443,6 +443,10 @@
+ {\color{red}\hypersetup{linkcolor=red,citecolor=red}
+ For context, the rain-intensity classification in WMO-No.~8 \citep[Part~I, Chapter~14, Annex, p.~I.14--7]{wmo2008guide} defines heavy rain (including showers) by $10\leq i<50$~mm\,h$^{-1}$, where $i$ is the intensity based on a 3-minute measurement period. This rain classification cannot be directly equated with ERA5 precipitation accumulated over one hour and spatially averaged across the 25 study-domain grid points, because both the temporal averaging period and spatial support differ.
+ \par}
++{\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
++For the spatial-support diagnostic, all 25 grid-cell series and their equal-weight regional mean use the same 18,404 training prediction-target times. We first form the regional mean at each time and then take its empirical 95th percentile, rather than averaging grid-cell quantiles. This gives Q95 $=0.574048$~mm\,h$^{-1}$ on the original precipitation scale, without a logarithmic transformation. Individual-cell Q95 values range from 0.5441 to 0.6990~mm\,h$^{-1}$. Q95 defines a fixed relative upper-tail regime of the regional hourly target, not a meteorological heavy-rainfall category.
++\par}
++
+ 
+ 
+ {\color{red}
+@@ -815,6 +819,12 @@
+ \par}
+ \subsection{Performance Across Rainfall Regimes}
+ \label{sec:regime_results}
++
++{\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
++A separate descriptive spatial comparison uses the training targets, rather than the forecast-test samples. Relative to the median of the corresponding statistic across the 25 cells, regional wet-hour frequency ($\geq0.1$~mm\,h$^{-1}$) is 14.3\% higher and Q90 is 8.8\% higher. Regional Q95 is 7.3\% lower than the cell median but remains within the individual-cell range. Regional Q99, Q99.9 and the maximum are lower by 13.1\%, 13.9\% and 31.4\%, respectively, and all three are below the corresponding values of every one of the 25 cells. These percentages are relative changes, not percentage-point differences.
++
++Supplementary Table~\ref{supp-stab:r2m7_spatial_quantiles} lists the 26 series on the common training-time set. Supplementary Figure~\ref{supp-sfig:r2m7_spatial_quantiles} divides each displayed statistic by the median of that same statistic across the 25 cells. Its five categories therefore have separate normalizing denominators, with a reference ratio of one.
++\par}
+ 
+ Forecast errors increased substantially when the evaluation was restricted to wetter and upper-tail precipitation. Of the 3,939 test samples, 3,228 meet the legacy $>0$~mm\,h$^{-1}$ wet definition, while 238 met the training-derived 95th-percentile threshold of 0.5740~mm\,h$^{-1}$. Figure~\ref{fig:stratified_rmse} compares RMSE for the full test set, legacy wet samples ($>0$~mm\,h$^{-1}$), and upper-tail samples.
+ 
+@@ -1151,6 +1161,10 @@
+ {\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
+ An alternative precipitation-appropriate likelihood improved overall probabilistic skill and eliminated negative prediction bounds by construction, but substantial upper-tail undercoverage remained. The comparison does not isolate the likelihood family from changes in output parameterization, loss and training-target scale. It supports the tested Bernoulli--Gamma formulation within this backbone, not a general claim that it improves every architecture or rare-event diagnostic.
+ \par}
++
++{\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
++The spatial contrasts depend on the position in the precipitation distribution: wet frequency and Q90 increase relative to the cell medians, while the higher quantiles and maxima decrease. Spatial averaging should therefore not be described as reducing every precipitation intensity. These are descriptive contrasts between matched-time series summaries; the individual maxima need not occur at the same time, and the comparison does not identify an event-scale causal mechanism.
++\par}
+ \subsection{Predictor Attribution and Incremental Contribution}
+ \label{sec:predictor_complementarity}
+ 
+@@ -1183,6 +1197,10 @@
+ \par}
+ 
+ Several limitations affect the interpretation and generalization of the present results. The first concerns the spatial representation of precipitation. All meteorological variables, including the prediction target, were spatially averaged across the 25 ERA5 grid points within the study domain. The resulting forecasts therefore represent Dublin regional mean precipitation rather than rainfall at individual locations. \textcolor{red}{Spatial averaging provides a compact regional forecasting problem but can smooth localized rainfall maxima and reduce the apparent intensity of small-scale precipitation events. Consequently, upper-tail precipitation events ($\geq$Q95) of the ERA5 regional mean must not be equated with heavy rainfall measured at an individual station. This distinction limits the interpretation of the upper-tail results as local high-impact rainfall forecasts.}
++{\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
++On the common training-target set, the regional Q99, Q99.9 and maximum are 13.1\%, 13.9\% and 31.4\% below their respective 25-cell medians. The opposite-direction contrasts in wet frequency and Q90 qualify a blanket smoothing interpretation. A single ERA5 cell is itself a gridded estimate rather than a rain-gauge measurement, so these grid-to-region comparisons do not quantify station-level extreme-rainfall attenuation. The conclusions concern ERA5-derived regional-mean hourly precipitation and do not directly represent station-scale extremes.
++\par}
++
+ 
+ {\color{red}\hypersetup{linkcolor=red,citecolor=red,urlcolor=red}
+ The independent observational assessment is limited to one airport station and remains exploratory. Point rainfall and regional-mean reanalysis have different spatial supports, and spatial averaging cannot be assumed to explain all distributional differences or model errors. No multi-station validation was implemented, and no independent station-based or radar-derived precipitation target was constructed at a spatial support matched to the 25-grid-point ERA5 regional mean. The station rainfall accumulation window remains uncertain under the adopted timestamp alignment. All 26,300 matched station observations carried rainfall indicator 111 (``investigation required''), with no indicator-0 (``satisfactory'') subset, so an indicator-0 sensitivity analysis could not be undertaken. This does not establish why code 111 occurs or imply that every amount is erroneous, but it limits the strength of observational validation. The XGBoost station-label experiment used regional ERA5 inputs and unchanged hyperparameters, without station-specific predictors or tuning, multi-station training, or deep-learning retraining on observations. Neither the exploratory observational comparison nor the non-significant label-training difference establishes transferability to other stations, regions or temporal scales. Our conclusions remain restricted to ERA5-derived regional-mean precipitation over Dublin.
+--- a/SUPPLEMENTARY_TABLE_REGISTRY.md
++++ b/SUPPLEMENTARY_TABLE_REGISTRY.md
+@@ -82,3 +82,13 @@
+ | S44 | `stab:r2m6_dry001` | 47 |
+ | S45 | `stab:r2m6_dry_history` | 48 |
+ | S46 | `stab:r2m6_conditional_history` | 49 |
++
++
++### R2-M7追加（当前成功编译aux，2026-11-14）
++
++| 类型 | 自动编号 | 永久label | PDF页 |
++|---|---|---|---:|
++| Table | S47 | `stab:r2m7_spatial_quantiles` | 50 |
++| Figure | S2 | `sfig:r2m7_spatial_quantiles` | 51 |
++
++S1–S46及Figure S1源代码保持不变。图与表采用独立计数器，无手工预占编号；外部引用沿用`supp-`前缀。后续末尾追加表自动为S48，图自动为S3，以实际aux为准。本轮本地核验通过，待作者审核和授权Git归档。

@@ -1,0 +1,11 @@
+{
+  "series": 26,
+  "cells": 25,
+  "n_training_targets": 18404,
+  "summary_rows": 7,
+  "per_cell_percentages_verified": 175,
+  "uniform_period": true,
+  "all_maxima_times_within_period": true,
+  "far_tail_below_all25": true,
+  "rounding_aware_ratio_verification": true
+}

@@ -1,0 +1,25 @@
+{
+  "Supplementary": {
+    "page_count": 51,
+    "review_pages": [
+      50,
+      51
+    ]
+  },
+  "manuscript": {
+    "page_count": 94,
+    "review_pages": [
+      27,
+      53,
+      76,
+      80
+    ]
+  },
+  "Response letter": {
+    "page_count": 68,
+    "review_pages": [
+      44,
+      45
+    ]
+  }
+}
