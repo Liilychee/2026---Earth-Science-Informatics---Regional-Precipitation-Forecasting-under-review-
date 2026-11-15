@@ -1,0 +1,20 @@
+{
+  "base_commit": "4aabdcb0aaadf3fa679c0c4bfe08d477ec755f81",
+  "scientific_archive_commit": "9603d29738378d5788d4c18efdd1a4e49360857b",
+  "remote_scientific_files": 50,
+  "all_blobs_match": true,
+  "old_excerpts": 118,
+  "new_excerpts": 2,
+  "total_matched": 120,
+  "CSV_field_references": 78,
+  "protected_artifacts": 767,
+  "main_Supplementary_Table5_S1_S50_Figures_unchanged": true,
+  "original_worktree_index_PDFs_unchanged": true,
+  "previous_closed_archives_preserved": true,
+  "m9_overall_not_closed": true,
+  "other_shared_statuses_preserved": true,
+  "next_item_not_started": true,
+  "breakpoint": "Codex stopped after LOCAL_VERIFIED; no prior worktree/stage/commit/push",
+  "worktree": "/private/tmp/esi-r2minor4-integration-sync (branch claude/r2minor4-integration-sync)",
+  "scope": "only results/r2minor4_integration; reply/task increments in patches"
+}

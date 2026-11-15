@@ -72,3 +72,12 @@ No undefined references, duplicate labels, horizontal overflow, oversized float 
 - PDF_CHECK.json, PDF_PAGE_INDEX.json, three compile logs, render/ and GIT_STATE.json/GIT_STATUS.txt.
 
 No blocking local scientific/layout issue found. Await author review and separate selective archive authorisation; do not commit/push or mark CLOSED in this round. Historical task drafts remain archival context and are superseded for this response by current verified evidence, not silently edited. Final page/line annotation remains deferred to whole-revision assembly.
+
+
+## Author-authorised selective archive and formal closure — 2026-11-15 (Claude Code takeover)
+
+Breakpoint recovered: Codex stopped after LOCAL_VERIFIED_AWAITING_AUTHOR_REVIEW; no R2-m4 worktree, stage, commit or push existed and remote main remained 4aabdcb0aaadf3fa679c0c4bfe08d477ec755f81. Claude Code re-verified the local integration read-only (Codex check scripts were not re-run because they rewrite records): 120/120 excerpts, 78/78 CSV fields, 767 protected files, unchanged main/Supplementary/Figures, R1-M4/R2-M8/R2-m3 reply blocks unchanged, PDF records and page-57 render reviewed. The q10 ablation bootstrap's 141 complete blocks (3,948 draw positions) are not described as 3,939-sample resamples anywhere in the reply or manuscript; no interval was reinterpreted or recomputed.
+
+The R2-m4 reply/task/checklist increment and selected evidence were archived from main 4aabdcb in independent worktree /private/tmp/esi-r2minor4-integration-sync. Scientific commit `9603d29738378d5788d4c18efdd1a4e49360857b` was normally pushed. A fresh remote clone matched 50/50 blobs; the remote PORTABLE patch reconstructed the exact reviewed source bytes in scratch; 120/120 excerpts and 78/78 CSV fields re-verified from the remote copies. Original paper files, git index and PDFs were not overwritten (ORIGINAL_WORKTREE_GUARD.json).
+
+R2-m4 is CLOSED after successful remote verification. A separate closure commit records STATUS, the remote receipt, archive report and the task17/checklist closure-note patch (CLOSURE_STATUS.patch, recorded for later assembly; original paper files not modified). Historical local-pending statements above are superseded by current STATUS. Other shared matters retain their prior status; M9 remains not overall closed. No new experiment, interval, figure or table; no other reviewer item started.

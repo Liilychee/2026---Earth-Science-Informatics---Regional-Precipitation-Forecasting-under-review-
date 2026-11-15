@@ -1,0 +1,337 @@
+{
+  "stage": "scientific_archive_remote_verified",
+  "commit": "9603d29738378d5788d4c18efdd1a4e49360857b",
+  "base_commit": "4aabdcb0aaadf3fa679c0c4bfe08d477ec755f81",
+  "remote_main_after_push": "9603d29738378d5788d4c18efdd1a4e49360857b",
+  "repository": "https://github.com/Liilychee/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-",
+  "readback_method": "fresh shallow sparse clone of remote main; git ls-tree blob comparison plus manifest SHA256 of remote file contents",
+  "remote_file_count": 50,
+  "all_blobs_match": true,
+  "checks": [
+    {
+      "path": "results/r2minor4_integration/ARCHIVE_MANIFEST.json",
+      "sha": "05653e5939f99a8e935831593128a752eec31ce7",
+      "remote_sha": "05653e5939f99a8e935831593128a752eec31ce7",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/BASELINE_GATE.json",
+      "sha": "51923212bece1465f41d187677eec08539b88ad4",
+      "remote_sha": "51923212bece1465f41d187677eec08539b88ad4",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/BOOTSTRAP_METHOD_CHECK.md",
+      "sha": "907695cb449910e32593f3f42ff9053e27d40fa3",
+      "remote_sha": "907695cb449910e32593f3f42ff9053e27d40fa3",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/CELL_INDEX.json",
+      "sha": "2bdb650fea9bef3322aaa20d8578442f9dabf1c5",
+      "remote_sha": "2bdb650fea9bef3322aaa20d8578442f9dabf1c5",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/DATA_CHECK.json",
+      "sha": "20d7f751530ca813843abbb04c25f46977e19bd2",
+      "remote_sha": "20d7f751530ca813843abbb04c25f46977e19bd2",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/DOCUMENT_HASHES.json",
+      "sha": "28d6ffaca36f681dfa7393cfaa6d4f2c769e67cb",
+      "remote_sha": "28d6ffaca36f681dfa7393cfaa6d4f2c769e67cb",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/EVIDENCE_INDEX.md",
+      "sha": "086c5caf35a0894a33d2d0660cf66112b88d52fa",
+      "remote_sha": "086c5caf35a0894a33d2d0660cf66112b88d52fa",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/EXCERPT_BEFORE_MAP.json",
+      "sha": "f4c09500979da9c65a19d77d077141fbde795c11",
+      "remote_sha": "f4c09500979da9c65a19d77d077141fbde795c11",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/EXCERPT_INDEX.json",
+      "sha": "aafdedf199321dce5cf29c300c08d1dd90273d44",
+      "remote_sha": "aafdedf199321dce5cf29c300c08d1dd90273d44",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/FINAL_EXCERPTS.json",
+      "sha": "c2461f46ce8976a8dde478d7e8a4bc47e9b76f39",
+      "remote_sha": "c2461f46ce8976a8dde478d7e8a4bc47e9b76f39",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/FINAL_REPORT.md",
+      "sha": "13cc6fa96d9c4f106b29041303ee2d9fb6d9ea17",
+      "remote_sha": "13cc6fa96d9c4f106b29041303ee2d9fb6d9ea17",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/GIT_SCOPE.md",
+      "sha": "ec38d65e0455390d2c7697aeefb7002fdfb07eb4",
+      "remote_sha": "ec38d65e0455390d2c7697aeefb7002fdfb07eb4",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/GIT_STATE.json",
+      "sha": "6a83604091b2398bf863c630072d805e0074d5a3",
+      "remote_sha": "6a83604091b2398bf863c630072d805e0074d5a3",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/GIT_STATUS.txt",
+      "sha": "11e1a23528791dc6d53f49e55af2004c285279c9",
+      "remote_sha": "11e1a23528791dc6d53f49e55af2004c285279c9",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/LABEL_INDEX.json",
+      "sha": "4cb4a40d0fbcbc8999bf4e6dcd56ab8334b721cf",
+      "remote_sha": "4cb4a40d0fbcbc8999bf4e6dcd56ab8334b721cf",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/LOCATIONS.json",
+      "sha": "5c6bc06d707a4d301c67caf2e58ce0ed783840d7",
+      "remote_sha": "5c6bc06d707a4d301c67caf2e58ce0ed783840d7",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/METHOD_INDEX.json",
+      "sha": "b973e7fe277f2310e85b125525631551e03391a9",
+      "remote_sha": "b973e7fe277f2310e85b125525631551e03391a9",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/ORIGINAL_WORKTREE_GUARD.json",
+      "sha": "11f509ea9b47c94e1a496496cfcae98bfe73a701",
+      "remote_sha": "11f509ea9b47c94e1a496496cfcae98bfe73a701",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/PATCH_RECONSTRUCTION.json",
+      "sha": "24d28c544ebdb4d999fef3d543db51166fae8a24",
+      "remote_sha": "24d28c544ebdb4d999fef3d543db51166fae8a24",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/PDF_CHECK.json",
+      "sha": "4eb9cbb46298c93d36219a4d84fff434b7e56150",
+      "remote_sha": "4eb9cbb46298c93d36219a4d84fff434b7e56150",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/PDF_PAGE_INDEX.json",
+      "sha": "a8548c6051aa71824b727cea53f273b70687e4d8",
+      "remote_sha": "a8548c6051aa71824b727cea53f273b70687e4d8",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/PROTECTED_HASHES.json",
+      "sha": "96c862522d2baaa32bdc6053639635a08afe0216",
+      "remote_sha": "96c862522d2baaa32bdc6053639635a08afe0216",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/R2minor4_LOCAL.patch",
+      "sha": "b825ebabb42b6778f8e75a85def55f300d212626",
+      "remote_sha": "b825ebabb42b6778f8e75a85def55f300d212626",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/R2minor4_PORTABLE.patch",
+      "sha": "601b2dd30532a50299011cc2d1708007d2da479f",
+      "remote_sha": "601b2dd30532a50299011cc2d1708007d2da479f",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/SOURCE_INDEX.json",
+      "sha": "cd43adf9bd54478657e122e977a6b138b75bba49",
+      "remote_sha": "cd43adf9bd54478657e122e977a6b138b75bba49",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/STATUS.md",
+      "sha": "4c5dc2221668ada99ced8c163f76b03a1db9f563",
+      "remote_sha": "4c5dc2221668ada99ced8c163f76b03a1db9f563",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/TASK_NOTE.json",
+      "sha": "97a335998edcd0558851f9947d30a3420b50ce8b",
+      "remote_sha": "97a335998edcd0558851f9947d30a3420b50ce8b",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/VERIFICATION.json",
+      "sha": "84af65f3a4b85e1bc02a38366333118b3fcb4340",
+      "remote_sha": "84af65f3a4b85e1bc02a38366333118b3fcb4340",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/check_integration.py",
+      "sha": "dde972a47112f6c14e17fb7b5a142d3bda76a9df",
+      "remote_sha": "dde972a47112f6c14e17fb7b5a142d3bda76a9df",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/check_pdf.py",
+      "sha": "0bfbd3fdcdb70e0a7b562b4aea97be2c9b0004f1",
+      "remote_sha": "0bfbd3fdcdb70e0a7b562b4aea97be2c9b0004f1",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/check_sources.py",
+      "sha": "0870bb4d083adf1264509c56108943bc9be395d3",
+      "remote_sha": "0870bb4d083adf1264509c56108943bc9be395d3",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/check_sources_output.txt",
+      "sha": "c1543c06edc9ad72c1312d27837ffb0b07aa7564",
+      "remote_sha": "c1543c06edc9ad72c1312d27837ffb0b07aa7564",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/compile_Response_letter.txt",
+      "sha": "fbf222715cd2dfce0031f90619ce06008697f2dc",
+      "remote_sha": "fbf222715cd2dfce0031f90619ce06008697f2dc",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/compile_Supplementary.txt",
+      "sha": "fe2bff2ccb1fd23ff464b21ad56b0721be641293",
+      "remote_sha": "fe2bff2ccb1fd23ff464b21ad56b0721be641293",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/compile_manuscript.txt",
+      "sha": "9230df437bd723316e0ea799984ae5904e8beba9",
+      "remote_sha": "9230df437bd723316e0ea799984ae5904e8beba9",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/evidence/q10_ablation_rank_stability.csv",
+      "sha": "b11adfe081e0679cf465f312ac264c91adfd2f9a",
+      "remote_sha": "b11adfe081e0679cf465f312ac264c91adfd2f9a",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/evidence/q10_ablation_runs.csv",
+      "sha": "41a049a3d79be0ef744d59b5ef21cf893567a4fe",
+      "remote_sha": "41a049a3d79be0ef744d59b5ef21cf893567a4fe",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/evidence/q10_ablation_stats.py",
+      "sha": "003f3ff981183e01c1551333644f64122cc1bb8c",
+      "remote_sha": "003f3ff981183e01c1551333644f64122cc1bb8c",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/evidence/q10_ablation_stats_output.txt",
+      "sha": "e721850ed0ee110354ccb008d9a4de1af53a9c78",
+      "remote_sha": "e721850ed0ee110354ccb008d9a4de1af53a9c78",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/evidence/q10_ablation_summary.csv",
+      "sha": "4979917fcebe51297bffc4c40a1d9d08543c4235",
+      "remote_sha": "4979917fcebe51297bffc4c40a1d9d08543c4235",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/evidence/q10_shap.py",
+      "sha": "bfef4a293e386490f4c108be7d7da9817dbfa3a1",
+      "remote_sha": "bfef4a293e386490f4c108be7d7da9817dbfa3a1",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/evidence/q10_shap_global.csv",
+      "sha": "d8e97a5f4bddf32ccbd5537a17115967e63514e3",
+      "remote_sha": "d8e97a5f4bddf32ccbd5537a17115967e63514e3",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/evidence/q10_shap_rank_stability.csv",
+      "sha": "a56b81e71229a7f18e8b0e1e50c012ac56de3720",
+      "remote_sha": "a56b81e71229a7f18e8b0e1e50c012ac56de3720",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/evidence/q10_shap_stats.py",
+      "sha": "de070ed594614cbb70655fae839b6c3773a88f8d",
+      "remote_sha": "de070ed594614cbb70655fae839b6c3773a88f8d",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/evidence/q10_shap_stats_output.txt",
+      "sha": "9274443914b1f0a5ca7423ebf52108c668d5916a",
+      "remote_sha": "9274443914b1f0a5ca7423ebf52108c668d5916a",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/evidence/q10_shap_temporal.csv",
+      "sha": "9d6ddcc787197c1bf5653b97258f511293113f44",
+      "remote_sha": "9d6ddcc787197c1bf5653b97258f511293113f44",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/integrate_reply.py",
+      "sha": "8ddea0d3c4200c02af29ee8378957b4eedf3b673",
+      "remote_sha": "8ddea0d3c4200c02af29ee8378957b4eedf3b673",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/render/Response_letter-55.png",
+      "sha": "72e318c0fd758d1313446479676fe3f96e41ca99",
+      "remote_sha": "72e318c0fd758d1313446479676fe3f96e41ca99",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/render/Response_letter-56.png",
+      "sha": "de8790efe4da16e95515c949218df298690d9fbb",
+      "remote_sha": "de8790efe4da16e95515c949218df298690d9fbb",
+      "match": true
+    },
+    {
+      "path": "results/r2minor4_integration/render/Response_letter-57.png",
+      "sha": "2a39fcd0d7f4eae682e9eeef8d82e2dc7c117a71",
+      "remote_sha": "2a39fcd0d7f4eae682e9eeef8d82e2dc7c117a71",
+      "match": true
+    }
+  ],
+  "verification": {
+    "old_excerpts_unchanged": 118,
+    "new_exact_excerpts": 2,
+    "total_matched": 120,
+    "CSV_field_references": 78,
+    "patch_reconstruction_from_remote": true,
+    "BU_mntpr_three_subsets_three_way_rule_disclosed": true,
+    "BU_sp_tcc_interval_disagreement_disclosed": true,
+    "bootstrap_3948_positions_vs_3939_targets_not_conflated": true,
+    "protected_files": 767,
+    "main_Supplementary_Table5_S1_S50_Figures_unchanged": true,
+    "original_worktree_index_PDFs_unchanged": true
+  },
+  "m9_status": "SCIENTIFIC_INTEGRATION_COMPLETE — FINAL_REPOSITORY_DOCUMENTATION_PENDING",
+  "closed_preserved": [
+    "R1-M4",
+    "R2-M8",
+    "R2-m3"
+  ],
+  "pending_preserved": [
+    "R4-m29",
+    "R4-m34"
+  ],
+  "other_shared_statuses": "preserved",
+  "executed_by": "Claude Code (takeover after Codex stopped at local verification)"
+}
