@@ -1,0 +1,265 @@
+{
+  "stage": "scientific_archive_remote_verified",
+  "commit": "7faac6b6918417d2e8acdccf871adf26fd83b6de",
+  "base_commit": "29fa0e54ed57f9aac5433fe929de4b12ddf48b5c",
+  "remote_main_after_push": "7faac6b6918417d2e8acdccf871adf26fd83b6de",
+  "repository": "https://github.com/Liilychee/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-",
+  "readback_method": "fresh shallow sparse clone; git ls-tree blob comparison, manifest SHA-256 of remote contents, remote PORTABLE patch reconstruction (git apply + BSD patch), 129-excerpt re-verification, Crossref metadata re-check from remote evidence copies",
+  "remote_file_count": 40,
+  "all_blobs_match": true,
+  "manifest_sha256_match": true,
+  "changed_outside_record_dir": [],
+  "patch_reconstruction": {
+    "manuscript.tex": "byte-identical",
+    "Response letter.tex": "byte-identical",
+    "sn-bibliography.bib": "byte-identical"
+  },
+  "excerpts": "128 unchanged + 1 new = 129/129",
+  "gao_metadata_vs_crossref": "authors/order, volume 31, issue 6, pages 603-621, year 2025, DOI match",
+  "manandhar_doi_vs_crossref": true,
+  "candidate_list_unchanged": true,
+  "final_seven_unchanged": true,
+  "protected_files_unchanged": 964,
+  "checks": [
+    {
+      "path": "results/r3sec32b_integration/BASELINE_GATE.json",
+      "sha": "9e80ad7baaa2ecd3d2075dca8f6a25be4cc667ce",
+      "remote_sha": "9e80ad7baaa2ecd3d2075dca8f6a25be4cc667ce",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/CELL_INDEX.json",
+      "sha": "263cc6c8d798f2e16ce10995ff3d57f2ca39b6dc",
+      "remote_sha": "263cc6c8d798f2e16ce10995ff3d57f2ca39b6dc",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/DOCUMENT_HASHES.json",
+      "sha": "db83ee45cc1b484b237f3cce95549e12acdd8527",
+      "remote_sha": "db83ee45cc1b484b237f3cce95549e12acdd8527",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/EVIDENCE_INDEX.md",
+      "sha": "1e542212bdc15f2b1825a110b9a49786165e41a0",
+      "remote_sha": "1e542212bdc15f2b1825a110b9a49786165e41a0",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/EXCERPT_INDEX.json",
+      "sha": "6ac16e4f8b0ebb92db22512d4e43723538d74240",
+      "remote_sha": "6ac16e4f8b0ebb92db22512d4e43723538d74240",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/FINAL_REPORT.md",
+      "sha": "1118461c72c8d115492e79b6099638c9ea529964",
+      "remote_sha": "1118461c72c8d115492e79b6099638c9ea529964",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/GIT_SCOPE.md",
+      "sha": "338df63a2ffc7efd97d0938c3a302be1563f7e9a",
+      "remote_sha": "338df63a2ffc7efd97d0938c3a302be1563f7e9a",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/GIT_STATE.json",
+      "sha": "0f1c222d2286193bdbbe3943d35f2ec5dcf6fbb0",
+      "remote_sha": "0f1c222d2286193bdbbe3943d35f2ec5dcf6fbb0",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/GIT_STATUS.txt",
+      "sha": "11e1a23528791dc6d53f49e55af2004c285279c9",
+      "remote_sha": "11e1a23528791dc6d53f49e55af2004c285279c9",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/LITERATURE_EVIDENCE.md",
+      "sha": "df04af0c25d933a8c72a44eb377edc95cfa5fabe",
+      "remote_sha": "df04af0c25d933a8c72a44eb377edc95cfa5fabe",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/ORIGINAL_WORKTREE_GUARD.json",
+      "sha": "896a26714c5dba8c0391c76188e524f2ebdb0a6e",
+      "remote_sha": "896a26714c5dba8c0391c76188e524f2ebdb0a6e",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/PATCH_RECONSTRUCTION.json",
+      "sha": "733555582166063417f65315af432474ed5c612f",
+      "remote_sha": "733555582166063417f65315af432474ed5c612f",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/PDF_CHECK.json",
+      "sha": "b0ec05498f9ac6298d52420a4252a5a2189be5e5",
+      "remote_sha": "b0ec05498f9ac6298d52420a4252a5a2189be5e5",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/PROTECTED_HASHES.json",
+      "sha": "ec2c54ed40ca4925acdaa4fa4362a5580a66b6ee",
+      "remote_sha": "ec2c54ed40ca4925acdaa4fa4362a5580a66b6ee",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/R3S32b_LOCAL.patch",
+      "sha": "f96e1c0757bfbf55c11307896b1ddb16f1833f60",
+      "remote_sha": "f96e1c0757bfbf55c11307896b1ddb16f1833f60",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/R3S32b_PORTABLE.patch",
+      "sha": "ee319f5daa50265270f09bc99b3569214b3c3584",
+      "remote_sha": "ee319f5daa50265270f09bc99b3569214b3c3584",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/STATUS.md",
+      "sha": "004dcdd39452a17ae63f133a7fa63d539ca42fcb",
+      "remote_sha": "004dcdd39452a17ae63f133a7fa63d539ca42fcb",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/VERIFICATION.json",
+      "sha": "be677ae610933ba8e20fc84231dfdbcc3f5871c0",
+      "remote_sha": "be677ae610933ba8e20fc84231dfdbcc3f5871c0",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/VERIFICATION_DETAIL.json",
+      "sha": "98a50965c95f245b22a78b93d134be55d0da440d",
+      "remote_sha": "98a50965c95f245b22a78b93d134be55d0da440d",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/compile_Response_letter.txt",
+      "sha": "e725f84c33bcc3bda41d0c21ff6f8711d4f76120",
+      "remote_sha": "e725f84c33bcc3bda41d0c21ff6f8711d4f76120",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/compile_Response_letter_final.txt",
+      "sha": "e591f6e1e68e9d2d3e98bb321dfe76f4994f5180",
+      "remote_sha": "e591f6e1e68e9d2d3e98bb321dfe76f4994f5180",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/compile_Supplementary.txt",
+      "sha": "fe2bff2ccb1fd23ff464b21ad56b0721be641293",
+      "remote_sha": "fe2bff2ccb1fd23ff464b21ad56b0721be641293",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/compile_Supplementary_final.txt",
+      "sha": "fe2bff2ccb1fd23ff464b21ad56b0721be641293",
+      "remote_sha": "fe2bff2ccb1fd23ff464b21ad56b0721be641293",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/compile_manuscript.txt",
+      "sha": "94482fde5c281c5fb6db1e87f509cde047e6860d",
+      "remote_sha": "94482fde5c281c5fb6db1e87f509cde047e6860d",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/compile_manuscript_final.txt",
+      "sha": "eb1c4d7af019365867f256d33d0fc668081a9680",
+      "remote_sha": "eb1c4d7af019365867f256d33d0fc668081a9680",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/evidence/crossref_gao2025.json",
+      "sha": "7243d65af4de545493105fcee61e9df95e41144b",
+      "remote_sha": "7243d65af4de545493105fcee61e9df95e41144b",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/evidence/crossref_manandhar2019.json",
+      "sha": "7a49f12990826a423d49278688e96fdde3e18de8",
+      "remote_sha": "7a49f12990826a423d49278688e96fdde3e18de8",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/evidence/ecmwf_param_142.json",
+      "sha": "05338c5554a3221cb708463a72fb8989edfeaab1",
+      "remote_sha": "05338c5554a3221cb708463a72fb8989edfeaab1",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/evidence/ecmwf_param_182.json",
+      "sha": "fc9a8c67a23c7d2fafb8b066c311f398338e58ef",
+      "remote_sha": "fc9a8c67a23c7d2fafb8b066c311f398338e58ef",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/evidence/ecmwf_param_228.json",
+      "sha": "e5f69c96f66a4bddc0910aea1d900487183b4e23",
+      "remote_sha": "e5f69c96f66a4bddc0910aea1d900487183b4e23",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/evidence/ecmwf_param_228226.json",
+      "sha": "6b97ebdf7a9d0d5b6b8b6c9f24edc8fd651f031a",
+      "remote_sha": "6b97ebdf7a9d0d5b6b8b6c9f24edc8fd651f031a",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/evidence/ecmwf_param_228227.json",
+      "sha": "f906e6249d6924e6a86dea1eac7a99f58da87946",
+      "remote_sha": "f906e6249d6924e6a86dea1eac7a99f58da87946",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/evidence/ecmwf_param_228251.json",
+      "sha": "a2e1549c393d4626ad218f67f70076905ba93f7f",
+      "remote_sha": "a2e1549c393d4626ad218f67f70076905ba93f7f",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/render/Response_letter-62.png",
+      "sha": "ef980de32cda60f2dcd5b7277c914704ca0ac47a",
+      "remote_sha": "ef980de32cda60f2dcd5b7277c914704ca0ac47a",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/render/Response_letter-63.png",
+      "sha": "06634eabbff2bad6c648b7887aac7dbcad03cd6c",
+      "remote_sha": "06634eabbff2bad6c648b7887aac7dbcad03cd6c",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/render/Response_letter-80.png",
+      "sha": "a186c9f6f04f16a73c65097c8323fcbace6d2217",
+      "remote_sha": "a186c9f6f04f16a73c65097c8323fcbace6d2217",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/render/manuscript-13.png",
+      "sha": "7f9588102355f94c9ed4a27fdce603ea18d35fdf",
+      "remote_sha": "7f9588102355f94c9ed4a27fdce603ea18d35fdf",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/render/manuscript-92.png",
+      "sha": "0633065087900b9c3e2b144cb3caa926a7e3b4e3",
+      "remote_sha": "0633065087900b9c3e2b144cb3caa926a7e3b4e3",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/render/manuscript-95.png",
+      "sha": "44240333fb08abcb96ba6fb46cb18afe2b930864",
+      "remote_sha": "44240333fb08abcb96ba6fb46cb18afe2b930864",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32b_integration/ARCHIVE_MANIFEST.json",
+      "sha": "45f1733f44de5b51a883c2e1768911d36d4d6404",
+      "remote_sha": "45f1733f44de5b51a883c2e1768911d36d4d6404",
+      "match": true
+    }
+  ]
+}

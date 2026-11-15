@@ -1,7 +1,7 @@
-# R3 Section 3.2(b) (R3-05) — STATUS
+# R3-05 (Section 3.2(b): basis of candidate predictors) CLOSED — 2026-11-15
 
-SCIENTIFIC_INTEGRATION_VERIFIED — GIT_ARCHIVE_IN_PROGRESS
+Author-approved revision for R3 Section 3.2(b). Manuscript §3.2: one inserted paragraph after the unchanged eleven-candidate list, stating that the candidates were the non-target meteorological variables in the original ERA5 extract, grouping them (near-surface temperature/moisture; wind/pressure; cloud cover; surface radiative and moisture exchanges; recent precipitation characteristics), distinguishing e (modelled actual evaporation) from potential evaporation, citing observational analogues in data-driven rainfall prediction (Manandhar 2019; Rahman 2022; Gao 2025) as not necessarily identical to ERA5 fields, describing lsp/mxtpr/mntpr via the ECMWF documentation, and framing the eleven as an exploratory candidate pool. Formal red reply; one new blue EvidenceBox: 128 + 1 = 129/129. Bibliography: gao2025applying added; DOI added to manandhar2019data. Table 1, candidate and retained predictor sets, Supplementary, Figures, results and all closed replies unchanged (964 protected files).
 
-- Author-approved local integration (manuscript L129 insertion, Response letter R3 Section 3.2(b) block, bib Gao entry + Manandhar DOI).
-- Not CLOSED until fixed-commit GitHub readback, remote patch reconstruction and 129/129 excerpt re-verification pass.
-- Tasks 09 / 21 remain open as a whole. R3 Section 3.2(c) not started. R2-M9 untouched.
+Scientific archive: `7faac6b6918417d2e8acdccf871adf26fd83b6de`, normally pushed (fast-forward from 29fa0e5). Fixed-commit GitHub readback **40/40 blob hashes match**; the remote PORTABLE patch (git apply and BSD patch) reconstructed manuscript.tex, Response letter.tex and sn-bibliography.bib byte-for-byte; 129/129 excerpts, Gao/Manandhar metadata and citations re-verified; recorded in REMOTE_RECEIPT.json. CLOSED is recorded only after this readback; closure metadata receives an additional final remote verification.
+
+Only R3-05 is CLOSED; R3-01 to R3-04, R2-M2, R2-M3 and other closed items remain CLOSED and unchanged; tasks 09 and 21 are not closed as a whole. R2-M9 remains `SCIENTIFIC_INTEGRATION_COMPLETE — FINAL_REPOSITORY_DOCUMENTATION_PENDING`. Section 3.2(c) not started.

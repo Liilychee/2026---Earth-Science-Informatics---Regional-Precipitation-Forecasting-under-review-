@@ -1,0 +1,19 @@
+{
+  "base_commit": "29fa0e54ed57f9aac5433fe929de4b12ddf48b5c",
+  "scientific_archive_commit": "7faac6b6918417d2e8acdccf871adf26fd83b6de",
+  "remote_scientific_files": 40,
+  "all_blobs_match": true,
+  "old_excerpts": 128,
+  "new_excerpts": 1,
+  "total_matched": 129,
+  "protected_artifacts": 964,
+  "worktree": "/private/tmp/esi-r3sec32b-integration-sync (branch claude/r3sec32b-integration-sync)",
+  "scope": "only results/r3sec32b_integration; source increments in patches",
+  "previous_closed_archives_preserved": true,
+  "R3_01_to_04_closed": true,
+  "R2_M2_M3_unchanged": true,
+  "tasks_09_21_overall_closed": false,
+  "m9_overall_not_closed": true,
+  "section_3_2c_not_started": true,
+  "literature_full_texts_archived": false
+}

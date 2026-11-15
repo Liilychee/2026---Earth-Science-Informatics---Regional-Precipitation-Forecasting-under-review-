@@ -40,3 +40,6 @@ None is used to claim equivalence with ERA5 fields; the text states the analogue
 
 ## Not done
 No staging/commit/push; not CLOSED; tasks 09/21 open; R3 Section 3.2(c) not started.
+
+## Selective archive and closure (2026-11-15)
+Scientific commit 7faac6b6918417d2e8acdccf871adf26fd83b6de (fast-forward from 29fa0e5), 40 files under results/r3sec32b_integration only. Fresh-clone readback: 40/40 blobs and manifest SHA-256 match; remote PORTABLE patch rebuilt manuscript.tex, Response letter.tex and sn-bibliography.bib byte-for-byte (git apply and BSD patch); 129/129 excerpts; Gao/Manandhar metadata match Crossref; 964 protected files unchanged. Closure commit adds STATUS (CLOSED), REMOTE_RECEIPT, GIT_ARCHIVE_REPORT, CLOSURE_STATUS.patch (tracking-file notes as patch only; originals not edited), this report update, GIT_SCOPE update and CLOSURE_MANIFEST. Tasks 09/21: only the R3-05 part is recorded as complete.

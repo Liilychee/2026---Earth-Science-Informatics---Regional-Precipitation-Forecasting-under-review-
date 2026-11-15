@@ -1,0 +1,29 @@
+{
+  "scientific_archive": "7faac6b6918417d2e8acdccf871adf26fd83b6de",
+  "files": [
+    {
+      "path": "results/r3sec32b_integration/STATUS.md",
+      "sha256": "417001981c9735b603c54d3861f159526e587bd927ec932e7211864e70ddca65"
+    },
+    {
+      "path": "results/r3sec32b_integration/REMOTE_RECEIPT.json",
+      "sha256": "41ab861c66397b6231666c2dda7c8d4685a7fc1915483909e183abfaf2dfb079"
+    },
+    {
+      "path": "results/r3sec32b_integration/GIT_ARCHIVE_REPORT.json",
+      "sha256": "831bd4e6da50a19fdad9eade2612e498662e7adddb9ba1e3eb24cd8cdb63ffdb"
+    },
+    {
+      "path": "results/r3sec32b_integration/CLOSURE_STATUS.patch",
+      "sha256": "2c06a2d1945434cab49581a722e534e2b9bcb6ab91225803cee930d17704bfd4"
+    },
+    {
+      "path": "results/r3sec32b_integration/FINAL_REPORT.md",
+      "sha256": "9987358a07591598a432221d512b2d5f3a27edd511246185cfa870c050098200"
+    },
+    {
+      "path": "results/r3sec32b_integration/GIT_SCOPE.md",
+      "sha256": "c3c01124d810f009359e4529be06a0a7adb2d165c9bd60f355cfe531de5dde58"
+    }
+  ]
+}

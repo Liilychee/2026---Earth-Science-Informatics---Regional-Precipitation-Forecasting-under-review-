@@ -5,3 +5,5 @@ Local phase: manuscript.tex L129 pure insertion (one \revminor block after the e
 ## Author-authorised selective archive phase (2026-11-15)
 
 Remote main re-queried: 29fa0e54ed57f9aac5433fe929de4b12ddf48b5c (unchanged). Independent worktree /private/tmp/esi-r3sec32b-integration-sync and explicit allowlist: only results/r3sec32b_integration excluding before/, ARCHIVE_PATHS.json and LOCAL_MANIFEST.json. Original paper files, PDFs and git index protected (ORIGINAL_WORKTREE_GUARD.json). Full-text literature PDFs are not archived; only short excerpts (LITERATURE_EVIDENCE.md) and public metadata JSON. CLOSED requires fixed-commit per-file GitHub readback, remote patch reconstruction and 129/129 excerpt re-verification.
+
+Closure: scientific commit 7faac6b6918417d2e8acdccf871adf26fd83b6de pushed and 40/40 blobs read back from a fresh clone with byte-identical remote patch reconstruction of all three sources. Closure commit carries only STATUS, REMOTE_RECEIPT, GIT_ARCHIVE_REPORT, CLOSURE_STATUS.patch, FINAL_REPORT, GIT_SCOPE and CLOSURE_MANIFEST.
