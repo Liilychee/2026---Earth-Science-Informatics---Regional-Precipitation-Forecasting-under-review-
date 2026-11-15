@@ -1,0 +1,49 @@
+{
+  "definitions": [
+    {
+      "source": "code/q16_intervals.py",
+      "line": 19,
+      "text": "Q95, WET = 0.574048, 0.1"
+    },
+    {
+      "source": "code/q16_intervals.py",
+      "line": 20,
+      "text": "Z = {0.90: 1.6448536269514722, 0.95: 1.959963984540054}"
+    },
+    {
+      "source": "code/q16_intervals.py",
+      "line": 43,
+      "text": "    if \"split\" in d:"
+    },
+    {
+      "source": "code/q16_intervals.py",
+      "line": 47,
+      "text": "    assert len(d) == 3939, f\"{path}: {len(d)} test rows\""
+    },
+    {
+      "source": "code/q16_intervals.py",
+      "line": 79,
+      "text": "g = df.groupby([\"source\", \"model\", \"subset\"], sort=False)"
+    },
+    {
+      "source": "code/q16_intervals.py",
+      "line": 80,
+      "text": "summ = g[num].agg([\"mean\", \"std\"])"
+    }
+  ],
+  "subset_counts": {
+    "all": 3939,
+    "wet>=0.1": 854,
+    "upper>=Q95": 238
+  },
+  "seed_set": [
+    42,
+    123,
+    7,
+    2024,
+    99
+  ],
+  "seed_source": "15 q14 prediction paths in SOURCE_INDEX, independently verified",
+  "q14_q11_overlap_source": "DATA_CHECK.json/q14_q11_overlap",
+  "upper_bound_on_saved_sigma_difference": "1.23e-7 mm h^-1 (rounded upwards from max 1.2205347710292358e-7)"
+}

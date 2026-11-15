@@ -1,0 +1,69 @@
+{
+  "prediction_files": 15,
+  "per_run_fields": 450,
+  "max_abs_difference": 2.220446049250313e-16,
+  "summary_rows": 9,
+  "seeds": [
+    42,
+    123,
+    7,
+    2024,
+    99
+  ],
+  "q14_q11_overlap": [
+    {
+      "seed": 42,
+      "test_rows": 3939,
+      "max_differences": {
+        "y_true": 0.0,
+        "y_pred_mean": 0.0,
+        "par1": 0.0,
+        "par2": 1.071178428180275e-07
+      }
+    },
+    {
+      "seed": 123,
+      "test_rows": 3939,
+      "max_differences": {
+        "y_true": 0.0,
+        "y_pred_mean": 0.0,
+        "par1": 0.0,
+        "par2": 1.0558775209723592e-07
+      }
+    },
+    {
+      "seed": 7,
+      "test_rows": 3939,
+      "max_differences": {
+        "y_true": 0.0,
+        "y_pred_mean": 0.0,
+        "par1": 0.0,
+        "par2": 1.1224191376335568e-07
+      }
+    },
+    {
+      "seed": 2024,
+      "test_rows": 3939,
+      "max_differences": {
+        "y_true": 0.0,
+        "y_pred_mean": 0.0,
+        "par1": 0.0,
+        "par2": 1.2205347710292358e-07
+      }
+    },
+    {
+      "seed": 99,
+      "test_rows": 3939,
+      "max_differences": {
+        "y_true": 0.0,
+        "y_pred_mean": 0.0,
+        "par1": 0.0,
+        "par2": 1.0100738701002143e-07
+      }
+    }
+  ],
+  "full_precision_z": [
+    1.6448536269514722,
+    1.959963984540054
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "manuscript.tex": {
+    "before_sha256": "888a79fd0048d157aa07af0ce9fee3faeac4cad4ecb1161f09c98ab8faab8beb",
+    "after_sha256": "3c123e25d73a16f3f69502a30982fc366cfa0fc5555ac531c0e48bc1beb979e6"
+  },
+  "Supplementary.tex": {
+    "before_sha256": "f2d495eb0f01a6555fd31fa5b0c0e0d6c6dd402e8b1ac06abb70979482de228d",
+    "after_sha256": "f60411408b4920a35a463a584594e0177dede7cf18c16ec5f3d5196177507cd8"
+  },
+  "Response letter.tex": {
+    "before_sha256": "16a372401503ba2be0c82559d6ecc392aabca99ae93cb6b2ddfb15f459913dfb",
+    "after_sha256": "7372d96c29b1f9ec20ef361037e0fb5e4b908782ad25d2dc889dcfa8f03957a0"
+  },
+  "ESI_\u5ba1\u7a3f\u610f\u89c1\u5206\u7c7b_\u4e25\u91cd\u7a0b\u5ea6\u6392\u5e8f_35\u9879.md": {
+    "before_sha256": "875952aae6d6c6198cfa49611413598cff2ab6bf79cc7366679f3502bd1b626a",
+    "after_sha256": "81858622a39dc84018192f68a14d61226a93394f78743141990fbbd6abee8acf"
+  },
+  "FINAL_REVISION_CHECKLIST.md": {
+    "before_sha256": "087079e9f635be8655a41d5931cbadaf15c1f5e973a3d2b0a99f22d41de3db2f",
+    "after_sha256": "215dc2749913220108c6f6158a47fdc4764ba72bcd0e44b8b717bf348fac8a6e"
+  },
+  "SUPPLEMENTARY_TABLE_REGISTRY.md": {
+    "before_sha256": "e9d5679dbb54e55f2607b4cb800f37062abcda76dc1051219a1180d1c3533bc8",
+    "after_sha256": "5b335f54c48660d2dd86947bad68bb51bf9c18fdee8c8e68d29d8ce97f734161"
+  }
+}

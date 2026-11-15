@@ -1,0 +1,164 @@
+[
+  {
+    "level": 90,
+    "model": "bulstm",
+    "subset": "all",
+    "csv_line": 2,
+    "source": "q16_interval_summary.csv",
+    "seed_n": 5,
+    "sample_n": 3939
+  },
+  {
+    "level": 90,
+    "model": "bulstm",
+    "subset": "wet>=0.1",
+    "csv_line": 3,
+    "source": "q16_interval_summary.csv",
+    "seed_n": 5,
+    "sample_n": 854
+  },
+  {
+    "level": 90,
+    "model": "bulstm",
+    "subset": "upper>=Q95",
+    "csv_line": 4,
+    "source": "q16_interval_summary.csv",
+    "seed_n": 5,
+    "sample_n": 238
+  },
+  {
+    "level": 90,
+    "model": "bulstm_attn",
+    "subset": "all",
+    "csv_line": 5,
+    "source": "q16_interval_summary.csv",
+    "seed_n": 5,
+    "sample_n": 3939
+  },
+  {
+    "level": 90,
+    "model": "bulstm_attn",
+    "subset": "wet>=0.1",
+    "csv_line": 6,
+    "source": "q16_interval_summary.csv",
+    "seed_n": 5,
+    "sample_n": 854
+  },
+  {
+    "level": 90,
+    "model": "bulstm_attn",
+    "subset": "upper>=Q95",
+    "csv_line": 7,
+    "source": "q16_interval_summary.csv",
+    "seed_n": 5,
+    "sample_n": 238
+  },
+  {
+    "level": 90,
+    "model": "prob_bilstm_attn",
+    "subset": "all",
+    "csv_line": 8,
+    "source": "q16_interval_summary.csv",
+    "seed_n": 5,
+    "sample_n": 3939
+  },
+  {
+    "level": 90,
+    "model": "prob_bilstm_attn",
+    "subset": "wet>=0.1",
+    "csv_line": 9,
+    "source": "q16_interval_summary.csv",
+    "seed_n": 5,
+    "sample_n": 854
+  },
+  {
+    "level": 90,
+    "model": "prob_bilstm_attn",
+    "subset": "upper>=Q95",
+    "csv_line": 10,
+    "source": "q16_interval_summary.csv",
+    "seed_n": 5,
+    "sample_n": 238
+  },
+  {
+    "level": 95,
+    "model": "bulstm",
+    "subset": "all",
+    "csv_line": 2,
+    "source": "q16_interval_summary.csv",
+    "seed_n": 5,
+    "sample_n": 3939
+  },
+  {
+    "level": 95,
+    "model": "bulstm",
+    "subset": "wet>=0.1",
+    "csv_line": 3,
+    "source": "q16_interval_summary.csv",
+    "seed_n": 5,
+    "sample_n": 854
+  },
+  {
+    "level": 95,
+    "model": "bulstm",
+    "subset": "upper>=Q95",
+    "csv_line": 4,
+    "source": "q16_interval_summary.csv",
+    "seed_n": 5,
+    "sample_n": 238
+  },
+  {
+    "level": 95,
+    "model": "bulstm_attn",
+    "subset": "all",
+    "csv_line": 5,
+    "source": "q16_interval_summary.csv",
+    "seed_n": 5,
+    "sample_n": 3939
+  },
+  {
+    "level": 95,
+    "model": "bulstm_attn",
+    "subset": "wet>=0.1",
+    "csv_line": 6,
+    "source": "q16_interval_summary.csv",
+    "seed_n": 5,
+    "sample_n": 854
+  },
+  {
+    "level": 95,
+    "model": "bulstm_attn",
+    "subset": "upper>=Q95",
+    "csv_line": 7,
+    "source": "q16_interval_summary.csv",
+    "seed_n": 5,
+    "sample_n": 238
+  },
+  {
+    "level": 95,
+    "model": "prob_bilstm_attn",
+    "subset": "all",
+    "csv_line": 8,
+    "source": "q16_interval_summary.csv",
+    "seed_n": 5,
+    "sample_n": 3939
+  },
+  {
+    "level": 95,
+    "model": "prob_bilstm_attn",
+    "subset": "wet>=0.1",
+    "csv_line": 9,
+    "source": "q16_interval_summary.csv",
+    "seed_n": 5,
+    "sample_n": 854
+  },
+  {
+    "level": 95,
+    "model": "prob_bilstm_attn",
+    "subset": "upper>=Q95",
+    "csv_line": 10,
+    "source": "q16_interval_summary.csv",
+    "seed_n": 5,
+    "sample_n": 238
+  }
+]

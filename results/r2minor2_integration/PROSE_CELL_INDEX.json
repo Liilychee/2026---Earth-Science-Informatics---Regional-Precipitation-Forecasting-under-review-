@@ -1,0 +1,130 @@
+[
+  {
+    "subset": "all",
+    "field": "PICP90_mean",
+    "endpoint": "lower",
+    "csv_line": 2,
+    "raw": "0.9456207159177457",
+    "display": "0.9456"
+  },
+  {
+    "subset": "all",
+    "field": "PICP90_mean",
+    "endpoint": "upper",
+    "csv_line": 5,
+    "raw": "0.9463823305407464",
+    "display": "0.9464"
+  },
+  {
+    "subset": "all",
+    "field": "PICP95_mean",
+    "endpoint": "lower",
+    "csv_line": 2,
+    "raw": "0.9559786747905561",
+    "display": "0.9560"
+  },
+  {
+    "subset": "all",
+    "field": "PICP95_mean",
+    "endpoint": "upper",
+    "csv_line": 5,
+    "raw": "0.9571464838791572",
+    "display": "0.9571"
+  },
+  {
+    "subset": "all",
+    "field": "MPIW90_mean",
+    "endpoint": "lower",
+    "csv_line": 2,
+    "raw": "0.6525764842309197",
+    "display": "0.6526"
+  },
+  {
+    "subset": "all",
+    "field": "MPIW90_mean",
+    "endpoint": "upper",
+    "csv_line": 8,
+    "raw": "0.6704601028495774",
+    "display": "0.6705"
+  },
+  {
+    "subset": "all",
+    "field": "MPIW95_mean",
+    "endpoint": "lower",
+    "csv_line": 2,
+    "raw": "0.7775928418754723",
+    "display": "0.7776"
+  },
+  {
+    "subset": "all",
+    "field": "MPIW95_mean",
+    "endpoint": "upper",
+    "csv_line": 8,
+    "raw": "0.7989024878108263",
+    "display": "0.7989"
+  },
+  {
+    "subset": "wet>=0.1",
+    "field": "PICP90_mean",
+    "endpoint": "lower",
+    "csv_line": 3,
+    "raw": "0.7545667447306792",
+    "display": "0.7546"
+  },
+  {
+    "subset": "wet>=0.1",
+    "field": "PICP90_mean",
+    "endpoint": "upper",
+    "csv_line": 9,
+    "raw": "0.7571428571428571",
+    "display": "0.7571"
+  },
+  {
+    "subset": "wet>=0.1",
+    "field": "PICP95_mean",
+    "endpoint": "lower",
+    "csv_line": 3,
+    "raw": "0.8002341920374707",
+    "display": "0.8002"
+  },
+  {
+    "subset": "wet>=0.1",
+    "field": "PICP95_mean",
+    "endpoint": "upper",
+    "csv_line": 9,
+    "raw": "0.8042154566744731",
+    "display": "0.8042"
+  },
+  {
+    "subset": "upper>=Q95",
+    "field": "PICP90_mean",
+    "endpoint": "lower",
+    "csv_line": 10,
+    "raw": "0.39579831932773113",
+    "display": "0.3958"
+  },
+  {
+    "subset": "upper>=Q95",
+    "field": "PICP90_mean",
+    "endpoint": "upper",
+    "csv_line": 4,
+    "raw": "0.41008403361344536",
+    "display": "0.4101"
+  },
+  {
+    "subset": "upper>=Q95",
+    "field": "PICP95_mean",
+    "endpoint": "lower",
+    "csv_line": 10,
+    "raw": "0.49411764705882355",
+    "display": "0.4941"
+  },
+  {
+    "subset": "upper>=Q95",
+    "field": "PICP95_mean",
+    "endpoint": "upper",
+    "csv_line": 4,
+    "raw": "0.5042016806722689",
+    "display": "0.5042"
+  }
+]

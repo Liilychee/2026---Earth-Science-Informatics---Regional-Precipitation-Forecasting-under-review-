@@ -1,0 +1,21 @@
+{
+  "base": "5196e40cd56af42afe6c82c08125b6374696efaf",
+  "patch_exact": true,
+  "source_files": [
+    "manuscript.tex",
+    "Supplementary.tex",
+    "Response letter.tex",
+    "ESI_\u5ba1\u7a3f\u610f\u89c1\u5206\u7c7b_\u4e25\u91cd\u7a0b\u5ea6\u6392\u5e8f_35\u9879.md",
+    "FINAL_REVISION_CHECKLIST.md",
+    "SUPPLEMENTARY_TABLE_REGISTRY.md"
+  ],
+  "reconstructed_sha256": {
+    "manuscript.tex": "3c123e25d73a16f3f69502a30982fc366cfa0fc5555ac531c0e48bc1beb979e6",
+    "Supplementary.tex": "f60411408b4920a35a463a584594e0177dede7cf18c16ec5f3d5196177507cd8",
+    "Response letter.tex": "7372d96c29b1f9ec20ef361037e0fb5e4b908782ad25d2dc889dcfa8f03957a0",
+    "ESI_\u5ba1\u7a3f\u610f\u89c1\u5206\u7c7b_\u4e25\u91cd\u7a0b\u5ea6\u6392\u5e8f_35\u9879.md": "81858622a39dc84018192f68a14d61226a93394f78743141990fbbd6abee8acf",
+    "FINAL_REVISION_CHECKLIST.md": "215dc2749913220108c6f6158a47fdc4764ba72bcd0e44b8b717bf348fac8a6e",
+    "SUPPLEMENTARY_TABLE_REGISTRY.md": "5b335f54c48660d2dd86947bad68bb51bf9c18fdee8c8e68d29d8ce97f734161"
+  },
+  "root_untouched": true
+}

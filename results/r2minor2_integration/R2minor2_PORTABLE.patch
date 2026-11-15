@@ -1,0 +1,162 @@
+--- a/manuscript.tex	2026-11-15 00:00:00 +0000
++++ b/manuscript.tex	2026-11-15 00:00:00 +0000
+@@ -326,6 +326,10 @@
+ \label{eq:prediction_interval_95}
+ \end{equation}
+ 
++{\color{red}\hypersetup{linkcolor=red,filecolor=red}
++For the additional Gaussian interval diagnostics, central 90\% and 95\% intervals use standard-normal multipliers $z=1.645$ and $z=1.960$, respectively (rounded here; the archived calculations use full-precision quantiles). Prediction-interval coverage probability (PICP) is the proportion of observations within the interval, and mean prediction-interval width (MPIW) is the mean upper minus lower bound in mm\,h$^{-1}$. We report the negative-lower-bound proportion at both levels, together with diagnostic coverage for the observed wet ($y\geq0.1$~mm\,h$^{-1}$) and upper-tail ($y\geq0.574048$~mm\,h$^{-1}$, using training Q95) subsets. These diagnostics use the separate q14 five-seed Gaussian reruns summarised in Supplementary Table~\ref{supp-stab:r2minor2_intervals}.
++\par}
++
+ These intervals characterize predictive dispersion under the assumed Gaussian likelihood. Because precipitation is non-negative while the Gaussian distribution is not, calibration is assessed empirically, using coverage and rainfall-regime analysis, rather than assumed from the nominal interval alone.
+ 
+ 
+@@ -990,6 +994,13 @@
+ \hline\end{tabular}\par}
+ \end{table}
+ 
++{\color{red}\hypersetup{linkcolor=red,filecolor=red}
++Supplementary Table~\ref{supp-stab:r2minor2_intervals} reports both interval levels for the separate q14 five-seed Gaussian reruns on the same 3,939 test targets. Across the three models, mean all-sample coverage was 0.9456--0.9464 for the nominal 90\% interval and 0.9560--0.9571 for the nominal 95\% interval. The corresponding widths were 0.6526--0.6705 and 0.7776--0.7989~mm\,h$^{-1}$. For the 854 wet targets, coverage was 0.7546--0.7571 and 0.8002--0.8042, respectively; for the 238 upper-tail targets, it was 0.3958--0.4101 and 0.4941--0.5042. At both nominal levels, every lower bound was negative and every uncovered observation exceeded the upper bound. Thus, near-nominal overall 95\% coverage and above-nominal overall 90\% coverage conceal marked wet and upper-tail undercoverage. These are descriptive conditional diagnostics, not evidence of a significant model ranking.
++
++These reruns are the A2 run set in Table~\ref{tab:probabilistic_results}, rather than the complete original A1 run set. The A2 Probabilistic BiLSTM-Attention and the B Gaussian have identical saved test targets and predictive means for each of the five seeds, with small differences in the saved standard-deviation parameters (at most $1.23\times10^{-7}$~mm\,h$^{-1}$). Their agreement therefore does not constitute independent prediction evidence, despite the separate run records.
++\par}
++
++
+ {\color{red}\hypersetup{linkcolor=red,citecolor=red}
+ Figure~\ref{fig:prob_coverage} compares empirical coverage of the nominal 95\% prediction interval using the original single saved prediction series on the 3,939 test targets, separately from the five-seed summaries in Table~\ref{tab:probabilistic_results}. For BU-LSTM, BU-LSTM-Attention and Probabilistic BiLSTM-Attention, respectively, all-sample coverage was 0.9515, 0.9551 and 0.9459. Under the legacy wet definition ($>0$~mm\,h$^{-1}$; $N=3,228$), coverage was 0.9408, 0.9452 and 0.9340. Under the revised primary wet definition ($\geq0.1$~mm\,h$^{-1}$; $N=854$), it was lower at 0.7799, 0.7927 and 0.7693.
+ \par}
+@@ -1010,7 +1021,7 @@
+ 
+ Prediction intervals widened as rainfall intensity increased, but the increase was insufficient to maintain nominal coverage in the upper tail. For example, BU-LSTM-Attention had a mean 95\% interval width of 0.7473~mm\,h$^{-1}$ over the full test set and 1.4459~mm\,h$^{-1}$ for the Q95 subset, yet upper-tail coverage was only 0.5000. All three Gaussian models also produced lower 95\% interval bounds below 0~mm\,h$^{-1}$ for every test sample in the single-run diagnostic. This result reflects the mismatch between the unbounded Gaussian predictive distribution and the non-negative support of precipitation.
+ 
+-A cost in point accuracy was also observed when the deterministic BiLSTM-Attention architecture was converted to a probabilistic formulation. Across five seeds, mean RMSE increased from 0.2429~mm\,h$^{-1}$ for BiLSTM-Attention to 0.2488~mm\,h$^{-1}$ for Probabilistic BiLSTM-Attention, corresponding to an increase of approximately 2.5\%. The probabilistic formulation therefore provided distributional information and near-nominal overall coverage, but did not improve point-forecast accuracy.
++A cost in point accuracy was also observed when the deterministic BiLSTM-Attention architecture was converted to a probabilistic formulation. Across five seeds, mean RMSE increased from 0.2429~mm\,h$^{-1}$ for BiLSTM-Attention to 0.2488~mm\,h$^{-1}$ for Probabilistic BiLSTM-Attention, corresponding to an increase of approximately 2.5\%. The probabilistic formulation therefore provided distributional information and near-nominal overall coverage \textcolor{red}{of the nominal 95\% interval}, but did not improve point-forecast accuracy.
+ 
+ %----------------------------------------------------
+ {\color{red}
+@@ -1168,7 +1179,7 @@
+ The probabilistic forecasts showed a similar dependence on rainfall intensity. When evaluated over the complete test set, empirical coverage of the nominal 95\% prediction interval ranged from approximately 0.956 to 0.958 across the five-seed experiments. In the separate single-saved-run diagnostic in Figure~\ref{fig:prob_coverage}, legacy-wet coverage ranged from 0.9340 to 0.9452, whereas revised-wet coverage was 0.7693--0.7927 and upper-tail coverage was 0.4370--0.5000. The inclusion of near-zero amounts in the legacy subset may contribute to its higher aggregate coverage; these descriptive contrasts do not identify the cause of undercoverage. The Figure~\ref{fig:prob_coverage} values are not five-seed means.
+ \par}
+ 
+-Prediction intervals widened as rainfall intensity increased, but the additional width was insufficient to maintain nominal coverage for the strongest events. This result shows that near-nominal coverage over the complete test distribution can conceal substantial undercoverage in a less frequent but meteorologically important regime. Reporting only overall coverage would therefore give an incomplete assessment of probabilistic forecast reliability.
++Prediction intervals widened as rainfall intensity increased, but the additional width was insufficient to maintain nominal coverage for the strongest events. This result shows that near-nominal \textcolor{red}{95\%} coverage over the complete test distribution can conceal substantial undercoverage in a less frequent but meteorologically important regime. Reporting only overall coverage would therefore give an incomplete assessment of probabilistic forecast reliability.
+ 
+ The Gaussian likelihood also imposes a structural limitation on the uncertainty estimates. Precipitation is non-negative and strongly right-skewed, whereas the Gaussian distribution is symmetric and unbounded. In the single-run diagnostic, the lower bound of the nominal 95\% interval extended below 0~mm\,h$^{-1}$ throughout the test set. Negative interval bounds do not correspond to physically meaningful precipitation and indicate a mismatch between the assumed predictive distribution and the support of the target variable. The Gaussian formulation remains a baseline. The controlled Bernoulli--Gamma comparison removed negative bounds and improved overall probabilistic scores, but substantial upper-tail undercoverage remained. This comparison was limited to Probabilistic BiLSTM-Attention; it does not establish the same benefit for other architectures, test periods or event-detection rules.
+ 
+--- a/Supplementary.tex	2026-11-15 00:00:00 +0000
++++ b/Supplementary.tex	2026-11-15 00:00:00 +0000
+@@ -2023,4 +2023,45 @@
+ \end{longtable}
+ \end{revisionlongtable}
+ 
++
++% R2-m2: separate q14/q16 interval diagnostics; original tables unchanged.
++\clearpage
++{\color{red}
++\section*{Additional Gaussian interval diagnostics}
++}
++\begin{revisionlongtable}
++\begin{longtable}{@{}llcccc@{}}
++\caption{Central 90\% and 95\% Gaussian prediction intervals from the q14 reruns (q16 diagnostics), reported as five-seed mean $\pm$ sample SD. Cov is PICP; Width is MPIW (mm\,h$^{-1}$); Above is the proportion of observations exceeding the upper bound; NegLB is the proportion of negative lower bounds. All other quantities are proportions.}\label{stab:r2minor2_intervals}\\
++\hline
++\textbf{Model} & \textbf{Subset ($n$)} & \textbf{Cov} & \textbf{Width} & \textbf{Above} & \textbf{NegLB}\\\hline
++\endfirsthead
++\multicolumn{6}{l}{\tablename\ \thetable\ (continued)}\\\hline
++\textbf{Model} & \textbf{Subset ($n$)} & \textbf{Cov} & \textbf{Width} & \textbf{Above} & \textbf{NegLB}\\\hline
++\endhead
++\hline\endfoot
++\multicolumn{6}{l}{\textbf{90\% central intervals}}\\\hline
++BU-LSTM & All (3,939) & \shortstack{$0.9456$\\$\pm0.0033$} & \shortstack{$0.6526$\\$\pm0.0233$} & \shortstack{$0.0544$\\$\pm0.0033$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
++BU-LSTM & Wet (854) & \shortstack{$0.7546$\\$\pm0.0152$} & \shortstack{$1.1129$\\$\pm0.0524$} & \shortstack{$0.2454$\\$\pm0.0152$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
++BU-LSTM & Upper (238) & \shortstack{$0.4101$\\$\pm0.0499$} & \shortstack{$1.2774$\\$\pm0.0608$} & \shortstack{$0.5899$\\$\pm0.0499$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
++BU-LSTM-Attention & All (3,939) & \shortstack{$0.9464$\\$\pm0.0029$} & \shortstack{$0.6608$\\$\pm0.0234$} & \shortstack{$0.0536$\\$\pm0.0029$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
++BU-LSTM-Attention & Wet (854) & \shortstack{$0.7560$\\$\pm0.0151$} & \shortstack{$1.0967$\\$\pm0.0394$} & \shortstack{$0.2440$\\$\pm0.0151$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
++BU-LSTM-Attention & Upper (238) & \shortstack{$0.3983$\\$\pm0.0338$} & \shortstack{$1.2478$\\$\pm0.0460$} & \shortstack{$0.6017$\\$\pm0.0338$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
++Prob. BiLSTM-Attn. & All (3,939) & \shortstack{$0.9459$\\$\pm0.0073$} & \shortstack{$0.6705$\\$\pm0.0574$} & \shortstack{$0.0541$\\$\pm0.0073$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
++Prob. BiLSTM-Attn. & Wet (854) & \shortstack{$0.7571$\\$\pm0.0292$} & \shortstack{$1.1271$\\$\pm0.0667$} & \shortstack{$0.2429$\\$\pm0.0292$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
++Prob. BiLSTM-Attn. & Upper (238) & \shortstack{$0.3958$\\$\pm0.0450$} & \shortstack{$1.2976$\\$\pm0.0611$} & \shortstack{$0.6042$\\$\pm0.0450$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
++\multicolumn{6}{l}{\textbf{95\% central intervals}}\\\hline
++BU-LSTM & All (3,939) & \shortstack{$0.9560$\\$\pm0.0031$} & \shortstack{$0.7776$\\$\pm0.0278$} & \shortstack{$0.0440$\\$\pm0.0031$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
++BU-LSTM & Wet (854) & \shortstack{$0.8002$\\$\pm0.0144$} & \shortstack{$1.3261$\\$\pm0.0624$} & \shortstack{$0.1998$\\$\pm0.0144$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
++BU-LSTM & Upper (238) & \shortstack{$0.5042$\\$\pm0.0384$} & \shortstack{$1.5222$\\$\pm0.0725$} & \shortstack{$0.4958$\\$\pm0.0384$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
++BU-LSTM-Attention & All (3,939) & \shortstack{$0.9571$\\$\pm0.0015$} & \shortstack{$0.7874$\\$\pm0.0279$} & \shortstack{$0.0429$\\$\pm0.0015$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
++BU-LSTM-Attention & Wet (854) & \shortstack{$0.8037$\\$\pm0.0088$} & \shortstack{$1.3068$\\$\pm0.0469$} & \shortstack{$0.1963$\\$\pm0.0088$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
++BU-LSTM-Attention & Upper (238) & \shortstack{$0.5000$\\$\pm0.0236$} & \shortstack{$1.4869$\\$\pm0.0548$} & \shortstack{$0.5000$\\$\pm0.0236$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
++Prob. BiLSTM-Attn. & All (3,939) & \shortstack{$0.9565$\\$\pm0.0052$} & \shortstack{$0.7989$\\$\pm0.0684$} & \shortstack{$0.0435$\\$\pm0.0052$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
++Prob. BiLSTM-Attn. & Wet (854) & \shortstack{$0.8042$\\$\pm0.0211$} & \shortstack{$1.3430$\\$\pm0.0795$} & \shortstack{$0.1958$\\$\pm0.0211$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
++Prob. BiLSTM-Attn. & Upper (238) & \shortstack{$0.4941$\\$\pm0.0367$} & \shortstack{$1.5462$\\$\pm0.0728$} & \shortstack{$0.5059$\\$\pm0.0367$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
++\end{longtable}
++\end{revisionlongtable}
++{\color{red}\small The three models use seeds 42, 123, 7, 2024 and 99. All has 3,939 test targets; Wet is $y\geq0.1$~mm\,h$^{-1}$ ($n=854$); Upper is $y\geq$training Q95 $=0.574048$~mm\,h$^{-1}$ ($n=238$). The code uses $z=1.6448536269514722$ and $1.959963984540054$. At both levels, the below-lower-bound proportion is $0\pm0$ for every model and subset, so all misses are above the upper bound. Conditional subset coverage is descriptive and does not establish significant model rankings. The main-table A1 panel retains the original runs; the q14 A2 reruns are not the complete A1 run set. A2 Probabilistic BiLSTM-Attention and the q11 B Gaussian have identical saved targets and predictive means for all five seeds, with saved standard-deviation differences no larger than $1.23\times10^{-7}$~mm\,h$^{-1}$; their matching results are not independent prediction evidence. No original main-table value is replaced.
++\par}
++
+ \end{document}
+--- a/Response letter.tex	2026-11-15 00:00:00 +0000
++++ b/Response letter.tex	2026-11-15 00:00:00 +0000
+@@ -982,9 +982,28 @@
+ 
+ \ReviewerComment{2. Please provide the 90\% prediction-interval coverage and interval-width results alongside the 95\% results.}
+ 
+-\PendingResponse
+-
+-\ChangeLocation
++\AuthorResponse{We now report the 90\% and 95\% coverage and interval widths side by side in Supplementary Table~\ref{supp-stab:r2minor2_intervals}, retaining Table~\ref{manuscript-tab:probabilistic_results} unchanged. The table uses the archived q16 diagnostics of 15 q14 prediction files: three Gaussian models, each with seeds 42, 123, 7, 2024 and 99, on the same 3,939 test targets. It gives five-seed means and sample SDs for coverage, width, above-upper-bound frequency and negative-lower-bound frequency, separately for all targets, wet targets and training-Q95 upper-tail targets. No model was retrained for this addition.
++
++Section~\ref{manuscript-sec:probabilistic_output} specifies both interval levels and the PICP/MPIW definitions. Section~\ref{manuscript-sec:probabilistic_results} reports all-sample coverage of 0.9456--0.9464 at 90\% and 0.9560--0.9571 at 95\%, with widths of 0.6526--0.6705 and 0.7776--0.7989~mm\,h$^{-1}$, respectively. The rerun 95\% results are broadly consistent with the original A1 results, without being substituted for them. Wet and upper-tail undercoverage remains substantial at both levels. Every lower bound is negative and all misses are above the upper bound. We have restricted the two relevant near-nominal-coverage statements to the 95\% level; these results do not establish a causal explanation for undercoverage or significant differences between the models.
++
++We distinguish the original A1 runs, q14 A2 reruns and q11 B likelihood comparison. In particular, A2 Probabilistic BiLSTM-Attention and B Gaussian have identical saved targets and predictive means for each seed, with only small differences in saved standard-deviation parameters; they are not independent prediction evidence. The table note states this overlap explicitly. Final page and line numbers will be added after the full revision is assembled.}
++
++\EvidenceBox{Both interval levels (Section~\ref{manuscript-sec:probabilistic_output}; final page and line numbers pending)}{
++\RevisedExcerpt{For the additional Gaussian interval diagnostics, central 90\% and 95\% intervals use standard-normal multipliers $z=1.645$ and $z=1.960$, respectively (rounded here; the archived calculations use full-precision quantiles). Prediction-interval coverage probability (PICP) is the proportion of observations within the interval, and mean prediction-interval width (MPIW) is the mean upper minus lower bound in mm\,h$^{-1}$. We report the negative-lower-bound proportion at both levels, together with diagnostic coverage for the observed wet ($y\geq0.1$~mm\,h$^{-1}$) and upper-tail ($y\geq0.574048$~mm\,h$^{-1}$, using training Q95) subsets. These diagnostics use the separate q14 five-seed Gaussian reruns summarised in Supplementary Table~\ref{supp-stab:r2minor2_intervals}.}
++}
++
++\EvidenceBox{Coverage and width results (Section~\ref{manuscript-sec:probabilistic_results}; final page and line numbers pending)}{
++\RevisedExcerpt{Supplementary Table~\ref{supp-stab:r2minor2_intervals} reports both interval levels for the separate q14 five-seed Gaussian reruns on the same 3,939 test targets. Across the three models, mean all-sample coverage was 0.9456--0.9464 for the nominal 90\% interval and 0.9560--0.9571 for the nominal 95\% interval. The corresponding widths were 0.6526--0.6705 and 0.7776--0.7989~mm\,h$^{-1}$. For the 854 wet targets, coverage was 0.7546--0.7571 and 0.8002--0.8042, respectively; for the 238 upper-tail targets, it was 0.3958--0.4101 and 0.4941--0.5042. At both nominal levels, every lower bound was negative and every uncovered observation exceeded the upper bound. Thus, near-nominal overall 95\% coverage and above-nominal overall 90\% coverage conceal marked wet and upper-tail undercoverage. These are descriptive conditional diagnostics, not evidence of a significant model ranking.}
++}
++
++\begingroup
++\makeatletter
++\expandafter\let\csname r@tab:probabilistic_results\expandafter\endcsname\csname r@manuscript-tab:probabilistic_results\endcsname
++\makeatother
++\EvidenceBox{Run-set overlap (Section~\ref{manuscript-sec:probabilistic_results}; final page and line numbers pending)}{
++\RevisedExcerpt{These reruns are the A2 run set in Table~\ref{tab:probabilistic_results}, rather than the complete original A1 run set. The A2 Probabilistic BiLSTM-Attention and the B Gaussian have identical saved test targets and predictive means for each of the five seeds, with small differences in the saved standard-deviation parameters (at most $1.23\times10^{-7}$~mm\,h$^{-1}$). Their agreement therefore does not constitute independent prediction evidence, despite the separate run records.}
++}
++\endgroup
+ 
+ % Review ID: R2 m3
+ \Needspace{5\baselineskip}
+--- a/ESI_审稿意见分类_严重程度排序_35项.md	2026-11-15 00:00:00 +0000
++++ b/ESI_审稿意见分类_严重程度排序_35项.md	2026-11-15 00:00:00 +0000
+@@ -3219,6 +3219,9 @@
+ 
+ ### 16. 概率区间评估指标不完整
+ 
++**R2-m2局部整合（2026-11-15，待作者审核，未Git归档）**：采用方案(b)，Table 5不变，q14/q16五种子90/95%完整诊断另入自动编号补充表`stab:r2minor2_intervals`（S50）；Methods、§4.4及两处95%限定和正式回复已同步。任务16其他共享事项仍Pending；R2-m3未启动。M9保持SCIENTIFIC_INTEGRATION_COMPLETE — FINAL_REPOSITORY_DOCUMENTATION_PENDING，不整体关闭。
++
++
+ （2026-11-10，六段格式。数字来自 `q16_output.txt` 和原稿 notebook。）
+ 
+ ---
+--- a/FINAL_REVISION_CHECKLIST.md	2026-11-15 00:00:00 +0000
++++ b/FINAL_REVISION_CHECKLIST.md	2026-11-15 00:00:00 +0000
+@@ -515,3 +515,8 @@
+ - [ ] 作者审核本地报告后另行决定选择性归档，本轮不提交、不推送，暂不标记正式CLOSED。
+ 
+ R4-m23、R4-m27及R3共享意见继续Pending；主70/15/15划分与R2-M5滚动评估严格区分。M9最终README、环境/复现说明、Code Availability release commit和公开范围审核待全文返修完成，未在本轮处理。未开始R2-m2。
++
++
++### R2-m2 / 任务16局部（2026-11-15）
++
++本地科学整合与核验；待作者审核及后续选择性归档，不标CLOSED。Table 5保留；新增S50（`stab:r2minor2_intervals`）并列90/95%概率区间。证据见`results/r2minor2_integration/`。其他共享事项Pending，M9最终仓库文档待办保留，未启动R2-m3。
+--- a/SUPPLEMENTARY_TABLE_REGISTRY.md	2026-11-15 00:00:00 +0000
++++ b/SUPPLEMENTARY_TABLE_REGISTRY.md	2026-11-15 00:00:00 +0000
+@@ -102,3 +102,9 @@
+ | S49 | `stab:r2m9_effects` | 54–56 | 53行A/B/C结果及对应两类区间、种子方向和三重改善规则 |
+ 
+ 原S1–S47和Figure S1/S2源代码不变。仅追加两个自动编号longtable，不重置计数器、不使用历史S30/S31规划号。后续末尾新表将自动为S50，以实际aux为准。M9科学整合本地核验通过，Code Availability等发布项目仍Pending，不标关闭。
++
++
++### R2-m2新增表（2026-11-15，本地待审核）
++
++- S50：`stab:r2minor2_intervals`，q14/q16三模型五种子，全部/有雨/上尾90%与95%覆盖率、宽度、上界漏覆盖及负下界比例（均值±样本SD）。
++- S1–S49原内容及label不变；任务16其他共享事项保持Pending。

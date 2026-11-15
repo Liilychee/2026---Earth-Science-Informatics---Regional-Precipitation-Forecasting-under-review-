@@ -1,0 +1,36 @@
+{
+  "manuscript.tex": [
+    {
+      "anchor": "For the additional Gaussian interval diagnostics,",
+      "line": 330
+    },
+    {
+      "anchor": "Supplementary Table~\\ref{supp-stab:r2minor2_intervals} reports both",
+      "line": 998
+    },
+    {
+      "anchor": "These reruns are the A2",
+      "line": 1000
+    },
+    {
+      "anchor": "of the nominal 95\\% interval",
+      "line": 1024
+    },
+    {
+      "anchor": "near-nominal \\textcolor{red}{95\\%}",
+      "line": 1182
+    }
+  ],
+  "Supplementary.tex": [
+    {
+      "anchor": "\\label{stab:r2minor2_intervals}",
+      "line": 2034
+    }
+  ],
+  "Response letter.tex": [
+    {
+      "anchor": "% Review ID: R2 m2",
+      "line": 979
+    }
+  ]
+}

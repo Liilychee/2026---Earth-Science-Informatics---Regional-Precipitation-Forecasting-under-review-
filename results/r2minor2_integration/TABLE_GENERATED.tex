@@ -1,0 +1,40 @@
+
+% R2-m2: separate q14/q16 interval diagnostics; original tables unchanged.
+\clearpage
+{\color{red}
+\section*{Additional Gaussian interval diagnostics}
+}
+\begin{revisionlongtable}
+\begin{longtable}{@{}llcccc@{}}
+\caption{Central 90\% and 95\% Gaussian prediction intervals from the q14 reruns (q16 diagnostics), reported as five-seed mean $\pm$ sample SD. Cov is PICP; Width is MPIW (mm\,h$^{-1}$); Above is the proportion of observations exceeding the upper bound; NegLB is the proportion of negative lower bounds. All other quantities are proportions.}\label{stab:r2minor2_intervals}\\
+\hline
+\textbf{Model} & \textbf{Subset ($n$)} & \textbf{Cov} & \textbf{Width} & \textbf{Above} & \textbf{NegLB}\\\hline
+\endfirsthead
+\multicolumn{6}{l}{\tablename\ \thetable\ (continued)}\\\hline
+\textbf{Model} & \textbf{Subset ($n$)} & \textbf{Cov} & \textbf{Width} & \textbf{Above} & \textbf{NegLB}\\\hline
+\endhead
+\hline\endfoot
+\multicolumn{6}{l}{\textbf{90\% central intervals}}\\\hline
+BU-LSTM & All (3,939) & \shortstack{$0.9456$\\$\pm0.0033$} & \shortstack{$0.6526$\\$\pm0.0233$} & \shortstack{$0.0544$\\$\pm0.0033$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
+BU-LSTM & Wet (854) & \shortstack{$0.7546$\\$\pm0.0152$} & \shortstack{$1.1129$\\$\pm0.0524$} & \shortstack{$0.2454$\\$\pm0.0152$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
+BU-LSTM & Upper (238) & \shortstack{$0.4101$\\$\pm0.0499$} & \shortstack{$1.2774$\\$\pm0.0608$} & \shortstack{$0.5899$\\$\pm0.0499$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
+BU-LSTM-Attention & All (3,939) & \shortstack{$0.9464$\\$\pm0.0029$} & \shortstack{$0.6608$\\$\pm0.0234$} & \shortstack{$0.0536$\\$\pm0.0029$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
+BU-LSTM-Attention & Wet (854) & \shortstack{$0.7560$\\$\pm0.0151$} & \shortstack{$1.0967$\\$\pm0.0394$} & \shortstack{$0.2440$\\$\pm0.0151$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
+BU-LSTM-Attention & Upper (238) & \shortstack{$0.3983$\\$\pm0.0338$} & \shortstack{$1.2478$\\$\pm0.0460$} & \shortstack{$0.6017$\\$\pm0.0338$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
+Prob. BiLSTM-Attn. & All (3,939) & \shortstack{$0.9459$\\$\pm0.0073$} & \shortstack{$0.6705$\\$\pm0.0574$} & \shortstack{$0.0541$\\$\pm0.0073$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
+Prob. BiLSTM-Attn. & Wet (854) & \shortstack{$0.7571$\\$\pm0.0292$} & \shortstack{$1.1271$\\$\pm0.0667$} & \shortstack{$0.2429$\\$\pm0.0292$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
+Prob. BiLSTM-Attn. & Upper (238) & \shortstack{$0.3958$\\$\pm0.0450$} & \shortstack{$1.2976$\\$\pm0.0611$} & \shortstack{$0.6042$\\$\pm0.0450$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
+\multicolumn{6}{l}{\textbf{95\% central intervals}}\\\hline
+BU-LSTM & All (3,939) & \shortstack{$0.9560$\\$\pm0.0031$} & \shortstack{$0.7776$\\$\pm0.0278$} & \shortstack{$0.0440$\\$\pm0.0031$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
+BU-LSTM & Wet (854) & \shortstack{$0.8002$\\$\pm0.0144$} & \shortstack{$1.3261$\\$\pm0.0624$} & \shortstack{$0.1998$\\$\pm0.0144$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
+BU-LSTM & Upper (238) & \shortstack{$0.5042$\\$\pm0.0384$} & \shortstack{$1.5222$\\$\pm0.0725$} & \shortstack{$0.4958$\\$\pm0.0384$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
+BU-LSTM-Attention & All (3,939) & \shortstack{$0.9571$\\$\pm0.0015$} & \shortstack{$0.7874$\\$\pm0.0279$} & \shortstack{$0.0429$\\$\pm0.0015$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
+BU-LSTM-Attention & Wet (854) & \shortstack{$0.8037$\\$\pm0.0088$} & \shortstack{$1.3068$\\$\pm0.0469$} & \shortstack{$0.1963$\\$\pm0.0088$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
+BU-LSTM-Attention & Upper (238) & \shortstack{$0.5000$\\$\pm0.0236$} & \shortstack{$1.4869$\\$\pm0.0548$} & \shortstack{$0.5000$\\$\pm0.0236$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
+Prob. BiLSTM-Attn. & All (3,939) & \shortstack{$0.9565$\\$\pm0.0052$} & \shortstack{$0.7989$\\$\pm0.0684$} & \shortstack{$0.0435$\\$\pm0.0052$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
+Prob. BiLSTM-Attn. & Wet (854) & \shortstack{$0.8042$\\$\pm0.0211$} & \shortstack{$1.3430$\\$\pm0.0795$} & \shortstack{$0.1958$\\$\pm0.0211$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
+Prob. BiLSTM-Attn. & Upper (238) & \shortstack{$0.4941$\\$\pm0.0367$} & \shortstack{$1.5462$\\$\pm0.0728$} & \shortstack{$0.5059$\\$\pm0.0367$} & \shortstack{$1.0000$\\$\pm0.0000$}\\
+\end{longtable}
+\end{revisionlongtable}
+{\color{red}\small The three models use seeds 42, 123, 7, 2024 and 99. All has 3,939 test targets; Wet is $y\geq0.1$~mm\,h$^{-1}$ ($n=854$); Upper is $y\geq$training Q95 $=0.574048$~mm\,h$^{-1}$ ($n=238$). The code uses $z=1.6448536269514722$ and $1.959963984540054$. At both levels, the below-lower-bound proportion is $0\pm0$ for every model and subset, so all misses are above the upper bound. Conditional subset coverage is descriptive and does not establish significant model rankings. The main-table A1 panel retains the original runs; the q14 A2 reruns are not the complete A1 run set. A2 Probabilistic BiLSTM-Attention and the q11 B Gaussian have identical saved targets and predictive means for all five seeds, with saved standard-deviation differences no larger than $1.23\times10^{-7}$~mm\,h$^{-1}$; their matching results are not independent prediction evidence. No original main-table value is replaced.
+\par}

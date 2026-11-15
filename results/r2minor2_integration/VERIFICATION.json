@@ -1,0 +1,21 @@
+{
+  "old_excerpts_unchanged": 112,
+  "new_exact_excerpts": 3,
+  "total_matched": 115,
+  "match_percent": 100,
+  "affected_old_boxes": 0,
+  "table_numeric_fields": 144,
+  "prose_endpoints": 16,
+  "independent_prediction_files": 15,
+  "per_run_independent_fields": 450,
+  "max_difference": 2.220446049250313e-16,
+  "table5_unchanged": true,
+  "S1_S49_source_unchanged": true,
+  "all_figures_unchanged": true,
+  "all_other_responses_unchanged": true,
+  "Supplementary_table": "S50",
+  "label": "stab:r2minor2_intervals",
+  "m9_overall_not_closed": true,
+  "next_minor_not_started": true,
+  "no_git_commit_push": true
+}
