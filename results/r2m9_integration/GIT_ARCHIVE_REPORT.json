@@ -1,0 +1,27 @@
+{
+  "status": "SCIENTIFIC_INTEGRATION_COMPLETE \u2014 FINAL_REPOSITORY_DOCUMENTATION_PENDING",
+  "overall_closed": false,
+  "base_commit": "2de6f3e0045c1f68f0d570f6cb6de49d9920755a",
+  "archive_commit": "0530327235da8ebe251b85503a9fabdfcfb0e481",
+  "files_archived": 86,
+  "github_files_matched": 86,
+  "all_match": true,
+  "all_other_git_paths_unchanged": true,
+  "task22_commit_preserved": "558da58341bcd8d1aedc9f6cd9754b58774b56fa",
+  "prior_closed_evidence_preserved": true,
+  "protected_file_hashes": 149,
+  "old_excerpts": 103,
+  "new_exact_excerpts": 6,
+  "table_numeric_values": 828,
+  "missing_markers": 86,
+  "source_and_pdfs_still_match": true,
+  "final_repository_documentation_complete": false,
+  "original_worktree_documents_unchanged": true,
+  "remaining": [
+    "GitHub README",
+    "Environment and reproduction documentation",
+    "Code Availability final fixed release commit",
+    "Public repository content review"
+  ],
+  "note": "VERIFICATION.json is the scientific-stage snapshot; its pre-archive publication flag is historical, not a claim that the current scientific Git archive was not pushed."
+}

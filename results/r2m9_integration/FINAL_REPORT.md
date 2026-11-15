@@ -127,3 +127,12 @@ PDF_CHECK逐份确认当前源码MD5与成功构建记录一致。最终无undef
 作者现授权科学与论文增量归档，明确不授权整体关闭。当前权威状态为`SCIENTIFIC_INTEGRATION_COMPLETE — FINAL_REPOSITORY_DOCUMENTATION_PENDING`。尚待事项：GitHub README、环境及复现说明、Code Availability最终固定commit、公开仓库内容审核。它们不因本次归档而完成，留待全部审稿意见处理结束后统一解决。
 
 使用最新已核实origin/main2de6f3e独立worktree，仅归档R2-M9增量patch及核验材料，不整份提交混合返修的根目录文档，不包含历史README草稿，也不重新训练/绘图。后续实际提交与回读结果另写回执；原报告中“本轮不提交”属于此前本地整合阶段记录，不是本次明确归档授权后的状态。原已关闭意见及任务22历史必须完整保留。
+
+
+## 科学选择性归档已完成，M9整体仍未关闭
+
+以最新已核实origin/main2de6f3e为基线的独立worktree已形成科学归档提交0530327235da8ebe251b85503a9fabdfcfb0e481，并正常推送。GitHub固定提交逐文件回读86/86 blob一致，含已选择的视觉核验PNG；见REMOTE_RECEIPT.json。整个差异仅在results/r2m9_integration，原关闭意见和任务22路径/历史保持。原论文工作区六文档及149保护哈希、源码/PDF匹配再次核验通过，未重训、重算或绘图。
+
+最新状态严格为`SCIENTIFIC_INTEGRATION_COMPLETE — FINAL_REPOSITORY_DOCUMENTATION_PENDING`，**不是CLOSED**。科学归档不等于最终代码发布完成。GitHub README、环境/复现说明、Code Availability最终固定commit、公开仓库内容审核全部保留Pending，待所有审稿意见结束后统一处理；届时还须确认声明与实际远端版本一致，并重新核验论文和回复。当前实验源d02519c不得冒充未来最终发布commit。R3-L822–824及18/34共享事项继续Pending，未开始R2-m1。
+
+原本地报告中的“不提交”及科学核验快照中的pre-archive标志是历史阶段记录，本段及STATUS/REMOTE_RECEIPT为本次授权后的当前状态。科学回执将另外选择性归档并回读；不更改任何已通过的科学结论或LaTeX。
