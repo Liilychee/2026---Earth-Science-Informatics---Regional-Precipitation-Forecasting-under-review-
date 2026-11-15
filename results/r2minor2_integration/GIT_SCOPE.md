@@ -8,3 +8,8 @@ No README, environment file, LICENSE, source prediction or model artifact was ch
 ## Author-authorised selective archive phase (2026-11-15)
 
 Fetched origin/main and verified baseline5196e40cd56af42afe6c82c08125b6374696efaf has not advanced. Archive in isolated worktree; only this integration directory, six-file paper/task/registry delta in LOCAL/PORTABLE patches, selected R2-m2 evidence and eight relevant reviewed-page renders. Full before snapshots, original datasets/predictions, unrelated renders and stale LOCAL_MANIFEST are excluded. No whole mixed paper files are staged. Original-worktree source/PDF/index guard and exact scratch patch reconstruction passed. No scientific/main-text edits occur during archiving. CLOSED only after fixed-commit GitHub file readback.
+
+
+## Closure stage
+
+After successful47/47 fixed-commit readback, only STATUS, successful REMOTE_RECEIPT, GIT_ARCHIVE_REPORT, CLOSURE_STATUS.patch, FINAL_REPORT, GIT_SCOPE and CLOSURE_MANIFEST are added/updated. No main-text, scientific table, original prediction, old archive or Figure change; original-worktree and M9 guards passed. Final post-push receipt is produced locally against the closure commit and is not claimed to be included in the commit it verifies.

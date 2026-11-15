@@ -54,3 +54,10 @@ No undefined references, duplicate labels, horizontal overflow, oversized float 
 - PDF_CHECK.json, render/, compile logs, LOCATIONS.json, DOCUMENT_HASHES.json and GIT_STATUS.txt.
 
 No scientific or layout blocker remains for this local integration. Author review and later selective Git archive are still required; **do not mark CLOSED or start R2-m3**. Final page/line annotations remain deferred to full-revision assembly. M9 repository work is deliberately still pending.
+
+
+## Author-authorised archive and formal closure — 2026-11-15
+
+Author approved local integration and selective Git archive. Scientific archive `11a4507bf0f49a9b307dacff06f3480228bce952` based on5196e40cd56af42afe6c82c08125b6374696efaf was normally pushed; GitHub fixed-commit readback **47/47 files matched local blob hashes**. The six-file reviewed patch reconstructs byte-identical sources in scratch; original worktree/source/PDF/index guards and591 prior protected artifact hashes passed.115/115 excerpts,144 table fields and source-matched three-PDF checks passed again. Table S50, red response/blue exact EvidenceBoxes and A2/B identity disclosure are present in the archived patch/table/evidence.
+
+R2-m2 is CLOSED following successful remote verification. Closure status/receipt and task16/checklist/registry closure-note patch are committed separately and receive final remote readback. Original mixed paper files are not overwritten; root task records remain protected and their closure increments are archived as CLOSURE_STATUS.patch, consistent with earlier selective archives. Earlier pending-state prose is historical and superseded by current STATUS. M9 stays SCIENTIFIC_INTEGRATION_COMPLETE — FINAL_REPOSITORY_DOCUMENTATION_PENDING (not overall CLOSED). All other shared matters stay Pending; R2-m3 not started. No new scientific blocker; small q14/q11 saved-sigma difference remains disclosed, without an unverified cause claim.

@@ -1,0 +1,33 @@
+--- a/ESI_审稿意见分类_严重程度排序_35项.md	2026-11-15 00:00:00 +0000
++++ b/ESI_审稿意见分类_严重程度排序_35项.md	2026-11-15 00:00:00 +0000
+@@ -4397,3 +4397,8 @@
+ 
+ 
+ R2-M4最终证据与关闭记录：results/r2m4_final/。作者PDF MD5=f73dd3d355084727bb13bf644ce332d3；本轮77行交接输入与归档CSI/命中/预报次数0差异，作者最终点值CSV未取得，最终图片精确点值对应性引用作者此前独立核验。八段EvidenceBox和三PDF核验通过，只关闭R2-M4，不整体关闭05/12共享任务。
++
++
++### R2-m2 / 任务16局部关闭回执（2026-11-15）
++
++R2-m2 CLOSED；科学归档`11a4507bf0f49a9b307dacff06f3480228bce952`已推送，GitHub逐文件47/47一致；115/115摘录、S50/144数值、三份PDF及Table5/S1–S49/Figures保护通过。仅关闭R2-m2，任务16其他共享事项Pending；M9保持SCIENTIFIC_INTEGRATION_COMPLETE — FINAL_REPOSITORY_DOCUMENTATION_PENDING，不整体关闭。未启动R2-m3。
+--- a/FINAL_REVISION_CHECKLIST.md	2026-11-15 00:00:00 +0000
++++ b/FINAL_REVISION_CHECKLIST.md	2026-11-15 00:00:00 +0000
+@@ -520,3 +520,8 @@
+ ### R2-m2 / 任务16局部（2026-11-15）
+ 
+ 本地科学整合与核验；待作者审核及后续选择性归档，不标CLOSED。Table 5保留；新增S50（`stab:r2minor2_intervals`）并列90/95%概率区间。证据见`results/r2minor2_integration/`。其他共享事项Pending，M9最终仓库文档待办保留，未启动R2-m3。
++
++
++### R2-m2归档完成（2026-11-15）
++
++R2-m2 CLOSED。科学提交`11a4507bf0f49a9b307dacff06f3480228bce952`，47/47文件GitHub回读一致；112旧+3新=115摘录匹配，S50的144数值可追溯，三份PDF通过。最终关闭回执见`results/r2minor2_integration/STATUS.md`及REMOTE_RECEIPT.json。共享事项Pending；M9最终仓库文档待办保留；R2-m3未启动。
+--- a/SUPPLEMENTARY_TABLE_REGISTRY.md	2026-11-15 00:00:00 +0000
++++ b/SUPPLEMENTARY_TABLE_REGISTRY.md	2026-11-15 00:00:00 +0000
+@@ -108,3 +108,8 @@
+ 
+ - S50：`stab:r2minor2_intervals`，q14/q16三模型五种子，全部/有雨/上尾90%与95%覆盖率、宽度、上界漏覆盖及负下界比例（均值±样本SD）。
+ - S1–S49原内容及label不变；任务16其他共享事项保持Pending。
++
++
++### R2-m2 / S50最终归档（2026-11-15）
++
++S50：`stab:r2minor2_intervals`，144个数值字段核验通过；科学归档`11a4507bf0f49a9b307dacff06f3480228bce952`，47/47文件远端一致。R2-m2 CLOSED；S1–S49与旧图不变，其他共享事项Pending。

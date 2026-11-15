@@ -1,0 +1,16 @@
+{
+  "base_commit": "5196e40cd56af42afe6c82c08125b6374696efaf",
+  "scientific_archive_commit": "11a4507bf0f49a9b307dacff06f3480228bce952",
+  "remote_scientific_files": 47,
+  "all_blobs_match": true,
+  "old_excerpts": 112,
+  "new_excerpts": 3,
+  "total_matched": 115,
+  "table_numeric_fields": 144,
+  "protected_archive_figure_files": 591,
+  "root_source_pdf_index_unchanged": true,
+  "m9_overall_not_closed": true,
+  "other_shared_pending": true,
+  "next_minor_not_started": true,
+  "scope": "only results/r2minor2_integration; source/task increments in patches"
+}
