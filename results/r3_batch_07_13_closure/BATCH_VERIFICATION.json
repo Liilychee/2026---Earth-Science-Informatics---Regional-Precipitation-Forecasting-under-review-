@@ -1,0 +1,73 @@
+{
+  "protected_baseline_excerpts": 130,
+  "current_exact_excerpts": 144,
+  "new_in_batch": 14,
+  "all_match": true,
+  "all_non_target_responses_unchanged": true,
+  "old_main_prose_table_figure_source_preserved": true,
+  "old_S1_S51_prefix_unchanged": true,
+  "figure_hashes_unchanged": 17,
+  "raw_CSV_fields_checked": {
+    "r3sec32f_integration": 88,
+    "r3window_integration": 294,
+    "r3climatology_integration": 19,
+    "r3huber_integration": 290,
+    "r3nwp_integration": 66
+  },
+  "total_raw_CSV_fields": 757,
+  "S52_rows_checked": 12,
+  "S52_numeric_entries": 108,
+  "portable_patch_chain_byte_identical": true,
+  "R3_07_12_eligible": true,
+  "R3_13_core_gap": "Strict same-window NWP comparator unavailable; OPEN",
+  "labels": {
+    "stab:r2m3_upstream_xgboost": {
+      "number": "S26",
+      "page": "21"
+    },
+    "stab:r2m3_upstream_bilstm_attn": {
+      "number": "S27",
+      "page": "22"
+    },
+    "stab:r3d_upstream_increments": {
+      "number": "S52",
+      "page": "59"
+    },
+    "sfig:r3d_upstream_effects": {
+      "number": "S3",
+      "page": "60"
+    },
+    "stab:r3f_seasonal_associations": {
+      "number": "S53",
+      "page": "61"
+    },
+    "stab:r3f_seasonal_v10_ablation": {
+      "number": "S54",
+      "page": "62"
+    },
+    "stab:r3window_six_models": {
+      "number": "S55",
+      "page": "63"
+    },
+    "stab:r3window_curve": {
+      "number": "S56",
+      "page": "64"
+    },
+    "stab:r3huber_scores": {
+      "number": "S57",
+      "page": "65"
+    },
+    "stab:r3huber_pairs": {
+      "number": "S58",
+      "page": "66"
+    },
+    "stab:r3huber_xgb": {
+      "number": "S59",
+      "page": "67"
+    },
+    "stab:r3nwp_common_context": {
+      "number": "S60",
+      "page": "68"
+    }
+  }
+}

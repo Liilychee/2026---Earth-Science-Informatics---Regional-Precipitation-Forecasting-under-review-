@@ -1,0 +1,70 @@
+--- a/manuscript.tex	2026-11-15 00:00:00 +0000
++++ b/manuscript.tex	2026-11-15 00:00:00 +0000
+@@ -806,6 +806,8 @@
+ The exploratory HRES comparison used 1,970 common samples valid at 06 and 18~UTC from 22 April 2019 to 31 December 2021, with matched 00/12~UTC origins and six-hour leads. Against the final-hour ERA5 target, HRES had RMSE 0.2061~mm\,h$^{-1}$, compared with 0.2428--0.2622~mm\,h$^{-1}$ for the six learning models; all six paired RMSE differences favoured HRES with statistical support. For ERA5 exceedance events at wet $\geq0.1$~mm\,h$^{-1}$, Q95 and $\geq1.0$~mm\,h$^{-1}$, HRES ROC AUC was 0.941, 0.959 and 0.969, respectively; at each threshold, paired comparisons against all six learning models supported higher AUC for HRES. Against Dublin Airport observations, HRES event AUC was significantly higher than that of all six models, whereas its RMSE advantage had statistical support only against XGBoost and Transformer. HRES represents the complete six-hour total converted to a mean hourly rate, while the learning models predict only the final hour. Airport observations represent a point rather than the regional mean, and ERA5 and HRES share the IFS modelling framework. These differences limit interpretation: this is an exploratory reference comparison, not a fully matched-target benchmark, and it does not establish NWP competitiveness or a computational-cost advantage for the models.
+ \par}
+ \textcolor{red}{\hypersetup{linkcolor=red}Supplementary Tables~\ref{supp-stab:hres_era5_rmse} and~\ref{supp-stab:hres_era5_auc} report the ERA5-target RMSE and AUC comparisons; Tables~\ref{supp-stab:hres_station_rmse} and~\ref{supp-stab:hres_station_auc} report the corresponding airport-target results. The accumulation-window and spatial-support differences stated above apply to all four tables.}
++
++\revminor{The retrieved HRES subset contains lead steps 0 and 6 h, not the intervening +5 h amount needed to recover a final-hour forecast; no strictly matched final-hour NWP comparison is available in these saved experiments. Supplementary Table~\ref{supp-stab:r3nwp_common_context} adds the common-subset reference scores and the ERA5 six-hour-average diagnostic (RMSE 0.1882~mm\,h$^{-1}$ against the final-hour target). That diagnostic uses post-origin verifying information and is neither an available forecast nor a theoretical error bound. Dividing a six-hour accumulation by six changes its units but does not recover its final hour. The observed score contrasts therefore remain descriptive comparisons of products with different temporal support, rather than a fair ranking of operational forecasting skill.}
+ 
+ \subsubsection{Descriptive Seasonal Check}
+ \label{sec:seasonal_baseline_check}
+--- a/Supplementary.tex	2026-11-15 00:00:00 +0000
++++ b/Supplementary.tex	2026-11-15 00:00:00 +0000
+@@ -2317,4 +2317,27 @@
+ \end{longtable}
+ \end{revisionlongtable}
+ 
++\clearpage
++\begin{revisiontable}
++\caption{Common-subset context for the archived HRES comparison (q08), on the same 1,970 target times at 06/18 UTC. BA:BiLSTM-Attention; XGB:XGBoost; BUA:BU-LSTM-Attention; PBA:Probabilistic BiLSTM-Attention; BU:BU-LSTM; TR:Transformer. Learning-model rows are original single saved predictions, not five-seed summaries; the saved BUA prediction is not its main five-seed set's seed42. All forecasts use the same local 25-cell domain; HRES and ERA5 fields are equally averaged over these cells. HRES origins00/12 UTC and +6 h leads match model origins/leads, but its $(t_0,t_0+6\,\mathrm{h}]$ accumulation divided by six is not the model target $(t_0+5\,\mathrm{h},t_0+6\,\mathrm{h}]$. The ERA5 window diagnostic is the verifying six-hour accumulation divided by six: it contains post-origin verifying information, is not an available forecast, and is not a theoretical error bound. Original CSV terminology ``ceiling'' is not adopted. Month-by-hour climatology and AR(1) use training data only; all rows are rescored on this common subset. SS is $1-\mathrm{RMSE}/\mathrm{RMSE}_{\mathrm{month\times hour}}$, with the subset denominator0.274179~mm\,h$^{-1}$. RMSE/MAE are mm\,h$^{-1}$; $R^2$, SS and CSI are dimensionless. CSI uses the fixed rule $\hat y\geq\tau$ at wet0.1 and training Q95=0.574048. These mismatched-window diagnostics cannot support a fair operational skill ranking; paired RMSE/AUC evidence is separately reported in Tables~\ref{stab:hres_era5_rmse}--\ref{stab:hres_station_auc}.}
++\label{stab:r3nwp_common_context}
++\begin{tabular}{@{}lrrrrrr@{}}
++\hline
++Forecast & RMSE & MAE & $R^2$ & SS & CSI wet & CSI Q95\\
++\hline
++BA & 0.2428 & 0.1162 & 0.2206 & 0.1143 & 0.4224 & 0.0086 \\
++XGB & 0.2443 & 0.1187 & 0.2110 & 0.1088 & 0.4045 & 0.0620 \\
++BUA & 0.2474 & 0.1182 & 0.1914 & 0.0978 & 0.4100 & 0.0000 \\
++PBA & 0.2478 & 0.1167 & 0.1886 & 0.0963 & 0.4058 & 0.0000 \\
++BU & 0.2493 & 0.1179 & 0.1788 & 0.0909 & 0.4016 & 0.0000 \\
++TR & 0.2622 & 0.1228 & 0.0917 & 0.0438 & 0.3347 & 0.0086 \\
++Persistence & 0.3242 & 0.1362 & -0.3888 & -0.1823 & 0.3513 & 0.1498 \\
++Month-by-hour & 0.2742 & 0.1527 & 0.0065 & 0.0000 & 0.2074 & 0.0000 \\
++AR(1) & 0.2627 & 0.1409 & 0.0879 & 0.0418 & 0.3589 & 0.0083 \\
++HRES six-hour mean & 0.2061 & 0.0839 & 0.4386 & 0.2483 & 0.6033 & 0.3526 \\
++ERA5 window diagnostic & 0.1882 & 0.0743 & 0.5317 & 0.3134 & 0.6606 & 0.3824 \\
++\hline
++\end{tabular}
++\end{revisiontable}
++
+ \end{document}
+--- a/Response letter.tex	2026-11-15 00:00:00 +0000
++++ b/Response letter.tex	2026-11-15 00:00:00 +0000
+@@ -1326,9 +1326,23 @@
+ 
+ \ReviewerComment{Section 3.3.1: Why not use a meteorological forecast (from ECMWF or any other center) as a reference? I think it is very important to carry out this analysis show that your forecasts do better than not just persistence and climatology but also against an established forecast.}
+ 
+-\PendingResponse
+-
+-\ChangeLocation
++\AuthorResponse{We agree that a physical numerical forecast is an important reference. The revised manuscript already includes an exploratory comparison with archived ECMWF IFS HRES forecasts, rather than relying only on persistence and climatology (Section~\ref{manuscript-sec:hres_reference_results}; Supplementary Tables~\ref{supp-stab:hres_era5_rmse}--\ref{supp-stab:hres_station_auc}).
++
++There are 1,970 paired targets at 06/18~UTC, from 22 April 2019 to 31 December 2021. HRES is initialized at 00/12~UTC with a +6 h lead, matching the learning-model origins and leads, and uses the same 25-cell study box. Crucially, HRES supplies the six-hour accumulation divided by six, while the learning models predict only $(t_0+5\,\mathrm{h},t_0+6\,\mathrm{h}]$. These are different temporal supports. The saved subset lacks +5 h forecasts, so we cannot reconstruct a strictly matched final-hour NWP forecast. We do not present the comparison as a fair operational skill ranking.
++
++Against the final-hour ERA5 target, HRES RMSE is 0.2061~mm\,h$^{-1}$ versus 0.2428--0.2622 for the six saved learning forecasts; the paired intervals favour HRES on these labels. HRES also has higher AUC at wet, Q95 and 1.0~mm\,h$^{-1}$ thresholds. Airport-target comparisons retain the window and point-to-area differences: HRES has higher AUC for all six models at the two evaluated station thresholds, but its RMSE advantage is supported only against XGBoost and Transformer. These are single saved forecasts, not five-seed averages.
++
++The new Supplementary Table~\ref{supp-stab:r3nwp_common_context} includes persistence, training-fitted month-by-hour climatology and AR(1), rescored on the common subset. It also identifies the ERA5 six-hour mean as a verification-window diagnostic, not an available forecast or an error bound. Section~\ref{manuscript-sec:limitations} retains the shared IFS framework, temporal-window and spatial-support limitations. The results do not establish NWP competitiveness, computational advantage or the models' superiority to an equivalent-window operational forecast; that stricter comparison remains unavailable.}
++
++\ManuscriptChange{Section~\ref{manuscript-sec:hres_reference_results}: added an explicit saved-archive and verification-window boundary. Existing HRES Methods, Results and Section~\ref{manuscript-sec:limitations} limitations are retained. Supplementary Table~\ref{supp-stab:r3nwp_common_context}: common-subset references and ERA5 verification diagnostic; Tables~\ref{supp-stab:hres_era5_rmse}--\ref{supp-stab:hres_station_auc} remain unchanged. Final page/line numbers pending full assembly.}
++
++\EvidenceBox{Exploratory HRES results and comparability (Section~\ref{manuscript-sec:hres_reference_results})}{
++\RevisedExcerpt{The exploratory HRES comparison used 1,970 common samples valid at 06 and 18~UTC from 22 April 2019 to 31 December 2021, with matched 00/12~UTC origins and six-hour leads. Against the final-hour ERA5 target, HRES had RMSE 0.2061~mm\,h$^{-1}$, compared with 0.2428--0.2622~mm\,h$^{-1}$ for the six learning models; all six paired RMSE differences favoured HRES with statistical support. For ERA5 exceedance events at wet $\geq0.1$~mm\,h$^{-1}$, Q95 and $\geq1.0$~mm\,h$^{-1}$, HRES ROC AUC was 0.941, 0.959 and 0.969, respectively; at each threshold, paired comparisons against all six learning models supported higher AUC for HRES. Against Dublin Airport observations, HRES event AUC was significantly higher than that of all six models, whereas its RMSE advantage had statistical support only against XGBoost and Transformer. HRES represents the complete six-hour total converted to a mean hourly rate, while the learning models predict only the final hour. Airport observations represent a point rather than the regional mean, and ERA5 and HRES share the IFS modelling framework. These differences limit interpretation: this is an exploratory reference comparison, not a fully matched-target benchmark, and it does not establish NWP competitiveness or a computational-cost advantage for the models.}
++}
++
++\EvidenceBox{Saved-archive and verification-diagnostic limits (Section~\ref{manuscript-sec:hres_reference_results})}{
++\RevisedExcerpt{The retrieved HRES subset contains lead steps 0 and 6 h, not the intervening +5 h amount needed to recover a final-hour forecast; no strictly matched final-hour NWP comparison is available in these saved experiments. Supplementary Table~\ref{supp-stab:r3nwp_common_context} adds the common-subset reference scores and the ERA5 six-hour-average diagnostic (RMSE 0.1882~mm\,h$^{-1}$ against the final-hour target). That diagnostic uses post-origin verifying information and is neither an available forecast nor a theoretical error bound. Dividing a six-hour accumulation by six changes its units but does not recover its final hour. The observed score contrasts therefore remain descriptive comparisons of products with different temporal support, rather than a fair ranking of operational forecasting skill.}
++}
+ 
+ % Review ID: R3 L469-471
+ \Needspace{5\baselineskip}

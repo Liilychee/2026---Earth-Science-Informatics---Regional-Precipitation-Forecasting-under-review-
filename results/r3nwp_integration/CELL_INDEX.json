@@ -1,0 +1,530 @@
+[
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 2,
+    "forecast": "BiLSTM-Attention",
+    "field": "RMSE",
+    "raw": "0.24284980627145145",
+    "display": "0.2428"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 2,
+    "forecast": "BiLSTM-Attention",
+    "field": "MAE",
+    "raw": "0.11619487771204524",
+    "display": "0.1162"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 2,
+    "forecast": "BiLSTM-Attention",
+    "field": "R2",
+    "raw": "0.2205849658006278",
+    "display": "0.2206"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 2,
+    "forecast": "BiLSTM-Attention",
+    "field": "skill_vs_clim",
+    "raw": "0.11426678975356186",
+    "display": "0.1143"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 2,
+    "forecast": "BiLSTM-Attention",
+    "field": "wet01_CSI",
+    "raw": "0.4224376731301939",
+    "display": "0.4224"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 2,
+    "forecast": "BiLSTM-Attention",
+    "field": "Q95_CSI",
+    "raw": "0.008620689655172414",
+    "display": "0.0086"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 3,
+    "forecast": "XGBoost",
+    "field": "RMSE",
+    "raw": "0.2443419419564708",
+    "display": "0.2443"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 3,
+    "forecast": "XGBoost",
+    "field": "MAE",
+    "raw": "0.11867306755601922",
+    "display": "0.1187"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 3,
+    "forecast": "XGBoost",
+    "field": "R2",
+    "raw": "0.21097766260771122",
+    "display": "0.2110"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 3,
+    "forecast": "XGBoost",
+    "field": "skill_vs_clim",
+    "raw": "0.10882460245801928",
+    "display": "0.1088"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 3,
+    "forecast": "XGBoost",
+    "field": "wet01_CSI",
+    "raw": "0.4044943820224719",
+    "display": "0.4045"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 3,
+    "forecast": "XGBoost",
+    "field": "Q95_CSI",
+    "raw": "0.06201550387596899",
+    "display": "0.0620"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 4,
+    "forecast": "BU-LSTM-Attention",
+    "field": "RMSE",
+    "raw": "0.24735337225469176",
+    "display": "0.2474"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 4,
+    "forecast": "BU-LSTM-Attention",
+    "field": "MAE",
+    "raw": "0.11821163968416594",
+    "display": "0.1182"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 4,
+    "forecast": "BU-LSTM-Attention",
+    "field": "R2",
+    "raw": "0.19140895513866918",
+    "display": "0.1914"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 4,
+    "forecast": "BU-LSTM-Attention",
+    "field": "skill_vs_clim",
+    "raw": "0.09784117254951374",
+    "display": "0.0978"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 4,
+    "forecast": "BU-LSTM-Attention",
+    "field": "wet01_CSI",
+    "raw": "0.41002570694087404",
+    "display": "0.4100"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 4,
+    "forecast": "BU-LSTM-Attention",
+    "field": "Q95_CSI",
+    "raw": "0.0",
+    "display": "0.0000"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 5,
+    "forecast": "Probabilistic BiLSTM-Attention",
+    "field": "RMSE",
+    "raw": "0.24778101775951772",
+    "display": "0.2478"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 5,
+    "forecast": "Probabilistic BiLSTM-Attention",
+    "field": "MAE",
+    "raw": "0.11672185396187232",
+    "display": "0.1167"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 5,
+    "forecast": "Probabilistic BiLSTM-Attention",
+    "field": "R2",
+    "raw": "0.18861061656535416",
+    "display": "0.1886"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 5,
+    "forecast": "Probabilistic BiLSTM-Attention",
+    "field": "skill_vs_clim",
+    "raw": "0.0962814437951347",
+    "display": "0.0963"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 5,
+    "forecast": "Probabilistic BiLSTM-Attention",
+    "field": "wet01_CSI",
+    "raw": "0.40583554376657827",
+    "display": "0.4058"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 5,
+    "forecast": "Probabilistic BiLSTM-Attention",
+    "field": "Q95_CSI",
+    "raw": "0.0",
+    "display": "0.0000"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 6,
+    "forecast": "BU-LSTM",
+    "field": "RMSE",
+    "raw": "0.2492690299612617",
+    "display": "0.2493"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 6,
+    "forecast": "BU-LSTM",
+    "field": "MAE",
+    "raw": "0.11791456144867084",
+    "display": "0.1179"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 6,
+    "forecast": "BU-LSTM",
+    "field": "R2",
+    "raw": "0.17883599689034524",
+    "display": "0.1788"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 6,
+    "forecast": "BU-LSTM",
+    "field": "skill_vs_clim",
+    "raw": "0.090854295861307",
+    "display": "0.0909"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 6,
+    "forecast": "BU-LSTM",
+    "field": "wet01_CSI",
+    "raw": "0.4015748031496063",
+    "display": "0.4016"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 6,
+    "forecast": "BU-LSTM",
+    "field": "Q95_CSI",
+    "raw": "0.0",
+    "display": "0.0000"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 7,
+    "forecast": "Transformer",
+    "field": "RMSE",
+    "raw": "0.26216350966702734",
+    "display": "0.2622"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 7,
+    "forecast": "Transformer",
+    "field": "MAE",
+    "raw": "0.12280043629090984",
+    "display": "0.1228"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 7,
+    "forecast": "Transformer",
+    "field": "R2",
+    "raw": "0.09168237595627127",
+    "display": "0.0917"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 7,
+    "forecast": "Transformer",
+    "field": "skill_vs_clim",
+    "raw": "0.04382494434731343",
+    "display": "0.0438"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 7,
+    "forecast": "Transformer",
+    "field": "wet01_CSI",
+    "raw": "0.3347222222222222",
+    "display": "0.3347"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 7,
+    "forecast": "Transformer",
+    "field": "Q95_CSI",
+    "raw": "0.008620689655172414",
+    "display": "0.0086"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 8,
+    "forecast": "Persistence",
+    "field": "RMSE",
+    "raw": "0.3241692319601495",
+    "display": "0.3242"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 8,
+    "forecast": "Persistence",
+    "field": "MAE",
+    "raw": "0.13622711264430068",
+    "display": "0.1362"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 8,
+    "forecast": "Persistence",
+    "field": "R2",
+    "raw": "-0.38879082940971843",
+    "display": "-0.3888"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 8,
+    "forecast": "Persistence",
+    "field": "skill_vs_clim",
+    "raw": "-0.18232523589597438",
+    "display": "-0.1823"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 8,
+    "forecast": "Persistence",
+    "field": "wet01_CSI",
+    "raw": "0.3512658227848101",
+    "display": "0.3513"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 8,
+    "forecast": "Persistence",
+    "field": "Q95_CSI",
+    "raw": "0.1497584541062802",
+    "display": "0.1498"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 9,
+    "forecast": "Climatology (month x hour)",
+    "field": "RMSE",
+    "raw": "0.2741794069163142",
+    "display": "0.2742"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 9,
+    "forecast": "Climatology (month x hour)",
+    "field": "MAE",
+    "raw": "0.1526902452197481",
+    "display": "0.1527"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 9,
+    "forecast": "Climatology (month x hour)",
+    "field": "R2",
+    "raw": "0.006511324017524633",
+    "display": "0.0065"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 9,
+    "forecast": "Climatology (month x hour)",
+    "field": "skill_vs_clim",
+    "raw": "0.0",
+    "display": "0.0000"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 9,
+    "forecast": "Climatology (month x hour)",
+    "field": "wet01_CSI",
+    "raw": "0.20743034055727555",
+    "display": "0.2074"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 9,
+    "forecast": "Climatology (month x hour)",
+    "field": "Q95_CSI",
+    "raw": "0.0",
+    "display": "0.0000"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 10,
+    "forecast": "AR(1)",
+    "field": "RMSE",
+    "raw": "0.26270694356756397",
+    "display": "0.2627"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 10,
+    "forecast": "AR(1)",
+    "field": "MAE",
+    "raw": "0.1408675806542998",
+    "display": "0.1409"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 10,
+    "forecast": "AR(1)",
+    "field": "R2",
+    "raw": "0.08791280338587026",
+    "display": "0.0879"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 10,
+    "forecast": "AR(1)",
+    "field": "skill_vs_clim",
+    "raw": "0.04184290672221014",
+    "display": "0.0418"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 10,
+    "forecast": "AR(1)",
+    "field": "wet01_CSI",
+    "raw": "0.3588588588588589",
+    "display": "0.3589"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 10,
+    "forecast": "AR(1)",
+    "field": "Q95_CSI",
+    "raw": "0.008264462809917356",
+    "display": "0.0083"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 11,
+    "forecast": "HRES (6 h mean)",
+    "field": "RMSE",
+    "raw": "0.20609655731152904",
+    "display": "0.2061"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 11,
+    "forecast": "HRES (6 h mean)",
+    "field": "MAE",
+    "raw": "0.08389491320687946",
+    "display": "0.0839"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 11,
+    "forecast": "HRES (6 h mean)",
+    "field": "R2",
+    "raw": "0.43864870287955204",
+    "display": "0.4386"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 11,
+    "forecast": "HRES (6 h mean)",
+    "field": "skill_vs_clim",
+    "raw": "0.24831496417076138",
+    "display": "0.2483"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 11,
+    "forecast": "HRES (6 h mean)",
+    "field": "wet01_CSI",
+    "raw": "0.6033057851239669",
+    "display": "0.6033"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 11,
+    "forecast": "HRES (6 h mean)",
+    "field": "Q95_CSI",
+    "raw": "0.35260115606936415",
+    "display": "0.3526"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 12,
+    "forecast": "Perfect 6 h mean (ceiling)",
+    "field": "RMSE",
+    "raw": "0.18824165412226743",
+    "display": "0.1882"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 12,
+    "forecast": "Perfect 6 h mean (ceiling)",
+    "field": "MAE",
+    "raw": "0.07433904909420884",
+    "display": "0.0743"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 12,
+    "forecast": "Perfect 6 h mean (ceiling)",
+    "field": "R2",
+    "raw": "0.5316993971907171",
+    "display": "0.5317"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 12,
+    "forecast": "Perfect 6 h mean (ceiling)",
+    "field": "skill_vs_clim",
+    "raw": "0.31343620500381686",
+    "display": "0.3134"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 12,
+    "forecast": "Perfect 6 h mean (ceiling)",
+    "field": "wet01_CSI",
+    "raw": "0.6606170598911071",
+    "display": "0.6606"
+  },
+  {
+    "file": "q08_hres_comparison.csv",
+    "line": 12,
+    "forecast": "Perfect 6 h mean (ceiling)",
+    "field": "Q95_CSI",
+    "raw": "0.38235294117647056",
+    "display": "0.3824"
+  }
+]

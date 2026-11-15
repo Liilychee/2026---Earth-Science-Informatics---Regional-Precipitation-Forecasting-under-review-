@@ -1,0 +1,10 @@
+{
+  "unique_prediction_files": 100,
+  "matched_run_json": 100,
+  "common_test_times_12_30": 3939,
+  "common_test_times_curve": 3933,
+  "max_point_seed_interval_difference": 2.314229537170309e-16,
+  "block_intervals_checked_against_saved_CSV_only": true,
+  "bootstrap_not_rerun": true,
+  "run_metadata_sample_counts_verified": true
+}

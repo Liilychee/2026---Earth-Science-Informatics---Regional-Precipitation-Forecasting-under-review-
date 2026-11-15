@@ -1,0 +1,279 @@
+{
+  "manuscript": {
+    "pages": 103,
+    "pdf_sha256": "bf36860c585e02ba8f477346b5314a2a45d423a96b7d51ed9aecde5c3e7b42f2",
+    "relevant_pages": [
+      {
+        "page": 15,
+        "path": "local_render/manuscript-15.png",
+        "sha256": "ea78a915d5df3aaf40cc8b41e4eabb5468fa7b2dee85dde7166483a8d1605175",
+        "pixel_identical_previous_render": [
+          "results/r3sec32e_integration/render/manuscript-15.png"
+        ]
+      },
+      {
+        "page": 18,
+        "path": "local_render/manuscript-18.png",
+        "sha256": "7666bcce283d7e1ed079ef2e4a49cabd8571df0c0b77a0fefef4407abbd732bc",
+        "pixel_identical_previous_render": [
+          "results/r3window_integration/render/manuscript-18.png"
+        ]
+      },
+      {
+        "page": 19,
+        "path": "local_render/manuscript-19.png",
+        "sha256": "00b75f1ef0acf4f3127804823b71d3b8147ddd7bebde12c93ed31fd0c2ee772a",
+        "pixel_identical_previous_render": [
+          "results/r3climatology_integration/render/manuscript-19.png"
+        ]
+      },
+      {
+        "page": 22,
+        "path": "local_render/manuscript-22.png",
+        "sha256": "e616ed5c172c8c2c264a01eba0f561dc12d9a73ad7109b3681e7a22a9f9a6a3e",
+        "pixel_identical_previous_render": [
+          "results/r3huber_integration/render/manuscript-22.png"
+        ]
+      },
+      {
+        "page": 48,
+        "path": "local_render/manuscript-48.png",
+        "sha256": "73726013c47b21f111d6272a4720d111e9618d0bba3455aa4ef18c4538807abc",
+        "pixel_identical_previous_render": []
+      },
+      {
+        "page": 55,
+        "path": "local_render/manuscript-55.png",
+        "sha256": "b8ed114aed6dd6c22652dec29476b2d7b5dfac9045a9c6b254edab4f1d643a5d",
+        "pixel_identical_previous_render": [
+          "results/r3nwp_integration/render/manuscript-55.png"
+        ]
+      },
+      {
+        "page": 58,
+        "path": "local_render/manuscript-58.png",
+        "sha256": "15c157fc401aa165834e3cb0308092f54ef6b99b1c8e8947f2736d002d47c3de",
+        "pixel_identical_previous_render": []
+      },
+      {
+        "page": 89,
+        "path": "local_render/manuscript-89.png",
+        "sha256": "6fd6ada1c5ed64740fd30a5da557ae828e8048d7ef46c2a65e201718950bf636",
+        "pixel_identical_previous_render": []
+      }
+    ],
+    "preexisting_template_vbox_count": 102,
+    "blocking_new_warnings": false,
+    "visual_QA": "PASS: 23 relevant renders pixel-identical to prior inspected pages; 11 changed/new renders and 2 continuation pages actually inspected in this batch. No clipping/overlap/ref/color issue."
+  },
+  "Supplementary": {
+    "pages": 68,
+    "pdf_sha256": "9309d44dcce2e29e1ddb45d4277757288df8dc39ae1f12eeeada031d3c9994e9",
+    "relevant_pages": [
+      {
+        "page": 59,
+        "path": "local_render/Supplementary-59.png",
+        "sha256": "4efbe8f710449c2068bf746bae77ad9985e759ddac6ab7fccde007306c565e5d",
+        "pixel_identical_previous_render": []
+      },
+      {
+        "page": 60,
+        "path": "local_render/Supplementary-60.png",
+        "sha256": "a6f25de452dfb20676e1c39d582656a152bce00d2fe5aeed69e39ee5f5c77db6",
+        "pixel_identical_previous_render": [
+          "results/r3sec32d_integration/finalization/Supplementary-60.png"
+        ]
+      },
+      {
+        "page": 61,
+        "path": "local_render/Supplementary-61.png",
+        "sha256": "5585bde9d115001109cc509725025c8d35fda75c071325b91983f1cd44c8e06f",
+        "pixel_identical_previous_render": [
+          "results/r3sec32f_integration/render/Supplementary-61.png"
+        ]
+      },
+      {
+        "page": 62,
+        "path": "local_render/Supplementary-62.png",
+        "sha256": "3e7f638038a49ff3e0a1792eaa3a5d754fbb118755d97c0b511281f3d6d434ad",
+        "pixel_identical_previous_render": [
+          "results/r3sec32f_integration/render/Supplementary-62.png"
+        ]
+      },
+      {
+        "page": 63,
+        "path": "local_render/Supplementary-63.png",
+        "sha256": "386f445ef08a12bfe2dafcb467c776870fdf2ea0dda3c9eb415e4523bef378ed",
+        "pixel_identical_previous_render": [
+          "results/r3window_integration/render/Supplementary-63.png"
+        ]
+      },
+      {
+        "page": 64,
+        "path": "local_render/Supplementary-64.png",
+        "sha256": "741c5e99e3280925b08f7391214a922bfac929789c985bbad224315c88dc9497",
+        "pixel_identical_previous_render": [
+          "results/r3window_integration/render/Supplementary-64.png"
+        ]
+      },
+      {
+        "page": 65,
+        "path": "local_render/Supplementary-65.png",
+        "sha256": "c427fe18eae7d8c31c6e169a6a633692749221b05d6e986901f56217165a0611",
+        "pixel_identical_previous_render": [
+          "results/r3huber_integration/render/Supplementary-65.png"
+        ]
+      },
+      {
+        "page": 66,
+        "path": "local_render/Supplementary-66.png",
+        "sha256": "ee1eb8a247342bb02915cc299a329467cceaf59de9f795de90b5957b543aa119",
+        "pixel_identical_previous_render": [
+          "results/r3huber_integration/render/Supplementary-66.png"
+        ]
+      },
+      {
+        "page": 67,
+        "path": "local_render/Supplementary-67.png",
+        "sha256": "45d94d48a82a320d97247620ed912c3c498a5f344a02b6d801844c34e7c21099",
+        "pixel_identical_previous_render": [
+          "results/r3huber_integration/render/Supplementary-67.png"
+        ]
+      },
+      {
+        "page": 68,
+        "path": "local_render/Supplementary-68.png",
+        "sha256": "cc35a6162c78c5781718b4ad6660f46894ded6bce69359c32ab4072bfae9d4ed",
+        "pixel_identical_previous_render": [
+          "results/r3nwp_integration/render/Supplementary-68.png"
+        ]
+      }
+    ],
+    "preexisting_template_vbox_count": 0,
+    "blocking_new_warnings": false,
+    "visual_QA": "PASS: 23 relevant renders pixel-identical to prior inspected pages; 11 changed/new renders and 2 continuation pages actually inspected in this batch. No clipping/overlap/ref/color issue."
+  },
+  "Response letter": {
+    "pages": 90,
+    "pdf_sha256": "f67f455555d231d059e60552edb550d987de570dc92c79d9c44938daf5835d84",
+    "relevant_pages": [
+      {
+        "page": 2,
+        "path": "local_render/Response_letter-2.png",
+        "sha256": "c9f73a970a1c85e7d1b45bdbefa4502bf945405f779a70a7fa8233547cc05c17",
+        "pixel_identical_previous_render": []
+      },
+      {
+        "page": 7,
+        "path": "local_render/Response_letter-7.png",
+        "sha256": "cd6454f049ceac37786a0366992a222048807e07530e4699b8d107e6894ce443",
+        "pixel_identical_previous_render": []
+      },
+      {
+        "page": 24,
+        "path": "local_render/Response_letter-24.png",
+        "sha256": "c0aba93eb56eff66b6e8f1b0b21b0fffd14ada7874af839007c64482c38e21ff",
+        "pixel_identical_previous_render": []
+      },
+      {
+        "page": 58,
+        "path": "local_render/Response_letter-58.png",
+        "sha256": "b4e77798bfe2cd8eebdd56d2518e2c057295c451c6966bc19a4f1c45782ae2e7",
+        "pixel_identical_previous_render": []
+      },
+      {
+        "page": 59,
+        "path": "local_render/Response_letter-59.png",
+        "sha256": "d429bcf1ac06233db4d18740e86e5f00145462daa97b35af758863164f1a5573",
+        "pixel_identical_previous_render": []
+      },
+      {
+        "page": 62,
+        "path": "local_render/Response_letter-62.png",
+        "sha256": "ea5da0d69295f3dddf335343c7772c804018c4d145cce08135a634723268cb58",
+        "pixel_identical_previous_render": []
+      },
+      {
+        "page": 64,
+        "path": "local_render/Response_letter-64.png",
+        "sha256": "f48f3faf3a5ab60c68eb84c33f6e400befc2c228eed109d9aadca4819cbbe0ea",
+        "pixel_identical_previous_render": [
+          "results/r3sec32d_integration/finalization/Response_letter-64.png"
+        ]
+      },
+      {
+        "page": 65,
+        "path": "local_render/Response_letter-65.png",
+        "sha256": "b90a047149cf720be92b43b5ff15040b5baee72de13b93e53a28213fcc563141",
+        "pixel_identical_previous_render": [
+          "results/r3sec32e_integration/concise_review/reply-65.png"
+        ]
+      },
+      {
+        "page": 66,
+        "path": "local_render/Response_letter-66.png",
+        "sha256": "73cef1de27c04f5435d9bb82405119be6443b4d7ffc2a5ee7aae90acad5cb035",
+        "pixel_identical_previous_render": [
+          "results/r3sec32e_integration/concise_review/reply-66.png"
+        ]
+      },
+      {
+        "page": 67,
+        "path": "local_render/Response_letter-67.png",
+        "sha256": "0462a4df5540d8f6bf6b11f26cbf7c69cc112a4000c2d5dc075d9048b7385f48",
+        "pixel_identical_previous_render": []
+      },
+      {
+        "page": 68,
+        "path": "local_render/Response_letter-68.png",
+        "sha256": "a2f31760f9125099004ed7abd6558929ddaf4319348d8a92ed9289e89042bd76",
+        "pixel_identical_previous_render": [
+          "results/r3window_integration/render/Response_letter-68.png"
+        ]
+      },
+      {
+        "page": 69,
+        "path": "local_render/Response_letter-69.png",
+        "sha256": "3ed59a39f1f9fcdb73f5e2598c9e3812f3f39b2a300a3ca54c1f785288d38dd2",
+        "pixel_identical_previous_render": [
+          "results/r3climatology_integration/render/Response_letter-69.png"
+        ]
+      },
+      {
+        "page": 70,
+        "path": "local_render/Response_letter-70.png",
+        "sha256": "8757322f3979310a45e8af8cc148bb8cf0f8d52e633f40f83bbe3fac7592fadf",
+        "pixel_identical_previous_render": [
+          "results/r3huber_integration/render/Response_letter-70.png"
+        ]
+      },
+      {
+        "page": 71,
+        "path": "local_render/Response_letter-71.png",
+        "sha256": "2f6a3298101952007e69f7484723d8c9d1a5ac9b02c76c894ef605990edaac03",
+        "pixel_identical_previous_render": [
+          "results/r3huber_integration/render/Response_letter-71.png"
+        ]
+      },
+      {
+        "page": 72,
+        "path": "local_render/Response_letter-72.png",
+        "sha256": "82deb32bce9a2d31885ca9f368b1f3a1e535c39734bcaafae2944ba002f9615b",
+        "pixel_identical_previous_render": [
+          "results/r3nwp_integration/render/Response_letter-72.png"
+        ]
+      },
+      {
+        "page": 73,
+        "path": "local_render/Response_letter-73.png",
+        "sha256": "50a05f6b8106521dc874e8637007ec266516c91b17fc779dafd8fc9a75b08bfb",
+        "pixel_identical_previous_render": [
+          "results/r3nwp_integration/render/Response_letter-73.png"
+        ]
+      }
+    ],
+    "preexisting_template_vbox_count": 0,
+    "blocking_new_warnings": false,
+    "visual_QA": "PASS: 23 relevant renders pixel-identical to prior inspected pages; 11 changed/new renders and 2 continuation pages actually inspected in this batch. No clipping/overlap/ref/color issue."
+  }
+}

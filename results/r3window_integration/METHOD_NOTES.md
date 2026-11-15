@@ -1,0 +1,13 @@
+# Method and provenance boundaries
+
+Original window: verified original specification W=6, no independently verifiable contemporaneous record of a literature/physical/optimization rationale or timing of that choice. Do not turn an unverified a-priori claim in task14 into fact. No storm-passage duration analysis is available.
+
+q14q15_train.py constructs each partition separately and fits X/Y scaling only on training raw rows. Same variables, model builder/configuration, Adam/loss/early-stopping settings and fixed seeds; W changes flattened input dimensionality and sample counts. W3 raw window counts18407/3942/3942;W6 18404/3939/3939. q14 scores on W6 test intersection3939. q14b uses W12 test3933; all100 prediction indices/runJSON verified. q14b validation values are native per-window validation scores, not re-scored on a shared validation intersection. No test-informed optimum is proposed.
+
+Seed t: mean paired per-seed RMSE differences,df4. Block: sqrt(mean of squared errors across samples AND seeds) differences; never RMSE of ensemble mean. These are slightly different estimands. q14 saves both point estimates explicitly; q14b saves only the seed difference and pooled-error block interval. Both scripts use non-circular blocks28,5000,seed42,full-series draws then subset masks;ceil(n/28)=141 with no truncation,3948 positions for both3939 and3933 comparison series. No claim of strict-n resampling or equivalence of estimands. Intervals pointwise, unadjusted; block intervals are conditional on saved fits. No fresh bootstrap run.
+
+q14b reuses q14 W3/W6 runs; the two tables are not independent experiments for overlapping configurations. Different common targets explain changed RMSE for those reused runs. Curve includes some numerical improvements for BiLSTM42/66h and some wet/upper-tail bootstrap intervals excluding zero, so “longer windows never help” would be false. All-target intervals for those longer BA windows span0. XGBoost six-length overall intervals all span0. Shorter histories also change training samples. q14 six-model set includes Transformer and excludes the main-table no-attention BiLSTM.
+
+Temporal SHAP: existing q10 approximate time-game summaries and S21/S22 were read; fixed background and finite100 antithetic permutations, no dedicated temporalCI or convergence claim. Concentration toward latest snapshot is auxiliary evidence about fitted models, never a storm-duration/advection-timescale estimate. No new SHAP values computed.
+
+Sources are fixed Git objects at d02519c5f153feb712018cf97efb035f6ca2d7ae (q14 scripts/results and saved predictions/runJSON); temporal SHAP is the unchanged source previously verified for R1-M4. See SOURCE_INDEX and PREDICTION_CHECK. No training, downloading, staging, commit or push.

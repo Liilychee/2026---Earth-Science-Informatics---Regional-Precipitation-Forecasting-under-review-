@@ -1,0 +1,20 @@
+{
+  "old_excerpts_unchanged": 134,
+  "total_exact_matching": 135,
+  "new_excerpts": 1,
+  "main_pure_insertion": true,
+  "other_review_responses_unchanged": true,
+  "all_tables_figures_unchanged": true,
+  "existing_Supplementary_and_bib_unchanged": true,
+  "staging_unchanged": true,
+  "refs": [
+    "supp-stab:r3f_seasonal_associations",
+    "supp-stab:r3f_seasonal_v10_ablation",
+    "manuscript-sec:predictor_selection_results",
+    "supp-stab:r3f_seasonal_associations",
+    "supp-stab:r3f_seasonal_v10_ablation",
+    "manuscript-sec:predictor_selection_results",
+    "supp-stab:r3f_seasonal_associations",
+    "supp-stab:r3f_seasonal_v10_ablation"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "base": {
+    "manuscript.tex": "78b8ea23cac5dac028073b5465616ae95b94c24f8a4870e9762358cf2ee56273",
+    "Supplementary.tex": "2247f9b576154bc56f9a7aebb0cb9865e5d1efb6d645ac07ef90bc937e4aec89",
+    "Response letter.tex": "9cb7a2b2270152fcb61dbbb88d6ea254570e149fb9673c98869417c1ecac6f09",
+    "sn-bibliography.bib": "719bfb0ecb4538b864e67b316a597bd19be2aaba23465afab632770898e6d572"
+  },
+  "closed_after": {
+    "manuscript.tex": "c5a1deeba3f6077628a6a4e5e9b4c2593c77d35128b68ed9bd3296df322f681d",
+    "Supplementary.tex": "1ebc47067edafb36e35c835aec7b073084197e31cefc6909545e0787afc0b178",
+    "Response letter.tex": "5f55b61977a9610919be3f675fb602b19aac80a1c2398a13b426528810acf0fd",
+    "sn-bibliography.bib": "d2795d63417099234153bc4e582c68abe9c3586ce1b7951bf5087dcc56248b9d"
+  },
+  "current": {
+    "manuscript.tex": "53d78b4d6ce1f2068ac5de6af11d186216907bf1dae334a70133c0b84be89dfb",
+    "Supplementary.tex": "07b92ffa6b214f8ff3d6309f1fb12c0118a134f424a6de57adf8e86841df7237",
+    "Response letter.tex": "f60cdbc3c5f6522d396bf0167461ed79e8e76bbf024f29e85a7da9a61c06248c",
+    "sn-bibliography.bib": "d2795d63417099234153bc4e582c68abe9c3586ce1b7951bf5087dcc56248b9d"
+  }
+}

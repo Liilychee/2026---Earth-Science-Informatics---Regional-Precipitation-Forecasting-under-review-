@@ -1,0 +1,72 @@
+[
+  {
+    "model": "xgboost",
+    "config": "C3",
+    "ref": "C0",
+    "interval_max_abs_pdf_roundoff": 1.244796963423278e-09,
+    "point_abs_pdf_roundoff": 3.1962200941482166e-10
+  },
+  {
+    "model": "xgboost",
+    "config": "C3a",
+    "ref": "C0",
+    "interval_max_abs_pdf_roundoff": 1.893519060297555e-09,
+    "point_abs_pdf_roundoff": 2.215963593177328e-10
+  },
+  {
+    "model": "xgboost",
+    "config": "C3b",
+    "ref": "C0",
+    "interval_max_abs_pdf_roundoff": 1.8252221392275891e-09,
+    "point_abs_pdf_roundoff": 5.127406233970677e-10
+  },
+  {
+    "model": "xgboost",
+    "config": "C3",
+    "ref": "C3a",
+    "interval_max_abs_pdf_roundoff": 1.7424296569392567e-09,
+    "point_abs_pdf_roundoff": 1.3925560461973841e-09
+  },
+  {
+    "model": "xgboost",
+    "config": "C3",
+    "ref": "C3b",
+    "interval_max_abs_pdf_roundoff": 1.5464936605619206e-09,
+    "point_abs_pdf_roundoff": 8.323626319445276e-10
+  },
+  {
+    "model": "bilstm_attn",
+    "config": "C3",
+    "ref": "C0",
+    "interval_max_abs_pdf_roundoff": 5.839254477515987e-09,
+    "point_abs_pdf_roundoff": 4.0829676202502885e-09
+  },
+  {
+    "model": "bilstm_attn",
+    "config": "C3a",
+    "ref": "C0",
+    "interval_max_abs_pdf_roundoff": 6.290764168262464e-09,
+    "point_abs_pdf_roundoff": 3.0211221926923493e-09
+  },
+  {
+    "model": "bilstm_attn",
+    "config": "C3b",
+    "ref": "C0",
+    "interval_max_abs_pdf_roundoff": 3.606454523040481e-09,
+    "point_abs_pdf_roundoff": 2.063202107424611e-09
+  },
+  {
+    "model": "bilstm_attn",
+    "config": "C3",
+    "ref": "C3a",
+    "interval_max_abs_pdf_roundoff": 2.4732964660698076e-09,
+    "point_abs_pdf_roundoff": 4.92939425432784e-09
+  },
+  {
+    "model": "bilstm_attn",
+    "config": "C3",
+    "ref": "C3b",
+    "interval_max_abs_pdf_roundoff": 4.492326810892622e-09,
+    "point_abs_pdf_roundoff": 2.0197655128256775e-09
+  }
+]

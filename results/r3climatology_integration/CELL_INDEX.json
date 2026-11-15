@@ -1,0 +1,154 @@
+[
+  {
+    "file": "q07_baseline_metrics.csv",
+    "line": 2,
+    "forecast": "Climatology: global mean",
+    "field": "RMSE",
+    "raw": "0.27369271523069294",
+    "display": "0.273693"
+  },
+  {
+    "file": "q07_baseline_metrics.csv",
+    "line": 2,
+    "forecast": "Climatology: global mean",
+    "field": "MAE",
+    "raw": "0.1517106852896031",
+    "display": "0.151711"
+  },
+  {
+    "file": "q07_baseline_metrics.csv",
+    "line": 2,
+    "forecast": "Climatology: global mean",
+    "field": "R2",
+    "raw": "-0.001068221465725383",
+    "display": "-0.001068"
+  },
+  {
+    "file": "q07_baseline_metrics.csv",
+    "line": 3,
+    "forecast": "Climatology: diurnal (hour)",
+    "field": "RMSE",
+    "raw": "0.2737599050347168",
+    "display": "0.273760"
+  },
+  {
+    "file": "q07_baseline_metrics.csv",
+    "line": 3,
+    "forecast": "Climatology: diurnal (hour)",
+    "field": "MAE",
+    "raw": "0.1514446693144719",
+    "display": "0.151445"
+  },
+  {
+    "file": "q07_baseline_metrics.csv",
+    "line": 3,
+    "forecast": "Climatology: diurnal (hour)",
+    "field": "R2",
+    "raw": "-0.0015597934368740685",
+    "display": "-0.001560"
+  },
+  {
+    "file": "q07_baseline_metrics.csv",
+    "line": 4,
+    "forecast": "Climatology: seasonal (DJF..SON)",
+    "field": "RMSE",
+    "raw": "0.27301849096725367",
+    "display": "0.273018"
+  },
+  {
+    "file": "q07_baseline_metrics.csv",
+    "line": 4,
+    "forecast": "Climatology: seasonal (DJF..SON)",
+    "field": "MAE",
+    "raw": "0.15207097987970603",
+    "display": "0.152071"
+  },
+  {
+    "file": "q07_baseline_metrics.csv",
+    "line": 4,
+    "forecast": "Climatology: seasonal (DJF..SON)",
+    "field": "R2",
+    "raw": "0.0038578368892304704",
+    "display": "0.003858"
+  },
+  {
+    "file": "q07_baseline_metrics.csv",
+    "line": 5,
+    "forecast": "Climatology: monthly",
+    "field": "RMSE",
+    "raw": "0.27295674478672266",
+    "display": "0.272957"
+  },
+  {
+    "file": "q07_baseline_metrics.csv",
+    "line": 5,
+    "forecast": "Climatology: monthly",
+    "field": "MAE",
+    "raw": "0.15205124840802095",
+    "display": "0.152051"
+  },
+  {
+    "file": "q07_baseline_metrics.csv",
+    "line": 5,
+    "forecast": "Climatology: monthly",
+    "field": "R2",
+    "raw": "0.0043083632859045595",
+    "display": "0.004308"
+  },
+  {
+    "file": "q07_baseline_metrics.csv",
+    "line": 6,
+    "forecast": "Climatology: month x hour",
+    "field": "RMSE",
+    "raw": "0.27305700702996605",
+    "display": "0.273057"
+  },
+  {
+    "file": "q07_baseline_metrics.csv",
+    "line": 6,
+    "forecast": "Climatology: month x hour",
+    "field": "MAE",
+    "raw": "0.15171011235434156",
+    "display": "0.151710"
+  },
+  {
+    "file": "q07_baseline_metrics.csv",
+    "line": 6,
+    "forecast": "Climatology: month x hour",
+    "field": "R2",
+    "raw": "0.003576755705072765",
+    "display": "0.003577"
+  },
+  {
+    "file": "q07_baseline_metrics.csv",
+    "line": 8,
+    "forecast": "AR(1) damped persistence",
+    "field": "RMSE",
+    "raw": "0.2626587245463628",
+    "display": "0.262659"
+  },
+  {
+    "file": "q07_baseline_metrics.csv",
+    "line": 8,
+    "forecast": "AR(1) damped persistence",
+    "field": "MAE",
+    "raw": "0.13906052319082535",
+    "display": "0.139061"
+  },
+  {
+    "file": "q07_baseline_metrics.csv",
+    "line": 8,
+    "forecast": "AR(1) damped persistence",
+    "field": "R2",
+    "raw": "0.07802135731702353",
+    "display": "0.078021"
+  },
+  {
+    "file": "q07b_linear_baselines.csv",
+    "line": 2,
+    "forecast": "L1 ridge, 42 inputs",
+    "field": "RMSE",
+    "raw": "0.24973273586708822",
+    "display": "0.249733"
+  }
+]

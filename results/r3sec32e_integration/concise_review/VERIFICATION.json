@@ -1,0 +1,14 @@
+{
+  "all_existing_excerpts_unchanged_and_matching": 135,
+  "R3_08_three_boxes_unchanged": true,
+  "only_AuthorResponse_changed": true,
+  "protected_source_figures_unchanged": true,
+  "staging_unchanged": true,
+  "reply_pages": [
+    65,
+    66
+  ],
+  "old_word_tokens": 273,
+  "new_word_tokens": 143,
+  "build_errors": false
+}

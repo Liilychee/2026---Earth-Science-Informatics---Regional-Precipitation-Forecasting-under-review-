@@ -1,0 +1,45 @@
+[
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q09_seasonal.csv",
+    "md5": "377ffd6fcad95057c3a8791e16d357a2"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q09_selection_table.csv",
+    "md5": "1dfe2161ae5ca88adbb2fc913862f6f8"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q09_output.txt",
+    "md5": "c0456ec554f55af03405d6bb6ee3e1bf"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "code/q09_lead_corr.py",
+    "md5": "daf7b0987e7336da0f85dd8c1f8a00ae"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q13_season_ablation.csv",
+    "md5": "e8bebe1167485427ab6e42884beed5c1"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q13_output.txt",
+    "md5": "8a26df66670c5a6f56d1edf5912ee1f2"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "code/q13_seasonal.py",
+    "md5": "090a620122160b89f2747ada7e9a2cd9"
+  },
+  {
+    "local_verified_source": "results/r2m3_integration/evidence/q09_stability_check.csv",
+    "md5": "13f9101368827f51b83d03987cdebda6"
+  },
+  {
+    "local_verified_source": "results/r2m3_integration/evidence/q09_stability_check.py",
+    "md5": "1838913b33d6f0a377937c99a7819d52"
+  }
+]

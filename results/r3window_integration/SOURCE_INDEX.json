@@ -1,0 +1,42 @@
+[
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "code/q14q15_train.py",
+    "md5": "77134e0f1138c31b512cb98432195ac4"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "code/q14q15_stats.py",
+    "md5": "20f393de9d974edfeffb2b68dc662bf9"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "code/q14b_window_curve.py",
+    "md5": "d9e56ff5a0f1b7bc1d3d561faff2d5ac"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q14_window_effect.csv",
+    "md5": "129832398f7e9f794230238865041245"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q14_runs.csv",
+    "md5": "838c2ab74ebc00ec4a87d42aebd610f3"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q14b_window_curve.csv",
+    "md5": "3aac5314597fe6b1a198adc10e1067af"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q14b_window_curve_output.txt",
+    "md5": "831a94286b1921af4f39bba831c5a622"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q14q15_stats_output.txt",
+    "md5": "11792c15319f7c43e3bf04f6138a917d"
+  }
+]

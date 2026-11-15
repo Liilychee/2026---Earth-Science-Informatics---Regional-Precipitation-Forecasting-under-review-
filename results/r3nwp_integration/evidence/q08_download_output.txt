@@ -1,0 +1,128 @@
+=== HRES datasets/hres/2016-2022-0012-1440x721.zarr
+  zarr_format arg failed (open_zarr() got unexpected keyword arguments zarr_format); retry without
+ prediction_timedelta dtype: timedelta64[ns] selected: [             0 21600000000000]
+ lat: [52.75 53.   53.25 53.5  53.75] lon: [353.25 353.5  353.75 354.   354.25] n init times: 1974
+  [HRES] total_precipitation_6hr: 3948 chunks x ~0.48 MB (compressed, sampled) = ~1.90 GB
+  [HRES] total_precipitation: 3948 chunks x ~0.57 MB (compressed, sampled) = ~2.24 GB
+  [HRES] estimated compressed transfer ~4.14 GB
+  free disk 335.9 GB
+  [HRES] 201904 done: 22 times in 5s (1/33, elapsed 0.1 min)
+  [HRES] 201905 done: 62 times in 9s (2/33, elapsed 0.2 min)
+  [HRES] 201906 done: 60 times in 8s (3/33, elapsed 0.4 min)
+  [HRES] 201907 done: 62 times in 9s (4/33, elapsed 0.5 min)
+  [HRES] 201908 done: 62 times in 8s (5/33, elapsed 0.7 min)
+  [HRES] 201909 done: 60 times in 8s (6/33, elapsed 0.8 min)
+  [HRES] 201910 done: 62 times in 8s (7/33, elapsed 0.9 min)
+  [HRES] 201911 done: 60 times in 8s (8/33, elapsed 1.0 min)
+  [HRES] 201912 done: 62 times in 8s (9/33, elapsed 1.2 min)
+  [HRES] 202001 done: 62 times in 8s (10/33, elapsed 1.3 min)
+  [HRES] 202002 done: 58 times in 8s (11/33, elapsed 1.5 min)
+  [HRES] 202003 done: 62 times in 8s (12/33, elapsed 1.6 min)
+  [HRES] 202004 done: 60 times in 8s (13/33, elapsed 1.7 min)
+  [HRES] 202005 done: 62 times in 9s (14/33, elapsed 1.9 min)
+  [HRES] 202006 done: 60 times in 9s (15/33, elapsed 2.0 min)
+  [HRES] 202007 done: 62 times in 8s (16/33, elapsed 2.1 min)
+  [HRES] 202008 done: 62 times in 9s (17/33, elapsed 2.3 min)
+  [HRES] 202009 done: 60 times in 9s (18/33, elapsed 2.4 min)
+  [HRES] 202010 done: 62 times in 9s (19/33, elapsed 2.6 min)
+  [HRES] 202011 done: 60 times in 8s (20/33, elapsed 2.7 min)
+  [HRES] 202012 done: 62 times in 8s (21/33, elapsed 2.9 min)
+  [HRES] 202101 done: 62 times in 8s (22/33, elapsed 3.0 min)
+  [HRES] 202102 done: 56 times in 8s (23/33, elapsed 3.1 min)
+  [HRES] 202103 done: 62 times in 10s (24/33, elapsed 3.3 min)
+  [HRES] 202104 done: 60 times in 10s (25/33, elapsed 3.5 min)
+  [HRES] 202105 done: 62 times in 11s (26/33, elapsed 3.6 min)
+  [HRES] 202106 done: 60 times in 10s (27/33, elapsed 3.8 min)
+  [HRES] 202107 done: 62 times in 9s (28/33, elapsed 4.0 min)
+   attempt 1 failed: ClientPayloadError: Response payload is not completed: <ContentLengthError: 400, message='Not enough data to satisfy content length header.'>. ConnectionResetError(54, 'Connection reset by peer')
+  [HRES] 202108 done: 62 times in 49s (29/33, elapsed 5.0 min)
+  [HRES] 202109 done: 60 times in 11s (30/33, elapsed 5.1 min)
+  [HRES] 202110 done: 62 times in 11s (31/33, elapsed 5.3 min)
+  [HRES] 202111 done: 60 times in 10s (32/33, elapsed 5.5 min)
+  [HRES] 202112 done: 62 times in 10s (33/33, elapsed 5.7 min)
+ALL DONE
+=== HRES datasets/hres/2016-2022-0012-1440x721.zarr
+  zarr_format arg failed (open_zarr() got unexpected keyword arguments zarr_format); retry without
+ prediction_timedelta dtype: timedelta64[ns] selected: [             0 21600000000000]
+ lat: [52.75 53.   53.25 53.5  53.75] lon: [353.25 353.5  353.75 354.   354.25] n init times: 1974
+  [HRES] total_precipitation_6hr: 3948 chunks x ~0.64 MB (compressed, sampled) = ~2.52 GB
+  [HRES] total_precipitation: 3948 chunks x ~0.75 MB (compressed, sampled) = ~2.95 GB
+  [HRES] estimated compressed transfer ~5.47 GB
+  free disk 335.9 GB
+  [HRES] 201904 exists, skip (1/33)
+  [HRES] 201905 exists, skip (2/33)
+  [HRES] 201906 exists, skip (3/33)
+  [HRES] 201907 exists, skip (4/33)
+  [HRES] 201908 exists, skip (5/33)
+  [HRES] 201909 exists, skip (6/33)
+  [HRES] 201910 exists, skip (7/33)
+  [HRES] 201911 exists, skip (8/33)
+  [HRES] 201912 exists, skip (9/33)
+  [HRES] 202001 exists, skip (10/33)
+  [HRES] 202002 exists, skip (11/33)
+  [HRES] 202003 exists, skip (12/33)
+  [HRES] 202004 exists, skip (13/33)
+  [HRES] 202005 exists, skip (14/33)
+  [HRES] 202006 exists, skip (15/33)
+  [HRES] 202007 exists, skip (16/33)
+  [HRES] 202008 exists, skip (17/33)
+  [HRES] 202009 exists, skip (18/33)
+  [HRES] 202010 exists, skip (19/33)
+  [HRES] 202011 exists, skip (20/33)
+  [HRES] 202012 exists, skip (21/33)
+  [HRES] 202101 exists, skip (22/33)
+  [HRES] 202102 exists, skip (23/33)
+  [HRES] 202103 exists, skip (24/33)
+  [HRES] 202104 exists, skip (25/33)
+  [HRES] 202105 exists, skip (26/33)
+  [HRES] 202106 exists, skip (27/33)
+  [HRES] 202107 exists, skip (28/33)
+  [HRES] 202108 exists, skip (29/33)
+  [HRES] 202109 exists, skip (30/33)
+  [HRES] 202110 exists, skip (31/33)
+  [HRES] 202111 exists, skip (32/33)
+  [HRES] 202112 exists, skip (33/33)
+=== ERA5 6h store (selected): datasets/era5/1959-2022-6h-1440x721.zarr
+  zarr_format arg failed (open_zarr() got unexpected keyword arguments zarr_format); retry without
+  zarr_format arg failed (open_zarr() got unexpected keyword arguments zarr_format); retry without
+ 6h store variables: ['10m_u_component_of_wind', '10m_v_component_of_wind', '10m_wind_speed', '2m_temperature', 'angle_of_sub_gridscale_orography', 'anisotropy_of_sub_gridscale_orography', 'geopotential', 'geopotential_at_surface', 'high_vegetation_cover', 'lake_cover', 'lake_depth', 'land_sea_mask', 'low_vegetation_cover', 'mean_sea_level_pressure', 'sea_ice_cover', 'sea_surface_temperature', 'slope_of_sub_gridscale_orography', 'soil_type', 'specific_humidity', 'standard_deviation_of_filtered_subgrid_orography', 'standard_deviation_of_orography', 'surface_pressure', 'temperature', 'toa_incident_solar_radiation', 'toa_incident_solar_radiation_12hr', 'toa_incident_solar_radiation_24hr', 'toa_incident_solar_radiation_6hr', 'total_cloud_cover', 'total_column_water_vapour', 'total_precipitation_12hr', 'total_precipitation_24hr', 'total_precipitation_6hr', 'type_of_high_vegetation', 'type_of_low_vegetation', 'u_component_of_wind', 'v_component_of_wind', 'vertical_velocity', 'wind_speed']
+ total_precipitation not in 6h store -> taken from datasets/era5/1959-2022-full_37-1h-0p25deg-chunk-1.zarr-v2 at the same 6-hourly instants
+ lat: [53.75 53.5  53.25 53.   52.75] lon: [353.25 353.5  353.75 354.   354.25] n times: 3948
+  [ERA5] total_precipitation_6hr: 3948 chunks x ~2.35 MB (compressed, sampled) = ~9.30 GB
+  [ERA5] total_precipitation: 3948 chunks x ~1.82 MB (compressed, sampled) = ~7.19 GB
+  [ERA5] estimated compressed transfer ~16.48 GB
+  free disk 335.9 GB
+  [ERA5] 201904 done: 44 times in 11s (1/33, elapsed 0.2 min)
+  [ERA5] 201905 done: 124 times in 35s (2/33, elapsed 0.8 min)
+  [ERA5] 201906 done: 120 times in 35s (3/33, elapsed 1.4 min)
+  [ERA5] 201907 done: 124 times in 33s (4/33, elapsed 1.9 min)
+  [ERA5] 201908 done: 124 times in 30s (5/33, elapsed 2.4 min)
+  [ERA5] 201909 done: 120 times in 31s (6/33, elapsed 2.9 min)
+  [ERA5] 201910 done: 124 times in 29s (7/33, elapsed 3.4 min)
+  [ERA5] 201911 done: 120 times in 34s (8/33, elapsed 4.0 min)
+  [ERA5] 201912 done: 124 times in 39s (9/33, elapsed 4.6 min)
+  [ERA5] 202001 done: 124 times in 32s (10/33, elapsed 5.2 min)
+  [ERA5] 202002 done: 116 times in 27s (11/33, elapsed 5.6 min)
+  [ERA5] 202003 done: 124 times in 28s (12/33, elapsed 6.1 min)
+  [ERA5] 202004 done: 120 times in 34s (13/33, elapsed 6.7 min)
+  [ERA5] 202005 done: 124 times in 36s (14/33, elapsed 7.3 min)
+  [ERA5] 202006 done: 120 times in 34s (15/33, elapsed 7.8 min)
+  [ERA5] 202007 done: 124 times in 40s (16/33, elapsed 8.5 min)
+  [ERA5] 202008 done: 124 times in 39s (17/33, elapsed 9.1 min)
+  [ERA5] 202009 done: 120 times in 38s (18/33, elapsed 9.8 min)
+  [ERA5] 202010 done: 124 times in 31s (19/33, elapsed 10.3 min)
+  [ERA5] 202011 done: 120 times in 41s (20/33, elapsed 11.0 min)
+  [ERA5] 202012 done: 124 times in 34s (21/33, elapsed 11.5 min)
+  [ERA5] 202101 done: 124 times in 36s (22/33, elapsed 12.1 min)
+  [ERA5] 202102 done: 112 times in 25s (23/33, elapsed 12.5 min)
+  [ERA5] 202103 done: 124 times in 29s (24/33, elapsed 13.0 min)
+  [ERA5] 202104 done: 120 times in 35s (25/33, elapsed 13.6 min)
+  [ERA5] 202105 done: 124 times in 30s (26/33, elapsed 14.1 min)
+  [ERA5] 202106 done: 120 times in 38s (27/33, elapsed 14.7 min)
+  [ERA5] 202107 done: 124 times in 41s (28/33, elapsed 15.4 min)
+  [ERA5] 202108 done: 124 times in 44s (29/33, elapsed 16.1 min)
+  [ERA5] 202109 done: 120 times in 31s (30/33, elapsed 16.7 min)
+  [ERA5] 202110 done: 124 times in 45s (31/33, elapsed 17.4 min)
+  [ERA5] 202111 done: 120 times in 36s (32/33, elapsed 18.0 min)
+  [ERA5] 202112 done: 124 times in 46s (33/33, elapsed 18.8 min)
+ALL DONE

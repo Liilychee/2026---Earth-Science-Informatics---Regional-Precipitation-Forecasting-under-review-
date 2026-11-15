@@ -1,0 +1,455 @@
+
+CELL physical-zero-based 3
+1: # ============================================================
+2: # Step 1 — Raw Data Audit
+3: # ============================================================
+4: 
+5: import pandas as pd
+6: import numpy as np
+7: 
+8: DATA_PATH = "/root/autodl-tmp/data/04-24.csv"
+9: 
+10: df = pd.read_csv(DATA_PATH)
+11: 
+12: print("===== BASIC INFO =====")
+13: print("Shape:", df.shape)
+14: print("Columns:", df.columns.tolist())
+15: display(df.head())
+16: 
+17: # ---------- Time ----------
+18: df["valid_time"] = pd.to_datetime(df["valid_time"])
+19: 
+20: print("\n===== TIME =====")
+21: print("Start:", df["valid_time"].min())
+22: print("End:", df["valid_time"].max())
+23: print("Unique timestamps:", df["valid_time"].nunique())
+24: 
+25: times = np.sort(df["valid_time"].unique())
+26: time_diff = pd.Series(times[1:] - times[:-1])
+27: 
+28: print("\nMost common time intervals:")
+29: print(time_diff.value_counts().head())
+30: 
+31: # ---------- Spatial ----------
+32: print("\n===== SPATIAL =====")
+33: print("Latitude range:", df["latitude"].min(), "to", df["latitude"].max())
+34: print("Longitude range:", df["longitude"].min(), "to", df["longitude"].max())
+35: 
+36: print("Unique latitude:", df["latitude"].nunique())
+37: print("Unique longitude:", df["longitude"].nunique())
+38: 
+39: grid_points = (
+40:     df[["latitude", "longitude"]]
+41:     .drop_duplicates()
+42:     .shape[0]
+43: )
+44: print("Total unique grid points:", grid_points)
+45: 
+46: # 每个时间有多少空间格点
+47: rows_per_time = df.groupby("valid_time").size()
+48: 
+49: print("\n===== GRID POINTS PER TIMESTAMP =====")
+50: print(rows_per_time.describe())
+51: print("Unique counts:", rows_per_time.unique())
+52: 
+53: # ---------- Missing ----------
+54: print("\n===== MISSING VALUES =====")
+55: missing = df.isna().sum()
+56: print(missing[missing > 0].sort_values(ascending=False))
+57: 
+58: # ---------- Target ----------
+59: print("\n===== RAW TP =====")
+60: print(
+61:     df["tp"].describe(
+62:         percentiles=[0.5, 0.9, 0.95, 0.99, 0.999]
+63:     )
+64: )
+65: 
+66: print("\nLargest 10 raw tp values:")
+67: print(df["tp"].nlargest(10).tolist())
+68: 
+69: # ---------- Duplicate ----------
+70: print("\n===== DUPLICATES =====")
+71: duplicates = df.duplicated(
+72:     subset=["valid_time", "latitude", "longitude"]
+73: ).sum()
+74: 
+75: print("Duplicate time-lat-lon rows:", duplicates)
+76: 
+77: print("\n===== STEP 1 COMPLETE =====")
+
+CELL physical-zero-based 5
+1: # ============================================================
+2: # Step 2B — Dublin Regional Aggregation
+3: # 25 grid cells -> one regional mean time series
+4: # Period: 2004-01-01 to 2021-12-31
+5: # ============================================================
+6: 
+7: import pandas as pd
+8: import numpy as np
+9: 
+10: # ------------------------------------------------------------
+11: # 1. Keep only the complete period
+12: # ------------------------------------------------------------
+13: 
+14: END_TIME = pd.Timestamp("2021-12-31 18:00:00")
+15: 
+16: df_complete = df_dublin[
+17:     df_dublin["valid_time"] <= END_TIME
+18: ].copy()
+19: 
+20: print("===== COMPLETE DUBLIN DATA =====")
+21: print("Rows:", len(df_complete))
+22: print("Start:", df_complete["valid_time"].min())
+23: print("End:", df_complete["valid_time"].max())
+24: print("Unique timestamps:", df_complete["valid_time"].nunique())
+25: 
+26: # ------------------------------------------------------------
+27: # 2. Define final variables
+28: # ------------------------------------------------------------
+29: 
+30: FEATURES = [
+31:     "mxtpr",
+32:     "mntpr",
+33:     "lsp",
+34:     "tcc",
+35:     "v10",
+36:     "u10",
+37:     "d2m"
+38: ]
+39: 
+40: TARGET = "tp"
+41: 
+42: required_cols = FEATURES + [TARGET]
+43: 
+44: # Confirm no missing values in selected period
+45: print("\n===== MISSING VALUES BEFORE AGGREGATION =====")
+46: print(df_complete[required_cols].isna().sum())
+47: 
+48: # ------------------------------------------------------------
+49: # 3. Regional mean across the 25 Dublin grid cells
+50: # ------------------------------------------------------------
+51: 
+52: df_regional = (
+53:     df_complete
+54:     .groupby("valid_time", as_index=False)[required_cols]
+55:     .mean()
+56:     .sort_values("valid_time")
+57:     .reset_index(drop=True)
+58: )
+59: 
+60: print("\n===== REGIONAL DATA =====")
+61: print("Shape:", df_regional.shape)
+62: print("Start:", df_regional["valid_time"].min())
+63: print("End:", df_regional["valid_time"].max())
+64: 
+65: display(df_regional.head())
+66: 
+67: # ------------------------------------------------------------
+68: # 4. Convert precipitation TARGET from metres to millimetres
+69: # IMPORTANT: only once
+70: # ------------------------------------------------------------
+71: 
+72: df_regional["tp_mm"] = df_regional["tp"] * 1000.0
+73: 
+74: # Keep original tp temporarily for verification
+75: print("\n===== REGIONAL TP CHECK =====")
+76: print("Raw tp (m):")
+77: print(df_regional["tp"].describe(
+78:     percentiles=[0.5, 0.9, 0.95, 0.99, 0.999]
+79: ))
+80: 
+81: print("\ntp converted to mm:")
+82: print(df_regional["tp_mm"].describe(
+83:     percentiles=[0.5, 0.9, 0.95, 0.99, 0.999]
+84: ))
+85: 
+86: print("\nMaximum regional tp:")
+87: print("metres:", df_regional["tp"].max())
+88: print("mm:", df_regional["tp_mm"].max())
+89: 
+90: # ------------------------------------------------------------
+91: # 5. Verify strictly regular 6-hourly time series
+92: # ------------------------------------------------------------
+93: 
+94: time_diff = df_regional["valid_time"].diff().dropna()
+95: 
+96: print("\n===== TEMPORAL CONTINUITY =====")
+97: print(time_diff.value_counts())
+98: 
+99: expected_rows = (
+100:     pd.date_range(
+101:         start=df_regional["valid_time"].min(),
+102:         end=df_regional["valid_time"].max(),
+103:         freq="6h"
+104:     )
+105: )
+106: 
+107: print("Expected timestamps:", len(expected_rows))
+108: print("Actual timestamps:", len(df_regional))
+109: print(
+110:     "Continuous 6-hour series:",
+111:     len(expected_rows) == len(df_regional)
+112: )
+113: 
+114: # ------------------------------------------------------------
+115: # 6. Final dataset used from this point onward
+116: # ------------------------------------------------------------
+117: 
+118: df_model = df_regional[
+119:     ["valid_time"] + FEATURES + ["tp_mm"]
+120: ].copy()
+121: 
+122: print("\n===== FINAL MODEL DATA =====")
+123: print("Shape:", df_model.shape)
+124: print("Columns:", df_model.columns.tolist())
+125: 
+126: display(df_model.head())
+127: 
+128: # ------------------------------------------------------------
+129: # 7. Save clean regional dataset
+130: # ------------------------------------------------------------
+131: 
+132: OUTPUT_PATH = (
+133:     "/root/autodl-tmp/data/"
+134:     "dublin_regional_2004_2021.csv"
+135: )
+136: 
+137: df_model.to_csv(OUTPUT_PATH, index=False)
+138: 
+139: print("\nSaved to:")
+140: print(OUTPUT_PATH)
+141: 
+142: print("\n===== STEP 2B COMPLETE =====")
+
+CELL physical-zero-based 8
+1: # ============================================================
+2: # Step 2D — (A) Train-only feature re-selection
+3: #            (B) Leak-free 6-hour sliding window construction
+4: #
+5: # Fixes audit items:
+6: #   #9  Feature selection must use TRAIN data only, not full data
+7: #   #8  No leakage: window features must be strictly <= t,
+8: #       target must be strictly t+1 (next sample), never overlapping
+9: #   #12 Confirms no interpolation is needed / no leakage from it
+10: #
+11: # IMPORTANT: this uses ALL raw candidate variables (not just the
+12: # 7 that were pre-selected in the ORIGINAL notebook using full-
+13: # data Spearman correlation). That original selection was itself
+14: # a leakage risk (#9), so we redo it here honestly on train-only
+15: # data, using df_complete from Step 2B which still has all raw
+16: # columns before the old narrowing to `required_cols`.
+17: # ============================================================
+18: import pandas as pd
+19: import numpy as np
+20: from scipy.stats import spearmanr
+21: 
+22: # ------------------------------------------------------------
+23: # 0. Re-aggregate regional means using ALL candidate variables
+24: #    (df_complete comes from Step 2B, filtered to 2004-2021,
+25: #    Dublin 5x5 subset, BEFORE it was narrowed to the 7 features)
+26: # ------------------------------------------------------------
+27: ALL_CANDIDATES = [
+28:     'u10', 'v10', 'd2m', 't2m', 'sp', 'e',
+29:     'mxtpr', 'mntpr', 'tcc', 'ssr', 'lsp'
+30: ]
+31: TARGET_RAW = 'tp'
+32: 
+33: assert 'df_complete' in dir(), (
+34:     "df_complete not found — re-run Step 2B up through the point "
+35:     "where df_complete is defined (Dublin subset, 2004-2021), "
+36:     "BEFORE it gets narrowed to the 7-feature required_cols."
+37: )
+38: 
+39: missing_cols = [c for c in ALL_CANDIDATES + [TARGET_RAW] if c not in df_complete.columns]
+40: assert not missing_cols, f"Missing expected raw columns: {missing_cols}"
+41: 
+42: print("===== 0. RE-AGGREGATING WITH FULL CANDIDATE SET =====")
+43: assert df_complete[ALL_CANDIDATES + [TARGET_RAW]].isna().sum().sum() == 0, \
+44:     "Unexpected missing values in candidate columns — investigate before proceeding."
+45: assert (df_complete.groupby('valid_time').size() == 25).all(), \
+46:     "Not every timestamp has exactly 25 grid cells — investigate before proceeding."
+47: 
+48: df_regional_full = (
+49:     df_complete
+50:     .groupby('valid_time', as_index=False)[ALL_CANDIDATES + [TARGET_RAW]]
+51:     .mean()
+52:     .sort_values('valid_time')
+53:     .reset_index(drop=True)
+54: )
+55: df_regional_full['tp_mm'] = df_regional_full[TARGET_RAW] * 1000.0
+56: df_regional_full = df_regional_full.drop(columns=[TARGET_RAW])
+57: 
+58: print("Shape:", df_regional_full.shape)
+59: print("Range:", df_regional_full['valid_time'].min(), "->", df_regional_full['valid_time'].max())
+60: 
+61: # ------------------------------------------------------------
+62: # 1. Chronological 70/15/15 split (identical boundaries to Step 2C)
+63: # ------------------------------------------------------------
+64: n = len(df_regional_full)
+65: train_end = int(n * 0.70)
+66: val_end = int(n * 0.85)
+67: 
+68: train_full = df_regional_full.iloc[:train_end].copy()
+69: val_full = df_regional_full.iloc[train_end:val_end].copy()
+70: test_full = df_regional_full.iloc[val_end:].copy()
+71: 
+72: print("\n===== 1. SPLIT (for feature selection) =====")
+73: for name, part in [('Train', train_full), ('Validation', val_full), ('Test', test_full)]:
+74:     print(f"{name}: {len(part)} rows | {part['valid_time'].min()} -> {part['valid_time'].max()}")
+75: 
+76: # ------------------------------------------------------------
+77: # 2. Spearman correlation — TRAIN ONLY
+78: #    This is the corrected version of the original Fig. 2,
+79: #    computed without touching val/test.
+80: # ------------------------------------------------------------
+81: print("\n===== 2. TRAIN-ONLY SPEARMAN CORRELATION WITH tp_mm =====")
+82: corr_cols = ALL_CANDIDATES + ['tp_mm']
+83: train_corr = train_full[corr_cols].corr(method='spearman')
+84: tp_corr = train_corr['tp_mm'].drop('tp_mm').sort_values(key=abs, ascending=False)
+85: print(tp_corr.round(3))
+86: 
+87: print("\n===== FULL TRAIN-ONLY SPEARMAN MATRIX =====")
+88: print(train_corr.round(2))
+89: 
+90: # ------------------------------------------------------------
+91: # 2b. Save to results/features/ — this is the ONLY source Fig. 2
+92: #     should be plotted from downstream. Plotting scripts must
+93: #     never recompute correlations themselves.
+94: # ------------------------------------------------------------
+95: import os
+96: RESULTS_FEATURES_DIR = "/root/autodl-tmp/results/features"
+97: os.makedirs(RESULTS_FEATURES_DIR, exist_ok=True)
+98: train_corr_path = os.path.join(RESULTS_FEATURES_DIR, "train_only_spearman.csv")
+99: train_corr.to_csv(train_corr_path)
+100: print(f"\nSaved train-only Spearman matrix to: {train_corr_path}")
+101: 
+102: # ------------------------------------------------------------
+103: # 3. Compare against the ORIGINAL (full-data, leaky) selection
+104: #    Original selected set: mxtpr, mntpr, lsp, tcc, v10, u10, d2m
+105: # ------------------------------------------------------------
+106: ORIGINAL_SELECTION = ['mxtpr', 'mntpr', 'lsp', 'tcc', 'v10', 'u10', 'd2m']
+107: print("\n===== 3. ORIGINAL (FULL-DATA) SELECTION vs TRAIN-ONLY RANKING =====")
+108: print("Original selected features:", ORIGINAL_SELECTION)
+109: print("\nTrain-only |Spearman| ranking (all candidates, descending):")
+110: print(tp_corr.abs().sort_values(ascending=False).round(3))
+111: print(
+112:     "\n>>> Manually compare: do the top-7 by |correlation| on TRAIN-ONLY "
+113:     "match ORIGINAL_SELECTION? If not, decide whether to switch feature "
+114:     "sets (changes Table 1 / Fig. 2 / all downstream SHAP) or keep the "
+115:     "original set with a documented justification (e.g. physical "
+116:     "relevance beyond raw correlation magnitude). <<<"
+117: )
+118: 
+119: # ------------------------------------------------------------
+120: # 4. FINALIZE feature set
+121: #    CONFIRMED DECISION: swap u10 (|corr|=0.006, ~noise) for
+122: #    sp (|corr|=0.428, physically well-motivated — low pressure
+123: #    systems associate with precipitation). See train-only
+124: #    ranking in Section 3 above.
+125: # ------------------------------------------------------------
+126: FINAL_FEATURES = ['mxtpr', 'mntpr', 'lsp', 'tcc', 'v10', 'sp', 'd2m']
+127: TARGET = 'tp_mm'
+128: 
+129: print(f"\n===== 4. FINAL FEATURES USED GOING FORWARD =====\n{FINAL_FEATURES}")
+130: 
+131: # ------------------------------------------------------------
+132: # 5. Rebuild train/val/test with only the finalized columns
+133: # ------------------------------------------------------------
+134: train_df = train_full[['valid_time'] + FINAL_FEATURES + [TARGET]].reset_index(drop=True)
+135: val_df = val_full[['valid_time'] + FINAL_FEATURES + [TARGET]].reset_index(drop=True)
+136: test_df = test_full[['valid_time'] + FINAL_FEATURES + [TARGET]].reset_index(drop=True)
+137: 
+138: # ------------------------------------------------------------
+139: # 6. Scaler — fit on TRAIN only (unchanged principle from Step 2C)
+140: # ------------------------------------------------------------
+141: from sklearn.preprocessing import StandardScaler
+142: 
+143: x_scaler = StandardScaler()
+144: y_scaler = StandardScaler()
+145: x_scaler.fit(train_df[FINAL_FEATURES])
+146: y_scaler.fit(train_df[[TARGET]])
+147: 
+148: for name, part in [('train_df', train_df), ('val_df', val_df), ('test_df', test_df)]:
+149:     part[FINAL_FEATURES] = x_scaler.transform(part[FINAL_FEATURES])
+150:     part[TARGET + '_scaled'] = y_scaler.transform(part[[TARGET]])
+151: 
+152: print("\n===== 6. SCALING CHECK =====")
+153: print("Train scaled feature means (~0 expected):",
+154:       np.round(train_df[FINAL_FEATURES].mean().values, 4))
+155: print("Train scaled feature stds (~1 expected):",
+156:       np.round(train_df[FINAL_FEATURES].std().values, 4))
+157: 
+158: # ------------------------------------------------------------
+159: # 7. Leak-free 6-hour sliding window construction
+160: #    X[t-5, ..., t] -> y[t+1]  (each step 6 hours apart)
+161: #    Built SEPARATELY per split so no window ever crosses a
+162: #    split boundary.
+163: # ------------------------------------------------------------
+164: WINDOW = 6
+165: 
+166: def build_windows(df_part, features, target_col):
+167:     """
+168:     df_part must be sorted chronologically with no internal gaps.
+169:     Returns X of shape (N, WINDOW, n_features), y of shape (N,),
+170:     and the target timestamps for traceability.
+171:     """
+172:     values_X = df_part[features].values
+173:     values_y = df_part[target_col].values
+174:     times = df_part['valid_time'].values
+175: 
+176:     X_list, y_list, t_list = [], [], []
+177:     # window covers indices [i, i+WINDOW-1] as input (t-5..t)
+178:     # target is index i+WINDOW (i.e. t+1)
+179:     for i in range(len(df_part) - WINDOW):
+180:         X_list.append(values_X[i:i + WINDOW])
+181:         y_list.append(values_y[i + WINDOW])
+182:         t_list.append(times[i + WINDOW])
+183: 
+184:     return (
+185:         np.array(X_list, dtype=np.float32),
+186:         np.array(y_list, dtype=np.float32),
+187:         np.array(t_list),
+188:     )
+189: 
+190: # Explicit continuity check per split before windowing — a gap
+191: # inside a split would silently create a window that spans a
+192: # real time discontinuity.
+193: for name, part in [('train', train_df), ('val', val_df), ('test', test_df)]:
+194:     diffs = pd.Series(pd.to_datetime(part['valid_time'])).diff().dropna()
+195:     assert (diffs == pd.Timedelta(hours=6)).all(), (
+196:         f"{name}_df is not strictly 6-hourly contiguous — "
+197:         f"unexpected gap found. Investigate before windowing."
+198:     )
+199: 
+200: X_train, y_train, t_train = build_windows(train_df, FINAL_FEATURES, TARGET + '_scaled')
+201: X_val, y_val, t_val = build_windows(val_df, FINAL_FEATURES, TARGET + '_scaled')
+202: X_test, y_test, t_test = build_windows(test_df, FINAL_FEATURES, TARGET + '_scaled')
+203: 
+204: print("\n===== 7. WINDOWED SHAPES =====")
+205: print("X_train:", X_train.shape, "y_train:", y_train.shape)
+206: print("X_val:  ", X_val.shape, "y_val:  ", y_val.shape)
+207: print("X_test: ", X_test.shape, "y_test: ", y_test.shape)
+208: 
+209: print("\n===== 7b. TARGET TIME RANGES (for later Fig. 4/5 sanity checks) =====")
+210: print("Train targets:", pd.to_datetime(t_train).min(), "->", pd.to_datetime(t_train).max())
+211: print("Val targets:  ", pd.to_datetime(t_val).min(), "->", pd.to_datetime(t_val).max())
+212: print("Test targets: ", pd.to_datetime(t_test).min(), "->", pd.to_datetime(t_test).max())
+213: 
+214: # ------------------------------------------------------------
+215: # 8. Leakage spot-check: confirm target timestamp is always
+216: #    exactly 6h after the last feature timestamp in its window
+217: # ------------------------------------------------------------
+218: print("\n===== 8. LEAKAGE SPOT-CHECK (train, first 3 windows) =====")
+219: for i in range(3):
+220:     window_times = train_df['valid_time'].iloc[i:i + WINDOW].values
+221:     target_time = train_df['valid_time'].iloc[i + WINDOW]
+222:     gap = pd.to_datetime(target_time) - pd.to_datetime(window_times[-1])
+223:     print(f"Window {i}: last feature time = {window_times[-1]}, "
+224:           f"target time = {target_time}, gap = {gap}")
+225: assert gap == pd.Timedelta(hours=6), "Gap between window end and target is not 6h!"
+226: 
+227: print("\n===== STEP 2D COMPLETE =====")
+228: print("X_train/X_val/X_test and y_train/y_val/y_test are ready for modeling.")
+229: print("Report back: Section 2 (train-only correlations), Section 3 comparison, "
+230:       "and confirm whether FINAL_FEATURES should change.")

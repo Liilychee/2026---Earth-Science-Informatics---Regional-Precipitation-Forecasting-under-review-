@@ -1,0 +1,57 @@
+[
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "code/q14q15_train.py",
+    "md5": "77134e0f1138c31b512cb98432195ac4"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "code/q14q15_stats.py",
+    "md5": "20f393de9d974edfeffb2b68dc662bf9"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "code/analysis_q05f_xgb_imbalance_strategies.py",
+    "md5": "be125ac378b7d27f571edac139c75032"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q15_loss_effect.csv",
+    "md5": "1852eab90ac0e13674585ae5f2d3e74c"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q15_runs.csv",
+    "md5": "906d4ed61897c52306c54b4635595313"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q15_delta_selection.csv",
+    "md5": "9b8eff1a76da49f11b3403633a5d6065"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q14q15_stats_output.txt",
+    "md5": "11792c15319f7c43e3bf04f6138a917d"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/ablation/q05f_raw.csv",
+    "md5": "9b02bb3b74bdb1b7d49cc8390ab2c9d0"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/ablation/q05f_summary.csv",
+    "md5": "3b4d73021b18f96c38c1668ea2f33b30"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/ablation/q05f_paired.csv",
+    "md5": "edc822246cb5bcf22ce5366acf3ce3a2"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q05f_output.txt",
+    "md5": "ca6afe09d59ffd09ac50fd853d972ccf"
+  }
+]

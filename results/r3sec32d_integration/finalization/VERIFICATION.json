@@ -1,0 +1,39 @@
+{
+  "protected_excerpts": 130,
+  "total_matching": 131,
+  "unmatched": [],
+  "other_responses_unchanged": true,
+  "existing_tables_figures_unchanged": true,
+  "approved_pdf_unchanged": true,
+  "staging_unchanged": true,
+  "labels": {
+    "stab:r2m3_upstream_xgboost": {
+      "number": "S26",
+      "page": "21"
+    },
+    "stab:r2m3_upstream_bilstm_attn": {
+      "number": "S27",
+      "page": "22"
+    },
+    "stab:r3c_local_additions": {
+      "number": "S51",
+      "page": "58"
+    },
+    "stab:r3d_upstream_increments": {
+      "number": "S52",
+      "page": "59"
+    },
+    "sfig:contemporaneous_spearman": {
+      "number": "S1",
+      "page": "1"
+    },
+    "sfig:r2m7_spatial_quantiles": {
+      "number": "S2",
+      "page": "51"
+    },
+    "sfig:r3d_upstream_effects": {
+      "number": "S3",
+      "page": "60"
+    }
+  }
+}

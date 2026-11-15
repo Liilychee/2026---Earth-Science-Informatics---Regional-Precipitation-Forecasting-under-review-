@@ -1,0 +1,18 @@
+{
+  "sec:benchmark_models": {
+    "number": "3.3.1",
+    "page": "18"
+  },
+  "tab:strong_baselines": {
+    "number": "4",
+    "page": "53"
+  },
+  "tab:seed_stability": {
+    "number": "3",
+    "page": "49"
+  },
+  "sec:stronger_baseline_results": {
+    "number": "4.2.1",
+    "page": "52"
+  }
+}

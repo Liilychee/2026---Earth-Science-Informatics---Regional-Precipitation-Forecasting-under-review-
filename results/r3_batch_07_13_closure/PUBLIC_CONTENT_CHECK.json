@@ -1,0 +1,9 @@
+{
+  "allowlisted_files": 124,
+  "new_paths_only": true,
+  "credential_pattern_findings": [],
+  "full_manuscript_rebuttal_and_submission_PDFs_excluded": true,
+  "before_snapshots_raster_pages_article_PDFs_raw_grids_station_raw_data_excluded": true,
+  "only_PDF_is_author_approved_scientific_figure": true,
+  "operational_reproducibility_not_overclaimed": true
+}

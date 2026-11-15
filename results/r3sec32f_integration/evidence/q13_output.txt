@@ -1,0 +1,159 @@
+核对全测试集：月×时刻气候态 RMSE 0.2731（S11 为 .2731），Persistence 0.3282（Table 3 为 .3282），AR(1) 0.2627
+复现 XGBoost seed 42：0.243750（原稿 0.24375）
+复现 BiLSTM-Attention seed 42：0.242848（原稿 0.242848）
+复现 BU-LSTM-Attention seed 42：0.246413（原稿 0.246413）
+
+===== A 季节样本 =====
+season  n_test  wet_test  tail_test  mean_train  mean_test  wetfreq_train  wetfreq_test
+   DJF     848       212         71      0.1052     0.1440         0.1966        0.2500
+   MAM     895       138         23      0.0854     0.0685         0.1954        0.1542
+   JJA    1104       260         75      0.1125     0.1229         0.2204        0.2355
+   SON    1092       244         69      0.1228     0.1228         0.2033        0.2234
+
+===== B 季节性能（RMSE 为五种子均值；NRMSE 主口径 = RMSE / 训练期季节平均）=====
+
+-- rmse
+season                     DJF     MAM     JJA     SON     all
+model                                                         
+AR(1)                   0.3065  0.1897  0.2651  0.2746  0.2627
+BU-LSTM                 0.2859  0.1762  0.2524  0.2583  0.2470
+BU-LSTM-Attention       0.2850  0.1769  0.2531  0.2587  0.2472
+BiLSTM-Attention        0.2782  0.1743  0.2498  0.2543  0.2429
+Clim (month×hour)       0.3121  0.1973  0.2819  0.2848  0.2731
+Persistence             0.3971  0.2318  0.3218  0.3426  0.3282
+Prob. BiLSTM-Attention  0.2886  0.1781  0.2546  0.2609  0.2494
+Transformer             0.2977  0.1832  0.2694  0.2722  0.2600
+XGBoost                 0.2819  0.1731  0.2467  0.2585  0.2439
+
+-- nrmse_train
+season                     DJF     MAM     JJA     SON     all
+model                                                         
+AR(1)                   2.9142  2.2200  2.3574  2.2355  2.4760
+BU-LSTM                 2.7187  2.0623  2.2440  2.1029  2.3281
+BU-LSTM-Attention       2.7098  2.0711  2.2508  2.1065  2.3303
+BiLSTM-Attention        2.6454  2.0400  2.2216  2.0703  2.2894
+Clim (month×hour)       2.9677  2.3093  2.5064  2.3187  2.5741
+Persistence             3.7756  2.7136  2.8612  2.7894  3.0937
+Prob. BiLSTM-Attention  2.7444  2.0851  2.2642  2.1242  2.3507
+Transformer             2.8311  2.1443  2.3960  2.2160  2.4508
+XGBoost                 2.6808  2.0266  2.1933  2.1045  2.2994
+
+-- ss_clim
+season                     DJF     MAM     JJA     SON     all
+model                                                         
+AR(1)                   0.0180  0.0387  0.0594  0.0359  0.0381
+BU-LSTM                 0.0839  0.1070  0.1047  0.0931  0.0955
+BU-LSTM-Attention       0.0869  0.1032  0.1020  0.0915  0.0947
+BiLSTM-Attention        0.1086  0.1166  0.1136  0.1071  0.1106
+Clim (month×hour)       0.0000  0.0000  0.0000  0.0000  0.0000
+Persistence            -0.2722 -0.1750 -0.1416 -0.2030 -0.2019
+Prob. BiLSTM-Attention  0.0752  0.0971  0.0966  0.0839  0.0868
+Transformer             0.0460  0.0715  0.0440  0.0443  0.0479
+XGBoost                 0.0966  0.1224  0.1249  0.0924  0.1067
+
+-- rmse_tail
+season                     DJF     MAM     JJA     SON     all
+model                                                         
+AR(1)                   0.9484  0.9794  0.9169  0.9852  0.9525
+BU-LSTM                 0.8809  0.9180  0.8819  0.9224  0.8970
+BU-LSTM-Attention       0.8723  0.9197  0.8878  0.9223  0.8965
+BiLSTM-Attention        0.8484  0.9053  0.8658  0.8951  0.8732
+Clim (month×hour)       0.9899  1.0539  0.9845  1.0120  1.0010
+Persistence             0.9252  0.9181  0.8504  0.9359  0.9048
+Prob. BiLSTM-Attention  0.8903  0.9371  0.8900  0.9294  0.9063
+Transformer             0.9168  0.9747  0.9500  0.9715  0.9491
+XGBoost                 0.7933  0.8657  0.8372  0.8893  0.8428
+
+-- bias
+season                     DJF     MAM     JJA     SON     all
+model                                                         
+AR(1)                  -0.0268  0.0272 -0.0121 -0.0125 -0.0065
+BU-LSTM                -0.0246  0.0015 -0.0211 -0.0162 -0.0154
+BU-LSTM-Attention      -0.0196  0.0024 -0.0248 -0.0162 -0.0151
+BiLSTM-Attention       -0.0186  0.0017 -0.0188 -0.0124 -0.0123
+Clim (month×hour)      -0.0378  0.0179 -0.0104  0.0000 -0.0070
+Persistence             0.0014  0.0005  0.0001 -0.0016 -0.0000
+Prob. BiLSTM-Attention -0.0251  0.0015 -0.0233 -0.0166 -0.0162
+Transformer            -0.0257  0.0008 -0.0298 -0.0221 -0.0198
+XGBoost                 0.0041  0.0034 -0.0140 -0.0075 -0.0043
+
+===== C 季节配对差（负数 = 模型优于参照 / BiLSTM-Attention 优于 XGBoost）=====
+season                  model                 comparison    n  rmse_ref   delta      pct    t_lo    t_hi  boot_lo  boot_hi  n_better_of_5       evidence
+   DJF                XGBoost   model − clim(month×hour)  848    0.3121 -0.0302  -9.6650 -0.0326 -0.0277  -0.0471  -0.0141              5         strong
+   DJF                BU-LSTM   model − clim(month×hour)  848    0.3121 -0.0262  -8.3889 -0.0294 -0.0229  -0.0346  -0.0180              5         strong
+   DJF       BiLSTM-Attention   model − clim(month×hour)  848    0.3121 -0.0339 -10.8603 -0.0357 -0.0321  -0.0438  -0.0242              5         strong
+   DJF            Transformer   model − clim(month×hour)  848    0.3121 -0.0144  -4.6024 -0.0174 -0.0113  -0.0202  -0.0079              5         strong
+   DJF      BU-LSTM-Attention   model − clim(month×hour)  848    0.3121 -0.0271  -8.6901 -0.0292 -0.0250  -0.0358  -0.0185              5         strong
+   DJF Prob. BiLSTM-Attention   model − clim(month×hour)  848    0.3121 -0.0235  -7.5221 -0.0266 -0.0204  -0.0307  -0.0159              5         strong
+   DJF                   pair BiLSTM-Attention − XGBoost  848    0.2819 -0.0037  -1.3232 -0.0056 -0.0018  -0.0131   0.0057              5 medium(seed-t)
+   MAM                XGBoost   model − clim(month×hour)  895    0.1973 -0.0242 -12.2446 -0.0255 -0.0228  -0.0362  -0.0112              5         strong
+   MAM                BU-LSTM   model − clim(month×hour)  895    0.1973 -0.0211 -10.6986 -0.0215 -0.0208  -0.0321  -0.0102              5         strong
+   MAM       BiLSTM-Attention   model − clim(month×hour)  895    0.1973 -0.0230 -11.6633 -0.0239 -0.0222  -0.0365  -0.0107              5         strong
+   MAM            Transformer   model − clim(month×hour)  895    0.1973 -0.0141  -7.1458 -0.0174 -0.0108  -0.0230  -0.0064              5         strong
+   MAM      BU-LSTM-Attention   model − clim(month×hour)  895    0.1973 -0.0204 -10.3153 -0.0222 -0.0185  -0.0319  -0.0096              5         strong
+   MAM Prob. BiLSTM-Attention   model − clim(month×hour)  895    0.1973 -0.0192  -9.7102 -0.0204 -0.0179  -0.0285  -0.0099              5         strong
+   MAM                   pair BiLSTM-Attention − XGBoost  895    0.1731  0.0011   0.6625 -0.0009  0.0032  -0.0075   0.0099              2      weak/none
+   JJA                XGBoost   model − clim(month×hour) 1104    0.2819 -0.0352 -12.4896 -0.0370 -0.0334  -0.0495  -0.0217              5         strong
+   JJA                BU-LSTM   model − clim(month×hour) 1104    0.2819 -0.0295 -10.4656 -0.0311 -0.0279  -0.0374  -0.0209              5         strong
+   JJA       BiLSTM-Attention   model − clim(month×hour) 1104    0.2819 -0.0320 -11.3612 -0.0348 -0.0293  -0.0415  -0.0222              5         strong
+   JJA            Transformer   model − clim(month×hour) 1104    0.2819 -0.0124  -4.4027 -0.0159 -0.0089  -0.0163  -0.0079              5         strong
+   JJA      BU-LSTM-Attention   model − clim(month×hour) 1104    0.2819 -0.0287 -10.1968 -0.0332 -0.0243  -0.0365  -0.0208              5         strong
+   JJA Prob. BiLSTM-Attention   model − clim(month×hour) 1104    0.2819 -0.0272  -9.6596 -0.0291 -0.0253  -0.0344  -0.0196              5         strong
+   JJA                   pair BiLSTM-Attention − XGBoost 1104    0.2467  0.0032   1.2895 -0.0004  0.0068  -0.0032   0.0094              0      weak/none
+   SON                XGBoost   model − clim(month×hour) 1092    0.2848 -0.0263  -9.2367 -0.0278 -0.0248  -0.0382  -0.0161              5         strong
+   SON                BU-LSTM   model − clim(month×hour) 1092    0.2848 -0.0265  -9.3067 -0.0282 -0.0248  -0.0338  -0.0212              5         strong
+   SON       BiLSTM-Attention   model − clim(month×hour) 1092    0.2848 -0.0305 -10.7111 -0.0314 -0.0296  -0.0413  -0.0226              5         strong
+   SON            Transformer   model − clim(month×hour) 1092    0.2848 -0.0126  -4.4310 -0.0169 -0.0084  -0.0177  -0.0088              5         strong
+   SON      BU-LSTM-Attention   model − clim(month×hour) 1092    0.2848 -0.0261  -9.1513 -0.0274 -0.0247  -0.0331  -0.0213              5         strong
+   SON Prob. BiLSTM-Attention   model − clim(month×hour) 1092    0.2848 -0.0239  -8.3903 -0.0252 -0.0226  -0.0305  -0.0187              5         strong
+   SON                   pair BiLSTM-Attention − XGBoost 1092    0.2585 -0.0042  -1.6244 -0.0049 -0.0035  -0.0111   0.0028              5 medium(seed-t)
+   all                XGBoost   model − clim(month×hour) 3939    0.2731 -0.0291 -10.6718 -0.0294 -0.0288  -0.0363  -0.0225              5         strong
+   all                BU-LSTM   model − clim(month×hour) 3939    0.2731 -0.0261  -9.5548 -0.0277 -0.0245  -0.0305  -0.0221              5         strong
+   all       BiLSTM-Attention   model − clim(month×hour) 3939    0.2731 -0.0302 -11.0587 -0.0314 -0.0290  -0.0355  -0.0252              5         strong
+   all            Transformer   model − clim(month×hour) 3939    0.2731 -0.0131  -4.7869 -0.0158 -0.0103  -0.0157  -0.0103              5         strong
+   all      BU-LSTM-Attention   model − clim(month×hour) 3939    0.2731 -0.0259  -9.4682 -0.0280 -0.0237  -0.0302  -0.0220              5         strong
+   all Prob. BiLSTM-Attention   model − clim(month×hour) 3939    0.2731 -0.0237  -8.6765 -0.0251 -0.0223  -0.0276  -0.0200              5         strong
+   all                   pair BiLSTM-Attention − XGBoost 3939    0.2439 -0.0011  -0.4331 -0.0024  0.0003  -0.0049   0.0028              4      weak/none
+
+===== D 单变量 / 按组消融的季节 ΔRMSE（正数 = 去掉后变差；全部子集）=====
+
+-- BiLSTM-Attention（括号内为 5 个种子中变差的数量）
+season                         DJF          MAM          JJA          SON          all
+removed                                                                               
+d2m                     0.0018 (5)   0.0006 (4)   0.0007 (4)   0.0005 (5)   0.0009 (4)
+group:mxtpr+mntpr          0.0 (3)   0.0009 (5)  -0.0018 (0)   0.0007 (4)  -0.0002 (2)
+group:mxtpr+mntpr+lsp   0.0042 (4)    0.002 (5)   0.0076 (5)   0.0042 (5)   0.0048 (5)
+lsp                     -0.001 (2)  -0.0002 (3)  -0.0006 (2)  -0.0003 (2)  -0.0005 (2)
+mntpr                  -0.0008 (2)   0.0007 (4)  -0.0008 (1)   0.0004 (4)  -0.0002 (3)
+mxtpr                   0.0015 (5)   0.0003 (3)  -0.0011 (2)   0.0001 (3)   0.0001 (4)
+sp                      0.0052 (5)   0.0038 (5)   0.0037 (5)   0.0036 (5)    0.004 (5)
+tcc                     0.0023 (4)   0.0022 (5)   0.0032 (4)   0.0028 (5)   0.0027 (5)
+v10                     0.0055 (5)  -0.0025 (0)    0.001 (3)   0.0043 (5)   0.0025 (5)
+
+-- BU-LSTM-Attention（括号内为 5 个种子中变差的数量）
+season                         DJF          MAM          JJA          SON          all
+removed                                                                               
+d2m                    -0.0002 (3)   0.0005 (3)   0.0007 (3)   0.0001 (3)   0.0003 (3)
+group:mxtpr+mntpr      -0.0019 (2)  -0.0006 (2)  -0.0005 (3)   0.0002 (3)  -0.0007 (2)
+group:mxtpr+mntpr+lsp   0.0006 (4)  -0.0002 (4)    0.007 (5)    0.003 (4)    0.003 (4)
+lsp                    -0.0027 (2)  -0.0002 (2)     -0.0 (2)  -0.0006 (1)  -0.0009 (1)
+mntpr                  -0.0037 (0)  -0.0003 (3)  -0.0026 (1)  -0.0007 (1)  -0.0019 (0)
+mxtpr                  -0.0029 (1)  -0.0014 (1)   -0.002 (2)  -0.0011 (1)  -0.0018 (0)
+sp                      0.0013 (2)   0.0038 (5)   0.0023 (3)   0.0031 (5)   0.0025 (4)
+tcc                     0.0034 (4)    0.003 (4)   0.0038 (4)   0.0041 (5)   0.0036 (4)
+v10                     0.0027 (5)  -0.0006 (0)   0.0003 (4)   0.0029 (5)   0.0015 (5)
+
+===== E 上游预测因子 C3 − C0 的季节 ΔRMSE =====
+season            model         comparison    n  rmse_ref   delta      pct    t_lo    t_hi  boot_lo  boot_hi  n_better_of_5       evidence
+   DJF          XGBoost C3 − C0 (upstream)  848    0.2819 -0.0225  -7.9655 -0.0260 -0.0189  -0.0349  -0.0084              5         strong
+   MAM          XGBoost C3 − C0 (upstream)  895    0.1731 -0.0154  -8.9149 -0.0194 -0.0114  -0.0314  -0.0015              5         strong
+   JJA          XGBoost C3 − C0 (upstream) 1104    0.2467 -0.0163  -6.6216 -0.0188 -0.0138  -0.0262  -0.0059              5         strong
+   SON          XGBoost C3 − C0 (upstream) 1092    0.2585 -0.0103  -3.9715 -0.0125 -0.0080  -0.0196  -0.0013              5         strong
+   all          XGBoost C3 − C0 (upstream) 3939    0.2439 -0.0157  -6.4279 -0.0170 -0.0144  -0.0215  -0.0100              5         strong
+   DJF BiLSTM-Attention C3 − C0 (upstream)  848    0.2782 -0.0257  -9.2200 -0.0299 -0.0214  -0.0351  -0.0162              5         strong
+   MAM BiLSTM-Attention C3 − C0 (upstream)  895    0.1743 -0.0178 -10.2207 -0.0253 -0.0103  -0.0395  -0.0013              5         strong
+   JJA BiLSTM-Attention C3 − C0 (upstream) 1104    0.2498 -0.0196  -7.8537 -0.0238 -0.0154  -0.0292  -0.0090              5         strong
+   SON BiLSTM-Attention C3 − C0 (upstream) 1092    0.2543 -0.0074  -2.8996 -0.0104 -0.0044  -0.0167   0.0028              5 medium(seed-t)
+   all BiLSTM-Attention C3 − C0 (upstream) 3939    0.2429 -0.0169  -6.9549 -0.0182 -0.0156  -0.0229  -0.0113              5         strong
+
+输出：/root/autodl-tmp/results/metrics/q13_season_counts.csv、q13_season_metrics.csv、q13_season_paired.csv、q13_season_ablation.csv、q13_season_upstream.csv

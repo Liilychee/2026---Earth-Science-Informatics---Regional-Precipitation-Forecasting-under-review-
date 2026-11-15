@@ -1,0 +1,26 @@
+{
+  "old_excerpts_unchanged": 135,
+  "total_exact_matching": 137,
+  "new_excerpts": 2,
+  "main_pure_insertion": true,
+  "other_review_responses_unchanged": true,
+  "all_tables_figures_unchanged": true,
+  "existing_Supplementary_and_bib_unchanged": true,
+  "staging_unchanged": true,
+  "refs": [
+    "supp-stab:r3window_six_models",
+    "supp-stab:r3window_curve",
+    "supp-stab:r1m4_temporal_bilstm_attn",
+    "supp-stab:r1m4_temporal_bulstm_attn",
+    "manuscript-sec:forecasting_models",
+    "manuscript-sec:overall_results",
+    "supp-stab:r3window_six_models",
+    "supp-stab:r3window_curve",
+    "manuscript-sec:forecasting_models",
+    "supp-stab:r3window_six_models",
+    "supp-stab:r3window_curve",
+    "manuscript-sec:overall_results",
+    "supp-stab:r3window_six_models",
+    "supp-stab:r3window_curve"
+  ]
+}

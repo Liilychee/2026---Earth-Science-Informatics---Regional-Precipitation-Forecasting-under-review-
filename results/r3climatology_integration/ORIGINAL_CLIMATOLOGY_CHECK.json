@@ -1,0 +1,9 @@
+{
+  "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+  "path": "results/climatology_preds.csv",
+  "md5": "244a98115ad40ea402855bf336638513",
+  "test_n": 3939,
+  "prediction_unique": 1,
+  "constant": 0.1060817579568757,
+  "rmse": 0.27369377810341705
+}

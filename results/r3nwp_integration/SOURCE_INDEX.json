@@ -1,0 +1,77 @@
+[
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "code/q08_hres_comparison.py",
+    "md5": "62e94df28d1d5a279a07a27bd4ea9d71"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "code/q08_station_comparison.py",
+    "md5": "57ae34bd4736b6997bb9bfc4a7633080"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "code/analysis_q08c_event_auc.py",
+    "md5": "e1a42f912772f0d2edab3d075b283129"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q08_hres_aligned_samples.csv",
+    "md5": "20292cc723177cd58565f2ccc3f753c2"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q08_hres_comparison.csv",
+    "md5": "757d173011ba0a8f50dedb4f16827916"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q08_hres_bootstrap.csv",
+    "md5": "32ad6c3f13ab5a2b62920b9683aa4664"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q08_hres_comparison_output.txt",
+    "md5": "a68b1bd14e01342e65adbee3e4f9cccc"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q08b_station_comparison.csv",
+    "md5": "15aff76671d715d7e63a5962ad855835"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q08b_station_bootstrap.csv",
+    "md5": "c1b9f85c03d39d32b13ada449ddd6c79"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q08b_station_comparison_output.txt",
+    "md5": "1e19c7f87415c8ee020ea5eba667e2c3"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q08c_event_auc.csv",
+    "md5": "d65d7de1e1e1b9e9e7375a429ee30209"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q08c_event_auc_paired.csv",
+    "md5": "e7b2a2bf787a94c5052b69454d2b4139"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q08c_output.txt",
+    "md5": "29a32c16dfb5776faedc6a6804c34309"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q08_download_output.txt",
+    "md5": "dfebe7a209be698bf5f173bfa94965b4"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q08_download_check.txt",
+    "md5": "f8cab26c5c35bb6a9dde89f93df46a3d"
+  }
+]

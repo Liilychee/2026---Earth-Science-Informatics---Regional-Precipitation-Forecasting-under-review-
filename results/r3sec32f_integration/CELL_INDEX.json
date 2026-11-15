@@ -1,0 +1,618 @@
+[
+  {
+    "file": "q09_seasonal.csv",
+    "line": 2,
+    "field": "n",
+    "raw": "4571",
+    "display": "4571"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 2,
+    "field": "rho_lead_k0",
+    "raw": "-0.12274273742975121",
+    "display": "-0.123"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 2,
+    "field": "rho_partial",
+    "raw": "-0.11035799545566705",
+    "display": "-0.110"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 3,
+    "field": "n",
+    "raw": "4571",
+    "display": "4571"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 3,
+    "field": "rho_lead_k0",
+    "raw": "0.2781953629212788",
+    "display": "0.278"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 3,
+    "field": "rho_partial",
+    "raw": "0.20484456604138454",
+    "display": "0.205"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 5,
+    "field": "n",
+    "raw": "4571",
+    "display": "4571"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 5,
+    "field": "rho_lead_k0",
+    "raw": "0.20449133198887431",
+    "display": "0.204"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 5,
+    "field": "rho_partial",
+    "raw": "0.05204368046785885",
+    "display": "0.052"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 6,
+    "field": "n",
+    "raw": "4571",
+    "display": "4571"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 6,
+    "field": "rho_lead_k0",
+    "raw": "-0.27243949599179484",
+    "display": "-0.272"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 6,
+    "field": "rho_partial",
+    "raw": "-0.10795505623698241",
+    "display": "-0.108"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 16,
+    "field": "n",
+    "raw": "4784",
+    "display": "4784"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 16,
+    "field": "rho_lead_k0",
+    "raw": "0.03926339820993274",
+    "display": "0.039"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 16,
+    "field": "rho_partial",
+    "raw": "0.0028483484882282193",
+    "display": "0.003"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 17,
+    "field": "n",
+    "raw": "4784",
+    "display": "4784"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 17,
+    "field": "rho_lead_k0",
+    "raw": "0.1998256756403367",
+    "display": "0.200"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 17,
+    "field": "rho_partial",
+    "raw": "0.14951476271010714",
+    "display": "0.150"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 19,
+    "field": "n",
+    "raw": "4784",
+    "display": "4784"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 19,
+    "field": "rho_lead_k0",
+    "raw": "-0.054424503422005034",
+    "display": "-0.054"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 19,
+    "field": "rho_partial",
+    "raw": "-0.13271318715422772",
+    "display": "-0.133"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 20,
+    "field": "n",
+    "raw": "4784",
+    "display": "4784"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 20,
+    "field": "rho_lead_k0",
+    "raw": "-0.4586024859635393",
+    "display": "-0.459"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 20,
+    "field": "rho_partial",
+    "raw": "-0.260610357231199",
+    "display": "-0.261"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 30,
+    "field": "n",
+    "raw": "4686",
+    "display": "4686"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 30,
+    "field": "rho_lead_k0",
+    "raw": "-0.04584091101832718",
+    "display": "-0.046"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 30,
+    "field": "rho_partial",
+    "raw": "-0.04994766222004035",
+    "display": "-0.050"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 31,
+    "field": "n",
+    "raw": "4686",
+    "display": "4686"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 31,
+    "field": "rho_lead_k0",
+    "raw": "0.2661285724039044",
+    "display": "0.266"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 31,
+    "field": "rho_partial",
+    "raw": "0.19014180131166364",
+    "display": "0.190"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 33,
+    "field": "n",
+    "raw": "4686",
+    "display": "4686"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 33,
+    "field": "rho_lead_k0",
+    "raw": "-0.13032504125417319",
+    "display": "-0.130"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 33,
+    "field": "rho_partial",
+    "raw": "-0.22800622281237926",
+    "display": "-0.228"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 34,
+    "field": "n",
+    "raw": "4686",
+    "display": "4686"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 34,
+    "field": "rho_lead_k0",
+    "raw": "-0.42384183411378035",
+    "display": "-0.424"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 34,
+    "field": "rho_partial",
+    "raw": "-0.241301667143438",
+    "display": "-0.241"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 44,
+    "field": "n",
+    "raw": "4368",
+    "display": "4368"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 44,
+    "field": "rho_lead_k0",
+    "raw": "-0.14480619803664185",
+    "display": "-0.145"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 44,
+    "field": "rho_partial",
+    "raw": "-0.1319718447537611",
+    "display": "-0.132"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 45,
+    "field": "n",
+    "raw": "4368",
+    "display": "4368"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 45,
+    "field": "rho_lead_k0",
+    "raw": "0.26064409196595656",
+    "display": "0.261"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 45,
+    "field": "rho_partial",
+    "raw": "0.20347412546135998",
+    "display": "0.203"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 47,
+    "field": "n",
+    "raw": "4368",
+    "display": "4368"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 47,
+    "field": "rho_lead_k0",
+    "raw": "0.02919615786215214",
+    "display": "0.029"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 47,
+    "field": "rho_partial",
+    "raw": "-0.05105116570604742",
+    "display": "-0.051"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 48,
+    "field": "n",
+    "raw": "4368",
+    "display": "4368"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 48,
+    "field": "rho_lead_k0",
+    "raw": "-0.3331788414368835",
+    "display": "-0.333"
+  },
+  {
+    "file": "q09_seasonal.csv",
+    "line": 48,
+    "field": "rho_partial",
+    "raw": "-0.1558203092586307",
+    "display": "-0.156"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 42,
+    "field": "n",
+    "raw": "848",
+    "display": "848"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 42,
+    "field": "d_rmse",
+    "raw": "0.0055297917583982505",
+    "display": "0.005530"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 42,
+    "field": "t_lo",
+    "raw": "0.0021158152589892823",
+    "display": "0.002116"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 42,
+    "field": "t_hi",
+    "raw": "0.008943768257807218",
+    "display": "0.008944"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 42,
+    "field": "n_worse_of_5",
+    "raw": "5",
+    "display": "5"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 44,
+    "field": "n",
+    "raw": "895",
+    "display": "895"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 44,
+    "field": "d_rmse",
+    "raw": "-0.0025211379314098283",
+    "display": "-0.002521"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 44,
+    "field": "t_lo",
+    "raw": "-0.0039687611676205645",
+    "display": "-0.003969"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 44,
+    "field": "t_hi",
+    "raw": "-0.0010735146951990925",
+    "display": "-0.001074"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 44,
+    "field": "n_worse_of_5",
+    "raw": "0",
+    "display": "0"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 46,
+    "field": "n",
+    "raw": "1104",
+    "display": "1104"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 46,
+    "field": "d_rmse",
+    "raw": "0.0009519313658084116",
+    "display": "0.000952"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 46,
+    "field": "t_lo",
+    "raw": "-0.0016956319049292814",
+    "display": "-0.001696"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 46,
+    "field": "t_hi",
+    "raw": "0.003599494636546105",
+    "display": "0.003599"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 46,
+    "field": "n_worse_of_5",
+    "raw": "3",
+    "display": "3"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 48,
+    "field": "n",
+    "raw": "1092",
+    "display": "1092"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 48,
+    "field": "d_rmse",
+    "raw": "0.004268405759677263",
+    "display": "0.004268"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 48,
+    "field": "t_lo",
+    "raw": "0.0033872668614995877",
+    "display": "0.003387"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 48,
+    "field": "t_hi",
+    "raw": "0.005149544657854939",
+    "display": "0.005150"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 48,
+    "field": "n_worse_of_5",
+    "raw": "5",
+    "display": "5"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 132,
+    "field": "n",
+    "raw": "848",
+    "display": "848"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 132,
+    "field": "d_rmse",
+    "raw": "0.0027370696365642266",
+    "display": "0.002737"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 132,
+    "field": "t_lo",
+    "raw": "0.0002418182356137312",
+    "display": "0.000242"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 132,
+    "field": "t_hi",
+    "raw": "0.005232321037514722",
+    "display": "0.005232"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 132,
+    "field": "n_worse_of_5",
+    "raw": "5",
+    "display": "5"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 134,
+    "field": "n",
+    "raw": "895",
+    "display": "895"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 134,
+    "field": "d_rmse",
+    "raw": "-0.0006282629653412309",
+    "display": "-0.000628"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 134,
+    "field": "t_lo",
+    "raw": "-0.0011470997725004123",
+    "display": "-0.001147"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 134,
+    "field": "t_hi",
+    "raw": "-0.00010942615818204941",
+    "display": "-0.000109"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 134,
+    "field": "n_worse_of_5",
+    "raw": "0",
+    "display": "0"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 136,
+    "field": "n",
+    "raw": "1104",
+    "display": "1104"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 136,
+    "field": "d_rmse",
+    "raw": "0.0002910526710087902",
+    "display": "0.000291"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 136,
+    "field": "t_lo",
+    "raw": "-0.0018283921620883942",
+    "display": "-0.001828"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 136,
+    "field": "t_hi",
+    "raw": "0.0024104975041059746",
+    "display": "0.002410"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 136,
+    "field": "n_worse_of_5",
+    "raw": "4",
+    "display": "4"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 138,
+    "field": "n",
+    "raw": "1092",
+    "display": "1092"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 138,
+    "field": "d_rmse",
+    "raw": "0.0028565189883484666",
+    "display": "0.002857"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 138,
+    "field": "t_lo",
+    "raw": "0.0014783297783675597",
+    "display": "0.001478"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 138,
+    "field": "t_hi",
+    "raw": "0.004234708198329374",
+    "display": "0.004235"
+  },
+  {
+    "file": "q13_season_ablation.csv",
+    "line": 138,
+    "field": "n_worse_of_5",
+    "raw": "5",
+    "display": "5"
+  }
+]

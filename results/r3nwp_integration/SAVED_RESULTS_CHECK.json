@@ -1,0 +1,48 @@
+{
+  "common_n": 1970,
+  "dates": [
+    "2019-04-22 06:00:00",
+    "2021-12-31 18:00:00"
+  ],
+  "distinct_days": 985,
+  "matched_origins_and_leads": true,
+  "point_score_max_error": 9.80118763926896e-17,
+  "point_rows_checked": 23,
+  "event_auc_rows_checked": 57,
+  "forecast_identities": {
+    "BiLSTM-Attention": {
+      "path": "results/bilstm_attention_preds.csv",
+      "md5": "61d820961694b35b59cff41c012833fe",
+      "max_saved_prediction_difference": 0.0
+    },
+    "XGBoost": {
+      "path": "results/xgboost_preds.csv",
+      "md5": "8af1fbe1bde1124f4eb8bd2e9778b9d7",
+      "max_saved_prediction_difference": 0.0
+    },
+    "BU-LSTM-Attention": {
+      "path": "results/proposed_model_preds.csv",
+      "md5": "52e340cf000f8373b78d125335b3af6e",
+      "max_saved_prediction_difference": 0.0
+    },
+    "Probabilistic BiLSTM-Attention": {
+      "path": "results/prob_bilstm_attention_preds.csv",
+      "md5": "e40b252a4cddacc04613746cdfd0335c",
+      "max_saved_prediction_difference": 0.0
+    },
+    "BU-LSTM": {
+      "path": "results/bulstm_preds.csv",
+      "md5": "24c40dd8a4e1f29cd8de9ddc3975c98d",
+      "max_saved_prediction_difference": 0.0
+    },
+    "Transformer": {
+      "path": "results/transformer_preds.csv",
+      "md5": "fba327035970d9c0d758081f37d0a1fd",
+      "max_saved_prediction_difference": 0.0
+    }
+  },
+  "station_target_count": 1970,
+  "Q95_rounded_exact_same_event_set": true,
+  "strict_final_hour_HRES_not_available": true,
+  "block_intervals_read_from_archived_outputs_not_recomputed": true
+}

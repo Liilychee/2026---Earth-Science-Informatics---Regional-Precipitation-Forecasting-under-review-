@@ -1,0 +1,174 @@
+{
+  "q15_predictions_and_runJSON": 40,
+  "common_test_targets": 3939,
+  "max_existing_score_seedCI_error": 3.3306690738754696e-16,
+  "selected": {
+    "BiLSTM-Attention": {
+      "validation_means": {
+        "mse": 0.25401553725188747,
+        "huber0.5": 0.2651863758225101,
+        "huber1": 0.2609163609942293,
+        "huber2": 0.25668340308643484
+      },
+      "chosen": "huber2"
+    },
+    "Transformer": {
+      "validation_means": {
+        "mse": 0.2649097157750425,
+        "huber0.5": 0.26748617075290987,
+        "huber1": 0.26288361895212853,
+        "huber2": 0.25999963039425145
+      },
+      "chosen": "huber2"
+    }
+  },
+  "training_epochs": {
+    "bilstm_attn/mse": {
+      "epochs": [
+        19,
+        18,
+        20,
+        18,
+        18
+      ],
+      "best_epoch": [
+        9,
+        8,
+        10,
+        8,
+        8
+      ],
+      "count_at_30": 0
+    },
+    "bilstm_attn/huber0.5": {
+      "epochs": [
+        26,
+        26,
+        29,
+        21,
+        25
+      ],
+      "best_epoch": [
+        16,
+        16,
+        19,
+        11,
+        15
+      ],
+      "count_at_30": 0
+    },
+    "bilstm_attn/huber1": {
+      "epochs": [
+        20,
+        21,
+        21,
+        19,
+        22
+      ],
+      "best_epoch": [
+        10,
+        11,
+        11,
+        9,
+        12
+      ],
+      "count_at_30": 0
+    },
+    "bilstm_attn/huber2": {
+      "epochs": [
+        21,
+        19,
+        21,
+        23,
+        23
+      ],
+      "best_epoch": [
+        11,
+        9,
+        11,
+        13,
+        13
+      ],
+      "count_at_30": 0
+    },
+    "transformer/mse": {
+      "epochs": [
+        30,
+        30,
+        30,
+        16,
+        30
+      ],
+      "best_epoch": [
+        26,
+        28,
+        29,
+        6,
+        28
+      ],
+      "count_at_30": 4
+    },
+    "transformer/huber0.5": {
+      "epochs": [
+        30,
+        30,
+        30,
+        30,
+        30
+      ],
+      "best_epoch": [
+        29,
+        30,
+        30,
+        29,
+        28
+      ],
+      "count_at_30": 5
+    },
+    "transformer/huber1": {
+      "epochs": [
+        30,
+        30,
+        30,
+        30,
+        30
+      ],
+      "best_epoch": [
+        28,
+        22,
+        30,
+        30,
+        30
+      ],
+      "count_at_30": 5
+    },
+    "transformer/huber2": {
+      "epochs": [
+        30,
+        30,
+        30,
+        30,
+        30
+      ],
+      "best_epoch": [
+        29,
+        30,
+        29,
+        30,
+        28
+      ],
+      "count_at_30": 5
+    }
+  },
+  "q05f_raw_runs": 35,
+  "q05f_each_variant_seeds": [
+    42,
+    123,
+    7,
+    2024,
+    99
+  ],
+  "q05f_summary_paired_fields_consistent": true,
+  "q05f_saved_predictions_not_archived_in_located_tree": true,
+  "bootstrap_not_rerun": true
+}

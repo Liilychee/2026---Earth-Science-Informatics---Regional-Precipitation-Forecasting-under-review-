@@ -1,0 +1,73 @@
+Data: data/dublin_regional_reduced.csv; rows 26300; train/val/test targets 18404/3939/3939
+Alignment OK: csv targets, forecast-origin lag and saved Persistence agree on the test split.
+AR(1) damped persistence  : y = 0.0763 + 0.2811 * y_lag
+Linear on lsp(t)          : y = 0.0848 + 0.326 * lsp_origin
+Linear on mxtpr(t)        : y = 0.0740 + 640.6 * mxtpr_origin
+
+Best climatology on test: Climatology: monthly (RMSE 0.2730); global 0.2737 (expected 0.2737 for global and 0.2731 for month x hour from analysis_revision_metrics.py)
+
+=== A. TEST METRICS: all baselines and models (skill = 1 - RMSE/RMSE_reference) ===
+                        Forecast   RMSE    MAE      R2  Skill_vs_global_clim  Skill_vs_best_clim  Skill_vs_month_x_hour
+        Climatology: global mean 0.2737 0.1517 -0.0011                0.0000             -0.0027                -0.0023
+     Climatology: diurnal (hour) 0.2738 0.1514 -0.0016               -0.0002             -0.0029                -0.0026
+Climatology: seasonal (DJF..SON) 0.2730 0.1521  0.0039                0.0025             -0.0002                 0.0001
+            Climatology: monthly 0.2730 0.1521  0.0043                0.0027              0.0000                 0.0004
+       Climatology: month x hour 0.2731 0.1517  0.0036                0.0023             -0.0004                 0.0000
+                     Persistence 0.3282 0.1400 -0.4394               -0.1991             -0.2023                -0.2019
+        AR(1) damped persistence 0.2627 0.1391  0.0780                0.0403              0.0377                 0.0381
+                Linear on lsp(t) 0.2633 0.1409  0.0736                0.0380              0.0354                 0.0358
+              Linear on mxtpr(t) 0.2643 0.1402  0.0663                0.0342              0.0316                 0.0320
+                         XGBoost 0.2437 0.1188  0.2060                0.1094              0.1070                 0.1073
+                     Transformer 0.2591 0.1209  0.1032                0.0535              0.0509                 0.0513
+                         BU-LSTM 0.2487 0.1170  0.1732                0.0912              0.0888                 0.0891
+                BiLSTM-Attention 0.2428 0.1156  0.2119                0.1127              0.1103                 0.1106
+    BU-LSTM-Attention (proposed) 0.2464 0.1174  0.1883                0.0996              0.0971                 0.0975
+  Probabilistic BiLSTM-Attention 0.2481 0.1162  0.1772                0.0934              0.0910                 0.0913
+
+=== B. RMSE(model) - RMSE(reference); paired block bootstrap; negative = model better ===
+               Reference                          Model  RMSE_model  RMSE_reference    Diff  CI_low  CI_high  Significant
+    Climatology: monthly                        XGBoost      0.2437          0.2730 -0.0292 -0.0369  -0.0221         True
+    Climatology: monthly                    Transformer      0.2591          0.2730 -0.0139 -0.0168  -0.0112         True
+    Climatology: monthly                        BU-LSTM      0.2487          0.2730 -0.0242 -0.0280  -0.0204         True
+    Climatology: monthly               BiLSTM-Attention      0.2428          0.2730 -0.0301 -0.0351  -0.0251         True
+    Climatology: monthly   BU-LSTM-Attention (proposed)      0.2464          0.2730 -0.0265 -0.0314  -0.0217         True
+    Climatology: monthly Probabilistic BiLSTM-Attention      0.2481          0.2730 -0.0248 -0.0291  -0.0207         True
+AR(1) damped persistence                        XGBoost      0.2437          0.2627 -0.0189 -0.0247  -0.0131         True
+AR(1) damped persistence                    Transformer      0.2591          0.2627 -0.0036 -0.0082   0.0012        False
+AR(1) damped persistence                        BU-LSTM      0.2487          0.2627 -0.0139 -0.0164  -0.0116         True
+AR(1) damped persistence               BiLSTM-Attention      0.2428          0.2627 -0.0198 -0.0233  -0.0162         True
+AR(1) damped persistence   BU-LSTM-Attention (proposed)      0.2464          0.2627 -0.0162 -0.0187  -0.0136         True
+AR(1) damped persistence Probabilistic BiLSTM-Attention      0.2481          0.2627 -0.0145 -0.0177  -0.0113         True
+        Linear on lsp(t)                        XGBoost      0.2437          0.2633 -0.0195 -0.0255  -0.0139         True
+        Linear on lsp(t)                    Transformer      0.2591          0.2633 -0.0042 -0.0087   0.0003        False
+        Linear on lsp(t)                        BU-LSTM      0.2487          0.2633 -0.0146 -0.0168  -0.0123         True
+        Linear on lsp(t)               BiLSTM-Attention      0.2428          0.2633 -0.0204 -0.0239  -0.0170         True
+        Linear on lsp(t)   BU-LSTM-Attention (proposed)      0.2464          0.2633 -0.0168 -0.0194  -0.0143         True
+        Linear on lsp(t) Probabilistic BiLSTM-Attention      0.2481          0.2633 -0.0152 -0.0183  -0.0121         True
+      Linear on mxtpr(t)                        XGBoost      0.2437          0.2643 -0.0206 -0.0264  -0.0148         True
+      Linear on mxtpr(t)                    Transformer      0.2591          0.2643 -0.0053 -0.0096  -0.0007         True
+      Linear on mxtpr(t)                        BU-LSTM      0.2487          0.2643 -0.0156 -0.0179  -0.0132         True
+      Linear on mxtpr(t)               BiLSTM-Attention      0.2428          0.2643 -0.0215 -0.0250  -0.0177         True
+      Linear on mxtpr(t)   BU-LSTM-Attention (proposed)      0.2464          0.2643 -0.0179 -0.0205  -0.0152         True
+      Linear on mxtpr(t) Probabilistic BiLSTM-Attention      0.2481          0.2643 -0.0162 -0.0193  -0.0129         True
+
+=== C. SEASONAL RMSE SKILL vs month x hour climatology (negative = worse than climatology) ===
+Season                              DJF    JJA    MAM    SON
+Forecast                                                    
+AR(1) damped persistence          0.018  0.059  0.039  0.036
+BU-LSTM                           0.076  0.097  0.108  0.086
+BU-LSTM-Attention (proposed)      0.081  0.112  0.111  0.093
+BiLSTM-Attention                  0.103  0.119  0.113  0.108
+Climatology: diurnal (hour)       0.001 -0.001 -0.017 -0.002
+Climatology: global mean          0.002 -0.001 -0.019 -0.000
+Climatology: month x hour         0.000  0.000  0.000  0.000
+Climatology: monthly             -0.001  0.000 -0.003  0.003
+Climatology: seasonal (DJF..SON)  0.001 -0.000 -0.005  0.002
+Linear on lsp(t)                  0.024  0.054  0.032  0.030
+Linear on mxtpr(t)                0.012  0.050  0.032  0.034
+Persistence                      -0.272 -0.142 -0.175 -0.203
+Probabilistic BiLSTM-Attention    0.081  0.098  0.104  0.089
+Transformer                       0.049  0.050  0.075  0.046
+XGBoost                           0.091  0.127  0.127  0.095
+
+Saved q07_*.csv to results/metrics

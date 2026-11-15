@@ -1,0 +1,27 @@
+pool,n_candidates,point_top7,point_top7_equals_original,rank7,rank8,gap_rank7_rank8,freq_exact_original_set,n_boot,table,var,in_original7,rho_lead_k0,freq_top7
+11 candidates,11.0,lsp mntpr mxtpr tcc sp v10 d2m,True,d2m,ssr,0.05843984023567381,0.9965,2000.0,summary,,,,
+13 candidates,13.0,lsp mntpr mxtpr tcc cp sp v10,False,v10,ws,0.013495479687354706,0.0,2000.0,summary,,,,
+11 candidates,,,,,,,,,per_variable,u10,False,-0.05801954723334235,0.0005
+11 candidates,,,,,,,,,per_variable,v10,True,0.2510960135883028,1.0
+11 candidates,,,,,,,,,per_variable,d2m,True,0.14949867746325216,0.9965
+11 candidates,,,,,,,,,per_variable,t2m,False,0.02514018866351052,0.0
+11 candidates,,,,,,,,,per_variable,sp,True,-0.36910226542403257,1.0
+11 candidates,,,,,,,,,per_variable,e,False,0.06629676486788226,0.0
+11 candidates,,,,,,,,,per_variable,mxtpr,True,0.5146503338338687,1.0
+11 candidates,,,,,,,,,per_variable,mntpr,True,0.525290397051295,1.0
+11 candidates,,,,,,,,,per_variable,tcc,True,0.4378017555023401,1.0
+11 candidates,,,,,,,,,per_variable,ssr,False,-0.09105883722757835,0.003
+11 candidates,,,,,,,,,per_variable,lsp,True,0.5304697972362352,1.0
+13 candidates,,,,,,,,,per_variable,u10,False,-0.05801954723334235,0.0
+13 candidates,,,,,,,,,per_variable,v10,True,0.2510960135883028,0.797
+13 candidates,,,,,,,,,per_variable,d2m,True,0.14949867746325216,0.0
+13 candidates,,,,,,,,,per_variable,t2m,False,0.02514018866351052,0.0
+13 candidates,,,,,,,,,per_variable,sp,True,-0.36910226542403257,1.0
+13 candidates,,,,,,,,,per_variable,e,False,0.06629676486788226,0.0
+13 candidates,,,,,,,,,per_variable,mxtpr,True,0.5146503338338687,1.0
+13 candidates,,,,,,,,,per_variable,mntpr,True,0.525290397051295,1.0
+13 candidates,,,,,,,,,per_variable,tcc,True,0.4378017555023401,1.0
+13 candidates,,,,,,,,,per_variable,ssr,False,-0.09105883722757835,0.0
+13 candidates,,,,,,,,,per_variable,lsp,True,0.5304697972362352,1.0
+13 candidates,,,,,,,,,per_variable,ws,False,0.2376005339009481,0.203
+13 candidates,,,,,,,,,per_variable,cp,False,0.3878663277416191,1.0

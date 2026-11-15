@@ -1,0 +1,25 @@
+{
+  "csv_fields_verified": 19,
+  "climatology_differences": {
+    "Climatology: global mean": {
+      "rmse": 0.27369271523069294,
+      "difference_from_refit": 0.0
+    },
+    "Climatology: diurnal (hour)": {
+      "rmse": 0.2737599050347168,
+      "difference_from_refit": 6.718980402387054e-05
+    },
+    "Climatology: seasonal (DJF..SON)": {
+      "rmse": 0.27301849096725367,
+      "difference_from_refit": -0.0006742242634392714
+    },
+    "Climatology: monthly": {
+      "rmse": 0.27295674478672266,
+      "difference_from_refit": -0.0007359704439702797
+    },
+    "Climatology: month x hour": {
+      "rmse": 0.27305700702996605,
+      "difference_from_refit": -0.0006357082007268922
+    }
+  }
+}

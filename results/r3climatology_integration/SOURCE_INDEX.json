@@ -1,0 +1,42 @@
+[
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "code/analysis_q07_baselines.py",
+    "md5": "0a4a9b06ce40e4ec29c04667ae27e526"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "code/analysis_q07b_linear_baselines.py",
+    "md5": "dea992c1f1dd106be9d7834959072303"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q07_baseline_metrics.csv",
+    "md5": "6fbfa2368fc78e9c4f73a222488c1447"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q07_model_minus_reference.csv",
+    "md5": "a28e1bff68ac5803242b4f6f107f05a9"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q07_output.txt",
+    "md5": "66e6b6eee375e1b467ba2e0691b8c50d"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q07b_linear_baselines.csv",
+    "md5": "8aa5df04c68b08919ba44df6c070d2c1"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q07b_model_minus_linear.csv",
+    "md5": "5086aacb882aa9554d027afe69920454"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q07b_output.txt",
+    "md5": "313c1cfc017201e1ed74204b299032e9"
+  }
+]
