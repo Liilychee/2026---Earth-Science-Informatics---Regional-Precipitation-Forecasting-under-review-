@@ -1,0 +1,117 @@
+[
+  {
+    "value": "2 January 2004 - 7 August 2016; approximately 12.6 years",
+    "source": "manuscript L134 (sec:dataset); evidence/ORIG.json target_times.train",
+    "check": [
+      "2004-01-02 12:00:00",
+      "2016-08-07 06:00:00"
+    ],
+    "years": 12.596
+  },
+  {
+    "value": "30-year archive 1992-2021",
+    "source": "evidence/q06_yearly_summary.csv",
+    "check": [
+      1992,
+      2021,
+      30,
+      43832
+    ]
+  },
+  {
+    "value": "training histories 16/19/22/25 years",
+    "source": "evidence/F1-F4.json periods.train; manuscript L568",
+    "check": [
+      16,
+      19,
+      22,
+      25
+    ]
+  },
+  {
+    "value": "two-year validation, three-year test",
+    "source": "evidence/F1-F4.json",
+    "check": {
+      "val": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "test": [
+        3,
+        3,
+        3,
+        3
+      ]
+    }
+  },
+  {
+    "value": "test periods 2010-2021 (12 consecutive years)",
+    "source": "evidence/F1-F4.json periods.test",
+    "check": [
+      [
+        2010,
+        2012
+      ],
+      [
+        2013,
+        2015
+      ],
+      [
+        2016,
+        2018
+      ],
+      [
+        2019,
+        2021
+      ]
+    ]
+  },
+  {
+    "value": "F4' 2004-2016, 13 calendar years, same validation/test targets as F4",
+    "source": "evidence/F4s.json; independently verified from q06 preds (4,378 test, 2,914 val identical)",
+    "check": {
+      "train": [
+        2004,
+        2016
+      ],
+      "n": {
+        "train": 18990,
+        "val": 2914,
+        "test": 4378
+      },
+      "F4_n": {
+        "train": 36522,
+        "val": 2914,
+        "test": 4378
+      }
+    }
+  },
+  {
+    "value": "six models, five seeds, 150 runs",
+    "source": "manuscript L568; q06 runs (150 fold runs)",
+    "check": "5 folds x 6 models x 5 seeds"
+  },
+  {
+    "value": "approximately 0.4-2.3% RMSE reduction (13 -> 25 years)",
+    "source": "manuscript L832; Supplementary S34 (stab:r2m5_history); recomputed from q06 preds: 0.36-2.33%"
+  },
+  {
+    "value": "skill vs month-by-hour climatology 0.077-0.125, all six models positive in every period",
+    "source": "manuscript L824; Supplementary S33; evidence/q06_fold_metrics.csv skill_mean",
+    "check": [
+      0.077,
+      0.125,
+      true
+    ]
+  },
+  {
+    "value": "lowest-RMSE model varies between periods",
+    "source": "manuscript L824 (XGBoost F1-F3, BiLSTM-Attention F4); recomputed from q06 runs"
+  },
+  {
+    "value": "F1/F2 fewer than 20 training years (16, 19); retrospective; no ENSO stratification",
+    "source": "manuscript L1227 (sec:limitations)"
+  }
+]

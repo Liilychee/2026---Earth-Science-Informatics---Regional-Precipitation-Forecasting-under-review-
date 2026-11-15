@@ -1,0 +1,20 @@
+{
+  "baseline_R3_03_closed_remote": "422fa74186a13f16c48a7e30d397715493eb5d2f",
+  "old_excerpts_unchanged": 124,
+  "new_reused_exact_excerpts": 4,
+  "total_matched": 128,
+  "Response_letter_only_R3_Section_3_2a_block": true,
+  "R2_M5_block_unchanged": true,
+  "manuscript_Supplementary_Figures_unchanged": true,
+  "protected_files": "964/964",
+  "forbidden_ENSO_states_phrase_absent": true,
+  "required_reserved_years_sentence_present": true,
+  "R2_M5_origin_stated": true,
+  "main_training_years": "approximately 12.6 (2004-01-02 to 2016-08-07)",
+  "seed_t_vs_bootstrap_distinguished": true,
+  "no_new_experiment": true,
+  "undefined_references": 0,
+  "patch_reconstruction": "LOCAL git; PORTABLE git+BSD",
+  "commit_push_performed": false,
+  "closed": false
+}

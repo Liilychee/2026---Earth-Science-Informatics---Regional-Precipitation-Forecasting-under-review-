@@ -1,0 +1,29 @@
+{
+  "old_count": 124,
+  "old_unchanged": 124,
+  "new": [
+    {
+      "text_sha256": "45a52c77836b8f2d8f777da23fbebddea60b39b2cfae1d95e7be22fc90493b29",
+      "verbatim_in_manuscript": true,
+      "reused_from": "R2-M5"
+    },
+    {
+      "text_sha256": "7f331030e0ea0c75d68b6ab333c49dcac7448f8eb0fadda23242bd712576d8d3",
+      "verbatim_in_manuscript": true,
+      "reused_from": "R2-M5"
+    },
+    {
+      "text_sha256": "af1e7f867d09c31e3d2f9a9fc2e855ad8665bc90e692c6111bd741acf9fa46ef",
+      "verbatim_in_manuscript": true,
+      "reused_from": "R2-M5"
+    },
+    {
+      "text_sha256": "c6e3723c87bd581090c4d1e9e1b4e621cad6c973f66c1bda86b9d3005381322b",
+      "verbatim_in_manuscript": true,
+      "reused_from": "R2-M5"
+    }
+  ],
+  "total": 128,
+  "all_match": true,
+  "fourth_box_reason": "Only the 'Retrospective rolling-origin design' excerpt states the 16/19/22/25-year folds, two-year validation periods, 2010-2021 test periods and 150 runs cited in the reply; the skill range 0.077-0.125 is referenced to Section 4.2.5 and Table S33 via CELL_INDEX instead of a fifth box"
+}

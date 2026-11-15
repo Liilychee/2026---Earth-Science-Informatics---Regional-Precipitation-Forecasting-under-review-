@@ -1,0 +1,10 @@
+{
+  "remote_main": "422fa74186a13f16c48a7e30d397715493eb5d2f",
+  "R3_03_closed_after_hashes_match": {
+    "manuscript.tex": true,
+    "Response letter.tex": true
+  },
+  "paper_git_head": "ae4cd53b795943878bcf135634f62432b7e2b922",
+  "git_index_sha256": "1d0b3404f68e4158bf8257888e970fdd760cb62149eae449ba912bebe2850dd4",
+  "evidence_source_commit": "395234ebcce2269a71bfcfc6bff5bcdf14ce0086"
+}

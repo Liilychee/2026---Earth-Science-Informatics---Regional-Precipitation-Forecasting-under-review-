@@ -1,0 +1,39 @@
+{
+  "build_order": [
+    "Supplementary",
+    "manuscript",
+    "Response letter"
+  ],
+  "documents": {
+    "Supplementary": {
+      "pdf_sha256": "88d0f52ad0b24e3411c054b7ee866d3e1fb479f77e192b9d35f2a52153e1ced8",
+      "pages": 57,
+      "undefined": 0,
+      "multiply_defined": 0,
+      "overfull_hbox": 0
+    },
+    "manuscript": {
+      "pdf_sha256": "328cc82506bb98887b9092cf1582350ae7bb2b6fb826ef18beb386cfa57189ed",
+      "pages": 98,
+      "undefined": 0,
+      "multiply_defined": 0,
+      "overfull_hbox": 0
+    },
+    "Response letter": {
+      "pdf_sha256": "fae7e1f1fada667b7972540e539018f50d82bef68d2d87bf6fe290a83b2ca15c",
+      "pages": 81,
+      "undefined": 0,
+      "multiply_defined": 0,
+      "overfull_hbox": 0
+    }
+  },
+  "render_dpi": 144,
+  "rendered": [
+    "Response_letter-60.png",
+    "Response_letter-61.png",
+    "Response_letter-62.png"
+  ],
+  "manuscript_and_supplementary": "unchanged sources; latexmk reported up to date",
+  "visual_review": "reply pp60-62: red response with five headed parts, blue location box and four verbatim EvidenceBoxes; no unresolved references or clipping",
+  "response_letter_pages": "80 -> 81"
+}

@@ -1,0 +1,19 @@
+{
+  "base_commit": "422fa74186a13f16c48a7e30d397715493eb5d2f",
+  "patch_exact": true,
+  "patches_tested": {
+    "R3S32a_LOCAL.patch": "git apply",
+    "R3S32a_PORTABLE.patch": "git apply and BSD patch -p1"
+  },
+  "source_files": [
+    "Response letter.tex"
+  ],
+  "before_sha256": {
+    "Response letter.tex": "9455a835245b18777f6b182da14a324e24f996b64cb85e155420289c0dba56b7"
+  },
+  "reconstructed_sha256": {
+    "Response letter.tex": "1662a558fc994ae40a2aaab37e2aaa1bb2dbe116c57a10936fa79e413b224384"
+  },
+  "reconstruction_location": "scratch copy of before/ file only",
+  "root_untouched": true
+}
