@@ -1,0 +1,27 @@
+{
+  "fixed_rows": 54,
+  "fixed_thresholds": 6,
+  "tuned_rows": 45,
+  "tuned_thresholds": 5,
+  "methods_per_threshold": 9,
+  "learning_models": 6,
+  "baselines": 3,
+  "high_fixed_CSI_differences_negative": 24,
+  "high_fixed_pointwise_upper_bounds_negative": 24,
+  "not_holm_inference": true,
+  "corrected_1mm_FAR_range": [
+    0.8586387434554974,
+    0.9163763066202091
+  ],
+  "max_FAR_model": "Transformer",
+  "supplied_0913_is_not_the_six_model_upper_bound": true,
+  "stored_count_formula_checks": 99,
+  "cell_fields": 190,
+  "five_seed_architectures": 2,
+  "existing_quantiles_rounded_6dp": true,
+  "climatology_lower_boundary_thresholds": [
+    "wet>=0.1",
+    "Q90",
+    "Q95"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "old_excerpts_unchanged": 115,
+  "new_exact_excerpts": 3,
+  "total_matched": 118,
+  "match_rate_percent": 100,
+  "manuscript_unchanged": true,
+  "supplementary_and_S1_S50_unchanged": true,
+  "table5_and_all_figures_unchanged": true,
+  "other_responses_unchanged": true,
+  "protected_files": 706,
+  "original_comment_exact": true,
+  "refs_resolved": true,
+  "cell_fields": 190,
+  "fixed_table_rows": 54,
+  "tuned_table_rows": 45,
+  "corrected_six_model_FAR_range": "0.859--0.916",
+  "no_new_holm_or_climatology_intervals": true,
+  "m9_overall_not_closed": true,
+  "R2_m2_closed_record_unchanged": true,
+  "next_minor_not_started": true,
+  "local_only": true
+}

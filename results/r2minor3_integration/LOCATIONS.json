@@ -1,0 +1,36 @@
+{
+  "Response letter.tex": [
+    {
+      "anchor": "% Review ID: R2 m3",
+      "line": 1008
+    },
+    {
+      "anchor": "\\AuthorResponse{We have expanded the event-detection",
+      "line": 1014
+    },
+    {
+      "anchor": "\\EvidenceBox{Existing fixed-rule results",
+      "line": 1028
+    },
+    {
+      "anchor": "\\EvidenceBox{Existing validation-selected results",
+      "line": 1032
+    },
+    {
+      "anchor": "\\EvidenceBox{Existing 1.0 mm",
+      "line": 1036
+    }
+  ],
+  "ESI_\u5ba1\u7a3f\u610f\u89c1\u5206\u7c7b_\u4e25\u91cd\u7a0b\u5ea6\u6392\u5e8f_35\u9879.md": [
+    {
+      "anchor": "**R2-m3\u5c40\u90e8\u6b63\u5f0f\u6574\u5408",
+      "line": 2434
+    }
+  ],
+  "FINAL_REVISION_CHECKLIST.md": [
+    {
+      "anchor": "### R2-m3 / \u4efb\u52a112\u5c40\u90e8",
+      "line": 525
+    }
+  ]
+}

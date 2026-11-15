@@ -1,0 +1,36 @@
+{
+  "n_train": 18404,
+  "n_val": 3939,
+  "candidate_probabilities": 300,
+  "unique_values": 27,
+  "min": 0.10178969641460554,
+  "max": 0.16851748195847768,
+  "rows": [
+    {
+      "threshold": "wet>=0.1",
+      "saved_cutoff": 0.10178969641460951,
+      "boundary": "lower"
+    },
+    {
+      "threshold": "Q90",
+      "saved_cutoff": 0.10178969641460951,
+      "boundary": "lower"
+    },
+    {
+      "threshold": "Q95",
+      "saved_cutoff": 0.10178969641460951,
+      "boundary": "lower"
+    },
+    {
+      "threshold": "Q97.5",
+      "saved_cutoff": 0.11063106601368172,
+      "boundary": "interior"
+    },
+    {
+      "threshold": "1.0",
+      "saved_cutoff": 0.11063106601368172,
+      "boundary": "interior"
+    }
+  ],
+  "scope": "No new search/score computation; rebuild candidate values only to locate archived selected cutoffs."
+}

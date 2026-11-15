@@ -1,0 +1,1522 @@
+[
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 2,
+    "field": "thr_mm_h",
+    "raw": "0.1",
+    "display": "0.100000",
+    "context": "event intensity and event count"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 2,
+    "field": "N_events_test",
+    "raw": "854",
+    "display": "854",
+    "context": "event count"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 11,
+    "field": "thr_mm_h",
+    "raw": "0.295783996",
+    "display": "0.295784",
+    "context": "event intensity and event count"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 11,
+    "field": "N_events_test",
+    "raw": "463",
+    "display": "463",
+    "context": "event count"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 20,
+    "field": "thr_mm_h",
+    "raw": "0.574048041",
+    "display": "0.574048",
+    "context": "event intensity and event count"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 20,
+    "field": "N_events_test",
+    "raw": "238",
+    "display": "238",
+    "context": "event count"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 29,
+    "field": "thr_mm_h",
+    "raw": "0.9321694997",
+    "display": "0.932169",
+    "context": "event intensity and event count"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 29,
+    "field": "N_events_test",
+    "raw": "106",
+    "display": "106",
+    "context": "event count"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 38,
+    "field": "thr_mm_h",
+    "raw": "0.5",
+    "display": "0.500000",
+    "context": "event intensity and event count"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 38,
+    "field": "N_events_test",
+    "raw": "288",
+    "display": "288",
+    "context": "event count"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 47,
+    "field": "thr_mm_h",
+    "raw": "1",
+    "display": "1.000000",
+    "context": "event intensity and event count"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 47,
+    "field": "N_events_test",
+    "raw": "91",
+    "display": "91",
+    "context": "event count"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 11,
+    "field": "thr_mm",
+    "raw": "0.29578399653680015",
+    "display": "0.295784",
+    "context": "independently stored tuned threshold"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 20,
+    "field": "thr_mm",
+    "raw": "0.5740480454979993",
+    "display": "0.574048",
+    "context": "independently stored tuned threshold"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 29,
+    "field": "thr_mm",
+    "raw": "0.9321694348199979",
+    "display": "0.932169",
+    "context": "independently stored tuned threshold"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 14,
+    "field": "dCSI",
+    "raw": "-0.0681240106",
+    "display": "-0.0681",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 14,
+    "field": "CI_low",
+    "raw": "-0.1131164675",
+    "display": "-0.1131",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 14,
+    "field": "CI_high",
+    "raw": "-0.0219449515",
+    "display": "-0.0219",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 15,
+    "field": "dCSI",
+    "raw": "-0.1345718804",
+    "display": "-0.1346",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 15,
+    "field": "CI_low",
+    "raw": "-0.1744754292",
+    "display": "-0.1745",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 15,
+    "field": "CI_high",
+    "raw": "-0.0957903624",
+    "display": "-0.0958",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 16,
+    "field": "dCSI",
+    "raw": "-0.1387559809",
+    "display": "-0.1388",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 16,
+    "field": "CI_low",
+    "raw": "-0.1768889297",
+    "display": "-0.1769",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 16,
+    "field": "CI_high",
+    "raw": "-0.1012041106",
+    "display": "-0.1012",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 17,
+    "field": "dCSI",
+    "raw": "-0.1345543002",
+    "display": "-0.1346",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 17,
+    "field": "CI_low",
+    "raw": "-0.1711429009",
+    "display": "-0.1711",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 17,
+    "field": "CI_high",
+    "raw": "-0.09803530004",
+    "display": "-0.0980",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 18,
+    "field": "dCSI",
+    "raw": "-0.1387559809",
+    "display": "-0.1388",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 18,
+    "field": "CI_low",
+    "raw": "-0.1768889297",
+    "display": "-0.1769",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 18,
+    "field": "CI_high",
+    "raw": "-0.1012041106",
+    "display": "-0.1012",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 19,
+    "field": "dCSI",
+    "raw": "-0.1387559809",
+    "display": "-0.1388",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 19,
+    "field": "CI_low",
+    "raw": "-0.1768889297",
+    "display": "-0.1769",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 19,
+    "field": "CI_high",
+    "raw": "-0.1012041106",
+    "display": "-0.1012",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 20,
+    "field": "dCSI",
+    "raw": "-0.06679633759",
+    "display": "-0.0668",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 20,
+    "field": "CI_low",
+    "raw": "-0.09679783689",
+    "display": "-0.0968",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 20,
+    "field": "CI_high",
+    "raw": "-0.03760026315",
+    "display": "-0.0376",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 21,
+    "field": "dCSI",
+    "raw": "-0.07614213198",
+    "display": "-0.0761",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 21,
+    "field": "CI_low",
+    "raw": "-0.1078497615",
+    "display": "-0.1078",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 21,
+    "field": "CI_high",
+    "raw": "-0.04430379747",
+    "display": "-0.0443",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 22,
+    "field": "dCSI",
+    "raw": "-0.07614213198",
+    "display": "-0.0761",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 22,
+    "field": "CI_low",
+    "raw": "-0.1078497615",
+    "display": "-0.1078",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 22,
+    "field": "CI_high",
+    "raw": "-0.04430379747",
+    "display": "-0.0443",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 23,
+    "field": "dCSI",
+    "raw": "-0.07614213198",
+    "display": "-0.0761",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 23,
+    "field": "CI_low",
+    "raw": "-0.1078497615",
+    "display": "-0.1078",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 23,
+    "field": "CI_high",
+    "raw": "-0.04430379747",
+    "display": "-0.0443",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 24,
+    "field": "dCSI",
+    "raw": "-0.07614213198",
+    "display": "-0.0761",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 24,
+    "field": "CI_low",
+    "raw": "-0.1078497615",
+    "display": "-0.1078",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 24,
+    "field": "CI_high",
+    "raw": "-0.04430379747",
+    "display": "-0.0443",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 25,
+    "field": "dCSI",
+    "raw": "-0.07614213198",
+    "display": "-0.0761",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 25,
+    "field": "CI_low",
+    "raw": "-0.1078497615",
+    "display": "-0.1078",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 25,
+    "field": "CI_high",
+    "raw": "-0.04430379747",
+    "display": "-0.0443",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 26,
+    "field": "dCSI",
+    "raw": "-0.0533158465",
+    "display": "-0.0533",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 26,
+    "field": "CI_low",
+    "raw": "-0.09489475174",
+    "display": "-0.0949",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 26,
+    "field": "CI_high",
+    "raw": "-0.01180737151",
+    "display": "-0.0118",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 27,
+    "field": "dCSI",
+    "raw": "-0.1521987994",
+    "display": "-0.1522",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 27,
+    "field": "CI_low",
+    "raw": "-0.1912126707",
+    "display": "-0.1912",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 27,
+    "field": "CI_high",
+    "raw": "-0.1129592144",
+    "display": "-0.1130",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 28,
+    "field": "dCSI",
+    "raw": "-0.1659919028",
+    "display": "-0.1660",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 28,
+    "field": "CI_low",
+    "raw": "-0.2006886387",
+    "display": "-0.2007",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 28,
+    "field": "CI_high",
+    "raw": "-0.1303381674",
+    "display": "-0.1303",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 29,
+    "field": "dCSI",
+    "raw": "-0.1452306572",
+    "display": "-0.1452",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 29,
+    "field": "CI_low",
+    "raw": "-0.1793266483",
+    "display": "-0.1793",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 29,
+    "field": "CI_high",
+    "raw": "-0.1094965624",
+    "display": "-0.1095",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 30,
+    "field": "dCSI",
+    "raw": "-0.1659919028",
+    "display": "-0.1660",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 30,
+    "field": "CI_low",
+    "raw": "-0.2006886387",
+    "display": "-0.2007",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 30,
+    "field": "CI_high",
+    "raw": "-0.1303381674",
+    "display": "-0.1303",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 31,
+    "field": "dCSI",
+    "raw": "-0.1659919028",
+    "display": "-0.1660",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 31,
+    "field": "CI_low",
+    "raw": "-0.2006886387",
+    "display": "-0.2007",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 31,
+    "field": "CI_high",
+    "raw": "-0.1303381674",
+    "display": "-0.1303",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 32,
+    "field": "dCSI",
+    "raw": "-0.04715052389",
+    "display": "-0.0472",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 32,
+    "field": "CI_low",
+    "raw": "-0.0790706228",
+    "display": "-0.0791",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 32,
+    "field": "CI_high",
+    "raw": "-0.01936590437",
+    "display": "-0.0194",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 33,
+    "field": "dCSI",
+    "raw": "-0.05813953488",
+    "display": "-0.0581",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 33,
+    "field": "CI_low",
+    "raw": "-0.09357182018",
+    "display": "-0.0936",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 33,
+    "field": "CI_high",
+    "raw": "-0.02468882817",
+    "display": "-0.0247",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 34,
+    "field": "dCSI",
+    "raw": "-0.05813953488",
+    "display": "-0.0581",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 34,
+    "field": "CI_low",
+    "raw": "-0.09357182018",
+    "display": "-0.0936",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 34,
+    "field": "CI_high",
+    "raw": "-0.02468882817",
+    "display": "-0.0247",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 35,
+    "field": "dCSI",
+    "raw": "-0.05813953488",
+    "display": "-0.0581",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 35,
+    "field": "CI_low",
+    "raw": "-0.09357182018",
+    "display": "-0.0936",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 35,
+    "field": "CI_high",
+    "raw": "-0.02468882817",
+    "display": "-0.0247",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 36,
+    "field": "dCSI",
+    "raw": "-0.05813953488",
+    "display": "-0.0581",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 36,
+    "field": "CI_low",
+    "raw": "-0.09357182018",
+    "display": "-0.0936",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 36,
+    "field": "CI_high",
+    "raw": "-0.02468882817",
+    "display": "-0.0247",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 37,
+    "field": "dCSI",
+    "raw": "-0.05813953488",
+    "display": "-0.0581",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 37,
+    "field": "CI_low",
+    "raw": "-0.09357182018",
+    "display": "-0.0936",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_paired.csv",
+    "csv_line": 37,
+    "field": "CI_high",
+    "raw": "-0.02468882817",
+    "display": "-0.0247",
+    "context": "24 fixed-rule differences / existing exact excerpt support"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 47,
+    "field": "Hits",
+    "raw": "1",
+    "display": "1",
+    "context": "1.0 fixed event counts"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 47,
+    "field": "Forecast_events",
+    "raw": "1",
+    "display": "1",
+    "context": "1.0 fixed event counts"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 47,
+    "field": "N_events_test",
+    "raw": "91",
+    "display": "91",
+    "context": "1.0 fixed event counts"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 48,
+    "field": "Hits",
+    "raw": "0",
+    "display": "0",
+    "context": "1.0 fixed event counts"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 48,
+    "field": "Forecast_events",
+    "raw": "0",
+    "display": "0",
+    "context": "1.0 fixed event counts"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 48,
+    "field": "N_events_test",
+    "raw": "91",
+    "display": "91",
+    "context": "1.0 fixed event counts"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 49,
+    "field": "Hits",
+    "raw": "0",
+    "display": "0",
+    "context": "1.0 fixed event counts"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 49,
+    "field": "Forecast_events",
+    "raw": "0",
+    "display": "0",
+    "context": "1.0 fixed event counts"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 49,
+    "field": "N_events_test",
+    "raw": "91",
+    "display": "91",
+    "context": "1.0 fixed event counts"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 50,
+    "field": "Hits",
+    "raw": "0",
+    "display": "0",
+    "context": "1.0 fixed event counts"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 50,
+    "field": "Forecast_events",
+    "raw": "0",
+    "display": "0",
+    "context": "1.0 fixed event counts"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 50,
+    "field": "N_events_test",
+    "raw": "91",
+    "display": "91",
+    "context": "1.0 fixed event counts"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 51,
+    "field": "Hits",
+    "raw": "0",
+    "display": "0",
+    "context": "1.0 fixed event counts"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 51,
+    "field": "Forecast_events",
+    "raw": "0",
+    "display": "0",
+    "context": "1.0 fixed event counts"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 51,
+    "field": "N_events_test",
+    "raw": "91",
+    "display": "91",
+    "context": "1.0 fixed event counts"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 52,
+    "field": "Hits",
+    "raw": "0",
+    "display": "0",
+    "context": "1.0 fixed event counts"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 52,
+    "field": "Forecast_events",
+    "raw": "0",
+    "display": "0",
+    "context": "1.0 fixed event counts"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 52,
+    "field": "N_events_test",
+    "raw": "91",
+    "display": "91",
+    "context": "1.0 fixed event counts"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 38,
+    "field": "FAR",
+    "raw": "0.8586387434554974",
+    "display": "0.859",
+    "context": "full six-model 1.0 FAR lower"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 39,
+    "field": "FAR",
+    "raw": "0.9163763066202091",
+    "display": "0.916",
+    "context": "full six-model 1.0 FAR upper"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 38,
+    "field": "POD",
+    "raw": "0.2967032967032967",
+    "display": "0.296703",
+    "context": "1.0 six-model diagnostic"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 38,
+    "field": "FAR",
+    "raw": "0.8586387434554974",
+    "display": "0.858639",
+    "context": "1.0 six-model diagnostic"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 38,
+    "field": "AUC",
+    "raw": "0.8679805122112815",
+    "display": "0.867981",
+    "context": "1.0 six-model diagnostic"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 39,
+    "field": "POD",
+    "raw": "0.26373626373626374",
+    "display": "0.263736",
+    "context": "1.0 six-model diagnostic"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 39,
+    "field": "FAR",
+    "raw": "0.9163763066202091",
+    "display": "0.916376",
+    "context": "1.0 six-model diagnostic"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 39,
+    "field": "AUC",
+    "raw": "0.8216398985629755",
+    "display": "0.821640",
+    "context": "1.0 six-model diagnostic"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 40,
+    "field": "POD",
+    "raw": "0.46153846153846156",
+    "display": "0.461538",
+    "context": "1.0 six-model diagnostic"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 40,
+    "field": "FAR",
+    "raw": "0.9032258064516129",
+    "display": "0.903226",
+    "context": "1.0 six-model diagnostic"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 40,
+    "field": "AUC",
+    "raw": "0.8480443672751365",
+    "display": "0.848044",
+    "context": "1.0 six-model diagnostic"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 41,
+    "field": "POD",
+    "raw": "0.5494505494505495",
+    "display": "0.549451",
+    "context": "1.0 six-model diagnostic"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 41,
+    "field": "FAR",
+    "raw": "0.8871331828442438",
+    "display": "0.887133",
+    "context": "1.0 six-model diagnostic"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 41,
+    "field": "AUC",
+    "raw": "0.8608410819949281",
+    "display": "0.860841",
+    "context": "1.0 six-model diagnostic"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 42,
+    "field": "POD",
+    "raw": "0.6153846153846154",
+    "display": "0.615385",
+    "context": "1.0 six-model diagnostic"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 42,
+    "field": "FAR",
+    "raw": "0.9093851132686084",
+    "display": "0.909385",
+    "context": "1.0 six-model diagnostic"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 42,
+    "field": "AUC",
+    "raw": "0.8531362089054396",
+    "display": "0.853136",
+    "context": "1.0 six-model diagnostic"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 43,
+    "field": "POD",
+    "raw": "0.6043956043956044",
+    "display": "0.604396",
+    "context": "1.0 six-model diagnostic"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 43,
+    "field": "FAR",
+    "raw": "0.9128367670364501",
+    "display": "0.912837",
+    "context": "1.0 six-model diagnostic"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 43,
+    "field": "AUC",
+    "raw": "0.8456797879874803",
+    "display": "0.845680",
+    "context": "1.0 six-model diagnostic"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 21,
+    "field": "CSI",
+    "raw": "0.13333333333333333",
+    "display": "0.133",
+    "context": "tuned Q95 CSI"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 26,
+    "field": "CSI",
+    "raw": "0.156",
+    "display": "0.156",
+    "context": "tuned Q95 CSI"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 26,
+    "field": "CSI",
+    "raw": "0.1387559809",
+    "display": "0.139",
+    "context": "existing fixed-rule excerpt"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 20,
+    "field": "CSI",
+    "raw": "0.07063197026",
+    "display": "0.071",
+    "context": "existing fixed-rule excerpt"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 35,
+    "field": "CSI",
+    "raw": "0.07614213198",
+    "display": "0.076",
+    "context": "existing fixed-rule excerpt"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 29,
+    "field": "CSI",
+    "raw": "0.009345794393",
+    "display": "0.009",
+    "context": "existing fixed-rule excerpt"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 44,
+    "field": "CSI",
+    "raw": "0.1659919028",
+    "display": "0.166",
+    "context": "existing fixed-rule excerpt"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 38,
+    "field": "CSI",
+    "raw": "0.1126760563",
+    "display": "0.113",
+    "context": "existing fixed-rule excerpt"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 53,
+    "field": "CSI",
+    "raw": "0.05813953488",
+    "display": "0.058",
+    "context": "existing fixed-rule excerpt"
+  },
+  {
+    "file": "r2m4_fixed_event_scores.csv",
+    "csv_line": 47,
+    "field": "CSI",
+    "raw": "0.01098901099",
+    "display": "0.011",
+    "context": "existing fixed-rule excerpt"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 26,
+    "field": "AUC",
+    "raw": "0.7470215862621731",
+    "display": "0.747",
+    "context": "existing AUC excerpt"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 44,
+    "field": "AUC",
+    "raw": "0.7317130634438327",
+    "display": "0.732",
+    "context": "existing AUC excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 79,
+    "field": "A_minus_B",
+    "raw": "0.034763052208835354",
+    "display": "0.0348",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 79,
+    "field": "CI_low",
+    "raw": "0.0014733053674803372",
+    "display": "0.0015",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 79,
+    "field": "CI_high",
+    "raw": "0.07157585550536977",
+    "display": "0.0716",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 85,
+    "field": "A_minus_B",
+    "raw": "-0.02266666666666667",
+    "display": "-0.0227",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 85,
+    "field": "CI_low",
+    "raw": "-0.05281635653949933",
+    "display": "-0.0528",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 85,
+    "field": "CI_high",
+    "raw": "0.008779412719388995",
+    "display": "0.0088",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 91,
+    "field": "A_minus_B",
+    "raw": "0.0314062968515742",
+    "display": "0.0314",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 91,
+    "field": "CI_low",
+    "raw": "0.014474050461818906",
+    "display": "0.0145",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 91,
+    "field": "CI_high",
+    "raw": "0.048930583640163",
+    "display": "0.0489",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 97,
+    "field": "A_minus_B",
+    "raw": "0.026291666666666658",
+    "display": "0.0263",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 97,
+    "field": "CI_low",
+    "raw": "0.004089845507241762",
+    "display": "0.0041",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 97,
+    "field": "CI_high",
+    "raw": "0.05035024227272669",
+    "display": "0.0504",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 103,
+    "field": "A_minus_B",
+    "raw": "0.0293720050441362",
+    "display": "0.0294",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 103,
+    "field": "CI_low",
+    "raw": "0.012304538854996317",
+    "display": "0.0123",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 103,
+    "field": "CI_high",
+    "raw": "0.04725783869869043",
+    "display": "0.0473",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 109,
+    "field": "A_minus_B",
+    "raw": "0.02929411764705883",
+    "display": "0.0293",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 109,
+    "field": "CI_low",
+    "raw": "0.009094222585277112",
+    "display": "0.0091",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 109,
+    "field": "CI_high",
+    "raw": "0.051231834964016246",
+    "display": "0.0512",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 21,
+    "field": "POD",
+    "raw": "0.2857142857142857",
+    "display": "0.29",
+    "context": "existing descriptive rounded range"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 24,
+    "field": "POD",
+    "raw": "0.6176470588235294",
+    "display": "0.62",
+    "context": "existing descriptive rounded range"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 20,
+    "field": "FAR",
+    "raw": "0.7323943661971831",
+    "display": "0.73",
+    "context": "existing descriptive rounded range"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 21,
+    "field": "FAR",
+    "raw": "0.8",
+    "display": "0.80",
+    "context": "existing descriptive rounded range"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 21,
+    "field": "AUC",
+    "raw": "0.7982455343661377",
+    "display": "0.80",
+    "context": "existing descriptive rounded range"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 20,
+    "field": "AUC",
+    "raw": "0.8477540705555392",
+    "display": "0.85",
+    "context": "existing descriptive rounded range"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 155,
+    "field": "A_minus_B",
+    "raw": "0.039999999999999994",
+    "display": "0.0400",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 155,
+    "field": "CI_low",
+    "raw": "0.006868268046254029",
+    "display": "0.0069",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 155,
+    "field": "CI_high",
+    "raw": "0.07353710154643958",
+    "display": "0.0735",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 161,
+    "field": "A_minus_B",
+    "raw": "0.00191425722831505",
+    "display": "0.0019",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 161,
+    "field": "CI_low",
+    "raw": "-0.02629327498858232",
+    "display": "-0.0263",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 161,
+    "field": "CI_high",
+    "raw": "0.0331999186212353",
+    "display": "0.0332",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 167,
+    "field": "A_minus_B",
+    "raw": "0.021074168797953957",
+    "display": "0.0211",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 167,
+    "field": "CI_low",
+    "raw": "0.005193643397089694",
+    "display": "0.0052",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 167,
+    "field": "CI_high",
+    "raw": "0.03713863883913446",
+    "display": "0.0371",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 173,
+    "field": "A_minus_B",
+    "raw": "0.03742343218279047",
+    "display": "0.0374",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 173,
+    "field": "CI_low",
+    "raw": "0.015963742324873024",
+    "display": "0.0160",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 173,
+    "field": "CI_high",
+    "raw": "0.05950872551622807",
+    "display": "0.0595",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 179,
+    "field": "A_minus_B",
+    "raw": "0.019875686875056295",
+    "display": "0.0199",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 179,
+    "field": "CI_low",
+    "raw": "0.0020465963198342484",
+    "display": "0.0020",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 179,
+    "field": "CI_high",
+    "raw": "0.03768776842260154",
+    "display": "0.0377",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 185,
+    "field": "A_minus_B",
+    "raw": "0.016576417673516183",
+    "display": "0.0166",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 185,
+    "field": "CI_low",
+    "raw": "-0.0013511900824339895",
+    "display": "-0.0014",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_paired.csv",
+    "csv_line": 185,
+    "field": "CI_high",
+    "raw": "0.03589062671587747",
+    "display": "0.0359",
+    "context": "existing validation-selected excerpt"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 39,
+    "field": "POD",
+    "raw": "0.26373626373626374",
+    "display": "0.26",
+    "context": "existing descriptive rounded range"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 42,
+    "field": "POD",
+    "raw": "0.6153846153846154",
+    "display": "0.62",
+    "context": "existing descriptive rounded range"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 38,
+    "field": "FAR",
+    "raw": "0.8586387434554974",
+    "display": "0.86",
+    "context": "existing descriptive rounded range"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 39,
+    "field": "FAR",
+    "raw": "0.9163763066202091",
+    "display": "0.92",
+    "context": "existing descriptive rounded range"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 39,
+    "field": "AUC",
+    "raw": "0.8216398985629755",
+    "display": "0.82",
+    "context": "existing descriptive rounded range"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 38,
+    "field": "AUC",
+    "raw": "0.8679805122112815",
+    "display": "0.87",
+    "context": "existing descriptive rounded range"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 10,
+    "field": "cutoff_from_val",
+    "raw": "0.10178969641460951",
+    "display": "0.101790",
+    "context": "climatology candidate-space boundary"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 19,
+    "field": "cutoff_from_val",
+    "raw": "0.10178969641460951",
+    "display": "0.101790",
+    "context": "climatology candidate-space boundary"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 28,
+    "field": "cutoff_from_val",
+    "raw": "0.10178969641460951",
+    "display": "0.101790",
+    "context": "climatology candidate-space boundary"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 37,
+    "field": "cutoff_from_val",
+    "raw": "0.11063106601368172",
+    "display": "0.110631",
+    "context": "climatology candidate-space boundary"
+  },
+  {
+    "file": "q05e_event_scores.csv",
+    "csv_line": 46,
+    "field": "cutoff_from_val",
+    "raw": "0.11063106601368172",
+    "display": "0.110631",
+    "context": "climatology candidate-space boundary"
+  }
+]

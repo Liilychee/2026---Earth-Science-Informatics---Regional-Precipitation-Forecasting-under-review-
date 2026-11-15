@@ -1,0 +1,26 @@
+{
+  "sec:event_detection": {
+    "number": "4.3.2",
+    "page": "59"
+  },
+  "fig:r2m4_event_csi": {
+    "number": "5",
+    "page": "60"
+  },
+  "stab:r2m4_fixed_events": {
+    "number": "S28",
+    "page": "23"
+  },
+  "stab:r2m4_tuned_events": {
+    "number": "S29",
+    "page": "26"
+  },
+  "stab:r2m4_seed_scores": {
+    "number": "S30",
+    "page": "29"
+  },
+  "stab:r2m4_ensemble_events": {
+    "number": "S31",
+    "page": "30"
+  }
+}

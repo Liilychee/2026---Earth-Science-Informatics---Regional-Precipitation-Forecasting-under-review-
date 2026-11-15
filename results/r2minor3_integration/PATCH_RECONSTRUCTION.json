@@ -1,0 +1,15 @@
+{
+  "base_commit": "7e2939aecfac856d422fd95003e0d48e834a7252",
+  "patch_exact": true,
+  "source_files": [
+    "Response letter.tex",
+    "ESI_\u5ba1\u7a3f\u610f\u89c1\u5206\u7c7b_\u4e25\u91cd\u7a0b\u5ea6\u6392\u5e8f_35\u9879.md",
+    "FINAL_REVISION_CHECKLIST.md"
+  ],
+  "reconstructed_sha256": {
+    "Response letter.tex": "93c2fdc28e8aef10a9a575c89cf676ce68a7ee2e5d4658be12ad937656fdd325",
+    "ESI_\u5ba1\u7a3f\u610f\u89c1\u5206\u7c7b_\u4e25\u91cd\u7a0b\u5ea6\u6392\u5e8f_35\u9879.md": "fdc8dadd4051fbc32888b48942376f92f46a0509d7573ddb8c570f11d78ced61",
+    "FINAL_REVISION_CHECKLIST.md": "1868fd90b0b67fafccdedd84817e1ae18d5b20d79c07fe9db29e72ef479fdf13"
+  },
+  "root_untouched": true
+}
