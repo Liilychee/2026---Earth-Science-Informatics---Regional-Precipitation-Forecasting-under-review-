@@ -1,0 +1,12 @@
+{
+  "base_commit": "465051bb16b33d511087bfd473b04dc81f590aad",
+  "scope": "new directory results/r3sec32b_response_refinement only; existing R3-05 (r3sec32b_integration) and R3-06 (r3sec32c_integration) archives untouched",
+  "worktree": "/private/tmp/esi-r3sec32b-refinement-sync (branch claude/r3sec32b-refinement-sync)",
+  "not_archived": ["full-text base files", "before/ snapshots", "PDFs", "literature PDFs"],
+  "R3_05_status": "CLOSED (unchanged)",
+  "R3_06_status": "CLOSED (unchanged)",
+  "patch_files_fully_obtainable_from_remote": "YES",
+  "patch_chain_rebuildable_with_correct_external_bases": "YES (verified pre-push; remote readback recorded locally)",
+  "full_repository_only_reconstruction": "NO",
+  "executed_by": "Claude Code"
+}

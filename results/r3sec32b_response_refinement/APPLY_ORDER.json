@@ -1,0 +1,38 @@
+{
+ "external_base_files_not_archived": {
+  "manuscript.tex": "af83774523d7ad16ba6a52108beab842be7c01dcdf75182d738a546c5c200aed",
+  "Response letter.tex": "1662a558fc994ae40a2aaab37e2aaa1bb2dbe116c57a10936fa79e413b224384",
+  "Supplementary.tex": "f60411408b4920a35a463a584594e0177dede7cf18c16ec5f3d5196177507cd8",
+  "sn-bibliography.bib": "99515f9533823b7815ddbfcd28d57ed39590e79452c413cd88837c40dc996b03"
+ },
+ "external_base_identity": "full-text paper sources immediately before R3-05 (supplied externally; must match these SHA-256)",
+ "steps": [
+  {
+   "step": 1,
+   "patch": "results/r3sec32b_integration/R3S32b_PORTABLE.patch",
+   "result": {
+    "manuscript.tex": "6d74dfb67e0432ea5e3e95db603b03ba3f73c9c860f78a7a6501328ee80dce7f",
+    "Response letter.tex": "44f8908601f8788ee32c5222aa5be97cc6d1ab15926e7b19bc03a258cba0ac24",
+    "sn-bibliography.bib": "719bfb0ecb4538b864e67b316a597bd19be2aaba23465afab632770898e6d572"
+   }
+  },
+  {
+   "step": 2,
+   "patch": "results/r3sec32b_response_refinement/R3S32b_REFINEMENT_PORTABLE.patch",
+   "result": {
+    "Response letter.tex": "e14c0f89dd0bbaaad7e058b6e3b7898d96c6985dc752617119e55e39f8d1d8cb"
+   }
+  },
+  {
+   "step": 3,
+   "patch": "results/r3sec32c_integration/R3S32c_PORTABLE.patch",
+   "result": {
+    "manuscript.tex": "78b8ea23cac5dac028073b5465616ae95b94c24f8a4870e9762358cf2ee56273",
+    "Supplementary.tex": "2247f9b576154bc56f9a7aebb0cb9865e5d1efb6d645ac07ef90bc937e4aec89",
+    "Response letter.tex": "9cb7a2b2270152fcb61dbbb88d6ea254570e149fb9673c98869417c1ecac6f09"
+   }
+  }
+ ],
+ "supersedes": "results/r3sec32c_integration/PATCH_BASE_DEPENDENCY.json step 2 (local-only delta) for the Response letter; that archived record is left unchanged",
+ "tools": "git apply or BSD patch -p1"
+}

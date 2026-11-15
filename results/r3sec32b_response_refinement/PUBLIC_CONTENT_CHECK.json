@@ -1,0 +1,25 @@
+{
+ "scanned": [
+  "patches",
+  "README.md",
+  "RECONSTRUCTION_LIMITATIONS.md",
+  "all JSON records (hashes/paths only)"
+ ],
+ "pattern_hits": {
+  "email": 0,
+  "github_token": 0,
+  "aws_key": 0,
+  "private_key": 0,
+  "user_path": 0,
+  "password": 0
+ },
+ "patch_content": "one hunk: R3 Section 3.2(b) reviewer question (context), closed AuthorResponse (removed; already public in R3S32b_PORTABLE.patch), refined AuthorResponse (added), ManuscriptChange first line (context)",
+ "patch_changed_lines": 14,
+ "full_response_letter_lines": 1752,
+ "contains_full_manuscript": false,
+ "contains_full_response_letter": false,
+ "contains_supplementary": false,
+ "contains_pdf": false,
+ "contains_unrelated_review_correspondence": false,
+ "contains_credentials_or_private_data": false
+}

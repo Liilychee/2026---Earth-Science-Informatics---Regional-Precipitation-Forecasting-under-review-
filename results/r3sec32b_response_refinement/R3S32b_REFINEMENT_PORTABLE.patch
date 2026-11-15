@@ -1,0 +1,23 @@
+--- a/Response letter.tex	2026-11-15 00:00:00.000000000 +0000
++++ b/Response letter.tex	2026-11-15 00:00:00.000000000 +0000
+@@ -1157,19 +1157,7 @@
+ 
+ \ReviewerComment{b. On what basis did you choose the candidate predictors? Please justify your reasoning using references.}
+ 
+-\AuthorResponse{We thank the reviewer for this question. We have added an explanation of the candidate pool to Section~\ref{manuscript-sec:dataset}, with supporting references.
+-
+-\textbf{Source of the candidates.} The eleven candidate predictors were the non-target meteorological variables available in the original ERA5 single-level extract for the study domain. We do not claim that they were originally chosen on the basis of specific references. The references added below support the use of comparable meteorological inputs in rainfall prediction; they are not presented as evidence that each of the eleven variables is informative.
+-
+-\textbf{Grouping of the candidates.} The revised text groups the candidates by the aspect of the atmospheric and surface state that they describe: near-surface temperature and moisture conditions (t2m and d2m), wind and pressure conditions (u10, v10 and sp), cloud cover (tcc), surface radiative and moisture exchanges (ssr and e), and recent precipitation characteristics (lsp, mxtpr and mntpr).
+-
+-\textbf{Supporting references.} Previous data-driven rainfall prediction studies have considered observational analogues of temperature, dew point, wind, pressure, cloud cover and solar radiation \citep{manandhar2019data,rahman2022rainfall,gao2025applying}. These inputs were mainly station or satellite measurements rather than the corresponding ERA5 fields, and the revised text states that they are not necessarily identical to the ERA5 variables used here. ERA5 evaporation (e) is the modelled actual evaporation, which is a different ERA5 parameter from potential evaporation \citep{ecmwf_era5_documentation}; we therefore do not treat potential-evaporation inputs in previous studies as support for e.
+-
+-\textbf{Precipitation-related candidates.} The variables lsp, mxtpr and mntpr provide information about preceding-hour large-scale precipitation and the within-hour extrema of total precipitation rate \citep{ecmwf_era5_documentation}. They describe recent precipitation activity and are not presented as independent physical drivers of future precipitation. We did not identify a precipitation-forecasting study using mxtpr or mntpr as predictors, so their inclusion is not justified by direct literature precedent; the revised text describes the eleven variables as an exploratory candidate pool.
+-
+-\textbf{Selection of the final inputs.} The eleven candidates were reduced to seven (mxtpr, mntpr, lsp, tcc, sp, d2m and v10) by ranking their absolute contemporaneous Spearman correlations with total precipitation over the training period only (Sections~\ref{manuscript-sec:dataset} and~\ref{manuscript-sec:predictor_selection_results}). The difference between this contemporaneous screening and the six-hour forecast target was addressed in response to Reviewer~2 (Major Comment~3) through lead-time and rank-partial correlation diagnostics and a matched refit.
+-
+-This response adds explanatory text and references only. The candidate pool, the seven retained predictors, the models and all reported results are unchanged.}
++\AuthorResponse{We thank the reviewer for this suggestion. The eleven candidate predictors were drawn from the available ERA5 variables to represent key atmospheric conditions relevant to precipitation forecasting: temperature and moisture (t2m, d2m), wind and pressure (u10, v10, sp), cloud cover (tcc), surface energy and moisture exchanges (ssr, e), and recent precipitation activity (lsp, mxtpr, mntpr). Previous studies have considered comparable meteorological inputs for rainfall prediction \citep{manandhar2019data,rahman2022rainfall,gao2025applying}, while the ERA5 documentation defines the precipitation-related variables \citep{ecmwf_era5_documentation}. We have added this rationale and the supporting references to Section~\ref{manuscript-sec:dataset}. The final seven predictors were then retained through training-period feature screening, with additional lead-time diagnostics reported in response to Reviewer~2 (Major Comment~3).}
+ 
+ \ManuscriptChange{Section~\ref{manuscript-sec:dataset} (Dataset and Feature Selection): new text after the list of eleven candidate predictors. References: \citet{gao2025applying} added; DOI added to \citet{manandhar2019data}. Table~\ref{manuscript-tab:variables}, the candidate and retained predictor sets, the Supplementary Material and the figures are unchanged. Final page and line numbers pending full-manuscript assembly.}
+ 

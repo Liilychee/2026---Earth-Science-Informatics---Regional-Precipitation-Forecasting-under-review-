@@ -1,0 +1,12 @@
+{
+ "Response_letter_R3-05_closed_sha256": "44f8908601f8788ee32c5222aa5be97cc6d1ab15926e7b19bc03a258cba0ac24",
+ "Response_letter_R3-05_refined_sha256": "e14c0f89dd0bbaaad7e058b6e3b7898d96c6985dc752617119e55e39f8d1d8cb",
+ "Response_letter_current_after_R3-06_sha256": "9cb7a2b2270152fcb61dbbb88d6ea254570e149fb9673c98869417c1ecac6f09",
+ "AuthorResponse_3_2b_closed_sha256": "f35ca4bb633aaef058119fa16db2dedee2c0f40532d7edd179c2b107b5aab7f4",
+ "AuthorResponse_3_2b_refined_sha256": "b4652891ceb93c5d2d6746a654f3717519d33f271285a37e98a22ba99595a71d",
+ "refined_equals_current_3_2b": true,
+ "patches": {
+  "R3S32b_REFINEMENT_LOCAL.patch": "f951c02a7471c9854ea221b41c53d918e550de4d06924dac52f59237f0020151",
+  "R3S32b_REFINEMENT_PORTABLE.patch": "cfb722c28ae9d503a2ac0144e539aa25e11060491cf62fd5339d9560d8b829c7"
+ }
+}
