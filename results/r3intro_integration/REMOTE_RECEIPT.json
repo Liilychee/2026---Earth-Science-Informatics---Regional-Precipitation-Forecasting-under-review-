@@ -1,0 +1,260 @@
+{
+  "stage": "scientific_archive_remote_verified",
+  "commit": "c16f070adbe903475fe45fb5fccfd97c48b65fed",
+  "base_commit": "61bb5bdb03442191f456239d52c39129c258d566",
+  "remote_main_after_push": "c16f070adbe903475fe45fb5fccfd97c48b65fed",
+  "repository": "https://github.com/Liilychee/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-",
+  "readback_method": "fresh shallow sparse clone; git ls-tree blob comparison, manifest SHA256 of remote contents, remote PORTABLE patch reconstruction",
+  "remote_file_count": 37,
+  "all_blobs_match": true,
+  "checks": [
+    {
+      "path": "results/r3intro_integration/ARCHIVE_MANIFEST.json",
+      "sha": "3cc04c33139869a988d94773433b33c24ac47973",
+      "remote_sha": "3cc04c33139869a988d94773433b33c24ac47973",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/BASELINE_GATE.json",
+      "sha": "762ebc384d50238fec35d78fc758dec20e81ccce",
+      "remote_sha": "762ebc384d50238fec35d78fc758dec20e81ccce",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/CELL_INDEX.json",
+      "sha": "e25d1569b1a99eae6e6815368e9fcaab73e0e9d0",
+      "remote_sha": "e25d1569b1a99eae6e6815368e9fcaab73e0e9d0",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/DOCUMENT_HASHES.json",
+      "sha": "f62281ed4c64ca94d3bd9093fcaf81970a523de3",
+      "remote_sha": "f62281ed4c64ca94d3bd9093fcaf81970a523de3",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/EVIDENCE_INDEX.md",
+      "sha": "7b94071f3bf0c565eb819d86f9af7bbbfbd41066",
+      "remote_sha": "7b94071f3bf0c565eb819d86f9af7bbbfbd41066",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/EXCERPT_INDEX.json",
+      "sha": "e1d3963f7b190bd99d3e1ccf448fe69c85e70e68",
+      "remote_sha": "e1d3963f7b190bd99d3e1ccf448fe69c85e70e68",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/FINAL_REPORT.md",
+      "sha": "96b39ea9638a226bfea07f853a15701306e247b9",
+      "remote_sha": "96b39ea9638a226bfea07f853a15701306e247b9",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/GIT_SCOPE.md",
+      "sha": "937b25c07d9af3fa427a1d326bf647e93813a9dc",
+      "remote_sha": "937b25c07d9af3fa427a1d326bf647e93813a9dc",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/GIT_STATE.json",
+      "sha": "fb2cf8e957e62af92f1d512fcf4a49c27fe1e2b4",
+      "remote_sha": "fb2cf8e957e62af92f1d512fcf4a49c27fe1e2b4",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/GIT_STATUS.txt",
+      "sha": "11e1a23528791dc6d53f49e55af2004c285279c9",
+      "remote_sha": "11e1a23528791dc6d53f49e55af2004c285279c9",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/ORIGINAL_WORKTREE_GUARD.json",
+      "sha": "9801d6b5d69a226da66a3f050f01238728d2dfba",
+      "remote_sha": "9801d6b5d69a226da66a3f050f01238728d2dfba",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/PATCH_RECONSTRUCTION.json",
+      "sha": "f43d5f44ba4ae49004a12f1ef29664961f007bc3",
+      "remote_sha": "f43d5f44ba4ae49004a12f1ef29664961f007bc3",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/PDF_CHECK.json",
+      "sha": "7f9724a4202655f419b6d941cc4eaa34bfec16d7",
+      "remote_sha": "7f9724a4202655f419b6d941cc4eaa34bfec16d7",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/PROTECTED_HASHES.json",
+      "sha": "9137299f9abfbbcbe087aa57900a6bfcd9c52330",
+      "remote_sha": "9137299f9abfbbcbe087aa57900a6bfcd9c52330",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/R3intro_LOCAL.patch",
+      "sha": "51b7b288032636ebe2f5bb114a8403714ac4b842",
+      "remote_sha": "51b7b288032636ebe2f5bb114a8403714ac4b842",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/R3intro_PORTABLE.patch",
+      "sha": "28b37e24861dade72a116c72c0ca4cb2da8909fb",
+      "remote_sha": "28b37e24861dade72a116c72c0ca4cb2da8909fb",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/STATUS.md",
+      "sha": "a41d03501098d5cb6699391d6522217a513a998f",
+      "remote_sha": "a41d03501098d5cb6699391d6522217a513a998f",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/VERIFICATION.json",
+      "sha": "00ce749b8cca674ecfbec89c815cac459d63e841",
+      "remote_sha": "00ce749b8cca674ecfbec89c815cac459d63e841",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/compile_Response_letter.txt",
+      "sha": "3a3c618ab417022a95201e0d2c4e139015ee4e64",
+      "remote_sha": "3a3c618ab417022a95201e0d2c4e139015ee4e64",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/compile_Response_letter_final.txt",
+      "sha": "26d2c4442f5ed6ab4e1efd48c2ffc4513d3ed33c",
+      "remote_sha": "26d2c4442f5ed6ab4e1efd48c2ffc4513d3ed33c",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/compile_Supplementary.txt",
+      "sha": "fe2bff2ccb1fd23ff464b21ad56b0721be641293",
+      "remote_sha": "fe2bff2ccb1fd23ff464b21ad56b0721be641293",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/compile_Supplementary_final.txt",
+      "sha": "fe2bff2ccb1fd23ff464b21ad56b0721be641293",
+      "remote_sha": "fe2bff2ccb1fd23ff464b21ad56b0721be641293",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/compile_manuscript.txt",
+      "sha": "383d10951b7e713cf8e5f14cf495b99dc0278f5f",
+      "remote_sha": "383d10951b7e713cf8e5f14cf495b99dc0278f5f",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/compile_manuscript_final.txt",
+      "sha": "7e663ad0c79750ea655d620b32e3cf90c268dde6",
+      "remote_sha": "7e663ad0c79750ea655d620b32e3cf90c268dde6",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/evidence/arxiv_2202.11214.xml",
+      "sha": "f193b639634ed231925100faba3930203d4e3470",
+      "remote_sha": "f193b639634ed231925100faba3930203d4e3470",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/evidence/crossref_fuxi.json",
+      "sha": "e55dcb86b2d00f253dee13ae2da75e4b22bdc49f",
+      "remote_sha": "e55dcb86b2d00f253dee13ae2da75e4b22bdc49f",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/evidence/crossref_graphcast.json",
+      "sha": "d8b7994ed0fab7b485152751caee48cb4576c5a0",
+      "remote_sha": "d8b7994ed0fab7b485152751caee48cb4576c5a0",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/evidence/crossref_pangu_nature.json",
+      "sha": "73ba97c24632fecf8d0964863f16562c3085cffe",
+      "remote_sha": "73ba97c24632fecf8d0964863f16562c3085cffe",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/render/Response_letter-58.png",
+      "sha": "3c16702a656f859306125f3f188c23e46f5b7ce3",
+      "remote_sha": "3c16702a656f859306125f3f188c23e46f5b7ce3",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/render/Response_letter-59.png",
+      "sha": "a4102f98f786ee4801d17854751ec989bc9a311a",
+      "remote_sha": "a4102f98f786ee4801d17854751ec989bc9a311a",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/render/Response_letter-77.png",
+      "sha": "9b959c28c9f3e028cbd727efd7a0588c31d84367",
+      "remote_sha": "9b959c28c9f3e028cbd727efd7a0588c31d84367",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/render/Response_letter-78.png",
+      "sha": "9abe4ac032c652d09b6edf281c90052d4c2b8116",
+      "remote_sha": "9abe4ac032c652d09b6edf281c90052d4c2b8116",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/render/manuscript-3.png",
+      "sha": "8b4c2eac07e264f85cdf9ca313f9144a121a8b70",
+      "remote_sha": "8b4c2eac07e264f85cdf9ca313f9144a121a8b70",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/render/manuscript-90.png",
+      "sha": "285c200039d1ae7f33603fbfc62baa903ebda700",
+      "remote_sha": "285c200039d1ae7f33603fbfc62baa903ebda700",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/render/manuscript-91.png",
+      "sha": "f7e12b430aef6a6c826bfc585d01fa70ffd81d01",
+      "remote_sha": "f7e12b430aef6a6c826bfc585d01fa70ffd81d01",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/render/manuscript-92.png",
+      "sha": "77a58ad4466bde64642931cfe5cb3d2ba836864d",
+      "remote_sha": "77a58ad4466bde64642931cfe5cb3d2ba836864d",
+      "match": true
+    },
+    {
+      "path": "results/r3intro_integration/render/manuscript-94.png",
+      "sha": "1c4e9e25aff44d1e5d0ac5fbd14e449f836cae8f",
+      "remote_sha": "1c4e9e25aff44d1e5d0ac5fbd14e449f836cae8f",
+      "match": true
+    }
+  ],
+  "verification": {
+    "old_excerpts_unchanged": 120,
+    "new_exact_excerpts": 1,
+    "total_matched": 121,
+    "bib_edits": 3,
+    "citation_keys_verified": [
+      "pathak2022fourcastnet",
+      "bi2023accurate",
+      "lam2023learning",
+      "chen2023fuxi"
+    ],
+    "metadata_snapshots_match": true,
+    "remote_patch_reconstruction": true,
+    "protected_files": 831,
+    "manuscript_lines_changed": 1,
+    "supplementary_figures_closed_replies_unchanged": true,
+    "pdf_undefined_citations": 0,
+    "bibtex_warnings": 0,
+    "manuscript_pages": 98,
+    "extra_page": "Acknowledgements tail only; no blank page or overflow",
+    "original_worktree_index_PDFs_unchanged": true
+  },
+  "task29": "shared; only the R3-01 part is closed",
+  "m9_status": "SCIENTIFIC_INTEGRATION_COMPLETE — FINAL_REPOSITORY_DOCUMENTATION_PENDING",
+  "other_shared_statuses": "preserved",
+  "executed_by": "Claude Code"
+}

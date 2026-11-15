@@ -1,0 +1,22 @@
+--- a/ESI_审稿意见分类_严重程度排序_35项.md	2026-11-15 00:00:00 +0000
++++ b/ESI_审稿意见分类_严重程度排序_35项.md	2026-11-15 00:00:00 +0000
+@@ -4403,3 +4403,8 @@
+ 
+ 
+ R2-M4最终证据与关闭记录：results/r2m4_final/。作者PDF MD5=f73dd3d355084727bb13bf644ce332d3；本轮77行交接输入与归档CSI/命中/预报次数0差异，作者最终点值CSV未取得，最终图片精确点值对应性引用作者此前独立核验。八段EvidenceBox和三PDF核验通过，只关闭R2-M4，不整体关闭05/12共享任务。
++
++
++### R3-01 / 任务29局部关闭回执（2026-11-15）
++
++R3-01（Introduction补充AI天气模型文献）CLOSED。科学归档`c16f070adbe903475fe45fb5fccfd97c48b65fed`已推送，GitHub逐文件37/37 blob一致，远端patch精确重建正文、回复信与bib。Introduction仅改一句，引用FourCastNet（arXiv:2202.11214）、Pangu-Weather（Nature 2023）、GraphCast（Science 2023，补DOI）与FuXi；120旧+1新=121摘录匹配。旧bi2022pangu条目保留但不再被引用。任务29中R4-m5/m6/m10/m13、R3 Section 2等其他部分仍待处理，任务29整体不关闭；Reviewer 3总评占位符保持不变。
+--- a/FINAL_REVISION_CHECKLIST.md	2026-11-15 00:00:00 +0000
++++ b/FINAL_REVISION_CHECKLIST.md	2026-11-15 00:00:00 +0000
+@@ -530,3 +530,8 @@
+ ### R2-m4 / 任务17局部（2026-11-15）
+ 
+ 本地正式回复与两段逐字摘录，区分训练及条件抽样不确定性；原正文、Supplementary和Figures不改。BU-mntpr三个子集的三重规则及BU-sp/tcc区间分歧均已保留。待作者审核及另行选择性归档，不标CLOSED。R1-M4/R2-M8/R2-m3关闭状态保护，R4-m29/R4-m34保持Pending，M9最终仓库文档待办保留；未启动R2-m5。
++
++
++### R3-01归档完成（2026-11-15）
++
++R3-01 CLOSED。科学提交`c16f070adbe903475fe45fb5fccfd97c48b65fed`，37/37文件GitHub回读一致；121/121摘录、四篇文献元数据与引用键、三份PDF检查通过。Supplementary/Figures/已关闭回复不变。任务29仅R3-01部分完成，其余共享部分Pending；M9复现文档待办保留；未启动R3下一条。

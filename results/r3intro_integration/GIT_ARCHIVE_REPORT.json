@@ -1,0 +1,16 @@
+{
+  "base_commit": "61bb5bdb03442191f456239d52c39129c258d566",
+  "scientific_archive_commit": "c16f070adbe903475fe45fb5fccfd97c48b65fed",
+  "remote_scientific_files": 37,
+  "all_blobs_match": true,
+  "old_excerpts": 120,
+  "new_excerpts": 1,
+  "total_matched": 121,
+  "protected_artifacts": 831,
+  "worktree": "/private/tmp/esi-r3intro-integration-sync (branch claude/r3intro-integration-sync)",
+  "scope": "only results/r3intro_integration; manuscript/reply/bib increments in patches",
+  "previous_closed_archives_preserved": true,
+  "m9_overall_not_closed": true,
+  "r3_general_assessment_placeholder_unchanged": true,
+  "next_R3_item_not_started": true
+}
