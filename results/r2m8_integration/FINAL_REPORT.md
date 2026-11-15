@@ -120,3 +120,10 @@ check_integration.py通过：
 本轮**未add、commit、push或fetch**，未建立归档worktree或改写历史。当前主论文目录仍为原main旧检出ae4cd53，存在多项先前未提交/未跟踪内容；GIT_STATUS和GIT_SCOPE记录选择性归档边界。不得整份暂存混合返修LaTeX、Bib、任务文件或无关实验。
 
 后续步骤：作者审核本报告、patch与回复PDF；得到明确授权后，按R2-M7方式在最新远端基础上独立worktree中归档仅本轮增量，并完成逐文件远程核验，方可正式关闭R2-M8。**当前状态LOCAL VERIFIED / NOT CLOSED；R2-M9未开始。**
+
+
+## 作者授权后选择性Git归档及正式关闭（2026-11-15）
+
+核查远端main仍为R2-M7最终71eac69e0c37c5330a2310e074e5cb45bf783db0，无新增提交或冲突。独立worktree中仅提交50个results/r2m8_integration下的patch/证据/检查记录/source副本及四张144dpi渲染，不整份提交或应用根目录LaTeX/任务文件。归档提交f29a5881b8d1b865124b197c1607d9946e81d201已正常推送；GitHub固定提交逐文件50/50 blob身份核验通过，PNG以base64回读。REMOTE_RECEIPT.json记录逐项预期及远端SHA。
+
+关闭前再次运行现有scope/PDF核验：97段旧摘录、R1-M4八框、六新摘录、32CSV字段及111保护哈希保持；正文、Supplementary、Figure、Table5和S1–S47未变；当前源码仍与三份已检查PDF一致，无新增警告。仅本轮任务/检查清单的关闭注释通过CLOSURE_STATUS.patch归档，未覆盖原论文工作目录。此后状态和回执再独立提交/回读，STATUS.md为最新权威状态。**R2-M8本轮范围CLOSED；R2-m4、R4-m29、R4-m34保持Pending，未开始R2-M9。** 原报告中的LOCAL VERIFIED/尚待授权属于此前阶段记录。

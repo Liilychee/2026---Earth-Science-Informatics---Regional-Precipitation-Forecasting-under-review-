@@ -1,0 +1,24 @@
+--- a/ESI_审稿意见分类_严重程度排序_35项.md
++++ b/ESI_审稿意见分类_严重程度排序_35项.md
+@@ -4386,3 +4386,6 @@
+ 
+ 
+ R2-M4最终证据与关闭记录：results/r2m4_final/。作者PDF MD5=f73dd3d355084727bb13bf644ce332d3；本轮77行交接输入与归档CSI/命中/预报次数0差异，作者最终点值CSV未取得，最终图片精确点值对应性引用作者此前独立核验。八段EvidenceBox和三PDF核验通过，只关闭R2-M4，不整体关闭05/12共享任务。
++
++
++> **R2-M8 / 任务10及17本轮范围正式关闭（2026-11-15）：CLOSED。** 作者审核通过；归档f29a5881b8d1b865124b197c1607d9946e81d201正常推送，GitHub固定提交50/50文件blob回读一致。97段旧摘录、R1-M4八框、六段新增摘录及32项CSV字段核验通过；Fig.7/8、S12–S22引用正确，正文/补充/图片不变。R2-m4、R4-m29、R4-m34仍Pending，不关闭共享任务整体。未开始R2-M9。历史待审核状态由此及results/r2m8_integration/STATUS.md取代。
+--- a/FINAL_REVISION_CHECKLIST.md
++++ b/FINAL_REVISION_CHECKLIST.md
+@@ -491,3 +491,12 @@
+ - [ ] 作者审核本地报告后授权选择性Git归档与远程回读；R2-M8尚不正式关闭。
+ 
+ 任务10/17整体不关闭；R2-m4、R4-m29、R4-m34保持Pending。正文实际Fig.7/8、补充S12–S22取代历史图表计划编号。未开始R2-M9；未训练、重算SHAP或绘图。详见results/r2m8_integration/。
++
++
++### R2-M8正式归档关闭（2026-11-15）
++
++- [x] 作者审核通过；以71eac69最新origin/main为基线独立worktree选择性归档，正常推送f29a5881b8d1b865124b197c1607d9946e81d201。
++- [x] GitHub固定提交逐文件50/50 blob一致；32 CSV字段、97旧摘录、R1-M4八框、六新摘录（共103）、三PDF核验全部通过。
++- [x] 本轮R2-M8范围CLOSED；完整manuscript、Supplementary及所有Figures未改动。
++
++R2-m4、R4-m29、R4-m34保持Pending，不关闭任务10/17整体；未开始R2-M9。此前LOCAL VERIFIED及等待作者审核是历史阶段记录。

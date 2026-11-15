@@ -10,3 +10,8 @@ Fixed source6495abc81101074b02b3a5c8cfc83cd6cbc33d79 is present locally and is a
 ## Author-authorized archive phase — 2026-11-15
 
 Current base origin/main is71eac69e0c37c5330a2310e074e5cb45bf783db0, unchanged since M7 closure. Isolated worktree/private/tmp/esi-r2m8-integration-sync, branch codex/r2m8-integration-sync. Stage only explicitly enumerated R2-M8 patch/report/indices/source verification copies and four PDF-review renders under results/r2m8_integration. Exclude before/ full document snapshots and stale LOCAL_MANIFEST. Do not apply the patch to remote root documents: archive only the three-file delta and hashes, matching the established selective R2-M7 workflow. No manuscript, Supplementary, Figure or closed-comment root file is staged. Historical local-only notes above describe the completed review stage; CLOSED may be written only after first push and GitHub file-by-file verification.
+
+
+## Closure phase
+
+First selective archivef29a5881b8d1b865124b197c1607d9946e81d201 pushed normally; GitHub verified50/50 blobs. Only after that verification, stage the seven explicit closure metadata files: STATUS,REMOTE_RECEIPT,GIT_ARCHIVE_REPORT,CLOSURE_STATUS.patch,FINAL_REPORT,GIT_SCOPE,CLOSURE_MANIFEST. No root document or previous closed evidence path changes. Shared pending opinions remain open. A final per-file readback checks the closure commit; a receipt never claims to contain its own commit hash.

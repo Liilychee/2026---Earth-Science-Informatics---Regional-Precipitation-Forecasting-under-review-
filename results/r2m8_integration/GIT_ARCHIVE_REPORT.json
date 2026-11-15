@@ -1,0 +1,22 @@
+{
+  "base_commit": "71eac69e0c37c5330a2310e074e5cb45bf783db0",
+  "archive_commit": "f29a5881b8d1b865124b197c1607d9946e81d201",
+  "archive_files": 50,
+  "remote_file_matches": 50,
+  "all_match": true,
+  "scope_prefix": "results/r2m8_integration/",
+  "all_other_git_paths_unchanged": true,
+  "original_worktree_docs_unchanged": true,
+  "original_index_unmodified": true,
+  "protected_files": 111,
+  "old_excerpts": 97,
+  "r1m4_boxes": 8,
+  "new_exact_excerpts": 6,
+  "csv_fields": 32,
+  "shared_pending": [
+    "R2-m4",
+    "R4-m29",
+    "R4-m34"
+  ],
+  "next_comment": "R2-M9 NOT STARTED"
+}
