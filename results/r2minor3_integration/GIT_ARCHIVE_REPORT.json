@@ -1,0 +1,21 @@
+{
+  "base_commit": "7e2939aecfac856d422fd95003e0d48e834a7252",
+  "scientific_archive_commit": "87a9c95e77d37686c25af8a32216f005e9eb2059",
+  "remote_scientific_files": 48,
+  "all_blobs_match": true,
+  "old_excerpts": 115,
+  "new_excerpts": 3,
+  "total_matched": 118,
+  "CSV_field_references": 190,
+  "fixed_scope": "6 thresholds x9 methods",
+  "tuned_scope": "5 thresholds x9 methods",
+  "correct_1mm_six_model_FAR_range": "0.859--0.916",
+  "protected_artifacts": 706,
+  "main_Supplementary_Table5_S1_S50_Figures_unchanged": true,
+  "original_worktree_index_PDFs_unchanged": true,
+  "previous_closed_archives_preserved": true,
+  "m9_overall_not_closed": true,
+  "other_shared_statuses_preserved": true,
+  "next_minor_not_started": true,
+  "scope": "only results/r2minor3_integration; reply/task increments in patches"
+}
