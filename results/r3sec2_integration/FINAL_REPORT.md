@@ -12,3 +12,9 @@
 **Verification.** 121 old excerpts unchanged (none quotes line 93), 1 new verbatim: 122/122. Supplementary, Figures, R3-01 and all closed replies unchanged; 879 protected files intact. Builds: Supplementary 57, manuscript 98, Response letter 78 pages (unchanged); 0 undefined/multiply-defined references, 0 overfull hboxes, 0 BibTeX warnings. 144-dpi renders inspected: manuscript p7 (inserted sentences), p95 (reference), Response letter p59 (reply), p78 (reference). LOCAL patch reconstructs with git apply; PORTABLE with git apply and BSD patch.
 
 **Notes.** Pre-existing, outside scope: the next comment's "Section 3.2:" text falls at the foot of reply p59. Not done by instruction: no stage/commit/push, not CLOSED, task 29/checklist notes deferred to archive (R3-02 part only), no other R3 item started.
+
+## Author-authorised selective archive and formal closure — 2026-11-15
+
+Pre-archive re-check passed (documents at local after-hashes; pure insertion and single appended bib entry; bib matches Crossref, 19/19 authors; 122/122 excerpts; 879 protected files; PDF hashes match PDF_CHECK). Remote main re-queried as c108adf; the record directory (excluding before/) was archived from independent worktree /private/tmp/esi-r3sec2-integration-sync as scientific commit `841f0b548c3b7d3f86d51fcdfa4fe5e7a0b46f9b`, normally pushed. A fresh remote clone matched 30/30 blobs; the remote PORTABLE patch reconstructed the exact reviewed manuscript, reply and bibliography (identical to current local files); 122/122 excerpts and the ridal2024cerra metadata re-verified from the reconstruction. Original paper files, PDFs and git index were not modified.
+
+R3-02 is CLOSED. A separate closure commit records STATUS, the remote receipt, archive report and CLOSURE_STATUS.patch (task-29/checklist notes for the R3-02 part only, including the p59 layout to-do; original files not edited). Task 29 remains open for its other parts.
