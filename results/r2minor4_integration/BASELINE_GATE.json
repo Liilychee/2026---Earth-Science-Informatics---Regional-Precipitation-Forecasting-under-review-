@@ -1,0 +1,21 @@
+{
+  "remote_main": "4aabdcb0aaadf3fa679c0c4bfe08d477ec755f81",
+  "R2_m3_closed": true,
+  "remote_receipt_files": 52,
+  "after_hashes_match": true,
+  "source_after_hashes": {
+    "Response letter.tex": {
+      "before_sha256": "7372d96c29b1f9ec20ef361037e0fb5e4b908782ad25d2dc889dcfa8f03957a0",
+      "after_sha256": "93c2fdc28e8aef10a9a575c89cf676ce68a7ee2e5d4658be12ad937656fdd325"
+    },
+    "ESI_\u5ba1\u7a3f\u610f\u89c1\u5206\u7c7b_\u4e25\u91cd\u7a0b\u5ea6\u6392\u5e8f_35\u9879.md": {
+      "before_sha256": "81858622a39dc84018192f68a14d61226a93394f78743141990fbbd6abee8acf",
+      "after_sha256": "fdc8dadd4051fbc32888b48942376f92f46a0509d7573ddb8c570f11d78ced61"
+    },
+    "FINAL_REVISION_CHECKLIST.md": {
+      "before_sha256": "215dc2749913220108c6f6158a47fdc4764ba72bcd0e44b8b717bf348fac8a6e",
+      "after_sha256": "1868fd90b0b67fafccdedd84817e1ae18d5b20d79c07fe9db29e72ef479fdf13"
+    }
+  },
+  "manuscript_supplement_and_previous_protected_hashes_match": true
+}

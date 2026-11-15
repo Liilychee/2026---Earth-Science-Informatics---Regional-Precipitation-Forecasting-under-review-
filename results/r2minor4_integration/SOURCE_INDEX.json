@@ -1,0 +1,68 @@
+[
+  {
+    "path": "code/q10_ablation_stats.py",
+    "commit": "6495abc81101074b02b3a5c8cfc83cd6cbc33d79",
+    "md5": "e5d9d092e1c4a41261fd957076b856fa",
+    "sha256": "0a3ebd5aa6c8124cfcbe2ff7fc3fb50e7cefa32c6e41144f0e831310aa2cc2fe"
+  },
+  {
+    "path": "code/q10_shap_stats.py",
+    "commit": "6495abc81101074b02b3a5c8cfc83cd6cbc33d79",
+    "md5": "3da365ab160e9fd4a061f8ed0f519d86",
+    "sha256": "04a2152909b1af0188ffdfde6bf587ddb8736c7fdfac54e0cabae0fc2bd6b9e1"
+  },
+  {
+    "path": "code/q10_shap.py",
+    "commit": "6495abc81101074b02b3a5c8cfc83cd6cbc33d79",
+    "md5": "df0e501f84f7294a73303e01d8840712",
+    "sha256": "e160aa88eca1237bd13254c866089572dff366102aac0984b827cf2a93fa6a15"
+  },
+  {
+    "path": "results/metrics/q10_ablation_summary.csv",
+    "commit": "6495abc81101074b02b3a5c8cfc83cd6cbc33d79",
+    "md5": "5636f9b48913ba195e65058a097b1e05",
+    "sha256": "92f545d684123d03d6fc8780908068fb837cd9c2f77f9291c487640fc8cfd2b4"
+  },
+  {
+    "path": "results/metrics/q10_ablation_runs.csv",
+    "commit": "6495abc81101074b02b3a5c8cfc83cd6cbc33d79",
+    "md5": "e27ea8e26bc901247d50beb7d943cf59",
+    "sha256": "34b0ef971ec00bfd126496d7ca1872b89e34b352b264ced2118ac6df26dbedc6"
+  },
+  {
+    "path": "results/metrics/q10_shap_global.csv",
+    "commit": "6495abc81101074b02b3a5c8cfc83cd6cbc33d79",
+    "md5": "bc505a6e126936176ddcd25fa6c3e3db",
+    "sha256": "2021d9c03246006e9480162fa1a70c8026122c7feb3d39095b7a7feead3803a6"
+  },
+  {
+    "path": "results/metrics/q10_shap_rank_stability.csv",
+    "commit": "6495abc81101074b02b3a5c8cfc83cd6cbc33d79",
+    "md5": "9f238adb7265ade4d2a6bf053e5ad67c",
+    "sha256": "cce2a77df084c8295c9f41363cbb3dba4995b1b49679dc1ed11548fa209dd850"
+  },
+  {
+    "path": "results/metrics/q10_ablation_rank_stability.csv",
+    "commit": "6495abc81101074b02b3a5c8cfc83cd6cbc33d79",
+    "md5": "06259dacf80aabd435813bd15e591ac3",
+    "sha256": "fcfb0c448992791142b33459bf5be22acd4ac5f33cced90db7aec6a0f93fd10f"
+  },
+  {
+    "path": "results/metrics/q10_shap_temporal.csv",
+    "commit": "6495abc81101074b02b3a5c8cfc83cd6cbc33d79",
+    "md5": "2acf756c40691ca964b55ad7001b364f",
+    "sha256": "3df32e1dfc0a4d7e105756bedef2c999890994b37908860e4651a144d409371f"
+  },
+  {
+    "path": "results/metrics/q10_shap_stats_output.txt",
+    "commit": "6495abc81101074b02b3a5c8cfc83cd6cbc33d79",
+    "md5": "c5946aa5f97b1a9160cedf8fafe9c14b",
+    "sha256": "b2437736f885849b55d302702e02f815f49be6778ae1e56327035eff0ce1dc73"
+  },
+  {
+    "path": "results/metrics/q10_ablation_stats_output.txt",
+    "commit": "6495abc81101074b02b3a5c8cfc83cd6cbc33d79",
+    "md5": "3260670c14084ca3c71814d1bf9df617",
+    "sha256": "35811b8a9c8e0b756a1115fa596e3310a787430658487b8afe42ad329135af33"
+  }
+]

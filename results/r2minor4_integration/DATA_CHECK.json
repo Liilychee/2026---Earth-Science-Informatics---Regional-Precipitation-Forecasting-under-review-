@@ -1,0 +1,108 @@
+{
+  "rows_checked": 6,
+  "source_fields": 78,
+  "shap_example": {
+    "mean_abs_phi": "0.08912959177855431",
+    "sd_seeds": "0.005174315821963888",
+    "boot_low": "0.0754600166190596",
+    "boot_high": "0.10246742866810937"
+  },
+  "paired_checks": [
+    {
+      "arch": "bilstm_attn",
+      "subset": "all",
+      "removed": "sp",
+      "all_seeds_improve": false,
+      "n_positive": 5,
+      "seed_interval": [
+        0.003269534916364591,
+        0.004774336185111694
+      ],
+      "block_interval": [
+        0.0025269308540438614,
+        0.00554731762914198
+      ]
+    },
+    {
+      "arch": "bulstm_attn",
+      "subset": "all",
+      "removed": "mntpr",
+      "all_seeds_improve": true,
+      "n_positive": 0,
+      "seed_interval": [
+        -0.0034623007110071748,
+        -0.0003396180776644687
+      ],
+      "block_interval": [
+        -0.0030224520984037783,
+        -0.0007483106923444934
+      ]
+    },
+    {
+      "arch": "bulstm_attn",
+      "subset": "all",
+      "removed": "tcc",
+      "all_seeds_improve": false,
+      "n_positive": 4,
+      "seed_interval": [
+        -0.0014062212478109012,
+        0.00863096064641703
+      ],
+      "block_interval": [
+        0.0024945145131544306,
+        0.004776603754447702
+      ]
+    },
+    {
+      "arch": "bulstm_attn",
+      "subset": "all",
+      "removed": "sp",
+      "all_seeds_improve": false,
+      "n_positive": 4,
+      "seed_interval": [
+        -0.001710066784990692,
+        0.006739996555405834
+      ],
+      "block_interval": [
+        0.0014654217772494447,
+        0.0035137221182981295
+      ]
+    },
+    {
+      "arch": "bulstm_attn",
+      "subset": "wet_ge0.1",
+      "removed": "mntpr",
+      "all_seeds_improve": true,
+      "n_positive": 0,
+      "seed_interval": [
+        -0.016294441735735386,
+        -0.004723547053648338
+      ],
+      "block_interval": [
+        -0.012720307603222408,
+        -0.00811938775667097
+      ]
+    },
+    {
+      "arch": "bulstm_attn",
+      "subset": "upper_geQ95",
+      "removed": "mntpr",
+      "all_seeds_improve": true,
+      "n_positive": 0,
+      "seed_interval": [
+        -0.031814095555901145,
+        -0.009509837685450476
+      ],
+      "block_interval": [
+        -0.02463317384288503,
+        -0.016672322917770818
+      ]
+    }
+  ],
+  "max_seed_summary_difference": 2.0816681711721685e-17,
+  "BU_mntpr_all_three_subsets_meet_three_way_rule": true,
+  "BU_sp_tcc_not_three_way_robust": true,
+  "pointwise_only": true,
+  "bootstrap_not_recomputed": true,
+  "SHAP_not_recomputed": true
+}

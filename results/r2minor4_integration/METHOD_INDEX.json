@@ -1,0 +1,48 @@
+[
+  {
+    "value": "5",
+    "meaning": "number of training seeds",
+    "table_label": "stab:r1m4_ablation_bilstm_attn",
+    "table_location": "caption: five paired seed-level differences",
+    "code": "SEEDS = [42, 123, 7, 2024, 99]"
+  },
+  {
+    "value": "4",
+    "meaning": "Student-t degrees of freedom",
+    "table_label": "stab:r1m4_ablation_bilstm_attn",
+    "table_location": "caption: df=4"
+  },
+  {
+    "value": "28 / 10,000 / 42",
+    "meaning": "moving-block length / replicates / seed",
+    "table_label": "stab:r1m4_ablation_bilstm_attn",
+    "table_location": "caption",
+    "code": "q10_ablation_stats.py:N_BOOT, BLOCK, BSEED"
+  },
+  {
+    "value": "2,000 / 95%",
+    "meaning": "calendar-day replicates / pointwise coverage",
+    "table_label": "stab:r1m4_shap_magnitude",
+    "table_location": "caption",
+    "code": "q10_shap_stats.py:N_BOOT, BSEED"
+  },
+  {
+    "value": "100",
+    "meaning": "fixed grouped training-background windows",
+    "table_label": "stab:r1m4_shap_magnitude",
+    "table_location": "caption; grouped background definition"
+  },
+  {
+    "value": "0.1",
+    "meaning": "revised-wet threshold",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "table_location": "Wet subheading"
+  },
+  {
+    "value": "42, 123, 7, 2024, 99",
+    "meaning": "fixed training seed identifiers",
+    "table_label": "stab:r1m4_seed_pairs_bilstm_attn / stab:r1m4_seed_pairs_bulstm_attn",
+    "table_location": "S13 / S15 column headings",
+    "source": "CSV per-seed difference columns and q10_ablation_stats.py SEEDS"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "Response letter.tex": [
+    {
+      "anchor": "% Review ID: R2 m4",
+      "line": 1041
+    },
+    {
+      "anchor": "\\AuthorResponse{Uncertainty estimates are provided separately",
+      "line": 1047
+    },
+    {
+      "anchor": "\\EvidenceBox{Existing training and sampling uncertainty",
+      "line": 1057
+    },
+    {
+      "anchor": "\\EvidenceBox{Existing architecture-dependent interval disagreement",
+      "line": 1061
+    }
+  ],
+  "ESI_\u5ba1\u7a3f\u610f\u89c1\u5206\u7c7b_\u4e25\u91cd\u7a0b\u5ea6\u6392\u5e8f_35\u9879.md": [
+    {
+      "anchor": "**R2-m4\u5c40\u90e8\u6574\u5408",
+      "line": 3382
+    }
+  ],
+  "FINAL_REVISION_CHECKLIST.md": [
+    {
+      "anchor": "### R2-m4 / \u4efb\u52a117\u5c40\u90e8",
+      "line": 530
+    }
+  ]
+}

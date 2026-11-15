@@ -1,0 +1,704 @@
+[
+  {
+    "file": "q10_shap_global.csv",
+    "csv_line": 10,
+    "field": "mean_abs_phi",
+    "raw": "0.08912959177855431",
+    "display": "0.089130",
+    "table_label": "stab:r1m4_shap_magnitude",
+    "context": "Bi upper-tail mntpr SHAP example"
+  },
+  {
+    "file": "q10_shap_global.csv",
+    "csv_line": 10,
+    "field": "sd_seeds",
+    "raw": "0.005174315821963888",
+    "display": "0.005174",
+    "table_label": "stab:r1m4_shap_magnitude",
+    "context": "Bi upper-tail mntpr SHAP example"
+  },
+  {
+    "file": "q10_shap_global.csv",
+    "csv_line": 10,
+    "field": "boot_low",
+    "raw": "0.0754600166190596",
+    "display": "0.075460",
+    "table_label": "stab:r1m4_shap_magnitude",
+    "context": "Bi upper-tail mntpr SHAP example"
+  },
+  {
+    "file": "q10_shap_global.csv",
+    "csv_line": 10,
+    "field": "boot_high",
+    "raw": "0.10246742866810937",
+    "display": "0.102467",
+    "table_label": "stab:r1m4_shap_magnitude",
+    "context": "Bi upper-tail mntpr SHAP example"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 7,
+    "field": "dRMSE_mean",
+    "raw": "0.0040219355507381425",
+    "display": "0.004022",
+    "table_label": "stab:r1m4_ablation_bilstm_attn",
+    "context": "bilstm_attn/all/sp"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 7,
+    "field": "dRMSE_sd",
+    "raw": "0.0006059615447190234",
+    "display": "0.000606",
+    "table_label": "stab:r1m4_ablation_bilstm_attn",
+    "context": "bilstm_attn/all/sp"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 7,
+    "field": "seed_t_low",
+    "raw": "0.003269534916364591",
+    "display": "0.003270",
+    "table_label": "stab:r1m4_ablation_bilstm_attn",
+    "context": "bilstm_attn/all/sp"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 7,
+    "field": "seed_t_high",
+    "raw": "0.004774336185111694",
+    "display": "0.004774",
+    "table_label": "stab:r1m4_ablation_bilstm_attn",
+    "context": "bilstm_attn/all/sp"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 7,
+    "field": "boot_low",
+    "raw": "0.0025269308540438614",
+    "display": "0.002527",
+    "table_label": "stab:r1m4_ablation_bilstm_attn",
+    "context": "bilstm_attn/all/sp"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 7,
+    "field": "boot_high",
+    "raw": "0.00554731762914198",
+    "display": "0.005547",
+    "table_label": "stab:r1m4_ablation_bilstm_attn",
+    "context": "bilstm_attn/all/sp"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 7,
+    "field": "n_seeds_worse",
+    "raw": "5",
+    "display": "5",
+    "table_label": "stab:r1m4_ablation_bilstm_attn",
+    "context": "seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 7,
+    "field": "dRMSE_s42",
+    "raw": "0.0036339094117974757",
+    "display": "0.003634",
+    "table_label": "stab:r1m4_seed_pairs_bilstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 7,
+    "field": "dRMSE_s123",
+    "raw": "0.0034983818680379974",
+    "display": "0.003498",
+    "table_label": "stab:r1m4_seed_pairs_bilstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 7,
+    "field": "dRMSE_s7",
+    "raw": "0.004434722647722628",
+    "display": "0.004435",
+    "table_label": "stab:r1m4_seed_pairs_bilstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 7,
+    "field": "dRMSE_s2024",
+    "raw": "0.004883416283484737",
+    "display": "0.004883",
+    "table_label": "stab:r1m4_seed_pairs_bilstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 7,
+    "field": "dRMSE_s99",
+    "raw": "0.0036592475426478754",
+    "display": "0.003659",
+    "table_label": "stab:r1m4_seed_pairs_bilstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 24,
+    "field": "dRMSE_mean",
+    "raw": "-0.0019009593943358216",
+    "display": "-0.001901",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/all/mntpr"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 24,
+    "field": "dRMSE_sd",
+    "raw": "0.001257458796365237",
+    "display": "0.001257",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/all/mntpr"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 24,
+    "field": "seed_t_low",
+    "raw": "-0.0034623007110071748",
+    "display": "-0.003462",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/all/mntpr"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 24,
+    "field": "seed_t_high",
+    "raw": "-0.0003396180776644687",
+    "display": "-0.000340",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/all/mntpr"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 24,
+    "field": "boot_low",
+    "raw": "-0.0030224520984037783",
+    "display": "-0.003022",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/all/mntpr"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 24,
+    "field": "boot_high",
+    "raw": "-0.0007483106923444934",
+    "display": "-0.000748",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/all/mntpr"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 24,
+    "field": "n_seeds_worse",
+    "raw": "0",
+    "display": "0",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 24,
+    "field": "dRMSE_s42",
+    "raw": "-0.0012593363662680157",
+    "display": "-0.001259",
+    "table_label": "stab:r1m4_seed_pairs_bulstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 24,
+    "field": "dRMSE_s123",
+    "raw": "-0.0022315207649210855",
+    "display": "-0.002232",
+    "table_label": "stab:r1m4_seed_pairs_bulstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 24,
+    "field": "dRMSE_s7",
+    "raw": "-0.0021610969706665206",
+    "display": "-0.002161",
+    "table_label": "stab:r1m4_seed_pairs_bulstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 24,
+    "field": "dRMSE_s2024",
+    "raw": "-0.0036197748207582037",
+    "display": "-0.003620",
+    "table_label": "stab:r1m4_seed_pairs_bulstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 24,
+    "field": "dRMSE_s99",
+    "raw": "-0.00023306804906528256",
+    "display": "-0.000233",
+    "table_label": "stab:r1m4_seed_pairs_bulstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 26,
+    "field": "dRMSE_mean",
+    "raw": "0.003612369699303064",
+    "display": "0.003612",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/all/tcc"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 26,
+    "field": "dRMSE_sd",
+    "raw": "0.0040418268987214255",
+    "display": "0.004042",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/all/tcc"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 26,
+    "field": "seed_t_low",
+    "raw": "-0.0014062212478109012",
+    "display": "-0.001406",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/all/tcc"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 26,
+    "field": "seed_t_high",
+    "raw": "0.00863096064641703",
+    "display": "0.008631",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/all/tcc"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 26,
+    "field": "boot_low",
+    "raw": "0.0024945145131544306",
+    "display": "0.002495",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/all/tcc"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 26,
+    "field": "boot_high",
+    "raw": "0.004776603754447702",
+    "display": "0.004777",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/all/tcc"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 26,
+    "field": "n_seeds_worse",
+    "raw": "4",
+    "display": "4",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 26,
+    "field": "dRMSE_s42",
+    "raw": "0.007437894542095536",
+    "display": "0.007438",
+    "table_label": "stab:r1m4_seed_pairs_bulstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 26,
+    "field": "dRMSE_s123",
+    "raw": "0.0007698583125408387",
+    "display": "0.000770",
+    "table_label": "stab:r1m4_seed_pairs_bulstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 26,
+    "field": "dRMSE_s7",
+    "raw": "0.008355804877823586",
+    "display": "0.008356",
+    "table_label": "stab:r1m4_seed_pairs_bulstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 26,
+    "field": "dRMSE_s2024",
+    "raw": "-0.0006173580272832435",
+    "display": "-0.000617",
+    "table_label": "stab:r1m4_seed_pairs_bulstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 26,
+    "field": "dRMSE_s99",
+    "raw": "0.0021156487913386035",
+    "display": "0.002116",
+    "table_label": "stab:r1m4_seed_pairs_bulstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 28,
+    "field": "dRMSE_mean",
+    "raw": "0.002514964885207571",
+    "display": "0.002515",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/all/sp"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 28,
+    "field": "dRMSE_sd",
+    "raw": "0.0034027173827302286",
+    "display": "0.003403",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/all/sp"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 28,
+    "field": "seed_t_low",
+    "raw": "-0.001710066784990692",
+    "display": "-0.001710",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/all/sp"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 28,
+    "field": "seed_t_high",
+    "raw": "0.006739996555405834",
+    "display": "0.006740",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/all/sp"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 28,
+    "field": "boot_low",
+    "raw": "0.0014654217772494447",
+    "display": "0.001465",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/all/sp"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 28,
+    "field": "boot_high",
+    "raw": "0.0035137221182981295",
+    "display": "0.003514",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/all/sp"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 28,
+    "field": "n_seeds_worse",
+    "raw": "4",
+    "display": "4",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 28,
+    "field": "dRMSE_s42",
+    "raw": "0.0023148111304714114",
+    "display": "0.002315",
+    "table_label": "stab:r1m4_seed_pairs_bulstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 28,
+    "field": "dRMSE_s123",
+    "raw": "0.001809197981941818",
+    "display": "0.001809",
+    "table_label": "stab:r1m4_seed_pairs_bulstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 28,
+    "field": "dRMSE_s7",
+    "raw": "0.0011508690925211285",
+    "display": "0.001151",
+    "table_label": "stab:r1m4_seed_pairs_bulstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 28,
+    "field": "dRMSE_s2024",
+    "raw": "-0.0008963731820680054",
+    "display": "-0.000896",
+    "table_label": "stab:r1m4_seed_pairs_bulstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 28,
+    "field": "dRMSE_s99",
+    "raw": "0.008196319403171504",
+    "display": "0.008196",
+    "table_label": "stab:r1m4_seed_pairs_bulstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 31,
+    "field": "dRMSE_mean",
+    "raw": "-0.010508994394691861",
+    "display": "-0.010509",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/wet_ge0.1/mntpr"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 31,
+    "field": "dRMSE_sd",
+    "raw": "0.004659430690921988",
+    "display": "0.004659",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/wet_ge0.1/mntpr"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 31,
+    "field": "seed_t_low",
+    "raw": "-0.016294441735735386",
+    "display": "-0.016294",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/wet_ge0.1/mntpr"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 31,
+    "field": "seed_t_high",
+    "raw": "-0.004723547053648338",
+    "display": "-0.004724",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/wet_ge0.1/mntpr"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 31,
+    "field": "boot_low",
+    "raw": "-0.012720307603222408",
+    "display": "-0.012720",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/wet_ge0.1/mntpr"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 31,
+    "field": "boot_high",
+    "raw": "-0.00811938775667097",
+    "display": "-0.008119",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/wet_ge0.1/mntpr"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 31,
+    "field": "n_seeds_worse",
+    "raw": "0",
+    "display": "0",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 31,
+    "field": "dRMSE_s42",
+    "raw": "-0.008637521318317909",
+    "display": "-0.008638",
+    "table_label": "stab:r1m4_seed_pairs_bulstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 31,
+    "field": "dRMSE_s123",
+    "raw": "-0.007803868184922014",
+    "display": "-0.007804",
+    "table_label": "stab:r1m4_seed_pairs_bulstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 31,
+    "field": "dRMSE_s7",
+    "raw": "-0.016583079275205193",
+    "display": "-0.016583",
+    "table_label": "stab:r1m4_seed_pairs_bulstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 31,
+    "field": "dRMSE_s2024",
+    "raw": "-0.014119455623432808",
+    "display": "-0.014119",
+    "table_label": "stab:r1m4_seed_pairs_bulstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 31,
+    "field": "dRMSE_s99",
+    "raw": "-0.0054010475715813855",
+    "display": "-0.005401",
+    "table_label": "stab:r1m4_seed_pairs_bulstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 38,
+    "field": "dRMSE_mean",
+    "raw": "-0.02066196662067581",
+    "display": "-0.020662",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/upper_geQ95/mntpr"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 38,
+    "field": "dRMSE_sd",
+    "raw": "0.008981599652851661",
+    "display": "0.008982",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/upper_geQ95/mntpr"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 38,
+    "field": "seed_t_low",
+    "raw": "-0.031814095555901145",
+    "display": "-0.031814",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/upper_geQ95/mntpr"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 38,
+    "field": "seed_t_high",
+    "raw": "-0.009509837685450476",
+    "display": "-0.009510",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/upper_geQ95/mntpr"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 38,
+    "field": "boot_low",
+    "raw": "-0.02463317384288503",
+    "display": "-0.024633",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/upper_geQ95/mntpr"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 38,
+    "field": "boot_high",
+    "raw": "-0.016672322917770818",
+    "display": "-0.016672",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "bulstm_attn/upper_geQ95/mntpr"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 38,
+    "field": "n_seeds_worse",
+    "raw": "0",
+    "display": "0",
+    "table_label": "stab:r1m4_ablation_bulstm_attn",
+    "context": "seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 38,
+    "field": "dRMSE_s42",
+    "raw": "-0.017836472766753375",
+    "display": "-0.017836",
+    "table_label": "stab:r1m4_seed_pairs_bulstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 38,
+    "field": "dRMSE_s123",
+    "raw": "-0.015374164282128677",
+    "display": "-0.015374",
+    "table_label": "stab:r1m4_seed_pairs_bulstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 38,
+    "field": "dRMSE_s7",
+    "raw": "-0.03275092590896456",
+    "display": "-0.032751",
+    "table_label": "stab:r1m4_seed_pairs_bulstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 38,
+    "field": "dRMSE_s2024",
+    "raw": "-0.026819267822043247",
+    "display": "-0.026819",
+    "table_label": "stab:r1m4_seed_pairs_bulstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 38,
+    "field": "dRMSE_s99",
+    "raw": "-0.01052900232348919",
+    "display": "-0.010529",
+    "table_label": "stab:r1m4_seed_pairs_bulstm_attn",
+    "context": "paired seed direction"
+  },
+  {
+    "file": "q10_ablation_rank_stability.csv",
+    "csv_line": 2,
+    "field": "kendall_tau",
+    "raw": "0.8666666666666668",
+    "display": "0.867",
+    "table_label": "stab:r1m4_rank_stability",
+    "context": "existing BU paragraph rank coefficients"
+  },
+  {
+    "file": "q10_ablation_rank_stability.csv",
+    "csv_line": 3,
+    "field": "kendall_tau",
+    "raw": "0.5428571428571429",
+    "display": "0.543",
+    "table_label": "stab:r1m4_rank_stability",
+    "context": "existing BU paragraph rank coefficients"
+  }
+]

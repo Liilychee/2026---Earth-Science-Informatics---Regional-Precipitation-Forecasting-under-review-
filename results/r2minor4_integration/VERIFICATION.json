@@ -1,0 +1,21 @@
+{
+  "R2_m3_closed_after_hash_gate": true,
+  "old_excerpts_unchanged": 118,
+  "new_exact_excerpts": 2,
+  "total_matched": 120,
+  "match_percent": 100,
+  "R1_M4_eight_boxes_unchanged": true,
+  "R2_M8_six_boxes_unchanged": true,
+  "manuscript_Supplementary_Table5_S1_S50_Figures_unchanged": true,
+  "other_responses_unchanged": true,
+  "protected_files": 767,
+  "original_comment_exact": true,
+  "source_fields": 78,
+  "all_new_examples_match_source_and_table_cells": true,
+  "BU_mntpr_three_subsets_three_way_rule": true,
+  "pointwise_unadjusted_only": true,
+  "shared_R4_m29_m34_Pending_preserved": true,
+  "m9_overall_not_closed": true,
+  "next_minor_not_started": true,
+  "local_only": true
+}

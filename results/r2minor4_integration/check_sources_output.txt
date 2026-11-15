@@ -1,0 +1,11 @@
+{
+  "source_fields": 78,
+  "max_seed_summary_difference": 2.0816681711721685e-17,
+  "BU_mntpr_all_three_subsets_meet_three_way_rule": true,
+  "SHAP_example": {
+    "mean_abs_phi": "0.08912959177855431",
+    "sd_seeds": "0.005174315821963888",
+    "boot_low": "0.0754600166190596",
+    "boot_high": "0.10246742866810937"
+  }
+}

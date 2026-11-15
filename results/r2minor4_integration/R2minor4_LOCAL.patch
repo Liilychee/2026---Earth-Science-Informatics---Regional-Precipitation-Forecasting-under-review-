@@ -1,0 +1,52 @@
+--- a/Response letter.tex
++++ b/Response letter.tex
+@@ -1044,9 +1044,23 @@
+ 
+ \ReviewerComment{4. Please include uncertainty estimates for SHAP importance and feature-ablation results.}
+ 
+-\PendingResponse
+-
+-\ChangeLocation
++\AuthorResponse{Uncertainty estimates are provided separately for training variability and test-case sampling uncertainty in Section~\ref{manuscript-sec:interpretation_uncertainty}. We use the existing model-matched analyses of BiLSTM-Attention and BU-LSTM-Attention, each with the five fixed seeds 42, 123, 7, 2024 and 99. No new experiment, figure or supplementary table is needed for this response.
++
++For grouped SHAP, Figure~\ref{manuscript-fig:r1m4_shap_comparison} and Supplementary Tables~\ref{supp-stab:r1m4_shap_magnitude}--\ref{supp-stab:r1m4_rank_stability} distinguish five-seed means and SDs from pointwise 95\% calendar-day cluster-bootstrap intervals (2,000 replicates, resampling seed 42). The latter resample explained cases after averaging absolute attributions across the fixed fitted models, while retaining the same training background. For example, BiLSTM-Attention upper-tail mntpr mean absolute SHAP is 0.089130~mm\,h$^{-1}$, with seed SD 0.005174~mm\,h$^{-1}$ and a day-bootstrap interval of $[0.075460,0.102467]$~mm\,h$^{-1}$ (Table~\ref{supp-stab:r1m4_shap_magnitude}). These are attribution magnitudes: a positive magnitude or an interval above zero does not demonstrate independent predictive benefit or statistical significance of forecast improvement.
++
++For ablation, Figure~\ref{manuscript-fig:r1m4_ablation_comparison} and Supplementary Tables~\ref{supp-stab:r1m4_ablation_bilstm_attn}--\ref{supp-stab:r1m4_seed_pairs_bulstm_attn} give the five seed-paired differences $\Delta\mathrm{RMSE}=\mathrm{RMSE}_{\mathrm{removed}}-\mathrm{RMSE}_{\mathrm{full}}$, their mean and sample SD, pointwise 95\% Student-$t$ intervals ($df=4$), and pointwise 95\% paired moving-block bootstrap intervals (28 six-hourly samples per block, 10,000 replicates, resampling seed 42). The bootstrap uses the same blocks for full/reduced models and across seeds; each within-seed RMSE difference is calculated before averaging the differences. It is not computed from an ensemble-mean prediction. Removing sp from BiLSTM-Attention increases overall RMSE by 0.004022~mm\,h$^{-1}$ (seed SD 0.000606), with a seed-$t$ interval $[0.003270,0.004774]$ and block-bootstrap interval $[0.002527,0.005547]$~mm\,h$^{-1}$. All five seeds deteriorate (Table~\ref{supp-stab:r1m4_ablation_bilstm_attn}).
++
++The negative findings are also retained. Removing mntpr from BU-LSTM-Attention gives paired mean RMSE differences on the full, revised-wet ($y\geq0.1$~mm\,h$^{-1}$) and upper-tail subsets of $-0.001901$, $-0.010509$ and $-0.020662$~mm\,h$^{-1}$, respectively (Tables~\ref{supp-stab:r1m4_ablation_bulstm_attn} and~\ref{supp-stab:r1m4_seed_pairs_bulstm_attn}). Each subset meets all three descriptive robustness criteria used here: improvement in all five seeds, a seed-$t$ interval excluding zero, and a paired block-bootstrap interval excluding zero. This is specific to the tested architecture, configurations and evaluation subsets; it does not show that mntpr is generally harmful or establish meteorological causality. In contrast, BU-LSTM-Attention sp and tcc removal increases full-test error in only four of five seeds: their block-bootstrap intervals are above zero but their seed-$t$ intervals include zero. They are not described as uniformly robust important predictors.
++
++The limitations are explicit. SHAP bootstrap intervals condition on the fitted models and do not include training randomness; sensitivity to a different fixed training background was not evaluated. The temporal SHAP analysis is a separate finite-permutation approximation without its own confidence intervals, and is not substituted for grouped attribution uncertainty. Ablation seed intervals are based on only five fitted models. Training and case-sampling uncertainty have not been combined into a total interval. All intervals are pointwise and unadjusted for multiple comparisons; the three-way rule is not a multiplicity correction. The existing manuscript and figures are retained unchanged. Final page and line numbers remain pending full-manuscript assembly.}
++
++\EvidenceBox{Existing training and sampling uncertainty (Section~\ref{manuscript-sec:interpretation_uncertainty}; final page and line numbers pending)}{
++\RevisedExcerpt{Training variability was summarized by five-seed standard deviations, pointwise 95\% Student-$t$ intervals with four degrees of freedom and counts of seeds with a positive removal effect. These seed-based summaries describe variability across five fitted models, whereas the bootstrap intervals describe test-sample uncertainty conditional on those models; neither combines all sources of uncertainty. All reported confidence intervals are pointwise 95\%, without family-wise or false-discovery-rate adjustment. For ablation, test-sample uncertainty was estimated using paired moving blocks of 28 consecutive six-hourly samples (seven days), with 10,000 replicates and resampling seed 42 specified in the archived analysis code. The same sampled blocks were used for the full and reduced configurations and across seeds; RMSE differences were calculated within each seed and then averaged, rather than first averaging predictions across seeds. For SHAP, sampling intervals used 2,000 bootstrap replicates resampling explained cases by calendar day, with resampling seed 42 specified in the code; the fixed background was not resampled. These intervals address test-case sampling uncertainty and do not evaluate sensitivity to alternative backgrounds.}
++}
++
++\EvidenceBox{Existing architecture-dependent interval disagreement and negative effects (Section~\ref{manuscript-sec:ablation_results}; final page and line numbers pending)}{
++\RevisedExcerpt{The BU-LSTM-Attention results were less stable across training seeds. Removing tcc or sp increased RMSE in four of five seeds; their pointwise 95\% moving-block bootstrap intervals excluded zero, but their seed-$t$ intervals included zero. They are therefore not described as equally robust to the BiLSTM-Attention effects. Removing individual precipitation-related predictors sometimes improved performance; for mntpr, the overall mean difference was negative and both pointwise intervals excluded zero. Overall ablation-rank agreement across seeds was 0.867 for BiLSTM-Attention and 0.543 for BU-LSTM-Attention, further indicating architecture-dependent training variability.}
++}
+ 
+ \clearpage
+ 
+--- a/ESI_审稿意见分类_严重程度排序_35项.md
++++ b/ESI_审稿意见分类_严重程度排序_35项.md
+@@ -3379,6 +3379,9 @@
+ 
+ ### 17. 解释结果稳定性与显著性不足
+ 
++**R2-m4局部整合（2026-11-15，本地待作者审核）**：基线R2-m3已CLOSED（远端4aabdcb0aaadf3fa679c0c4bfe08d477ec755f81及after哈希通过）。复用现有§3.5.3、Fig.7/8与S12–S19，只补正式回复及两段逐字EvidenceBox；正文/表/图不改。分开报告种子SD/seed-t与条件抽样区间；BU-mntpr移除在全部/修订Wet/上尾均5/5改善且两类CI排0，不能沿用“所有单独降水移除无效”。BU-sp/tcc不能仅凭bootstrap称稳健；不沿用SHAP2–30%、绝对归因为正即显著、旧图号/热图草稿。R1-M4、R2-M8和R2-m3关闭成果保护；R4-m29/R4-m34保持Pending；M9仓库文档待办不变；未启动R2-m5。未Git提交/推送，不标CLOSED。
++
++
+ > **2026-11-15 R2-M8专项状态（不关闭共享任务）：** 本轮回复分别报告SHAP和消融跨种子Kendall τ，区分随机/全部/修订Wet/上尾与两架构，引用S19；正文已提供相关边界，不追加正文句子。消融先逐种子计算RMSE差再取均值，不能替换成先平均预测或笼统“平均误差”。Bootstrap区间描述固定模型下的样本不确定性；不能仅凭该区间不跨0即称跨种子稳健。现有所有区间pointwise、无多重比较校正；非负绝对归因区间不跨0不证明预测效用。由归档sd_seeds/mean_abs_phi核验CV约2%–37%，旧2%–30%不可作为正式结果。已有时间SHAP仅S21/S22近似结果；没有新画时间热图，不在本轮扩展R4-m29。R2-M8本地核验通过待作者审核及归档；R2-m4、R4-m29、R4-m34保持Pending，未开始R2-M9。
+ 
+ #### 1 问题
+--- a/FINAL_REVISION_CHECKLIST.md
++++ b/FINAL_REVISION_CHECKLIST.md
+@@ -525,3 +525,8 @@
+ ### R2-m3 / 任务12局部（2026-11-15）
+ 
+ 本地正式回复复用现有事件证据与3段逐字摘录；正文、Supplementary S1–S50、Table 5及Figures不改。按q05e纠正1.0阈值六模型FAR上限为0.916。待作者审核及后续选择性归档，不标CLOSED；任务12其他共享事项原状态保留，M9最终仓库文档待办保留，未启动R2-m4。
++
++
++### R2-m4 / 任务17局部（2026-11-15）
++
++本地正式回复与两段逐字摘录，区分训练及条件抽样不确定性；原正文、Supplementary和Figures不改。BU-mntpr三个子集的三重规则及BU-sp/tcc区间分歧均已保留。待作者审核及另行选择性归档，不标CLOSED。R1-M4/R2-M8/R2-m3关闭状态保护，R4-m29/R4-m34保持Pending，M9最终仓库文档待办保留；未启动R2-m5。

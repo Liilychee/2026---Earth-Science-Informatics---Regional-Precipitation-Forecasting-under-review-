@@ -1,0 +1,24 @@
+ M manuscript.tex
+ D rebuttal-template.tex
+ M sn-bibliography.bib
+?? .gitignore
+?? .vscode/
+?? ESI_Revisions_English_Chinese.docx
+?? "ESI_\345\256\241\347\250\277\346\204\217\350\247\201\345\210\206\347\261\273_\344\270\245\351\207\215\347\250\213\345\272\246\346\216\222\345\272\217_35\351\241\271.md"
+?? FINAL_REVISION_CHECKLIST.md
+?? Figures/r1M1_prediction_distribution.pdf
+?? Figures/r1M1_stratified_rmse.pdf
+?? Figures/r1M2_seed_rmse.pdf
+?? Figures/r1M3_interval_coverage.pdf
+?? Figures/r1M4_ablation_comparison.pdf
+?? Figures/r1M4_shap_comparison.pdf
+?? Figures/r2M4_event_csi.pdf
+?? Figures/r2M7_spatial_quantiles.pdf
+?? "Response letter.tex"
+?? SUPPLEMENTARY_TABLE_REGISTRY.md
+?? Supplementary.tex
+?? code/
+?? comment.txt
+?? diff.tex
+?? original_manuscript.tex
+?? results/

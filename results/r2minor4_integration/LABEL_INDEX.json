@@ -1,0 +1,46 @@
+{
+  "sec:interpretation_uncertainty": {
+    "number": "3.5.3",
+    "page": "43"
+  },
+  "fig:r1m4_shap_comparison": {
+    "number": "7",
+    "page": "69"
+  },
+  "fig:r1m4_ablation_comparison": {
+    "number": "8",
+    "page": "71"
+  },
+  "stab:r1m4_ablation_bilstm_attn": {
+    "number": "S12",
+    "page": "7"
+  },
+  "stab:r1m4_seed_pairs_bilstm_attn": {
+    "number": "S13",
+    "page": "8"
+  },
+  "stab:r1m4_ablation_bulstm_attn": {
+    "number": "S14",
+    "page": "9"
+  },
+  "stab:r1m4_seed_pairs_bulstm_attn": {
+    "number": "S15",
+    "page": "10"
+  },
+  "stab:r1m4_shap_magnitude": {
+    "number": "S16",
+    "page": "11"
+  },
+  "stab:r1m4_shap_direction": {
+    "number": "S17",
+    "page": "12"
+  },
+  "stab:r1m4_feature_rank_comparison": {
+    "number": "S18",
+    "page": "13"
+  },
+  "stab:r1m4_rank_stability": {
+    "number": "S19",
+    "page": "14"
+  }
+}
