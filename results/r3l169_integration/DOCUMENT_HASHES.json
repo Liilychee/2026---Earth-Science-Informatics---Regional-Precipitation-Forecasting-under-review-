@@ -1,0 +1,10 @@
+{
+  "manuscript.tex": {
+    "before_sha256": "02d366a23c5d75dcd0c404024dd58226e87e6bea75b570157d01846b63837e6f",
+    "after_sha256": "af83774523d7ad16ba6a52108beab842be7c01dcdf75182d738a546c5c200aed"
+  },
+  "Response letter.tex": {
+    "before_sha256": "15f830bd3388cd4de5853ab0c67109817dfd641d8e4fc981771df1055378ae34",
+    "after_sha256": "9455a835245b18777f6b182da14a324e24f996b64cb85e155420289c0dba56b7"
+  }
+}

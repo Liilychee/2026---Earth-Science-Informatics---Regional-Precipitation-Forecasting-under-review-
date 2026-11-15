@@ -1,0 +1,22 @@
+{
+  "baseline_R3_02_closed_remote": "8bb8a696c9d88f5113fa6dd04a168f251a3fd131",
+  "old_excerpts_unchanged": 122,
+  "new_exact_excerpts": 2,
+  "total_matched": 124,
+  "R1_m4_Rahman_excerpt_raw_match": true,
+  "R1_m4_TRU_NET_excerpt_raw_match": true,
+  "manuscript_lines_changed": [
+    95
+  ],
+  "paragraph_rebuilt_from_verbatim_sentences": true,
+  "Response_letter_only_R3_L169_177_block": true,
+  "itshape_Section_3_2_line_untouched": true,
+  "bib_unchanged": true,
+  "Supplementary_Figures_closed_replies_unchanged": true,
+  "protected_files": "921/921",
+  "undefined_citations": 0,
+  "bibtex_warnings": 0,
+  "patch_reconstruction": "LOCAL git; PORTABLE git+BSD",
+  "commit_push_performed": false,
+  "closed": false
+}

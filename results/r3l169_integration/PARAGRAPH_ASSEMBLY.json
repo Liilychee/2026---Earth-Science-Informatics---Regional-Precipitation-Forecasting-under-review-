@@ -1,0 +1,30 @@
+{
+  "preserved_verbatim": {
+    "S1_opening": "Parallel to advances in reanalysis data, machine learning has gained prominence in precipitation forecasting.",
+    "Rahman": "\\citet{rahman2022rainfall} developed a fusion-based system for smart-city rainfall prediction that combines multiple classifiers with fuzzy logic, reporting improvements in prediction accuracy in their study.",
+    "deep_learning_transition": "With the development of deep learning, more sophisticated spatiotemporal architectures have been explored.",
+    "TRU_NET_four_sentences": "\\citet{adewoyin2021tru} proposed TRU-NET, which incorporates attention mechanisms and ERA5 inputs to produce high-resolution rainfall predictions over the UK. Their model outperformed U-Net baselines and produced competitive results against dynamical forecasts. In their UK daily-rainfall evaluation, the TRU-NET CC variant underpredicted observed amounts above 20~mm\\,day$^{-1}$ more than IFS. This daily-scale comparison does not establish the behaviour of the models evaluated here for Dublin regional-mean hourly precipitation.",
+    "Singh": "At the global scale, \\citet{singh2021deep} trained a residual U-Net on reanalysis data in a cubed-sphere framework and reported improved correlation skill over an operational numerical weather prediction system, while also emphasizing the need for hybrid integration and probabilistic evaluation.",
+    "Miller": "\\citet{miller2021analysis} examined short-term and seasonal rainfall forecasts in Kenya and found substantial regional differences in forecasting skill, highlighting the importance of localized validation.",
+    "closing": "These studies demonstrate the potential of machine learning and deep learning for precipitation forecasting, while also showing that aggregate performance may not fully represent model behaviour under different rainfall conditions."
+  },
+  "removed": {
+    "old_Latif_sentence": "\\citet{latif2023assessing} reviewed rainfall prediction models and concluded that machine learning methods, particularly recurrent neural networks such as LSTMs, generally outperform traditional statistical approaches, although challenges related to robustness and interpretability remain.",
+    "phrase": "Expanding on this, "
+  },
+  "added": {
+    "Rahman_lead_in": "Among conventional machine-learning approaches,",
+    "new_Latif_sentence": "More recently, \\citet{latif2023assessing} compared statistical, machine-learning and deep-learning approaches to rainfall prediction and concluded that machine learning performed well across climates and timescales, with LSTM models among the most effective."
+  },
+  "new_order": [
+    "S1_opening",
+    "Rahman_lead_in+Rahman",
+    "deep_learning_transition",
+    "TRU_NET_four_sentences",
+    "Singh",
+    "Miller",
+    "new_Latif_sentence",
+    "closing"
+  ],
+  "wrapper": "\\revminor{}"
+}

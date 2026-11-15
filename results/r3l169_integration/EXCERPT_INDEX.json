@@ -1,0 +1,21 @@
+{
+  "old_count": 122,
+  "old_unchanged": 122,
+  "new": [
+    {
+      "text": "Among conventional machine-learning approaches, \\citet{rahman2022rainfall} developed a fusion-based system for smart-city rainfall prediction that combines multiple classifiers with fuzzy logic, reporting improvements in prediction accuracy in their study.",
+      "sha256": "809cff61bb02f20e2b0bec9c5fccaf0305a9c10154bbcd1d11f22c0e19a57787",
+      "verbatim_in_manuscript": true,
+      "in_reply": true
+    },
+    {
+      "text": "More recently, \\citet{latif2023assessing} compared statistical, machine-learning and deep-learning approaches to rainfall prediction and concluded that machine learning performed well across climates and timescales, with LSTM models among the most effective.",
+      "sha256": "6b34960dc9fbd734b4f1ef2e328a353d275fb00d3eda6d80814c68b61c4f23ac",
+      "verbatim_in_manuscript": true,
+      "in_reply": true
+    }
+  ],
+  "total": 124,
+  "all_match": true,
+  "R1_m4_Rahman_and_TRU_NET_excerpts_raw_substrings": true
+}

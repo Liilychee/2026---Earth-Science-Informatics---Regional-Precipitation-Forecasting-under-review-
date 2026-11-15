@@ -1,0 +1,40 @@
+[
+  {
+    "claim": "Rahman et al. (2022) precedes Latif et al. (2023)",
+    "value": "Rahman online 2022-05-04; Latif online 2023-09-29 (issue Nov 2023)",
+    "source": "evidence/crossref_rahman2022.json, evidence/crossref_latif2023.json"
+  },
+  {
+    "claim": "Rahman sentence (preserved verbatim; R1-m4 excerpt)",
+    "support": "fusion of four classifiers with fuzzy logic; 'outperforms other models'",
+    "abstract_contains": true,
+    "source": "evidence/openalex_rahman2022.json"
+  },
+  {
+    "claim": "Latif: compared statistical, machine-learning and deep-learning approaches",
+    "abstract_quote": "Using a comparison of three different major types, the best predictive model was determined.",
+    "abstract_contains": true,
+    "source": "evidence/openalex_latif2023.json"
+  },
+  {
+    "claim": "Latif: machine learning performed well across climates and timescales",
+    "abstract_quote": "Machine learning excels at rainfall prediction regardless of climate or timescale.",
+    "abstract_contains": true,
+    "source": "evidence/openalex_latif2023.json"
+  },
+  {
+    "claim": "Latif: LSTM models among the most effective",
+    "abstract_quote": "the LSTM models demonstrate their superiority",
+    "abstract_contains": true,
+    "source": "evidence/openalex_latif2023.json"
+  },
+  {
+    "claim": "removed clause 'challenges related to robustness and interpretability remain'",
+    "abstract_contains_robustness_or_interpretability": false,
+    "decision": "removed by author decision (not supported by accessible abstract; full text not accessible)"
+  },
+  {
+    "claim": "Adewoyin et al. (2021) TRU-NET sentences (preserved verbatim; R1-m4 excerpt)",
+    "source": "evidence/crossref_adewoyin2021.json; previously verified under R1-m4"
+  }
+]

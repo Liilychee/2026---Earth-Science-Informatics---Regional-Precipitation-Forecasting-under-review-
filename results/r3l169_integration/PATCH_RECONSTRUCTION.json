@@ -1,0 +1,22 @@
+{
+  "base_commit": "8bb8a696c9d88f5113fa6dd04a168f251a3fd131",
+  "patch_exact": true,
+  "patches_tested": {
+    "R3L169_LOCAL.patch": "git apply",
+    "R3L169_PORTABLE.patch": "git apply and BSD patch -p1"
+  },
+  "source_files": [
+    "manuscript.tex",
+    "Response letter.tex"
+  ],
+  "before_sha256": {
+    "manuscript.tex": "02d366a23c5d75dcd0c404024dd58226e87e6bea75b570157d01846b63837e6f",
+    "Response letter.tex": "15f830bd3388cd4de5853ab0c67109817dfd641d8e4fc981771df1055378ae34"
+  },
+  "reconstructed_sha256": {
+    "manuscript.tex": "af83774523d7ad16ba6a52108beab842be7c01dcdf75182d738a546c5c200aed",
+    "Response letter.tex": "9455a835245b18777f6b182da14a324e24f996b64cb85e155420289c0dba56b7"
+  },
+  "reconstruction_location": "scratch copies of before/ files only",
+  "root_untouched": true
+}

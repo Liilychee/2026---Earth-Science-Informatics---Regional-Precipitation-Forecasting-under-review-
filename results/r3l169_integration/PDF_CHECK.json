@@ -1,0 +1,47 @@
+{
+  "build_order": [
+    "Supplementary",
+    "manuscript",
+    "Response letter"
+  ],
+  "documents": {
+    "Supplementary": {
+      "pdf_sha256": "88d0f52ad0b24e3411c054b7ee866d3e1fb479f77e192b9d35f2a52153e1ced8",
+      "pages": 57,
+      "undefined": 0,
+      "multiply_defined": 0,
+      "overfull_hbox": 0,
+      "bibtex_warnings": "no bibliography"
+    },
+    "manuscript": {
+      "pdf_sha256": "328cc82506bb98887b9092cf1582350ae7bb2b6fb826ef18beb386cfa57189ed",
+      "pages": 98,
+      "undefined": 0,
+      "multiply_defined": 0,
+      "overfull_hbox": 0,
+      "bibtex_warnings": "0"
+    },
+    "Response letter": {
+      "pdf_sha256": "47e1116a500f73e463751e562729cb9374084a3665f5ea275c97268d07909705",
+      "pages": 80,
+      "undefined": 0,
+      "multiply_defined": 0,
+      "overfull_hbox": 0,
+      "bibtex_warnings": "0"
+    }
+  },
+  "render_dpi": 144,
+  "rendered": [
+    "Response_letter-59.png",
+    "Response_letter-60.png",
+    "manuscript-8.png"
+  ],
+  "citation_display": "manuscript p8: Rahman et al (2022), Adewoyin et al (2021), Singh et al (2021), Miller et al (2021), Latif et al (2023) all resolved",
+  "visual_review": "manuscript p8: whole rearranged paragraph red, order Rahman -> deep learning -> TRU-NET -> Singh -> Miller -> Latif -> closing; reply pp59-60: red response, blue location box and two verbatim EvidenceBoxes. The 'Section 3.2:' sub-heading now sits directly above Comment 3.2(a) on p60 (previous page-foot orphan no longer occurs; no separate change made)",
+  "page_counts": {
+    "Supplementary": 57,
+    "manuscript": 98,
+    "Response_letter": 80
+  },
+  "response_letter_page_change": "78 -> 80 due to the new reply"
+}

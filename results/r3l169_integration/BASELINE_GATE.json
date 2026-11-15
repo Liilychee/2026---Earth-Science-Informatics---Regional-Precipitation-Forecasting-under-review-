@@ -1,0 +1,10 @@
+{
+  "remote_main": "8bb8a696c9d88f5113fa6dd04a168f251a3fd131",
+  "R3_02_closed_after_hashes_match": {
+    "manuscript.tex": true,
+    "Response letter.tex": true,
+    "sn-bibliography.bib": true
+  },
+  "paper_git_head": "ae4cd53b795943878bcf135634f62432b7e2b922",
+  "git_index_sha256": "1d0b3404f68e4158bf8257888e970fdd760cb62149eae449ba912bebe2850dd4"
+}
