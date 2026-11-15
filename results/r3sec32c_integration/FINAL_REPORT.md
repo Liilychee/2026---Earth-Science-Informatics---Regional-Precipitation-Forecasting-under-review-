@@ -34,3 +34,6 @@ Covers: ws computed and tested, no clear gain; joint local z500+tcwv: BiAttn −
 
 ## Not done
 No staging/commit/push; not CLOSED; Section 3.2(d) not started; R2-M9 untouched.
+
+## Selective archive and closure (2026-11-15)
+Scientific commit d3de71d3488144d2c025d9b4b6e219c5be48f307 (fast-forward from dc72acc), 39 files under results/r3sec32c_integration only; before/ and r3_05_post_closure_delta/ excluded. Fresh-clone readback 39/39 blobs and manifest match. Chained rebuild (remote R3-05 patch → hash-recorded local R3-05 delta → remote R3-06 PORTABLE patch) reproduced manuscript, Supplementary and Response letter byte-for-byte with git apply and BSD patch; 130/130 excerpts; Table S51 12/12; 961 protected files unchanged. Closure commit adds STATUS (CLOSED), REMOTE_RECEIPT, GIT_ARCHIVE_REPORT, CLOSURE_STATUS.patch (tracking notes as patch only), this update, GIT_SCOPE update and CLOSURE_MANIFEST. Task 21: R3-06 part only. Pending: separate archive of the R3-05 reply simplification.

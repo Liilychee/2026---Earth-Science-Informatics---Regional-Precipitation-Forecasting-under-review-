@@ -1,8 +1,7 @@
-# R3 Section 3.2(c) (R3-06) — STATUS
+# R3-06 (Section 3.2(c): z500, tcwv and wind speed) CLOSED — 2026-11-15
 
-SCIENTIFIC_INTEGRATION_VERIFIED — GIT_ARCHIVE_IN_PROGRESS
+Author-approved revision using existing q21 refits only (no training or download). Manuscript §4.1: one concise paragraph after the C6 results. Supplementary: new final section with Table S51 (C0/C1/C2 for XGBoost and BiLSTM-Attention; All/Wet/Upper tail; paired seed-t and 7-day moving-block intervals; no multiplicity adjustment); the 50 existing table numbers are unchanged. C1 (ws computed per grid cell, then 25-cell mean) gave no clear RMSE improvement for either model; C2 (local 500-hPa geopotential in m² s⁻², not converted, jointly with tcwv) reduced BiLSTM-Attention RMSE by 1.18% with both intervals excluding zero and gave no clear improvement for XGBoost; the joint experiment does not separate the two variables; the original candidate pool did not include them. Upstream discussion is deferred to Section 3.2(d). One new EvidenceBox: 129 + 1 = 130/130.
 
-- Author-approved local integration (manuscript §4.1 paragraph, Supplementary Table S51 in a new final section, Response letter R3 Section 3.2(c) reply + one EvidenceBox).
-- Not CLOSED until fixed-commit GitHub readback, chained patch reconstruction and 130/130 excerpt re-verification pass.
-- Task 21 not closed as a whole. R3 Section 3.2(d) not started. R2-M9 untouched.
-- R3-05 post-closure reply simplification is excluded from this archive (separate pending item); dependency recorded in PATCH_BASE_DEPENDENCY.json.
+Scientific archive: `d3de71d3488144d2c025d9b4b6e219c5be48f307`, normally pushed (fast-forward from dc72acc). Fixed-commit GitHub readback **39/39 blob hashes match**. Chained reconstruction from the remote closed R3-05 state (R3S32b patch) → locally preserved R3-05 post-closure delta (hash recorded on remote) → remote R3S32c PORTABLE patch rebuilt manuscript, Supplementary and Response letter byte-for-byte with both git apply and BSD patch; 130/130 excerpts, 12 Table S51 rows and 961 protected files re-verified. Recorded in REMOTE_RECEIPT.json.
+
+Only R3-06 is CLOSED; task 21 is not closed as a whole. R3-05 remains CLOSED; its post-closure reply simplification is NOT archived and remains a separate pending item. Section 3.2(d) not started; R2-M9 untouched.

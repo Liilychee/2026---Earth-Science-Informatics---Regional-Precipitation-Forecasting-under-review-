@@ -1,0 +1,261 @@
+{
+  "stage": "scientific_archive_remote_verified",
+  "commit": "d3de71d3488144d2c025d9b4b6e219c5be48f307",
+  "base_commit": "dc72acc4e138c4675f81559f71564df562090fd1",
+  "remote_main_after_push": "d3de71d3488144d2c025d9b4b6e219c5be48f307",
+  "repository": "https://github.com/Liilychee/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-",
+  "readback_method": "fresh shallow sparse clone; git ls-tree blob comparison; manifest SHA-256; chained reconstruction (remote R3S32b PORTABLE -> local hash-recorded R3-05 post-closure delta -> remote R3S32c PORTABLE) with git apply and BSD patch; 130-excerpt and Table S51 re-verification",
+  "remote_file_count": 39,
+  "all_blobs_match": true,
+  "manifest_sha256_match": true,
+  "changed_outside_record_dir": [],
+  "r3_05_delta_archived": false,
+  "chain": {
+    "step1_closed_R3_05_RL": "44f8908601f8788e\u2026",
+    "step2_R3_05_simplified_RL": "e14c0f89dd0bbaaa\u2026",
+    "step3": {
+      "manuscript.tex": "byte-identical",
+      "Supplementary.tex": "byte-identical",
+      "Response letter.tex": "byte-identical"
+    }
+  },
+  "excerpts": "129 + 1 = 130/130",
+  "table_s51_rows": "12/12",
+  "protected_files_unchanged": 961,
+  "checks": [
+    {
+      "path": "results/r3sec32c_integration/ARCHIVE_MANIFEST.json",
+      "sha": "efabf1be022cffd2867e1ec3c0301ef7e1df13a4",
+      "remote_sha": "efabf1be022cffd2867e1ec3c0301ef7e1df13a4",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/CELL_INDEX.json",
+      "sha": "0d219625fab06a81cf60e22116e9867db2bc337f",
+      "remote_sha": "0d219625fab06a81cf60e22116e9867db2bc337f",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/DOCUMENT_HASHES.json",
+      "sha": "05c66a4ea4bc9cc7222cf2dad5082f9abbcbd2eb",
+      "remote_sha": "05c66a4ea4bc9cc7222cf2dad5082f9abbcbd2eb",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/EVIDENCE_INDEX.md",
+      "sha": "d1c0ba840e77b3b9c85110e54a2f105782718c9d",
+      "remote_sha": "d1c0ba840e77b3b9c85110e54a2f105782718c9d",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/EXCERPT_INDEX.json",
+      "sha": "34a1ec1aa4489817685824a1024e860004a54d28",
+      "remote_sha": "34a1ec1aa4489817685824a1024e860004a54d28",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/FINAL_REPORT.md",
+      "sha": "626e49bbe8132b04efd42d4eee571938d3a07abb",
+      "remote_sha": "626e49bbe8132b04efd42d4eee571938d3a07abb",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/GIT_SCOPE.md",
+      "sha": "70d0cac576eb386dc837a0659ec609d51e5546bd",
+      "remote_sha": "70d0cac576eb386dc837a0659ec609d51e5546bd",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/GIT_STATE.json",
+      "sha": "2b0ae9d18aa9695b7b0b56a387cf14d7bdea2618",
+      "remote_sha": "2b0ae9d18aa9695b7b0b56a387cf14d7bdea2618",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/GIT_STATUS.txt",
+      "sha": "11e1a23528791dc6d53f49e55af2004c285279c9",
+      "remote_sha": "11e1a23528791dc6d53f49e55af2004c285279c9",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/ORIGINAL_WORKTREE_GUARD.json",
+      "sha": "cf4c48c7f5873ce77de218946c105e1a57cc841b",
+      "remote_sha": "cf4c48c7f5873ce77de218946c105e1a57cc841b",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/PATCH_BASE_DEPENDENCY.json",
+      "sha": "a8ac3b5f908c74b1a52aa97663f5fce945e4653b",
+      "remote_sha": "a8ac3b5f908c74b1a52aa97663f5fce945e4653b",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/PATCH_RECONSTRUCTION.json",
+      "sha": "38b5daf18bb9b4eb610b3303fb0cd360492994db",
+      "remote_sha": "38b5daf18bb9b4eb610b3303fb0cd360492994db",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/PDF_CHECK.json",
+      "sha": "105e75bb7c6abfa48da809409cef212d8e9bc4fc",
+      "remote_sha": "105e75bb7c6abfa48da809409cef212d8e9bc4fc",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/PROTECTED_HASHES.json",
+      "sha": "f34d8afbb26c0be956848dcd7329672cfb891ccd",
+      "remote_sha": "f34d8afbb26c0be956848dcd7329672cfb891ccd",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/R3S32c_LOCAL.patch",
+      "sha": "baa6c279a45da6d81a25617bcce9edc3bee2150f",
+      "remote_sha": "baa6c279a45da6d81a25617bcce9edc3bee2150f",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/R3S32c_PORTABLE.patch",
+      "sha": "104ac60ad3faa15f375737fc6e81a03dd562878f",
+      "remote_sha": "104ac60ad3faa15f375737fc6e81a03dd562878f",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/STATUS.md",
+      "sha": "a49c0f0189aac25c0b3ea2e01bc201e38789e21c",
+      "remote_sha": "a49c0f0189aac25c0b3ea2e01bc201e38789e21c",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/VERIFICATION.json",
+      "sha": "e1636bd897b8d1275a962064fbeba898ea55eeb3",
+      "remote_sha": "e1636bd897b8d1275a962064fbeba898ea55eeb3",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/VERIFICATION_DETAIL.json",
+      "sha": "0104d7153535d2050f82ee152d3aeb654a0385a7",
+      "remote_sha": "0104d7153535d2050f82ee152d3aeb654a0385a7",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/compile_Response_letter.txt",
+      "sha": "7257fa408c9956e03d38720a4e7e7a160531e147",
+      "remote_sha": "7257fa408c9956e03d38720a4e7e7a160531e147",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/compile_Response_letter_final.txt",
+      "sha": "39129af22c89059d7b0616ae5b76f8f25747d03d",
+      "remote_sha": "39129af22c89059d7b0616ae5b76f8f25747d03d",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/compile_Supplementary.txt",
+      "sha": "314f50ff6fb1f7cd9bb5d268609fdcfef486a29a",
+      "remote_sha": "314f50ff6fb1f7cd9bb5d268609fdcfef486a29a",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/compile_Supplementary_final.txt",
+      "sha": "e6ecf47f02d17ee4132278b3f43bdd86f9c50062",
+      "remote_sha": "e6ecf47f02d17ee4132278b3f43bdd86f9c50062",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/compile_manuscript.txt",
+      "sha": "26babfecee79c74bc1a6a6b12cc22ea707989abb",
+      "remote_sha": "26babfecee79c74bc1a6a6b12cc22ea707989abb",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/compile_manuscript_final.txt",
+      "sha": "025b39b681f552e38f39998c6ed96c41e2f8ee22",
+      "remote_sha": "025b39b681f552e38f39998c6ed96c41e2f8ee22",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/evidence/04-21_README.txt",
+      "sha": "c1a2b8ad09f239845f016d50ae9f6cf056cdd154",
+      "remote_sha": "c1a2b8ad09f239845f016d50ae9f6cf056cdd154",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/evidence/Q21_SOURCE_HASHES.json",
+      "sha": "714d4925170324fd02fe608bb61c7709aaebae08",
+      "remote_sha": "714d4925170324fd02fe608bb61c7709aaebae08",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/evidence/q21_build_features.py",
+      "sha": "10dd68aa193c9bc8b4f560611cfa5a02a899990d",
+      "remote_sha": "10dd68aa193c9bc8b4f560611cfa5a02a899990d",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/evidence/q21_build_output.txt",
+      "sha": "b06bebd915e4d73e1072cbe8dab36703b0db57de",
+      "remote_sha": "b06bebd915e4d73e1072cbe8dab36703b0db57de",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/evidence/q21_effect.csv",
+      "sha": "a537c61d7cc9d2c517d0bd9ceb171b11b67dcc1b",
+      "remote_sha": "a537c61d7cc9d2c517d0bd9ceb171b11b67dcc1b",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/evidence/q21_repro_output.txt",
+      "sha": "35370663c1360998fe02a1ceff21c09681f72dfb",
+      "remote_sha": "35370663c1360998fe02a1ceff21c09681f72dfb",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/evidence/q21_runs.csv",
+      "sha": "f51cab3aecb4f3e03315218141177eca323b223b",
+      "remote_sha": "f51cab3aecb4f3e03315218141177eca323b223b",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/evidence/q21_stats.py",
+      "sha": "5a84fedf1e9c5a5b1be52d7703b1b4ef2e14b465",
+      "remote_sha": "5a84fedf1e9c5a5b1be52d7703b1b4ef2e14b465",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/evidence/q21_summary.csv",
+      "sha": "ae51771699edf54ed6a25d014899b73aba0b1fe6",
+      "remote_sha": "ae51771699edf54ed6a25d014899b73aba0b1fe6",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/evidence/q21_train.py",
+      "sha": "e1f701cdd64412024534127844d5e1246a6a005c",
+      "remote_sha": "e1f701cdd64412024534127844d5e1246a6a005c",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/render/Response_letter-63.png",
+      "sha": "db31cfefd00518a8ba414d1fba5b0c730cd559c2",
+      "remote_sha": "db31cfefd00518a8ba414d1fba5b0c730cd559c2",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/render/Response_letter-64.png",
+      "sha": "f63d139ae51ebd8ae32c88eb5e3fcdecf9ff8812",
+      "remote_sha": "f63d139ae51ebd8ae32c88eb5e3fcdecf9ff8812",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/render/Supplementary-58.png",
+      "sha": "7a6696d43249b72d632a70a40f784661b0c7a4e7",
+      "remote_sha": "7a6696d43249b72d632a70a40f784661b0c7a4e7",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32c_integration/render/manuscript-46.png",
+      "sha": "31bce6be6a04fdfe504d73aef53feae5a047e8d4",
+      "remote_sha": "31bce6be6a04fdfe504d73aef53feae5a047e8d4",
+      "match": true
+    }
+  ]
+}

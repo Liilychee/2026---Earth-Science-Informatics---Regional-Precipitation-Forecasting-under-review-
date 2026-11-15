@@ -5,3 +5,5 @@ Local phase: manuscript.tex §4.1 pure insertion (one \revminor paragraph after 
 ## Author-authorised selective archive phase (2026-11-15)
 
 Remote main re-queried: dc72acc4e138c4675f81559f71564df562090fd1 (unchanged). Independent worktree /private/tmp/esi-r3sec32c-integration-sync; explicit allowlist: results/r3sec32c_integration excluding before/, r3_05_post_closure_delta/ and ARCHIVE_PATHS.json. The R3-05 post-closure reply simplification is not archived here; the Response letter patch base and apply order are recorded in PATCH_BASE_DEPENDENCY.json. Paper workspace, index and uncommitted changes protected.
+
+Closure: scientific commit d3de71d3488144d2c025d9b4b6e219c5be48f307 pushed and 39/39 blobs read back; chained reconstruction byte-identical. Closure commit carries only STATUS, REMOTE_RECEIPT, GIT_ARCHIVE_REPORT, CLOSURE_STATUS.patch, FINAL_REPORT, GIT_SCOPE and CLOSURE_MANIFEST.
