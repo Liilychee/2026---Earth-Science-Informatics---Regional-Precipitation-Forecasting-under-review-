@@ -1,0 +1,15 @@
+{
+  "old_count": 120,
+  "old_unchanged": 120,
+  "new": [
+    {
+      "text": "Global data-driven models such as FourCastNet, Pangu-Weather, GraphCast and FuXi illustrate different neural-network approaches to atmospheric prediction \\citep{pathak2022fourcastnet,bi2023accurate,lam2023learning,chen2023fuxi}.",
+      "sha256": "1888cc8bb0d02af3e6165672dad14da2a776bfbe539597ecd4982c1a4cb48d26",
+      "verbatim_in_manuscript": true,
+      "manuscript_line": 65
+    }
+  ],
+  "total": 121,
+  "all_match": true,
+  "old_excerpts_quoting_edited_sentence": 0
+}

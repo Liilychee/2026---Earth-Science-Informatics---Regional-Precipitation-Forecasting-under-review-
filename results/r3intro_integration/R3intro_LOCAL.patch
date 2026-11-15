@@ -1,0 +1,76 @@
+diff --git a/Response letter.tex b/Response letter.tex
+index 6644d1e..2d90f11 100644
+--- a/Response letter.tex	
++++ b/Response letter.tex	
+@@ -1078,9 +1078,13 @@ The limitations are explicit. SHAP bootstrap intervals condition on the fitted m
+ 
+ \ReviewerComment{Missing references in the introduction. Kindly include other AI weather models such as GraphCast and FourCastNet with relevant citations.}
+ 
+-\PendingResponse
++\AuthorResponse{We thank the reviewer for this suggestion. We have added GraphCast \citep{lam2023learning} and FourCastNet \citep{pathak2022fourcastnet} to the Introduction (Section~\ref{manuscript-intro}). The paragraph on machine-learning weather prediction now cites four representative global data-driven models: FourCastNet, Pangu-Weather \citep{bi2023accurate}, GraphCast and FuXi \citep{chen2023fuxi}. Pangu-Weather is now cited through its peer-reviewed publication. These models are cited as research background only. The present study does not evaluate them or compare its regional models with them. The existing sentence in the same paragraph, stating that the performance and inference characteristics of such global models do not establish the accuracy or computational cost of the regional models evaluated here, is retained unchanged.}
+ 
+-\ChangeLocation
++\ManuscriptChange{Section~\ref{manuscript-intro} (Introduction), paragraph on machine-learning weather prediction: the sentence introducing global data-driven models was revised. Bibliography entries were added or corrected for FourCastNet, GraphCast and the published Pangu-Weather article. Final page and line numbers pending full-manuscript assembly.}
++
++\EvidenceBox{Revised Introduction (Section~\ref{manuscript-intro}; final page and line numbers pending)}{
++\RevisedExcerpt{Global data-driven models such as FourCastNet, Pangu-Weather, GraphCast and FuXi illustrate different neural-network approaches to atmospheric prediction \citep{pathak2022fourcastnet,bi2023accurate,lam2023learning,chen2023fuxi}.}
++}
+ 
+ % Review ID: R3 Section 2
+ \Needspace{5\baselineskip}
+diff --git a/manuscript.tex b/manuscript.tex
+index d1ead40..fe2be5d 100644
+--- a/manuscript.tex
++++ b/manuscript.tex
+@@ -62,7 +62,7 @@ Short-term precipitation forecasting over Dublin is challenging because of the s
+ 
+ Accurate short-term precipitation forecasting is important for urban flood management, transportation safety, and water-resource planning, particularly in regions such as Ireland where weather conditions can change rapidly under strong maritime influence \citep{toth2000comparison}. Precipitation remains difficult to predict because of the nonlinear evolution of atmospheric processes, the intermittency of rainfall, and limitations in the spatial and temporal representation of meteorological observations \citep{magnusson2019ecmwf}. Numerical Weather Prediction systems, including the European Centre for Medium-Range Weather Forecasts (ECMWF) Integrated Forecasting System, provide physically based forecasts and commonly use ensemble approaches to represent forecast uncertainty. \textcolor{red}{The present study evaluates a regional data-driven forecasting setting and does not claim that its models can replace operational NWP systems or provide a computational advantage over them.}
+ 
+-Machine-learning weather prediction has developed rapidly in recent years. Large-scale models such as Pangu-Weather and FuXi provide background examples of data-driven atmospheric modelling \citep{bi2022pangu,chen2023fuxi}. \textcolor{red}{Their reported performance and inference characteristics do not establish the accuracy or end-to-end computational cost of the regional models evaluated here.} Recurrent neural networks and related sequence models can represent temporal dependencies in sequences of meteorological predictors. However, predictive accuracy alone does not provide a complete assessment of precipitation forecasting performance. Rainfall distributions are highly skewed, dry and low-rainfall observations are common, and high-intensity events occur much less frequently. A model that performs well over the full test distribution may therefore behave differently when evaluated specifically under stronger rainfall conditions.
++Machine-learning weather prediction has developed rapidly in recent years. \revminor{Global data-driven models such as FourCastNet, Pangu-Weather, GraphCast and FuXi illustrate different neural-network approaches to atmospheric prediction \citep{pathak2022fourcastnet,bi2023accurate,lam2023learning,chen2023fuxi}.} \textcolor{red}{Their reported performance and inference characteristics do not establish the accuracy or end-to-end computational cost of the regional models evaluated here.} Recurrent neural networks and related sequence models can represent temporal dependencies in sequences of meteorological predictors. However, predictive accuracy alone does not provide a complete assessment of precipitation forecasting performance. Rainfall distributions are highly skewed, dry and low-rainfall observations are common, and high-intensity events occur much less frequently. A model that performs well over the full test distribution may therefore behave differently when evaluated specifically under stronger rainfall conditions.
+ 
+ Uncertainty estimation provides an additional perspective on forecast quality. Many machine-learning forecasting models are trained to produce a single deterministic prediction, whereas risk-sensitive applications also require information about the uncertainty associated with that estimate \citep{yang2024interpretable}. Probabilistic neural networks can address this issue by predicting parameters of a conditional distribution rather than a single rainfall value. However, satisfactory probabilistic performance over the full test set does not necessarily imply reliable uncertainty estimates for less frequent heavy-rainfall events. Evaluation of prediction-interval coverage and probabilistic scores across different rainfall regimes is therefore important when assessing the reliability of probabilistic precipitation forecasts. In this study, these questions are evaluated for the upper tail of ERA5-derived regional-mean hourly precipitation, rather than as an assessment of operational heavy-rainfall warning capability.
+ 
+diff --git a/sn-bibliography.bib b/sn-bibliography.bib
+index eab8180..fe99a2e 100644
+--- a/sn-bibliography.bib
++++ b/sn-bibliography.bib
+@@ -1203,12 +1203,12 @@ year = {2026}
+  doi={10.1198/jbes.2010.08110}
+ }
+ 
+-@article{article,
+-author = {Pathak, Jaideep and Subramanian, Shashank and Harrington, Peter and Raja, Sanjeev and Chattopadhyay, Ashesh and Mardani, Morteza and Kurth, Thorsten and Hall, David and Li, Zongyi and Azizzadenesheli, Kamyar and Hassanzadeh, Pedram and Kashinath, Karthik and Anandkumar, Animashree},
+-year = {2022},
+-month = {02},
+-pages = {},
+-title = {FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators}
++@misc{pathak2022fourcastnet,
++  title  = {{FourCastNet}: A Global Data-driven High-resolution Weather Model using Adaptive {Fourier} Neural Operators},
++  author = {Pathak, Jaideep and Subramanian, Shashank and Harrington, Peter and Raja, Sanjeev and Chattopadhyay, Ashesh and Mardani, Morteza and Kurth, Thorsten and Hall, David and Li, Zongyi and Azizzadenesheli, Kamyar and Hassanzadeh, Pedram and Kashinath, Karthik and Anandkumar, Animashree},
++  year   = {2022},
++  note   = {arXiv preprint arXiv:2202.11214},
++  url    = {https://arxiv.org/abs/2202.11214}
+ }
+ 
+ @article{lam2023learning,
+@@ -1219,5 +1219,17 @@ title = {FourCastNet: A Global Data-driven High-resolution Weather Model using A
+   number={6677},
+   pages={1416--1421},
+   year={2023},
+-  publisher={American Association for the Advancement of Science}
++  publisher={American Association for the Advancement of Science},
++  doi={10.1126/science.adi2336}
++}
++
++@article{bi2023accurate,
++  title   = {Accurate medium-range global weather forecasting with {3D} neural networks},
++  author  = {Bi, Kaifeng and Xie, Lingxi and Zhang, Hengheng and Chen, Xin and Gu, Xiaotao and Tian, Qi},
++  journal = {Nature},
++  volume  = {619},
++  number  = {7970},
++  pages   = {533--538},
++  year    = {2023},
++  doi     = {10.1038/s41586-023-06185-3}
+ }
+\ No newline at end of file

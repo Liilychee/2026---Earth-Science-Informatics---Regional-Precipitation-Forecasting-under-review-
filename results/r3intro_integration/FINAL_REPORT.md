@@ -1,0 +1,16 @@
+# R3-01 local integration report (2026-11-15)
+
+**Scope.** Reviewer 3, Introduction: "Missing references in the introduction. Kindly include other AI weather models such as GraphCast and FourCastNet with relevant citations." Author decision: cite only FourCastNet, Pangu-Weather, GraphCast and FuXi. Baseline: R2-m4 CLOSED, remote main 61bb5bd; manuscript/Supplementary/Response letter matched R2-m4 after-hashes; the bib differed only by the author's appended FourCastNet and GraphCast entries (prefix byte-identical to the R2-m4-guarded bib).
+
+**Pre-edit finding reported and approved.** The author's FourCastNet entry was `@article{article}` without a venue, with empty pages and no arXiv identifier; GraphCast lacked its DOI; the existing Pangu key `bi2022pangu` is the 2022 arXiv preprint. Metadata were checked against arXiv (2202.11214) and Crossref (10.1126/science.adi2336; 10.1038/s41586-023-06185-3; 10.1038/s41612-023-00512-1).
+
+**Changes.**
+- `sn-bibliography.bib`: `@article{article}` replaced by `@misc{pathak2022fourcastnet}` (13 verified authors, 2022, arXiv:2202.11214, URL; `{Fourier}` protected after the first render showed it lower-cased); `lam2023learning` gains `doi = {10.1126/science.adi2336}`, other fields unchanged; new `@article{bi2023accurate}` (Nature 619(7970):533--538, 2023). `bi2022pangu`, `chen2023fuxi` and the pre-existing malformed duplicate `chen2023{FuXi}` are untouched.
+- `manuscript.tex` (Introduction, line 65): only the second sentence of the machine-learning weather-prediction paragraph was replaced, wrapped in the project's `\revminor{}` so text and citations are red: "Global data-driven models such as FourCastNet, Pangu-Weather, GraphCast and FuXi illustrate different neural-network approaches to atmospheric prediction \citep{pathak2022fourcastnet,bi2023accurate,lam2023learning,chen2023fuxi}." The existing red limitation sentence and all other text are retained.
+- `Response letter.tex`: R3 Introduction block only; red formal response (models cited as background, no performance comparison), blue location box and one blue verbatim EvidenceBox.
+
+**Consequence to note.** The replaced sentence was the only citation of `bi2022pangu`; that entry stays in the bib but no longer appears in the reference list. No other 2022 citation was changed.
+
+**Verification.** 120 old RevisedExcerpts unchanged, none quoted the edited sentence; 1 new excerpt verbatim (121/121, colour-stripped). Supplementary source and PDF unchanged; Figures and 831 protected files intact. Builds Supplementary 57 pp, manuscript 98 pp (was 97), Response letter 78 pp; 0 undefined/multiply-defined references, 0 overfull hboxes, 0 BibTeX warnings. Manuscript p3 shows "(Pathak et al, 2022; Bi et al, 2023; Lam et al, 2023; Chen et al, 2023)"; reference lists of both documents contain all four entries with DOI/arXiv. 144-dpi renders in render/ were inspected (manuscript p3, pp90-94; Response letter pp58-59, 77-78). LOCAL patch reconstructs with git apply; PORTABLE with git apply and BSD patch.
+
+**Not done (by instruction).** No stage/commit/push, not CLOSED; task 29/checklist notes not appended (pending archive); no other R3 item started. The R3 general-assessment reply still carries its "[Brief summary ...]" placeholder (pre-existing, outside scope).

@@ -1,0 +1,14 @@
+{
+  "manuscript.tex": "5f2accb52029af304acccaa7c945041dbc5f6485b266ae5ab839bdf5e8c223e3",
+  "Supplementary.tex": "f60411408b4920a35a463a584594e0177dede7cf18c16ec5f3d5196177507cd8",
+  "Response letter.tex": "884e0430e9c72daa9a64116a7f775d3353c9c3fadf609d07e76665fe98a45c1a",
+  "sn-bibliography.bib": "e3d3e44bd184f84a702ff0d4c21d18d18407f9d08028b8e031ea7af8b2332b4a",
+  "ESI_审稿意见分类_严重程度排序_35项.md": "8d8d8d11ed5b8054df2ba5b7581279de5a1259de20b52dfb5095a49f2d44395b",
+  "FINAL_REVISION_CHECKLIST.md": "71a1c6071d0e2672c4e1ef98f9692a447f5f74a34ae1a0ae8708f98b633ab66c",
+  "SUPPLEMENTARY_TABLE_REGISTRY.md": "5b335f54c48660d2dd86947bad68bb51bf9c18fdee8c8e68d29d8ce97f734161",
+  "build/manuscript.pdf": "82ee419ea4360c7840787e0978ffd6cda465075e84fde2d5831387d63b092334",
+  "build/Supplementary.pdf": "88d0f52ad0b24e3411c054b7ee866d3e1fb479f77e192b9d35f2a52153e1ced8",
+  "build/Response letter.pdf": "244b7c4be78728e415367ac457229108c0a1124c95adebab4bbe682e01dfd580",
+  "git_index_sha256": "1d0b3404f68e4158bf8257888e970fdd760cb62149eae449ba912bebe2850dd4",
+  "git_head": "ae4cd53b795943878bcf135634f62432b7e2b922"
+}

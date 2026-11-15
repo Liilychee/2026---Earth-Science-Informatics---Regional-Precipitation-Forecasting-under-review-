@@ -1,0 +1,57 @@
+[
+  {
+    "key": "pathak2022fourcastnet",
+    "field": "type/key",
+    "value": "@misc{pathak2022fourcastnet}",
+    "replaces": "@article{article} (no journal, empty pages)",
+    "source": "author decision; arXiv abs page"
+  },
+  {
+    "key": "pathak2022fourcastnet",
+    "field": "title",
+    "value": "{FourCastNet}: A Global Data-driven High-resolution Weather Model using Adaptive {Fourier} Neural Operators",
+    "source": "https://arxiv.org/abs/2202.11214"
+  },
+  {
+    "key": "pathak2022fourcastnet",
+    "field": "author",
+    "value": "13 authors Pathak ... Anandkumar (order unchanged from author's entry)",
+    "source": "https://arxiv.org/abs/2202.11214"
+  },
+  {
+    "key": "pathak2022fourcastnet",
+    "field": "year",
+    "value": "2022",
+    "source": "arXiv submission 22 Feb 2022"
+  },
+  {
+    "key": "pathak2022fourcastnet",
+    "field": "note/url",
+    "value": "arXiv preprint arXiv:2202.11214; https://arxiv.org/abs/2202.11214",
+    "source": "https://arxiv.org/abs/2202.11214"
+  },
+  {
+    "key": "lam2023learning",
+    "field": "doi",
+    "value": "10.1126/science.adi2336",
+    "source": "Crossref: Science 382(6677):1416-1421, 2023, title 'Learning skillful medium-range global weather forecasting'"
+  },
+  {
+    "key": "bi2023accurate",
+    "field": "all",
+    "value": "Bi, Xie, Zhang, Chen, Gu, Tian (2023) Accurate medium-range global weather forecasting with 3D neural networks. Nature 619(7970):533-538. doi:10.1038/s41586-023-06185-3",
+    "source": "Crossref 10.1038/s41586-023-06185-3"
+  },
+  {
+    "key": "chen2023fuxi",
+    "field": "unchanged",
+    "value": "npj Clim Atmos Sci 6:190 (2023) doi:10.1038/s41612-023-00512-1",
+    "source": "Crossref check only; entry not modified"
+  },
+  {
+    "key": "bi2022pangu",
+    "field": "unchanged entry",
+    "value": "retained in bib; its only citation (Introduction sentence) now uses bi2023accurate, so it no longer appears in the reference list",
+    "source": "grep of all .tex citations"
+  }
+]

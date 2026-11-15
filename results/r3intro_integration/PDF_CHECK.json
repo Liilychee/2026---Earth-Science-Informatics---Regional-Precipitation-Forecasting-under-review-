@@ -1,0 +1,54 @@
+{
+  "build_order": [
+    "Supplementary",
+    "manuscript",
+    "Response letter"
+  ],
+  "compiler": "latexmk -pdf (TinyTeX)",
+  "documents": {
+    "Supplementary": {
+      "pdf_sha256": "88d0f52ad0b24e3411c054b7ee866d3e1fb479f77e192b9d35f2a52153e1ced8",
+      "pages": 57,
+      "undefined": 0,
+      "multiply_defined": 0,
+      "overfull_hbox": 0,
+      "bibtex_warnings": "no bibliography"
+    },
+    "manuscript": {
+      "pdf_sha256": "82ee419ea4360c7840787e0978ffd6cda465075e84fde2d5831387d63b092334",
+      "pages": 98,
+      "undefined": 0,
+      "multiply_defined": 0,
+      "overfull_hbox": 0,
+      "bibtex_warnings": "0"
+    },
+    "Response letter": {
+      "pdf_sha256": "244b7c4be78728e415367ac457229108c0a1124c95adebab4bbe682e01dfd580",
+      "pages": 78,
+      "undefined": 0,
+      "multiply_defined": 0,
+      "overfull_hbox": 0,
+      "bibtex_warnings": "0"
+    }
+  },
+  "render_dpi": 144,
+  "rendered_pages": {
+    "manuscript": [
+      3,
+      90,
+      91,
+      92,
+      94
+    ],
+    "Response_letter": [
+      58,
+      59,
+      77,
+      78
+    ]
+  },
+  "citation_display": "manuscript p3: (Pathak et al, 2022; Bi et al, 2023; Lam et al, 2023; Chen et al, 2023); Pangu shown as 2023",
+  "reference_list": "manuscript pp90-94 and Response letter pp77-78 list all four entries with DOI/arXiv; Fourier capitalised",
+  "visual_review": "p3 new sentence and citations red, existing red limitation sentence retained; RL p58 red response, blue location box and blue verbatim EvidenceBox, no clipping or overlap",
+  "renderer": "/private/tmp/r1m1-plot-env (existing isolated PyMuPDF venv)"
+}

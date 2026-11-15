@@ -1,0 +1,31 @@
+{
+  "baseline_R2m4_closed_remote": "61bb5bdb03442191f456239d52c39129c258d566",
+  "old_excerpts_unchanged": 120,
+  "new_exact_excerpts": 1,
+  "total_matched": 121,
+  "old_excerpts_quoting_edited_sentence": 0,
+  "manuscript_lines_changed": 1,
+  "Response_letter_only_R3_Introduction_block_changed": true,
+  "Supplementary_unchanged": true,
+  "Supplementary_pdf_unchanged": true,
+  "Figures_unchanged": true,
+  "protected_files_intact": "831/831",
+  "bib_changes": [
+    "@article{article}->@misc{pathak2022fourcastnet} (arXiv:2202.11214, {Fourier} protected)",
+    "lam2023learning: +doi 10.1126/science.adi2336",
+    "+@article{bi2023accurate} (Nature 619:533-538, doi 10.1038/s41586-023-06185-3)"
+  ],
+  "bi2022pangu_entry_retained": true,
+  "bi2022pangu_cited_elsewhere": false,
+  "chen2023fuxi_unchanged": true,
+  "malformed_chen2023_FuXi_key_untouched": true,
+  "citation_display_pangu_year": 2023,
+  "undefined_citations": 0,
+  "bibtex_warnings": 0,
+  "patch_reconstruction_LOCAL_git": true,
+  "patch_reconstruction_PORTABLE_git_and_bsd": true,
+  "no_new_claims_about_NWP_or_cost": true,
+  "only_four_models": true,
+  "commit_push_performed": false,
+  "closed": false
+}

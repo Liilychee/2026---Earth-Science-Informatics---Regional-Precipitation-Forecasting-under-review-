@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/h19FC7AxqoBzaerDrn6eYNIBCBo</id>
+  <title>arXiv Query: search_query=&amp;id_list=2202.11214&amp;start=0&amp;max_results=10</title>
+  <updated>2026-11-15T14:37:04Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2202.11214" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2202.11214v1</id>
+    <title>FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators</title>
+    <updated>2022-02-22T22:19:35Z</updated>
+    <link href="https://arxiv.org/abs/2202.11214v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2202.11214v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>FourCastNet, short for Fourier Forecasting Neural Network, is a global data-driven weather forecasting model that provides accurate short to medium-range global predictions at $0.25^{\circ}$ resolution. FourCastNet accurately forecasts high-resolution, fast-timescale variables such as the surface wind speed, precipitation, and atmospheric water vapor. It has important implications for planning wind energy resources, predicting extreme weather events such as tropical cyclones, extra-tropical cyclones, and atmospheric rivers. FourCastNet matches the forecasting accuracy of the ECMWF Integrated Forecasting System (IFS), a state-of-the-art Numerical Weather Prediction (NWP) model, at short lead times for large-scale variables, while outperforming IFS for variables with complex fine-scale structure, including precipitation. FourCastNet generates a week-long forecast in less than 2 seconds, orders of magnitude faster than IFS. The speed of FourCastNet enables the creation of rapid and inexpensive large-ensemble forecasts with thousands of ensemble-members for improving probabilistic forecasting. We discuss how data-driven deep learning models such as FourCastNet are a valuable addition to the meteorology toolkit to aid and augment NWP models.</summary>
+    <category term="physics.ao-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-02-22T22:19:35Z</published>
+    <arxiv:primary_category term="physics.ao-ph"/>
+    <author>
+      <name>Jaideep Pathak</name>
+    </author>
+    <author>
+      <name>Shashank Subramanian</name>
+    </author>
+    <author>
+      <name>Peter Harrington</name>
+    </author>
+    <author>
+      <name>Sanjeev Raja</name>
+    </author>
+    <author>
+      <name>Ashesh Chattopadhyay</name>
+    </author>
+    <author>
+      <name>Morteza Mardani</name>
+    </author>
+    <author>
+      <name>Thorsten Kurth</name>
+    </author>
+    <author>
+      <name>David Hall</name>
+    </author>
+    <author>
+      <name>Zongyi Li</name>
+    </author>
+    <author>
+      <name>Kamyar Azizzadenesheli</name>
+    </author>
+    <author>
+      <name>Pedram Hassanzadeh</name>
+    </author>
+    <author>
+      <name>Karthik Kashinath</name>
+    </author>
+    <author>
+      <name>Animashree Anandkumar</name>
+    </author>
+  </entry>
+</feed>

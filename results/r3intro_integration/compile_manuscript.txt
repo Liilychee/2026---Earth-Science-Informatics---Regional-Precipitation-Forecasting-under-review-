@@ -1,0 +1,1731 @@
+Rc files read (in order):
+  NONE
+Latexmk: This is Latexmk, John Collins, 9 March 2026. Version 4.88.
+Latexmk: applying rule 'bibtex build/manuscript'...
+Rule 'bibtex build/manuscript':  Reasons for rerun
+Changed files or newly in use/created:
+  ./sn-bibliography.bib
+Category 'changed_user':
+  ./sn-bibliography.bib
+
+------------
+Run number 1 of rule 'bibtex build/manuscript'
+------------
+====== ENV{BIBINPUTS} changed to '/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-:build:/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/build:'
+Latexmk: Change directory to 'build/'.
+To assist finding of files in document directory, I set
+  BIBINPUTS='/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-:build:/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/build:'
+  BSTINPUTS='/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-:'.
+------------
+Running 'bibtex  "manuscript.aux"'
+------------
+This is BibTeX, Version 0.99e (TeX Live 2026)
+The top-level auxiliary file: manuscript.aux
+The style file: sn-basic.bst
+Database file #1: sn-bibliography.bib
+Latexmk: Change directory back to '/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-'
+Latexmk: applying rule 'pdflatex'...
+Rule 'pdflatex':  Reasons for rerun
+Changed files or newly in use/created:
+  /Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/manuscript.tex
+  manuscript.tex
+Category 'changed_user':
+  /Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/manuscript.tex
+  manuscript.tex
+
+------------
+Run number 1 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex  -interaction=nonstopmode -halt-on-error -recorder -output-directory="build"  "manuscript.tex"'
+------------
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./manuscript.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-09-09>
+(./sn-jnl.cls
+Document Class: sn-jnl 2019/11/18 v0.1: An authoring template for Springer Journal articles
+(/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/fleqn.clo) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/size10.clo)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty))) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def))) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amscls/amsthm.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/jknapltx/mathrsfs.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics/rotating.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/appendix/appendix.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/ncctools/manyfoot.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/ncctools/nccfoots.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/algorithms/algorithm.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/float/float.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/program/program.sty
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 841.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <16> not available
+(Font)              size <17.28> substituted on input line 841.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 841.
+
+(/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/jknapltx/ursfs.fd)
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 841.
+
+(/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/ueur.fd)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/listings/listings.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/listings/lstpatch.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/listings/lstmisc.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/listings/listings.cfg)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty))) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty))) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty))) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/tools/array.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/tools/hhline.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/preprint/balance.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/soul/soul.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/soul/soul-ori.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/stackengine/stackengine.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/listofitems/listofitems.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/listofitems/listofitems.tex)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/tools/calc.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lineno/lineno.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hyperref/xr-hyper.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/l3backend-pdftex.def) (build/manuscript.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/Users/yue/Library/TinyTeX/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg)) (build/manuscript.out) (build/manuscript.out) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmss.fd) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd)
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <8.43146> not available
+(Font)              size <8> substituted on input line 59.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.52061> not available
+(Font)              size <6> substituted on input line 59.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.51686> not available
+(Font)              size <5> substituted on input line 59.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active [1{/Users/yue/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/yue/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/Users/yue/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <> not available
+(Font)              size <5> substituted on input line 59.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <0.7> not available
+(Font)              size <5> substituted on input line 59.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <0.5> not available
+(Font)              size <5> substituted on input line 59.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [2]
+
+Package natbib Warning: Citation `pathak2022fourcastnet' on page 3 undefined on input line 65.
+
+
+Package natbib Warning: Citation `bi2023accurate' on page 3 undefined on input line 65.
+
+
+Package natbib Warning: Citation `lam2023learning' on page 3 undefined on input line 65.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [3]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [4] (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd)
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [5{/Users/yue/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [6]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [7]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [8]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [9]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [10]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [11{/Users/yue/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc} <./Figures/Study_region.PDF>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [12]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [13]
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.015> not available
+(Font)              size <5> substituted on input line 143.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [14]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [15]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [16]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [17{/Users/yue/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [18]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [19]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [20]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [21]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [22]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [23]
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Attention /
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Squared
+
+Underfull \hbox (badness 1147) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 1 encoder; $\OML/lmm/m/it/7 d[] \OT1/lmr/m/n/7 = 32$; 4
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Self-attention;
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 BiLSTM-
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Additive
+
+Underfull \hbox (badness 6559) in paragraph at lines 373--373
+\OT1/lmr/m/n/7 atten-tion (64
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Final
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 BU-LSTM-
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Additive
+
+Underfull \hbox (badness 6559) in paragraph at lines 373--373
+\OT1/lmr/m/n/7 atten-tion (64
+
+Underfull \hbox (badness 1092) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Prob. BiLSTM-
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Additive
+
+Underfull \hbox (badness 6559) in paragraph at lines 373--373
+\OT1/lmr/m/n/7 atten-tion (64
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 BiLSTM-
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Global aver-
+
+Underfull \hbox (badness 3838) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Matched deter-
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Additive
+
+Underfull \hbox (badness 6559) in paragraph at lines 373--373
+\OT1/lmr/m/n/7 atten-tion (64
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [24]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [25]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [26]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [27]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [28]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [29]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [30]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [31]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [32]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [33]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [34]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [35]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [36]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [37]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [38]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [39]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [40]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [41]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [42]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [43]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [44]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [45]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [46]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [47]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [48 <./Figures/r1M2_seed_rmse.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [49]
+Underfull \hbox (badness 6842) in paragraph at lines 788--789
+[]\OT1/lmr/m/n/10.03749 On the full 3,939-sample test set, Ridge L1 achieved RMSE
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [50]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [51]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [52]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [53]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [54]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [55]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [56 <./Figures/r1M1_stratified_rmse.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [57]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [58 <./Figures/r1M1_prediction_distribution.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [59]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [60 <./Figures/r2M4_event_csi.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [61]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [62]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [63]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [64]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [65 <./Figures/r1M3_interval_coverage.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [66]
+Underfull \hbox (badness 1342) in paragraph at lines 1052--1053
+[]\OT1/lmr/m/n/10.03749 For BiLSTM-Attention, upper-tail min-i-mum total pre-cip-i-ta-tion rate
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [67]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [68]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [69 <./Figures/r1M4_shap_comparison.pdf>]
+Underfull \hbox (badness 1817) in paragraph at lines 1096--1097
+[]\OT1/lmr/m/n/10.03749 Removing mxtpr, mntpr and lsp together from BiLSTM-Attention
+
+Underfull \hbox (badness 1377) in paragraph at lines 1096--1097
+\OT1/lmr/m/n/10.03749 increased over-all RMSE by 0.004805 mmh$[]$ (point-wise 95% moving-
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [70]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [71 <./Figures/r1M4_ablation_comparison.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [72]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [73]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [74]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [75]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [76]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [77]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [78]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [79]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [80]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [81]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [82]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [83]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [84]
+Underfull \hbox (badness 1281) in paragraph at lines 1256--1257
+[]\OT1/lmr/m/n/10.03749 The prob-a-bilis-tic for-mu-la-tion also war-rants fur-ther devel-op-ment. A
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [85]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [86]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [87]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [88] (build/manuscript.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [89]
+Underfull \hbox (badness 1845) in paragraph at lines 16--17
+\OT1/lmr/m/n/10.03749 on Learn-ing Rep-re-sen-ta-tions, URL [][]$https : / / mlanthology . org / iclr / 2015 /
+
+Underfull \hbox (badness 2261) in paragraph at lines 25--26
+\OT1/lmr/m/n/10.03749 ity of deep learn-ing mod-els: A sur-vey of results. In: 2017 IEEE
+
+Underfull \hbox (badness 1168) in paragraph at lines 25--26
+\OT1/lmr/m/n/10.03749 com-puted, scal-able com-put-ing & com-mu-ni-ca-tions, cloud & big data
+
+Underfull \hbox (badness 3965) in paragraph at lines 25--26
+\OT1/lmr/m/n/10.03749 com-put-ing, Inter-net of peo-ple and smart city inno-va-tion (smart-
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [90]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [91]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [92]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [93]
+Underfull \hbox (badness 1297) in paragraph at lines 106--107
+[]\OT1/lmr/m/n/10.03749 Otero N, Hor-ton P (2023) Inter-com-par-i-son of deep learn-ing archi-tec-
+
+Underfull \hbox (badness 1622) in paragraph at lines 106--107
+\OT1/lmr/m/n/10.03749 Water Resources Research 59(11):e2023WR035088. [][]$https : / / doi . org / 10 .
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [94]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [95])
+
+Package hyperref Warning: Difference (4) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 1299.
+
+
+Package hyperref Warning: Difference (3) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 1302.
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 1305.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [96]
+Underfull \hbox (badness 10000) in paragraph at lines 1321--1322
+\OT1/lmr/m/n/10.03749 Science -[] Informatics -[] -[] -[] Regional -[] Precipitation -[] Forecasting -[] under -[] review-[]$[][].
+
+Package natbib Warning: There were undefined citations.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [97] (build/manuscript.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 4.5pt have occurred.
+
+ )
+(see the transcript file for additional information)</Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbsy7.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx6.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr5.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss8.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy9.pfb>
+Output written on build/manuscript.pdf (97 pages, 3765399 bytes).
+Transcript written on build/manuscript.log.
+Latexmk: Getting log file 'build/manuscript.log'
+Latexmk: Examining 'build/manuscript.fls'
+Latexmk: Examining 'build/manuscript.log'
+Latexmk: Found input bbl file 'build/manuscript.bbl'
+Latexmk: Log file says output to 'build/manuscript.pdf'
+Latexmk: Using bibtex to make bibliography file(s).
+  ===Source file 'build/manuscript.bbl' for 'pdflatex'
+Latexmk: Found bibliography file(s):
+  ./sn-bibliography.bib
+Latexmk: applying rule 'bibtex build/manuscript'...
+Rule 'bibtex build/manuscript':  Reasons for rerun
+Changed files or newly in use/created:
+  build/manuscript.aux
+
+------------
+Run number 2 of rule 'bibtex build/manuscript'
+------------
+====== ENV{BIBINPUTS} changed to '/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-:build:/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/build:'
+Latexmk: Change directory to 'build/'.
+To assist finding of files in document directory, I set
+  BIBINPUTS='/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-:build:/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/build:'
+  BSTINPUTS='/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-:'.
+------------
+Running 'bibtex  "manuscript.aux"'
+------------
+This is BibTeX, Version 0.99e (TeX Live 2026)
+The top-level auxiliary file: manuscript.aux
+The style file: sn-basic.bst
+Database file #1: sn-bibliography.bib
+Latexmk: Change directory back to '/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-'
+Latexmk: applying rule 'pdflatex'...
+Rule 'pdflatex':  Reasons for rerun
+Changed files or newly in use/created:
+  build/manuscript.aux
+  build/manuscript.bbl
+
+------------
+Run number 2 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex  -interaction=nonstopmode -halt-on-error -recorder -output-directory="build"  "manuscript.tex"'
+------------
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./manuscript.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-09-09>
+(./sn-jnl.cls
+Document Class: sn-jnl 2019/11/18 v0.1: An authoring template for Springer Journal articles
+(/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/fleqn.clo) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/size10.clo)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty))) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def))) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amscls/amsthm.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/jknapltx/mathrsfs.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics/rotating.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/appendix/appendix.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/ncctools/manyfoot.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/ncctools/nccfoots.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/algorithms/algorithm.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/float/float.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/program/program.sty
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 841.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <16> not available
+(Font)              size <17.28> substituted on input line 841.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 841.
+
+(/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/jknapltx/ursfs.fd)
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 841.
+
+(/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/ueur.fd)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/listings/listings.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/listings/lstpatch.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/listings/lstmisc.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/listings/listings.cfg)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty))) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty))) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty))) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/tools/array.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/tools/hhline.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/preprint/balance.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/soul/soul.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/soul/soul-ori.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/stackengine/stackengine.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/listofitems/listofitems.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/listofitems/listofitems.tex)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/tools/calc.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lineno/lineno.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hyperref/xr-hyper.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/l3backend-pdftex.def) (build/manuscript.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/Users/yue/Library/TinyTeX/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg)) (build/manuscript.out) (build/manuscript.out) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmss.fd) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd)
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <8.43146> not available
+(Font)              size <8> substituted on input line 59.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.52061> not available
+(Font)              size <6> substituted on input line 59.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.51686> not available
+(Font)              size <5> substituted on input line 59.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active [1{/Users/yue/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/yue/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/Users/yue/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <> not available
+(Font)              size <5> substituted on input line 59.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <0.7> not available
+(Font)              size <5> substituted on input line 59.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <0.5> not available
+(Font)              size <5> substituted on input line 59.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [2]
+
+Package natbib Warning: Citation `pathak2022fourcastnet' on page 3 undefined on input line 65.
+
+
+Package natbib Warning: Citation `bi2023accurate' on page 3 undefined on input line 65.
+
+
+Package natbib Warning: Citation `lam2023learning' on page 3 undefined on input line 65.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [3]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [4] (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd)
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [5{/Users/yue/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [6]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [7]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [8]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [9]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [10]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [11{/Users/yue/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc} <./Figures/Study_region.PDF>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [12]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [13]
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.015> not available
+(Font)              size <5> substituted on input line 143.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [14]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [15]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [16]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [17{/Users/yue/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [18]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [19]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [20]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [21]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [22]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [23]
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Attention /
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Squared
+
+Underfull \hbox (badness 1147) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 1 encoder; $\OML/lmm/m/it/7 d[] \OT1/lmr/m/n/7 = 32$; 4
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Self-attention;
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 BiLSTM-
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Additive
+
+Underfull \hbox (badness 6559) in paragraph at lines 373--373
+\OT1/lmr/m/n/7 atten-tion (64
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Final
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 BU-LSTM-
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Additive
+
+Underfull \hbox (badness 6559) in paragraph at lines 373--373
+\OT1/lmr/m/n/7 atten-tion (64
+
+Underfull \hbox (badness 1092) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Prob. BiLSTM-
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Additive
+
+Underfull \hbox (badness 6559) in paragraph at lines 373--373
+\OT1/lmr/m/n/7 atten-tion (64
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 BiLSTM-
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Global aver-
+
+Underfull \hbox (badness 3838) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Matched deter-
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Additive
+
+Underfull \hbox (badness 6559) in paragraph at lines 373--373
+\OT1/lmr/m/n/7 atten-tion (64
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [24]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [25]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [26]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [27]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [28]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [29]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [30]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [31]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [32]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [33]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [34]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [35]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [36]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [37]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [38]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [39]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [40]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [41]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [42]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [43]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [44]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [45]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [46]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [47]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [48 <./Figures/r1M2_seed_rmse.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [49]
+Underfull \hbox (badness 6842) in paragraph at lines 788--789
+[]\OT1/lmr/m/n/10.03749 On the full 3,939-sample test set, Ridge L1 achieved RMSE
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [50]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [51]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [52]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [53]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [54]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [55]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [56 <./Figures/r1M1_stratified_rmse.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [57]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [58 <./Figures/r1M1_prediction_distribution.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [59]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [60 <./Figures/r2M4_event_csi.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [61]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [62]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [63]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [64]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [65 <./Figures/r1M3_interval_coverage.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [66]
+Underfull \hbox (badness 1342) in paragraph at lines 1052--1053
+[]\OT1/lmr/m/n/10.03749 For BiLSTM-Attention, upper-tail min-i-mum total pre-cip-i-ta-tion rate
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [67]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [68]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [69 <./Figures/r1M4_shap_comparison.pdf>]
+Underfull \hbox (badness 1817) in paragraph at lines 1096--1097
+[]\OT1/lmr/m/n/10.03749 Removing mxtpr, mntpr and lsp together from BiLSTM-Attention
+
+Underfull \hbox (badness 1377) in paragraph at lines 1096--1097
+\OT1/lmr/m/n/10.03749 increased over-all RMSE by 0.004805 mmh$[]$ (point-wise 95% moving-
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [70]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [71 <./Figures/r1M4_ablation_comparison.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [72]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [73]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [74]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [75]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [76]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [77]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [78]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [79]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [80]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [81]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [82]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [83]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [84]
+Underfull \hbox (badness 1281) in paragraph at lines 1256--1257
+[]\OT1/lmr/m/n/10.03749 The prob-a-bilis-tic for-mu-la-tion also war-rants fur-ther devel-op-ment. A
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [85]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [86]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [87]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [88] (build/manuscript.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [89]
+Underfull \hbox (badness 1845) in paragraph at lines 16--17
+\OT1/lmr/m/n/10.03749 on Learn-ing Rep-re-sen-ta-tions, URL [][]$https : / / mlanthology . org / iclr / 2015 /
+
+Underfull \hbox (badness 2261) in paragraph at lines 25--26
+\OT1/lmr/m/n/10.03749 ity of deep learn-ing mod-els: A sur-vey of results. In: 2017 IEEE
+
+Underfull \hbox (badness 1168) in paragraph at lines 25--26
+\OT1/lmr/m/n/10.03749 com-puted, scal-able com-put-ing & com-mu-ni-ca-tions, cloud & big data
+
+Underfull \hbox (badness 3965) in paragraph at lines 25--26
+\OT1/lmr/m/n/10.03749 com-put-ing, Inter-net of peo-ple and smart city inno-va-tion (smart-
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [90]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [91]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [92]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [93]
+Underfull \hbox (badness 1297) in paragraph at lines 109--110
+[]\OT1/lmr/m/n/10.03749 Otero N, Hor-ton P (2023) Inter-com-par-i-son of deep learn-ing archi-tec-
+
+Underfull \hbox (badness 1622) in paragraph at lines 109--110
+\OT1/lmr/m/n/10.03749 Water Resources Research 59(11):e2023WR035088. [][]$https : / / doi . org / 10 .
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [94]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [95])
+
+Package hyperref Warning: Difference (4) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 1299.
+
+
+Package hyperref Warning: Difference (3) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 1302.
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 1305.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [96]
+Underfull \hbox (badness 10000) in paragraph at lines 1321--1322
+\OT1/lmr/m/n/10.03749 Science -[] Informatics -[] -[] -[] Regional -[] Precipitation -[] Forecasting -[] under -[] review-[]$[][].
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [97]
+
+Package natbib Warning: There were undefined citations.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [98] (build/manuscript.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 4.5pt have occurred.
+
+ )
+(see the transcript file for additional information)</Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbsy7.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx6.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr5.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss8.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy9.pfb>
+Output written on build/manuscript.pdf (98 pages, 3766309 bytes).
+Transcript written on build/manuscript.log.
+Latexmk: Getting log file 'build/manuscript.log'
+Latexmk: Examining 'build/manuscript.fls'
+Latexmk: Examining 'build/manuscript.log'
+Latexmk: Found input bbl file 'build/manuscript.bbl'
+Latexmk: References changed.
+Latexmk: Log file says output to 'build/manuscript.pdf'
+Latexmk: Using bibtex to make bibliography file(s).
+  ===Source file 'build/manuscript.bbl' for 'pdflatex'
+Latexmk: Found bibliography file(s):
+  ./sn-bibliography.bib
+Latexmk: applying rule 'bibtex build/manuscript'...
+Rule 'bibtex build/manuscript':  Reasons for rerun
+Changed files or newly in use/created:
+  build/manuscript.aux
+
+------------
+Run number 3 of rule 'bibtex build/manuscript'
+------------
+====== ENV{BIBINPUTS} changed to '/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-:build:/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/build:'
+Latexmk: Change directory to 'build/'.
+To assist finding of files in document directory, I set
+  BIBINPUTS='/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-:build:/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/build:'
+  BSTINPUTS='/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-:'.
+------------
+Running 'bibtex  "manuscript.aux"'
+------------
+This is BibTeX, Version 0.99e (TeX Live 2026)
+The top-level auxiliary file: manuscript.aux
+The style file: sn-basic.bst
+Database file #1: sn-bibliography.bib
+Latexmk: Change directory back to '/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-'
+Latexmk: applying rule 'pdflatex'...
+Rule 'pdflatex':  Reasons for rerun
+Changed files or newly in use/created:
+  build/manuscript.aux
+
+------------
+Run number 3 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex  -interaction=nonstopmode -halt-on-error -recorder -output-directory="build"  "manuscript.tex"'
+------------
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./manuscript.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-09-09>
+(./sn-jnl.cls
+Document Class: sn-jnl 2019/11/18 v0.1: An authoring template for Springer Journal articles
+(/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/fleqn.clo) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/size10.clo)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty))) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def))) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amscls/amsthm.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/jknapltx/mathrsfs.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics/rotating.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/appendix/appendix.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/ncctools/manyfoot.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/ncctools/nccfoots.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/algorithms/algorithm.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/float/float.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/program/program.sty
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 841.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <16> not available
+(Font)              size <17.28> substituted on input line 841.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 841.
+
+(/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/jknapltx/ursfs.fd)
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 841.
+
+(/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/ueur.fd)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/listings/listings.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/listings/lstpatch.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/listings/lstmisc.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/listings/listings.cfg)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty))) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty))) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty))) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/tools/array.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/tools/hhline.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/preprint/balance.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/soul/soul.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/soul/soul-ori.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/stackengine/stackengine.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/listofitems/listofitems.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/listofitems/listofitems.tex)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/tools/calc.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lineno/lineno.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hyperref/xr-hyper.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/l3backend-pdftex.def) (build/manuscript.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/Users/yue/Library/TinyTeX/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg)) (build/manuscript.out) (build/manuscript.out) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmss.fd) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd)
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <8.43146> not available
+(Font)              size <8> substituted on input line 59.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.52061> not available
+(Font)              size <6> substituted on input line 59.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.51686> not available
+(Font)              size <5> substituted on input line 59.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active [1{/Users/yue/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/yue/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/Users/yue/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <> not available
+(Font)              size <5> substituted on input line 59.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <0.7> not available
+(Font)              size <5> substituted on input line 59.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <0.5> not available
+(Font)              size <5> substituted on input line 59.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [2]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [3]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [4] (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd)
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [5{/Users/yue/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [6]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [7]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [8]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [9]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [10]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [11{/Users/yue/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [12 <./Figures/Study_region.PDF>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [13]
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.015> not available
+(Font)              size <5> substituted on input line 143.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [14]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [15]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [16]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [17{/Users/yue/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [18]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [19]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [20]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [21]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [22]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [23]
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Attention /
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Squared
+
+Underfull \hbox (badness 1147) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 1 encoder; $\OML/lmm/m/it/7 d[] \OT1/lmr/m/n/7 = 32$; 4
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Self-attention;
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 BiLSTM-
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Additive
+
+Underfull \hbox (badness 6559) in paragraph at lines 373--373
+\OT1/lmr/m/n/7 atten-tion (64
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Final
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 BU-LSTM-
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Additive
+
+Underfull \hbox (badness 6559) in paragraph at lines 373--373
+\OT1/lmr/m/n/7 atten-tion (64
+
+Underfull \hbox (badness 1092) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Prob. BiLSTM-
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Additive
+
+Underfull \hbox (badness 6559) in paragraph at lines 373--373
+\OT1/lmr/m/n/7 atten-tion (64
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 BiLSTM-
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Global aver-
+
+Underfull \hbox (badness 3838) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Matched deter-
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Additive
+
+Underfull \hbox (badness 6559) in paragraph at lines 373--373
+\OT1/lmr/m/n/7 atten-tion (64
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [24]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [25]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [26]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [27]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [28]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [29]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [30]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [31]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [32]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [33]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [34]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [35]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [36]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [37]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [38]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [39]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [40]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [41]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [42]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [43]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [44]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [45]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [46]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [47]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [48 <./Figures/r1M2_seed_rmse.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [49]
+Underfull \hbox (badness 6842) in paragraph at lines 788--789
+[]\OT1/lmr/m/n/10.03749 On the full 3,939-sample test set, Ridge L1 achieved RMSE
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [50]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [51]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [52]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [53]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [54]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [55]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [56 <./Figures/r1M1_stratified_rmse.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [57]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [58 <./Figures/r1M1_prediction_distribution.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [59]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [60 <./Figures/r2M4_event_csi.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [61]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [62]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [63]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [64]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [65 <./Figures/r1M3_interval_coverage.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [66]
+Underfull \hbox (badness 1342) in paragraph at lines 1052--1053
+[]\OT1/lmr/m/n/10.03749 For BiLSTM-Attention, upper-tail min-i-mum total pre-cip-i-ta-tion rate
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [67]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [68]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [69 <./Figures/r1M4_shap_comparison.pdf>]
+Underfull \hbox (badness 1817) in paragraph at lines 1096--1097
+[]\OT1/lmr/m/n/10.03749 Removing mxtpr, mntpr and lsp together from BiLSTM-Attention
+
+Underfull \hbox (badness 1377) in paragraph at lines 1096--1097
+\OT1/lmr/m/n/10.03749 increased over-all RMSE by 0.004805 mmh$[]$ (point-wise 95% moving-
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [70]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [71 <./Figures/r1M4_ablation_comparison.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [72]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [73]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [74]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [75]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [76]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [77]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [78]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [79]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [80]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [81]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [82]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [83]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [84]
+Underfull \hbox (badness 1281) in paragraph at lines 1256--1257
+[]\OT1/lmr/m/n/10.03749 The prob-a-bilis-tic for-mu-la-tion also war-rants fur-ther devel-op-ment. A
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [85]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [86]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [87]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [88] (build/manuscript.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [89]
+Underfull \hbox (badness 1845) in paragraph at lines 16--17
+\OT1/lmr/m/n/10.03749 on Learn-ing Rep-re-sen-ta-tions, URL [][]$https : / / mlanthology . org / iclr / 2015 /
+
+Underfull \hbox (badness 2261) in paragraph at lines 25--26
+\OT1/lmr/m/n/10.03749 ity of deep learn-ing mod-els: A sur-vey of results. In: 2017 IEEE
+
+Underfull \hbox (badness 1168) in paragraph at lines 25--26
+\OT1/lmr/m/n/10.03749 com-puted, scal-able com-put-ing & com-mu-ni-ca-tions, cloud & big data
+
+Underfull \hbox (badness 3965) in paragraph at lines 25--26
+\OT1/lmr/m/n/10.03749 com-put-ing, Inter-net of peo-ple and smart city inno-va-tion (smart-
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [90]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [91]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [92]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [93]
+Underfull \hbox (badness 1297) in paragraph at lines 109--110
+[]\OT1/lmr/m/n/10.03749 Otero N, Hor-ton P (2023) Inter-com-par-i-son of deep learn-ing archi-tec-
+
+Underfull \hbox (badness 1622) in paragraph at lines 109--110
+\OT1/lmr/m/n/10.03749 Water Resources Research 59(11):e2023WR035088. [][]$https : / / doi . org / 10 .
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [94]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [95])
+
+Package hyperref Warning: Difference (4) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 1299.
+
+
+Package hyperref Warning: Difference (3) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 1302.
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 1305.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [96]
+Underfull \hbox (badness 10000) in paragraph at lines 1321--1322
+\OT1/lmr/m/n/10.03749 Science -[] Informatics -[] -[] -[] Regional -[] Precipitation -[] Forecasting -[] under -[] review-[]$[][].
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [97]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [98] (build/manuscript.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 4.5pt have occurred.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(see the transcript file for additional information)</Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbsy7.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx6.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr5.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss8.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy9.pfb>
+Output written on build/manuscript.pdf (98 pages, 3766690 bytes).
+Transcript written on build/manuscript.log.
+Latexmk: Getting log file 'build/manuscript.log'
+Latexmk: Examining 'build/manuscript.fls'
+Latexmk: Examining 'build/manuscript.log'
+Latexmk: Found input bbl file 'build/manuscript.bbl'
+Latexmk: References changed.
+Latexmk: Log file says output to 'build/manuscript.pdf'
+Latexmk: Using bibtex to make bibliography file(s).
+  ===Source file 'build/manuscript.bbl' for 'pdflatex'
+Latexmk: Found bibliography file(s):
+  ./sn-bibliography.bib
+Latexmk: applying rule 'bibtex build/manuscript'...
+Rule 'bibtex build/manuscript':  Reasons for rerun
+Changed files or newly in use/created:
+  build/manuscript.aux
+
+------------
+Run number 4 of rule 'bibtex build/manuscript'
+------------
+====== ENV{BIBINPUTS} changed to '/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-:build:/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/build:'
+Latexmk: Change directory to 'build/'.
+To assist finding of files in document directory, I set
+  BIBINPUTS='/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-:build:/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/build:'
+  BSTINPUTS='/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-:'.
+------------
+Running 'bibtex  "manuscript.aux"'
+------------
+This is BibTeX, Version 0.99e (TeX Live 2026)
+The top-level auxiliary file: manuscript.aux
+The style file: sn-basic.bst
+Database file #1: sn-bibliography.bib
+Latexmk: Change directory back to '/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-'
+Latexmk: applying rule 'pdflatex'...
+Rule 'pdflatex':  Reasons for rerun
+Changed files or newly in use/created:
+  build/manuscript.aux
+
+------------
+Run number 4 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex  -interaction=nonstopmode -halt-on-error -recorder -output-directory="build"  "manuscript.tex"'
+------------
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./manuscript.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-09-09>
+(./sn-jnl.cls
+Document Class: sn-jnl 2019/11/18 v0.1: An authoring template for Springer Journal articles
+(/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/fleqn.clo) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/size10.clo)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty))) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def))) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amscls/amsthm.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/jknapltx/mathrsfs.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics/rotating.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/appendix/appendix.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/ncctools/manyfoot.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/ncctools/nccfoots.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/algorithms/algorithm.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/float/float.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/program/program.sty
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 841.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <16> not available
+(Font)              size <17.28> substituted on input line 841.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 841.
+
+(/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/jknapltx/ursfs.fd)
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 841.
+
+(/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/ueur.fd)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/listings/listings.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/listings/lstpatch.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/listings/lstmisc.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/listings/listings.cfg)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty))) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty))) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty))) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/tools/array.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/tools/hhline.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/preprint/balance.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/soul/soul.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/soul/soul-ori.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/stackengine/stackengine.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/listofitems/listofitems.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/generic/listofitems/listofitems.tex)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/tools/calc.sty)) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lineno/lineno.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/hyperref/xr-hyper.sty) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/l3backend-pdftex.def) (build/manuscript.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/Users/yue/Library/TinyTeX/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg)) (build/manuscript.out) (build/manuscript.out) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmss.fd) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd) (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd)
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <8.43146> not available
+(Font)              size <8> substituted on input line 59.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.52061> not available
+(Font)              size <6> substituted on input line 59.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.51686> not available
+(Font)              size <5> substituted on input line 59.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active [1{/Users/yue/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/yue/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/Users/yue/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <> not available
+(Font)              size <5> substituted on input line 59.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <0.7> not available
+(Font)              size <5> substituted on input line 59.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <0.5> not available
+(Font)              size <5> substituted on input line 59.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [2]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [3]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [4] (/Users/yue/Library/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd)
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [5{/Users/yue/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [6]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [7]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [8]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [9]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [10]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [11{/Users/yue/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [12 <./Figures/Study_region.PDF>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [13]
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.015> not available
+(Font)              size <5> substituted on input line 143.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [14]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [15]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [16]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [17{/Users/yue/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [18]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [19]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [20]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [21]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [22]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [23]
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Attention /
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Squared
+
+Underfull \hbox (badness 1147) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 1 encoder; $\OML/lmm/m/it/7 d[] \OT1/lmr/m/n/7 = 32$; 4
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Self-attention;
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 BiLSTM-
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Additive
+
+Underfull \hbox (badness 6559) in paragraph at lines 373--373
+\OT1/lmr/m/n/7 atten-tion (64
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Final
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 BU-LSTM-
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Additive
+
+Underfull \hbox (badness 6559) in paragraph at lines 373--373
+\OT1/lmr/m/n/7 atten-tion (64
+
+Underfull \hbox (badness 1092) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Prob. BiLSTM-
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Additive
+
+Underfull \hbox (badness 6559) in paragraph at lines 373--373
+\OT1/lmr/m/n/7 atten-tion (64
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 BiLSTM-
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Global aver-
+
+Underfull \hbox (badness 3838) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Matched deter-
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/lmr/m/n/7 Additive
+
+Underfull \hbox (badness 6559) in paragraph at lines 373--373
+\OT1/lmr/m/n/7 atten-tion (64
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [24]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [25]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [26]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [27]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [28]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [29]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [30]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [31]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [32]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [33]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [34]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [35]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [36]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [37]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [38]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [39]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [40]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [41]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [42]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [43]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [44]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [45]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [46]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [47]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [48 <./Figures/r1M2_seed_rmse.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [49]
+Underfull \hbox (badness 6842) in paragraph at lines 788--789
+[]\OT1/lmr/m/n/10.03749 On the full 3,939-sample test set, Ridge L1 achieved RMSE
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [50]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [51]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [52]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [53]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [54]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [55]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [56 <./Figures/r1M1_stratified_rmse.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [57]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [58 <./Figures/r1M1_prediction_distribution.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [59]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [60 <./Figures/r2M4_event_csi.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [61]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [62]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [63]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [64]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [65 <./Figures/r1M3_interval_coverage.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [66]
+Underfull \hbox (badness 1342) in paragraph at lines 1052--1053
+[]\OT1/lmr/m/n/10.03749 For BiLSTM-Attention, upper-tail min-i-mum total pre-cip-i-ta-tion rate
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [67]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [68]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [69 <./Figures/r1M4_shap_comparison.pdf>]
+Underfull \hbox (badness 1817) in paragraph at lines 1096--1097
+[]\OT1/lmr/m/n/10.03749 Removing mxtpr, mntpr and lsp together from BiLSTM-Attention
+
+Underfull \hbox (badness 1377) in paragraph at lines 1096--1097
+\OT1/lmr/m/n/10.03749 increased over-all RMSE by 0.004805 mmh$[]$ (point-wise 95% moving-
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [70]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [71 <./Figures/r1M4_ablation_comparison.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [72]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [73]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [74]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [75]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [76]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [77]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [78]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [79]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [80]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [81]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [82]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [83]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [84]
+Underfull \hbox (badness 1281) in paragraph at lines 1256--1257
+[]\OT1/lmr/m/n/10.03749 The prob-a-bilis-tic for-mu-la-tion also war-rants fur-ther devel-op-ment. A
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [85]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [86]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [87]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [88] (build/manuscript.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [89]
+Underfull \hbox (badness 1845) in paragraph at lines 16--17
+\OT1/lmr/m/n/10.03749 on Learn-ing Rep-re-sen-ta-tions, URL [][]$https : / / mlanthology . org / iclr / 2015 /
+
+Underfull \hbox (badness 2261) in paragraph at lines 25--26
+\OT1/lmr/m/n/10.03749 ity of deep learn-ing mod-els: A sur-vey of results. In: 2017 IEEE
+
+Underfull \hbox (badness 1168) in paragraph at lines 25--26
+\OT1/lmr/m/n/10.03749 com-puted, scal-able com-put-ing & com-mu-ni-ca-tions, cloud & big data
+
+Underfull \hbox (badness 3965) in paragraph at lines 25--26
+\OT1/lmr/m/n/10.03749 com-put-ing, Inter-net of peo-ple and smart city inno-va-tion (smart-
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [90]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [91]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [92]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [93]
+Underfull \hbox (badness 1297) in paragraph at lines 109--110
+[]\OT1/lmr/m/n/10.03749 Otero N, Hor-ton P (2023) Inter-com-par-i-son of deep learn-ing archi-tec-
+
+Underfull \hbox (badness 1622) in paragraph at lines 109--110
+\OT1/lmr/m/n/10.03749 Water Resources Research 59(11):e2023WR035088. [][]$https : / / doi . org / 10 .
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [94]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [95])
+
+Package hyperref Warning: Difference (4) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 1299.
+
+
+Package hyperref Warning: Difference (3) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 1302.
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 1305.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [96]
+Underfull \hbox (badness 10000) in paragraph at lines 1321--1322
+\OT1/lmr/m/n/10.03749 Science -[] Informatics -[] -[] -[] Regional -[] Precipitation -[] Forecasting -[] under -[] review-[]$[][].
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [97]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (1.41457pt too high) has occurred while \output is active [98] (build/manuscript.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 4.5pt have occurred.
+
+ )
+(see the transcript file for additional information)</Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbsy7.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx6.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr5.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss8.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></Users/yue/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy9.pfb>
+Output written on build/manuscript.pdf (98 pages, 3766690 bytes).
+Transcript written on build/manuscript.log.
+Latexmk: Getting log file 'build/manuscript.log'
+Latexmk: Examining 'build/manuscript.fls'
+Latexmk: Examining 'build/manuscript.log'
+Latexmk: Found input bbl file 'build/manuscript.bbl'
+Latexmk: Log file says output to 'build/manuscript.pdf'
+Latexmk: Using bibtex to make bibliography file(s).
+  ===Source file 'build/manuscript.bbl' for 'pdflatex'
+Latexmk: Found bibliography file(s):
+  ./sn-bibliography.bib
+Latexmk: All targets (build/manuscript.pdf) are up-to-date
+
