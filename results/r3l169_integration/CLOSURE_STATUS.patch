@@ -1,0 +1,22 @@
+--- a/ESI_审稿意见分类_严重程度排序_35项.md	2026-11-15 00:00:00 +0000
++++ b/ESI_审稿意见分类_严重程度排序_35项.md	2026-11-15 00:00:00 +0000
+@@ -4403,3 +4403,8 @@
+ 
+ 
+ R2-M4最终证据与关闭记录：results/r2m4_final/。作者PDF MD5=f73dd3d355084727bb13bf644ce332d3；本轮77行交接输入与归档CSI/命中/预报次数0差异，作者最终点值CSV未取得，最终图片精确点值对应性引用作者此前独立核验。八段EvidenceBox和三PDF核验通过，只关闭R2-M4，不整体关闭05/12共享任务。
++
++
++### R3-03 / 任务31局部关闭回执（2026-11-15）
++
++R3-03（L169-177 Rahman/Latif段落顺序）CLOSED。科学归档`2f6ee67a13d9eac7f034000f02cefab7ffd6ef59`已推送，GitHub逐文件31/31 blob一致，远端patch逐字节重建正文与回复信。Section 2第95行整段重排并以\revminor标红：删除“Expanding on this”，Rahman (2022)以“Among conventional machine-learning approaches”引出并位于Latif (2023)之前；Latif移至段末（“More recently … compared …”），删除无文献依据的robustness/interpretability子句；其余句子（含R1-m4受保护的Rahman与TRU-NET摘录、Singh、Miller、总结句）逐字保留。122旧+2新=124摘录匹配；bib未改。任务31中R4-m3/m17/m24/m33仍待处理，任务31整体不关闭。原回复信p59“Section 3.2:”页脚孤行因版面后移已不再出现。
+--- a/FINAL_REVISION_CHECKLIST.md	2026-11-15 00:00:00 +0000
++++ b/FINAL_REVISION_CHECKLIST.md	2026-11-15 00:00:00 +0000
+@@ -530,3 +530,8 @@
+ ### R2-m4 / 任务17局部（2026-11-15）
+ 
+ 本地正式回复与两段逐字摘录，区分训练及条件抽样不确定性；原正文、Supplementary和Figures不改。BU-mntpr三个子集的三重规则及BU-sp/tcc区间分歧均已保留。待作者审核及另行选择性归档，不标CLOSED。R1-M4/R2-M8/R2-m3关闭状态保护，R4-m29/R4-m34保持Pending，M9最终仓库文档待办保留；未启动R2-m5。
++
++
++### R3-03归档完成（2026-11-15）
++
++R3-03 CLOSED。科学提交`2f6ee67a13d9eac7f034000f02cefab7ffd6ef59`，31/31文件GitHub回读一致；124/124摘录、段落拼装记录、R1-m4受保护摘录及三份PDF检查通过。bib/Supplementary/Figures/R3-01/R3-02及已关闭回复不变。任务31仅R3-03部分完成；M9复现文档待办保留；未启动Section 3.2(a)。

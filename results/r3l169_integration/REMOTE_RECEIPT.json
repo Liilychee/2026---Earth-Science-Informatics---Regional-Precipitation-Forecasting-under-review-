@@ -1,0 +1,219 @@
+{
+  "stage": "scientific_archive_remote_verified",
+  "commit": "2f6ee67a13d9eac7f034000f02cefab7ffd6ef59",
+  "base_commit": "8bb8a696c9d88f5113fa6dd04a168f251a3fd131",
+  "remote_main_after_push": "2f6ee67a13d9eac7f034000f02cefab7ffd6ef59",
+  "repository": "https://github.com/Liilychee/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-",
+  "readback_method": "fresh shallow sparse clone; git ls-tree blob comparison, manifest SHA-256 of remote contents, remote PORTABLE patch reconstruction, paragraph-assembly check",
+  "remote_file_count": 31,
+  "all_blobs_match": true,
+  "checks": [
+    {
+      "path": "results/r3l169_integration/ARCHIVE_MANIFEST.json",
+      "sha": "9ce6d3a6fbdc32a66c84e704ba6bf32ea3e89ea5",
+      "remote_sha": "9ce6d3a6fbdc32a66c84e704ba6bf32ea3e89ea5",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/BASELINE_GATE.json",
+      "sha": "766b0d053be5937a1c89c291d9bda640b8e86417",
+      "remote_sha": "766b0d053be5937a1c89c291d9bda640b8e86417",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/CELL_INDEX.json",
+      "sha": "75199bc41dc26541501b39b05ea66057da6e90f1",
+      "remote_sha": "75199bc41dc26541501b39b05ea66057da6e90f1",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/DOCUMENT_HASHES.json",
+      "sha": "c84755a2da36103197b6d56c833db8e8ffa72fe2",
+      "remote_sha": "c84755a2da36103197b6d56c833db8e8ffa72fe2",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/EVIDENCE_INDEX.md",
+      "sha": "0d3305c92aa4f274e66177f466073eb57a091ca4",
+      "remote_sha": "0d3305c92aa4f274e66177f466073eb57a091ca4",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/EXCERPT_INDEX.json",
+      "sha": "8f62717956cf7341597492e4cc2e8f2bedd13902",
+      "remote_sha": "8f62717956cf7341597492e4cc2e8f2bedd13902",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/FINAL_REPORT.md",
+      "sha": "27a6a6580331ce0cb926e66412031f4e7e78bbdb",
+      "remote_sha": "27a6a6580331ce0cb926e66412031f4e7e78bbdb",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/GIT_SCOPE.md",
+      "sha": "089ed7457eab5aa5210a55420ceef18d2e419d13",
+      "remote_sha": "089ed7457eab5aa5210a55420ceef18d2e419d13",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/GIT_STATE.json",
+      "sha": "63aeb16093281fa7319c63866906bd63d6922770",
+      "remote_sha": "63aeb16093281fa7319c63866906bd63d6922770",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/GIT_STATUS.txt",
+      "sha": "11e1a23528791dc6d53f49e55af2004c285279c9",
+      "remote_sha": "11e1a23528791dc6d53f49e55af2004c285279c9",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/ORIGINAL_WORKTREE_GUARD.json",
+      "sha": "394c3920d8093ff2bcff26865f7c5a42024f480e",
+      "remote_sha": "394c3920d8093ff2bcff26865f7c5a42024f480e",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/PARAGRAPH_ASSEMBLY.json",
+      "sha": "b8dfa3c6230731398fb0ca8f3186924b51a1e8c8",
+      "remote_sha": "b8dfa3c6230731398fb0ca8f3186924b51a1e8c8",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/PATCH_RECONSTRUCTION.json",
+      "sha": "e17d3c42d00fd86bd770310b33e3b68072b3f15e",
+      "remote_sha": "e17d3c42d00fd86bd770310b33e3b68072b3f15e",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/PDF_CHECK.json",
+      "sha": "4d8a009f1611ad8bfc130696b52124d5c33bc5a3",
+      "remote_sha": "4d8a009f1611ad8bfc130696b52124d5c33bc5a3",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/PROTECTED_HASHES.json",
+      "sha": "6d75720fdf884b8be9359497adae818f25c0bf07",
+      "remote_sha": "6d75720fdf884b8be9359497adae818f25c0bf07",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/R3L169_LOCAL.patch",
+      "sha": "cdc6ab4928c88a831b0fae9a89e83dcb39d4baee",
+      "remote_sha": "cdc6ab4928c88a831b0fae9a89e83dcb39d4baee",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/R3L169_PORTABLE.patch",
+      "sha": "f516c146a1b10fc58e05d11312d19ec57dafd803",
+      "remote_sha": "f516c146a1b10fc58e05d11312d19ec57dafd803",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/STATUS.md",
+      "sha": "bab1b28eba1204a56c2218609db936392a99779d",
+      "remote_sha": "bab1b28eba1204a56c2218609db936392a99779d",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/VERIFICATION.json",
+      "sha": "f494a7418fbebed1111159b60428687d951dcddc",
+      "remote_sha": "f494a7418fbebed1111159b60428687d951dcddc",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/compile_Response_letter.txt",
+      "sha": "526b197c72139498a59fd31d422fc163821a48b1",
+      "remote_sha": "526b197c72139498a59fd31d422fc163821a48b1",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/compile_Supplementary.txt",
+      "sha": "fe2bff2ccb1fd23ff464b21ad56b0721be641293",
+      "remote_sha": "fe2bff2ccb1fd23ff464b21ad56b0721be641293",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/compile_manuscript.txt",
+      "sha": "9431ad0de20b9990262ebeab8f07f082d40592c2",
+      "remote_sha": "9431ad0de20b9990262ebeab8f07f082d40592c2",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/evidence/crossref_adewoyin2021.json",
+      "sha": "fef93088491a37ae0db6266c7c7433f52cde87cc",
+      "remote_sha": "fef93088491a37ae0db6266c7c7433f52cde87cc",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/evidence/crossref_latif2023.json",
+      "sha": "02ea92f7aa49aecf9deec5b9f4fc2e117bf0e45d",
+      "remote_sha": "02ea92f7aa49aecf9deec5b9f4fc2e117bf0e45d",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/evidence/crossref_rahman2022.json",
+      "sha": "72aae7a774f87ca88f50e3b61eb10e502330f033",
+      "remote_sha": "72aae7a774f87ca88f50e3b61eb10e502330f033",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/evidence/openalex_adewoyin2021.json",
+      "sha": "8b6006522adbde7e86876be3c7404fc800892741",
+      "remote_sha": "8b6006522adbde7e86876be3c7404fc800892741",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/evidence/openalex_latif2023.json",
+      "sha": "7b3bf9b11ca823ab56943d20f0cab13ae6916e19",
+      "remote_sha": "7b3bf9b11ca823ab56943d20f0cab13ae6916e19",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/evidence/openalex_rahman2022.json",
+      "sha": "298e1486c2d3a7eeb39784258eca588d03d623bd",
+      "remote_sha": "298e1486c2d3a7eeb39784258eca588d03d623bd",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/render/Response_letter-59.png",
+      "sha": "dbe87530aeb5ec61526ad7ec01a3dfb8ff0eb6be",
+      "remote_sha": "dbe87530aeb5ec61526ad7ec01a3dfb8ff0eb6be",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/render/Response_letter-60.png",
+      "sha": "60cc6fe60875a08143c1d5acd33b3057f673639d",
+      "remote_sha": "60cc6fe60875a08143c1d5acd33b3057f673639d",
+      "match": true
+    },
+    {
+      "path": "results/r3l169_integration/render/manuscript-8.png",
+      "sha": "2bde8973943292a14c7f2128133ebf866b453e1d",
+      "remote_sha": "2bde8973943292a14c7f2128133ebf866b453e1d",
+      "match": true
+    }
+  ],
+  "verification": {
+    "old_excerpts_unchanged": 122,
+    "new_exact_excerpts": 2,
+    "total_matched": 124,
+    "R1_m4_excerpts_raw_match": true,
+    "paragraph_assembly_verified": true,
+    "remote_patch_reconstruction_byte_identical": true,
+    "manuscript_lines_changed": [
+      95
+    ],
+    "bib_unchanged": true,
+    "protected_files": 921,
+    "Latif": "compared; robustness/interpretability clause removed",
+    "pdf_undefined_citations": 0,
+    "bibtex_warnings": 0,
+    "original_worktree_index_PDFs_unchanged": true
+  },
+  "task31": "shared; only the R3-03 part is closed (R4-m3/m17/m24/m33 untouched)",
+  "m9_status": "SCIENTIFIC_INTEGRATION_COMPLETE — FINAL_REPOSITORY_DOCUMENTATION_PENDING",
+  "other_shared_statuses": "preserved",
+  "executed_by": "Claude Code"
+}

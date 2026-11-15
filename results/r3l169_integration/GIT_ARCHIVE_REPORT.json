@@ -1,0 +1,16 @@
+{
+  "base_commit": "8bb8a696c9d88f5113fa6dd04a168f251a3fd131",
+  "scientific_archive_commit": "2f6ee67a13d9eac7f034000f02cefab7ffd6ef59",
+  "remote_scientific_files": 31,
+  "all_blobs_match": true,
+  "old_excerpts": 122,
+  "new_excerpts": 2,
+  "total_matched": 124,
+  "protected_artifacts": 921,
+  "worktree": "/private/tmp/esi-r3l169-integration-sync (branch claude/r3l169-integration-sync)",
+  "scope": "only results/r3l169_integration; manuscript/reply increments in patches",
+  "previous_closed_archives_preserved": true,
+  "R3_01_R3_02_closed": true,
+  "m9_overall_not_closed": true,
+  "section_3_2a_not_started": true
+}
