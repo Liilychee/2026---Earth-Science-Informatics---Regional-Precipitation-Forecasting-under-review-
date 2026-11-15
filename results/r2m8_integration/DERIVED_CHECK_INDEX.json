@@ -1,0 +1,285 @@
+{
+  "purpose": "Read-only archived SD/mean arithmetic used solely to correct historical task-note range; no SHAP recomputation",
+  "rows": [
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 2,
+      "arch": "bilstm_attn",
+      "subset": "random",
+      "feature": "mxtpr",
+      "sd_seeds": "0.0009371449424178952",
+      "mean_abs_phi": "0.009431119909413482",
+      "sd_over_mean": 0.09936730223125495
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 3,
+      "arch": "bilstm_attn",
+      "subset": "random",
+      "feature": "mntpr",
+      "sd_seeds": "0.0008210292572349678",
+      "mean_abs_phi": "0.03284667343240235",
+      "sd_over_mean": 0.024995811491371447
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 4,
+      "arch": "bilstm_attn",
+      "subset": "random",
+      "feature": "lsp",
+      "sd_seeds": "0.002327855638338796",
+      "mean_abs_phi": "0.007769536735204137",
+      "sd_over_mean": 0.29961318385833385
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 5,
+      "arch": "bilstm_attn",
+      "subset": "random",
+      "feature": "tcc",
+      "sd_seeds": "0.004140388181520935",
+      "mean_abs_phi": "0.03700982531171504",
+      "sd_over_mean": 0.11187267561109893
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 6,
+      "arch": "bilstm_attn",
+      "subset": "random",
+      "feature": "v10",
+      "sd_seeds": "0.0009550497562732414",
+      "mean_abs_phi": "0.01919954651542665",
+      "sd_over_mean": 0.0497433496934872
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 7,
+      "arch": "bilstm_attn",
+      "subset": "random",
+      "feature": "sp",
+      "sd_seeds": "0.005665188737849332",
+      "mean_abs_phi": "0.036034791203181725",
+      "sd_over_mean": 0.15721441830774696
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 8,
+      "arch": "bilstm_attn",
+      "subset": "random",
+      "feature": "d2m",
+      "sd_seeds": "0.001725094103944089",
+      "mean_abs_phi": "0.008276429245299255",
+      "sd_over_mean": 0.2084345860775511
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 9,
+      "arch": "bilstm_attn",
+      "subset": "upper",
+      "feature": "mxtpr",
+      "sd_seeds": "0.003934635803042861",
+      "mean_abs_phi": "0.018122726018684806",
+      "sd_over_mean": 0.21711059357108814
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 10,
+      "arch": "bilstm_attn",
+      "subset": "upper",
+      "feature": "mntpr",
+      "sd_seeds": "0.005174315821963888",
+      "mean_abs_phi": "0.08912959177855431",
+      "sd_over_mean": 0.0580538485447085
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 11,
+      "arch": "bilstm_attn",
+      "subset": "upper",
+      "feature": "lsp",
+      "sd_seeds": "0.007412141698035516",
+      "mean_abs_phi": "0.020281018952867158",
+      "sd_over_mean": 0.3654718589465965
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 12,
+      "arch": "bilstm_attn",
+      "subset": "upper",
+      "feature": "tcc",
+      "sd_seeds": "0.005257596997196607",
+      "mean_abs_phi": "0.04888607147811882",
+      "sd_over_mean": 0.10754795462650099
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 13,
+      "arch": "bilstm_attn",
+      "subset": "upper",
+      "feature": "v10",
+      "sd_seeds": "0.0014950355944497384",
+      "mean_abs_phi": "0.03340235644876512",
+      "sd_over_mean": 0.04475838693425504
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 14,
+      "arch": "bilstm_attn",
+      "subset": "upper",
+      "feature": "sp",
+      "sd_seeds": "0.005305053749395776",
+      "mean_abs_phi": "0.042823980149826094",
+      "sd_over_mean": 0.12388044574173752
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 15,
+      "arch": "bilstm_attn",
+      "subset": "upper",
+      "feature": "d2m",
+      "sd_seeds": "0.001139682742384283",
+      "mean_abs_phi": "0.011912047909620223",
+      "sd_over_mean": 0.09567479505046905
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 16,
+      "arch": "bulstm_attn",
+      "subset": "random",
+      "feature": "mxtpr",
+      "sd_seeds": "0.0025791166207477156",
+      "mean_abs_phi": "0.01333615877878579",
+      "sd_over_mean": 0.1933927650029475
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 17,
+      "arch": "bulstm_attn",
+      "subset": "random",
+      "feature": "mntpr",
+      "sd_seeds": "0.004933983002031708",
+      "mean_abs_phi": "0.01877738996019011",
+      "sd_over_mean": 0.2627619180563556
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 18,
+      "arch": "bulstm_attn",
+      "subset": "random",
+      "feature": "lsp",
+      "sd_seeds": "0.0015271979786941202",
+      "mean_abs_phi": "0.005424375544509674",
+      "sd_over_mean": 0.2815435557812523
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 19,
+      "arch": "bulstm_attn",
+      "subset": "random",
+      "feature": "tcc",
+      "sd_seeds": "0.004524163923077478",
+      "mean_abs_phi": "0.03309742954457574",
+      "sd_over_mean": 0.13669230466928908
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 20,
+      "arch": "bulstm_attn",
+      "subset": "random",
+      "feature": "v10",
+      "sd_seeds": "0.00267927236575068",
+      "mean_abs_phi": "0.019927211673721044",
+      "sd_over_mean": 0.13445294854191583
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 21,
+      "arch": "bulstm_attn",
+      "subset": "random",
+      "feature": "sp",
+      "sd_seeds": "0.0037435168300642392",
+      "mean_abs_phi": "0.024639090586147848",
+      "sd_over_mean": 0.15193405036502658
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 22,
+      "arch": "bulstm_attn",
+      "subset": "random",
+      "feature": "d2m",
+      "sd_seeds": "0.0018002919909212987",
+      "mean_abs_phi": "0.004879155614788003",
+      "sd_over_mean": 0.36897613707275057
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 23,
+      "arch": "bulstm_attn",
+      "subset": "upper",
+      "feature": "mxtpr",
+      "sd_seeds": "0.004977102482534044",
+      "mean_abs_phi": "0.022576768439851926",
+      "sd_over_mean": 0.22045238652262525
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 24,
+      "arch": "bulstm_attn",
+      "subset": "upper",
+      "feature": "mntpr",
+      "sd_seeds": "0.012478985386120883",
+      "mean_abs_phi": "0.04595840404139479",
+      "sd_over_mean": 0.2715278227433887
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 25,
+      "arch": "bulstm_attn",
+      "subset": "upper",
+      "feature": "lsp",
+      "sd_seeds": "0.004414707056954684",
+      "mean_abs_phi": "0.013241498798312318",
+      "sd_over_mean": 0.33339934732444004
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 26,
+      "arch": "bulstm_attn",
+      "subset": "upper",
+      "feature": "tcc",
+      "sd_seeds": "0.007395242950981867",
+      "mean_abs_phi": "0.03681528023246848",
+      "sd_over_mean": 0.20087428112145087
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 27,
+      "arch": "bulstm_attn",
+      "subset": "upper",
+      "feature": "v10",
+      "sd_seeds": "0.004693616234379171",
+      "mean_abs_phi": "0.028892689749768184",
+      "sd_over_mean": 0.16244995793155012
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 28,
+      "arch": "bulstm_attn",
+      "subset": "upper",
+      "feature": "sp",
+      "sd_seeds": "0.002775430683584417",
+      "mean_abs_phi": "0.025659961502684635",
+      "sd_over_mean": 0.10816191923335668
+    },
+    {
+      "source": "q10_shap_global.csv",
+      "csv_line": 29,
+      "arch": "bulstm_attn",
+      "subset": "upper",
+      "feature": "d2m",
+      "sd_seeds": "0.0020923085329134835",
+      "mean_abs_phi": "0.005983689002030346",
+      "sd_over_mean": 0.34966866296084825
+    }
+  ]
+}

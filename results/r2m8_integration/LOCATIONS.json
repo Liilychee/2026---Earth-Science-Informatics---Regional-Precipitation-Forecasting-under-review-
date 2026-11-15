@@ -1,0 +1,52 @@
+{
+  "Response letter.tex": [
+    {
+      "line": 856,
+      "text": "% Review ID: R2 M8"
+    },
+    {
+      "line": 862,
+      "text": "\\AuthorResponse{We agree that SHAP results from one architecture should not be combined with ablation results from another as a single model interpret"
+    },
+    {
+      "line": 878,
+      "text": "\\EvidenceBox{Matched architectures and seed-paired refits (Section~\\ref{manuscript-sec:diagnostic_analysis})}{"
+    },
+    {
+      "line": 882,
+      "text": "\\EvidenceBox{Training and test-sample uncertainty (Section~\\ref{manuscript-sec:interpretation_uncertainty})}{"
+    },
+    {
+      "line": 886,
+      "text": "\\EvidenceBox{Descriptive SHAP agreement and stability (Section~\\ref{manuscript-sec:shap_results})}{"
+    },
+    {
+      "line": 890,
+      "text": "\\EvidenceBox{Consistent BiLSTM-Attention removal effects (Section~\\ref{manuscript-sec:ablation_results})}{"
+    },
+    {
+      "line": 894,
+      "text": "\\EvidenceBox{BU-LSTM-Attention interval disagreement and negative effects (Section~\\ref{manuscript-sec:ablation_results})}{"
+    },
+    {
+      "line": 898,
+      "text": "\\EvidenceBox{Group removal and predictive overlap (Section~\\ref{manuscript-sec:ablation_results})}{"
+    }
+  ],
+  "ESI_审稿意见分类_严重程度排序_35项.md": [
+    {
+      "line": 1990,
+      "text": "> **2026-11-15 R2-M8范围本地整合核验：** 依据固定提交6495abc81101074b02b3a5c8cfc83cd6cbc33d79、R1-M4关闭记录及作者提供的专项审计，本轮仅补回复信和逐字EvidenceBox；manuscript、Supplementary、全部图像"
+    },
+    {
+      "line": 3376,
+      "text": "> **2026-11-15 R2-M8专项状态（不关闭共享任务）：** 本轮回复分别报告SHAP和消融跨种子Kendall τ，区分随机/全部/修订Wet/上尾与两架构，引用S19；正文已提供相关边界，不追加正文句子。消融先逐种子计算RMSE差再取均值，不能替换成先平均预测或笼统“平均误差”。Bo"
+    }
+  ],
+  "FINAL_REVISION_CHECKLIST.md": [
+    {
+      "line": 484,
+      "text": "### R2-M8 / 任务10及17局部：本地整合通过，待作者审核（2026-11-15）"
+    }
+  ]
+}

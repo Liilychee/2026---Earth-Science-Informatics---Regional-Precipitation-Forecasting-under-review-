@@ -1,0 +1,97 @@
+[
+  {
+    "path": "/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/esi_github/results/metrics/q10_ablation_summary.csv",
+    "exists": true,
+    "match": true
+  },
+  {
+    "path": "/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/esi_github/results/metrics/q10_group_ablation.csv",
+    "exists": true,
+    "match": true
+  },
+  {
+    "path": "/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/esi_github/results/metrics/q10_shap_global.csv",
+    "exists": true,
+    "match": true
+  },
+  {
+    "path": "/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/esi_github/results/metrics/q10_shap_signed.csv",
+    "exists": true,
+    "match": true
+  },
+  {
+    "path": "/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/esi_github/results/metrics/q10_shap_vs_ablation.csv",
+    "exists": true,
+    "match": true
+  },
+  {
+    "path": "/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/esi_github/results/metrics/q10_shap_rank_stability.csv",
+    "exists": true,
+    "match": true
+  },
+  {
+    "path": "/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/esi_github/results/metrics/q10_ablation_rank_stability.csv",
+    "exists": true,
+    "match": true
+  },
+  {
+    "path": "/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/esi_github/results/metrics/q25_rank_agreement.csv",
+    "exists": true,
+    "match": true
+  },
+  {
+    "path": "/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/esi_github/results/metrics/q10_shap_temporal.csv",
+    "exists": true,
+    "match": true
+  },
+  {
+    "path": "/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/esi_github/results/q10/shap/bilstm_attn__s42__temporal.npz",
+    "exists": true,
+    "match": true
+  },
+  {
+    "path": "/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/esi_github/results/q10/shap/bilstm_attn__s123__temporal.npz",
+    "exists": true,
+    "match": true
+  },
+  {
+    "path": "/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/esi_github/results/q10/shap/bilstm_attn__s7__temporal.npz",
+    "exists": true,
+    "match": true
+  },
+  {
+    "path": "/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/esi_github/results/q10/shap/bilstm_attn__s2024__temporal.npz",
+    "exists": true,
+    "match": true
+  },
+  {
+    "path": "/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/esi_github/results/q10/shap/bilstm_attn__s99__temporal.npz",
+    "exists": true,
+    "match": true
+  },
+  {
+    "path": "/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/esi_github/results/q10/shap/bulstm_attn__s42__temporal.npz",
+    "exists": true,
+    "match": true
+  },
+  {
+    "path": "/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/esi_github/results/q10/shap/bulstm_attn__s123__temporal.npz",
+    "exists": true,
+    "match": true
+  },
+  {
+    "path": "/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/esi_github/results/q10/shap/bulstm_attn__s7__temporal.npz",
+    "exists": true,
+    "match": true
+  },
+  {
+    "path": "/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/esi_github/results/q10/shap/bulstm_attn__s2024__temporal.npz",
+    "exists": true,
+    "match": true
+  },
+  {
+    "path": "/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/esi_github/results/q10/shap/bulstm_attn__s99__temporal.npz",
+    "exists": true,
+    "match": true
+  }
+]

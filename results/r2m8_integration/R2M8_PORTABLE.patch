@@ -1,0 +1,89 @@
+--- a/Response letter.tex	2026-11-15 00:00:00 +0000
++++ b/Response letter.tex	2026-11-15 00:00:00 +0000
+@@ -859,9 +859,45 @@
+ 
+ \ReviewerComment{8.SHAP and feature ablation are applied to different model architectures, limiting direct comparison. Please use a consistent architecture and assess the stability of feature importance across runs.}
+ 
+-\PendingResponse
+-
+-\ChangeLocation
++\AuthorResponse{We agree that SHAP results from one architecture should not be combined with ablation results from another as a single model interpretation. Both analyses have now been completed separately within BiLSTM-Attention and BU-LSTM-Attention. SHAP uses the same five full models that serve as the matched ablation controls in each architecture. BiLSTM-Attention is trained with MSE and SHAP explains its point output; BU-LSTM-Attention is trained with Gaussian NLL and SHAP explains its predictive mean. The two architectures are reported separately rather than treated as interchangeable.
++
++\textbf{Matched experiments.} Each architecture uses the fixed seeds 42, 123, 7, 2024 and 99, identical chronological partitions and preprocessing, and unchanged training settings across its reduced configurations. There are five full-model runs, 35 single-variable refits and ten group refits per architecture, giving 100 runs across both architectures. All seven predictors are removed individually; the two group removals exclude mxtpr+mntpr+lsp and mxtpr+mntpr, respectively. Removal means deleting the input channels and retraining, not masking a fitted model. Each reduced model is paired with its same-seed full model. The effect is $\Delta\mathrm{RMSE}=\mathrm{RMSE}_{\mathrm{ablated}}-\mathrm{RMSE}_{\mathrm{full}}$, so positive values indicate deterioration and negative values improvement. These interpretation refits are a separate run set, not substitutes for the original main-comparison means.
++
++\textbf{Attribution and uncertainty.} Grouped SHAP treats the six historical values of each predictor as one player and enumerates all $2^7=128$ coalitions against the same fixed background of 100 training windows, shared across architectures and seeds. Exactness is conditional on that empirical background. Mean absolute attribution measures fitted-model reliance, not incremental forecast improvement; the separate temporal approximation is not substituted for the grouped analysis. Seed SD, pointwise seed-$t$ intervals and effect-direction counts describe training variability. Paired moving-block bootstrap intervals for ablation use 28 consecutive six-hourly samples, 10,000 replicates and resampling seed 42; within-seed RMSE differences are averaged using the same sampled blocks, rather than averaging predictions first. SHAP case-sampling intervals use 2,000 calendar-day bootstrap replicates with seed 42 and do not resample the background. These intervals condition on the fitted models and do not combine training, case-sampling and background uncertainty. All intervals are pointwise, without multiplicity adjustment.
++
++\textbf{Stability is architecture- and subset-dependent.} Mean pairwise Kendall $\tau$ across the ten training-seed pairs for grouped SHAP is 0.733 in the random sample for both architectures; in the upper tail it is 0.924 for BiLSTM-Attention and 0.752 for BU-LSTM-Attention. Cross-architecture SHAP agreement is 0.810 in both subsets. For ablation, the corresponding full-test, revised-wet ($\geq0.1$~mm\,h$^{-1}$) and upper-tail coefficients are 0.867, 0.486, 0.562 for BiLSTM-Attention, versus 0.543, 0.238, 0.238 for BU-LSTM-Attention. Thus full-test stability does not establish stability within the rainfall subsets. These are descriptive rank summaries, not significance tests. We also do not claim a stable ordering of tcc and sp in the BiLSTM-Attention random-sample attribution: their order changes across seeds.
++
++On the full test set, BiLSTM-Attention removal of sp, tcc and v10 increases RMSE by 0.004022, 0.002664 and 0.002481~mm\,h$^{-1}$, respectively, with deterioration in all five seeds and both interval types above zero. In BU-LSTM-Attention, sp and tcc deteriorate in only four of five seeds: their bootstrap intervals exclude zero but their seed-$t$ intervals include zero. We therefore do not extend the same robustness claim to these effects. BU-LSTM-Attention v10 removal does retain unanimous deterioration with both interval types above zero, while mntpr removal has a negative overall mean effect with both intervals below zero. These favourable and unfavourable results are retained.
++
++Upper-tail SHAP--ablation rank agreement is only $\tau=0.048$ in each architecture. This is a descriptive difference between attribution and retrained incremental utility, not a computational inconsistency. The random-SHAP/full-test-ablation comparisons use different evaluation samples and are not formal same-sample tests. In BiLSTM-Attention, removing the precipitation group increases overall RMSE by 0.004805~mm\,h$^{-1}$ and upper-tail RMSE by 0.019359~mm\,h$^{-1}$, with positive effects in all five seeds. This supports overlapping predictive information within these fitted models; neither the group result nor a high SHAP magnitude establishes physical causality.
++
++The existing manuscript already documents this design and its limitations in Sections~\ref{manuscript-sec:diagnostic_analysis}, \ref{manuscript-sec:shap_results}, \ref{manuscript-sec:ablation_results} and~\ref{manuscript-sec:predictor_complementarity}. Figures~\ref{manuscript-fig:r1m4_shap_comparison} and~\ref{manuscript-fig:r1m4_ablation_comparison} show both architectures. Supplementary Tables~\ref{supp-stab:r1m4_ablation_bilstm_attn}--\ref{supp-stab:r1m4_seed_pairs_bulstm_attn} retain all paired effects, both interval types and individual seed differences; Tables~\ref{supp-stab:r1m4_shap_magnitude} and~\ref{supp-stab:r1m4_shap_direction} give attribution magnitude and direction, Tables~\ref{supp-stab:r1m4_feature_rank_comparison}--\ref{supp-stab:r1m4_correlation_rank_agreement} give agreement and stability, and Tables~\ref{supp-stab:r1m4_temporal_bilstm_attn}--\ref{supp-stab:r1m4_temporal_bulstm_attn} document the separate temporal approximation. We retain the fixed-background limitation and the limited information from five seeds. No new experiment, figure or supplementary table was needed for this response, and the previously verified manuscript text is unchanged.}
++
++\ManuscriptChange{Existing Sections~\ref{manuscript-sec:diagnostic_analysis} (matched design and methods), \ref{manuscript-sec:shap_results} (SHAP), \ref{manuscript-sec:ablation_results} (ablation) and~\ref{manuscript-sec:predictor_complementarity} (interpretation); Figures~\ref{manuscript-fig:r1m4_shap_comparison} and~\ref{manuscript-fig:r1m4_ablation_comparison}; Supplementary Tables~\ref{supp-stab:r1m4_ablation_bilstm_attn}--\ref{supp-stab:r1m4_temporal_bulstm_attn}. Existing text and artwork retained. Final page and line numbers pending full-manuscript assembly.}
++
++\EvidenceBox{Matched architectures and seed-paired refits (Section~\ref{manuscript-sec:diagnostic_analysis})}{
++\RevisedExcerpt{Both SHAP and feature ablation were applied separately to BiLSTM-Attention and BU-LSTM-Attention using the same five seeds (42, 123, 7, 2024 and 99) within each architecture. Each architecture comprised five full-model runs, 35 single-variable ablation runs (seven variables by five seeds) and ten group-ablation runs (two groups by five seeds), giving 100 training runs across the two architectures. Each reduced model was paired with its full model trained with the same seed, with data partitions, preprocessing and training settings otherwise fixed within the architecture. SHAP was recomputed on those same five full models.}
++}
++
++\EvidenceBox{Training and test-sample uncertainty (Section~\ref{manuscript-sec:interpretation_uncertainty})}{
++\RevisedExcerpt{Training variability was summarized by five-seed standard deviations, pointwise 95\% Student-$t$ intervals with four degrees of freedom and counts of seeds with a positive removal effect. These seed-based summaries describe variability across five fitted models, whereas the bootstrap intervals describe test-sample uncertainty conditional on those models; neither combines all sources of uncertainty. All reported confidence intervals are pointwise 95\%, without family-wise or false-discovery-rate adjustment. For ablation, test-sample uncertainty was estimated using paired moving blocks of 28 consecutive six-hourly samples (seven days), with 10,000 replicates and resampling seed 42 specified in the archived analysis code. The same sampled blocks were used for the full and reduced configurations and across seeds; RMSE differences were calculated within each seed and then averaged, rather than first averaging predictions across seeds. For SHAP, sampling intervals used 2,000 bootstrap replicates resampling explained cases by calendar day, with resampling seed 42 specified in the code; the fixed background was not resampled. These intervals address test-case sampling uncertainty and do not evaluate sensitivity to alternative backgrounds.}
++}
++
++\EvidenceBox{Descriptive SHAP agreement and stability (Section~\ref{manuscript-sec:shap_results})}{
++\RevisedExcerpt{SHAP and ablation rankings had weak agreement in the upper tail, with Kendall's $\tau=0.048$ for both architectures. For BiLSTM-Attention, the comparison between random-sample SHAP and full-test ablation rankings gave $\tau=0.524$; because those rankings use different evaluation subsets, this value is interpreted descriptively. SHAP rankings were relatively stable across seeds: for BiLSTM-Attention, mean pairwise $\tau$ was 0.733 in the random sample and 0.924 in the upper tail. Across architectures, SHAP rank agreement was 0.810 in both subsets. The separately approximated temporal attributions were concentrated toward the most recent input time, but are not substituted for the grouped exact importance values.}
++}
++
++\EvidenceBox{Consistent BiLSTM-Attention removal effects (Section~\ref{manuscript-sec:ablation_results})}{
++\RevisedExcerpt{In BiLSTM-Attention, removing surface pressure (sp), total cloud cover (tcc) and 10-metre v-component of wind (v10) increased overall RMSE by 0.004022, 0.002664 and 0.002481~mm\,h$^{-1}$, respectively. Each effect was positive in all five seeds, and both its pointwise 95\% seed-$t$ and moving-block bootstrap intervals excluded zero. By contrast, removing any individual precipitation-related predictor (mxtpr, mntpr or lsp) produced only small changes, with both pointwise intervals including zero in this architecture.}
++}
++
++\EvidenceBox{BU-LSTM-Attention interval disagreement and negative effects (Section~\ref{manuscript-sec:ablation_results})}{
++\RevisedExcerpt{The BU-LSTM-Attention results were less stable across training seeds. Removing tcc or sp increased RMSE in four of five seeds; their pointwise 95\% moving-block bootstrap intervals excluded zero, but their seed-$t$ intervals included zero. They are therefore not described as equally robust to the BiLSTM-Attention effects. Removing individual precipitation-related predictors sometimes improved performance; for mntpr, the overall mean difference was negative and both pointwise intervals excluded zero. Overall ablation-rank agreement across seeds was 0.867 for BiLSTM-Attention and 0.543 for BU-LSTM-Attention, further indicating architecture-dependent training variability.}
++}
++
++\EvidenceBox{Group removal and predictive overlap (Section~\ref{manuscript-sec:ablation_results})}{
++\RevisedExcerpt{Removing mxtpr, mntpr and lsp together from BiLSTM-Attention increased overall RMSE by 0.004805~mm\,h$^{-1}$ (pointwise 95\% moving-block bootstrap interval: 0.001980 to 0.008062) and upper-tail RMSE by 0.019359~mm\,h$^{-1}$ (pointwise 95\% moving-block bootstrap interval: 0.005695 to 0.034165). Both effects were positive in all five seeds. Removing mxtpr and mntpr while retaining lsp changed performance little in this architecture. These findings support overlapping predictive information among the precipitation-related variables: removing one can leave useful information in the remaining inputs, whereas removing the group reduces predictive utility. They do not establish meteorological causality or universal necessity.}
++}
+ 
+ % Review ID: R2 M9
+ \Needspace{5\baselineskip}
+--- a/ESI_审稿意见分类_严重程度排序_35项.md	2026-11-15 00:00:00 +0000
++++ b/ESI_审稿意见分类_严重程度排序_35项.md	2026-11-15 00:00:00 +0000
+@@ -1987,6 +1987,8 @@
+ 
+ ### 10. SHAP与消融实验架构不一致
+ 
++> **2026-11-15 R2-M8范围本地整合核验：** 依据固定提交6495abc81101074b02b3a5c8cfc83cd6cbc33d79、R1-M4关闭记录及作者提供的专项审计，本轮仅补回复信和逐字EvidenceBox；manuscript、Supplementary、全部图像不改。现有正文自动Fig.7/8及S12–S22为正式引用，旧S14–S17/Fig.6–8/Fig.S6规划不得直接复用。两架构各50运行、共100；Bi的sp/tcc/v10满足同向5/5及两类区间均不跨0；BU的sp/tcc仅4/5且seed-t含0，不能称同等稳健。Bi整体lsp移除为−0.000511，历史“全部在±0.0005内”不精确。组结果只支持当前拟合模型中的预测信息重叠，不证明物理互换或因果。当前为本地核验通过、待作者审查及授权选择性归档，**不关闭R2-M8**；R1-M4和R2-M7已关闭状态保持，R2-m4/R4-m29/R4-m34仍Pending。见results/r2m8_integration/FINAL_REPORT.md。
++
+ #### 1 问题
+ 
+ **R1 M4（第二段）**：
+@@ -3371,6 +3373,8 @@
+ 
+ ### 17. 解释结果稳定性与显著性不足
+ 
++> **2026-11-15 R2-M8专项状态（不关闭共享任务）：** 本轮回复分别报告SHAP和消融跨种子Kendall τ，区分随机/全部/修订Wet/上尾与两架构，引用S19；正文已提供相关边界，不追加正文句子。消融先逐种子计算RMSE差再取均值，不能替换成先平均预测或笼统“平均误差”。Bootstrap区间描述固定模型下的样本不确定性；不能仅凭该区间不跨0即称跨种子稳健。现有所有区间pointwise、无多重比较校正；非负绝对归因区间不跨0不证明预测效用。由归档sd_seeds/mean_abs_phi核验CV约2%–37%，旧2%–30%不可作为正式结果。已有时间SHAP仅S21/S22近似结果；没有新画时间热图，不在本轮扩展R4-m29。R2-M8本地核验通过待作者审核及归档；R2-m4、R4-m29、R4-m34保持Pending，未开始R2-M9。
++
+ #### 1 问题
+ 
+ - **R2 m4**："Please include uncertainty estimates for SHAP importance and feature-ablation results."
+--- a/FINAL_REVISION_CHECKLIST.md	2026-11-15 00:00:00 +0000
++++ b/FINAL_REVISION_CHECKLIST.md	2026-11-15 00:00:00 +0000
+@@ -479,3 +479,15 @@
+ - [ ] 作者审核报告后授权本轮选择性提交、推送和远程回读；**目前不正式关闭R2-M7**。
+ 
+ 权威量化：湿频率+14.3%、Q90+8.8%、Q95−7.3%、Q99−13.1%、Q99.9−13.9%、最大值−31.4%，均相对各自25格中位数，不是百分点或因果/显著性结论。Q95原尺度0.574048，单格0.5441–0.6990 mm h⁻¹。任务03内R3-C14、R4-m12/m20/m26/m36仍Pending；未开始R2-M8。报告和patch见`results/r2m7_integration/`。
++
++
++### R2-M8 / 任务10及17局部：本地整合通过，待作者审核（2026-11-15）
++
++- [x] R2-M7已正式关闭：71eac69e0c37c5330a2310e074e5cb45bf783db0；六份M7 after文档与本轮before逐份SHA256一致，不沿用旧审计“未归档”状态。
++- [x] 固定6495abc的14份q10代码/CSV及100份run JSON核验；19/19 R1-M4补充来源哈希不变，97段旧摘录含R1-M4八段保留。
++- [x] 仅补R2-M8 AuthorResponse及六段逐字摘录（合计103段）；Response红色、摘录与位置蓝色，所有引用由真实label/ref生成。
++- [x] 32个CSV数值字段（回复31、任务注释1）及METHOD_INDEX配置可追溯；保留BU的4/5与seed-t含0、较低Wet/Upper排名稳定性、负效应及固定背景边界。正文无需追加句子。
++- [x] manuscript、Supplementary（S1–S47）、Table5及全部Figure源文件不变；三PDF顺序编译并实际渲染检查，无新增引用或严重排版错误。
++- [ ] 作者审核本地报告后授权选择性Git归档与远程回读；R2-M8尚不正式关闭。
++
++任务10/17整体不关闭；R2-m4、R4-m29、R4-m34保持Pending。正文实际Fig.7/8、补充S12–S22取代历史图表计划编号。未开始R2-M9；未训练、重算SHAP或绘图。详见results/r2m8_integration/。

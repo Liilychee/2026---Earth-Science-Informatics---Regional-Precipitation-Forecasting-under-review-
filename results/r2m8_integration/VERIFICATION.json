@@ -1,0 +1,26 @@
+{
+  "protected_files": 111,
+  "prior_excerpts_unchanged": 97,
+  "new_excerpts_exact": 6,
+  "total_excerpts_matched": 103,
+  "r1m4_evidenceboxes_preserved": 8,
+  "manuscript_byte_identical": true,
+  "supplementary_byte_identical": true,
+  "table5_and_S1_S47_preserved": true,
+  "all_prior_figures_preserved": true,
+  "all_other_responses_identical": true,
+  "original_reviewer_comment_exact": true,
+  "source_csv_display_fields_verified": 32,
+  "new_references_resolved": true,
+  "current_figures": [
+    7,
+    8
+  ],
+  "supplementary_table_range": [
+    "S12",
+    "S22"
+  ],
+  "new_experiments": 0,
+  "new_figures": 0,
+  "new_tables": 0
+}

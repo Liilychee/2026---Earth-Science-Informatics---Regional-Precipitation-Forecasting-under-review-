@@ -1,0 +1,139 @@
+[
+  {
+    "file": "q10_ablation_stats.py",
+    "line": 21,
+    "field": "FEATURES",
+    "value": [
+      "mxtpr",
+      "mntpr",
+      "lsp",
+      "tcc",
+      "v10",
+      "sp",
+      "d2m"
+    ]
+  },
+  {
+    "file": "q10_ablation_stats.py",
+    "line": 22,
+    "field": "SEEDS",
+    "value": [
+      42,
+      123,
+      7,
+      2024,
+      99
+    ]
+  },
+  {
+    "file": "q10_ablation_stats.py",
+    "line": 23,
+    "field": "ARCHS",
+    "value": [
+      "bilstm_attn",
+      "bulstm_attn"
+    ]
+  },
+  {
+    "file": "q10_ablation_stats.py",
+    "line": 24,
+    "field": "Q95",
+    "value": 0.574048
+  },
+  {
+    "file": "q10_ablation_stats.py",
+    "line": 24,
+    "field": "WET",
+    "value": 0.1
+  },
+  {
+    "file": "q10_ablation_stats.py",
+    "line": 25,
+    "field": "N_BOOT",
+    "value": 10000
+  },
+  {
+    "file": "q10_ablation_stats.py",
+    "line": 25,
+    "field": "BLOCK",
+    "value": 28
+  },
+  {
+    "file": "q10_ablation_stats.py",
+    "line": 25,
+    "field": "BSEED",
+    "value": 42
+  },
+  {
+    "file": "q10_shap.py",
+    "line": 33,
+    "field": "Q95",
+    "value": 0.574048
+  },
+  {
+    "file": "q10_shap.py",
+    "line": 33,
+    "field": "N_RANDOM",
+    "value": 300
+  },
+  {
+    "file": "q10_shap.py",
+    "line": 33,
+    "field": "SAMPLE_SEED",
+    "value": 42
+  },
+  {
+    "file": "q10_shap.py",
+    "line": 34,
+    "field": "N_BG",
+    "value": {
+      "grouped": 100,
+      "grouped_precip": 100,
+      "temporal": 50
+    }
+  },
+  {
+    "file": "q10_shap.py",
+    "line": 36,
+    "field": "T",
+    "value": 6
+  },
+  {
+    "file": "q10_shap.py",
+    "line": 36,
+    "field": "F",
+    "value": 7
+  },
+  {
+    "file": "q10_shap_stats.py",
+    "line": 24,
+    "field": "N_BOOT",
+    "value": 2000
+  },
+  {
+    "file": "q10_shap_stats.py",
+    "line": 24,
+    "field": "BSEED",
+    "value": 42
+  },
+  {
+    "file": "RUN_METADATA_INDEX.json",
+    "field": "total",
+    "value": 100
+  },
+  {
+    "file": "RUN_METADATA_INDEX.json",
+    "field": "full_per_arch",
+    "value": 5
+  },
+  {
+    "file": "RUN_METADATA_INDEX.json",
+    "field": "single_ablation_per_arch",
+    "value": 35
+  },
+  {
+    "file": "RUN_METADATA_INDEX.json",
+    "field": "group_ablation_per_arch",
+    "value": 10
+  }
+]

@@ -1,0 +1,242 @@
+{
+  "fixed_commit": "6495abc81101074b02b3a5c8cfc83cd6cbc33d79",
+  "source_files_verified": 14,
+  "runs_verified": 100,
+  "matched_design_complete": true,
+  "robustness_checks": [
+    {
+      "arch": "bilstm_attn",
+      "feature": "sp",
+      "n_seeds_worse": 5,
+      "seed_interval": [
+        0.003269534916364591,
+        0.004774336185111694
+      ],
+      "bootstrap_interval": [
+        0.0025269308540438614,
+        0.00554731762914198
+      ],
+      "robust_deterioration": true
+    },
+    {
+      "arch": "bilstm_attn",
+      "feature": "tcc",
+      "n_seeds_worse": 5,
+      "seed_interval": [
+        0.0016182470540246224,
+        0.003709151399898571
+      ],
+      "bootstrap_interval": [
+        0.0008922616129459225,
+        0.004468501168418147
+      ],
+      "robust_deterioration": true
+    },
+    {
+      "arch": "bilstm_attn",
+      "feature": "v10",
+      "n_seeds_worse": 5,
+      "seed_interval": [
+        0.001107877961204213,
+        0.0038532477181286657
+      ],
+      "bootstrap_interval": [
+        0.0006216781941728011,
+        0.004297161777740759
+      ],
+      "robust_deterioration": true
+    },
+    {
+      "arch": "bilstm_attn",
+      "feature": "mntpr",
+      "n_seeds_worse": 3,
+      "seed_interval": [
+        -0.001584548723411668,
+        0.0011541044289223833
+      ],
+      "bootstrap_interval": [
+        -0.0010945846202821611,
+        0.0008118539127584122
+      ],
+      "robust_deterioration": false
+    },
+    {
+      "arch": "bulstm_attn",
+      "feature": "sp",
+      "n_seeds_worse": 4,
+      "seed_interval": [
+        -0.001710066784990692,
+        0.006739996555405834
+      ],
+      "bootstrap_interval": [
+        0.0014654217772494447,
+        0.0035137221182981295
+      ],
+      "robust_deterioration": false
+    },
+    {
+      "arch": "bulstm_attn",
+      "feature": "tcc",
+      "n_seeds_worse": 4,
+      "seed_interval": [
+        -0.0014062212478109012,
+        0.00863096064641703
+      ],
+      "bootstrap_interval": [
+        0.0024945145131544306,
+        0.004776603754447702
+      ],
+      "robust_deterioration": false
+    },
+    {
+      "arch": "bulstm_attn",
+      "feature": "v10",
+      "n_seeds_worse": 5,
+      "seed_interval": [
+        0.0005979472685217504,
+        0.0023866580072909624
+      ],
+      "bootstrap_interval": [
+        0.0002908856224794157,
+        0.002691765032831592
+      ],
+      "robust_deterioration": true
+    },
+    {
+      "arch": "bulstm_attn",
+      "feature": "mntpr",
+      "n_seeds_worse": 0,
+      "seed_interval": [
+        -0.0034623007110071748,
+        -0.0003396180776644687
+      ],
+      "bootstrap_interval": [
+        -0.0030224520984037783,
+        -0.0007483106923444934
+      ],
+      "robust_deterioration": false
+    }
+  ],
+  "cv_min": 0.024995811491371447,
+  "cv_max": 0.36897613707275057,
+  "random_bi_tcc_gt_sp_by_seed": [
+    true,
+    true,
+    true,
+    false,
+    false
+  ],
+  "bu_reduced_runs_reaching_cap": [
+    {
+      "path": "results/q10/runs/bulstm_attn__no_lsp__s42.json",
+      "md5": "1cf64b8baefb670320a98b5d8e38ea04",
+      "arch": "bulstm_attn",
+      "config": "no_lsp",
+      "seed": 42,
+      "epochs_trained": 30,
+      "best_epoch": 20,
+      "test_n": null,
+      "train_n": null,
+      "val_n": null
+    },
+    {
+      "path": "results/q10/runs/bulstm_attn__no_mntpr__s42.json",
+      "md5": "c326b8c1d0607d22bf7f9adc94abeb68",
+      "arch": "bulstm_attn",
+      "config": "no_mntpr",
+      "seed": 42,
+      "epochs_trained": 30,
+      "best_epoch": 26,
+      "test_n": null,
+      "train_n": null,
+      "val_n": null
+    },
+    {
+      "path": "results/q10/runs/bulstm_attn__no_mxtpr__s42.json",
+      "md5": "278f6adde12dc8d8b6bc46f9f055ff32",
+      "arch": "bulstm_attn",
+      "config": "no_mxtpr",
+      "seed": 42,
+      "epochs_trained": 30,
+      "best_epoch": 25,
+      "test_n": null,
+      "train_n": null,
+      "val_n": null
+    },
+    {
+      "path": "results/q10/runs/bulstm_attn__no_precip__s99.json",
+      "md5": "00fc64bea790ea00bdca10e84c96eb2c",
+      "arch": "bulstm_attn",
+      "config": "no_precip",
+      "seed": 99,
+      "epochs_trained": 30,
+      "best_epoch": 21,
+      "test_n": null,
+      "train_n": null,
+      "val_n": null
+    },
+    {
+      "path": "results/q10/runs/bulstm_attn__no_sp__s123.json",
+      "md5": "f21a2866e055b8a20e46a10acd36a63d",
+      "arch": "bulstm_attn",
+      "config": "no_sp",
+      "seed": 123,
+      "epochs_trained": 30,
+      "best_epoch": 21,
+      "test_n": null,
+      "train_n": null,
+      "val_n": null
+    },
+    {
+      "path": "results/q10/runs/bulstm_attn__no_sp__s42.json",
+      "md5": "47a614de20dd96a8d8ad37f103521b2e",
+      "arch": "bulstm_attn",
+      "config": "no_sp",
+      "seed": 42,
+      "epochs_trained": 30,
+      "best_epoch": 25,
+      "test_n": null,
+      "train_n": null,
+      "val_n": null
+    },
+    {
+      "path": "results/q10/runs/bulstm_attn__no_tcc__s123.json",
+      "md5": "8934d77f67eef3f030649ed9c58c9fda",
+      "arch": "bulstm_attn",
+      "config": "no_tcc",
+      "seed": 123,
+      "epochs_trained": 30,
+      "best_epoch": 20,
+      "test_n": null,
+      "train_n": null,
+      "val_n": null
+    },
+    {
+      "path": "results/q10/runs/bulstm_attn__no_tcc__s99.json",
+      "md5": "a697e2de7b93518e933cc7591484bd93",
+      "arch": "bulstm_attn",
+      "config": "no_tcc",
+      "seed": 99,
+      "epochs_trained": 30,
+      "best_epoch": 23,
+      "test_n": null,
+      "train_n": null,
+      "val_n": null
+    },
+    {
+      "path": "results/q10/runs/bulstm_attn__no_v10__s7.json",
+      "md5": "4008b93eb358217ff698a2e68466e034",
+      "arch": "bulstm_attn",
+      "config": "no_v10",
+      "seed": 7,
+      "epochs_trained": 30,
+      "best_epoch": 26,
+      "test_n": null,
+      "train_n": null,
+      "val_n": null
+    }
+  ],
+  "bootstrap_implementation_note": "q10 uses 141 complete non-circular blocks of28 ->3948 positions, not explicitly truncated; masks applied via block sums. Same starts used for all configurations/seeds. This is preserved, not rerun. Intervals condition on fitted models; differences computed within seed then averaged.",
+  "shap_background_conditional": true,
+  "models_not_reexecuted": true
+}

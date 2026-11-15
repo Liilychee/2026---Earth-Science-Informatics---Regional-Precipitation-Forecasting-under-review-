@@ -1,0 +1,41 @@
+{
+  "m7_closed_commit": "71eac69e0c37c5330a2310e074e5cb45bf783db0",
+  "m7_after_equals_m8_before": [
+    {
+      "path": "Response letter.tex",
+      "m7_after_sha256": "e4aa65abd10d23d337d44ad23777c913c73274fef20ed509d87c4ba9f8cd8afa",
+      "m8_before_sha256": "e4aa65abd10d23d337d44ad23777c913c73274fef20ed509d87c4ba9f8cd8afa",
+      "match": true
+    },
+    {
+      "path": "Supplementary.tex",
+      "m7_after_sha256": "05b2dd1ef0748892be1d2fb0c0bc5ba02778113c391cccb22cc62f0bc1515531",
+      "m8_before_sha256": "05b2dd1ef0748892be1d2fb0c0bc5ba02778113c391cccb22cc62f0bc1515531",
+      "match": true
+    },
+    {
+      "path": "ESI_\u5ba1\u7a3f\u610f\u89c1\u5206\u7c7b_\u4e25\u91cd\u7a0b\u5ea6\u6392\u5e8f_35\u9879.md",
+      "m7_after_sha256": "24ec3eafae5940e19f3d35e603e9bbcf7d0047e254de30c467aff423550b871c",
+      "m8_before_sha256": "24ec3eafae5940e19f3d35e603e9bbcf7d0047e254de30c467aff423550b871c",
+      "match": true
+    },
+    {
+      "path": "FINAL_REVISION_CHECKLIST.md",
+      "m7_after_sha256": "6ebe0b87c3070b24e8c620d799e12484f83fa4002aa97783f54899aabf03de50",
+      "m8_before_sha256": "6ebe0b87c3070b24e8c620d799e12484f83fa4002aa97783f54899aabf03de50",
+      "match": true
+    },
+    {
+      "path": "manuscript.tex",
+      "m7_after_sha256": "e82ef67f18f4b075388104a5967f313e8503b42cb078d2a62ab26d076e9fd005",
+      "m8_before_sha256": "e82ef67f18f4b075388104a5967f313e8503b42cb078d2a62ab26d076e9fd005",
+      "match": true
+    },
+    {
+      "path": "SUPPLEMENTARY_TABLE_REGISTRY.md",
+      "m7_after_sha256": "a8ce8a7570dbd7e160f4253404ea30dddb12cfdc59bb54345726b1d5668f9710",
+      "m8_before_sha256": "a8ce8a7570dbd7e160f4253404ea30dddb12cfdc59bb54345726b1d5668f9710",
+      "match": true
+    }
+  ]
+}

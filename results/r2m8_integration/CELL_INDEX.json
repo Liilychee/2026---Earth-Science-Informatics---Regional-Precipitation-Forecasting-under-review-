@@ -1,0 +1,407 @@
+[
+  {
+    "file": "q10_shap_rank_stability.csv",
+    "csv_line": 2,
+    "criteria": {
+      "subset": "random",
+      "comparison": "bilstm_attn: between seeds (mean of 10 pairs)"
+    },
+    "field": "kendall_tau",
+    "raw": "0.7333333333333333",
+    "digits": 3,
+    "display": "0.733"
+  },
+  {
+    "file": "q10_shap_rank_stability.csv",
+    "csv_line": 5,
+    "criteria": {
+      "subset": "upper",
+      "comparison": "bilstm_attn: between seeds (mean of 10 pairs)"
+    },
+    "field": "kendall_tau",
+    "raw": "0.9238095238095239",
+    "digits": 3,
+    "display": "0.924"
+  },
+  {
+    "file": "q10_shap_rank_stability.csv",
+    "csv_line": 3,
+    "criteria": {
+      "subset": "random",
+      "comparison": "bulstm_attn: between seeds (mean of 10 pairs)"
+    },
+    "field": "kendall_tau",
+    "raw": "0.7333333333333334",
+    "digits": 3,
+    "display": "0.733"
+  },
+  {
+    "file": "q10_shap_rank_stability.csv",
+    "csv_line": 6,
+    "criteria": {
+      "subset": "upper",
+      "comparison": "bulstm_attn: between seeds (mean of 10 pairs)"
+    },
+    "field": "kendall_tau",
+    "raw": "0.7523809523809524",
+    "digits": 3,
+    "display": "0.752"
+  },
+  {
+    "file": "q10_ablation_rank_stability.csv",
+    "csv_line": 2,
+    "criteria": {
+      "subset": "all",
+      "comparison": "bilstm_attn: between seeds (mean of 10 pairs)"
+    },
+    "field": "kendall_tau",
+    "raw": "0.8666666666666668",
+    "digits": 3,
+    "display": "0.867"
+  },
+  {
+    "file": "q10_ablation_rank_stability.csv",
+    "csv_line": 5,
+    "criteria": {
+      "subset": "wet_ge0.1",
+      "comparison": "bilstm_attn: between seeds (mean of 10 pairs)"
+    },
+    "field": "kendall_tau",
+    "raw": "0.48571428571428577",
+    "digits": 3,
+    "display": "0.486"
+  },
+  {
+    "file": "q10_ablation_rank_stability.csv",
+    "csv_line": 8,
+    "criteria": {
+      "subset": "upper_geQ95",
+      "comparison": "bilstm_attn: between seeds (mean of 10 pairs)"
+    },
+    "field": "kendall_tau",
+    "raw": "0.5619047619047619",
+    "digits": 3,
+    "display": "0.562"
+  },
+  {
+    "file": "q10_ablation_rank_stability.csv",
+    "csv_line": 3,
+    "criteria": {
+      "subset": "all",
+      "comparison": "bulstm_attn: between seeds (mean of 10 pairs)"
+    },
+    "field": "kendall_tau",
+    "raw": "0.5428571428571429",
+    "digits": 3,
+    "display": "0.543"
+  },
+  {
+    "file": "q10_ablation_rank_stability.csv",
+    "csv_line": 6,
+    "criteria": {
+      "subset": "wet_ge0.1",
+      "comparison": "bulstm_attn: between seeds (mean of 10 pairs)"
+    },
+    "field": "kendall_tau",
+    "raw": "0.23809523809523814",
+    "digits": 3,
+    "display": "0.238"
+  },
+  {
+    "file": "q10_ablation_rank_stability.csv",
+    "csv_line": 9,
+    "criteria": {
+      "subset": "upper_geQ95",
+      "comparison": "bulstm_attn: between seeds (mean of 10 pairs)"
+    },
+    "field": "kendall_tau",
+    "raw": "0.23809523809523814",
+    "digits": 3,
+    "display": "0.238"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 7,
+    "criteria": {
+      "arch": "bilstm_attn",
+      "subset": "all",
+      "removed": "sp"
+    },
+    "field": "dRMSE_mean",
+    "raw": "0.0040219355507381425",
+    "digits": 6,
+    "display": "0.004022"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 7,
+    "criteria": {
+      "arch": "bilstm_attn",
+      "subset": "all",
+      "removed": "sp"
+    },
+    "field": "n_seeds_worse",
+    "raw": "5",
+    "digits": 0,
+    "display": "5"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 5,
+    "criteria": {
+      "arch": "bilstm_attn",
+      "subset": "all",
+      "removed": "tcc"
+    },
+    "field": "dRMSE_mean",
+    "raw": "0.0026636992269615965",
+    "digits": 6,
+    "display": "0.002664"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 5,
+    "criteria": {
+      "arch": "bilstm_attn",
+      "subset": "all",
+      "removed": "tcc"
+    },
+    "field": "n_seeds_worse",
+    "raw": "5",
+    "digits": 0,
+    "display": "5"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 6,
+    "criteria": {
+      "arch": "bilstm_attn",
+      "subset": "all",
+      "removed": "v10"
+    },
+    "field": "dRMSE_mean",
+    "raw": "0.002480562839666439",
+    "digits": 6,
+    "display": "0.002481"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 6,
+    "criteria": {
+      "arch": "bilstm_attn",
+      "subset": "all",
+      "removed": "v10"
+    },
+    "field": "n_seeds_worse",
+    "raw": "5",
+    "digits": 0,
+    "display": "5"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 28,
+    "criteria": {
+      "arch": "bulstm_attn",
+      "subset": "all",
+      "removed": "sp"
+    },
+    "field": "n_seeds_worse",
+    "raw": "4",
+    "digits": 0,
+    "display": "4"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 26,
+    "criteria": {
+      "arch": "bulstm_attn",
+      "subset": "all",
+      "removed": "tcc"
+    },
+    "field": "n_seeds_worse",
+    "raw": "4",
+    "digits": 0,
+    "display": "4"
+  },
+  {
+    "file": "q10_group_ablation.csv",
+    "csv_line": 2,
+    "criteria": {
+      "arch": "bilstm_attn",
+      "subset": "all",
+      "removed": "mxtpr+mntpr+lsp"
+    },
+    "field": "dRMSE_mean",
+    "raw": "0.0048048426082969165",
+    "digits": 6,
+    "display": "0.004805"
+  },
+  {
+    "file": "q10_group_ablation.csv",
+    "csv_line": 2,
+    "criteria": {
+      "arch": "bilstm_attn",
+      "subset": "all",
+      "removed": "mxtpr+mntpr+lsp"
+    },
+    "field": "boot_low",
+    "raw": "0.0019804832751551837",
+    "digits": 6,
+    "display": "0.001980"
+  },
+  {
+    "file": "q10_group_ablation.csv",
+    "csv_line": 2,
+    "criteria": {
+      "arch": "bilstm_attn",
+      "subset": "all",
+      "removed": "mxtpr+mntpr+lsp"
+    },
+    "field": "boot_high",
+    "raw": "0.008062203356527964",
+    "digits": 6,
+    "display": "0.008062"
+  },
+  {
+    "file": "q10_group_ablation.csv",
+    "csv_line": 2,
+    "criteria": {
+      "arch": "bilstm_attn",
+      "subset": "all",
+      "removed": "mxtpr+mntpr+lsp"
+    },
+    "field": "n_seeds_worse",
+    "raw": "5",
+    "digits": 0,
+    "display": "5"
+  },
+  {
+    "file": "q10_group_ablation.csv",
+    "csv_line": 6,
+    "criteria": {
+      "arch": "bilstm_attn",
+      "subset": "upper_geQ95",
+      "removed": "mxtpr+mntpr+lsp"
+    },
+    "field": "dRMSE_mean",
+    "raw": "0.019359408107572217",
+    "digits": 6,
+    "display": "0.019359"
+  },
+  {
+    "file": "q10_group_ablation.csv",
+    "csv_line": 6,
+    "criteria": {
+      "arch": "bilstm_attn",
+      "subset": "upper_geQ95",
+      "removed": "mxtpr+mntpr+lsp"
+    },
+    "field": "boot_low",
+    "raw": "0.005695373345836733",
+    "digits": 6,
+    "display": "0.005695"
+  },
+  {
+    "file": "q10_group_ablation.csv",
+    "csv_line": 6,
+    "criteria": {
+      "arch": "bilstm_attn",
+      "subset": "upper_geQ95",
+      "removed": "mxtpr+mntpr+lsp"
+    },
+    "field": "boot_high",
+    "raw": "0.034164674305272036",
+    "digits": 6,
+    "display": "0.034165"
+  },
+  {
+    "file": "q10_group_ablation.csv",
+    "csv_line": 6,
+    "criteria": {
+      "arch": "bilstm_attn",
+      "subset": "upper_geQ95",
+      "removed": "mxtpr+mntpr+lsp"
+    },
+    "field": "n_seeds_worse",
+    "raw": "5",
+    "digits": 0,
+    "display": "5"
+  },
+  {
+    "file": "q10_shap_vs_ablation.csv",
+    "csv_line": 9,
+    "criteria": {
+      "arch": "bilstm_attn",
+      "shap_subset": "upper",
+      "feature": "mxtpr"
+    },
+    "field": "kendall_tau",
+    "raw": "0.04761904761904762",
+    "digits": 3,
+    "display": "0.048"
+  },
+  {
+    "file": "q10_shap_vs_ablation.csv",
+    "csv_line": 23,
+    "criteria": {
+      "arch": "bulstm_attn",
+      "shap_subset": "upper",
+      "feature": "mxtpr"
+    },
+    "field": "kendall_tau",
+    "raw": "0.04761904761904762",
+    "digits": 3,
+    "display": "0.048"
+  },
+  {
+    "file": "q10_shap_vs_ablation.csv",
+    "csv_line": 2,
+    "criteria": {
+      "arch": "bilstm_attn",
+      "shap_subset": "random",
+      "feature": "mxtpr"
+    },
+    "field": "kendall_tau",
+    "raw": "0.5238095238095238",
+    "digits": 3,
+    "display": "0.524"
+  },
+  {
+    "file": "q10_shap_rank_stability.csv",
+    "csv_line": 4,
+    "criteria": {
+      "subset": "random",
+      "comparison": "bilstm_attn vs bulstm_attn (seed mean)"
+    },
+    "field": "kendall_tau",
+    "raw": "0.8095238095238096",
+    "digits": 3,
+    "display": "0.810"
+  },
+  {
+    "file": "q10_shap_rank_stability.csv",
+    "csv_line": 7,
+    "criteria": {
+      "subset": "upper",
+      "comparison": "bilstm_attn vs bulstm_attn (seed mean)"
+    },
+    "field": "kendall_tau",
+    "raw": "0.8095238095238096",
+    "digits": 3,
+    "display": "0.810"
+  },
+  {
+    "file": "q10_ablation_summary.csv",
+    "csv_line": 4,
+    "criteria": {
+      "arch": "bilstm_attn",
+      "subset": "all",
+      "removed": "lsp"
+    },
+    "field": "dRMSE_mean",
+    "raw": "-0.0005109834775895383",
+    "digits": 6,
+    "display": "-0.000511",
+    "destination": "task10 scoped correction only"
+  }
+]
