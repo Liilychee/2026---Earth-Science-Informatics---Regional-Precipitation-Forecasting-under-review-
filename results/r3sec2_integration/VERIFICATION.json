@@ -1,0 +1,21 @@
+{
+  "baseline_R3_01_closed_remote": "c108adfd739653490a56b25d6aafcda8daa274e5",
+  "old_excerpts_unchanged": 121,
+  "new_exact_excerpts": 1,
+  "total_matched": 122,
+  "old_excerpts_quoting_edited_paragraph": 0,
+  "manuscript_change": "pure insertion of the two approved sentences in line 93 (\\revminor)",
+  "Response_letter_only_R3_Section_2_block": true,
+  "bib_change": "pure append of @article{ridal2024cerra}; product name braced in title",
+  "duplicate_bib_keys": 0,
+  "undefined_citations": 0,
+  "bibtex_warnings": 0,
+  "Supplementary_Figures_closed_replies_unchanged": true,
+  "protected_files": "879/879",
+  "R3_01_excerpt_intact": true,
+  "no_CERRA_EDA_Land_no_CDS_DOI_no_new_satellite_refs": true,
+  "no_claim_CERRA_improves_precipitation": true,
+  "patch_reconstruction": "LOCAL git; PORTABLE git+BSD",
+  "commit_push_performed": false,
+  "closed": false
+}

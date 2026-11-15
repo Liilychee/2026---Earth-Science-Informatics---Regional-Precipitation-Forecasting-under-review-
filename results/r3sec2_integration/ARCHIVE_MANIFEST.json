@@ -1,0 +1,153 @@
+{
+  "base_commit": "c108adfd739653490a56b25d6aafcda8daa274e5",
+  "mode": "isolated worktree + incremental patch archive",
+  "executed_by": "Claude Code",
+  "patch_reconstruction_passed": true,
+  "files": [
+    {
+      "path": "results/r3sec2_integration/BASELINE_GATE.json",
+      "md5": "3a57c47ce93763ae5f149c17444ed5a0",
+      "sha256": "23849747ee6bf2b8fcf7354a98e6c5a8c010ccac5358269b889c6b8466ed554a"
+    },
+    {
+      "path": "results/r3sec2_integration/CELL_INDEX.json",
+      "md5": "fd4e3d96ce69db35446adaad7a8c5a76",
+      "sha256": "baacc2588d9b803ed5249c957bb49b820746c81b7be0de0044157390d6e2694a"
+    },
+    {
+      "path": "results/r3sec2_integration/DOCUMENT_HASHES.json",
+      "md5": "0da4b795713cc9b83e365e64244bbcad",
+      "sha256": "7328000c7fea4967562082cc14d9eefb0505709c0988c8afde20e38975db2d63"
+    },
+    {
+      "path": "results/r3sec2_integration/EVIDENCE_INDEX.md",
+      "md5": "ce653c48b7b670af7f78744cf7ca594d",
+      "sha256": "06f643edc24156452c7fa74fd5c0b90aef667d8af13fad1e6588fb2f5dc40818"
+    },
+    {
+      "path": "results/r3sec2_integration/EXCERPT_INDEX.json",
+      "md5": "97181caf0a6bed611eb3321617105da9",
+      "sha256": "c190258598a727910f8fe5546b904cd9b7a0f592a2a5171c0af6f48e735cdaff"
+    },
+    {
+      "path": "results/r3sec2_integration/FINAL_REPORT.md",
+      "md5": "3c42623a54db91bcf3bc4de69928200c",
+      "sha256": "3f5839c203804dde84b7dbe4c7c8a8d457a3d0af5b143443b8d9454a0ae28e27"
+    },
+    {
+      "path": "results/r3sec2_integration/GIT_SCOPE.md",
+      "md5": "f25ca3667f3f6de04253e874926059db",
+      "sha256": "665e3d646fc9b1356d3383548029bc16abb576bde3f0a251cf09868e9d249037"
+    },
+    {
+      "path": "results/r3sec2_integration/GIT_STATE.json",
+      "md5": "a0a066e2f3e21aa1ee83d567aac254d0",
+      "sha256": "8dda10ab47a8d681aa6c428f7a6f510369eb43ee00d67e9a3bf1cc4585c59197"
+    },
+    {
+      "path": "results/r3sec2_integration/GIT_STATUS.txt",
+      "md5": "1ba44ddb7e928e394ebfef9fe362ae5c",
+      "sha256": "f597d9e0410504925ae276d8309e2601f4a7a725e28f6e84c22e1a0608668f6a"
+    },
+    {
+      "path": "results/r3sec2_integration/ORIGINAL_WORKTREE_GUARD.json",
+      "md5": "45ee9d93fbf23da1f3547acb7677dd29",
+      "sha256": "3bdbb8814534ce68d63d79c766ebc4a5f9da2b43b875e8459ad2783427d41fe4"
+    },
+    {
+      "path": "results/r3sec2_integration/PATCH_RECONSTRUCTION.json",
+      "md5": "fa8e99ef8f643a5296b39c15c6bbc6bf",
+      "sha256": "37093225b8ea5f5da79f225fd38cefc3701906aa2797cb183bbda4e6b8ab4190"
+    },
+    {
+      "path": "results/r3sec2_integration/PDF_CHECK.json",
+      "md5": "a28a55270d26655cc56ead8c5846593a",
+      "sha256": "6997aa77f828e6511cc0eea8e6cfd65e370f860276f6b49e13017f3f7722eb00"
+    },
+    {
+      "path": "results/r3sec2_integration/PROTECTED_HASHES.json",
+      "md5": "ffdf2c15340feb8fd8da4f459a1682ae",
+      "sha256": "ea7e75bb57978f76797a754f0cddd4431cab621d40cf345bd9aa21ab60b5631f"
+    },
+    {
+      "path": "results/r3sec2_integration/R3sec2_LOCAL.patch",
+      "md5": "f93e8eb8511111b3810b9b992f826f1f",
+      "sha256": "1f163814329ddafd6cef4c8a6b319ba921a30333924ae334ebd23b8c6d137829"
+    },
+    {
+      "path": "results/r3sec2_integration/R3sec2_PORTABLE.patch",
+      "md5": "b4bf22cbc7516977f884a17a2e7f53d9",
+      "sha256": "e9558f17c8db493d00b6591d9b7be704721d7fbabdc8f0972ce70d8e8e1aca3f"
+    },
+    {
+      "path": "results/r3sec2_integration/STATUS.md",
+      "md5": "6b19daf2210a06be21fa16ec3d1b01f1",
+      "sha256": "afe3cc3ec411825e02498caca1a59be4f958514ed31515b6aef2394f09d8f5fa"
+    },
+    {
+      "path": "results/r3sec2_integration/VERIFICATION.json",
+      "md5": "6d9d3f1623f5b3027c38bd178bca9595",
+      "sha256": "e5a9e9d7057bae09063601bdcc7bc2637d78a9633c82f8ee66ad2bf75d847e80"
+    },
+    {
+      "path": "results/r3sec2_integration/compile_Response_letter.txt",
+      "md5": "e0d3d9d228873655bb5800cf0f0dd3c7",
+      "sha256": "415b80f5ac8369161a06464ec3cd22f99ab1e0f3ab155fd0c6f9069f51f943b4"
+    },
+    {
+      "path": "results/r3sec2_integration/compile_Response_letter_final.txt",
+      "md5": "adf2f7665e9a54b8e30865be8d126049",
+      "sha256": "2a288ff1b998fd8a5487535d6aa060f304400279ba54340156f26a310d11a241"
+    },
+    {
+      "path": "results/r3sec2_integration/compile_Supplementary.txt",
+      "md5": "aa4f353aa97fc746faa0459ad1095e61",
+      "sha256": "c807a5385c0be71aa8dc5d2428d2eb26409a897f5c87c859df172bec4a73f555"
+    },
+    {
+      "path": "results/r3sec2_integration/compile_Supplementary_final.txt",
+      "md5": "aa4f353aa97fc746faa0459ad1095e61",
+      "sha256": "c807a5385c0be71aa8dc5d2428d2eb26409a897f5c87c859df172bec4a73f555"
+    },
+    {
+      "path": "results/r3sec2_integration/compile_manuscript.txt",
+      "md5": "e773329df973904b404aa2ba7a77b80b",
+      "sha256": "1acb246e4939bbfa375399f4945a63da29bb0cc21fd393438463fdf41a2a61aa"
+    },
+    {
+      "path": "results/r3sec2_integration/compile_manuscript_final.txt",
+      "md5": "ad655a54a3de6b8669873eee75855ca7",
+      "sha256": "3dcd308ef4b83f0ec7070f791007b658083ad0e97c5837ce25503b81cb2ef31a"
+    },
+    {
+      "path": "results/r3sec2_integration/evidence/crossref_ridal2024_cerra.json",
+      "md5": "e1894b66cdb86f2e1bbdf6e41f10156b",
+      "sha256": "f08f66b5465ba5ac5b5bb308c9b969032513783451d9dca42b9b608e53d339d4"
+    },
+    {
+      "path": "results/r3sec2_integration/evidence/openalex_ridal2024_cerra.json",
+      "md5": "82ff5cda9c4e64f4dcea03e30e6ebaa2",
+      "sha256": "1ca9b3b061f3bdd29129ef7fd5f70e7448e81656b70d1e487bd3c2f651aff548"
+    },
+    {
+      "path": "results/r3sec2_integration/render/Response_letter-59.png",
+      "md5": "39e191d2d81c8b18c19c3af721d04303",
+      "sha256": "fe4e52a38b7a2874c601b57c34541c7ef03115714c04d48504bb6ae8a6308fd6"
+    },
+    {
+      "path": "results/r3sec2_integration/render/Response_letter-78.png",
+      "md5": "8ab1173d2c20a8eaafa3c6e7871d114a",
+      "sha256": "eaae9c9fb0996270e18494fcdd674293f940f4ed5d05c99802ece81e524b0d7c"
+    },
+    {
+      "path": "results/r3sec2_integration/render/manuscript-7.png",
+      "md5": "8c3be88d79a4321ffc33fc8a6dba54c3",
+      "sha256": "43107a7ed6d8b2b76f7124482f6744ff7bd53cf5955758f2b806fb066c4494a1"
+    },
+    {
+      "path": "results/r3sec2_integration/render/manuscript-95.png",
+      "md5": "0b12a3814c552896dec774e7c825623d",
+      "sha256": "5bc8f837193dc7beecf038626d93e85cee395cd3b07c51d8601deaca5cea2aea"
+    }
+  ]
+}

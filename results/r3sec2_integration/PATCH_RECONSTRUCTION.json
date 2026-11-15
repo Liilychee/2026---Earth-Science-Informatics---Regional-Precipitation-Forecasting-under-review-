@@ -1,0 +1,25 @@
+{
+  "base_commit": "c108adfd739653490a56b25d6aafcda8daa274e5",
+  "patch_exact": true,
+  "patches_tested": {
+    "R3sec2_LOCAL.patch": "git apply",
+    "R3sec2_PORTABLE.patch": "git apply and BSD patch -p1"
+  },
+  "source_files": [
+    "manuscript.tex",
+    "Response letter.tex",
+    "sn-bibliography.bib"
+  ],
+  "before_sha256": {
+    "manuscript.tex": "5f2accb52029af304acccaa7c945041dbc5f6485b266ae5ab839bdf5e8c223e3",
+    "Response letter.tex": "884e0430e9c72daa9a64116a7f775d3353c9c3fadf609d07e76665fe98a45c1a",
+    "sn-bibliography.bib": "e3d3e44bd184f84a702ff0d4c21d18d18407f9d08028b8e031ea7af8b2332b4a"
+  },
+  "reconstructed_sha256": {
+    "manuscript.tex": "02d366a23c5d75dcd0c404024dd58226e87e6bea75b570157d01846b63837e6f",
+    "Response letter.tex": "15f830bd3388cd4de5853ab0c67109817dfd641d8e4fc981771df1055378ae34",
+    "sn-bibliography.bib": "393ed6d7c8fd1b87ce2e7ca7b3cb1a9bd52cc558b02ca28742c5d55371a236db"
+  },
+  "reconstruction_location": "scratch copies of before/ files only",
+  "root_untouched": true
+}

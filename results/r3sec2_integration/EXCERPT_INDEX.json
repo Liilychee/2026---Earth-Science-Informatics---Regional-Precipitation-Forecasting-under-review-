@@ -1,0 +1,15 @@
+{
+  "old_count": 121,
+  "old_unchanged": 121,
+  "new": [
+    {
+      "text": "The Copernicus European Regional Reanalysis (CERRA) provides atmospheric reanalysis data over Europe at a horizontal resolution of 5.5~km, offering finer spatial detail than the global ERA5 reanalysis \\citep{ridal2024cerra}. Although \\citet{ridal2024cerra} reported improvements over ERA5 for several near-surface variables, the present study uses ERA5 for both predictors and target precipitation and does not assess whether CERRA would improve regional precipitation forecasting.",
+      "sha256": "3f9b30f523b07b2e4478485a0d53dee9d2c7a4388c832fddf36ec8e981a28358",
+      "verbatim_in_manuscript": true,
+      "manuscript_line": 93
+    }
+  ],
+  "total": 122,
+  "all_match": true,
+  "old_excerpts_quoting_L93": 0
+}

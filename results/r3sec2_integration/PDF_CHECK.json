@@ -1,0 +1,47 @@
+{
+  "build_order": [
+    "Supplementary",
+    "manuscript",
+    "Response letter"
+  ],
+  "documents": {
+    "Supplementary": {
+      "pdf_sha256": "88d0f52ad0b24e3411c054b7ee866d3e1fb479f77e192b9d35f2a52153e1ced8",
+      "pages": 57,
+      "undefined": 0,
+      "multiply_defined": 0,
+      "overfull_hbox": 0,
+      "bibtex_warnings": "no bibliography"
+    },
+    "manuscript": {
+      "pdf_sha256": "ed81d2bd931b5c4bd428a952e987815f79e7822dfa9f83a04d495271b2a51127",
+      "pages": 98,
+      "undefined": 0,
+      "multiply_defined": 0,
+      "overfull_hbox": 0,
+      "bibtex_warnings": "0"
+    },
+    "Response letter": {
+      "pdf_sha256": "a2064e3111cdf3c3a65a54ef76e6955d598c94b041b3c42d79e960774eab32b4",
+      "pages": 78,
+      "undefined": 0,
+      "multiply_defined": 0,
+      "overfull_hbox": 0,
+      "bibtex_warnings": "0"
+    }
+  },
+  "render_dpi": 144,
+  "rendered": [
+    "Response_letter-59.png",
+    "Response_letter-78.png",
+    "manuscript-7.png",
+    "manuscript-95.png"
+  ],
+  "citation_display": "manuscript p7: '(Ridal et al, 2024)' and 'Ridal et al (2024)'; reply p59 '(Ridal et al., 2024)'",
+  "reference_list": "manuscript p95 and Response letter p78: title 'CERRA, the Copernicus European Regional Reanalysis system', QJRMS 150(763):3385-3411, doi:10.1002/qj.4764; 'Esbjörn' rendered correctly in plainnat full author list",
+  "visual_review": "manuscript p7: two red sentences between Lavers and Palharini, no overflow; RL p59: red response, blue location box and verbatim EvidenceBox. Pre-existing: next comment's 'Section 3.2:' line falls at the foot of p59 (outside scope)",
+  "page_counts_unchanged_vs_R3_01": {
+    "manuscript": 98,
+    "Response_letter": 78
+  }
+}

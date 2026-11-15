@@ -1,0 +1,14 @@
+{
+  "manuscript.tex": {
+    "before_sha256": "5f2accb52029af304acccaa7c945041dbc5f6485b266ae5ab839bdf5e8c223e3",
+    "after_sha256": "02d366a23c5d75dcd0c404024dd58226e87e6bea75b570157d01846b63837e6f"
+  },
+  "Response letter.tex": {
+    "before_sha256": "884e0430e9c72daa9a64116a7f775d3353c9c3fadf609d07e76665fe98a45c1a",
+    "after_sha256": "15f830bd3388cd4de5853ab0c67109817dfd641d8e4fc981771df1055378ae34"
+  },
+  "sn-bibliography.bib": {
+    "before_sha256": "e3d3e44bd184f84a702ff0d4c21d18d18407f9d08028b8e031ea7af8b2332b4a",
+    "after_sha256": "393ed6d7c8fd1b87ce2e7ca7b3cb1a9bd52cc558b02ca28742c5d55371a236db"
+  }
+}

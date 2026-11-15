@@ -1,0 +1,65 @@
+[
+  {
+    "key": "ridal2024cerra",
+    "field": "title",
+    "value": "{CERRA}, the {Copernicus European Regional Reanalysis} system",
+    "source": "Crossref title (scp markup removed); product name braced after first render showed lower-casing"
+  },
+  {
+    "key": "ridal2024cerra",
+    "field": "author",
+    "value": "19 authors, Ridal ... Wang; El-Said hyphen normalised; Esbj{\\\"o}rn",
+    "source": "evidence/crossref_ridal2024_cerra.json",
+    "crossref_families": [
+      "Ridal",
+      "Bazile",
+      "Le Moigne",
+      "Randriamampianina",
+      "Schimanke",
+      "Andrae",
+      "Berggren",
+      "Brousseau",
+      "Dahlgren",
+      "Edvinsson",
+      "El‐Said",
+      "Glinton",
+      "Hagelin",
+      "Hopsch",
+      "Isaksson",
+      "Medeiros",
+      "Olsson",
+      "Unden",
+      "Wang"
+    ]
+  },
+  {
+    "key": "ridal2024cerra",
+    "field": "journal/volume/number/pages",
+    "value": "QJRMS 150(763):3385--3411",
+    "source": "Crossref: Quarterly Journal of the Royal Meteorological Society 150 763 3385-3411"
+  },
+  {
+    "key": "ridal2024cerra",
+    "field": "year",
+    "value": "2024",
+    "source": "Crossref issued [2024, 5, 27]"
+  },
+  {
+    "key": "ridal2024cerra",
+    "field": "doi",
+    "value": "10.1002/qj.4764",
+    "source": "Crossref DOI"
+  },
+  {
+    "claim": "horizontal resolution 5.5 km",
+    "source": "evidence/openalex_ridal2024_cerra.json abstract; Copernicus CDS overview page"
+  },
+  {
+    "claim": "improvements over ERA5 for several near-surface variables",
+    "source": "abstract: 'added value compared to the global ERA5 for almost all variables at the surface level' ('several' is a conservative paraphrase)"
+  },
+  {
+    "claim": "Section 2 already cites two satellite-product evaluations",
+    "source": "manuscript.tex L93 \\citet{palharini2021assessment}, \\citet{kumar2025long}"
+  }
+]
