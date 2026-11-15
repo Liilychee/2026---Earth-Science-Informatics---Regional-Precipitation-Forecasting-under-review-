@@ -1,0 +1,67 @@
+--- a/manuscript.tex	2026-11-15 00:00:00.000000000 +0000
++++ b/manuscript.tex	2026-11-15 00:00:00.000000000 +0000
+@@ -653,6 +653,8 @@
+ {\color{red}\hypersetup{linkcolor=red,citecolor=red}
+ Replacing d2m with the processed cp in C6 did not improve overall RMSE under the matched settings. For XGBoost, the mean paired difference was $+0.000132$~mm\,h$^{-1}$ ($+0.054\%$), with seed-t and moving-block intervals of $[-0.000776,+0.001040]$ and $[-0.001366,+0.001613]$~mm\,h$^{-1}$. For BiLSTM-Attention it was $+0.001113$~mm\,h$^{-1}$ ($+0.458\%$), with intervals of $[+0.000592,+0.001633]$ and $[+0.000095,+0.002119]$~mm\,h$^{-1}$; all five seeds had higher RMSE. The wet and upper-tail BiLSTM-Attention seed-t intervals included zero despite positive sampling intervals, so the overall result is not extended to every subset (Supplementary Table~\ref{supp-stab:r2m3_c6}). These tests support retaining the original local seven-variable configuration under the tested conditions, not the optimality of contemporaneous screening or of the predictor set.
+ \par}
++
++\revminor{We additionally assessed wind speed and two large-scale atmospheric variables under matched experimental settings (Supplementary Table~\ref{supp-stab:r3c_local_additions}). Adding local wind speed, calculated from the 10-m wind components, produced no clear RMSE improvement for either XGBoost or BiLSTM-Attention. Jointly adding local 500-hPa geopotential and total-column water vapour reduced BiLSTM-Attention RMSE by 1.18\%, with both uncertainty intervals excluding zero, but produced no clear improvement for XGBoost. These findings indicate that the original candidate pool excluded potentially useful atmospheric information, although the individual contributions of geopotential and water vapour cannot be determined from the joint experiment.}
+ 
+ \subsection{Overall Forecasting Performance and Robustness}
+ \label{sec:overall_results}
+--- a/Supplementary.tex	2026-11-15 00:00:00.000000000 +0000
++++ b/Supplementary.tex	2026-11-15 00:00:00.000000000 +0000
+@@ -2063,5 +2063,35 @@
+ \end{revisionlongtable}
+ {\color{red}\small The three models use seeds 42, 123, 7, 2024 and 99. All has 3,939 test targets; Wet is $y\geq0.1$~mm\,h$^{-1}$ ($n=854$); Upper is $y\geq$training Q95 $=0.574048$~mm\,h$^{-1}$ ($n=238$). The code uses $z=1.6448536269514722$ and $1.959963984540054$. At both levels, the below-lower-bound proportion is $0\pm0$ for every model and subset, so all misses are above the upper bound. Conditional subset coverage is descriptive and does not establish significant model rankings. The main-table A1 panel retains the original runs; the q14 A2 reruns are not the complete A1 run set. A2 Probabilistic BiLSTM-Attention and the q11 B Gaussian have identical saved targets and predictive means for all five seeds, with saved standard-deviation differences no larger than $1.23\times10^{-7}$~mm\,h$^{-1}$; their matching results are not independent prediction evidence. No original main-table value is replaced.
+ \par}
++
++\clearpage
++% R3 Section 3.2(c): q21 C1/C2 local additions
++{\color{red}\section*{Local wind speed and large-scale predictors}\par}
++
++\begin{revisiontable}
++\renewcommand{\arraystretch}{1.15}
++\caption{Local wind speed and large-scale variables added to the original configuration (q21). C0 is the original seven-predictor configuration (mxtpr, mntpr, lsp, tcc, v10, sp, d2m); C1 adds only ws; C2 adds the local z500 and tcwv jointly. ws is computed as $\sqrt{u_{10}^2+v_{10}^2}$ at each grid cell before averaging over the 25 cells (m\,s$^{-1}$); z500 is the 500-hPa geopotential (m$^2$\,s$^{-2}$, not converted to geopotential height) and tcwv is total-column water vapour (kg\,m$^{-2}$), both averaged over the same 25 cells. All $n=3,939$; Wet $y\geq0.1$~mm\,h$^{-1}$, $n=854$; Upper tail $y\geq0.574048$~mm\,h$^{-1}$, $n=238$ (the saved training Q95, reported as 0.5740); all configurations share these test targets. Means show C0 above the compared configuration. $\Delta$ is the mean of five paired seed-level RMSE differences (configuration minus C0), not a difference of ensemble-prediction RMSEs; positive values indicate worsening. RMSEs and intervals are in mm\,h$^{-1}$; percentage change is relative to C0. Seed-t intervals (four degrees of freedom; seeds 42, 123, 7, 2024, 99) describe variability across matched refits, whereas moving-block intervals (28 targets, i.e.\ seven days, 5,000 replicates, seed 42, common draws across seeds/configurations, then subset masking) describe test-sampling uncertainty; both are pointwise 95\% intervals without multiplicity adjustment. Improve is the count with negative paired difference. Split, window, hyperparameters and training-only scaling are matched within each architecture. Results apply only to these two models and the original data split; C2 does not separate the contributions of z500 and tcwv.}
++\label{stab:r3c_local_additions}
++\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}Xrrrrrr@{}}
++\hline
++\shortstack{\textbf{Configuration/}\\\textbf{subset}} & \textbf{RMSE} & \textbf{$\Delta$RMSE} & \textbf{$\Delta$\%} & \textbf{Seed-t interval} & \textbf{Block interval} & \textbf{Improve} \\
++\hline
++\multicolumn{7}{@{}l}{\textbf{XGBoost}} \\
++C1 (+ws) All & \shortstack{$0.243920$\\$0.243463$} & $-0.000457$ & $-0.188$ & \shortstack{$[-0.001575,$\\$+0.000661]$} & \shortstack{$[-0.002036,$\\$+0.001009]$} & 4/5 \\
++C1 (+ws) Wet & \shortstack{$0.473488$\\$0.474676$} & $+0.001188$ & $+0.251$ & \shortstack{$[-0.001269,$\\$+0.003646]$} & \shortstack{$[-0.001864,$\\$+0.004611]$} & 2/5 \\
++C1 (+ws) Upper tail & \shortstack{$0.842806$\\$0.845559$} & $+0.002753$ & $+0.327$ & \shortstack{$[-0.002603,$\\$+0.008110]$} & \shortstack{$[-0.003063,$\\$+0.009140]$} & 1/5 \\
++C2 (+z500, tcwv) All & \shortstack{$0.243920$\\$0.243794$} & $-0.000126$ & $-0.052$ & \shortstack{$[-0.001124,$\\$+0.000872]$} & \shortstack{$[-0.001779,$\\$+0.001477]$} & 2/5 \\
++C2 (+z500, tcwv) Wet & \shortstack{$0.473488$\\$0.472119$} & $-0.001368$ & $-0.289$ & \shortstack{$[-0.003259,$\\$+0.000522]$} & \shortstack{$[-0.004144,$\\$+0.001956]$} & 4/5 \\
++C2 (+z500, tcwv) Upper tail & \shortstack{$0.842806$\\$0.841416$} & $-0.001390$ & $-0.165$ & \shortstack{$[-0.005820,$\\$+0.003040]$} & \shortstack{$[-0.006956,$\\$+0.005379]$} & 4/5 \\
++\multicolumn{7}{@{}l}{\textbf{BiLSTM-Attention}} \\
++C1 (+ws) All & \shortstack{$0.242864$\\$0.242964$} & $+0.000100$ & $+0.041$ & \shortstack{$[-0.001194,$\\$+0.001395]$} & \shortstack{$[-0.001353,$\\$+0.001383]$} & 2/5 \\
++C1 (+ws) Wet & \shortstack{$0.484963$\\$0.485462$} & $+0.000499$ & $+0.103$ & \shortstack{$[-0.003261,$\\$+0.004260]$} & \shortstack{$[-0.002740,$\\$+0.003520]$} & 2/5 \\
++C1 (+ws) Upper tail & \shortstack{$0.873204$\\$0.874189$} & $+0.000986$ & $+0.113$ & \shortstack{$[-0.005547,$\\$+0.007519]$} & \shortstack{$[-0.005201,$\\$+0.007009]$} & 2/5 \\
++C2 (+z500, tcwv) All & \shortstack{$0.242864$\\$0.240006$} & $-0.002858$ & $-1.177$ & \shortstack{$[-0.004084,$\\$-0.001632]$} & \shortstack{$[-0.005183,$\\$-0.000442]$} & 5/5 \\
++C2 (+z500, tcwv) Wet & \shortstack{$0.484963$\\$0.477698$} & $-0.007265$ & $-1.498$ & \shortstack{$[-0.010467,$\\$-0.004062]$} & \shortstack{$[-0.012491,$\\$-0.001558]$} & 5/5 \\
++C2 (+z500, tcwv) Upper tail & \shortstack{$0.873204$\\$0.859666$} & $-0.013538$ & $-1.550$ & \shortstack{$[-0.021789,$\\$-0.005287]$} & \shortstack{$[-0.024052,$\\$-0.002169]$} & 5/5 \\
++\hline
++\end{tabularx}
++\end{revisiontable}
+ 
+ \end{document}
+--- a/Response letter.tex	2026-11-15 00:00:00.000000000 +0000
++++ b/Response letter.tex	2026-11-15 00:00:00.000000000 +0000
+@@ -1171,9 +1171,13 @@
+ 
+ \ReviewerComment{c. A very important large-scale variable representing the mid-tropospheric flow (geopotential height at 500 hPa, z500) is missing. Additionally, Total-column water vapor (tcwv) is missing. As precipitation is closely linked to wind speed, why not compute wind speed from u and v components and use it as a predictor?}
+ 
+-\PendingResponse
++\AuthorResponse{We thank the reviewer for these suggestions. We tested all three variables using saved refits of XGBoost and BiLSTM-Attention that keep the original data split, input window, hyperparameters, training-only scaling, five seeds and test targets; no model was retuned. Wind speed was calculated as $\sqrt{u_{10}^2+v_{10}^2}$ at each grid cell before averaging over the study domain. Adding it to the original seven predictors produced no clear RMSE improvement for either model. Jointly adding the local 500-hPa geopotential (in m$^2$\,s$^{-2}$) and tcwv reduced BiLSTM-Attention RMSE by 1.18\%, with seed-based and moving-block intervals both excluding zero, but produced no clear change for XGBoost. Because the two variables were added together, this result cannot be attributed to either one individually. Neither variable was part of the original ERA5 extract, and these results indicate that the original candidate pool excluded potentially useful atmospheric information. We have added the results to Section~\ref{manuscript-sec:predictor_selection_results} and Supplementary Table~\ref{supp-stab:r3c_local_additions}; the original predictor set and main results are unchanged. Upstream predictors, including z500 and tcwv averaged over a larger region west of the study domain, are addressed in our response to comment (d).}
+ 
+-\ChangeLocation
++\ManuscriptChange{Section~\ref{manuscript-sec:predictor_selection_results} (Predictor selection results): new paragraph after the C6 results. Supplementary Table~\ref{supp-stab:r3c_local_additions}: new table in a new final section, ``Local wind speed and large-scale predictors'' (C0, C1 and C2 for both models; All, Wet and Upper-tail subsets; paired seed-t and moving-block intervals). Existing tables, figures, the original predictor set and main results are unchanged; no new training or data download was performed. Final page and line numbers pending full-manuscript assembly.}
++
++\EvidenceBox{Local wind speed, z500 and tcwv additions (Section~\ref{manuscript-sec:predictor_selection_results})}{
++\RevisedExcerpt{We additionally assessed wind speed and two large-scale atmospheric variables under matched experimental settings (Supplementary Table~\ref{supp-stab:r3c_local_additions}). Adding local wind speed, calculated from the 10-m wind components, produced no clear RMSE improvement for either XGBoost or BiLSTM-Attention. Jointly adding local 500-hPa geopotential and total-column water vapour reduced BiLSTM-Attention RMSE by 1.18\%, with both uncertainty intervals excluding zero, but produced no clear improvement for XGBoost. These findings indicate that the original candidate pool excluded potentially useful atmospheric information, although the individual contributions of geopotential and water vapour cannot be determined from the joint experiment.}
++}
+ 
+ % Review ID: R3 Section 3.2(d)
+ \Needspace{5\baselineskip}

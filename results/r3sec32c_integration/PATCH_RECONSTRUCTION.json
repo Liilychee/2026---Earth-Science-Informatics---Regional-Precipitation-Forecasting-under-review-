@@ -1,0 +1,28 @@
+{
+ "patches": {
+  "R3S32c_LOCAL.patch": "4edc777e7065d9ca504888835d2a012853e927a6b289edae2d818f4101980f3e",
+  "R3S32c_PORTABLE.patch": "99d574d847a16cff6e215b21e297130858c38d0d849b0f21c7d098f00d54e908"
+ },
+ "base": "results/r3sec32c_integration/before (Response letter includes R3-05 post-closure delta)",
+ "reconstruction": {
+  "manuscript.tex": {
+   "after_sha256": "78b8ea23cac5dac028073b5465616ae95b94c24f8a4870e9762358cf2ee56273",
+   "LOCAL_git_apply": true,
+   "PORTABLE_git_apply": true,
+   "PORTABLE_bsd_patch": true
+  },
+  "Supplementary.tex": {
+   "after_sha256": "2247f9b576154bc56f9a7aebb0cb9865e5d1efb6d645ac07ef90bc937e4aec89",
+   "LOCAL_git_apply": true,
+   "PORTABLE_git_apply": true,
+   "PORTABLE_bsd_patch": true
+  },
+  "Response letter.tex": {
+   "after_sha256": "9cb7a2b2270152fcb61dbbb88d6ea254570e149fb9673c98869417c1ecac6f09",
+   "LOCAL_git_apply": true,
+   "PORTABLE_git_apply": true,
+   "PORTABLE_bsd_patch": true
+  }
+ },
+ "all_match": true
+}

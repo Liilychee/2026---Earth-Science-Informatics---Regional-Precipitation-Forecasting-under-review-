@@ -1,0 +1,28 @@
+{
+ "old_excerpts": 129,
+ "new_excerpts": 130,
+ "old_all_verbatim_in_order": true,
+ "added": 1,
+ "added_sha256": [
+  "7806d4372b73104a5ff3f2bede251f1134be0d695bac0f96262fa88af5d3bb78"
+ ],
+ "unmatched": [],
+ "manuscript.tex_pure_insertion": true,
+ "manuscript.tex_inserted_lines": 2,
+ "Supplementary.tex_pure_insertion": true,
+ "Supplementary.tex_inserted_lines": 30,
+ "bib_unchanged": true,
+ "RL_outside_32c_unchanged": true,
+ "R3_05_local_reply_preserved": true,
+ "32c_pending_removed": true,
+ "forbidden_phrases": [
+  "geopotential height"
+ ],
+ "protected_checked": 961,
+ "protected_changed": [],
+ "unchanged_stab:r2m3_associations": true,
+ "unchanged_stab:r2m3_selection_stability": true,
+ "unchanged_stab:r2m3_c6": true,
+ "unchanged_stab:r2m3_upstream_xgboost": true,
+ "unchanged_stab:r2m3_upstream_bilstm_attn": true
+}

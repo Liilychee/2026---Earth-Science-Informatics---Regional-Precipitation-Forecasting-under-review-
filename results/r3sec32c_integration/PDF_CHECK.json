@@ -1,0 +1,64 @@
+{
+ "build_order": [
+  "Supplementary",
+  "manuscript",
+  "Response letter"
+ ],
+ "render_dpi": 144,
+ "documents": {
+  "manuscript": {
+   "pdf_sha256": "4252277817e1a982411f945d5c74f365cba78c9bbc98df57adba942f0ac29d39",
+   "pages": 99,
+   "pages_after_R3_05": 99,
+   "undefined": 0,
+   "multiply_defined": 0,
+   "overfull_hbox": 0,
+   "hits": {
+    "We additionally assessed wind speed": [
+     46
+    ]
+   },
+   "rendered": [
+    "render/manuscript-46.png"
+   ]
+  },
+  "Supplementary": {
+   "pdf_sha256": "3fb31d2b2bf81b20f1f6bc2e778e0f254e0308554d78c81790ef383d9b21f992",
+   "pages": 58,
+   "pages_after_R3_05": 57,
+   "undefined": 0,
+   "multiply_defined": 0,
+   "overfull_hbox": 0,
+   "hits": {
+    "Local wind speed and large-scale variables added": [
+     58
+    ]
+   },
+   "rendered": [
+    "render/Supplementary-58.png"
+   ]
+  },
+  "Response letter": {
+   "pdf_sha256": "8075d8917e4f592ade3feb6ae7a779f5a655d13eda303e746568b964a0f53b21",
+   "pages": 83,
+   "pages_after_R3_05": 82,
+   "undefined": 0,
+   "multiply_defined": 0,
+   "overfull_hbox": 0,
+   "hits": {
+    "Comment: Section 3.2(c)": [
+     63
+    ],
+    "Local wind speed, z500 and tcwv additions": [
+     64
+    ]
+   },
+   "rendered": [
+    "render/Response_letter-63.png",
+    "render/Response_letter-64.png"
+   ]
+  }
+ },
+ "supp_table_number": "S51",
+ "existing_supp_table_numbers_preserved": "new table appended in final section; r2m4_fixed_events remains S28, r2minor2_intervals remains S50"
+}

@@ -1,0 +1,37 @@
+{
+ "old_excerpts": 129,
+ "new_excerpts": 130,
+ "old_all_verbatim_in_order": true,
+ "added": 1,
+ "added_sha256": [
+  "7806d4372b73104a5ff3f2bede251f1134be0d695bac0f96262fa88af5d3bb78"
+ ],
+ "unmatched": [],
+ "manuscript.tex_pure_insertion": true,
+ "manuscript.tex_inserted_lines": 2,
+ "Supplementary.tex_pure_insertion": true,
+ "Supplementary.tex_inserted_lines": 30,
+ "bib_unchanged": true,
+ "RL_outside_32c_unchanged": true,
+ "R3_05_local_reply_preserved": true,
+ "32c_pending_removed": true,
+ "forbidden_phrases": [
+  "geopotential height"
+ ],
+ "protected_checked": 961,
+ "protected_changed": [],
+ "unchanged_stab:r2m3_associations": true,
+ "unchanged_stab:r2m3_selection_stability": true,
+ "unchanged_stab:r2m3_c6": true,
+ "unchanged_stab:r2m3_upstream_xgboost": true,
+ "unchanged_stab:r2m3_upstream_bilstm_attn": true,
+ "baseline_remote": "dc72acc4e138c4675f81559f71564df562090fd1",
+ "table_cells_recomputed_from_predictions": "12/12 rows match",
+ "text_value_1.18pct": "BiLSTM-Attention C2 all -1.177% (q21_effect.csv) -> 1.18%",
+ "supp_table_number": "S51 (appended section; existing numbers unchanged)",
+ "geopotential_wording": "500-hPa geopotential, m2 s-2; \"geopotential height\" appears only in the reviewer comment and the Supplementary caption disclaimer",
+ "no_training_or_download": true,
+ "R3_05_status": "CLOSED; local post-closure reply simplification preserved and recorded separately, not part of R3-06",
+ "commit_push_performed": false,
+ "closed": false
+}

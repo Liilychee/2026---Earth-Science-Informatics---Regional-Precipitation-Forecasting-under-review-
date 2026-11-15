@@ -1,0 +1,13 @@
+{
+ "old_count": 129,
+ "old_unchanged": true,
+ "new": [
+  {
+   "text_sha256": "7806d4372b73104a5ff3f2bede251f1134be0d695bac0f96262fa88af5d3bb78",
+   "source": "manuscript.tex sec:predictor_selection_results, new \\revminor paragraph after C6 results",
+   "verbatim_in_manuscript": true
+  }
+ ],
+ "total": 130,
+ "all_match": true
+}
