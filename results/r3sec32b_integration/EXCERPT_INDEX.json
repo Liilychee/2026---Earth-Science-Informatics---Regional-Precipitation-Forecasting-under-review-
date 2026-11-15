@@ -1,0 +1,22 @@
+{
+ "old_count": 128,
+ "old_unchanged": true,
+ "new": [
+  {
+   "text_sha256": "0f8e6cf40b4d4e4db8f8fe16cab74a7449a91a1d38564ac9cd3276fb0f956fb3",
+   "verbatim_in_manuscript": true,
+   "source": "manuscript.tex L129 (sec:dataset) inserted \\revminor text",
+   "reused_from": null
+  }
+ ],
+ "total": 129,
+ "all_match": true,
+ "L129_protected": {
+  "R1-M3": 6,
+  "R1-m2": 37,
+  "R2-M1": 52,
+  "still_match": true
+ },
+ "reused_R2M3_excerpt": false,
+ "reason_no_reuse": "11-to-7 screening fact stated in reply text with section reference; avoided duplicating R2-M3 boxes"
+}

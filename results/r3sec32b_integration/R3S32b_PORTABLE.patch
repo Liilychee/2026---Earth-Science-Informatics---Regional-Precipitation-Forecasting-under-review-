@@ -1,0 +1,73 @@
+--- a/manuscript.tex	2026-11-15 00:00:00.000000000 +0000
++++ b/manuscript.tex	2026-11-15 00:00:00.000000000 +0000
+@@ -126,7 +126,7 @@
+ 
+ The experimental target is ERA5-derived regional-mean precipitation over Dublin, assessed within a common multivariate reanalysis framework rather than as a station-specific operational forecast. ERA5 supplies a long, temporally continuous record of meteorological fields on a common grid, supporting consistent construction of predictors and targets \citep{hersbach2020era5}. This describes the scope and methodological rationale of the present comparison, not evidence that reanalysis precipitation is more accurate than gauge observations. \citet{otero2023intercomparison} likewise used ERA5 predictors and precipitation fields for an architecture intercomparison, but their European daily contemporaneous modelling task differs from our six-hour-ahead hourly target. ERA5 precipitation is a model-generated estimate; consistency within its framework does not establish accuracy against independent rainfall observations.
+ 
+-Meteorological conditions over the study region were characterized using the ERA5 single-level reanalysis dataset from ECMWF. We used the Copernicus Climate Data Store (CDS) product ``ERA5 hourly data on single levels'' with the ``reanalysis'' product option. \textcolor{red}{The original ERA5 product has an hourly temporal resolution. We selected only the hourly values at 00:00, 06:00, 12:00, and 18:00 UTC, giving a 6-hour sampling interval; no 6-hour accumulation, temporal averaging, or temporal interpolation was performed.} Following data-quality screening, the complete period from January 2004 to December 2021 was retained, yielding 26,300 consecutive timestamps with no missing values in the variables used for subsequent analysis. Eleven meteorological variables were initially considered as candidate predictors: 10-metre u-component of wind (u10), 10-metre v-component of wind (v10), 2-metre dewpoint temperature (d2m), 2-metre temperature (t2m), surface pressure (sp), evaporation (e), maximum total precipitation rate (mxtpr), minimum total precipitation rate (mntpr), total cloud cover (tcc), surface net solar radiation (ssr), and large-scale precipitation (lsp). Total precipitation (tp) was used as the prediction target, as summarized in Table~\ref{tab:variables}.
++Meteorological conditions over the study region were characterized using the ERA5 single-level reanalysis dataset from ECMWF. We used the Copernicus Climate Data Store (CDS) product ``ERA5 hourly data on single levels'' with the ``reanalysis'' product option. \textcolor{red}{The original ERA5 product has an hourly temporal resolution. We selected only the hourly values at 00:00, 06:00, 12:00, and 18:00 UTC, giving a 6-hour sampling interval; no 6-hour accumulation, temporal averaging, or temporal interpolation was performed.} Following data-quality screening, the complete period from January 2004 to December 2021 was retained, yielding 26,300 consecutive timestamps with no missing values in the variables used for subsequent analysis. Eleven meteorological variables were initially considered as candidate predictors: 10-metre u-component of wind (u10), 10-metre v-component of wind (v10), 2-metre dewpoint temperature (d2m), 2-metre temperature (t2m), surface pressure (sp), evaporation (e), maximum total precipitation rate (mxtpr), minimum total precipitation rate (mntpr), total cloud cover (tcc), surface net solar radiation (ssr), and large-scale precipitation (lsp). \revminor{These eleven candidates comprised the non-target meteorological variables available in the original ERA5 extract. They describe complementary aspects of the atmospheric and surface state: near-surface temperature and moisture conditions (t2m and d2m), wind and pressure conditions (u10, v10 and sp), cloud cover (tcc), surface radiative and moisture exchanges (ssr and e, where e is the modelled actual evaporation rather than potential evaporation), and recent precipitation characteristics (lsp, mxtpr and mntpr). Previous data-driven rainfall prediction studies have considered observational analogues of temperature, dew point, wind, pressure, cloud cover and solar radiation, although these are not necessarily identical to the ERA5 fields used here \citep{manandhar2019data,rahman2022rainfall,gao2025applying}. The precipitation-related variables lsp, mxtpr and mntpr instead provide information about preceding-hour large-scale precipitation and the within-hour extrema of total precipitation rate \citep{ecmwf_era5_documentation}. The inclusion of all eleven variables defines an exploratory candidate pool rather than presupposing that each variable contributes independent predictive information; their associations with the forecast target were subsequently examined through training-period screening and lead-time diagnostics.} Total precipitation (tp) was used as the prediction target, as summarized in Table~\ref{tab:variables}.
+ 
+ For each timestamp, the meteorological variables were spatially averaged across the 25 ERA5 grid points within the Dublin study domain to construct a regional mean time series. Each retained total-precipitation value represents the accumulation during the hour ending at its timestamp. Total precipitation was multiplied by 1000 to convert metres to millimetres. This length-unit conversion does not change the accumulation window. Dividing the one-hour amount by its one-hour duration gives the hourly-mean rate in mm\,h$^{-1}$; its numerical value is unchanged. The prediction target and all precipitation-valued forecast metrics are reported in mm\,h$^{-1}$ throughout. No temporal interpolation or forward-filling was applied because the retained 2004--2021 period formed a complete and continuous 6-hourly time series. The resulting regional time series was chronologically divided into training (70\%), validation (15\%), and testing (15\%) subsets to preserve temporal ordering and prevent future observations from influencing model development. Standardization was performed using statistics estimated exclusively from the training subset, and the same transformation was subsequently applied to the validation and test subsets.
+ 
+--- a/Response letter.tex	2026-11-15 00:00:00.000000000 +0000
++++ b/Response letter.tex	2026-11-15 00:00:00.000000000 +0000
+@@ -1157,10 +1157,26 @@
+ 
+ \ReviewerComment{b. On what basis did you choose the candidate predictors? Please justify your reasoning using references.}
+ 
+-\PendingResponse
++\AuthorResponse{We thank the reviewer for this question. We have added an explanation of the candidate pool to Section~\ref{manuscript-sec:dataset}, with supporting references.
+ 
+-\ChangeLocation
++\textbf{Source of the candidates.} The eleven candidate predictors were the non-target meteorological variables available in the original ERA5 single-level extract for the study domain. We do not claim that they were originally chosen on the basis of specific references. The references added below support the use of comparable meteorological inputs in rainfall prediction; they are not presented as evidence that each of the eleven variables is informative.
++
++\textbf{Grouping of the candidates.} The revised text groups the candidates by the aspect of the atmospheric and surface state that they describe: near-surface temperature and moisture conditions (t2m and d2m), wind and pressure conditions (u10, v10 and sp), cloud cover (tcc), surface radiative and moisture exchanges (ssr and e), and recent precipitation characteristics (lsp, mxtpr and mntpr).
++
++\textbf{Supporting references.} Previous data-driven rainfall prediction studies have considered observational analogues of temperature, dew point, wind, pressure, cloud cover and solar radiation \citep{manandhar2019data,rahman2022rainfall,gao2025applying}. These inputs were mainly station or satellite measurements rather than the corresponding ERA5 fields, and the revised text states that they are not necessarily identical to the ERA5 variables used here. ERA5 evaporation (e) is the modelled actual evaporation, which is a different ERA5 parameter from potential evaporation \citep{ecmwf_era5_documentation}; we therefore do not treat potential-evaporation inputs in previous studies as support for e.
++
++\textbf{Precipitation-related candidates.} The variables lsp, mxtpr and mntpr provide information about preceding-hour large-scale precipitation and the within-hour extrema of total precipitation rate \citep{ecmwf_era5_documentation}. They describe recent precipitation activity and are not presented as independent physical drivers of future precipitation. We did not identify a precipitation-forecasting study using mxtpr or mntpr as predictors, so their inclusion is not justified by direct literature precedent; the revised text describes the eleven variables as an exploratory candidate pool.
++
++\textbf{Selection of the final inputs.} The eleven candidates were reduced to seven (mxtpr, mntpr, lsp, tcc, sp, d2m and v10) by ranking their absolute contemporaneous Spearman correlations with total precipitation over the training period only (Sections~\ref{manuscript-sec:dataset} and~\ref{manuscript-sec:predictor_selection_results}). The difference between this contemporaneous screening and the six-hour forecast target was addressed in response to Reviewer~2 (Major Comment~3) through lead-time and rank-partial correlation diagnostics and a matched refit.
+ 
++This response adds explanatory text and references only. The candidate pool, the seven retained predictors, the models and all reported results are unchanged.}
++
++\ManuscriptChange{Section~\ref{manuscript-sec:dataset} (Dataset and Feature Selection): new text after the list of eleven candidate predictors. References: \citet{gao2025applying} added; DOI added to \citet{manandhar2019data}. Table~\ref{manuscript-tab:variables}, the candidate and retained predictor sets, the Supplementary Material and the figures are unchanged. Final page and line numbers pending full-manuscript assembly.}
++
++\EvidenceBox{Basis of the candidate predictor pool (Section~\ref{manuscript-sec:dataset})}{
++\RevisedExcerpt{These eleven candidates comprised the non-target meteorological variables available in the original ERA5 extract. They describe complementary aspects of the atmospheric and surface state: near-surface temperature and moisture conditions (t2m and d2m), wind and pressure conditions (u10, v10 and sp), cloud cover (tcc), surface radiative and moisture exchanges (ssr and e, where e is the modelled actual evaporation rather than potential evaporation), and recent precipitation characteristics (lsp, mxtpr and mntpr). Previous data-driven rainfall prediction studies have considered observational analogues of temperature, dew point, wind, pressure, cloud cover and solar radiation, although these are not necessarily identical to the ERA5 fields used here \citep{manandhar2019data,rahman2022rainfall,gao2025applying}. The precipitation-related variables lsp, mxtpr and mntpr instead provide information about preceding-hour large-scale precipitation and the within-hour extrema of total precipitation rate \citep{ecmwf_era5_documentation}. The inclusion of all eleven variables defines an exploratory candidate pool rather than presupposing that each variable contributes independent predictive information; their associations with the forecast target were subsequently examined through training-period screening and lead-time diagnostics.}
++}
++
+ % Review ID: R3 Section 3.2(c)
+ \Needspace{5\baselineskip}
+ \subsection*{Comment: Section~3.2(c)}
+--- a/sn-bibliography.bib	2026-11-15 00:00:00.000000000 +0000
++++ b/sn-bibliography.bib	2026-11-15 00:00:00.000000000 +0000
+@@ -424,7 +424,8 @@
+   number={11},
+   pages={9323--9331},
+   year={2019},
+-  publisher={IEEE}
++  publisher={IEEE},
++  doi={10.1109/TGRS.2019.2926110}
+ }
+ 
+ @article{dev2019estimating,
+@@ -1254,4 +1255,16 @@
+   pages={3117--3145},
+   year={2024},
+   publisher={Wiley Online Library}
+-}
+\ No newline at end of file
++}
++
++% R3 Section 3.2(b): metadata verified against Crossref (DOI 10.3724/j.1006-8775.2025.040).
++@article{gao2025applying,
++  title={{Applying XAI to Optimized XGBoost Models: Elucidating Multi-type Predictor Impacts for Short-Term Precipitation Forecast}},
++  author={Gao, Yuan-Yuan and Wang, Dong-Hai and Huang, Ling-Dong and Li, En-Guang},
++  journal={Journal of Tropical Meteorology},
++  volume={31},
++  number={6},
++  pages={603--621},
++  year={2025},
++  doi={10.3724/j.1006-8775.2025.040}
++}

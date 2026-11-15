@@ -1,0 +1,42 @@
+[
+ {
+  "claim": "11 candidates = non-target meteorological variables in original ERA5 extract",
+  "source": "~/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/data/04-24.csv header: valid_time,latitude,longitude,number,expver,u10,v10,d2m,t2m,sp,tp,e,mxtpr,mntpr,tcc,ssr,lsp"
+ },
+ {
+  "claim": "e is actual evaporation (incl. simplified transpiration), distinct from pev",
+  "source": "evidence/ecmwf_param_182.json; evidence/ecmwf_param_228251.json; ecmwf_era5_documentation Table 3 items 34 vs 39"
+ },
+ {
+  "claim": "lsp = large-scale component of tp; preceding-hour accumulation",
+  "source": "evidence/ecmwf_param_142.json, ecmwf_param_228.json; manuscript L138 (R2-M2, unchanged)"
+ },
+ {
+  "claim": "mxtpr/mntpr = within-hour max/min total precipitation rate",
+  "source": "evidence/ecmwf_param_228226.json, 228227.json; ERA5 doc: reanalysis min/max in the hour ending at validity time; manuscript L138"
+ },
+ {
+  "claim": "temperature, dew point, wind, pressure, cloud, solar radiation analogues used in data-driven rainfall prediction",
+  "source": "Gao 2025 §2.2.1 (T, DPT, RH, P, Ws, Wd, SR, Cloud); Manandhar 2019 §IV.A (T, RH, SR, DPT, PWV); Rahman 2022 Table 3 (Temperature, Dew Point, Atmospheric Pressure, Mean Wind Speed)"
+ },
+ {
+  "claim": "not necessarily identical to ERA5 fields",
+  "source": "Gao: station + CERES satellite; Manandhar: Singapore ground station; Rahman: Lahore station"
+ },
+ {
+  "claim": "11 -> 7 by training-only contemporaneous Spearman; final inputs mxtpr, mntpr, lsp, tcc, sp, d2m, v10",
+  "source": "manuscript L171 and sec:predictor_selection_results (unchanged)"
+ },
+ {
+  "claim": "lead-time diagnostics addressed under R2-M3",
+  "source": "Response letter R2 M3 block (L606ff), manuscript L174 (unchanged)"
+ },
+ {
+  "claim": "Gao 2025 metadata",
+  "source": "evidence/crossref_gao2025.json: vol 31 issue 6 pp 603-621, published 2025-08-01, authors GAO Yuan-yuan, WANG Dong-hai, HUANG Ling-dong, LI En-guang"
+ },
+ {
+  "claim": "Manandhar DOI",
+  "source": "evidence/crossref_manandhar2019.json"
+ }
+]

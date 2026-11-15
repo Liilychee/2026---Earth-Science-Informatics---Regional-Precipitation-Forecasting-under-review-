@@ -1,0 +1,61 @@
+{
+ "old_excerpt_count": 128,
+ "new_excerpt_count": 129,
+ "old_excerpts_all_present_verbatim_in_order": true,
+ "added_excerpts": 1,
+ "all_excerpts_match_after_sources": true,
+ "unmatched_indices": [],
+ "new_excerpt_sha256": [
+  "0f8e6cf40b4d4e4db8f8fe16cab74a7449a91a1d38564ac9cd3276fb0f956fb3"
+ ],
+ "L129_protected_excerpt_indices": [
+  6,
+  37,
+  52
+ ],
+ "L129_protected_still_match": true,
+ "manuscript_line_count_equal": true,
+ "manuscript_changed_lines": [
+  129
+ ],
+ "manuscript_change_is_pure_insertion": true,
+ "candidate_list_bytes_unchanged": true,
+ "final_inputs_sentence_unchanged": true,
+ "table1_unchanged": true,
+ "supplementary_unchanged": true,
+ "R2M2_timing_sentence_unchanged": true,
+ "RL_outside_R3_32b_block_unchanged": true,
+ "RL_block_pending_removed": true,
+ "forbidden_phrases_present": [],
+ "reply_has_did_not_identify": true,
+ "bib_new_keys": [
+  "gao2025applying"
+ ],
+ "bib_removed_keys": [],
+ "bib_changed_existing_keys": [
+  "manandhar2019data",
+  "gascon2024post"
+ ],
+ "manandhar_change": [
+  "  publisher={IEEE},",
+  "  doi={10.1109/TGRS.2019.2926110}"
+ ],
+ "gascon_body_identical_modulo_trailing_comment": true,
+ "bib_prefix_identical_upto_manandhar": true,
+ "manuscript_bbl_has_gao": true,
+ "manuscript_bbl_has_manandhar_doi": true,
+ "Response letter_bbl_has_gao": true,
+ "Response letter_bbl_has_manandhar_doi": true,
+ "protected_files_checked": 962,
+ "protected_changed": [],
+ "protected_missing": [],
+ "baseline_remote": "29fa0e54ed57f9aac5433fe929de4b12ddf48b5c",
+ "gascon_change": "trailing newline only (file previously ended without newline); entry body bytes identical",
+ "gao_author_case": "given names capitalised (Yuan-Yuan etc.) so sn-basic renders initials YY/DH/LD; Crossref lists lower-case second syllable",
+ "undefined_references": 0,
+ "patch_reconstruction": "LOCAL git; PORTABLE git+BSD",
+ "no_new_experiment": true,
+ "no_literature_search_this_round": true,
+ "commit_push_performed": false,
+ "closed": false
+}

@@ -1,0 +1,24 @@
+{
+ "remote_main": "29fa0e54ed57f9aac5433fe929de4b12ddf48b5c",
+ "R3_04_closed": true,
+ "pre_R3_05_sources_equal_R3_04_after": {
+  "Response letter.tex": true,
+  "manuscript.tex": true,
+  "Supplementary.tex": true
+ },
+ "paper_git_head": "ae4cd53b795943878bcf135634f62432b7e2b922",
+ "git_index_sha256": "1d0b3404f68e4158bf8257888e970fdd760cb62149eae449ba912bebe2850dd4",
+ "protected_count": 964,
+ "changed_vs_R3_04_record": [
+  "sn-bibliography.bib",
+  "manuscript.tex"
+ ],
+ "bib_before_R3_05": {
+  "sha256": "99515f9533823b7815ddbfcd28d57ed39590e79452c413cd88837c40dc996b03",
+  "note": "differs from R3-04 guard (393ed6d7...) only by the author-appended gascon2024post entry, made before R3-05"
+ },
+ "changed_vs_R3_04_record_explained": {
+  "manuscript.tex": "R3-05 L129 insertion",
+  "sn-bibliography.bib": "author gascon2024post append (pre-R3-05) + R3-05 Gao entry and Manandhar DOI"
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "build_order": [
+  "Supplementary",
+  "manuscript",
+  "Response letter"
+ ],
+ "render_dpi": 144,
+ "documents": {
+  "manuscript": {
+   "pdf_sha256": "11fc095c2e9e6311808d47f14bb3e25fa17fd63430a3271d7c2f9ec06d44cae7",
+   "pages": 99,
+   "pages_before_R3_04_record": 98,
+   "undefined": 0,
+   "multiply_defined": 0,
+   "overfull_hbox": 0,
+   "hits": {
+    "These eleven candidates": [
+     13
+    ],
+    "Gao YY": [
+     92
+    ],
+    "Manandhar S, Dev S": [
+     95
+    ]
+   },
+   "rendered": [
+    "render/manuscript-13.png",
+    "render/manuscript-92.png",
+    "render/manuscript-95.png"
+   ]
+  },
+  "Response letter": {
+   "pdf_sha256": "97ce3dba98f80010cd4644242bfe89d3d49db7d330335813582269657b6f4b8f",
+   "pages": 82,
+   "pages_before_R3_04_record": 81,
+   "undefined": 0,
+   "multiply_defined": 0,
+   "overfull_hbox": 0,
+   "hits": {
+    "Comment: Section 3.2(b)": [
+     62
+    ],
+    "Basis of the candidate predictor pool": [
+     63
+    ],
+    "Yuan-Yuan Gao": [
+     80
+    ]
+   },
+   "rendered": [
+    "render/Response_letter-62.png",
+    "render/Response_letter-63.png",
+    "render/Response_letter-80.png"
+   ]
+  },
+  "Supplementary": {
+   "pdf_sha256": "88d0f52ad0b24e3411c054b7ee866d3e1fb479f77e192b9d35f2a52153e1ced8",
+   "pages": 57,
+   "pages_before_R3_04_record": 57,
+   "undefined": 0,
+   "multiply_defined": 0,
+   "overfull_hbox": 0,
+   "hits": {},
+   "rendered": []
+  }
+ },
+ "supplementary_source_unchanged": true,
+ "note": "Supplementary recompiled from unchanged source; PDF hash identical to R3-04 record. Manuscript +1 page and Response letter +1 page from the added text."
+}

@@ -1,0 +1,27 @@
+{
+ "patches": {
+  "R3S32b_LOCAL.patch": "69524668e5d5e4b598e9eb3d8428559b0d84716fd34e2816d2c6f4cb0b7f21b8",
+  "R3S32b_PORTABLE.patch": "b26d94ecd64db374200d80fa236aeeff6fd9e4a326d37e0002e522665df2bd25"
+ },
+ "reconstruction": {
+  "manuscript.tex": {
+   "after_sha256": "6d74dfb67e0432ea5e3e95db603b03ba3f73c9c860f78a7a6501328ee80dce7f",
+   "LOCAL_git_apply": true,
+   "PORTABLE_git_apply": true,
+   "PORTABLE_bsd_patch": true
+  },
+  "Response letter.tex": {
+   "after_sha256": "44f8908601f8788ee32c5222aa5be97cc6d1ab15926e7b19bc03a258cba0ac24",
+   "LOCAL_git_apply": true,
+   "PORTABLE_git_apply": true,
+   "PORTABLE_bsd_patch": true
+  },
+  "sn-bibliography.bib": {
+   "after_sha256": "719bfb0ecb4538b864e67b316a597bd19be2aaba23465afab632770898e6d572",
+   "LOCAL_git_apply": true,
+   "PORTABLE_git_apply": true,
+   "PORTABLE_bsd_patch": true
+  }
+ },
+ "all_match": true
+}
