@@ -1,0 +1,252 @@
+{
+  "stage": "scientific_archive_remote_verified",
+  "commit": "704dc60c336f57b0aeae440cd86431848c14a9f5",
+  "base_commit": "422fa74186a13f16c48a7e30d397715493eb5d2f",
+  "remote_main_after_push": "704dc60c336f57b0aeae440cd86431848c14a9f5",
+  "repository": "https://github.com/Liilychee/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-",
+  "readback_method": "fresh shallow sparse clone; git ls-tree blob comparison, manifest SHA-256 of remote contents, remote PORTABLE patch reconstruction, numeric re-check from remote evidence copies",
+  "remote_file_count": 37,
+  "all_blobs_match": true,
+  "checks": [
+    {
+      "path": "results/r3sec32a_integration/ARCHIVE_MANIFEST.json",
+      "sha": "75877b7cb8cb0f5f979116f80cc3ddcbc334c595",
+      "remote_sha": "75877b7cb8cb0f5f979116f80cc3ddcbc334c595",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/BASELINE_GATE.json",
+      "sha": "6eae6c8b157ab6d0d683b962f0a69ec2e0d82a48",
+      "remote_sha": "6eae6c8b157ab6d0d683b962f0a69ec2e0d82a48",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/CELL_INDEX.json",
+      "sha": "6a699f70ac58f0f5e259f1b956247902536fb2db",
+      "remote_sha": "6a699f70ac58f0f5e259f1b956247902536fb2db",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/DOCUMENT_HASHES.json",
+      "sha": "ea84444449f13a456f465717a84922ada388892c",
+      "remote_sha": "ea84444449f13a456f465717a84922ada388892c",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/EVIDENCE_INDEX.md",
+      "sha": "7c8d842a735fe8e4da5fc0b53c676b61f10f12a1",
+      "remote_sha": "7c8d842a735fe8e4da5fc0b53c676b61f10f12a1",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/EXCERPT_INDEX.json",
+      "sha": "7aa9c7d0070e2ca654cc90427d3858ca80964a47",
+      "remote_sha": "7aa9c7d0070e2ca654cc90427d3858ca80964a47",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/FINAL_REPORT.md",
+      "sha": "b33c790f584ca87fb2d0adcaa5de7009874b0442",
+      "remote_sha": "b33c790f584ca87fb2d0adcaa5de7009874b0442",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/GIT_SCOPE.md",
+      "sha": "fdecc65c820b016a286e3370fbc4f50eb3dde0df",
+      "remote_sha": "fdecc65c820b016a286e3370fbc4f50eb3dde0df",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/GIT_STATE.json",
+      "sha": "78f316ee6efbcc467cc16b38a666b5a662ea4554",
+      "remote_sha": "78f316ee6efbcc467cc16b38a666b5a662ea4554",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/GIT_STATUS.txt",
+      "sha": "11e1a23528791dc6d53f49e55af2004c285279c9",
+      "remote_sha": "11e1a23528791dc6d53f49e55af2004c285279c9",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/ORIGINAL_WORKTREE_GUARD.json",
+      "sha": "606a37378a8dee71e05905cbd995b0d8cd2e8874",
+      "remote_sha": "606a37378a8dee71e05905cbd995b0d8cd2e8874",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/PATCH_RECONSTRUCTION.json",
+      "sha": "a513a163cd57ce92e6a1335334a1cfc14a844b60",
+      "remote_sha": "a513a163cd57ce92e6a1335334a1cfc14a844b60",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/PDF_CHECK.json",
+      "sha": "4595f4f5128b7c5a284a0a56a3c7a54b8b782c54",
+      "remote_sha": "4595f4f5128b7c5a284a0a56a3c7a54b8b782c54",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/PROTECTED_HASHES.json",
+      "sha": "294a80ed686e5d22ab4467af905247ecea3f7f72",
+      "remote_sha": "294a80ed686e5d22ab4467af905247ecea3f7f72",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/R3S32a_LOCAL.patch",
+      "sha": "a2bd344fb9ca3a94676be3c4591adfdbbbd5cc6d",
+      "remote_sha": "a2bd344fb9ca3a94676be3c4591adfdbbbd5cc6d",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/R3S32a_PORTABLE.patch",
+      "sha": "b9dfdb8ac25fb04f8a7ae6d71022718930fd9ae3",
+      "remote_sha": "b9dfdb8ac25fb04f8a7ae6d71022718930fd9ae3",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/REPRODUCIBILITY_GAP.md",
+      "sha": "108dba5a358308dadac867ccfe2c0b55b6c360fe",
+      "remote_sha": "108dba5a358308dadac867ccfe2c0b55b6c360fe",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/REUSED_EXCERPTS.json",
+      "sha": "0059ffde12cf2399666ec6bb3ade77ffd2d7fe23",
+      "remote_sha": "0059ffde12cf2399666ec6bb3ade77ffd2d7fe23",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/STATUS.md",
+      "sha": "06582876ad107a3b904baf56c42344ff98d8019e",
+      "remote_sha": "06582876ad107a3b904baf56c42344ff98d8019e",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/VERIFICATION.json",
+      "sha": "86cbd575f1c6c970049a6da33707188e5bf7aa2b",
+      "remote_sha": "86cbd575f1c6c970049a6da33707188e5bf7aa2b",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/compile_Response_letter.txt",
+      "sha": "ab035c87829c6e06f6ebf3643b3ea3684b2b9baa",
+      "remote_sha": "ab035c87829c6e06f6ebf3643b3ea3684b2b9baa",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/compile_Response_letter_final.txt",
+      "sha": "e921d8ceaaeb020bf40fc2d797fe6ab86a370a41",
+      "remote_sha": "e921d8ceaaeb020bf40fc2d797fe6ab86a370a41",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/compile_Supplementary.txt",
+      "sha": "fe2bff2ccb1fd23ff464b21ad56b0721be641293",
+      "remote_sha": "fe2bff2ccb1fd23ff464b21ad56b0721be641293",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/compile_manuscript.txt",
+      "sha": "9230df437bd723316e0ea799984ae5904e8beba9",
+      "remote_sha": "9230df437bd723316e0ea799984ae5904e8beba9",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/evidence/F1.json",
+      "sha": "68fade701e2df985a7220a16d223a90a9b029de7",
+      "remote_sha": "68fade701e2df985a7220a16d223a90a9b029de7",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/evidence/F2.json",
+      "sha": "70d452330f2b898568818fc30086992fe5e25724",
+      "remote_sha": "70d452330f2b898568818fc30086992fe5e25724",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/evidence/F3.json",
+      "sha": "137339113e6e0083de77366c6a341d997c4d69ba",
+      "remote_sha": "137339113e6e0083de77366c6a341d997c4d69ba",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/evidence/F4.json",
+      "sha": "13630e70dba6010aa599f74f231b27dc7111ef72",
+      "remote_sha": "13630e70dba6010aa599f74f231b27dc7111ef72",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/evidence/F4s.json",
+      "sha": "a76cb798bb7ffbe5df395c6829a04fd32c3195c4",
+      "remote_sha": "a76cb798bb7ffbe5df395c6829a04fd32c3195c4",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/evidence/ORIG.json",
+      "sha": "f457ce03827d09e438dc44b5fc0ab911ffc93316",
+      "remote_sha": "f457ce03827d09e438dc44b5fc0ab911ffc93316",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/evidence/q06_fold_metrics.csv",
+      "sha": "7bbe7963eb932e09d6d12060c53a31dc37ed65a1",
+      "remote_sha": "7bbe7963eb932e09d6d12060c53a31dc37ed65a1",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/evidence/q06_history_effect.csv",
+      "sha": "0d229b531c99983879fa8c7ae3986830be29a661",
+      "remote_sha": "0d229b531c99983879fa8c7ae3986830be29a661",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/evidence/q06_rank_stability.csv",
+      "sha": "04df1412e334d4f93d59814a9a6dc51abadeae66",
+      "remote_sha": "04df1412e334d4f93d59814a9a6dc51abadeae66",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/evidence/q06_yearly_summary.csv",
+      "sha": "356a2a5afc2506134eb5c4cea72276a8c4ece95f",
+      "remote_sha": "356a2a5afc2506134eb5c4cea72276a8c4ece95f",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/render/Response_letter-60.png",
+      "sha": "4f7d86f97ebf5bc31e0720cb946f312339c8c2f0",
+      "remote_sha": "4f7d86f97ebf5bc31e0720cb946f312339c8c2f0",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/render/Response_letter-61.png",
+      "sha": "f48ef707d97366a4cd0d11dd448b58c6f442d1d5",
+      "remote_sha": "f48ef707d97366a4cd0d11dd448b58c6f442d1d5",
+      "match": true
+    },
+    {
+      "path": "results/r3sec32a_integration/render/Response_letter-62.png",
+      "sha": "a9d55141efa6b0862c2f0dd6779a0b50e6a3b520",
+      "remote_sha": "a9d55141efa6b0862c2f0dd6779a0b50e6a3b520",
+      "match": true
+    }
+  ],
+  "verification": {
+    "old_excerpts_unchanged": 124,
+    "reused_R2_M5_excerpts": 4,
+    "total_matched": 128,
+    "remote_patch_reconstruction_byte_identical": true,
+    "numeric_sources_verified_from_remote_evidence": true,
+    "main_training": "approximately 12.6 years (distinct from F4' 13 calendar years)",
+    "archive_vs_training_vs_tests": "30-year archive; longest training 25 years; 12 consecutive test years",
+    "no_ENSO_or_prospective_claim": true,
+    "protected_files": 964,
+    "manuscript_Supplementary_Figures_R2_M5_unchanged": true,
+    "raw_30_year_csv_archived": false,
+    "raw_csv_gap_affects_R3_04_conclusions": false
+  },
+  "task06": "shared; only the R3-04 part is closed; R2-M5 remains CLOSED",
+  "reproduction_gap": "merged 30-year raw CSV not archived; registered for R2-M9 (REPRODUCIBILITY_GAP.md)",
+  "m9_status": "SCIENTIFIC_INTEGRATION_COMPLETE — FINAL_REPOSITORY_DOCUMENTATION_PENDING",
+  "executed_by": "Claude Code"
+}
