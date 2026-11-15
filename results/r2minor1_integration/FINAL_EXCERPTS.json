@@ -1,0 +1,5 @@
+{
+  "partition_targets": "The main 2004--2021 experiment contains 18,410/3,945/3,945 raw training/validation/test timestamps and 18,404/3,939/3,939 forecast targets after six-snapshot windows are constructed separately within each partition. The target-time ranges (UTC) are 2 January 2004 12:00--7 August 2016 06:00 for training, 9 August 2016 00:00--20 April 2019 12:00 for validation, and 22 April 2019 06:00--31 December 2021 18:00 for testing. These are forecast target times, not input-window start times.",
+  "raw_training": "Feature screening used the absolute contemporaneous Spearman rank correlation with total precipitation, calculated over the 18,410 raw training-period timestamps from 00:00~UTC on 1 January 2004 to 06:00~UTC on 7 August 2016. These timestamps precede window construction and are distinct from the 18,404 training windows.",
+  "target_hour": "Thus, the latest precipitation input represents $(t_0-1\\,\\mathrm{h},t_0]$, whereas the target represents $(t_0+5\\,\\mathrm{h},t_0+6\\,\\mathrm{h}]$; no target-hour precipitation value is directly included in the input window."
+}

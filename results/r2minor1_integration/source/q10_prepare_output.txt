@@ -1,0 +1,5 @@
+Shapes: (18404, 6, 7) (3939, 6, 7) (3939, 6, 7)
+Train Q95 (18,410 rows) = 0.573882 | Train Q95 (18,404 window targets) = 0.574048 | manuscript 0.5740, notebook Step 16 0.574048
+max |y_true - saved y_true| on test = 5.96e-08 mm
+Saved: /root/autodl-tmp/results/windows/q10_windows.npz
+===== q10 PREPARE COMPLETE =====

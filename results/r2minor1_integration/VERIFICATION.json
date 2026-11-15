@@ -1,0 +1,18 @@
+{
+  "m9_scientific_archive_gate_passed": true,
+  "m9_overall_not_closed": true,
+  "old_excerpts_unchanged": 109,
+  "old_M9_new_six_included": true,
+  "new_exact_excerpts": 3,
+  "total_excerpts_matched": 112,
+  "protected_files": 594,
+  "manuscript_unchanged": true,
+  "supplementary_and_S1_S49_unchanged": true,
+  "all_figures_and_table5_unchanged": true,
+  "all_other_responses_unchanged": true,
+  "date_and_count_fields_verified": 18,
+  "original_comment_exact": true,
+  "new_refs_resolved": true,
+  "no_new_experiment_table_figure": true,
+  "next_minor_not_started": true
+}

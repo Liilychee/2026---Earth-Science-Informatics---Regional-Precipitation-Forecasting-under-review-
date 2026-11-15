@@ -1,0 +1,52 @@
+{
+  "total_raw": 26300,
+  "time_zone": "UTC",
+  "frequency_hours": 6,
+  "no_duplicates": true,
+  "no_missing_timestamps": true,
+  "splits": [
+    {
+      "partition": "Training",
+      "raw_first": "2004-01-01 00:00",
+      "raw_last": "2016-08-07 06:00",
+      "raw_n": 18410,
+      "target_first": "2004-01-02 12:00",
+      "target_last": "2016-08-07 06:00",
+      "target_n": 18404,
+      "dropped_initial": 6,
+      "first_target_source_row": 8,
+      "last_target_source_row": 18411
+    },
+    {
+      "partition": "Validation",
+      "raw_first": "2016-08-07 12:00",
+      "raw_last": "2019-04-20 12:00",
+      "raw_n": 3945,
+      "target_first": "2016-08-09 00:00",
+      "target_last": "2019-04-20 12:00",
+      "target_n": 3939,
+      "dropped_initial": 6,
+      "first_target_source_row": 18418,
+      "last_target_source_row": 22356
+    },
+    {
+      "partition": "Testing",
+      "raw_first": "2019-04-20 18:00",
+      "raw_last": "2021-12-31 18:00",
+      "raw_n": 3945,
+      "target_first": "2019-04-22 06:00",
+      "target_last": "2021-12-31 18:00",
+      "target_n": 3939,
+      "dropped_initial": 6,
+      "first_target_source_row": 22363,
+      "last_target_source_row": 26301
+    }
+  ],
+  "prediction_times_match": true,
+  "window": 6,
+  "input_span_hours": 30,
+  "lead_hours": 6,
+  "first_target_offset_hours": 36,
+  "windows_constructed_after_partition": true,
+  "no_cross_partition_windows": true
+}

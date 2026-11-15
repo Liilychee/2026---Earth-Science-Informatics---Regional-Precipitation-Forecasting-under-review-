@@ -1,0 +1,50 @@
+{
+  "Response letter.tex": [
+    {
+      "line": 947,
+      "text": "% Review ID: R2 m1"
+    },
+    {
+      "line": 953,
+      "text": "\\AuthorResponse{Section~\\ref{manuscript-sec:dataset} already reports the partition sizes and forecast-target periods. We clarify the distinc"
+    },
+    {
+      "line": 967,
+      "text": "\\EvidenceBox{Existing partition sizes and target-time ranges (Section~\\ref{manuscript-sec:dataset})}{"
+    },
+    {
+      "line": 971,
+      "text": "\\EvidenceBox{Existing raw training interval (Section~\\ref{manuscript-sec:dataset})}{"
+    },
+    {
+      "line": 975,
+      "text": "\\EvidenceBox{Existing forecast-origin and target-hour distinction (Section~\\ref{manuscript-sec:dataset})}{"
+    }
+  ],
+  "manuscript.tex": [
+    {
+      "line": 134,
+      "text": "The main 2004--2021 experiment contains 18,410/3,945/3,945 raw training/validation/test timestamps and 18,404/3,939/3,939 forecast targets a"
+    },
+    {
+      "line": 138,
+      "text": "For the retrospective input sequence, every predictor has a valid time at or before the forecast origin $t_0$. Large-scale precipitation (ls"
+    },
+    {
+      "line": 171,
+      "text": "Feature screening used the absolute contemporaneous Spearman rank correlation with total precipitation, calculated over the 18,410 raw train"
+    }
+  ],
+  "ESI_审稿意见分类_严重程度排序_35项.md": [
+    {
+      "line": 4200,
+      "text": "> **2026-11-15 R2-m1本地整合核验：** 只补回复信与三段逐字摘录，不改manuscript、Supplementary或Figures。原始区域时间序列26,300条、六小时UTC连续；按原70/15/15先分区再各自构窗，raw数18,410/3,945/3"
+    }
+  ],
+  "FINAL_REVISION_CHECKLIST.md": [
+    {
+      "line": 509,
+      "text": "### R2-m1 / 任务28局部：本地核验通过（2026-11-15）"
+    }
+  ]
+}

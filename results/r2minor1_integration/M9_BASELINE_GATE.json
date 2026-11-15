@@ -1,0 +1,16 @@
+{
+  "scientific_archive": "0530327235da8ebe251b85503a9fabdfcfb0e481",
+  "remote_receipt_commit": "209522ca9a91d576ca0cb83481986d0cf51c5605",
+  "files_verified": 89,
+  "all_match": true,
+  "m9_overall_closed": false,
+  "status": "SCIENTIFIC_INTEGRATION_COMPLETE \u2014 FINAL_REPOSITORY_DOCUMENTATION_PENDING",
+  "remaining": [
+    "GitHub README",
+    "Environment/reproduction documentation",
+    "Code Availability final fixed release commit",
+    "Public repository content review"
+  ],
+  "six_document_hashes_match_M9_checked_after": true,
+  "archived_key_patch_evidence_blobs_match": true
+}

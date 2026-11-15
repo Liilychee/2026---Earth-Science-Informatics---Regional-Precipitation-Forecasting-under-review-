@@ -1,0 +1,4 @@
+partition,raw_first,raw_last,raw_n,target_first,target_last,target_n,dropped_initial,first_target_source_row,last_target_source_row
+Training,2004-01-01 00:00,2016-08-07 06:00,18410,2004-01-02 12:00,2016-08-07 06:00,18404,6,8,18411
+Validation,2016-08-07 12:00,2019-04-20 12:00,3945,2016-08-09 00:00,2019-04-20 12:00,3939,6,18418,22356
+Testing,2019-04-20 18:00,2021-12-31 18:00,3945,2019-04-22 06:00,2021-12-31 18:00,3939,6,22363,26301

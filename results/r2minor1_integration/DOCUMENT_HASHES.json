@@ -1,0 +1,20 @@
+{
+  "patch_reconstructs_exactly": true,
+  "files": [
+    {
+      "path": "Response letter.tex",
+      "before_sha256": "f7d3d1d872a965e58d29ea9d5779b8c40301654f203388d48197268098632d36",
+      "after_sha256": "16a372401503ba2be0c82559d6ecc392aabca99ae93cb6b2ddfb15f459913dfb"
+    },
+    {
+      "path": "ESI_审稿意见分类_严重程度排序_35项.md",
+      "before_sha256": "8c417b5f1ce73291b07f5f94223239985c03d9b8fb28775b89760c811bdaab91",
+      "after_sha256": "875952aae6d6c6198cfa49611413598cff2ab6bf79cc7366679f3502bd1b626a"
+    },
+    {
+      "path": "FINAL_REVISION_CHECKLIST.md",
+      "before_sha256": "715ca37c57cf1620e03e1a00c7da0ff5a5d11df44ae06a1715b21ee53baf6102",
+      "after_sha256": "087079e9f635be8655a41d5931cbadaf15c1f5e973a3d2b0a99f22d41de3db2f"
+    }
+  ]
+}

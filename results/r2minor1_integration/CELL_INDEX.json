@@ -1,0 +1,128 @@
+[
+  {
+    "file": "SPLIT_INDEX.csv",
+    "line": 2,
+    "field": "raw_first",
+    "raw": "2004-01-01 00:00",
+    "display": "1 January 2004 00:00"
+  },
+  {
+    "file": "SPLIT_INDEX.csv",
+    "line": 2,
+    "field": "raw_last",
+    "raw": "2016-08-07 06:00",
+    "display": "7 August 2016 06:00"
+  },
+  {
+    "file": "SPLIT_INDEX.csv",
+    "line": 2,
+    "field": "raw_n",
+    "raw": "18410",
+    "display": "18,410"
+  },
+  {
+    "file": "SPLIT_INDEX.csv",
+    "line": 2,
+    "field": "target_first",
+    "raw": "2004-01-02 12:00",
+    "display": "2 January 2004 12:00"
+  },
+  {
+    "file": "SPLIT_INDEX.csv",
+    "line": 2,
+    "field": "target_last",
+    "raw": "2016-08-07 06:00",
+    "display": "7 August 2016 06:00"
+  },
+  {
+    "file": "SPLIT_INDEX.csv",
+    "line": 2,
+    "field": "target_n",
+    "raw": "18404",
+    "display": "18,404"
+  },
+  {
+    "file": "SPLIT_INDEX.csv",
+    "line": 3,
+    "field": "raw_first",
+    "raw": "2016-08-07 12:00",
+    "display": "7 August 2016 12:00"
+  },
+  {
+    "file": "SPLIT_INDEX.csv",
+    "line": 3,
+    "field": "raw_last",
+    "raw": "2019-04-20 12:00",
+    "display": "20 April 2019 12:00"
+  },
+  {
+    "file": "SPLIT_INDEX.csv",
+    "line": 3,
+    "field": "raw_n",
+    "raw": "3945",
+    "display": "3,945"
+  },
+  {
+    "file": "SPLIT_INDEX.csv",
+    "line": 3,
+    "field": "target_first",
+    "raw": "2016-08-09 00:00",
+    "display": "9 August 2016 00:00"
+  },
+  {
+    "file": "SPLIT_INDEX.csv",
+    "line": 3,
+    "field": "target_last",
+    "raw": "2019-04-20 12:00",
+    "display": "20 April 2019 12:00"
+  },
+  {
+    "file": "SPLIT_INDEX.csv",
+    "line": 3,
+    "field": "target_n",
+    "raw": "3939",
+    "display": "3,939"
+  },
+  {
+    "file": "SPLIT_INDEX.csv",
+    "line": 4,
+    "field": "raw_first",
+    "raw": "2019-04-20 18:00",
+    "display": "20 April 2019 18:00"
+  },
+  {
+    "file": "SPLIT_INDEX.csv",
+    "line": 4,
+    "field": "raw_last",
+    "raw": "2021-12-31 18:00",
+    "display": "31 December 2021 18:00"
+  },
+  {
+    "file": "SPLIT_INDEX.csv",
+    "line": 4,
+    "field": "raw_n",
+    "raw": "3945",
+    "display": "3,945"
+  },
+  {
+    "file": "SPLIT_INDEX.csv",
+    "line": 4,
+    "field": "target_first",
+    "raw": "2019-04-22 06:00",
+    "display": "22 April 2019 06:00"
+  },
+  {
+    "file": "SPLIT_INDEX.csv",
+    "line": 4,
+    "field": "target_last",
+    "raw": "2021-12-31 18:00",
+    "display": "31 December 2021 18:00"
+  },
+  {
+    "file": "SPLIT_INDEX.csv",
+    "line": 4,
+    "field": "target_n",
+    "raw": "3939",
+    "display": "3,939"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "path": "code/q10_prepare_data.py",
+    "commit": "6495abc81101074b02b3a5c8cfc83cd6cbc33d79",
+    "md5": "2a415cd4c18404af82bd9abb59750ba5"
+  },
+  {
+    "path": "results/metrics/q10_prepare_output.txt",
+    "commit": "6495abc81101074b02b3a5c8cfc83cd6cbc33d79",
+    "md5": "9c6f6298508b723fa0c6fa4f97273c53"
+  },
+  {
+    "path": "/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/data/dublin_regional_2004_2021.csv",
+    "md5": "e1998c7f6a9376f694013cf07dba3acf",
+    "bytes": 3553637,
+    "used_column": "valid_time",
+    "note": "Original retained regional series, not re-downloaded or regenerated; no precipitation metrics computed"
+  },
+  {
+    "path": "results/q21/preds/bilstm_attn__w6__C0__mse__s42.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "1e97f9c87db9f9979a5703897ec5b713",
+    "used_columns": [
+      "split",
+      "valid_time"
+    ]
+  }
+]

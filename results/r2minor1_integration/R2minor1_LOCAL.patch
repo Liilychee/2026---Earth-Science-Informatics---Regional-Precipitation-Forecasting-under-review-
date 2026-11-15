@@ -1,0 +1,65 @@
+--- a/Response letter.tex
++++ b/Response letter.tex
+@@ -950,9 +950,31 @@
+ 
+ \ReviewerComment{1. Please report the exact training, validation, and testing periods and their respective sample sizes.}
+ 
+-\PendingResponse
+-
+-\ChangeLocation
++\AuthorResponse{Section~\ref{manuscript-sec:dataset} already reports the partition sizes and forecast-target periods. We clarify the distinction between raw timestamps and usable target samples below. All times are UTC.
++
++\begin{itemize}
++\item \textbf{Training.} Raw period: 1 January 2004 00:00--7 August 2016 06:00 (18,410 timestamps). Forecast-target period: 2 January 2004 12:00--7 August 2016 06:00 (18,404 targets).
++\item \textbf{Validation.} Raw period: 7 August 2016 12:00--20 April 2019 12:00 (3,945 timestamps). Forecast-target period: 9 August 2016 00:00--20 April 2019 12:00 (3,939 targets).
++\item \textbf{Testing.} Raw period: 20 April 2019 18:00--31 December 2021 18:00 (3,945 timestamps). Forecast-target period: 22 April 2019 06:00--31 December 2021 18:00 (3,939 targets).
++\end{itemize}
++
++The chronological split is made before window construction. Within each partition, six consecutive snapshots sampled every six hours form the input, and the next six-hour step is the forecast target. The first six timestamps in each partition therefore cannot serve as targets with a complete input window drawn from that partition; they are not six randomly missing observations. No window crosses a training, validation or testing boundary. The forecast lead is six hours from the last input snapshot, and the target is precipitation during the final hour of that lead, not a six-hour accumulation.
++
++These dates and counts refer to the main 70\%/15\%/15\% experiment, not the separate retrospective expanding-window evaluation addressed under R2-M5 and described in Section~\ref{manuscript-sec:rolling_origin_methods}. That evaluation has its own fold-specific periods and sample sizes. The existing manuscript already states the relevant main-experiment definitions; no new experiment, table or manuscript paragraph was needed for this response.}
++
++\ManuscriptChange{Existing Section~\ref{manuscript-sec:dataset}: partition sizes, target-time intervals and raw training interval; its predictor/target-time paragraph defines the target hour. The separate rolling-origin protocol is in Section~\ref{manuscript-sec:rolling_origin_methods}. Manuscript and Supplementary text remain unchanged. Final page and line references pending full-manuscript assembly.}
++
++\EvidenceBox{Existing partition sizes and target-time ranges (Section~\ref{manuscript-sec:dataset})}{
++\RevisedExcerpt{The main 2004--2021 experiment contains 18,410/3,945/3,945 raw training/validation/test timestamps and 18,404/3,939/3,939 forecast targets after six-snapshot windows are constructed separately within each partition. The target-time ranges (UTC) are 2 January 2004 12:00--7 August 2016 06:00 for training, 9 August 2016 00:00--20 April 2019 12:00 for validation, and 22 April 2019 06:00--31 December 2021 18:00 for testing. These are forecast target times, not input-window start times.}
++}
++
++\EvidenceBox{Existing raw training interval (Section~\ref{manuscript-sec:dataset})}{
++\RevisedExcerpt{Feature screening used the absolute contemporaneous Spearman rank correlation with total precipitation, calculated over the 18,410 raw training-period timestamps from 00:00~UTC on 1 January 2004 to 06:00~UTC on 7 August 2016. These timestamps precede window construction and are distinct from the 18,404 training windows.}
++}
++
++\EvidenceBox{Existing forecast-origin and target-hour distinction (Section~\ref{manuscript-sec:dataset})}{
++\RevisedExcerpt{Thus, the latest precipitation input represents $(t_0-1\,\mathrm{h},t_0]$, whereas the target represents $(t_0+5\,\mathrm{h},t_0+6\,\mathrm{h}]$; no target-hour precipitation value is directly included in the input window.}
++}
+ 
+ % Review ID: R2 m2
+ \Needspace{5\baselineskip}
+--- a/ESI_审稿意见分类_严重程度排序_35项.md
++++ b/ESI_审稿意见分类_严重程度排序_35项.md
+@@ -4197,6 +4197,8 @@
+ 
+ ### 28. 数据划分和不确定性细节不完整
+ 
++> **2026-11-15 R2-m1本地整合核验：** 只补回复信与三段逐字摘录，不改manuscript、Supplementary或Figures。原始区域时间序列26,300条、六小时UTC连续；按原70/15/15先分区再各自构窗，raw数18,410/3,945/3,945、target数18,404/3,939/3,939。原始边界和目标边界分别列明，目标开始为2004-01-02 12:00、2016-08-09 00:00、2019-04-22 06:00 UTC。18项日期/计数字段核对，原109段摘录（含M9）不变，新增3段逐字匹配，三PDF编译和新增回复页检查通过。M9科学增量已安全归档0530327/209522c，但最终仓库文档/发布仍Pending，不将M9整体关闭。R2-m1为本地核验通过、待作者审核及另行归档授权；本轮不提交推送。R4-m23、R4-m27及R3共享意见仍Pending，任务28整体不关闭；未开始R2-m2。见results/r2minor1_integration/FINAL_REPORT.md。
++
+ > **R2-M5整合核验（2026-11-14）：** 本条中R2-M5范围已完成并正式关闭：正文、Supplementary自动表S32–S38、回复、数值、方法与PDF核验均通过；Git证据归档`130870a`已推送origin/main并逐文件核验24/24一致。任务06/28共享的R3 §3.2(a)、R2 Minor 1及R4事项保留待处理，不随R2-M5关闭。未重新训练、绘图或重算正式统计。证据和局限见`results/r2m5_integration/`。
+ 
+ 
+--- a/FINAL_REVISION_CHECKLIST.md
++++ b/FINAL_REVISION_CHECKLIST.md
+@@ -504,3 +504,14 @@
+ - [ ] 作者审核本地报告；未来另行授权选择性归档。本轮不提交、不推送，不关闭R2-M9。
+ 
+ R3-L822–824、任务18/34共享事项仍Pending；未开始R2-m1。历史本地仓库文档草稿不继续准备，也不代表已公开材料。详见results/r2m9_integration/FINAL_REPORT.md。
++
++
++### R2-m1 / 任务28局部：本地核验通过（2026-11-15）
++
++- [x] M9安全基线：科学归档0530327235da8ebe251b85503a9fabdfcfb0e481、回执209522ca9a91d576ca0cb83481986d0cf51c5605；89/89远程回执有效，本地M9 after文档/关键patch证据一致。M9仍为SCIENTIFIC_INTEGRATION_COMPLETE — FINAL_REPOSITORY_DOCUMENTATION_PENDING。
++- [x] 原始保留区域时间列、固定q10划分/构窗代码与输出日志、q21保存预测索引只读核验；三段raw/target日期和样本数一致，未重训或重算指标。
++- [x] 仅修改R2-m1正式红色回复、蓝色位置说明及三段现有正文摘录；原109段保持，新3段精确匹配，总112段。
++- [x] manuscript/Supplementary/S1–S49/Table5/Figures及其他回复不变；三PDF顺序编译和回复51–52页144dpi实际检查通过。
++- [ ] 作者审核本地报告后另行决定选择性归档，本轮不提交、不推送，暂不标记正式CLOSED。
++
++R4-m23、R4-m27及R3共享意见继续Pending；主70/15/15划分与R2-M5滚动评估严格区分。M9最终README、环境/复现说明、Code Availability release commit和公开范围审核待全文返修完成，未在本轮处理。未开始R2-m2。
