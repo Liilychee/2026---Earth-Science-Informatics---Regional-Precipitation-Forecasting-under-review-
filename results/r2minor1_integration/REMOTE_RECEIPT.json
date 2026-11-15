@@ -1,0 +1,248 @@
+{
+  "archive_commit": "05221c02e0643823bf5128f5159b45ed6709df67",
+  "base_commit": "209522ca9a91d576ca0cb83481986d0cf51c5605",
+  "remote_branch": "origin/main",
+  "files_verified": 32,
+  "all_match": true,
+  "verification": "GitHub fixed-commit fetch_file SHA-1 blob identities match all32 selective archive files; binary PNGs read as base64.",
+  "checks": [
+    {
+      "path": "results/r2minor1_integration/ARCHIVE_MANIFEST.json",
+      "expected_blob": "40c3d317fbf4fcd097e2630e740401fde0fc311c",
+      "md5": "34d8d2f8f81d34ad4118c95201cc204c",
+      "remote_blob": "40c3d317fbf4fcd097e2630e740401fde0fc311c",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/CELL_INDEX.json",
+      "expected_blob": "335872a771d3079fa04630e925833735b5dbeb2c",
+      "md5": "ccacd5688aea2c6c3432c5c14a7d3b15",
+      "remote_blob": "335872a771d3079fa04630e925833735b5dbeb2c",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/DATE_CHECK.json",
+      "expected_blob": "e501468bc64cc41110d015e1465d462638a98df6",
+      "md5": "51cca50c5162503c2ff821cef29018ff",
+      "remote_blob": "e501468bc64cc41110d015e1465d462638a98df6",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/DOCUMENT_HASHES.json",
+      "expected_blob": "3ea8efb98929ec6d6b068781127ba2d1bdfda5bf",
+      "md5": "65e9e0211808e90b3a125ad7d949069c",
+      "remote_blob": "3ea8efb98929ec6d6b068781127ba2d1bdfda5bf",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/EVIDENCE_INDEX.md",
+      "expected_blob": "973ca07214588162de8299b332a3873856995201",
+      "md5": "c79c1e4030b918f3b748dabdcab268d7",
+      "remote_blob": "973ca07214588162de8299b332a3873856995201",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/EXCERPT_INDEX.json",
+      "expected_blob": "86f2fb65d56ef468f1bcd427058b699fa980e3e2",
+      "md5": "d5f28ceb589432bb72d8ac2b22195928",
+      "remote_blob": "86f2fb65d56ef468f1bcd427058b699fa980e3e2",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/FINAL_EXCERPTS.json",
+      "expected_blob": "67796460cc82e1e9ead57acc935d4965a2f933fa",
+      "md5": "090e09fee210b2c40bb37b06f574dff4",
+      "remote_blob": "67796460cc82e1e9ead57acc935d4965a2f933fa",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/FINAL_REPORT.md",
+      "expected_blob": "f55de7cbda7639ba1fabe30cc9d9cbdb35b12fc8",
+      "md5": "6630c28038c4e897e77741cdd19c91a8",
+      "remote_blob": "f55de7cbda7639ba1fabe30cc9d9cbdb35b12fc8",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/GIT_SCOPE.md",
+      "expected_blob": "2bf21440209f52494ad67862c482d41ceea44250",
+      "md5": "809d411bdc5fbb6db410a469b882f773",
+      "remote_blob": "2bf21440209f52494ad67862c482d41ceea44250",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/GIT_STATUS.txt",
+      "expected_blob": "11e1a23528791dc6d53f49e55af2004c285279c9",
+      "md5": "1ba44ddb7e928e394ebfef9fe362ae5c",
+      "remote_blob": "11e1a23528791dc6d53f49e55af2004c285279c9",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/LOCATIONS.json",
+      "expected_blob": "5060289f90d54ed97da2a3d9e7216ef82bc47493",
+      "md5": "4c8412cdfb543dd11f12652873ebc5f8",
+      "remote_blob": "5060289f90d54ed97da2a3d9e7216ef82bc47493",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/M9_BASELINE_GATE.json",
+      "expected_blob": "528c4a3ffbfd6a980dd8e19d29778257502e5cba",
+      "md5": "ce6ff9f99e2ec503d6cf5a1f80b4ff68",
+      "remote_blob": "528c4a3ffbfd6a980dd8e19d29778257502e5cba",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/PDF_CHECK.json",
+      "expected_blob": "281e750b79d4603f1b66b204d9fccd36715cc3ab",
+      "md5": "1492335bfb9b0473fdb74e28567fa80a",
+      "remote_blob": "281e750b79d4603f1b66b204d9fccd36715cc3ab",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/PDF_PAGE_INDEX.json",
+      "expected_blob": "07a1bd980f2881f9b812360cec1927ec307d452c",
+      "md5": "1b8b43effd5ace17d0119bb086264734",
+      "remote_blob": "07a1bd980f2881f9b812360cec1927ec307d452c",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/PROTECTED_HASHES.json",
+      "expected_blob": "0befe741b9a99fe16a5b82cbb2f8d4e6e0f88e6f",
+      "md5": "d97208504e0bc2ea8be28e527b0026ca",
+      "remote_blob": "0befe741b9a99fe16a5b82cbb2f8d4e6e0f88e6f",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/R2minor1_LOCAL.patch",
+      "expected_blob": "8c41793947b91baa8a6b7bcfb3eeba92237f178d",
+      "md5": "01ac3fd4022e4e5203372e6405765216",
+      "remote_blob": "8c41793947b91baa8a6b7bcfb3eeba92237f178d",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/R2minor1_PORTABLE.patch",
+      "expected_blob": "628be7fb577bd729226e744c8ab29b7e9f1d010d",
+      "md5": "ccc1c94f13f782b38dc482fef9631866",
+      "remote_blob": "628be7fb577bd729226e744c8ab29b7e9f1d010d",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/SOURCE_INDEX.json",
+      "expected_blob": "ca458edbc9ddb63c895aeeb501146f74827e2b53",
+      "md5": "c42bca50645774dbe7a9ce1a1d221381",
+      "remote_blob": "ca458edbc9ddb63c895aeeb501146f74827e2b53",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/SPLIT_INDEX.csv",
+      "expected_blob": "2ae7a746ce42ddfae33cb26306bd6e201295923a",
+      "md5": "34a26359c141c516a12c218836fdabce",
+      "remote_blob": "2ae7a746ce42ddfae33cb26306bd6e201295923a",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/STATUS.md",
+      "expected_blob": "57a2512f6ae0cb844f6bde8df2dfe8e8bab45e61",
+      "md5": "6b4d3b76f7b2c74ca0b2feac51a2a124",
+      "remote_blob": "57a2512f6ae0cb844f6bde8df2dfe8e8bab45e61",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/TASK_NOTE.json",
+      "expected_blob": "bdfa41f6452777e829ecf2a257dfbd6533ecf94c",
+      "md5": "174e682f9e14564511d9b602c20effa0",
+      "remote_blob": "bdfa41f6452777e829ecf2a257dfbd6533ecf94c",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/VERIFICATION.json",
+      "expected_blob": "e0be9e1342c23c188d50db2db187bc3dbe906c1c",
+      "md5": "1d740247fb4846ab91656d4814b91efe",
+      "remote_blob": "e0be9e1342c23c188d50db2db187bc3dbe906c1c",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/check_dates.py",
+      "expected_blob": "a5fbaeeb9e0045a4322bacaecd6be476639e2e0f",
+      "md5": "8ac8d8442b0079d0c800ee034c718a42",
+      "remote_blob": "a5fbaeeb9e0045a4322bacaecd6be476639e2e0f",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/check_integration.py",
+      "expected_blob": "cd7101ffc93cf9f1dbe70e8195499bc343ae5590",
+      "md5": "44b9f8a4aa1ba82d6c1e6baa5e36f9d1",
+      "remote_blob": "cd7101ffc93cf9f1dbe70e8195499bc343ae5590",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/check_pdf.py",
+      "expected_blob": "f98f71deb6fb679ab8579fbc6a8faf423ff35667",
+      "md5": "a3cd0aa9765d317fbca7ab779b146605",
+      "remote_blob": "f98f71deb6fb679ab8579fbc6a8faf423ff35667",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/compile_Response_letter.txt",
+      "expected_blob": "a77b05d87a484b99c39b786c665721f0a635aa4d",
+      "md5": "0ec9b91de870cee72a94406a8a693a10",
+      "remote_blob": "a77b05d87a484b99c39b786c665721f0a635aa4d",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/compile_Supplementary.txt",
+      "expected_blob": "48056ea4980f5aed2ead5e3ca6e07b2b19939d7b",
+      "md5": "b3b03ab1803e7ffe68b627a672690cdc",
+      "remote_blob": "48056ea4980f5aed2ead5e3ca6e07b2b19939d7b",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/compile_manuscript.txt",
+      "expected_blob": "2627ba3ce45d0f71fb8bad9fb3a140f2ba9ade1c",
+      "md5": "2a96d37893be94d3f45171c409451eda",
+      "remote_blob": "2627ba3ce45d0f71fb8bad9fb3a140f2ba9ade1c",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/render/Response_letter-51.png",
+      "expected_blob": "370d91c18192de42a3458ecea02485abe39d4898",
+      "md5": "48694268b0ac00b325faac344d7734fe",
+      "remote_blob": "370d91c18192de42a3458ecea02485abe39d4898",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/render/Response_letter-52.png",
+      "expected_blob": "df469da8bf8ea0ee58f31c931db02f2e0b0e8895",
+      "md5": "9537967cfdb7edc6a5124df948da7ffe",
+      "remote_blob": "df469da8bf8ea0ee58f31c931db02f2e0b0e8895",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/source/q10_prepare_data.py",
+      "expected_blob": "46cb0d7bdf95e1f881e88d3994a82334e235ff39",
+      "md5": "2a415cd4c18404af82bd9abb59750ba5",
+      "remote_blob": "46cb0d7bdf95e1f881e88d3994a82334e235ff39",
+      "match": true
+    },
+    {
+      "path": "results/r2minor1_integration/source/q10_prepare_output.txt",
+      "expected_blob": "2d9f0a57424930548394d01aa4fee65c946fec49",
+      "md5": "9c6f6298508b723fa0c6fa4f97273c53",
+      "remote_blob": "2d9f0a57424930548394d01aa4fee65c946fec49",
+      "match": true
+    }
+  ],
+  "old_excerpts_preserved": 109,
+  "new_exact_excerpts": 3,
+  "total_excerpts": 112,
+  "date_count_fields_verified": 18,
+  "manuscript_supplementary_figures_unchanged": true,
+  "m9_status": "SCIENTIFIC_INTEGRATION_COMPLETE \u2014 FINAL_REPOSITORY_DOCUMENTATION_PENDING",
+  "m9_overall_closed": false,
+  "shared_pending": [
+    "R4-m23",
+    "R4-m27",
+    "R3 related shared opinions"
+  ],
+  "next_task": "R2-m2 NOT STARTED",
+  "receipt_scope": "First scientific archive readback; this receipt and CLOSED status are added only after this successful verification and re-read in a separate final commit."
+}

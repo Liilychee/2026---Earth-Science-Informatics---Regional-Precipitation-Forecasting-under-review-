@@ -1,0 +1,22 @@
+{
+  "status": "CLOSED",
+  "archive_commit": "05221c02e0643823bf5128f5159b45ed6709df67",
+  "base_commit": "209522ca9a91d576ca0cb83481986d0cf51c5605",
+  "first_archive_files": 32,
+  "all32_remote_match": true,
+  "all_other_git_paths_unchanged": true,
+  "original_worktree_documents_unchanged": true,
+  "protected_file_hashes": 594,
+  "old_excerpts": 109,
+  "new_exact_excerpts": 3,
+  "total_excerpts": 112,
+  "date_count_fields": 18,
+  "m9_status": "SCIENTIFIC_INTEGRATION_COMPLETE \u2014 FINAL_REPOSITORY_DOCUMENTATION_PENDING",
+  "m9_overall_closed": false,
+  "shared_pending": [
+    "R4-m23",
+    "R4-m27",
+    "R3 related opinions"
+  ],
+  "next_task": "R2-m2 NOT STARTED"
+}

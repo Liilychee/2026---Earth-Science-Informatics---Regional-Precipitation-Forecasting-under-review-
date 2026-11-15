@@ -1,0 +1,23 @@
+--- a/ESI_审稿意见分类_严重程度排序_35项.md
++++ b/ESI_审稿意见分类_严重程度排序_35项.md
+@@ -4394,3 +4394,6 @@
+ 
+ 
+ R2-M4最终证据与关闭记录：results/r2m4_final/。作者PDF MD5=f73dd3d355084727bb13bf644ce332d3；本轮77行交接输入与归档CSI/命中/预报次数0差异，作者最终点值CSV未取得，最终图片精确点值对应性引用作者此前独立核验。八段EvidenceBox和三PDF核验通过，只关闭R2-M4，不整体关闭05/12共享任务。
++
++
++> **R2-m1 / 任务28局部正式关闭（2026-11-15）：CLOSED。** 原始/目标时刻及18日期计数字段、109旧摘录和3新摘录（总112）、三PDF均核验通过。科学归档05221c02e0643823bf5128f5159b45ed6709df67正常推送，GitHub逐文件32/32 blob一致。正文、补充和Figures不变，M9归档内容受保护。R4-m23、R4-m27及R3共享事项仍Pending，任务28整体不关闭；R2-m2未开始。M9保持SCIENTIFIC_INTEGRATION_COMPLETE — FINAL_REPOSITORY_DOCUMENTATION_PENDING，未整体关闭。
+--- a/FINAL_REVISION_CHECKLIST.md
++++ b/FINAL_REVISION_CHECKLIST.md
+@@ -515,3 +515,11 @@
+ - [ ] 作者审核本地报告后另行决定选择性归档，本轮不提交、不推送，暂不标记正式CLOSED。
+ 
+ R4-m23、R4-m27及R3共享意见继续Pending；主70/15/15划分与R2-M5滚动评估严格区分。M9最终README、环境/复现说明、Code Availability release commit和公开范围审核待全文返修完成，未在本轮处理。未开始R2-m2。
++
++
++### R2-m1正式归档关闭（2026-11-15）
++
++- [x] 独立worktree基线包含M9回执209522ca；科学归档05221c02e0643823bf5128f5159b45ed6709df67正常推送，GitHub固定提交32/32文件blob核验一致。
++- [x] 18日期/计数字段、109旧+3新摘录（112总计）、未变正文/补充/Figures、三PDF及原关闭意见保护通过；本轮R2-m1范围CLOSED。
++
++R4-m23/R4-m27及R3相关共享意见Pending，任务28整体不关闭，未开始R2-m2。M9仍为SCIENTIFIC_INTEGRATION_COMPLETE — FINAL_REPOSITORY_DOCUMENTATION_PENDING，仓库README/环境/复现/Code Availability final commit及公开内容审核不在本轮完成范围。
