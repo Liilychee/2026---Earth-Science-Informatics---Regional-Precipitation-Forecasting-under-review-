@@ -1,0 +1,62 @@
+[
+  {
+    "subset": "all",
+    "A": [
+      "BiLSTM-Attention",
+      "XGBoost",
+      "BU-LSTM",
+      "BU-LSTM-Attention",
+      "Prob. BiLSTM-Attention",
+      "Transformer"
+    ],
+    "C": [
+      "BiLSTM-Attention",
+      "XGBoost",
+      "BU-LSTM",
+      "BU-LSTM-Attention",
+      "Prob. BiLSTM-Attention",
+      "Transformer"
+    ],
+    "unchanged": true
+  },
+  {
+    "subset": "wet",
+    "A": [
+      "XGBoost",
+      "BiLSTM-Attention",
+      "BU-LSTM-Attention",
+      "BU-LSTM",
+      "Prob. BiLSTM-Attention",
+      "Transformer"
+    ],
+    "C": [
+      "XGBoost",
+      "BiLSTM-Attention",
+      "BU-LSTM-Attention",
+      "BU-LSTM",
+      "Prob. BiLSTM-Attention",
+      "Transformer"
+    ],
+    "unchanged": true
+  },
+  {
+    "subset": "tail",
+    "A": [
+      "XGBoost",
+      "BiLSTM-Attention",
+      "BU-LSTM-Attention",
+      "BU-LSTM",
+      "Prob. BiLSTM-Attention",
+      "Transformer"
+    ],
+    "C": [
+      "XGBoost",
+      "BiLSTM-Attention",
+      "BU-LSTM-Attention",
+      "BU-LSTM",
+      "Prob. BiLSTM-Attention",
+      "Transformer"
+    ],
+    "unchanged": true
+  }
+]

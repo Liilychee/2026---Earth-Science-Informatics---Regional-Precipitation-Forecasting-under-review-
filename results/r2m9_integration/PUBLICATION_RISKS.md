@@ -1,0 +1,11 @@
+# Public-repository review and local-draft scope
+
+Read-only inspected GitHub-visible commit2de6f3e0045c1f68f0d570f6cb6de49d9920755a of the author-selected ESI repository; get_repo confirms public visibility and main default branch. The pinned q19 evidence commitd02519c is accessible. PUBLIC_REPOSITORY_CHECK.json lists paths and scan scope.
+
+1. The public tree already includes manuscript.tex, rebuttal-template.tex and integration patches containing reviewer comments, unpublished revision text and evidence excerpts. These may reveal review-stage material; author review of the intended public scope remains appropriate. No publication-policy judgment or automatic removal was made.
+2. Run/environment logs and indices include host/user/local-path metadata. These are reproducibility records, but deserve a privacy review before broader redistribution. No new private material or raw data was uploaded.
+3. At the inspected commit there is no root README, environment specification or LICENSE. Code Availability must not claim these exist. No license was added and no permission grant inferred.
+4. A limited known-token/private-key pattern scan of tracked textual py/md/json/txt/tex/ipynb files returned zero matches. This is not a comprehensive credential/security review; compressed archives, all binary contents and full historical commits were not exhaustively scanned. No secret value is printed in this report.
+5. Raw data and model weights are not newly published. Reconstruction still needs independently obtained data, the expected directory layout and missing weights for fresh inference; current saved-prediction checks are distinct from a clean reinstallation/retraining demonstration.
+
+Author already selected the ESI repository in this task. Accordingly the paper points to that complete URL and the existing fixed evidence commit. Local-only drafts of README, ENVIRONMENT, recorded requirements and revision run map were prepared in/private/tmp/esi-r2m9-repository-draft and copied under repository_draft for review. They are NOT root-repository files and NOT public/committed. No LICENSE, commit, push or new data publication occurred. Future publication and any public-scope cleanup require separate author review; this does not block the already authorized local paper integration.

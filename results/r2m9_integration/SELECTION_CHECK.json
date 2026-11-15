@@ -1,0 +1,60 @@
+[
+  {
+    "model": "xgboost",
+    "grid": 27,
+    "original_rank": 6,
+    "selected": {
+      "n": 300,
+      "lr": 0.03,
+      "depth": 4
+    },
+    "validation_only": true
+  },
+  {
+    "model": "bilstm_attn",
+    "grid": 27,
+    "original_rank": 2,
+    "selected": {
+      "units": 32,
+      "lr": 0.003,
+      "dropout": 0.3
+    },
+    "validation_only": true
+  },
+  {
+    "model": "transformer",
+    "grid": 3,
+    "selected": {
+      "lr": 0.003
+    },
+    "selection_metric": "rmse",
+    "validation_only": true
+  },
+  {
+    "model": "bulstm",
+    "grid": 3,
+    "selected": {
+      "lr": 0.003
+    },
+    "selection_metric": "crps",
+    "validation_only": true
+  },
+  {
+    "model": "bulstm_attn",
+    "grid": 3,
+    "selected": {
+      "lr": 0.003
+    },
+    "selection_metric": "crps",
+    "validation_only": true
+  },
+  {
+    "model": "prob_bilstm_attn",
+    "grid": 3,
+    "selected": {
+      "lr": 0.001
+    },
+    "selection_metric": "crps",
+    "validation_only": true
+  }
+]

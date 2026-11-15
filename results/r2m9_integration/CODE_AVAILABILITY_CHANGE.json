@@ -1,0 +1,4 @@
+{
+  "old": "The source code is available at\n\\href{https://github.com/Liilychee/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin}\n{GitHub repository}.",
+  "new": "Proposed code-and-evidence repository (final publication scope and version pending): \\begingroup\\def\\UrlBreaks{\\do\\/\\do-\\do.}\\url{https://github.com/Liilychee/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-}\\endgroup. \\textbf{[CODE-AVAILABILITY TODO: confirm the final public link and release commit, review the publication scope, and complete the repository documentation after all reviewer revisions.]} The current archive is not represented here as a finalized, fully documented reproduction package."
+}

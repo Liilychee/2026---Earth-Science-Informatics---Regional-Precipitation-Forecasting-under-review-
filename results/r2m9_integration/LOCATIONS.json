@@ -1,0 +1,106 @@
+{
+  "manuscript.tex": [
+    {
+      "line": 391,
+      "text": "The original comparison used the fixed configurations documented in Table~\\ref{tab:model_config}; their initial selection rationale could not be indep"
+    },
+    {
+      "line": 393,
+      "text": "Within this sensitivity analysis, A denotes the original settings and epoch cap, B the original settings with a longer cap, and C the validation-selec"
+    },
+    {
+      "line": 718,
+      "text": "In the q19 sensitivity cohort, the six-model RMSE ordering was unchanged between A and C for the full, revised-wet and upper-tail test subsets. The ov"
+    },
+    {
+      "line": 720,
+      "text": "The 117 unique q19 task records sum to 3.87~h. Their timer covers model construction, fitting and validation/test prediction up to its stop; it is not"
+    },
+    {
+      "line": 1143,
+      "text": "The sensitivity analysis does not establish equal-budget optimization or globally optimal original settings. The Transformer A-to-B change shows that "
+    },
+    {
+      "line": 1208,
+      "text": "The q19 search is a retrospective sensitivity analysis on one existing chronological split, with unequal search spaces and different validation select"
+    },
+    {
+      "line": 1310,
+      "text": "Proposed code-and-evidence repository (final publication scope and version pending): \\begingroup\\def\\UrlBreaks{\\do\\/\\do-\\do.}\\url{https://github.com/L"
+    }
+  ],
+  "Supplementary.tex": [
+    {
+      "line": 1804,
+      "text": "% R2-M9 appended tables; existing S1--S47 source is unchanged."
+    },
+    {
+      "line": 1808,
+      "text": "\\caption{Validation-search design, recorded cost and candidate rankings for the archived q19 sensitivity analysis. Run counts are unique saved tasks, "
+    },
+    {
+      "line": 1904,
+      "text": "\\caption{Paired q19 A/B/C comparisons on 3,939 common test targets. A denotes original settings/cap: its references are q21 C0 for BiAttn, q14 W=6 rer"
+    }
+  ],
+  "Response letter.tex": [
+    {
+      "line": 902,
+      "text": "% Review ID: R2 M9"
+    },
+    {
+      "line": 912,
+      "text": "\\AuthorResponse{We agree that the original description did not establish how the fixed hyperparameters had been chosen. Their initial selection ration"
+    },
+    {
+      "line": 922,
+      "text": "\\EvidenceBox{Validation selection and unequal budgets}{"
+    },
+    {
+      "line": 926,
+      "text": "\\EvidenceBox{A/B/C definitions and pointwise uncertainty}{"
+    },
+    {
+      "line": 930,
+      "text": "\\EvidenceBox{Sensitivity results and run-set boundary}{"
+    },
+    {
+      "line": 934,
+      "text": "\\EvidenceBox{Recorded task-time scope}{"
+    },
+    {
+      "line": 938,
+      "text": "\\EvidenceBox{Retrospective and model-selection limitations}{"
+    },
+    {
+      "line": 942,
+      "text": "\\EvidenceBox{Code Availability: explicit unfinished release item}{"
+    }
+  ],
+  "ESI_审稿意见分类_严重程度排序_35项.md": [
+    {
+      "line": 3506,
+      "text": "> **2026-11-15 R2-M9本地整合限定说明：** 本轮仅复用q19验证调参及117任务计时回答R2-M9，不整合q18注意力增益/复杂度显著性，也不处理R3-L822–824。任务18共享事项与R3该意见继续Pending；不得将q19计时称纯fit或GPU小时。实际新表为S48（搜索"
+    },
+    {
+      "line": 3628,
+      "text": "> **2026-11-15 R2-M9恢复后的当前记录：** 固定q19提交d02519c5f153feb712018cf97efb035f6ca2d7ae的gate/search/recheck/final/light已完成，117运行、117预测、六选择JSON及53行效应均有原始证据。本轮不"
+    },
+    {
+      "line": 4292,
+      "text": "> **2026-11-15 R2-M9代码发布范围：Pending。** 作者最新指令要求全文返修完成后统一处理README、环境文件、LICENSE、最终完整GitHub链接与Code Availability固定commit。本轮不修改GitHub、不继续准备README、不提交或推送。先前中"
+    }
+  ],
+  "FINAL_REVISION_CHECKLIST.md": [
+    {
+      "line": 496,
+      "text": "### R2-M9本地科学/论文整合（2026-11-15；代码发布仍Pending）"
+    }
+  ],
+  "SUPPLEMENTARY_TABLE_REGISTRY.md": [
+    {
+      "line": 97,
+      "text": "### R2-M9追加（实际aux；2026-11-15）"
+    }
+  ]
+}

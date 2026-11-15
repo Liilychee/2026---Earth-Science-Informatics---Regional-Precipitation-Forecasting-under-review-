@@ -1,0 +1,1911 @@
+[
+  {
+    "path": "results/q19/runs/bilstm_attn__u128_lr0.0003_dr0.1_cap60__s42.json",
+    "md5": "3f75280f9de3aa3233dcdb8bd57da656",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u128_lr0.0003_dr0.1_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 128,
+      "lr": 0.0003,
+      "dropout": 0.1
+    },
+    "cap": 60,
+    "train_seconds": 108.0,
+    "finished_utc": "2026-11-09T18:10:22+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u128_lr0.0003_dr0.2_cap60__s42.json",
+    "md5": "c00534d318c5d59bf3f44c7804e1c40d",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u128_lr0.0003_dr0.2_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 128,
+      "lr": 0.0003,
+      "dropout": 0.2
+    },
+    "cap": 60,
+    "train_seconds": 130.1,
+    "finished_utc": "2026-11-09T18:12:32+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u128_lr0.0003_dr0.3_cap60__s42.json",
+    "md5": "504a3922908f0648439e320982d443cf",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u128_lr0.0003_dr0.3_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 128,
+      "lr": 0.0003,
+      "dropout": 0.3
+    },
+    "cap": 60,
+    "train_seconds": 123.4,
+    "finished_utc": "2026-11-09T18:14:36+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u128_lr0.001_dr0.1_cap60__s42.json",
+    "md5": "365fad68ea7864a0551d43768379d615",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u128_lr0.001_dr0.1_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 128,
+      "lr": 0.001,
+      "dropout": 0.1
+    },
+    "cap": 60,
+    "train_seconds": 73.5,
+    "finished_utc": "2026-11-09T18:15:49+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u128_lr0.001_dr0.2_cap60__s42.json",
+    "md5": "9a62670a2495fe001e47e4bed47ae33e",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u128_lr0.001_dr0.2_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 128,
+      "lr": 0.001,
+      "dropout": 0.2
+    },
+    "cap": 60,
+    "train_seconds": 85.1,
+    "finished_utc": "2026-11-09T18:17:14+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u128_lr0.001_dr0.3_cap60__s42.json",
+    "md5": "7f6146758bb2fcca98a38095e190dc3a",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u128_lr0.001_dr0.3_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 128,
+      "lr": 0.001,
+      "dropout": 0.3
+    },
+    "cap": 60,
+    "train_seconds": 84.1,
+    "finished_utc": "2026-11-09T18:18:38+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u128_lr0.003_dr0.1_cap60__s42.json",
+    "md5": "6888c8f323b9364c4d2d1ea71e674c04",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u128_lr0.003_dr0.1_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 128,
+      "lr": 0.003,
+      "dropout": 0.1
+    },
+    "cap": 60,
+    "train_seconds": 90.1,
+    "finished_utc": "2026-11-09T18:20:09+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u128_lr0.003_dr0.2_cap60__s42.json",
+    "md5": "f0e8f481e3d7695a7623e9e21da4f22d",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u128_lr0.003_dr0.2_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 128,
+      "lr": 0.003,
+      "dropout": 0.2
+    },
+    "cap": 60,
+    "train_seconds": 92.0,
+    "finished_utc": "2026-11-09T18:21:41+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u128_lr0.003_dr0.3_cap60__s42.json",
+    "md5": "1512dc1d45f27872b41ada4820d3e1cc",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u128_lr0.003_dr0.3_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 128,
+      "lr": 0.003,
+      "dropout": 0.3
+    },
+    "cap": 60,
+    "train_seconds": 95.7,
+    "finished_utc": "2026-11-09T18:23:16+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u32_lr0.0003_dr0.1_cap60__s42.json",
+    "md5": "57c62b0819dd09d58c0117d105d9859d",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u32_lr0.0003_dr0.1_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 32,
+      "lr": 0.0003,
+      "dropout": 0.1
+    },
+    "cap": 60,
+    "train_seconds": 186.3,
+    "finished_utc": "2026-11-09T17:30:26+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u32_lr0.0003_dr0.2_cap60__s42.json",
+    "md5": "3fe24b28aebc01ddc2db7106ff61dfaf",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u32_lr0.0003_dr0.2_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 32,
+      "lr": 0.0003,
+      "dropout": 0.2
+    },
+    "cap": 60,
+    "train_seconds": 202.6,
+    "finished_utc": "2026-11-09T17:33:48+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u32_lr0.0003_dr0.3_cap60__s42.json",
+    "md5": "542d0e26adf3588c1663e3bddb3c2030",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u32_lr0.0003_dr0.3_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 32,
+      "lr": 0.0003,
+      "dropout": 0.3
+    },
+    "cap": 60,
+    "train_seconds": 210.9,
+    "finished_utc": "2026-11-09T17:37:19+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u32_lr0.001_dr0.1_cap60__s42.json",
+    "md5": "98020acff53b5a8269d3e5888a3b4123",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u32_lr0.001_dr0.1_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 32,
+      "lr": 0.001,
+      "dropout": 0.1
+    },
+    "cap": 60,
+    "train_seconds": 164.2,
+    "finished_utc": "2026-11-09T17:40:03+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u32_lr0.001_dr0.2_cap60__s123.json",
+    "md5": "4d2b389d5cefc6e73014e0d45d131631",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u32_lr0.001_dr0.2_cap60__s123",
+    "seed": 123,
+    "config": {
+      "units": 32,
+      "lr": 0.001,
+      "dropout": 0.2
+    },
+    "cap": 60,
+    "train_seconds": 188.8,
+    "finished_utc": "2026-11-09T18:26:33+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u32_lr0.001_dr0.2_cap60__s42.json",
+    "md5": "da0e24f07d407ff1326bdd3b5b31bcc8",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u32_lr0.001_dr0.2_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 32,
+      "lr": 0.001,
+      "dropout": 0.2
+    },
+    "cap": 60,
+    "train_seconds": 152.7,
+    "finished_utc": "2026-11-09T17:42:36+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u32_lr0.001_dr0.2_cap60__s7.json",
+    "md5": "ad3692d439a300d054c84764dbf5987c",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u32_lr0.001_dr0.2_cap60__s7",
+    "seed": 7,
+    "config": {
+      "units": 32,
+      "lr": 0.001,
+      "dropout": 0.2
+    },
+    "cap": 60,
+    "train_seconds": 132.2,
+    "finished_utc": "2026-11-09T18:28:45+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u32_lr0.001_dr0.3_cap60__s42.json",
+    "md5": "e4ce8e19908c3c6a52aaa5182e55bac6",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u32_lr0.001_dr0.3_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 32,
+      "lr": 0.001,
+      "dropout": 0.3
+    },
+    "cap": 60,
+    "train_seconds": 149.2,
+    "finished_utc": "2026-11-09T17:45:05+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u32_lr0.003_dr0.1_cap60__s42.json",
+    "md5": "e8042e9de7a97a582817e4673a4f5785",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u32_lr0.003_dr0.1_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 32,
+      "lr": 0.003,
+      "dropout": 0.1
+    },
+    "cap": 60,
+    "train_seconds": 98.4,
+    "finished_utc": "2026-11-09T17:46:44+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u32_lr0.003_dr0.2_cap60__s42.json",
+    "md5": "525e30f0a0c67e981402f62a609d915a",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u32_lr0.003_dr0.2_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 32,
+      "lr": 0.003,
+      "dropout": 0.2
+    },
+    "cap": 60,
+    "train_seconds": 119.6,
+    "finished_utc": "2026-11-09T17:48:44+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u32_lr0.003_dr0.3_cap60__s123.json",
+    "md5": "b151a323775e1c7e8ac2fb47493c9f48",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u32_lr0.003_dr0.3_cap60__s123",
+    "seed": 123,
+    "config": {
+      "units": 32,
+      "lr": 0.003,
+      "dropout": 0.3
+    },
+    "cap": 60,
+    "train_seconds": 99.1,
+    "finished_utc": "2026-11-09T18:34:27+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u32_lr0.003_dr0.3_cap60__s2024.json",
+    "md5": "76836b60ae1c5bc8d85170d322528cc6",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u32_lr0.003_dr0.3_cap60__s2024",
+    "seed": 2024,
+    "config": {
+      "units": 32,
+      "lr": 0.003,
+      "dropout": 0.3
+    },
+    "cap": 60,
+    "train_seconds": 108.6,
+    "finished_utc": "2026-11-09T18:38:11+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u32_lr0.003_dr0.3_cap60__s42.json",
+    "md5": "a730fdc4c68d16b9bc7ee511ca47f478",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u32_lr0.003_dr0.3_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 32,
+      "lr": 0.003,
+      "dropout": 0.3
+    },
+    "cap": 60,
+    "train_seconds": 120.8,
+    "finished_utc": "2026-11-09T17:50:44+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u32_lr0.003_dr0.3_cap60__s7.json",
+    "md5": "19fdc619947a6c4bd3e89354480c35c9",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u32_lr0.003_dr0.3_cap60__s7",
+    "seed": 7,
+    "config": {
+      "units": 32,
+      "lr": 0.003,
+      "dropout": 0.3
+    },
+    "cap": 60,
+    "train_seconds": 110.0,
+    "finished_utc": "2026-11-09T18:36:17+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u32_lr0.003_dr0.3_cap60__s99.json",
+    "md5": "24456f6337d693543ddebc2feb01af91",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u32_lr0.003_dr0.3_cap60__s99",
+    "seed": 99,
+    "config": {
+      "units": 32,
+      "lr": 0.003,
+      "dropout": 0.3
+    },
+    "cap": 60,
+    "train_seconds": 105.7,
+    "finished_utc": "2026-11-09T18:39:57+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u64_lr0.0003_dr0.1_cap60__s42.json",
+    "md5": "6d940781ff7e6cd760cfa0e6987112bb",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u64_lr0.0003_dr0.1_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 64,
+      "lr": 0.0003,
+      "dropout": 0.1
+    },
+    "cap": 60,
+    "train_seconds": 187.6,
+    "finished_utc": "2026-11-09T17:53:52+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u64_lr0.0003_dr0.2_cap60__s42.json",
+    "md5": "bd7b9da792dac0aea9e8ceb9d4af1397",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u64_lr0.0003_dr0.2_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 64,
+      "lr": 0.0003,
+      "dropout": 0.2
+    },
+    "cap": 60,
+    "train_seconds": 211.8,
+    "finished_utc": "2026-11-09T17:57:24+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u64_lr0.0003_dr0.3_cap60__s42.json",
+    "md5": "67fc7c56c09d604e3b4f86a54d3c8b74",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u64_lr0.0003_dr0.3_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 64,
+      "lr": 0.0003,
+      "dropout": 0.3
+    },
+    "cap": 60,
+    "train_seconds": 174.2,
+    "finished_utc": "2026-11-09T18:00:18+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u64_lr0.001_dr0.1_cap60__s42.json",
+    "md5": "0cbcf382e1dde374ce1834621a738e48",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u64_lr0.001_dr0.1_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 64,
+      "lr": 0.001,
+      "dropout": 0.1
+    },
+    "cap": 60,
+    "train_seconds": 87.9,
+    "finished_utc": "2026-11-09T18:01:46+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u64_lr0.001_dr0.2_cap30__s42.json",
+    "md5": "7cdc4cf9b9e7668a23e03e07e9249e28",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u64_lr0.001_dr0.2_cap30__s42",
+    "seed": 42,
+    "config": {
+      "units": 64,
+      "lr": 0.001,
+      "dropout": 0.2
+    },
+    "cap": 30,
+    "train_seconds": 121.6,
+    "finished_utc": "2026-11-09T17:26:24+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u64_lr0.001_dr0.2_cap60__s123.json",
+    "md5": "9b9da18eb43476b8a3bf59e80d243e32",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u64_lr0.001_dr0.2_cap60__s123",
+    "seed": 123,
+    "config": {
+      "units": 64,
+      "lr": 0.001,
+      "dropout": 0.2
+    },
+    "cap": 60,
+    "train_seconds": 122.7,
+    "finished_utc": "2026-11-09T18:30:48+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u64_lr0.001_dr0.2_cap60__s2024.json",
+    "md5": "6a1e2d8783616410ff977b0f8c5fee00",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u64_lr0.001_dr0.2_cap60__s2024",
+    "seed": 2024,
+    "config": {
+      "units": 64,
+      "lr": 0.001,
+      "dropout": 0.2
+    },
+    "cap": 60,
+    "train_seconds": 120.3,
+    "finished_utc": "2026-11-09T18:41:57+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u64_lr0.001_dr0.2_cap60__s42.json",
+    "md5": "8f64456e2dc8a3ab749cf9d05e156415",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u64_lr0.001_dr0.2_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 64,
+      "lr": 0.001,
+      "dropout": 0.2
+    },
+    "cap": 60,
+    "train_seconds": 95.5,
+    "finished_utc": "2026-11-09T18:03:22+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u64_lr0.001_dr0.2_cap60__s7.json",
+    "md5": "489449a8c172a99caeb55ae21bf920c7",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u64_lr0.001_dr0.2_cap60__s7",
+    "seed": 7,
+    "config": {
+      "units": 64,
+      "lr": 0.001,
+      "dropout": 0.2
+    },
+    "cap": 60,
+    "train_seconds": 120.3,
+    "finished_utc": "2026-11-09T18:32:48+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u64_lr0.001_dr0.2_cap60__s99.json",
+    "md5": "86687c094858e2e91b4cd45f17be8dce",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u64_lr0.001_dr0.2_cap60__s99",
+    "seed": 99,
+    "config": {
+      "units": 64,
+      "lr": 0.001,
+      "dropout": 0.2
+    },
+    "cap": 60,
+    "train_seconds": 118.1,
+    "finished_utc": "2026-11-09T18:43:56+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u64_lr0.001_dr0.3_cap60__s42.json",
+    "md5": "25f37b6acbfab2cbedf74db3d865c28f",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u64_lr0.001_dr0.3_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 64,
+      "lr": 0.001,
+      "dropout": 0.3
+    },
+    "cap": 60,
+    "train_seconds": 81.5,
+    "finished_utc": "2026-11-09T18:04:43+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u64_lr0.003_dr0.1_cap60__s42.json",
+    "md5": "93a9a953af2956ccdf8660674361042c",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u64_lr0.003_dr0.1_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 64,
+      "lr": 0.003,
+      "dropout": 0.1
+    },
+    "cap": 60,
+    "train_seconds": 75.6,
+    "finished_utc": "2026-11-09T18:05:59+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u64_lr0.003_dr0.2_cap60__s42.json",
+    "md5": "f37a0fe6d81873d553aa99f41e928edf",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u64_lr0.003_dr0.2_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 64,
+      "lr": 0.003,
+      "dropout": 0.2
+    },
+    "cap": 60,
+    "train_seconds": 73.6,
+    "finished_utc": "2026-11-09T18:07:13+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bilstm_attn__u64_lr0.003_dr0.3_cap60__s42.json",
+    "md5": "b20fdcb4a5bd1eec0fee17ced85ae4a2",
+    "model": "bilstm_attn",
+    "tag": "bilstm_attn__u64_lr0.003_dr0.3_cap60__s42",
+    "seed": 42,
+    "config": {
+      "units": 64,
+      "lr": 0.003,
+      "dropout": 0.3
+    },
+    "cap": 60,
+    "train_seconds": 81.4,
+    "finished_utc": "2026-11-09T18:08:34+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bulstm__lr0.0003_cap100__s42.json",
+    "md5": "b5b9a45d44e72ffd900eaa5c4612eb85",
+    "model": "bulstm",
+    "tag": "bulstm__lr0.0003_cap100__s42",
+    "seed": 42,
+    "config": {
+      "lr": 0.0003
+    },
+    "cap": 100,
+    "train_seconds": 271.6,
+    "finished_utc": "2026-11-09T23:55:57+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bulstm__lr0.001_cap100__s123.json",
+    "md5": "03b67551f9209cbacb419572061e9227",
+    "model": "bulstm",
+    "tag": "bulstm__lr0.001_cap100__s123",
+    "seed": 123,
+    "config": {
+      "lr": 0.001
+    },
+    "cap": 100,
+    "train_seconds": 160.6,
+    "finished_utc": "2026-11-10T00:04:59+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bulstm__lr0.001_cap100__s2024.json",
+    "md5": "e4b97d7b4032547a95f640beecad9955",
+    "model": "bulstm",
+    "tag": "bulstm__lr0.001_cap100__s2024",
+    "seed": 2024,
+    "config": {
+      "lr": 0.001
+    },
+    "cap": 100,
+    "train_seconds": 163.6,
+    "finished_utc": "2026-11-10T00:10:49+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bulstm__lr0.001_cap100__s42.json",
+    "md5": "9c29b2e93c94d3ae215bd2c8b3e90b8e",
+    "model": "bulstm",
+    "tag": "bulstm__lr0.001_cap100__s42",
+    "seed": 42,
+    "config": {
+      "lr": 0.001
+    },
+    "cap": 100,
+    "train_seconds": 153.5,
+    "finished_utc": "2026-11-09T23:58:31+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bulstm__lr0.001_cap100__s7.json",
+    "md5": "10de8f3c2f77aa99fa93510e5596d6e4",
+    "model": "bulstm",
+    "tag": "bulstm__lr0.001_cap100__s7",
+    "seed": 7,
+    "config": {
+      "lr": 0.001
+    },
+    "cap": 100,
+    "train_seconds": 186.7,
+    "finished_utc": "2026-11-10T00:08:06+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bulstm__lr0.001_cap100__s99.json",
+    "md5": "c2d56059f12e2532f35a522d1c4e81c4",
+    "model": "bulstm",
+    "tag": "bulstm__lr0.001_cap100__s99",
+    "seed": 99,
+    "config": {
+      "lr": 0.001
+    },
+    "cap": 100,
+    "train_seconds": 137.3,
+    "finished_utc": "2026-11-10T00:13:07+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bulstm__lr0.003_cap100__s123.json",
+    "md5": "4b760857bd3c4bb1d965eae8de0ceab2",
+    "model": "bulstm",
+    "tag": "bulstm__lr0.003_cap100__s123",
+    "seed": 123,
+    "config": {
+      "lr": 0.003
+    },
+    "cap": 100,
+    "train_seconds": 147.5,
+    "finished_utc": "2026-11-10T00:15:34+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bulstm__lr0.003_cap100__s2024.json",
+    "md5": "faa9714f3dfe3e5fedd0b5226f9f1b74",
+    "model": "bulstm",
+    "tag": "bulstm__lr0.003_cap100__s2024",
+    "seed": 2024,
+    "config": {
+      "lr": 0.003
+    },
+    "cap": 100,
+    "train_seconds": 158.4,
+    "finished_utc": "2026-11-10T00:20:50+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bulstm__lr0.003_cap100__s42.json",
+    "md5": "39d2475f7031261f4f0237c0f9d977e4",
+    "model": "bulstm",
+    "tag": "bulstm__lr0.003_cap100__s42",
+    "seed": 42,
+    "config": {
+      "lr": 0.003
+    },
+    "cap": 100,
+    "train_seconds": 227.7,
+    "finished_utc": "2026-11-10T00:02:18+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bulstm__lr0.003_cap100__s7.json",
+    "md5": "7958aced1c674632c84a20447fe08315",
+    "model": "bulstm",
+    "tag": "bulstm__lr0.003_cap100__s7",
+    "seed": 7,
+    "config": {
+      "lr": 0.003
+    },
+    "cap": 100,
+    "train_seconds": 157.3,
+    "finished_utc": "2026-11-10T00:18:12+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bulstm__lr0.003_cap100__s99.json",
+    "md5": "586375e7a35f7587ee811cd4e6ad935a",
+    "model": "bulstm",
+    "tag": "bulstm__lr0.003_cap100__s99",
+    "seed": 99,
+    "config": {
+      "lr": 0.003
+    },
+    "cap": 100,
+    "train_seconds": 134.6,
+    "finished_utc": "2026-11-10T00:23:05+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bulstm_attn__lr0.0003_cap100__s42.json",
+    "md5": "4db4da06ea8060340301b96bc49177cf",
+    "model": "bulstm_attn",
+    "tag": "bulstm_attn__lr0.0003_cap100__s42",
+    "seed": 42,
+    "config": {
+      "lr": 0.0003
+    },
+    "cap": 100,
+    "train_seconds": 193.2,
+    "finished_utc": "2026-11-10T00:26:18+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bulstm_attn__lr0.001_cap100__s123.json",
+    "md5": "f047c2b79c16409eb8291986b753bf16",
+    "model": "bulstm_attn",
+    "tag": "bulstm_attn__lr0.001_cap100__s123",
+    "seed": 123,
+    "config": {
+      "lr": 0.001
+    },
+    "cap": 100,
+    "train_seconds": 281.6,
+    "finished_utc": "2026-11-10T00:40:44+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bulstm_attn__lr0.001_cap100__s2024.json",
+    "md5": "2cec89a22e554d535347b104865e5da1",
+    "model": "bulstm_attn",
+    "tag": "bulstm_attn__lr0.001_cap100__s2024",
+    "seed": 2024,
+    "config": {
+      "lr": 0.001
+    },
+    "cap": 100,
+    "train_seconds": 194.0,
+    "finished_utc": "2026-11-10T00:47:48+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bulstm_attn__lr0.001_cap100__s42.json",
+    "md5": "9f1a2ee562383fd2916cc95a6010071c",
+    "model": "bulstm_attn",
+    "tag": "bulstm_attn__lr0.001_cap100__s42",
+    "seed": 42,
+    "config": {
+      "lr": 0.001
+    },
+    "cap": 100,
+    "train_seconds": 265.7,
+    "finished_utc": "2026-11-10T00:30:44+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bulstm_attn__lr0.001_cap100__s7.json",
+    "md5": "d1a44b36607839952135cdedee04551d",
+    "model": "bulstm_attn",
+    "tag": "bulstm_attn__lr0.001_cap100__s7",
+    "seed": 7,
+    "config": {
+      "lr": 0.001
+    },
+    "cap": 100,
+    "train_seconds": 229.7,
+    "finished_utc": "2026-11-10T00:44:33+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bulstm_attn__lr0.001_cap100__s99.json",
+    "md5": "9bd103facfa68a1e1c0fac9f43fe52e8",
+    "model": "bulstm_attn",
+    "tag": "bulstm_attn__lr0.001_cap100__s99",
+    "seed": 99,
+    "config": {
+      "lr": 0.001
+    },
+    "cap": 100,
+    "train_seconds": 329.9,
+    "finished_utc": "2026-11-10T00:53:17+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bulstm_attn__lr0.003_cap100__s123.json",
+    "md5": "72715454769e2e9c781211f4ccebb97c",
+    "model": "bulstm_attn",
+    "tag": "bulstm_attn__lr0.003_cap100__s123",
+    "seed": 123,
+    "config": {
+      "lr": 0.003
+    },
+    "cap": 100,
+    "train_seconds": 256.5,
+    "finished_utc": "2026-11-10T00:57:34+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bulstm_attn__lr0.003_cap100__s2024.json",
+    "md5": "5d233a75d0e02a9ecb5179c001453b86",
+    "model": "bulstm_attn",
+    "tag": "bulstm_attn__lr0.003_cap100__s2024",
+    "seed": 2024,
+    "config": {
+      "lr": 0.003
+    },
+    "cap": 100,
+    "train_seconds": 290.3,
+    "finished_utc": "2026-11-10T01:06:41+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bulstm_attn__lr0.003_cap100__s42.json",
+    "md5": "48dc877d956b460ac7d5653e323ed19e",
+    "model": "bulstm_attn",
+    "tag": "bulstm_attn__lr0.003_cap100__s42",
+    "seed": 42,
+    "config": {
+      "lr": 0.003
+    },
+    "cap": 100,
+    "train_seconds": 318.3,
+    "finished_utc": "2026-11-10T00:36:02+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bulstm_attn__lr0.003_cap100__s7.json",
+    "md5": "6e1d2f3e1d836ce414b0146db76616d7",
+    "model": "bulstm_attn",
+    "tag": "bulstm_attn__lr0.003_cap100__s7",
+    "seed": 7,
+    "config": {
+      "lr": 0.003
+    },
+    "cap": 100,
+    "train_seconds": 257.0,
+    "finished_utc": "2026-11-10T01:01:51+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/bulstm_attn__lr0.003_cap100__s99.json",
+    "md5": "f27cb2c9092aaf1003d11d229048bc2e",
+    "model": "bulstm_attn",
+    "tag": "bulstm_attn__lr0.003_cap100__s99",
+    "seed": 99,
+    "config": {
+      "lr": 0.003
+    },
+    "cap": 100,
+    "train_seconds": 306.1,
+    "finished_utc": "2026-11-10T01:11:48+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/prob_bilstm_attn__lr0.0003_cap100__s42.json",
+    "md5": "df62c9037892a27cf50ba1dd7ff46c22",
+    "model": "prob_bilstm_attn",
+    "tag": "prob_bilstm_attn__lr0.0003_cap100__s42",
+    "seed": 42,
+    "config": {
+      "lr": 0.0003
+    },
+    "cap": 100,
+    "train_seconds": 215.0,
+    "finished_utc": "2026-11-10T01:15:23+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/prob_bilstm_attn__lr0.001_cap100__s123.json",
+    "md5": "46f56f220cdfc1fcfc2aaa04b7a34d5f",
+    "model": "prob_bilstm_attn",
+    "tag": "prob_bilstm_attn__lr0.001_cap100__s123",
+    "seed": 123,
+    "config": {
+      "lr": 0.001
+    },
+    "cap": 100,
+    "train_seconds": 134.7,
+    "finished_utc": "2026-11-10T01:21:35+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/prob_bilstm_attn__lr0.001_cap100__s2024.json",
+    "md5": "798fa7fb8e251413031009184c2bd5c6",
+    "model": "prob_bilstm_attn",
+    "tag": "prob_bilstm_attn__lr0.001_cap100__s2024",
+    "seed": 2024,
+    "config": {
+      "lr": 0.001
+    },
+    "cap": 100,
+    "train_seconds": 95.6,
+    "finished_utc": "2026-11-10T01:26:15+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/prob_bilstm_attn__lr0.001_cap100__s42.json",
+    "md5": "0713f76c4445b43dde516ec49ab6f4c7",
+    "model": "prob_bilstm_attn",
+    "tag": "prob_bilstm_attn__lr0.001_cap100__s42",
+    "seed": 42,
+    "config": {
+      "lr": 0.001
+    },
+    "cap": 100,
+    "train_seconds": 148.7,
+    "finished_utc": "2026-11-10T01:17:52+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/prob_bilstm_attn__lr0.001_cap100__s7.json",
+    "md5": "7540883effc6e62bbf88642217838b2c",
+    "model": "prob_bilstm_attn",
+    "tag": "prob_bilstm_attn__lr0.001_cap100__s7",
+    "seed": 7,
+    "config": {
+      "lr": 0.001
+    },
+    "cap": 100,
+    "train_seconds": 184.4,
+    "finished_utc": "2026-11-10T01:24:39+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/prob_bilstm_attn__lr0.001_cap100__s99.json",
+    "md5": "302350c62ebea88eab7be23f0cd2315f",
+    "model": "prob_bilstm_attn",
+    "tag": "prob_bilstm_attn__lr0.001_cap100__s99",
+    "seed": 99,
+    "config": {
+      "lr": 0.001
+    },
+    "cap": 100,
+    "train_seconds": 88.6,
+    "finished_utc": "2026-11-10T01:27:44+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/prob_bilstm_attn__lr0.003_cap100__s42.json",
+    "md5": "ad4a633e41fdf817a0629272573fdb34",
+    "model": "prob_bilstm_attn",
+    "tag": "prob_bilstm_attn__lr0.003_cap100__s42",
+    "seed": 42,
+    "config": {
+      "lr": 0.003
+    },
+    "cap": 100,
+    "train_seconds": 88.4,
+    "finished_utc": "2026-11-10T01:19:20+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/transformer__lr0.0003_cap100__s42.json",
+    "md5": "293dd496781d33398b57a833bd7f5206",
+    "model": "transformer",
+    "tag": "transformer__lr0.0003_cap100__s42",
+    "seed": 42,
+    "config": {
+      "lr": 0.0003
+    },
+    "cap": 100,
+    "train_seconds": 624.0,
+    "finished_utc": "2026-11-09T23:04:41+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/transformer__lr0.001_cap100__s123.json",
+    "md5": "9963a11c1dc7e38347a577db77a4def8",
+    "model": "transformer",
+    "tag": "transformer__lr0.001_cap100__s123",
+    "seed": 123,
+    "config": {
+      "lr": 0.001
+    },
+    "cap": 100,
+    "train_seconds": 412.7,
+    "finished_utc": "2026-11-09T23:20:42+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/transformer__lr0.001_cap100__s2024.json",
+    "md5": "df58ce4cc4df559ad92004f48120716f",
+    "model": "transformer",
+    "tag": "transformer__lr0.001_cap100__s2024",
+    "seed": 2024,
+    "config": {
+      "lr": 0.001
+    },
+    "cap": 100,
+    "train_seconds": 122.0,
+    "finished_utc": "2026-11-09T23:27:43+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/transformer__lr0.001_cap100__s42.json",
+    "md5": "305eb082072e6e5058c01575b47687f7",
+    "model": "transformer",
+    "tag": "transformer__lr0.001_cap100__s42",
+    "seed": 42,
+    "config": {
+      "lr": 0.001
+    },
+    "cap": 100,
+    "train_seconds": 339.7,
+    "finished_utc": "2026-11-09T23:10:21+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/transformer__lr0.001_cap100__s7.json",
+    "md5": "cacf32f9f61e0f946aeb1b9374bfe8fe",
+    "model": "transformer",
+    "tag": "transformer__lr0.001_cap100__s7",
+    "seed": 7,
+    "config": {
+      "lr": 0.001
+    },
+    "cap": 100,
+    "train_seconds": 299.7,
+    "finished_utc": "2026-11-09T23:25:41+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/transformer__lr0.001_cap100__s99.json",
+    "md5": "761ccee3569a4ae6d2960fc7b0814130",
+    "model": "transformer",
+    "tag": "transformer__lr0.001_cap100__s99",
+    "seed": 99,
+    "config": {
+      "lr": 0.001
+    },
+    "cap": 100,
+    "train_seconds": 402.6,
+    "finished_utc": "2026-11-09T23:34:26+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/transformer__lr0.003_cap100__s123.json",
+    "md5": "effb2016f75639145204b14aba65ed5c",
+    "model": "transformer",
+    "tag": "transformer__lr0.003_cap100__s123",
+    "seed": 123,
+    "config": {
+      "lr": 0.003
+    },
+    "cap": 100,
+    "train_seconds": 241.4,
+    "finished_utc": "2026-11-09T23:38:27+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/transformer__lr0.003_cap100__s2024.json",
+    "md5": "9f889e6eebf4d6914b2c2dc20b2cd50f",
+    "model": "transformer",
+    "tag": "transformer__lr0.003_cap100__s2024",
+    "seed": 2024,
+    "config": {
+      "lr": 0.003
+    },
+    "cap": 100,
+    "train_seconds": 210.3,
+    "finished_utc": "2026-11-09T23:46:35+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/transformer__lr0.003_cap100__s42.json",
+    "md5": "41f5147e2df20a3cd5c60ce9ee6142c7",
+    "model": "transformer",
+    "tag": "transformer__lr0.003_cap100__s42",
+    "seed": 42,
+    "config": {
+      "lr": 0.003
+    },
+    "cap": 100,
+    "train_seconds": 207.8,
+    "finished_utc": "2026-11-09T23:13:49+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/transformer__lr0.003_cap100__s7.json",
+    "md5": "47b16ee11eab25f630e5889b8b2ba100",
+    "model": "transformer",
+    "tag": "transformer__lr0.003_cap100__s7",
+    "seed": 7,
+    "config": {
+      "lr": 0.003
+    },
+    "cap": 100,
+    "train_seconds": 277.4,
+    "finished_utc": "2026-11-09T23:43:05+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/transformer__lr0.003_cap100__s99.json",
+    "md5": "c1d7bd80ca76d789425fc876d6360a8d",
+    "model": "transformer",
+    "tag": "transformer__lr0.003_cap100__s99",
+    "seed": 99,
+    "config": {
+      "lr": 0.003
+    },
+    "cap": 100,
+    "train_seconds": 289.9,
+    "finished_utc": "2026-11-09T23:51:25+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n100_lr0.03_d4__s123.json",
+    "md5": "ff0e05014341586e43994061dbf255e1",
+    "model": "xgboost",
+    "tag": "xgboost__n100_lr0.03_d4__s123",
+    "seed": 123,
+    "config": {
+      "n": 100,
+      "lr": 0.03,
+      "depth": 4
+    },
+    "cap": null,
+    "train_seconds": 0.1,
+    "finished_utc": "2026-11-09T18:23:24+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n100_lr0.03_d4__s42.json",
+    "md5": "4c0676a0b42a5989cb8eb5d67158e19e",
+    "model": "xgboost",
+    "tag": "xgboost__n100_lr0.03_d4__s42",
+    "seed": 42,
+    "config": {
+      "n": 100,
+      "lr": 0.03,
+      "depth": 4
+    },
+    "cap": null,
+    "train_seconds": 0.3,
+    "finished_utc": "2026-11-09T17:27:06+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n100_lr0.03_d4__s7.json",
+    "md5": "fc7a03c9d029b437ed9c46672881dfbc",
+    "model": "xgboost",
+    "tag": "xgboost__n100_lr0.03_d4__s7",
+    "seed": 7,
+    "config": {
+      "n": 100,
+      "lr": 0.03,
+      "depth": 4
+    },
+    "cap": null,
+    "train_seconds": 0.1,
+    "finished_utc": "2026-11-09T18:23:24+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n100_lr0.03_d6__s42.json",
+    "md5": "c2f093d0bcbec0625c525652cc7630e6",
+    "model": "xgboost",
+    "tag": "xgboost__n100_lr0.03_d6__s42",
+    "seed": 42,
+    "config": {
+      "n": 100,
+      "lr": 0.03,
+      "depth": 6
+    },
+    "cap": null,
+    "train_seconds": 0.1,
+    "finished_utc": "2026-11-09T17:27:06+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n100_lr0.03_d8__s42.json",
+    "md5": "94b304054ee000919665b21b6eb3f839",
+    "model": "xgboost",
+    "tag": "xgboost__n100_lr0.03_d8__s42",
+    "seed": 42,
+    "config": {
+      "n": 100,
+      "lr": 0.03,
+      "depth": 8
+    },
+    "cap": null,
+    "train_seconds": 0.3,
+    "finished_utc": "2026-11-09T17:27:06+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n100_lr0.05_d4__s42.json",
+    "md5": "e5e18e863736a95ee39b9c9d4a5d63ef",
+    "model": "xgboost",
+    "tag": "xgboost__n100_lr0.05_d4__s42",
+    "seed": 42,
+    "config": {
+      "n": 100,
+      "lr": 0.05,
+      "depth": 4
+    },
+    "cap": null,
+    "train_seconds": 0.1,
+    "finished_utc": "2026-11-09T17:27:06+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n100_lr0.05_d6__s123.json",
+    "md5": "ee47d16b8d9ecfb5404f5c50d0312e8a",
+    "model": "xgboost",
+    "tag": "xgboost__n100_lr0.05_d6__s123",
+    "seed": 123,
+    "config": {
+      "n": 100,
+      "lr": 0.05,
+      "depth": 6
+    },
+    "cap": null,
+    "train_seconds": 0.1,
+    "finished_utc": "2026-11-09T18:36:22+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n100_lr0.05_d6__s2024.json",
+    "md5": "bf4e25fbd1f062efc7d85593373ea67b",
+    "model": "xgboost",
+    "tag": "xgboost__n100_lr0.05_d6__s2024",
+    "seed": 2024,
+    "config": {
+      "n": 100,
+      "lr": 0.05,
+      "depth": 6
+    },
+    "cap": null,
+    "train_seconds": 0.1,
+    "finished_utc": "2026-11-09T18:36:23+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n100_lr0.05_d6__s42.json",
+    "md5": "b258fd051982498ae43d47f2597ae03c",
+    "model": "xgboost",
+    "tag": "xgboost__n100_lr0.05_d6__s42",
+    "seed": 42,
+    "config": {
+      "n": 100,
+      "lr": 0.05,
+      "depth": 6
+    },
+    "cap": null,
+    "train_seconds": 0.2,
+    "finished_utc": "2026-11-09T17:26:25+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n100_lr0.05_d6__s7.json",
+    "md5": "369c7900a56c77d79533eb40e702f1cd",
+    "model": "xgboost",
+    "tag": "xgboost__n100_lr0.05_d6__s7",
+    "seed": 7,
+    "config": {
+      "n": 100,
+      "lr": 0.05,
+      "depth": 6
+    },
+    "cap": null,
+    "train_seconds": 0.1,
+    "finished_utc": "2026-11-09T18:36:22+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n100_lr0.05_d6__s99.json",
+    "md5": "36da9dd3906311f3aa656a56557098b6",
+    "model": "xgboost",
+    "tag": "xgboost__n100_lr0.05_d6__s99",
+    "seed": 99,
+    "config": {
+      "n": 100,
+      "lr": 0.05,
+      "depth": 6
+    },
+    "cap": null,
+    "train_seconds": 0.1,
+    "finished_utc": "2026-11-09T18:36:23+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n100_lr0.05_d8__s42.json",
+    "md5": "b24bcba35fb8a5175e6c55b35bbe2c10",
+    "model": "xgboost",
+    "tag": "xgboost__n100_lr0.05_d8__s42",
+    "seed": 42,
+    "config": {
+      "n": 100,
+      "lr": 0.05,
+      "depth": 8
+    },
+    "cap": null,
+    "train_seconds": 0.3,
+    "finished_utc": "2026-11-09T17:27:07+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n100_lr0.1_d4__s42.json",
+    "md5": "c68065aa91d10638763642ce5dd7e2fd",
+    "model": "xgboost",
+    "tag": "xgboost__n100_lr0.1_d4__s42",
+    "seed": 42,
+    "config": {
+      "n": 100,
+      "lr": 0.1,
+      "depth": 4
+    },
+    "cap": null,
+    "train_seconds": 0.1,
+    "finished_utc": "2026-11-09T17:27:07+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n100_lr0.1_d6__s42.json",
+    "md5": "54196c2f96ef09881fd9a38636567395",
+    "model": "xgboost",
+    "tag": "xgboost__n100_lr0.1_d6__s42",
+    "seed": 42,
+    "config": {
+      "n": 100,
+      "lr": 0.1,
+      "depth": 6
+    },
+    "cap": null,
+    "train_seconds": 0.1,
+    "finished_utc": "2026-11-09T17:27:07+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n100_lr0.1_d8__s42.json",
+    "md5": "a247b3bd6b22700614e10eda44a460d8",
+    "model": "xgboost",
+    "tag": "xgboost__n100_lr0.1_d8__s42",
+    "seed": 42,
+    "config": {
+      "n": 100,
+      "lr": 0.1,
+      "depth": 8
+    },
+    "cap": null,
+    "train_seconds": 0.3,
+    "finished_utc": "2026-11-09T17:27:07+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n300_lr0.03_d4__s123.json",
+    "md5": "3d50613aa5d83969fabc854e3ec4a611",
+    "model": "xgboost",
+    "tag": "xgboost__n300_lr0.03_d4__s123",
+    "seed": 123,
+    "config": {
+      "n": 300,
+      "lr": 0.03,
+      "depth": 4
+    },
+    "cap": null,
+    "train_seconds": 0.3,
+    "finished_utc": "2026-11-09T18:23:23+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n300_lr0.03_d4__s2024.json",
+    "md5": "bf329fde52b4584c325535517b1ae6ae",
+    "model": "xgboost",
+    "tag": "xgboost__n300_lr0.03_d4__s2024",
+    "seed": 2024,
+    "config": {
+      "n": 300,
+      "lr": 0.03,
+      "depth": 4
+    },
+    "cap": null,
+    "train_seconds": 0.4,
+    "finished_utc": "2026-11-09T18:36:22+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n300_lr0.03_d4__s42.json",
+    "md5": "422fa72e56a6b6bcfee55a8316634caa",
+    "model": "xgboost",
+    "tag": "xgboost__n300_lr0.03_d4__s42",
+    "seed": 42,
+    "config": {
+      "n": 300,
+      "lr": 0.03,
+      "depth": 4
+    },
+    "cap": null,
+    "train_seconds": 0.2,
+    "finished_utc": "2026-11-09T17:27:07+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n300_lr0.03_d4__s7.json",
+    "md5": "122c13507dbf84a262645bd8f3ec04b2",
+    "model": "xgboost",
+    "tag": "xgboost__n300_lr0.03_d4__s7",
+    "seed": 7,
+    "config": {
+      "n": 300,
+      "lr": 0.03,
+      "depth": 4
+    },
+    "cap": null,
+    "train_seconds": 0.3,
+    "finished_utc": "2026-11-09T18:23:24+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n300_lr0.03_d4__s99.json",
+    "md5": "d850cbdcb69ca2d4050dba419cc4b787",
+    "model": "xgboost",
+    "tag": "xgboost__n300_lr0.03_d4__s99",
+    "seed": 99,
+    "config": {
+      "n": 300,
+      "lr": 0.03,
+      "depth": 4
+    },
+    "cap": null,
+    "train_seconds": 0.2,
+    "finished_utc": "2026-11-09T18:36:22+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n300_lr0.03_d6__s42.json",
+    "md5": "f6fd1313de09dcead9dae12f85dca0b4",
+    "model": "xgboost",
+    "tag": "xgboost__n300_lr0.03_d6__s42",
+    "seed": 42,
+    "config": {
+      "n": 300,
+      "lr": 0.03,
+      "depth": 6
+    },
+    "cap": null,
+    "train_seconds": 0.4,
+    "finished_utc": "2026-11-09T17:27:08+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n300_lr0.03_d8__s42.json",
+    "md5": "eef9eefab762ecfc1a53ba938d9770ed",
+    "model": "xgboost",
+    "tag": "xgboost__n300_lr0.03_d8__s42",
+    "seed": 42,
+    "config": {
+      "n": 300,
+      "lr": 0.03,
+      "depth": 8
+    },
+    "cap": null,
+    "train_seconds": 0.8,
+    "finished_utc": "2026-11-09T17:27:09+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n300_lr0.05_d4__s42.json",
+    "md5": "c2cdc46e45aa607e4216c32977b99f9a",
+    "model": "xgboost",
+    "tag": "xgboost__n300_lr0.05_d4__s42",
+    "seed": 42,
+    "config": {
+      "n": 300,
+      "lr": 0.05,
+      "depth": 4
+    },
+    "cap": null,
+    "train_seconds": 0.2,
+    "finished_utc": "2026-11-09T17:27:09+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n300_lr0.05_d6__s42.json",
+    "md5": "61e99f6bcca84519c8c1ffd147c78823",
+    "model": "xgboost",
+    "tag": "xgboost__n300_lr0.05_d6__s42",
+    "seed": 42,
+    "config": {
+      "n": 300,
+      "lr": 0.05,
+      "depth": 6
+    },
+    "cap": null,
+    "train_seconds": 0.4,
+    "finished_utc": "2026-11-09T17:27:09+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n300_lr0.05_d8__s42.json",
+    "md5": "770d8027fa82cce9c87f0c9154c237d8",
+    "model": "xgboost",
+    "tag": "xgboost__n300_lr0.05_d8__s42",
+    "seed": 42,
+    "config": {
+      "n": 300,
+      "lr": 0.05,
+      "depth": 8
+    },
+    "cap": null,
+    "train_seconds": 0.7,
+    "finished_utc": "2026-11-09T17:27:10+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n300_lr0.1_d4__s42.json",
+    "md5": "f769dbf6c5eb55a9d070ea1c1157496a",
+    "model": "xgboost",
+    "tag": "xgboost__n300_lr0.1_d4__s42",
+    "seed": 42,
+    "config": {
+      "n": 300,
+      "lr": 0.1,
+      "depth": 4
+    },
+    "cap": null,
+    "train_seconds": 0.2,
+    "finished_utc": "2026-11-09T17:27:10+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n300_lr0.1_d6__s42.json",
+    "md5": "096d77fdbb42c0db62112cf20767eed5",
+    "model": "xgboost",
+    "tag": "xgboost__n300_lr0.1_d6__s42",
+    "seed": 42,
+    "config": {
+      "n": 300,
+      "lr": 0.1,
+      "depth": 6
+    },
+    "cap": null,
+    "train_seconds": 0.4,
+    "finished_utc": "2026-11-09T17:27:11+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n300_lr0.1_d8__s42.json",
+    "md5": "b658d6040db7df4049d6c524e0cd3143",
+    "model": "xgboost",
+    "tag": "xgboost__n300_lr0.1_d8__s42",
+    "seed": 42,
+    "config": {
+      "n": 300,
+      "lr": 0.1,
+      "depth": 8
+    },
+    "cap": null,
+    "train_seconds": 0.7,
+    "finished_utc": "2026-11-09T17:27:11+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n600_lr0.03_d4__s123.json",
+    "md5": "943e23dfe6c20dfec97c3cd8790ef0f4",
+    "model": "xgboost",
+    "tag": "xgboost__n600_lr0.03_d4__s123",
+    "seed": 123,
+    "config": {
+      "n": 600,
+      "lr": 0.03,
+      "depth": 4
+    },
+    "cap": null,
+    "train_seconds": 0.7,
+    "finished_utc": "2026-11-09T18:23:23+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n600_lr0.03_d4__s42.json",
+    "md5": "adce2c4bb6a6444a0339bc50921c72ef",
+    "model": "xgboost",
+    "tag": "xgboost__n600_lr0.03_d4__s42",
+    "seed": 42,
+    "config": {
+      "n": 600,
+      "lr": 0.03,
+      "depth": 4
+    },
+    "cap": null,
+    "train_seconds": 0.4,
+    "finished_utc": "2026-11-09T17:27:12+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n600_lr0.03_d4__s7.json",
+    "md5": "33338897b902ed8b7407a1432247291c",
+    "model": "xgboost",
+    "tag": "xgboost__n600_lr0.03_d4__s7",
+    "seed": 7,
+    "config": {
+      "n": 600,
+      "lr": 0.03,
+      "depth": 4
+    },
+    "cap": null,
+    "train_seconds": 0.6,
+    "finished_utc": "2026-11-09T18:23:23+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n600_lr0.03_d6__s42.json",
+    "md5": "a38cc2745c3c2c9151a38debf349f731",
+    "model": "xgboost",
+    "tag": "xgboost__n600_lr0.03_d6__s42",
+    "seed": 42,
+    "config": {
+      "n": 600,
+      "lr": 0.03,
+      "depth": 6
+    },
+    "cap": null,
+    "train_seconds": 0.7,
+    "finished_utc": "2026-11-09T17:27:13+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n600_lr0.03_d8__s42.json",
+    "md5": "cc9ac25a14f509d1798a93895ac4a5d5",
+    "model": "xgboost",
+    "tag": "xgboost__n600_lr0.03_d8__s42",
+    "seed": 42,
+    "config": {
+      "n": 600,
+      "lr": 0.03,
+      "depth": 8
+    },
+    "cap": null,
+    "train_seconds": 1.4,
+    "finished_utc": "2026-11-09T17:27:14+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n600_lr0.05_d4__s42.json",
+    "md5": "20d5e403aa49c67d3c828a8d37a5a5a0",
+    "model": "xgboost",
+    "tag": "xgboost__n600_lr0.05_d4__s42",
+    "seed": 42,
+    "config": {
+      "n": 600,
+      "lr": 0.05,
+      "depth": 4
+    },
+    "cap": null,
+    "train_seconds": 0.4,
+    "finished_utc": "2026-11-09T17:27:14+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n600_lr0.05_d6__s42.json",
+    "md5": "924f327a3bf9cbfacd3937d1dfbf7b03",
+    "model": "xgboost",
+    "tag": "xgboost__n600_lr0.05_d6__s42",
+    "seed": 42,
+    "config": {
+      "n": 600,
+      "lr": 0.05,
+      "depth": 6
+    },
+    "cap": null,
+    "train_seconds": 0.7,
+    "finished_utc": "2026-11-09T17:27:15+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n600_lr0.05_d8__s42.json",
+    "md5": "9ae87ded3d1a8a6be8c476afdea6267d",
+    "model": "xgboost",
+    "tag": "xgboost__n600_lr0.05_d8__s42",
+    "seed": 42,
+    "config": {
+      "n": 600,
+      "lr": 0.05,
+      "depth": 8
+    },
+    "cap": null,
+    "train_seconds": 1.4,
+    "finished_utc": "2026-11-09T17:27:17+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n600_lr0.1_d4__s42.json",
+    "md5": "4477d79e329a8b3d6d84693995ae7397",
+    "model": "xgboost",
+    "tag": "xgboost__n600_lr0.1_d4__s42",
+    "seed": 42,
+    "config": {
+      "n": 600,
+      "lr": 0.1,
+      "depth": 4
+    },
+    "cap": null,
+    "train_seconds": 0.4,
+    "finished_utc": "2026-11-09T17:27:17+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n600_lr0.1_d6__s42.json",
+    "md5": "915f52c5aa5f25f2238c14e2b977a83c",
+    "model": "xgboost",
+    "tag": "xgboost__n600_lr0.1_d6__s42",
+    "seed": 42,
+    "config": {
+      "n": 600,
+      "lr": 0.1,
+      "depth": 6
+    },
+    "cap": null,
+    "train_seconds": 0.7,
+    "finished_utc": "2026-11-09T17:27:18+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  {
+    "path": "results/q19/runs/xgboost__n600_lr0.1_d8__s42.json",
+    "md5": "2d6fbdeffb70c3327bb9ac303967bde2",
+    "model": "xgboost",
+    "tag": "xgboost__n600_lr0.1_d8__s42",
+    "seed": 42,
+    "config": {
+      "n": 600,
+      "lr": 0.1,
+      "depth": 8
+    },
+    "cap": null,
+    "train_seconds": 1.4,
+    "finished_utc": "2026-11-09T17:27:19+00:00",
+    "tf": "2.21.0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  }
+]

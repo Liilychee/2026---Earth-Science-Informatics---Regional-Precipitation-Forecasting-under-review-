@@ -1,0 +1,116 @@
+[
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "code/q19_tune.py",
+    "md5": "7fa8fb3283aca5dcb687c43af8cfc5c7",
+    "blob": "d074b0bf28de7f4e1841419927f10370376465fa"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "code/q19_stats.py",
+    "md5": "1664664b471c3f5464a50b5a80a79074",
+    "blob": "ec4c7f60285d85dc08a3018f98f96b0b2750c374"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q19_all_runs.csv",
+    "md5": "eeb970f711fcf187431c64e664c17a64",
+    "blob": "b73218d3d5bd3d2ba8c8744bc5d3ebdd113c3949"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q19_effect.csv",
+    "md5": "15676a091e794eb77275776071e1d3a6",
+    "blob": "87d63afb5091cd2bf6f3b7468681687cffd79262"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q19_gate_output.txt",
+    "md5": "a1fa52afb0d1a70aabaf5f5b1609330d",
+    "blob": "5cb68c841b30f50bfe8a28a3653e449df0371895"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q19_tune_output.txt",
+    "md5": "fa2a81d84e2f2bacefeb339f79c26f43",
+    "blob": "b62430b73fc161ef24fabce875601dde98908f6b"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q19_light_output.txt",
+    "md5": "8d2eab82fd654b81aad5126a1ebce35e",
+    "blob": "6dfd96803afcd476aa7bac75d778855317be6ebb"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q19_stats_output.txt",
+    "md5": "05a663194cae47b014a9907dee2165ec",
+    "blob": "9d399ef99541bf5e026bf05b0c83cb4a68c8478a"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q10_pip_freeze_20261104.txt",
+    "md5": "fca716f45dac26bbecdb3613e902a0e9",
+    "blob": "3b0d7a0973756a3dc863bf5f96eba424788781a4"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q19/selection_bilstm_attn.json",
+    "md5": "5eae541419fa72c2fa1efae2e61fe3d8",
+    "blob": "0366b04935c0e28cb00a9db1658387e278eb8edd"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q19/selection_bulstm.json",
+    "md5": "07ce100ec8b3891c5690b7413931196a",
+    "blob": "a60dde8b4def7fd4d146e3289802f90eb0967a3a"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q19/selection_bulstm_attn.json",
+    "md5": "70b73f9618d8de95ced368b963a02e26",
+    "blob": "0cd8307372d0a802405a487c7d91828f02870564"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q19/selection_prob_bilstm_attn.json",
+    "md5": "6eb22ad2d8a015217f39471eb75886e8",
+    "blob": "f73628a094d5f2d89b9f6c624229067e081f1a73"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q19/selection_transformer.json",
+    "md5": "7b244e3d10883b910ad27a46784aa492",
+    "blob": "d761a93cef1e497ce07a30cb316552981e0b1653"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/q19/selection_xgboost.json",
+    "md5": "5ae33b399fe998081f30b3b546473647",
+    "blob": "b14799f67bf7b0f6c625ae98a8aafbbfca8a88b1"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "results/metrics/q10_env_check.txt",
+    "md5": "c39633f4f9425db2fc04bf8f42d7d282",
+    "blob": "3821a87ca872be6ddd972e1128219ced4cb0dbdc"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "code/q06_common.py",
+    "md5": "fd11bd85160fe9118bc945a40feffa28",
+    "blob": "e3114e5ce4cb35a89565fcf4057a3543fe252ee2"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "code/q21_train.py",
+    "md5": "3e0fbf44821862514be54ecd0db7632a",
+    "blob": "e1f701cdd64412024534127844d5e1246a6a005c"
+  },
+  {
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "path": "code/q21_build_features.py",
+    "md5": "73a71e764f000e7b224b1e2947490001",
+    "blob": "10dd68aa193c9bc8b4f560611cfa5a02a899990d"
+  }
+]

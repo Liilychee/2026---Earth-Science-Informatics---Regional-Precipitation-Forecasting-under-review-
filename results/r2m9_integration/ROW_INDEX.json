@@ -1,0 +1,957 @@
+[
+  {
+    "label": "stab:r2m9_search",
+    "kind": "heading",
+    "latex": "\\multicolumn{7}{l}{\\textbf{A. Recorded task cost}}\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "heading",
+    "latex": "\\textbf{Model} & \\textbf{Runs} & \\shortstack{\\textbf{Total}\\\\\\textbf{seconds}} & \\shortstack{\\textbf{Median}\\\\\\textbf{seconds}} & \\shortstack{\\textbf{Mean best}\\\\\\textbf{epoch}} & \\shortstack{\\textbf{Hit}\\\\\\textbf{cap}} & \\textbf{Criterion}\\\\\\hline\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "cost",
+    "latex": "XGB & $39$ & $16.4$ & $0.30$ & --- & --- & RMSE\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "cost",
+    "latex": "BiAttn & $38$ & $4703.2$ & $118.85$ & $10.45$ & $0$ & RMSE\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "cost",
+    "latex": "Trf & $11$ & $3427.5$ & $289.90$ & $31.55$ & $0$ & RMSE\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "cost",
+    "latex": "BU & $11$ & $1898.8$ & $158.40$ & $9.82$ & $0$ & CRPS\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "cost",
+    "latex": "BUAttn & $11$ & $2922.3$ & $265.70$ & $10.82$ & $0$ & CRPS\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "cost",
+    "latex": "ProbBi & $7$ & $955.4$ & $134.70$ & $10.14$ & $0$ & CRPS\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "heading",
+    "latex": "\\hline\\multicolumn{7}{l}{\\textbf{B. Search spaces, original and selected configurations}}\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "heading",
+    "latex": "\\multicolumn{7}{@{}p{0.98\\linewidth}@{}}{\\raggedright \\textbf{XGB:} original $(n,lr,d)=(100,0.05,6)$; grid $n\\in\\{100,300,600\\}$, $lr\\in\\{0.03,0.05,0.1\\}$, $d\\in\\{4,6,8\\}$. Selected $(300,0.03,4)$; original validation rank $6/27$. No epoch cap: A=B.\\par}\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "heading",
+    "latex": "\\multicolumn{7}{@{}p{0.98\\linewidth}@{}}{\\raggedright \\textbf{BiAttn:} original $(u,lr,drop)=(64,0.001,0.2)$; grid $u\\in\\{32,64,128\\}$, $lr\\in\\{0.0003,0.001,0.003\\}$, $drop\\in\\{0.1,0.2,0.3\\}$. Selected $(32,0.003,0.3)$; original rank $2/27$. A cap 30, B/C cap 60.\\par}\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "heading",
+    "latex": "\\multicolumn{7}{@{}p{0.98\\linewidth}@{}}{\\raggedright \\textbf{Trf, BU, BUAttn, ProbBi:} architectures unchanged; original $lr=0.001$, searched $\\{0.0003,0.001,0.003\\}$ at seed 42, A cap 30, B/C cap 100. Selected $lr=0.003$ for Trf/BU/BUAttn, and $0.001$ for ProbBi (B=C).\\par}\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "heading",
+    "latex": "\\multicolumn{7}{@{}p{0.98\\linewidth}@{}}{\\raggedright \\textbf{Selection:} the main-search top three at seed 42 were rechecked using seeds 42,123,7; the lowest three-seed validation mean selected C. Final configurations use seeds 42,123,7,2024,99. Light searches select from seed 42 alone. All use the same chronological split and training-only scaling. Early stopping patience is 10; batch size 32. Budgets and selection objectives are not identical across models.\\par}\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "heading",
+    "latex": "\\hline\\multicolumn{7}{l}{\\textbf{C. Complete validation rankings (not test rankings)}}\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "heading",
+    "latex": "\\textbf{Model} & \\textbf{Rank} & \\shortstack{\\textbf{Trees/}\\\\\\textbf{units}} & \\textbf{LR} & \\shortstack{\\textbf{Depth/}\\\\\\textbf{drop}} & \\shortstack{\\textbf{Seed-42}\\\\\\textbf{score}} & \\shortstack{\\textbf{3-seed}\\\\\\textbf{mean}}\\\\\\hline\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $1$ & $600$ & $0.0300$ & $4$ & $0.251041$ & $0.251468$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $2$ & $300$ & $0.0300$ & $4$ & $0.251058$ & $0.250860$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $3$ & $100$ & $0.0300$ & $4$ & $0.251149$ & $0.251067$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $4$ & $100$ & $0.0500$ & $4$ & $0.251292$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $5$ & $100$ & $0.0300$ & $6$ & $0.251303$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $6$ & $100$ & $0.0500$ & $6$ & $0.251311$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $7$ & $300$ & $0.0500$ & $4$ & $0.251815$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $8$ & $300$ & $0.0300$ & $6$ & $0.251908$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $9$ & $100$ & $0.0300$ & $8$ & $0.252134$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $10$ & $100$ & $0.1000$ & $4$ & $0.252274$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $11$ & $100$ & $0.1000$ & $6$ & $0.252764$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $12$ & $600$ & $0.0300$ & $6$ & $0.253075$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $13$ & $600$ & $0.0500$ & $4$ & $0.253197$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $14$ & $300$ & $0.0300$ & $8$ & $0.253455$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $15$ & $300$ & $0.0500$ & $6$ & $0.253937$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $16$ & $100$ & $0.0500$ & $8$ & $0.253988$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $17$ & $600$ & $0.0300$ & $8$ & $0.254434$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $18$ & $600$ & $0.0500$ & $6$ & $0.254999$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $19$ & $300$ & $0.0500$ & $8$ & $0.255190$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $20$ & $300$ & $0.1000$ & $4$ & $0.255749$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $21$ & $600$ & $0.0500$ & $8$ & $0.255755$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $22$ & $300$ & $0.1000$ & $6$ & $0.256440$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $23$ & $600$ & $0.1000$ & $6$ & $0.257511$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $24$ & $600$ & $0.1000$ & $4$ & $0.257631$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $25$ & $100$ & $0.1000$ & $8$ & $0.257810$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $26$ & $300$ & $0.1000$ & $8$ & $0.259843$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "XGB & $27$ & $600$ & $0.1000$ & $8$ & $0.260088$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $1$ & $32$ & $0.0010$ & $0.2$ & $0.254102$ & $0.253983$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $2$ & $64$ & $0.0010$ & $0.2$ & $0.254113$ & $0.253652$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $3$ & $32$ & $0.0030$ & $0.3$ & $0.254160$ & $0.253599$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $4$ & $128$ & $0.0030$ & $0.1$ & $0.254202$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $5$ & $32$ & $0.0010$ & $0.3$ & $0.254252$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $6$ & $32$ & $0.0010$ & $0.1$ & $0.254256$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $7$ & $64$ & $0.0030$ & $0.2$ & $0.254327$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $8$ & $32$ & $0.0003$ & $0.1$ & $0.254428$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $9$ & $32$ & $0.0030$ & $0.2$ & $0.254454$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $10$ & $32$ & $0.0030$ & $0.1$ & $0.254474$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $11$ & $32$ & $0.0003$ & $0.2$ & $0.254509$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $12$ & $32$ & $0.0003$ & $0.3$ & $0.254513$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $13$ & $64$ & $0.0003$ & $0.3$ & $0.254664$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $14$ & $64$ & $0.0010$ & $0.1$ & $0.254703$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $15$ & $128$ & $0.0010$ & $0.3$ & $0.254733$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $16$ & $64$ & $0.0003$ & $0.2$ & $0.254983$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $17$ & $64$ & $0.0010$ & $0.3$ & $0.255040$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $18$ & $64$ & $0.0003$ & $0.1$ & $0.255115$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $19$ & $128$ & $0.0010$ & $0.2$ & $0.255239$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $20$ & $64$ & $0.0030$ & $0.1$ & $0.255392$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $21$ & $128$ & $0.0003$ & $0.3$ & $0.255394$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $22$ & $128$ & $0.0010$ & $0.1$ & $0.255546$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $23$ & $64$ & $0.0030$ & $0.3$ & $0.255627$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $24$ & $128$ & $0.0003$ & $0.2$ & $0.255630$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $25$ & $128$ & $0.0030$ & $0.3$ & $0.255830$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $26$ & $128$ & $0.0003$ & $0.1$ & $0.255871$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BiAttn & $27$ & $128$ & $0.0030$ & $0.2$ & $0.255877$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "Trf & $1$ & --- & $0.0030$ & --- & $0.257194$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "Trf & $2$ & --- & $0.0003$ & --- & $0.259997$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "Trf & $3$ & --- & $0.0010$ & --- & $0.261406$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BU & $1$ & --- & $0.0030$ & --- & $0.087021$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BU & $2$ & --- & $0.0010$ & --- & $0.089221$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BU & $3$ & --- & $0.0003$ & --- & $0.089265$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BUAttn & $1$ & --- & $0.0030$ & --- & $0.087850$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BUAttn & $2$ & --- & $0.0010$ & --- & $0.088950$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "BUAttn & $3$ & --- & $0.0003$ & --- & $0.093673$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "ProbBi & $1$ & --- & $0.0010$ & --- & $0.087972$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "ProbBi & $2$ & --- & $0.0030$ & --- & $0.088959$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_search",
+    "kind": "candidate",
+    "latex": "ProbBi & $3$ & --- & $0.0003$ & --- & $0.089130$ & ---\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "heading",
+    "latex": "\\multicolumn{8}{l}{\\textbf{A. Stored reference/new means, differences and seed directions}}\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "heading",
+    "latex": "\\textbf{Model} & \\textbf{Cmp.} & \\textbf{Metric/set} & \\textbf{Ref.} & \\textbf{New} & $\\boldsymbol{\\Delta}$ & \\textbf{\\%} & $n_{\\rm imp}/5$\\\\\\hline\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "XGB & C-A & E:R/all & $0.243920$ & $0.243176$ & $-0.000744$ & $-0.30$ & $5$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "XGB & C-A & E:R/wet & $0.473488$ & $0.473655$ & $+0.000167$ & $+0.04$ & $1$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "XGB & C-A & E:R/tail & $0.842806$ & $0.845017$ & $+0.002212$ & $+0.26$ & $0$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BiAttn & B-A & E:R/all & $0.242864$ & $0.242864$ & $0.000000$ & $0.00$ & $0$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BiAttn & B-A & E:R/wet & $0.484963$ & $0.484963$ & $0.000000$ & $0.00$ & $0$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BiAttn & B-A & E:R/tail & $0.873204$ & $0.873204$ & $0.000000$ & $0.00$ & $0$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BiAttn & C-B & E:R/all & $0.242864$ & $0.243016$ & $+0.000152$ & $+0.06$ & $2$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BiAttn & C-B & E:R/wet & $0.484963$ & $0.485181$ & $+0.000218$ & $+0.04$ & $2$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BiAttn & C-B & E:R/tail & $0.873204$ & $0.874268$ & $+0.001064$ & $+0.12$ & $2$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BiAttn & C-A & E:R/all & $0.242864$ & $0.243016$ & $+0.000152$ & $+0.06$ & $2$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BiAttn & C-A & E:R/wet & $0.484963$ & $0.485181$ & $+0.000218$ & $+0.04$ & $2$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BiAttn & C-A & E:R/tail & $0.873204$ & $0.874268$ & $+0.001064$ & $+0.12$ & $2$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "Trf & B-A & E:R/all & $0.259990$ & $0.257967$ & $-0.002023$ & $-0.78$ & $3$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "Trf & B-A & E:R/wet & $0.528298$ & $0.523615$ & $-0.004683$ & $-0.89$ & $3$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "Trf & B-A & E:R/tail & $0.949053$ & $0.940112$ & $-0.008941$ & $-0.94$ & $3$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "Trf & C-B & E:R/all & $0.257967$ & $0.256441$ & $-0.001526$ & $-0.59$ & $4$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "Trf & C-B & E:R/wet & $0.523615$ & $0.518269$ & $-0.005346$ & $-1.02$ & $4$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "Trf & C-B & E:R/tail & $0.940112$ & $0.933963$ & $-0.006150$ & $-0.65$ & $4$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "Trf & C-A & E:R/all & $0.259990$ & $0.256441$ & $-0.003549$ & $-1.37$ & $4$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "Trf & C-A & E:R/wet & $0.528298$ & $0.518269$ & $-0.010029$ & $-1.90$ & $4$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "Trf & C-A & E:R/tail & $0.949053$ & $0.933963$ & $-0.015090$ & $-1.59$ & $4$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BU & B-A & E:R/all & $0.246970$ & $0.246970$ & $0.000000$ & $0.00$ & $0$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BU & B-A & E:R/wet & $0.496571$ & $0.496571$ & $0.000000$ & $0.00$ & $0$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BU & B-A & E:R/tail & $0.897042$ & $0.897042$ & $0.000000$ & $0.00$ & $0$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BU & B-A & E:C/all & $0.094261$ & $0.094261$ & $0.000000$ & $0.00$ & $0$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BU & C-B & E:R/all & $0.246970$ & $0.245563$ & $-0.001407$ & $-0.57$ & $2$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BU & C-B & E:R/wet & $0.496571$ & $0.490931$ & $-0.005640$ & $-1.14$ & $2$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BU & C-B & E:R/tail & $0.897042$ & $0.887232$ & $-0.009810$ & $-1.09$ & $2$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BU & C-B & E:C/all & $0.094261$ & $0.094117$ & $-0.000143$ & $-0.15$ & $2$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BU & C-A & E:R/all & $0.246970$ & $0.245563$ & $-0.001407$ & $-0.57$ & $2$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BU & C-A & E:R/wet & $0.496571$ & $0.490931$ & $-0.005640$ & $-1.14$ & $2$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BU & C-A & E:R/tail & $0.897042$ & $0.887232$ & $-0.009810$ & $-1.09$ & $2$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BU & C-A & E:C/all & $0.094261$ & $0.094117$ & $-0.000143$ & $-0.15$ & $2$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BUAttn & B-A & E:R/all & $0.247207$ & $0.247207$ & $0.000000$ & $0.00$ & $0$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BUAttn & B-A & E:R/wet & $0.496092$ & $0.496092$ & $0.000000$ & $0.00$ & $0$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BUAttn & B-A & E:R/tail & $0.896482$ & $0.896482$ & $0.000000$ & $0.00$ & $0$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BUAttn & B-A & E:C/all & $0.094973$ & $0.094973$ & $0.000000$ & $0.00$ & $0$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BUAttn & C-B & E:R/all & $0.247207$ & $0.245737$ & $-0.001469$ & $-0.59$ & $4$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BUAttn & C-B & E:R/wet & $0.496092$ & $0.490743$ & $-0.005349$ & $-1.08$ & $4$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BUAttn & C-B & E:R/tail & $0.896482$ & $0.884634$ & $-0.011847$ & $-1.32$ & $4$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BUAttn & C-B & E:C/all & $0.094973$ & $0.093334$ & $-0.001640$ & $-1.73$ & $5$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BUAttn & C-A & E:R/all & $0.247207$ & $0.245737$ & $-0.001469$ & $-0.59$ & $4$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BUAttn & C-A & E:R/wet & $0.496092$ & $0.490743$ & $-0.005349$ & $-1.08$ & $4$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BUAttn & C-A & E:R/tail & $0.896482$ & $0.884634$ & $-0.011847$ & $-1.32$ & $4$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "BUAttn & C-A & E:C/all & $0.094973$ & $0.093334$ & $-0.001640$ & $-1.73$ & $5$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "ProbBi & B-A & E:R/all & $0.249369$ & $0.249369$ & $0.000000$ & $0.00$ & $0$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "ProbBi & B-A & E:R/wet & $0.501586$ & $0.501586$ & $0.000000$ & $0.00$ & $0$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "ProbBi & B-A & E:R/tail & $0.906296$ & $0.906296$ & $0.000000$ & $0.00$ & $0$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "ProbBi & B-A & E:C/all & $0.096097$ & $0.096097$ & $0.000000$ & $0.00$ & $0$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "ProbBi & C-A & E:R/all & $0.249369$ & $0.249369$ & $0.000000$ & $0.00$ & $0$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "ProbBi & C-A & E:R/wet & $0.501586$ & $0.501586$ & $0.000000$ & $0.00$ & $0$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "ProbBi & C-A & E:R/tail & $0.906296$ & $0.906296$ & $0.000000$ & $0.00$ & $0$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "effect",
+    "latex": "ProbBi & C-A & E:C/all & $0.096097$ & $0.096097$ & $0.000000$ & $0.00$ & $0$\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "heading",
+    "latex": "\\hline\\multicolumn{8}{l}{\\textbf{B. Matched intervals and the three-way improvement rule}}\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "heading",
+    "latex": "\\textbf{Model} & \\textbf{Cmp.} & \\textbf{Metric/set} & \\shortstack{\\textbf{Seed-$t$}\\\\\\textbf{lower}} & \\shortstack{\\textbf{Seed-$t$}\\\\\\textbf{upper}} & \\shortstack{\\textbf{Block}\\\\\\textbf{lower}} & \\shortstack{\\textbf{Block}\\\\\\textbf{upper}} & \\shortstack{\\textbf{Three-way}\\\\\\textbf{improve}}\\\\\\hline\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "XGB & C-A & I:R/all & $-0.001211$ & $-0.000276$ & $-0.001882$ & $+0.000446$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "XGB & C-A & I:R/wet & $-0.000771$ & $+0.001106$ & $-0.002240$ & $+0.002737$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "XGB & C-A & I:R/tail & $-0.000007$ & $+0.004431$ & $-0.002151$ & $+0.006994$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BiAttn & B-A & I:R/all & $0.000000$ & $0.000000$ & $0.000000$ & $0.000000$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BiAttn & B-A & I:R/wet & $0.000000$ & $0.000000$ & $0.000000$ & $0.000000$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BiAttn & B-A & I:R/tail & $0.000000$ & $0.000000$ & $0.000000$ & $0.000000$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BiAttn & C-B & I:R/all & $-0.001641$ & $+0.001945$ & $-0.000635$ & $+0.000983$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BiAttn & C-B & I:R/wet & $-0.004502$ & $+0.004938$ & $-0.001554$ & $+0.002076$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BiAttn & C-B & I:R/tail & $-0.010090$ & $+0.012219$ & $-0.002455$ & $+0.004755$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BiAttn & C-A & I:R/all & $-0.001641$ & $+0.001945$ & $-0.000635$ & $+0.000983$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BiAttn & C-A & I:R/wet & $-0.004502$ & $+0.004938$ & $-0.001554$ & $+0.002076$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BiAttn & C-A & I:R/tail & $-0.010090$ & $+0.012219$ & $-0.002455$ & $+0.004755$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "Trf & B-A & I:R/all & $-0.004733$ & $+0.000687$ & $-0.002819$ & $-0.001430$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "Trf & B-A & I:R/wet & $-0.010142$ & $+0.000776$ & $-0.006222$ & $-0.003370$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "Trf & B-A & I:R/tail & $-0.019495$ & $+0.001613$ & $-0.011479$ & $-0.006480$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "Trf & C-B & I:R/all & $-0.009214$ & $+0.006161$ & $-0.002849$ & $-0.000022$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "Trf & C-B & I:R/wet & $-0.026977$ & $+0.016284$ & $-0.008544$ & $-0.002020$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "Trf & C-B & I:R/tail & $-0.046501$ & $+0.034202$ & $-0.011772$ & $-0.000298$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "Trf & C-A & I:R/all & $-0.009412$ & $+0.002314$ & $-0.005114$ & $-0.002055$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "Trf & C-A & I:R/wet & $-0.031818$ & $+0.011760$ & $-0.013313$ & $-0.006793$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "Trf & C-A & I:R/tail & $-0.053205$ & $+0.023024$ & $-0.020874$ & $-0.009231$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BU & B-A & I:R/all & $0.000000$ & $0.000000$ & $0.000000$ & $0.000000$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BU & B-A & I:R/wet & $0.000000$ & $0.000000$ & $0.000000$ & $0.000000$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BU & B-A & I:R/tail & $0.000000$ & $0.000000$ & $0.000000$ & $0.000000$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BU & B-A & I:C/all & $0.000000$ & $0.000000$ & $0.000000$ & $0.000000$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BU & C-B & I:R/all & $-0.004358$ & $+0.001544$ & $-0.002487$ & $-0.000360$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BU & C-B & I:R/wet & $-0.020278$ & $+0.008998$ & $-0.008131$ & $-0.003212$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BU & C-B & I:R/tail & $-0.035865$ & $+0.016245$ & $-0.014506$ & $-0.005379$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BU & C-B & I:C/all & $-0.002225$ & $+0.001938$ & $-0.000760$ & $+0.000427$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BU & C-A & I:R/all & $-0.004358$ & $+0.001544$ & $-0.002487$ & $-0.000360$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BU & C-A & I:R/wet & $-0.020278$ & $+0.008998$ & $-0.008131$ & $-0.003212$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BU & C-A & I:R/tail & $-0.035865$ & $+0.016245$ & $-0.014506$ & $-0.005379$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BU & C-A & I:C/all & $-0.002225$ & $+0.001938$ & $-0.000760$ & $+0.000427$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BUAttn & B-A & I:R/all & $0.000000$ & $0.000000$ & $0.000000$ & $0.000000$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BUAttn & B-A & I:R/wet & $0.000000$ & $0.000000$ & $0.000000$ & $0.000000$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BUAttn & B-A & I:R/tail & $0.000000$ & $0.000000$ & $0.000000$ & $0.000000$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BUAttn & B-A & I:C/all & $0.000000$ & $0.000000$ & $0.000000$ & $0.000000$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BUAttn & C-B & I:R/all & $-0.004700$ & $+0.001761$ & $-0.002723$ & $-0.000302$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BUAttn & C-B & I:R/wet & $-0.022330$ & $+0.011632$ & $-0.007932$ & $-0.002861$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BUAttn & C-B & I:R/tail & $-0.042726$ & $+0.019031$ & $-0.016524$ & $-0.007572$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BUAttn & C-B & I:C/all & $-0.002694$ & $-0.000585$ & $-0.002315$ & $-0.001029$ & Yes\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BUAttn & C-A & I:R/all & $-0.004700$ & $+0.001761$ & $-0.002723$ & $-0.000302$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BUAttn & C-A & I:R/wet & $-0.022330$ & $+0.011632$ & $-0.007932$ & $-0.002861$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BUAttn & C-A & I:R/tail & $-0.042726$ & $+0.019031$ & $-0.016524$ & $-0.007572$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "BUAttn & C-A & I:C/all & $-0.002694$ & $-0.000585$ & $-0.002315$ & $-0.001029$ & Yes\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "ProbBi & B-A & I:R/all & $0.000000$ & $0.000000$ & $0.000000$ & $0.000000$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "ProbBi & B-A & I:R/wet & $0.000000$ & $0.000000$ & $0.000000$ & $0.000000$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "ProbBi & B-A & I:R/tail & $0.000000$ & $0.000000$ & $0.000000$ & $0.000000$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "ProbBi & B-A & I:C/all & $0.000000$ & $0.000000$ & $0.000000$ & $0.000000$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "ProbBi & C-A & I:R/all & $0.000000$ & $0.000000$ & $0.000000$ & $0.000000$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "ProbBi & C-A & I:R/wet & $0.000000$ & $0.000000$ & $0.000000$ & $0.000000$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "ProbBi & C-A & I:R/tail & $0.000000$ & $0.000000$ & $0.000000$ & $0.000000$ & No\\\\\n"
+  },
+  {
+    "label": "stab:r2m9_effects",
+    "kind": "interval",
+    "latex": "ProbBi & C-A & I:C/all & $0.000000$ & $0.000000$ & $0.000000$ & $0.000000$ & No\\\\\n"
+  }
+]

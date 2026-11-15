@@ -1,0 +1,14 @@
+# R2-M9 local integration scope — no Git publication
+
+This resume changes exactly six root documents by the reviewed local delta: manuscript.tex (new red paragraphs plus explicitly unfinished Code Availability), Supplementary.tex (only appended S48/S49), Response letter.tex (R2-M9 block only), task file (three R2-M9 notes at18/19/34), checklist append and registry append. No original main table/Figure/closed excerpt is changed. R2M9_LOCAL.patch is relative to this task's before snapshots, never the old repository HEAD; R2M9_PORTABLE.patch has identical hunks with filename timestamp separators. Exact six-document reconstruction was checked.
+
+No add/commit/push/fetch or worktree mutation is performed in this resume. The original main checkout still contains unrelated historical uncommitted/untracked changes; do not stage it wholesale. No GitHub README, environment, LICENSE or final-release commit work occurs. repository_draft/ and/private/tmp/esi-r2m9-repository-draft are historical artifacts created before the author's later deferral; leave them unmodified, exclude them from this scientific delivery and do not use them as finalized public reproduction evidence.
+
+Scientific q19 source remains fixed atd02519c5f153feb712018cf97efb035f6ca2d7ae; last author-confirmed public main is2de6f3e0045c1f68f0d570f6cb6de49d9920755a. No new claim about latest remote HEAD is made here. The experimental source commit is not the future Code Availability release commit. Current M9 is locally verified for science/paper; final repository availability/documentation/release and any selective archive await later author review. R3-L822–824 and tasks18/34 shared work remain Pending; R2-m1 not started.
+
+
+## Author-authorized scientific-only archive phase — 2026-11-15
+
+Base origin/main2de6f3e0045c1f68f0d570f6cb6de49d9920755a; no remote advance observed at preparation. Independent worktree/private/tmp/esi-r2m9-scientific-sync, branchcodex/r2m9-scientific-sync. Commit only the explicit integration-file allowlist: reviewed six-document increment patches, scoped status delta, indices/reports/check scripts,19 already-public immutable source copies,19 native-scale QA renders and three actually inspected144dpi legibility renders. Exclude before/ full mixed-revision documents, historical repository_draft/, duplicate source/runs/ originals already pinned by117MD5 references, other unused renders and stale LOCAL_MANIFEST. Never stage original paper files wholesale or touch prior closed archives/Task22.
+
+The reviewed patch exactly reconstructs the six current documents from before snapshots. ARCHIVE_STATUS.patch contains only subsequent M9 scientific-complete/repository-pending notes for task/checklist assembly; it is not applied to the original workspace. Archive only, no final repository documentation and no CLOSED status. Fetch updates metadata only; no pull/reset/force/history rewrite. Normal push and independent GitHub per-file readback required.

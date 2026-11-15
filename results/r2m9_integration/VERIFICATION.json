@@ -1,0 +1,32 @@
+{
+  "previous_excerpts_unchanged": 103,
+  "new_exact_excerpts": 6,
+  "total_matched": 109,
+  "all_old_manuscript_text_preserved_except_explicit_unquoted_code_statement": true,
+  "all_main_tables_and_figures_unchanged": true,
+  "old_S1_S47_source_identical": true,
+  "protected_hashes": 149,
+  "all_other_response_sections_identical": true,
+  "numeric_displays_checked": 914,
+  "table_rows": {
+    "stab:r2m9_search": {
+      "heading": 9,
+      "cost": 6,
+      "candidate": 66
+    },
+    "stab:r2m9_effects": {
+      "heading": 4,
+      "effect": 53,
+      "interval": 53
+    }
+  },
+  "new_tables": [
+    "S48",
+    "S49"
+  ],
+  "source_run_count": 117,
+  "source_effect_rows": 53,
+  "new_metrics_calculated": false,
+  "code_availability_pending": true,
+  "git_publication_performed": false
+}

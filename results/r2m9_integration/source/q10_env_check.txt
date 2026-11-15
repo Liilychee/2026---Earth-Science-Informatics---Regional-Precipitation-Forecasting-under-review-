@@ -1,0 +1,19 @@
+===== q10 environment check, 2026-11-04T16:12:23Z =====
+name, driver_version, memory.total [MiB]
+NVIDIA GeForce RTX 5090, 580.76.05, 32607 MiB
+CPU cores: 16
+               total        used        free      shared  buff/cache   available
+Mem:           754Gi        73Gi       199Gi       597Mi       481Gi       675Gi
+Python 3.12.3
+grpcio                         1.74.0
+keras                          3.15.1
+numpy                          2.3.2
+nvidia-cuda-runtime-cu12       12.8.90
+nvidia-cudnn-cu12              9.10.2.21
+pandas                         3.1.0
+protobuf                       6.31.1
+scikit-learn                   1.9.1
+shap                           0.54.1
+tensorflow                     2.21.0
+TF 2.21.0 | Keras 3.15.1 | built CUDA 12.5.1 | cuDNN 9
+[PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]

@@ -1,0 +1,6 @@
+statistic,value,source_fields
+A_gap_XGB_minus_Bi,0.001056533639942403,"['q19_effect.csv:XGBoost:C-A:rmse:all:ref', 'q19_effect.csv:BiLSTM-Attention:C-A:rmse:all:ref']"
+C_gap_XGB_minus_Bi,0.00016062320412907338,"['q19_effect.csv:XGBoost:C-A:rmse:all:new', 'q19_effect.csv:BiLSTM-Attention:C-A:rmse:all:new']"
+Bi_top_two_validation_gap,5.2920311956639043e-05,"['selection_bilstm_attn.json:/top3/1/mean', 'selection_bilstm_attn.json:/top3/0/mean']"
+recorded_task_seconds,13923.6,['COST_SUMMARY.csv:sum(recorded_seconds)']
+recorded_task_hours,3.8676666666666666,['COST_SUMMARY.csv:sum(recorded_seconds)/3600']

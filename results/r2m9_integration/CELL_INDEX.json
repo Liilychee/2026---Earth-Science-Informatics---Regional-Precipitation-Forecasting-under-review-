@@ -1,0 +1,9142 @@
+[
+  {
+    "file": "PROSE_DERIVATIONS.csv",
+    "line": 2,
+    "field": "value",
+    "raw": "0.001056533639942403",
+    "digits": 6,
+    "sign": false,
+    "display": "0.001057",
+    "destination": "prose"
+  },
+  {
+    "file": "PROSE_DERIVATIONS.csv",
+    "line": 3,
+    "field": "value",
+    "raw": "0.00016062320412907338",
+    "digits": 6,
+    "sign": false,
+    "display": "0.000161",
+    "destination": "prose"
+  },
+  {
+    "file": "PROSE_DERIVATIONS.csv",
+    "line": 4,
+    "field": "value",
+    "raw": "5.2920311956639043e-05",
+    "digits": 6,
+    "sign": false,
+    "display": "0.000053",
+    "destination": "prose"
+  },
+  {
+    "file": "PROSE_DERIVATIONS.csv",
+    "line": 6,
+    "field": "value",
+    "raw": "3.8676666666666666",
+    "digits": 2,
+    "sign": false,
+    "display": "3.87",
+    "destination": "prose"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 2,
+    "field": "n_runs",
+    "raw": "39",
+    "digits": 0,
+    "sign": false,
+    "display": "39",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 2,
+    "field": "recorded_seconds",
+    "raw": "16.4",
+    "digits": 1,
+    "sign": false,
+    "display": "16.4",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 2,
+    "field": "median_seconds",
+    "raw": "0.3",
+    "digits": 2,
+    "sign": false,
+    "display": "0.30",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 2,
+    "field": "mean_best_epoch",
+    "raw": "",
+    "digits": 2,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 2,
+    "field": "hit_cap",
+    "raw": "",
+    "digits": 0,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 3,
+    "field": "n_runs",
+    "raw": "38",
+    "digits": 0,
+    "sign": false,
+    "display": "38",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 3,
+    "field": "recorded_seconds",
+    "raw": "4703.200000000001",
+    "digits": 1,
+    "sign": false,
+    "display": "4703.2",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 3,
+    "field": "median_seconds",
+    "raw": "118.85",
+    "digits": 2,
+    "sign": false,
+    "display": "118.85",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 3,
+    "field": "mean_best_epoch",
+    "raw": "10.447368421052632",
+    "digits": 2,
+    "sign": false,
+    "display": "10.45",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 3,
+    "field": "hit_cap",
+    "raw": "0",
+    "digits": 0,
+    "sign": false,
+    "display": "0",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 4,
+    "field": "n_runs",
+    "raw": "11",
+    "digits": 0,
+    "sign": false,
+    "display": "11",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 4,
+    "field": "recorded_seconds",
+    "raw": "3427.500000000001",
+    "digits": 1,
+    "sign": false,
+    "display": "3427.5",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 4,
+    "field": "median_seconds",
+    "raw": "289.9",
+    "digits": 2,
+    "sign": false,
+    "display": "289.90",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 4,
+    "field": "mean_best_epoch",
+    "raw": "31.545454545454547",
+    "digits": 2,
+    "sign": false,
+    "display": "31.55",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 4,
+    "field": "hit_cap",
+    "raw": "0",
+    "digits": 0,
+    "sign": false,
+    "display": "0",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 5,
+    "field": "n_runs",
+    "raw": "11",
+    "digits": 0,
+    "sign": false,
+    "display": "11",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 5,
+    "field": "recorded_seconds",
+    "raw": "1898.8",
+    "digits": 1,
+    "sign": false,
+    "display": "1898.8",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 5,
+    "field": "median_seconds",
+    "raw": "158.4",
+    "digits": 2,
+    "sign": false,
+    "display": "158.40",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 5,
+    "field": "mean_best_epoch",
+    "raw": "9.818181818181818",
+    "digits": 2,
+    "sign": false,
+    "display": "9.82",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 5,
+    "field": "hit_cap",
+    "raw": "0",
+    "digits": 0,
+    "sign": false,
+    "display": "0",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 6,
+    "field": "n_runs",
+    "raw": "11",
+    "digits": 0,
+    "sign": false,
+    "display": "11",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 6,
+    "field": "recorded_seconds",
+    "raw": "2922.2999999999997",
+    "digits": 1,
+    "sign": false,
+    "display": "2922.3",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 6,
+    "field": "median_seconds",
+    "raw": "265.7",
+    "digits": 2,
+    "sign": false,
+    "display": "265.70",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 6,
+    "field": "mean_best_epoch",
+    "raw": "10.818181818181818",
+    "digits": 2,
+    "sign": false,
+    "display": "10.82",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 6,
+    "field": "hit_cap",
+    "raw": "0",
+    "digits": 0,
+    "sign": false,
+    "display": "0",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 7,
+    "field": "n_runs",
+    "raw": "7",
+    "digits": 0,
+    "sign": false,
+    "display": "7",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 7,
+    "field": "recorded_seconds",
+    "raw": "955.4",
+    "digits": 1,
+    "sign": false,
+    "display": "955.4",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 7,
+    "field": "median_seconds",
+    "raw": "134.7",
+    "digits": 2,
+    "sign": false,
+    "display": "134.70",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 7,
+    "field": "mean_best_epoch",
+    "raw": "10.142857142857142",
+    "digits": 2,
+    "sign": false,
+    "display": "10.14",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 7,
+    "field": "hit_cap",
+    "raw": "0",
+    "digits": 0,
+    "sign": false,
+    "display": "0",
+    "destination": "S48 cost"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 2,
+    "field": "rank",
+    "raw": "1",
+    "digits": 0,
+    "sign": false,
+    "display": "1",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 2,
+    "field": "size",
+    "raw": "600",
+    "digits": 0,
+    "sign": false,
+    "display": "600",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 2,
+    "field": "lr",
+    "raw": "0.03",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0300",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 2,
+    "field": "depth_dropout",
+    "raw": "4",
+    "digits": 0,
+    "sign": false,
+    "display": "4",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 2,
+    "field": "validation_score",
+    "raw": "0.25104058075175406",
+    "digits": 6,
+    "sign": false,
+    "display": "0.251041",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 2,
+    "field": "three_seed_mean",
+    "raw": "0.25146770609484953",
+    "digits": 6,
+    "sign": false,
+    "display": "0.251468",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 3,
+    "field": "rank",
+    "raw": "2",
+    "digits": 0,
+    "sign": false,
+    "display": "2",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 3,
+    "field": "size",
+    "raw": "300",
+    "digits": 0,
+    "sign": false,
+    "display": "300",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 3,
+    "field": "lr",
+    "raw": "0.03",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0300",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 3,
+    "field": "depth_dropout",
+    "raw": "4",
+    "digits": 0,
+    "sign": false,
+    "display": "4",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 3,
+    "field": "validation_score",
+    "raw": "0.25105815067165793",
+    "digits": 6,
+    "sign": false,
+    "display": "0.251058",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 3,
+    "field": "three_seed_mean",
+    "raw": "0.2508602470762008",
+    "digits": 6,
+    "sign": false,
+    "display": "0.250860",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 4,
+    "field": "rank",
+    "raw": "3",
+    "digits": 0,
+    "sign": false,
+    "display": "3",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 4,
+    "field": "size",
+    "raw": "100",
+    "digits": 0,
+    "sign": false,
+    "display": "100",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 4,
+    "field": "lr",
+    "raw": "0.03",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0300",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 4,
+    "field": "depth_dropout",
+    "raw": "4",
+    "digits": 0,
+    "sign": false,
+    "display": "4",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 4,
+    "field": "validation_score",
+    "raw": "0.2511493814652746",
+    "digits": 6,
+    "sign": false,
+    "display": "0.251149",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 4,
+    "field": "three_seed_mean",
+    "raw": "0.25106702370032224",
+    "digits": 6,
+    "sign": false,
+    "display": "0.251067",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 5,
+    "field": "rank",
+    "raw": "4",
+    "digits": 0,
+    "sign": false,
+    "display": "4",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 5,
+    "field": "size",
+    "raw": "100",
+    "digits": 0,
+    "sign": false,
+    "display": "100",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 5,
+    "field": "lr",
+    "raw": "0.05",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0500",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 5,
+    "field": "depth_dropout",
+    "raw": "4",
+    "digits": 0,
+    "sign": false,
+    "display": "4",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 5,
+    "field": "validation_score",
+    "raw": "0.2512921477811304",
+    "digits": 6,
+    "sign": false,
+    "display": "0.251292",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 5,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 6,
+    "field": "rank",
+    "raw": "5",
+    "digits": 0,
+    "sign": false,
+    "display": "5",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 6,
+    "field": "size",
+    "raw": "100",
+    "digits": 0,
+    "sign": false,
+    "display": "100",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 6,
+    "field": "lr",
+    "raw": "0.03",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0300",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 6,
+    "field": "depth_dropout",
+    "raw": "6",
+    "digits": 0,
+    "sign": false,
+    "display": "6",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 6,
+    "field": "validation_score",
+    "raw": "0.25130314306248436",
+    "digits": 6,
+    "sign": false,
+    "display": "0.251303",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 6,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 7,
+    "field": "rank",
+    "raw": "6",
+    "digits": 0,
+    "sign": false,
+    "display": "6",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 7,
+    "field": "size",
+    "raw": "100",
+    "digits": 0,
+    "sign": false,
+    "display": "100",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 7,
+    "field": "lr",
+    "raw": "0.05",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0500",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 7,
+    "field": "depth_dropout",
+    "raw": "6",
+    "digits": 0,
+    "sign": false,
+    "display": "6",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 7,
+    "field": "validation_score",
+    "raw": "0.25131121462131034",
+    "digits": 6,
+    "sign": false,
+    "display": "0.251311",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 7,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 8,
+    "field": "rank",
+    "raw": "7",
+    "digits": 0,
+    "sign": false,
+    "display": "7",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 8,
+    "field": "size",
+    "raw": "300",
+    "digits": 0,
+    "sign": false,
+    "display": "300",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 8,
+    "field": "lr",
+    "raw": "0.05",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0500",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 8,
+    "field": "depth_dropout",
+    "raw": "4",
+    "digits": 0,
+    "sign": false,
+    "display": "4",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 8,
+    "field": "validation_score",
+    "raw": "0.25181548271095766",
+    "digits": 6,
+    "sign": false,
+    "display": "0.251815",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 8,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 9,
+    "field": "rank",
+    "raw": "8",
+    "digits": 0,
+    "sign": false,
+    "display": "8",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 9,
+    "field": "size",
+    "raw": "300",
+    "digits": 0,
+    "sign": false,
+    "display": "300",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 9,
+    "field": "lr",
+    "raw": "0.03",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0300",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 9,
+    "field": "depth_dropout",
+    "raw": "6",
+    "digits": 0,
+    "sign": false,
+    "display": "6",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 9,
+    "field": "validation_score",
+    "raw": "0.251907621422199",
+    "digits": 6,
+    "sign": false,
+    "display": "0.251908",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 9,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 10,
+    "field": "rank",
+    "raw": "9",
+    "digits": 0,
+    "sign": false,
+    "display": "9",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 10,
+    "field": "size",
+    "raw": "100",
+    "digits": 0,
+    "sign": false,
+    "display": "100",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 10,
+    "field": "lr",
+    "raw": "0.03",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0300",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 10,
+    "field": "depth_dropout",
+    "raw": "8",
+    "digits": 0,
+    "sign": false,
+    "display": "8",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 10,
+    "field": "validation_score",
+    "raw": "0.2521337917564109",
+    "digits": 6,
+    "sign": false,
+    "display": "0.252134",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 10,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 11,
+    "field": "rank",
+    "raw": "10",
+    "digits": 0,
+    "sign": false,
+    "display": "10",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 11,
+    "field": "size",
+    "raw": "100",
+    "digits": 0,
+    "sign": false,
+    "display": "100",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 11,
+    "field": "lr",
+    "raw": "0.1",
+    "digits": 4,
+    "sign": false,
+    "display": "0.1000",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 11,
+    "field": "depth_dropout",
+    "raw": "4",
+    "digits": 0,
+    "sign": false,
+    "display": "4",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 11,
+    "field": "validation_score",
+    "raw": "0.2522737237478588",
+    "digits": 6,
+    "sign": false,
+    "display": "0.252274",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 11,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 12,
+    "field": "rank",
+    "raw": "11",
+    "digits": 0,
+    "sign": false,
+    "display": "11",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 12,
+    "field": "size",
+    "raw": "100",
+    "digits": 0,
+    "sign": false,
+    "display": "100",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 12,
+    "field": "lr",
+    "raw": "0.1",
+    "digits": 4,
+    "sign": false,
+    "display": "0.1000",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 12,
+    "field": "depth_dropout",
+    "raw": "6",
+    "digits": 0,
+    "sign": false,
+    "display": "6",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 12,
+    "field": "validation_score",
+    "raw": "0.2527638365983991",
+    "digits": 6,
+    "sign": false,
+    "display": "0.252764",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 12,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 13,
+    "field": "rank",
+    "raw": "12",
+    "digits": 0,
+    "sign": false,
+    "display": "12",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 13,
+    "field": "size",
+    "raw": "600",
+    "digits": 0,
+    "sign": false,
+    "display": "600",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 13,
+    "field": "lr",
+    "raw": "0.03",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0300",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 13,
+    "field": "depth_dropout",
+    "raw": "6",
+    "digits": 0,
+    "sign": false,
+    "display": "6",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 13,
+    "field": "validation_score",
+    "raw": "0.25307519026546926",
+    "digits": 6,
+    "sign": false,
+    "display": "0.253075",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 13,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 14,
+    "field": "rank",
+    "raw": "13",
+    "digits": 0,
+    "sign": false,
+    "display": "13",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 14,
+    "field": "size",
+    "raw": "600",
+    "digits": 0,
+    "sign": false,
+    "display": "600",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 14,
+    "field": "lr",
+    "raw": "0.05",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0500",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 14,
+    "field": "depth_dropout",
+    "raw": "4",
+    "digits": 0,
+    "sign": false,
+    "display": "4",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 14,
+    "field": "validation_score",
+    "raw": "0.25319721411331375",
+    "digits": 6,
+    "sign": false,
+    "display": "0.253197",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 14,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 15,
+    "field": "rank",
+    "raw": "14",
+    "digits": 0,
+    "sign": false,
+    "display": "14",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 15,
+    "field": "size",
+    "raw": "300",
+    "digits": 0,
+    "sign": false,
+    "display": "300",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 15,
+    "field": "lr",
+    "raw": "0.03",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0300",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 15,
+    "field": "depth_dropout",
+    "raw": "8",
+    "digits": 0,
+    "sign": false,
+    "display": "8",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 15,
+    "field": "validation_score",
+    "raw": "0.25345512801065045",
+    "digits": 6,
+    "sign": false,
+    "display": "0.253455",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 15,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 16,
+    "field": "rank",
+    "raw": "15",
+    "digits": 0,
+    "sign": false,
+    "display": "15",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 16,
+    "field": "size",
+    "raw": "300",
+    "digits": 0,
+    "sign": false,
+    "display": "300",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 16,
+    "field": "lr",
+    "raw": "0.05",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0500",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 16,
+    "field": "depth_dropout",
+    "raw": "6",
+    "digits": 0,
+    "sign": false,
+    "display": "6",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 16,
+    "field": "validation_score",
+    "raw": "0.2539369708880615",
+    "digits": 6,
+    "sign": false,
+    "display": "0.253937",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 16,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 17,
+    "field": "rank",
+    "raw": "16",
+    "digits": 0,
+    "sign": false,
+    "display": "16",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 17,
+    "field": "size",
+    "raw": "100",
+    "digits": 0,
+    "sign": false,
+    "display": "100",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 17,
+    "field": "lr",
+    "raw": "0.05",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0500",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 17,
+    "field": "depth_dropout",
+    "raw": "8",
+    "digits": 0,
+    "sign": false,
+    "display": "8",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 17,
+    "field": "validation_score",
+    "raw": "0.2539876416257667",
+    "digits": 6,
+    "sign": false,
+    "display": "0.253988",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 17,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 18,
+    "field": "rank",
+    "raw": "17",
+    "digits": 0,
+    "sign": false,
+    "display": "17",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 18,
+    "field": "size",
+    "raw": "600",
+    "digits": 0,
+    "sign": false,
+    "display": "600",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 18,
+    "field": "lr",
+    "raw": "0.03",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0300",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 18,
+    "field": "depth_dropout",
+    "raw": "8",
+    "digits": 0,
+    "sign": false,
+    "display": "8",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 18,
+    "field": "validation_score",
+    "raw": "0.2544335484512714",
+    "digits": 6,
+    "sign": false,
+    "display": "0.254434",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 18,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 19,
+    "field": "rank",
+    "raw": "18",
+    "digits": 0,
+    "sign": false,
+    "display": "18",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 19,
+    "field": "size",
+    "raw": "600",
+    "digits": 0,
+    "sign": false,
+    "display": "600",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 19,
+    "field": "lr",
+    "raw": "0.05",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0500",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 19,
+    "field": "depth_dropout",
+    "raw": "6",
+    "digits": 0,
+    "sign": false,
+    "display": "6",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 19,
+    "field": "validation_score",
+    "raw": "0.25499941379080615",
+    "digits": 6,
+    "sign": false,
+    "display": "0.254999",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 19,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 20,
+    "field": "rank",
+    "raw": "19",
+    "digits": 0,
+    "sign": false,
+    "display": "19",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 20,
+    "field": "size",
+    "raw": "300",
+    "digits": 0,
+    "sign": false,
+    "display": "300",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 20,
+    "field": "lr",
+    "raw": "0.05",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0500",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 20,
+    "field": "depth_dropout",
+    "raw": "8",
+    "digits": 0,
+    "sign": false,
+    "display": "8",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 20,
+    "field": "validation_score",
+    "raw": "0.2551899418621121",
+    "digits": 6,
+    "sign": false,
+    "display": "0.255190",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 20,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 21,
+    "field": "rank",
+    "raw": "20",
+    "digits": 0,
+    "sign": false,
+    "display": "20",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 21,
+    "field": "size",
+    "raw": "300",
+    "digits": 0,
+    "sign": false,
+    "display": "300",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 21,
+    "field": "lr",
+    "raw": "0.1",
+    "digits": 4,
+    "sign": false,
+    "display": "0.1000",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 21,
+    "field": "depth_dropout",
+    "raw": "4",
+    "digits": 0,
+    "sign": false,
+    "display": "4",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 21,
+    "field": "validation_score",
+    "raw": "0.2557487581588221",
+    "digits": 6,
+    "sign": false,
+    "display": "0.255749",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 21,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 22,
+    "field": "rank",
+    "raw": "21",
+    "digits": 0,
+    "sign": false,
+    "display": "21",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 22,
+    "field": "size",
+    "raw": "600",
+    "digits": 0,
+    "sign": false,
+    "display": "600",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 22,
+    "field": "lr",
+    "raw": "0.05",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0500",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 22,
+    "field": "depth_dropout",
+    "raw": "8",
+    "digits": 0,
+    "sign": false,
+    "display": "8",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 22,
+    "field": "validation_score",
+    "raw": "0.2557546643292208",
+    "digits": 6,
+    "sign": false,
+    "display": "0.255755",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 22,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 23,
+    "field": "rank",
+    "raw": "22",
+    "digits": 0,
+    "sign": false,
+    "display": "22",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 23,
+    "field": "size",
+    "raw": "300",
+    "digits": 0,
+    "sign": false,
+    "display": "300",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 23,
+    "field": "lr",
+    "raw": "0.1",
+    "digits": 4,
+    "sign": false,
+    "display": "0.1000",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 23,
+    "field": "depth_dropout",
+    "raw": "6",
+    "digits": 0,
+    "sign": false,
+    "display": "6",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 23,
+    "field": "validation_score",
+    "raw": "0.2564399628713891",
+    "digits": 6,
+    "sign": false,
+    "display": "0.256440",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 23,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 24,
+    "field": "rank",
+    "raw": "23",
+    "digits": 0,
+    "sign": false,
+    "display": "23",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 24,
+    "field": "size",
+    "raw": "600",
+    "digits": 0,
+    "sign": false,
+    "display": "600",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 24,
+    "field": "lr",
+    "raw": "0.1",
+    "digits": 4,
+    "sign": false,
+    "display": "0.1000",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 24,
+    "field": "depth_dropout",
+    "raw": "6",
+    "digits": 0,
+    "sign": false,
+    "display": "6",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 24,
+    "field": "validation_score",
+    "raw": "0.2575109524516574",
+    "digits": 6,
+    "sign": false,
+    "display": "0.257511",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 24,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 25,
+    "field": "rank",
+    "raw": "24",
+    "digits": 0,
+    "sign": false,
+    "display": "24",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 25,
+    "field": "size",
+    "raw": "600",
+    "digits": 0,
+    "sign": false,
+    "display": "600",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 25,
+    "field": "lr",
+    "raw": "0.1",
+    "digits": 4,
+    "sign": false,
+    "display": "0.1000",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 25,
+    "field": "depth_dropout",
+    "raw": "4",
+    "digits": 0,
+    "sign": false,
+    "display": "4",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 25,
+    "field": "validation_score",
+    "raw": "0.25763106286738247",
+    "digits": 6,
+    "sign": false,
+    "display": "0.257631",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 25,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 26,
+    "field": "rank",
+    "raw": "25",
+    "digits": 0,
+    "sign": false,
+    "display": "25",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 26,
+    "field": "size",
+    "raw": "100",
+    "digits": 0,
+    "sign": false,
+    "display": "100",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 26,
+    "field": "lr",
+    "raw": "0.1",
+    "digits": 4,
+    "sign": false,
+    "display": "0.1000",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 26,
+    "field": "depth_dropout",
+    "raw": "8",
+    "digits": 0,
+    "sign": false,
+    "display": "8",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 26,
+    "field": "validation_score",
+    "raw": "0.2578096894983703",
+    "digits": 6,
+    "sign": false,
+    "display": "0.257810",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 26,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 27,
+    "field": "rank",
+    "raw": "26",
+    "digits": 0,
+    "sign": false,
+    "display": "26",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 27,
+    "field": "size",
+    "raw": "300",
+    "digits": 0,
+    "sign": false,
+    "display": "300",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 27,
+    "field": "lr",
+    "raw": "0.1",
+    "digits": 4,
+    "sign": false,
+    "display": "0.1000",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 27,
+    "field": "depth_dropout",
+    "raw": "8",
+    "digits": 0,
+    "sign": false,
+    "display": "8",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 27,
+    "field": "validation_score",
+    "raw": "0.25984258836942825",
+    "digits": 6,
+    "sign": false,
+    "display": "0.259843",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 27,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 28,
+    "field": "rank",
+    "raw": "27",
+    "digits": 0,
+    "sign": false,
+    "display": "27",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 28,
+    "field": "size",
+    "raw": "600",
+    "digits": 0,
+    "sign": false,
+    "display": "600",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 28,
+    "field": "lr",
+    "raw": "0.1",
+    "digits": 4,
+    "sign": false,
+    "display": "0.1000",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 28,
+    "field": "depth_dropout",
+    "raw": "8",
+    "digits": 0,
+    "sign": false,
+    "display": "8",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 28,
+    "field": "validation_score",
+    "raw": "0.26008759107331925",
+    "digits": 6,
+    "sign": false,
+    "display": "0.260088",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 28,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 29,
+    "field": "rank",
+    "raw": "1",
+    "digits": 0,
+    "sign": false,
+    "display": "1",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 29,
+    "field": "size",
+    "raw": "32",
+    "digits": 0,
+    "sign": false,
+    "display": "32",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 29,
+    "field": "lr",
+    "raw": "0.001",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0010",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 29,
+    "field": "depth_dropout",
+    "raw": "0.2",
+    "digits": 1,
+    "sign": false,
+    "display": "0.2",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 29,
+    "field": "validation_score",
+    "raw": "0.2541023400375834",
+    "digits": 6,
+    "sign": false,
+    "display": "0.254102",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 29,
+    "field": "three_seed_mean",
+    "raw": "0.25398337416084055",
+    "digits": 6,
+    "sign": false,
+    "display": "0.253983",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 30,
+    "field": "rank",
+    "raw": "2",
+    "digits": 0,
+    "sign": false,
+    "display": "2",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 30,
+    "field": "size",
+    "raw": "64",
+    "digits": 0,
+    "sign": false,
+    "display": "64",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 30,
+    "field": "lr",
+    "raw": "0.001",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0010",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 30,
+    "field": "depth_dropout",
+    "raw": "0.2",
+    "digits": 1,
+    "sign": false,
+    "display": "0.2",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 30,
+    "field": "validation_score",
+    "raw": "0.2541129260234933",
+    "digits": 6,
+    "sign": false,
+    "display": "0.254113",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 30,
+    "field": "three_seed_mean",
+    "raw": "0.25365212470117926",
+    "digits": 6,
+    "sign": false,
+    "display": "0.253652",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 31,
+    "field": "rank",
+    "raw": "3",
+    "digits": 0,
+    "sign": false,
+    "display": "3",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 31,
+    "field": "size",
+    "raw": "32",
+    "digits": 0,
+    "sign": false,
+    "display": "32",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 31,
+    "field": "lr",
+    "raw": "0.003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0030",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 31,
+    "field": "depth_dropout",
+    "raw": "0.3",
+    "digits": 1,
+    "sign": false,
+    "display": "0.3",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 31,
+    "field": "validation_score",
+    "raw": "0.25416043597226745",
+    "digits": 6,
+    "sign": false,
+    "display": "0.254160",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 31,
+    "field": "three_seed_mean",
+    "raw": "0.2535992043892226",
+    "digits": 6,
+    "sign": false,
+    "display": "0.253599",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 32,
+    "field": "rank",
+    "raw": "4",
+    "digits": 0,
+    "sign": false,
+    "display": "4",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 32,
+    "field": "size",
+    "raw": "128",
+    "digits": 0,
+    "sign": false,
+    "display": "128",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 32,
+    "field": "lr",
+    "raw": "0.003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0030",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 32,
+    "field": "depth_dropout",
+    "raw": "0.1",
+    "digits": 1,
+    "sign": false,
+    "display": "0.1",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 32,
+    "field": "validation_score",
+    "raw": "0.2542016742444265",
+    "digits": 6,
+    "sign": false,
+    "display": "0.254202",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 32,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 33,
+    "field": "rank",
+    "raw": "5",
+    "digits": 0,
+    "sign": false,
+    "display": "5",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 33,
+    "field": "size",
+    "raw": "32",
+    "digits": 0,
+    "sign": false,
+    "display": "32",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 33,
+    "field": "lr",
+    "raw": "0.001",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0010",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 33,
+    "field": "depth_dropout",
+    "raw": "0.3",
+    "digits": 1,
+    "sign": false,
+    "display": "0.3",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 33,
+    "field": "validation_score",
+    "raw": "0.2542523057769295",
+    "digits": 6,
+    "sign": false,
+    "display": "0.254252",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 33,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 34,
+    "field": "rank",
+    "raw": "6",
+    "digits": 0,
+    "sign": false,
+    "display": "6",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 34,
+    "field": "size",
+    "raw": "32",
+    "digits": 0,
+    "sign": false,
+    "display": "32",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 34,
+    "field": "lr",
+    "raw": "0.001",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0010",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 34,
+    "field": "depth_dropout",
+    "raw": "0.1",
+    "digits": 1,
+    "sign": false,
+    "display": "0.1",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 34,
+    "field": "validation_score",
+    "raw": "0.2542556648655718",
+    "digits": 6,
+    "sign": false,
+    "display": "0.254256",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 34,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 35,
+    "field": "rank",
+    "raw": "7",
+    "digits": 0,
+    "sign": false,
+    "display": "7",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 35,
+    "field": "size",
+    "raw": "64",
+    "digits": 0,
+    "sign": false,
+    "display": "64",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 35,
+    "field": "lr",
+    "raw": "0.003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0030",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 35,
+    "field": "depth_dropout",
+    "raw": "0.2",
+    "digits": 1,
+    "sign": false,
+    "display": "0.2",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 35,
+    "field": "validation_score",
+    "raw": "0.2543274261320649",
+    "digits": 6,
+    "sign": false,
+    "display": "0.254327",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 35,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 36,
+    "field": "rank",
+    "raw": "8",
+    "digits": 0,
+    "sign": false,
+    "display": "8",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 36,
+    "field": "size",
+    "raw": "32",
+    "digits": 0,
+    "sign": false,
+    "display": "32",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 36,
+    "field": "lr",
+    "raw": "0.0003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0003",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 36,
+    "field": "depth_dropout",
+    "raw": "0.1",
+    "digits": 1,
+    "sign": false,
+    "display": "0.1",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 36,
+    "field": "validation_score",
+    "raw": "0.25442764050906935",
+    "digits": 6,
+    "sign": false,
+    "display": "0.254428",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 36,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 37,
+    "field": "rank",
+    "raw": "9",
+    "digits": 0,
+    "sign": false,
+    "display": "9",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 37,
+    "field": "size",
+    "raw": "32",
+    "digits": 0,
+    "sign": false,
+    "display": "32",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 37,
+    "field": "lr",
+    "raw": "0.003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0030",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 37,
+    "field": "depth_dropout",
+    "raw": "0.2",
+    "digits": 1,
+    "sign": false,
+    "display": "0.2",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 37,
+    "field": "validation_score",
+    "raw": "0.25445449526954456",
+    "digits": 6,
+    "sign": false,
+    "display": "0.254454",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 37,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 38,
+    "field": "rank",
+    "raw": "10",
+    "digits": 0,
+    "sign": false,
+    "display": "10",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 38,
+    "field": "size",
+    "raw": "32",
+    "digits": 0,
+    "sign": false,
+    "display": "32",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 38,
+    "field": "lr",
+    "raw": "0.003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0030",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 38,
+    "field": "depth_dropout",
+    "raw": "0.1",
+    "digits": 1,
+    "sign": false,
+    "display": "0.1",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 38,
+    "field": "validation_score",
+    "raw": "0.2544741013122499",
+    "digits": 6,
+    "sign": false,
+    "display": "0.254474",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 38,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 39,
+    "field": "rank",
+    "raw": "11",
+    "digits": 0,
+    "sign": false,
+    "display": "11",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 39,
+    "field": "size",
+    "raw": "32",
+    "digits": 0,
+    "sign": false,
+    "display": "32",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 39,
+    "field": "lr",
+    "raw": "0.0003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0003",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 39,
+    "field": "depth_dropout",
+    "raw": "0.2",
+    "digits": 1,
+    "sign": false,
+    "display": "0.2",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 39,
+    "field": "validation_score",
+    "raw": "0.25450873413746866",
+    "digits": 6,
+    "sign": false,
+    "display": "0.254509",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 39,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 40,
+    "field": "rank",
+    "raw": "12",
+    "digits": 0,
+    "sign": false,
+    "display": "12",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 40,
+    "field": "size",
+    "raw": "32",
+    "digits": 0,
+    "sign": false,
+    "display": "32",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 40,
+    "field": "lr",
+    "raw": "0.0003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0003",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 40,
+    "field": "depth_dropout",
+    "raw": "0.3",
+    "digits": 1,
+    "sign": false,
+    "display": "0.3",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 40,
+    "field": "validation_score",
+    "raw": "0.25451286582944566",
+    "digits": 6,
+    "sign": false,
+    "display": "0.254513",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 40,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 41,
+    "field": "rank",
+    "raw": "13",
+    "digits": 0,
+    "sign": false,
+    "display": "13",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 41,
+    "field": "size",
+    "raw": "64",
+    "digits": 0,
+    "sign": false,
+    "display": "64",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 41,
+    "field": "lr",
+    "raw": "0.0003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0003",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 41,
+    "field": "depth_dropout",
+    "raw": "0.3",
+    "digits": 1,
+    "sign": false,
+    "display": "0.3",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 41,
+    "field": "validation_score",
+    "raw": "0.2546635605618675",
+    "digits": 6,
+    "sign": false,
+    "display": "0.254664",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 41,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 42,
+    "field": "rank",
+    "raw": "14",
+    "digits": 0,
+    "sign": false,
+    "display": "14",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 42,
+    "field": "size",
+    "raw": "64",
+    "digits": 0,
+    "sign": false,
+    "display": "64",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 42,
+    "field": "lr",
+    "raw": "0.001",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0010",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 42,
+    "field": "depth_dropout",
+    "raw": "0.1",
+    "digits": 1,
+    "sign": false,
+    "display": "0.1",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 42,
+    "field": "validation_score",
+    "raw": "0.2547033687667173",
+    "digits": 6,
+    "sign": false,
+    "display": "0.254703",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 42,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 43,
+    "field": "rank",
+    "raw": "15",
+    "digits": 0,
+    "sign": false,
+    "display": "15",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 43,
+    "field": "size",
+    "raw": "128",
+    "digits": 0,
+    "sign": false,
+    "display": "128",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 43,
+    "field": "lr",
+    "raw": "0.001",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0010",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 43,
+    "field": "depth_dropout",
+    "raw": "0.3",
+    "digits": 1,
+    "sign": false,
+    "display": "0.3",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 43,
+    "field": "validation_score",
+    "raw": "0.25473303404098824",
+    "digits": 6,
+    "sign": false,
+    "display": "0.254733",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 43,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 44,
+    "field": "rank",
+    "raw": "16",
+    "digits": 0,
+    "sign": false,
+    "display": "16",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 44,
+    "field": "size",
+    "raw": "64",
+    "digits": 0,
+    "sign": false,
+    "display": "64",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 44,
+    "field": "lr",
+    "raw": "0.0003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0003",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 44,
+    "field": "depth_dropout",
+    "raw": "0.2",
+    "digits": 1,
+    "sign": false,
+    "display": "0.2",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 44,
+    "field": "validation_score",
+    "raw": "0.25498308359457056",
+    "digits": 6,
+    "sign": false,
+    "display": "0.254983",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 44,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 45,
+    "field": "rank",
+    "raw": "17",
+    "digits": 0,
+    "sign": false,
+    "display": "17",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 45,
+    "field": "size",
+    "raw": "64",
+    "digits": 0,
+    "sign": false,
+    "display": "64",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 45,
+    "field": "lr",
+    "raw": "0.001",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0010",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 45,
+    "field": "depth_dropout",
+    "raw": "0.3",
+    "digits": 1,
+    "sign": false,
+    "display": "0.3",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 45,
+    "field": "validation_score",
+    "raw": "0.25503997345837104",
+    "digits": 6,
+    "sign": false,
+    "display": "0.255040",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 45,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 46,
+    "field": "rank",
+    "raw": "18",
+    "digits": 0,
+    "sign": false,
+    "display": "18",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 46,
+    "field": "size",
+    "raw": "64",
+    "digits": 0,
+    "sign": false,
+    "display": "64",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 46,
+    "field": "lr",
+    "raw": "0.0003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0003",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 46,
+    "field": "depth_dropout",
+    "raw": "0.1",
+    "digits": 1,
+    "sign": false,
+    "display": "0.1",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 46,
+    "field": "validation_score",
+    "raw": "0.2551147474144683",
+    "digits": 6,
+    "sign": false,
+    "display": "0.255115",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 46,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 47,
+    "field": "rank",
+    "raw": "19",
+    "digits": 0,
+    "sign": false,
+    "display": "19",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 47,
+    "field": "size",
+    "raw": "128",
+    "digits": 0,
+    "sign": false,
+    "display": "128",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 47,
+    "field": "lr",
+    "raw": "0.001",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0010",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 47,
+    "field": "depth_dropout",
+    "raw": "0.2",
+    "digits": 1,
+    "sign": false,
+    "display": "0.2",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 47,
+    "field": "validation_score",
+    "raw": "0.25523886467351786",
+    "digits": 6,
+    "sign": false,
+    "display": "0.255239",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 47,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 48,
+    "field": "rank",
+    "raw": "20",
+    "digits": 0,
+    "sign": false,
+    "display": "20",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 48,
+    "field": "size",
+    "raw": "64",
+    "digits": 0,
+    "sign": false,
+    "display": "64",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 48,
+    "field": "lr",
+    "raw": "0.003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0030",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 48,
+    "field": "depth_dropout",
+    "raw": "0.1",
+    "digits": 1,
+    "sign": false,
+    "display": "0.1",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 48,
+    "field": "validation_score",
+    "raw": "0.2553923308614924",
+    "digits": 6,
+    "sign": false,
+    "display": "0.255392",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 48,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 49,
+    "field": "rank",
+    "raw": "21",
+    "digits": 0,
+    "sign": false,
+    "display": "21",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 49,
+    "field": "size",
+    "raw": "128",
+    "digits": 0,
+    "sign": false,
+    "display": "128",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 49,
+    "field": "lr",
+    "raw": "0.0003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0003",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 49,
+    "field": "depth_dropout",
+    "raw": "0.3",
+    "digits": 1,
+    "sign": false,
+    "display": "0.3",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 49,
+    "field": "validation_score",
+    "raw": "0.2553940280705373",
+    "digits": 6,
+    "sign": false,
+    "display": "0.255394",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 49,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 50,
+    "field": "rank",
+    "raw": "22",
+    "digits": 0,
+    "sign": false,
+    "display": "22",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 50,
+    "field": "size",
+    "raw": "128",
+    "digits": 0,
+    "sign": false,
+    "display": "128",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 50,
+    "field": "lr",
+    "raw": "0.001",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0010",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 50,
+    "field": "depth_dropout",
+    "raw": "0.1",
+    "digits": 1,
+    "sign": false,
+    "display": "0.1",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 50,
+    "field": "validation_score",
+    "raw": "0.255545615861448",
+    "digits": 6,
+    "sign": false,
+    "display": "0.255546",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 50,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 51,
+    "field": "rank",
+    "raw": "23",
+    "digits": 0,
+    "sign": false,
+    "display": "23",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 51,
+    "field": "size",
+    "raw": "64",
+    "digits": 0,
+    "sign": false,
+    "display": "64",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 51,
+    "field": "lr",
+    "raw": "0.003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0030",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 51,
+    "field": "depth_dropout",
+    "raw": "0.3",
+    "digits": 1,
+    "sign": false,
+    "display": "0.3",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 51,
+    "field": "validation_score",
+    "raw": "0.2556270743801284",
+    "digits": 6,
+    "sign": false,
+    "display": "0.255627",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 51,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 52,
+    "field": "rank",
+    "raw": "24",
+    "digits": 0,
+    "sign": false,
+    "display": "24",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 52,
+    "field": "size",
+    "raw": "128",
+    "digits": 0,
+    "sign": false,
+    "display": "128",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 52,
+    "field": "lr",
+    "raw": "0.0003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0003",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 52,
+    "field": "depth_dropout",
+    "raw": "0.2",
+    "digits": 1,
+    "sign": false,
+    "display": "0.2",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 52,
+    "field": "validation_score",
+    "raw": "0.25563016360350654",
+    "digits": 6,
+    "sign": false,
+    "display": "0.255630",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 52,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 53,
+    "field": "rank",
+    "raw": "25",
+    "digits": 0,
+    "sign": false,
+    "display": "25",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 53,
+    "field": "size",
+    "raw": "128",
+    "digits": 0,
+    "sign": false,
+    "display": "128",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 53,
+    "field": "lr",
+    "raw": "0.003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0030",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 53,
+    "field": "depth_dropout",
+    "raw": "0.3",
+    "digits": 1,
+    "sign": false,
+    "display": "0.3",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 53,
+    "field": "validation_score",
+    "raw": "0.2558302814116937",
+    "digits": 6,
+    "sign": false,
+    "display": "0.255830",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 53,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 54,
+    "field": "rank",
+    "raw": "26",
+    "digits": 0,
+    "sign": false,
+    "display": "26",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 54,
+    "field": "size",
+    "raw": "128",
+    "digits": 0,
+    "sign": false,
+    "display": "128",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 54,
+    "field": "lr",
+    "raw": "0.0003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0003",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 54,
+    "field": "depth_dropout",
+    "raw": "0.1",
+    "digits": 1,
+    "sign": false,
+    "display": "0.1",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 54,
+    "field": "validation_score",
+    "raw": "0.2558709342654606",
+    "digits": 6,
+    "sign": false,
+    "display": "0.255871",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 54,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 55,
+    "field": "rank",
+    "raw": "27",
+    "digits": 0,
+    "sign": false,
+    "display": "27",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 55,
+    "field": "size",
+    "raw": "128",
+    "digits": 0,
+    "sign": false,
+    "display": "128",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 55,
+    "field": "lr",
+    "raw": "0.003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0030",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 55,
+    "field": "depth_dropout",
+    "raw": "0.2",
+    "digits": 1,
+    "sign": false,
+    "display": "0.2",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 55,
+    "field": "validation_score",
+    "raw": "0.25587744103687315",
+    "digits": 6,
+    "sign": false,
+    "display": "0.255877",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 55,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 56,
+    "field": "rank",
+    "raw": "1",
+    "digits": 0,
+    "sign": false,
+    "display": "1",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 56,
+    "field": "size",
+    "raw": "",
+    "digits": 0,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 56,
+    "field": "lr",
+    "raw": "0.003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0030",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 56,
+    "field": "depth_dropout",
+    "raw": "",
+    "digits": 0,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 56,
+    "field": "validation_score",
+    "raw": "0.25719372212442154",
+    "digits": 6,
+    "sign": false,
+    "display": "0.257194",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 56,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 57,
+    "field": "rank",
+    "raw": "2",
+    "digits": 0,
+    "sign": false,
+    "display": "2",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 57,
+    "field": "size",
+    "raw": "",
+    "digits": 0,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 57,
+    "field": "lr",
+    "raw": "0.0003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0003",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 57,
+    "field": "depth_dropout",
+    "raw": "",
+    "digits": 0,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 57,
+    "field": "validation_score",
+    "raw": "0.25999662889295855",
+    "digits": 6,
+    "sign": false,
+    "display": "0.259997",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 57,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 58,
+    "field": "rank",
+    "raw": "3",
+    "digits": 0,
+    "sign": false,
+    "display": "3",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 58,
+    "field": "size",
+    "raw": "",
+    "digits": 0,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 58,
+    "field": "lr",
+    "raw": "0.001",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0010",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 58,
+    "field": "depth_dropout",
+    "raw": "",
+    "digits": 0,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 58,
+    "field": "validation_score",
+    "raw": "0.26140627290602914",
+    "digits": 6,
+    "sign": false,
+    "display": "0.261406",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 58,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 59,
+    "field": "rank",
+    "raw": "1",
+    "digits": 0,
+    "sign": false,
+    "display": "1",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 59,
+    "field": "size",
+    "raw": "",
+    "digits": 0,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 59,
+    "field": "lr",
+    "raw": "0.003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0030",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 59,
+    "field": "depth_dropout",
+    "raw": "",
+    "digits": 0,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 59,
+    "field": "validation_score",
+    "raw": "0.08702108269072875",
+    "digits": 6,
+    "sign": false,
+    "display": "0.087021",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 59,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 60,
+    "field": "rank",
+    "raw": "2",
+    "digits": 0,
+    "sign": false,
+    "display": "2",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 60,
+    "field": "size",
+    "raw": "",
+    "digits": 0,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 60,
+    "field": "lr",
+    "raw": "0.001",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0010",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 60,
+    "field": "depth_dropout",
+    "raw": "",
+    "digits": 0,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 60,
+    "field": "validation_score",
+    "raw": "0.08922118875974985",
+    "digits": 6,
+    "sign": false,
+    "display": "0.089221",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 60,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 61,
+    "field": "rank",
+    "raw": "3",
+    "digits": 0,
+    "sign": false,
+    "display": "3",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 61,
+    "field": "size",
+    "raw": "",
+    "digits": 0,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 61,
+    "field": "lr",
+    "raw": "0.0003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0003",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 61,
+    "field": "depth_dropout",
+    "raw": "",
+    "digits": 0,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 61,
+    "field": "validation_score",
+    "raw": "0.08926482359772586",
+    "digits": 6,
+    "sign": false,
+    "display": "0.089265",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 61,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 62,
+    "field": "rank",
+    "raw": "1",
+    "digits": 0,
+    "sign": false,
+    "display": "1",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 62,
+    "field": "size",
+    "raw": "",
+    "digits": 0,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 62,
+    "field": "lr",
+    "raw": "0.003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0030",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 62,
+    "field": "depth_dropout",
+    "raw": "",
+    "digits": 0,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 62,
+    "field": "validation_score",
+    "raw": "0.08785020212019384",
+    "digits": 6,
+    "sign": false,
+    "display": "0.087850",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 62,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 63,
+    "field": "rank",
+    "raw": "2",
+    "digits": 0,
+    "sign": false,
+    "display": "2",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 63,
+    "field": "size",
+    "raw": "",
+    "digits": 0,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 63,
+    "field": "lr",
+    "raw": "0.001",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0010",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 63,
+    "field": "depth_dropout",
+    "raw": "",
+    "digits": 0,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 63,
+    "field": "validation_score",
+    "raw": "0.0889504911007755",
+    "digits": 6,
+    "sign": false,
+    "display": "0.088950",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 63,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 64,
+    "field": "rank",
+    "raw": "3",
+    "digits": 0,
+    "sign": false,
+    "display": "3",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 64,
+    "field": "size",
+    "raw": "",
+    "digits": 0,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 64,
+    "field": "lr",
+    "raw": "0.0003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0003",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 64,
+    "field": "depth_dropout",
+    "raw": "",
+    "digits": 0,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 64,
+    "field": "validation_score",
+    "raw": "0.09367324046140937",
+    "digits": 6,
+    "sign": false,
+    "display": "0.093673",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 64,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 65,
+    "field": "rank",
+    "raw": "1",
+    "digits": 0,
+    "sign": false,
+    "display": "1",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 65,
+    "field": "size",
+    "raw": "",
+    "digits": 0,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 65,
+    "field": "lr",
+    "raw": "0.001",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0010",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 65,
+    "field": "depth_dropout",
+    "raw": "",
+    "digits": 0,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 65,
+    "field": "validation_score",
+    "raw": "0.08797203377341473",
+    "digits": 6,
+    "sign": false,
+    "display": "0.087972",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 65,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 66,
+    "field": "rank",
+    "raw": "2",
+    "digits": 0,
+    "sign": false,
+    "display": "2",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 66,
+    "field": "size",
+    "raw": "",
+    "digits": 0,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 66,
+    "field": "lr",
+    "raw": "0.003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0030",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 66,
+    "field": "depth_dropout",
+    "raw": "",
+    "digits": 0,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 66,
+    "field": "validation_score",
+    "raw": "0.0889592690378953",
+    "digits": 6,
+    "sign": false,
+    "display": "0.088959",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 66,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 67,
+    "field": "rank",
+    "raw": "3",
+    "digits": 0,
+    "sign": false,
+    "display": "3",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 67,
+    "field": "size",
+    "raw": "",
+    "digits": 0,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 67,
+    "field": "lr",
+    "raw": "0.0003",
+    "digits": 4,
+    "sign": false,
+    "display": "0.0003",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 67,
+    "field": "depth_dropout",
+    "raw": "",
+    "digits": 0,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 67,
+    "field": "validation_score",
+    "raw": "0.08913015753657832",
+    "digits": 6,
+    "sign": false,
+    "display": "0.089130",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "CANDIDATE_TABLE.csv",
+    "line": 67,
+    "field": "three_seed_mean",
+    "raw": "",
+    "digits": 6,
+    "sign": false,
+    "display": "---",
+    "destination": "S48 candidates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 2,
+    "field": "ref",
+    "raw": "0.24392023146795153",
+    "digits": 6,
+    "sign": false,
+    "display": "0.243920",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 2,
+    "field": "new",
+    "raw": "0.24317637552265978",
+    "digits": 6,
+    "sign": false,
+    "display": "0.243176",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 2,
+    "field": "delta",
+    "raw": "-0.0007438559452917382",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.000744",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 2,
+    "field": "pct",
+    "raw": "-0.3049586911323806",
+    "digits": 2,
+    "sign": true,
+    "display": "-0.30",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 2,
+    "field": "n_better_of_5",
+    "raw": "5",
+    "digits": 0,
+    "sign": false,
+    "display": "5",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 3,
+    "field": "ref",
+    "raw": "0.47348780164586735",
+    "digits": 6,
+    "sign": false,
+    "display": "0.473488",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 3,
+    "field": "new",
+    "raw": "0.47365500181451237",
+    "digits": 6,
+    "sign": false,
+    "display": "0.473655",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 3,
+    "field": "delta",
+    "raw": "0.00016720016864495423",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.000167",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 3,
+    "field": "pct",
+    "raw": "0.0353124553713439",
+    "digits": 2,
+    "sign": true,
+    "display": "+0.04",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 3,
+    "field": "n_better_of_5",
+    "raw": "1",
+    "digits": 0,
+    "sign": false,
+    "display": "1",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 4,
+    "field": "ref",
+    "raw": "0.8428057538919402",
+    "digits": 6,
+    "sign": false,
+    "display": "0.842806",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 4,
+    "field": "new",
+    "raw": "0.8450172655102886",
+    "digits": 6,
+    "sign": false,
+    "display": "0.845017",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 4,
+    "field": "delta",
+    "raw": "0.0022115116183484274",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.002212",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 4,
+    "field": "pct",
+    "raw": "0.2623987328202288",
+    "digits": 2,
+    "sign": true,
+    "display": "+0.26",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 4,
+    "field": "n_better_of_5",
+    "raw": "0",
+    "digits": 0,
+    "sign": false,
+    "display": "0",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 5,
+    "field": "ref",
+    "raw": "0.24286369782800912",
+    "digits": 6,
+    "sign": false,
+    "display": "0.242864",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 5,
+    "field": "new",
+    "raw": "0.24286369782800912",
+    "digits": 6,
+    "sign": false,
+    "display": "0.242864",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 5,
+    "field": "delta",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 5,
+    "field": "pct",
+    "raw": "0.0",
+    "digits": 2,
+    "sign": true,
+    "display": "0.00",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 5,
+    "field": "n_better_of_5",
+    "raw": "0",
+    "digits": 0,
+    "sign": false,
+    "display": "0",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 6,
+    "field": "ref",
+    "raw": "0.48496302083572845",
+    "digits": 6,
+    "sign": false,
+    "display": "0.484963",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 6,
+    "field": "new",
+    "raw": "0.48496302083572845",
+    "digits": 6,
+    "sign": false,
+    "display": "0.484963",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 6,
+    "field": "delta",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 6,
+    "field": "pct",
+    "raw": "0.0",
+    "digits": 2,
+    "sign": true,
+    "display": "0.00",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 6,
+    "field": "n_better_of_5",
+    "raw": "0",
+    "digits": 0,
+    "sign": false,
+    "display": "0",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 7,
+    "field": "ref",
+    "raw": "0.8732036689888613",
+    "digits": 6,
+    "sign": false,
+    "display": "0.873204",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 7,
+    "field": "new",
+    "raw": "0.8732036689888613",
+    "digits": 6,
+    "sign": false,
+    "display": "0.873204",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 7,
+    "field": "delta",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 7,
+    "field": "pct",
+    "raw": "0.0",
+    "digits": 2,
+    "sign": true,
+    "display": "0.00",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 7,
+    "field": "n_better_of_5",
+    "raw": "0",
+    "digits": 0,
+    "sign": false,
+    "display": "0",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 8,
+    "field": "ref",
+    "raw": "0.24286369782800912",
+    "digits": 6,
+    "sign": false,
+    "display": "0.242864",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 8,
+    "field": "new",
+    "raw": "0.2430157523185307",
+    "digits": 6,
+    "sign": false,
+    "display": "0.243016",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 8,
+    "field": "delta",
+    "raw": "0.00015205449052156926",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.000152",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 8,
+    "field": "pct",
+    "raw": "0.06260898268511542",
+    "digits": 2,
+    "sign": true,
+    "display": "+0.06",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 8,
+    "field": "n_better_of_5",
+    "raw": "2",
+    "digits": 0,
+    "sign": false,
+    "display": "2",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 9,
+    "field": "ref",
+    "raw": "0.48496302083572845",
+    "digits": 6,
+    "sign": false,
+    "display": "0.484963",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 9,
+    "field": "new",
+    "raw": "0.4851809873613885",
+    "digits": 6,
+    "sign": false,
+    "display": "0.485181",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 9,
+    "field": "delta",
+    "raw": "0.00021796652565997388",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.000218",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 9,
+    "field": "pct",
+    "raw": "0.044944978543798225",
+    "digits": 2,
+    "sign": true,
+    "display": "+0.04",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 9,
+    "field": "n_better_of_5",
+    "raw": "2",
+    "digits": 0,
+    "sign": false,
+    "display": "2",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 10,
+    "field": "ref",
+    "raw": "0.8732036689888613",
+    "digits": 6,
+    "sign": false,
+    "display": "0.873204",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 10,
+    "field": "new",
+    "raw": "0.8742677616689691",
+    "digits": 6,
+    "sign": false,
+    "display": "0.874268",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 10,
+    "field": "delta",
+    "raw": "0.0010640926801078088",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.001064",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 10,
+    "field": "pct",
+    "raw": "0.12186076603869407",
+    "digits": 2,
+    "sign": true,
+    "display": "+0.12",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 10,
+    "field": "n_better_of_5",
+    "raw": "2",
+    "digits": 0,
+    "sign": false,
+    "display": "2",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 11,
+    "field": "ref",
+    "raw": "0.24286369782800912",
+    "digits": 6,
+    "sign": false,
+    "display": "0.242864",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 11,
+    "field": "new",
+    "raw": "0.2430157523185307",
+    "digits": 6,
+    "sign": false,
+    "display": "0.243016",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 11,
+    "field": "delta",
+    "raw": "0.00015205449052156926",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.000152",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 11,
+    "field": "pct",
+    "raw": "0.06260898268511542",
+    "digits": 2,
+    "sign": true,
+    "display": "+0.06",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 11,
+    "field": "n_better_of_5",
+    "raw": "2",
+    "digits": 0,
+    "sign": false,
+    "display": "2",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 12,
+    "field": "ref",
+    "raw": "0.48496302083572845",
+    "digits": 6,
+    "sign": false,
+    "display": "0.484963",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 12,
+    "field": "new",
+    "raw": "0.4851809873613885",
+    "digits": 6,
+    "sign": false,
+    "display": "0.485181",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 12,
+    "field": "delta",
+    "raw": "0.00021796652565997388",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.000218",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 12,
+    "field": "pct",
+    "raw": "0.044944978543798225",
+    "digits": 2,
+    "sign": true,
+    "display": "+0.04",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 12,
+    "field": "n_better_of_5",
+    "raw": "2",
+    "digits": 0,
+    "sign": false,
+    "display": "2",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 13,
+    "field": "ref",
+    "raw": "0.8732036689888613",
+    "digits": 6,
+    "sign": false,
+    "display": "0.873204",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 13,
+    "field": "new",
+    "raw": "0.8742677616689691",
+    "digits": 6,
+    "sign": false,
+    "display": "0.874268",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 13,
+    "field": "delta",
+    "raw": "0.0010640926801078088",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.001064",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 13,
+    "field": "pct",
+    "raw": "0.12186076603869407",
+    "digits": 2,
+    "sign": true,
+    "display": "+0.12",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 13,
+    "field": "n_better_of_5",
+    "raw": "2",
+    "digits": 0,
+    "sign": false,
+    "display": "2",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 14,
+    "field": "ref",
+    "raw": "0.2599897466080242",
+    "digits": 6,
+    "sign": false,
+    "display": "0.259990",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 14,
+    "field": "new",
+    "raw": "0.2579670162698694",
+    "digits": 6,
+    "sign": false,
+    "display": "0.257967",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 14,
+    "field": "delta",
+    "raw": "-0.002022730338154832",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.002023",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 14,
+    "field": "pct",
+    "raw": "-0.7780038884396542",
+    "digits": 2,
+    "sign": true,
+    "display": "-0.78",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 14,
+    "field": "n_better_of_5",
+    "raw": "3",
+    "digits": 0,
+    "sign": false,
+    "display": "3",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 15,
+    "field": "ref",
+    "raw": "0.5282984476461339",
+    "digits": 6,
+    "sign": false,
+    "display": "0.528298",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 15,
+    "field": "new",
+    "raw": "0.5236153900980651",
+    "digits": 6,
+    "sign": false,
+    "display": "0.523615",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 15,
+    "field": "delta",
+    "raw": "-0.004683057548068725",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.004683",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 15,
+    "field": "pct",
+    "raw": "-0.8864416635964718",
+    "digits": 2,
+    "sign": true,
+    "display": "-0.89",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 15,
+    "field": "n_better_of_5",
+    "raw": "3",
+    "digits": 0,
+    "sign": false,
+    "display": "3",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 16,
+    "field": "ref",
+    "raw": "0.9490528626285142",
+    "digits": 6,
+    "sign": false,
+    "display": "0.949053",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 16,
+    "field": "new",
+    "raw": "0.9401121865012966",
+    "digits": 6,
+    "sign": false,
+    "display": "0.940112",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 16,
+    "field": "delta",
+    "raw": "-0.008940676127217518",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.008941",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 16,
+    "field": "pct",
+    "raw": "-0.9420630271800937",
+    "digits": 2,
+    "sign": true,
+    "display": "-0.94",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 16,
+    "field": "n_better_of_5",
+    "raw": "3",
+    "digits": 0,
+    "sign": false,
+    "display": "3",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 17,
+    "field": "ref",
+    "raw": "0.2579670162698694",
+    "digits": 6,
+    "sign": false,
+    "display": "0.257967",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 17,
+    "field": "new",
+    "raw": "0.25644073249735655",
+    "digits": 6,
+    "sign": false,
+    "display": "0.256441",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 17,
+    "field": "delta",
+    "raw": "-0.0015262837725128152",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.001526",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 17,
+    "field": "pct",
+    "raw": "-0.5916584975019094",
+    "digits": 2,
+    "sign": true,
+    "display": "-0.59",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 17,
+    "field": "n_better_of_5",
+    "raw": "4",
+    "digits": 0,
+    "sign": false,
+    "display": "4",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 18,
+    "field": "ref",
+    "raw": "0.5236153900980651",
+    "digits": 6,
+    "sign": false,
+    "display": "0.523615",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 18,
+    "field": "new",
+    "raw": "0.5182692993513104",
+    "digits": 6,
+    "sign": false,
+    "display": "0.518269",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 18,
+    "field": "delta",
+    "raw": "-0.005346090746754783",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.005346",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 18,
+    "field": "pct",
+    "raw": "-1.020995724696622",
+    "digits": 2,
+    "sign": true,
+    "display": "-1.02",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 18,
+    "field": "n_better_of_5",
+    "raw": "4",
+    "digits": 0,
+    "sign": false,
+    "display": "4",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 19,
+    "field": "ref",
+    "raw": "0.9401121865012966",
+    "digits": 6,
+    "sign": false,
+    "display": "0.940112",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 19,
+    "field": "new",
+    "raw": "0.933962592079367",
+    "digits": 6,
+    "sign": false,
+    "display": "0.933963",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 19,
+    "field": "delta",
+    "raw": "-0.00614959442192955",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.006150",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 19,
+    "field": "pct",
+    "raw": "-0.6541341033792746",
+    "digits": 2,
+    "sign": true,
+    "display": "-0.65",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 19,
+    "field": "n_better_of_5",
+    "raw": "4",
+    "digits": 0,
+    "sign": false,
+    "display": "4",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 20,
+    "field": "ref",
+    "raw": "0.2599897466080242",
+    "digits": 6,
+    "sign": false,
+    "display": "0.259990",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 20,
+    "field": "new",
+    "raw": "0.25644073249735655",
+    "digits": 6,
+    "sign": false,
+    "display": "0.256441",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 20,
+    "field": "delta",
+    "raw": "-0.0035490141106676474",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.003549",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 20,
+    "field": "pct",
+    "raw": "-1.365059259824715",
+    "digits": 2,
+    "sign": true,
+    "display": "-1.37",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 20,
+    "field": "n_better_of_5",
+    "raw": "4",
+    "digits": 0,
+    "sign": false,
+    "display": "4",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 21,
+    "field": "ref",
+    "raw": "0.5282984476461339",
+    "digits": 6,
+    "sign": false,
+    "display": "0.528298",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 21,
+    "field": "new",
+    "raw": "0.5182692993513104",
+    "digits": 6,
+    "sign": false,
+    "display": "0.518269",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 21,
+    "field": "delta",
+    "raw": "-0.01002914829482351",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.010029",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 21,
+    "field": "pct",
+    "raw": "-1.8983868568058442",
+    "digits": 2,
+    "sign": true,
+    "display": "-1.90",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 21,
+    "field": "n_better_of_5",
+    "raw": "4",
+    "digits": 0,
+    "sign": false,
+    "display": "4",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 22,
+    "field": "ref",
+    "raw": "0.9490528626285142",
+    "digits": 6,
+    "sign": false,
+    "display": "0.949053",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 22,
+    "field": "new",
+    "raw": "0.933962592079367",
+    "digits": 6,
+    "sign": false,
+    "display": "0.933963",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 22,
+    "field": "delta",
+    "raw": "-0.015090270549147067",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.015090",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 22,
+    "field": "pct",
+    "raw": "-1.590034775023256",
+    "digits": 2,
+    "sign": true,
+    "display": "-1.59",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 22,
+    "field": "n_better_of_5",
+    "raw": "4",
+    "digits": 0,
+    "sign": false,
+    "display": "4",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 23,
+    "field": "ref",
+    "raw": "0.2469703407926712",
+    "digits": 6,
+    "sign": false,
+    "display": "0.246970",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 23,
+    "field": "new",
+    "raw": "0.2469703407926712",
+    "digits": 6,
+    "sign": false,
+    "display": "0.246970",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 23,
+    "field": "delta",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 23,
+    "field": "pct",
+    "raw": "0.0",
+    "digits": 2,
+    "sign": true,
+    "display": "0.00",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 23,
+    "field": "n_better_of_5",
+    "raw": "0",
+    "digits": 0,
+    "sign": false,
+    "display": "0",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 24,
+    "field": "ref",
+    "raw": "0.49657099513437614",
+    "digits": 6,
+    "sign": false,
+    "display": "0.496571",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 24,
+    "field": "new",
+    "raw": "0.49657099513437614",
+    "digits": 6,
+    "sign": false,
+    "display": "0.496571",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 24,
+    "field": "delta",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 24,
+    "field": "pct",
+    "raw": "0.0",
+    "digits": 2,
+    "sign": true,
+    "display": "0.00",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 24,
+    "field": "n_better_of_5",
+    "raw": "0",
+    "digits": 0,
+    "sign": false,
+    "display": "0",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 25,
+    "field": "ref",
+    "raw": "0.8970416873979348",
+    "digits": 6,
+    "sign": false,
+    "display": "0.897042",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 25,
+    "field": "new",
+    "raw": "0.8970416873979348",
+    "digits": 6,
+    "sign": false,
+    "display": "0.897042",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 25,
+    "field": "delta",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 25,
+    "field": "pct",
+    "raw": "0.0",
+    "digits": 2,
+    "sign": true,
+    "display": "0.00",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 25,
+    "field": "n_better_of_5",
+    "raw": "0",
+    "digits": 0,
+    "sign": false,
+    "display": "0",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 26,
+    "field": "ref",
+    "raw": "0.09426082670688629",
+    "digits": 6,
+    "sign": false,
+    "display": "0.094261",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 26,
+    "field": "new",
+    "raw": "0.09426082670688629",
+    "digits": 6,
+    "sign": false,
+    "display": "0.094261",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 26,
+    "field": "delta",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 26,
+    "field": "pct",
+    "raw": "0.0",
+    "digits": 2,
+    "sign": true,
+    "display": "0.00",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 26,
+    "field": "n_better_of_5",
+    "raw": "0",
+    "digits": 0,
+    "sign": false,
+    "display": "0",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 27,
+    "field": "ref",
+    "raw": "0.2469703407926712",
+    "digits": 6,
+    "sign": false,
+    "display": "0.246970",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 27,
+    "field": "new",
+    "raw": "0.24556330673304733",
+    "digits": 6,
+    "sign": false,
+    "display": "0.245563",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 27,
+    "field": "delta",
+    "raw": "-0.0014070340596238906",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.001407",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 27,
+    "field": "pct",
+    "raw": "-0.5697178272937153",
+    "digits": 2,
+    "sign": true,
+    "display": "-0.57",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 27,
+    "field": "n_better_of_5",
+    "raw": "2",
+    "digits": 0,
+    "sign": false,
+    "display": "2",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 28,
+    "field": "ref",
+    "raw": "0.49657099513437614",
+    "digits": 6,
+    "sign": false,
+    "display": "0.496571",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 28,
+    "field": "new",
+    "raw": "0.4909312725767818",
+    "digits": 6,
+    "sign": false,
+    "display": "0.490931",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 28,
+    "field": "delta",
+    "raw": "-0.00563972255759434",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.005640",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 28,
+    "field": "pct",
+    "raw": "-1.13573338210545",
+    "digits": 2,
+    "sign": true,
+    "display": "-1.14",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 28,
+    "field": "n_better_of_5",
+    "raw": "2",
+    "digits": 0,
+    "sign": false,
+    "display": "2",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 29,
+    "field": "ref",
+    "raw": "0.8970416873979348",
+    "digits": 6,
+    "sign": false,
+    "display": "0.897042",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 29,
+    "field": "new",
+    "raw": "0.8872316503323219",
+    "digits": 6,
+    "sign": false,
+    "display": "0.887232",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 29,
+    "field": "delta",
+    "raw": "-0.00981003706561292",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.009810",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 29,
+    "field": "pct",
+    "raw": "-1.0935987929467441",
+    "digits": 2,
+    "sign": true,
+    "display": "-1.09",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 29,
+    "field": "n_better_of_5",
+    "raw": "2",
+    "digits": 0,
+    "sign": false,
+    "display": "2",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 30,
+    "field": "ref",
+    "raw": "0.09426082670688629",
+    "digits": 6,
+    "sign": false,
+    "display": "0.094261",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 30,
+    "field": "new",
+    "raw": "0.09411735832691193",
+    "digits": 6,
+    "sign": false,
+    "display": "0.094117",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 30,
+    "field": "delta",
+    "raw": "-0.00014347284741234034",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.000143",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 30,
+    "field": "pct",
+    "raw": "-0.1522083580493927",
+    "digits": 2,
+    "sign": true,
+    "display": "-0.15",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 30,
+    "field": "n_better_of_5",
+    "raw": "2",
+    "digits": 0,
+    "sign": false,
+    "display": "2",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 31,
+    "field": "ref",
+    "raw": "0.2469703407926712",
+    "digits": 6,
+    "sign": false,
+    "display": "0.246970",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 31,
+    "field": "new",
+    "raw": "0.24556330673304733",
+    "digits": 6,
+    "sign": false,
+    "display": "0.245563",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 31,
+    "field": "delta",
+    "raw": "-0.0014070340596238906",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.001407",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 31,
+    "field": "pct",
+    "raw": "-0.5697178272937153",
+    "digits": 2,
+    "sign": true,
+    "display": "-0.57",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 31,
+    "field": "n_better_of_5",
+    "raw": "2",
+    "digits": 0,
+    "sign": false,
+    "display": "2",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 32,
+    "field": "ref",
+    "raw": "0.49657099513437614",
+    "digits": 6,
+    "sign": false,
+    "display": "0.496571",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 32,
+    "field": "new",
+    "raw": "0.4909312725767818",
+    "digits": 6,
+    "sign": false,
+    "display": "0.490931",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 32,
+    "field": "delta",
+    "raw": "-0.00563972255759434",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.005640",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 32,
+    "field": "pct",
+    "raw": "-1.13573338210545",
+    "digits": 2,
+    "sign": true,
+    "display": "-1.14",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 32,
+    "field": "n_better_of_5",
+    "raw": "2",
+    "digits": 0,
+    "sign": false,
+    "display": "2",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 33,
+    "field": "ref",
+    "raw": "0.8970416873979348",
+    "digits": 6,
+    "sign": false,
+    "display": "0.897042",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 33,
+    "field": "new",
+    "raw": "0.8872316503323219",
+    "digits": 6,
+    "sign": false,
+    "display": "0.887232",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 33,
+    "field": "delta",
+    "raw": "-0.00981003706561292",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.009810",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 33,
+    "field": "pct",
+    "raw": "-1.0935987929467441",
+    "digits": 2,
+    "sign": true,
+    "display": "-1.09",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 33,
+    "field": "n_better_of_5",
+    "raw": "2",
+    "digits": 0,
+    "sign": false,
+    "display": "2",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 34,
+    "field": "ref",
+    "raw": "0.09426082670688629",
+    "digits": 6,
+    "sign": false,
+    "display": "0.094261",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 34,
+    "field": "new",
+    "raw": "0.09411735832691193",
+    "digits": 6,
+    "sign": false,
+    "display": "0.094117",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 34,
+    "field": "delta",
+    "raw": "-0.00014347284741234034",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.000143",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 34,
+    "field": "pct",
+    "raw": "-0.1522083580493927",
+    "digits": 2,
+    "sign": true,
+    "display": "-0.15",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 34,
+    "field": "n_better_of_5",
+    "raw": "2",
+    "digits": 0,
+    "sign": false,
+    "display": "2",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 35,
+    "field": "ref",
+    "raw": "0.2472069221284922",
+    "digits": 6,
+    "sign": false,
+    "display": "0.247207",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 35,
+    "field": "new",
+    "raw": "0.2472069221284922",
+    "digits": 6,
+    "sign": false,
+    "display": "0.247207",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 35,
+    "field": "delta",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 35,
+    "field": "pct",
+    "raw": "0.0",
+    "digits": 2,
+    "sign": true,
+    "display": "0.00",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 35,
+    "field": "n_better_of_5",
+    "raw": "0",
+    "digits": 0,
+    "sign": false,
+    "display": "0",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 36,
+    "field": "ref",
+    "raw": "0.4960919258692066",
+    "digits": 6,
+    "sign": false,
+    "display": "0.496092",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 36,
+    "field": "new",
+    "raw": "0.4960919258692066",
+    "digits": 6,
+    "sign": false,
+    "display": "0.496092",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 36,
+    "field": "delta",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 36,
+    "field": "pct",
+    "raw": "0.0",
+    "digits": 2,
+    "sign": true,
+    "display": "0.00",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 36,
+    "field": "n_better_of_5",
+    "raw": "0",
+    "digits": 0,
+    "sign": false,
+    "display": "0",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 37,
+    "field": "ref",
+    "raw": "0.8964816138000884",
+    "digits": 6,
+    "sign": false,
+    "display": "0.896482",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 37,
+    "field": "new",
+    "raw": "0.8964816138000884",
+    "digits": 6,
+    "sign": false,
+    "display": "0.896482",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 37,
+    "field": "delta",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 37,
+    "field": "pct",
+    "raw": "0.0",
+    "digits": 2,
+    "sign": true,
+    "display": "0.00",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 37,
+    "field": "n_better_of_5",
+    "raw": "0",
+    "digits": 0,
+    "sign": false,
+    "display": "0",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 38,
+    "field": "ref",
+    "raw": "0.09497321397066116",
+    "digits": 6,
+    "sign": false,
+    "display": "0.094973",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 38,
+    "field": "new",
+    "raw": "0.09497321397066116",
+    "digits": 6,
+    "sign": false,
+    "display": "0.094973",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 38,
+    "field": "delta",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 38,
+    "field": "pct",
+    "raw": "0.0",
+    "digits": 2,
+    "sign": true,
+    "display": "0.00",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 38,
+    "field": "n_better_of_5",
+    "raw": "0",
+    "digits": 0,
+    "sign": false,
+    "display": "0",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 39,
+    "field": "ref",
+    "raw": "0.2472069221284922",
+    "digits": 6,
+    "sign": false,
+    "display": "0.247207",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 39,
+    "field": "new",
+    "raw": "0.24573746591799578",
+    "digits": 6,
+    "sign": false,
+    "display": "0.245737",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 39,
+    "field": "delta",
+    "raw": "-0.001469456210496428",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.001469",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 39,
+    "field": "pct",
+    "raw": "-0.5944235694713436",
+    "digits": 2,
+    "sign": true,
+    "display": "-0.59",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 39,
+    "field": "n_better_of_5",
+    "raw": "4",
+    "digits": 0,
+    "sign": false,
+    "display": "4",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 40,
+    "field": "ref",
+    "raw": "0.4960919258692066",
+    "digits": 6,
+    "sign": false,
+    "display": "0.496092",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 40,
+    "field": "new",
+    "raw": "0.4907429691006048",
+    "digits": 6,
+    "sign": false,
+    "display": "0.490743",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 40,
+    "field": "delta",
+    "raw": "-0.00534895676860182",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.005349",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 40,
+    "field": "pct",
+    "raw": "-1.0782188722845814",
+    "digits": 2,
+    "sign": true,
+    "display": "-1.08",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 40,
+    "field": "n_better_of_5",
+    "raw": "4",
+    "digits": 0,
+    "sign": false,
+    "display": "4",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 41,
+    "field": "ref",
+    "raw": "0.8964816138000884",
+    "digits": 6,
+    "sign": false,
+    "display": "0.896482",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 41,
+    "field": "new",
+    "raw": "0.8846343494462261",
+    "digits": 6,
+    "sign": false,
+    "display": "0.884634",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 41,
+    "field": "delta",
+    "raw": "-0.011847264353862342",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.011847",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 41,
+    "field": "pct",
+    "raw": "-1.3215289830254378",
+    "digits": 2,
+    "sign": true,
+    "display": "-1.32",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 41,
+    "field": "n_better_of_5",
+    "raw": "4",
+    "digits": 0,
+    "sign": false,
+    "display": "4",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 42,
+    "field": "ref",
+    "raw": "0.09497321397066116",
+    "digits": 6,
+    "sign": false,
+    "display": "0.094973",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 42,
+    "field": "new",
+    "raw": "0.09333350509405136",
+    "digits": 6,
+    "sign": false,
+    "display": "0.093334",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 42,
+    "field": "delta",
+    "raw": "-0.0016397073632106185",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.001640",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 42,
+    "field": "pct",
+    "raw": "-1.726494550704956",
+    "digits": 2,
+    "sign": true,
+    "display": "-1.73",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 42,
+    "field": "n_better_of_5",
+    "raw": "5",
+    "digits": 0,
+    "sign": false,
+    "display": "5",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 43,
+    "field": "ref",
+    "raw": "0.2472069221284922",
+    "digits": 6,
+    "sign": false,
+    "display": "0.247207",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 43,
+    "field": "new",
+    "raw": "0.24573746591799578",
+    "digits": 6,
+    "sign": false,
+    "display": "0.245737",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 43,
+    "field": "delta",
+    "raw": "-0.001469456210496428",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.001469",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 43,
+    "field": "pct",
+    "raw": "-0.5944235694713436",
+    "digits": 2,
+    "sign": true,
+    "display": "-0.59",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 43,
+    "field": "n_better_of_5",
+    "raw": "4",
+    "digits": 0,
+    "sign": false,
+    "display": "4",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 44,
+    "field": "ref",
+    "raw": "0.4960919258692066",
+    "digits": 6,
+    "sign": false,
+    "display": "0.496092",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 44,
+    "field": "new",
+    "raw": "0.4907429691006048",
+    "digits": 6,
+    "sign": false,
+    "display": "0.490743",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 44,
+    "field": "delta",
+    "raw": "-0.00534895676860182",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.005349",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 44,
+    "field": "pct",
+    "raw": "-1.0782188722845814",
+    "digits": 2,
+    "sign": true,
+    "display": "-1.08",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 44,
+    "field": "n_better_of_5",
+    "raw": "4",
+    "digits": 0,
+    "sign": false,
+    "display": "4",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 45,
+    "field": "ref",
+    "raw": "0.8964816138000884",
+    "digits": 6,
+    "sign": false,
+    "display": "0.896482",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 45,
+    "field": "new",
+    "raw": "0.8846343494462261",
+    "digits": 6,
+    "sign": false,
+    "display": "0.884634",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 45,
+    "field": "delta",
+    "raw": "-0.011847264353862342",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.011847",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 45,
+    "field": "pct",
+    "raw": "-1.3215289830254378",
+    "digits": 2,
+    "sign": true,
+    "display": "-1.32",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 45,
+    "field": "n_better_of_5",
+    "raw": "4",
+    "digits": 0,
+    "sign": false,
+    "display": "4",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 46,
+    "field": "ref",
+    "raw": "0.09497321397066116",
+    "digits": 6,
+    "sign": false,
+    "display": "0.094973",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 46,
+    "field": "new",
+    "raw": "0.09333350509405136",
+    "digits": 6,
+    "sign": false,
+    "display": "0.093334",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 46,
+    "field": "delta",
+    "raw": "-0.0016397073632106185",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.001640",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 46,
+    "field": "pct",
+    "raw": "-1.726494550704956",
+    "digits": 2,
+    "sign": true,
+    "display": "-1.73",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 46,
+    "field": "n_better_of_5",
+    "raw": "5",
+    "digits": 0,
+    "sign": false,
+    "display": "5",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 47,
+    "field": "ref",
+    "raw": "0.24936867915483676",
+    "digits": 6,
+    "sign": false,
+    "display": "0.249369",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 47,
+    "field": "new",
+    "raw": "0.24936867915483676",
+    "digits": 6,
+    "sign": false,
+    "display": "0.249369",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 47,
+    "field": "delta",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 47,
+    "field": "pct",
+    "raw": "0.0",
+    "digits": 2,
+    "sign": true,
+    "display": "0.00",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 47,
+    "field": "n_better_of_5",
+    "raw": "0",
+    "digits": 0,
+    "sign": false,
+    "display": "0",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 48,
+    "field": "ref",
+    "raw": "0.5015855144622462",
+    "digits": 6,
+    "sign": false,
+    "display": "0.501586",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 48,
+    "field": "new",
+    "raw": "0.5015855144622462",
+    "digits": 6,
+    "sign": false,
+    "display": "0.501586",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 48,
+    "field": "delta",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 48,
+    "field": "pct",
+    "raw": "0.0",
+    "digits": 2,
+    "sign": true,
+    "display": "0.00",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 48,
+    "field": "n_better_of_5",
+    "raw": "0",
+    "digits": 0,
+    "sign": false,
+    "display": "0",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 49,
+    "field": "ref",
+    "raw": "0.9062962535300393",
+    "digits": 6,
+    "sign": false,
+    "display": "0.906296",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 49,
+    "field": "new",
+    "raw": "0.9062962535300393",
+    "digits": 6,
+    "sign": false,
+    "display": "0.906296",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 49,
+    "field": "delta",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 49,
+    "field": "pct",
+    "raw": "0.0",
+    "digits": 2,
+    "sign": true,
+    "display": "0.00",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 49,
+    "field": "n_better_of_5",
+    "raw": "0",
+    "digits": 0,
+    "sign": false,
+    "display": "0",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 50,
+    "field": "ref",
+    "raw": "0.09609749168157578",
+    "digits": 6,
+    "sign": false,
+    "display": "0.096097",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 50,
+    "field": "new",
+    "raw": "0.09609749168157578",
+    "digits": 6,
+    "sign": false,
+    "display": "0.096097",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 50,
+    "field": "delta",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 50,
+    "field": "pct",
+    "raw": "0.0",
+    "digits": 2,
+    "sign": true,
+    "display": "0.00",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 50,
+    "field": "n_better_of_5",
+    "raw": "0",
+    "digits": 0,
+    "sign": false,
+    "display": "0",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 51,
+    "field": "ref",
+    "raw": "0.24936867915483676",
+    "digits": 6,
+    "sign": false,
+    "display": "0.249369",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 51,
+    "field": "new",
+    "raw": "0.24936867915483676",
+    "digits": 6,
+    "sign": false,
+    "display": "0.249369",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 51,
+    "field": "delta",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 51,
+    "field": "pct",
+    "raw": "0.0",
+    "digits": 2,
+    "sign": true,
+    "display": "0.00",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 51,
+    "field": "n_better_of_5",
+    "raw": "0",
+    "digits": 0,
+    "sign": false,
+    "display": "0",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 52,
+    "field": "ref",
+    "raw": "0.5015855144622462",
+    "digits": 6,
+    "sign": false,
+    "display": "0.501586",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 52,
+    "field": "new",
+    "raw": "0.5015855144622462",
+    "digits": 6,
+    "sign": false,
+    "display": "0.501586",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 52,
+    "field": "delta",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 52,
+    "field": "pct",
+    "raw": "0.0",
+    "digits": 2,
+    "sign": true,
+    "display": "0.00",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 52,
+    "field": "n_better_of_5",
+    "raw": "0",
+    "digits": 0,
+    "sign": false,
+    "display": "0",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 53,
+    "field": "ref",
+    "raw": "0.9062962535300393",
+    "digits": 6,
+    "sign": false,
+    "display": "0.906296",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 53,
+    "field": "new",
+    "raw": "0.9062962535300393",
+    "digits": 6,
+    "sign": false,
+    "display": "0.906296",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 53,
+    "field": "delta",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 53,
+    "field": "pct",
+    "raw": "0.0",
+    "digits": 2,
+    "sign": true,
+    "display": "0.00",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 53,
+    "field": "n_better_of_5",
+    "raw": "0",
+    "digits": 0,
+    "sign": false,
+    "display": "0",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 54,
+    "field": "ref",
+    "raw": "0.09609749168157578",
+    "digits": 6,
+    "sign": false,
+    "display": "0.096097",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 54,
+    "field": "new",
+    "raw": "0.09609749168157578",
+    "digits": 6,
+    "sign": false,
+    "display": "0.096097",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 54,
+    "field": "delta",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 54,
+    "field": "pct",
+    "raw": "0.0",
+    "digits": 2,
+    "sign": true,
+    "display": "0.00",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 54,
+    "field": "n_better_of_5",
+    "raw": "0",
+    "digits": 0,
+    "sign": false,
+    "display": "0",
+    "destination": "S49 estimates"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 2,
+    "field": "t_lo",
+    "raw": "-0.0012112794654804398",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.001211",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 2,
+    "field": "t_hi",
+    "raw": "-0.00027643242510303666",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.000276",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 2,
+    "field": "boot_lo",
+    "raw": "-0.0018822484463453292",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.001882",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 2,
+    "field": "boot_hi",
+    "raw": "0.0004456049948930738",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.000446",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 3,
+    "field": "t_lo",
+    "raw": "-0.0007713724277296169",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.000771",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 3,
+    "field": "t_hi",
+    "raw": "0.0011057727650195253",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.001106",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 3,
+    "field": "boot_lo",
+    "raw": "-0.002240416705608368",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.002240",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 3,
+    "field": "boot_hi",
+    "raw": "0.0027367632091045376",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.002737",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 4,
+    "field": "t_lo",
+    "raw": "-7.4925371717246385e-06",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.000007",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 4,
+    "field": "t_hi",
+    "raw": "0.00443051577386858",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.004431",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 4,
+    "field": "boot_lo",
+    "raw": "-0.0021514400839805605",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.002151",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 4,
+    "field": "boot_hi",
+    "raw": "0.006994070708751679",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.006994",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 5,
+    "field": "t_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 5,
+    "field": "t_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 5,
+    "field": "boot_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 5,
+    "field": "boot_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 6,
+    "field": "t_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 6,
+    "field": "t_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 6,
+    "field": "boot_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 6,
+    "field": "boot_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 7,
+    "field": "t_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 7,
+    "field": "t_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 7,
+    "field": "boot_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 7,
+    "field": "boot_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 8,
+    "field": "t_lo",
+    "raw": "-0.001640981684969939",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.001641",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 8,
+    "field": "t_hi",
+    "raw": "0.0019450906660130776",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.001945",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 8,
+    "field": "boot_lo",
+    "raw": "-0.0006345438957214356",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.000635",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 8,
+    "field": "boot_hi",
+    "raw": "0.000983349382877349",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.000983",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 9,
+    "field": "t_lo",
+    "raw": "-0.004501704681063434",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.004502",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 9,
+    "field": "t_hi",
+    "raw": "0.004937637732383382",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.004938",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 9,
+    "field": "boot_lo",
+    "raw": "-0.0015544945001602173",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.001554",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 9,
+    "field": "boot_hi",
+    "raw": "0.002076210379600524",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.002076",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 10,
+    "field": "t_lo",
+    "raw": "-0.010090322877601006",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.010090",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 10,
+    "field": "t_hi",
+    "raw": "0.012218508237816625",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.012219",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 10,
+    "field": "boot_lo",
+    "raw": "-0.0024547651410102844",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.002455",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 10,
+    "field": "boot_hi",
+    "raw": "0.004755318462848662",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.004755",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 11,
+    "field": "t_lo",
+    "raw": "-0.001640981684969939",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.001641",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 11,
+    "field": "t_hi",
+    "raw": "0.0019450906660130776",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.001945",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 11,
+    "field": "boot_lo",
+    "raw": "-0.0006345438957214356",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.000635",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 11,
+    "field": "boot_hi",
+    "raw": "0.000983349382877349",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.000983",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 12,
+    "field": "t_lo",
+    "raw": "-0.004501704681063434",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.004502",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 12,
+    "field": "t_hi",
+    "raw": "0.004937637732383382",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.004938",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 12,
+    "field": "boot_lo",
+    "raw": "-0.0015544945001602173",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.001554",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 12,
+    "field": "boot_hi",
+    "raw": "0.002076210379600524",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.002076",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 13,
+    "field": "t_lo",
+    "raw": "-0.010090322877601006",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.010090",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 13,
+    "field": "t_hi",
+    "raw": "0.012218508237816625",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.012219",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 13,
+    "field": "boot_lo",
+    "raw": "-0.0024547651410102844",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.002455",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 13,
+    "field": "boot_hi",
+    "raw": "0.004755318462848662",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.004755",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 14,
+    "field": "t_lo",
+    "raw": "-0.004732910907085443",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.004733",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 14,
+    "field": "t_hi",
+    "raw": "0.0006874502307757783",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.000687",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 14,
+    "field": "boot_lo",
+    "raw": "-0.0028187698125839234",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.002819",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 14,
+    "field": "boot_hi",
+    "raw": "-0.0014303246885538107",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.001430",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 15,
+    "field": "t_lo",
+    "raw": "-0.01014179599025367",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.010142",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 15,
+    "field": "t_hi",
+    "raw": "0.0007756808941162202",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.000776",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 15,
+    "field": "boot_lo",
+    "raw": "-0.00622223973274231",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.006222",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 15,
+    "field": "boot_hi",
+    "raw": "-0.0033704239130020147",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.003370",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 16,
+    "field": "t_lo",
+    "raw": "-0.019494560559199462",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.019495",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 16,
+    "field": "t_hi",
+    "raw": "0.001613208304764427",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.001613",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 16,
+    "field": "boot_lo",
+    "raw": "-0.011479429304599761",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.011479",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 16,
+    "field": "boot_hi",
+    "raw": "-0.006480261385440828",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.006480",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 17,
+    "field": "t_lo",
+    "raw": "-0.009213692475920928",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.009214",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 17,
+    "field": "t_hi",
+    "raw": "0.006161124930895297",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.006161",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 17,
+    "field": "boot_lo",
+    "raw": "-0.0028488509356975555",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.002849",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 17,
+    "field": "boot_hi",
+    "raw": "-2.1903663873672805e-05",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.000022",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 18,
+    "field": "t_lo",
+    "raw": "-0.026976609271066064",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.026977",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 18,
+    "field": "t_hi",
+    "raw": "0.016284427777556496",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.016284",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 18,
+    "field": "boot_lo",
+    "raw": "-0.008543844223022462",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.008544",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 18,
+    "field": "boot_hi",
+    "raw": "-0.002019945085048677",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.002020",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 19,
+    "field": "t_lo",
+    "raw": "-0.04650074670689512",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.046501",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 19,
+    "field": "t_hi",
+    "raw": "0.034201557863036025",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.034202",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 19,
+    "field": "boot_lo",
+    "raw": "-0.011771616339683533",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.011772",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 19,
+    "field": "boot_hi",
+    "raw": "-0.00029846251010895035",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.000298",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 20,
+    "field": "t_lo",
+    "raw": "-0.00941181733971248",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.009412",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 20,
+    "field": "t_hi",
+    "raw": "0.0023137891183771858",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.002314",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 20,
+    "field": "boot_lo",
+    "raw": "-0.005114230662584305",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.005114",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 20,
+    "field": "boot_hi",
+    "raw": "-0.002055279836058617",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.002055",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 21,
+    "field": "t_lo",
+    "raw": "-0.03181796079723756",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.031818",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 21,
+    "field": "t_hi",
+    "raw": "0.011759664207590543",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.011760",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 21,
+    "field": "boot_lo",
+    "raw": "-0.013313166499137878",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.013313",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 21,
+    "field": "boot_hi",
+    "raw": "-0.0067930752038955705",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.006793",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 22,
+    "field": "t_lo",
+    "raw": "-0.053204690742876135",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.053205",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 22,
+    "field": "t_hi",
+    "raw": "0.023024149644581996",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.023024",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 22,
+    "field": "boot_lo",
+    "raw": "-0.02087378829717636",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.020874",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 22,
+    "field": "boot_hi",
+    "raw": "-0.00923087000846863",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.009231",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 23,
+    "field": "t_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 23,
+    "field": "t_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 23,
+    "field": "boot_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 23,
+    "field": "boot_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 24,
+    "field": "t_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 24,
+    "field": "t_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 24,
+    "field": "boot_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 24,
+    "field": "boot_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 25,
+    "field": "t_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 25,
+    "field": "t_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 25,
+    "field": "boot_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 25,
+    "field": "boot_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 26,
+    "field": "t_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 26,
+    "field": "t_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 26,
+    "field": "boot_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 26,
+    "field": "boot_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 27,
+    "field": "t_lo",
+    "raw": "-0.0043577673449867824",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.004358",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 27,
+    "field": "t_hi",
+    "raw": "0.0015436992257390012",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.001544",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 27,
+    "field": "boot_lo",
+    "raw": "-0.0024870335310697555",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.002487",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 27,
+    "field": "boot_hi",
+    "raw": "-0.00036003559827804845",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.000360",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 28,
+    "field": "t_lo",
+    "raw": "-0.020277891040901674",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.020278",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 28,
+    "field": "t_hi",
+    "raw": "0.008998445925712993",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.008998",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 28,
+    "field": "boot_lo",
+    "raw": "-0.008131231814622879",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.008131",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 28,
+    "field": "boot_hi",
+    "raw": "-0.0032121255993843084",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.003212",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 29,
+    "field": "t_lo",
+    "raw": "-0.03586486439050924",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.035865",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 29,
+    "field": "t_hi",
+    "raw": "0.016244790259283395",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.016245",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 29,
+    "field": "boot_lo",
+    "raw": "-0.014506347477436066",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.014506",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 29,
+    "field": "boot_hi",
+    "raw": "-0.005378688275814064",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.005379",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 30,
+    "field": "t_lo",
+    "raw": "-0.0022249949987844966",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.002225",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 30,
+    "field": "t_hi",
+    "raw": "0.001938049303959816",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.001938",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 30,
+    "field": "boot_lo",
+    "raw": "-0.0007599518075585365",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.000760",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 30,
+    "field": "boot_hi",
+    "raw": "0.0004269518703222274",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.000427",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 31,
+    "field": "t_lo",
+    "raw": "-0.0043577673449867824",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.004358",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 31,
+    "field": "t_hi",
+    "raw": "0.0015436992257390012",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.001544",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 31,
+    "field": "boot_lo",
+    "raw": "-0.0024870335310697555",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.002487",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 31,
+    "field": "boot_hi",
+    "raw": "-0.00036003559827804845",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.000360",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 32,
+    "field": "t_lo",
+    "raw": "-0.020277891040901674",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.020278",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 32,
+    "field": "t_hi",
+    "raw": "0.008998445925712993",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.008998",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 32,
+    "field": "boot_lo",
+    "raw": "-0.008131231814622879",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.008131",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 32,
+    "field": "boot_hi",
+    "raw": "-0.0032121255993843084",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.003212",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 33,
+    "field": "t_lo",
+    "raw": "-0.03586486439050924",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.035865",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 33,
+    "field": "t_hi",
+    "raw": "0.016244790259283395",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.016245",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 33,
+    "field": "boot_lo",
+    "raw": "-0.014506347477436066",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.014506",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 33,
+    "field": "boot_hi",
+    "raw": "-0.005378688275814064",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.005379",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 34,
+    "field": "t_lo",
+    "raw": "-0.0022249949987844966",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.002225",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 34,
+    "field": "t_hi",
+    "raw": "0.001938049303959816",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.001938",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 34,
+    "field": "boot_lo",
+    "raw": "-0.0007599518075585365",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.000760",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 34,
+    "field": "boot_hi",
+    "raw": "0.0004269518703222274",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.000427",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 35,
+    "field": "t_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 35,
+    "field": "t_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 35,
+    "field": "boot_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 35,
+    "field": "boot_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 36,
+    "field": "t_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 36,
+    "field": "t_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 36,
+    "field": "boot_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 36,
+    "field": "boot_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 37,
+    "field": "t_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 37,
+    "field": "t_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 37,
+    "field": "boot_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 37,
+    "field": "boot_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 38,
+    "field": "t_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 38,
+    "field": "t_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 38,
+    "field": "boot_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 38,
+    "field": "boot_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 39,
+    "field": "t_lo",
+    "raw": "-0.004700030993846431",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.004700",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 39,
+    "field": "t_hi",
+    "raw": "0.0017611185728535752",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.001761",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 39,
+    "field": "boot_lo",
+    "raw": "-0.002723269164562225",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.002723",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 39,
+    "field": "boot_hi",
+    "raw": "-0.00030249178409576423",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.000302",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 40,
+    "field": "t_lo",
+    "raw": "-0.022330264258284178",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.022330",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 40,
+    "field": "t_hi",
+    "raw": "0.011632350721080539",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.011632",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 40,
+    "field": "boot_lo",
+    "raw": "-0.007931601852178572",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.007932",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 40,
+    "field": "boot_hi",
+    "raw": "-0.0028606924414634714",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.002861",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 41,
+    "field": "t_lo",
+    "raw": "-0.042725805666776556",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.042726",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 41,
+    "field": "t_hi",
+    "raw": "0.019031276959051872",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.019031",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 41,
+    "field": "boot_lo",
+    "raw": "-0.016524118185043336",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.016524",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 41,
+    "field": "boot_hi",
+    "raw": "-0.007572230994701388",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.007572",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 42,
+    "field": "t_lo",
+    "raw": "-0.0026939485460393438",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.002694",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 42,
+    "field": "t_hi",
+    "raw": "-0.0005854661803818934",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.000585",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 42,
+    "field": "boot_lo",
+    "raw": "-0.00231523547321558",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.002315",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 42,
+    "field": "boot_hi",
+    "raw": "-0.0010287172347307211",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.001029",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 43,
+    "field": "t_lo",
+    "raw": "-0.004700030993846431",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.004700",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 43,
+    "field": "t_hi",
+    "raw": "0.0017611185728535752",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.001761",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 43,
+    "field": "boot_lo",
+    "raw": "-0.002723269164562225",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.002723",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 43,
+    "field": "boot_hi",
+    "raw": "-0.00030249178409576423",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.000302",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 44,
+    "field": "t_lo",
+    "raw": "-0.022330264258284178",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.022330",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 44,
+    "field": "t_hi",
+    "raw": "0.011632350721080539",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.011632",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 44,
+    "field": "boot_lo",
+    "raw": "-0.007931601852178572",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.007932",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 44,
+    "field": "boot_hi",
+    "raw": "-0.0028606924414634714",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.002861",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 45,
+    "field": "t_lo",
+    "raw": "-0.042725805666776556",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.042726",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 45,
+    "field": "t_hi",
+    "raw": "0.019031276959051872",
+    "digits": 6,
+    "sign": true,
+    "display": "+0.019031",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 45,
+    "field": "boot_lo",
+    "raw": "-0.016524118185043336",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.016524",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 45,
+    "field": "boot_hi",
+    "raw": "-0.007572230994701388",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.007572",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 46,
+    "field": "t_lo",
+    "raw": "-0.0026939485460393438",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.002694",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 46,
+    "field": "t_hi",
+    "raw": "-0.0005854661803818934",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.000585",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 46,
+    "field": "boot_lo",
+    "raw": "-0.00231523547321558",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.002315",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 46,
+    "field": "boot_hi",
+    "raw": "-0.0010287172347307211",
+    "digits": 6,
+    "sign": true,
+    "display": "-0.001029",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 47,
+    "field": "t_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 47,
+    "field": "t_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 47,
+    "field": "boot_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 47,
+    "field": "boot_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 48,
+    "field": "t_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 48,
+    "field": "t_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 48,
+    "field": "boot_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 48,
+    "field": "boot_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 49,
+    "field": "t_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 49,
+    "field": "t_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 49,
+    "field": "boot_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 49,
+    "field": "boot_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 50,
+    "field": "t_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 50,
+    "field": "t_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 50,
+    "field": "boot_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 50,
+    "field": "boot_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 51,
+    "field": "t_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 51,
+    "field": "t_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 51,
+    "field": "boot_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 51,
+    "field": "boot_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 52,
+    "field": "t_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 52,
+    "field": "t_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 52,
+    "field": "boot_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 52,
+    "field": "boot_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 53,
+    "field": "t_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 53,
+    "field": "t_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 53,
+    "field": "boot_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 53,
+    "field": "boot_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 54,
+    "field": "t_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 54,
+    "field": "t_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 54,
+    "field": "boot_lo",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 54,
+    "field": "boot_hi",
+    "raw": "0.0",
+    "digits": 6,
+    "sign": true,
+    "display": "0.000000",
+    "destination": "S49 intervals"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 11,
+    "field": "pct",
+    "raw": "0.06260898268511542",
+    "digits": 2,
+    "sign": true,
+    "display": "+0.06",
+    "destination": "prose"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 4,
+    "field": "pct",
+    "raw": "0.2623987328202288",
+    "digits": 2,
+    "sign": false,
+    "display": "0.26",
+    "destination": "prose"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 14,
+    "field": "pct",
+    "raw": "-0.7780038884396542",
+    "digits": 2,
+    "sign": false,
+    "display": "-0.78",
+    "destination": "prose"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 17,
+    "field": "pct",
+    "raw": "-0.5916584975019094",
+    "digits": 2,
+    "sign": false,
+    "display": "-0.59",
+    "destination": "prose"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 20,
+    "field": "pct",
+    "raw": "-1.365059259824715",
+    "digits": 2,
+    "sign": false,
+    "display": "-1.37",
+    "destination": "prose"
+  },
+  {
+    "file": "q19_effect.csv",
+    "line": 46,
+    "field": "pct",
+    "raw": "-1.726494550704956",
+    "digits": 2,
+    "sign": false,
+    "display": "-1.73",
+    "destination": "prose"
+  },
+  {
+    "file": "COST_SUMMARY.csv",
+    "line": 3,
+    "field": "recorded_hours",
+    "raw": "1.3064444444444447",
+    "digits": 2,
+    "sign": false,
+    "display": "1.31",
+    "destination": "Response recorded BiLSTM task hours"
+  }
+]

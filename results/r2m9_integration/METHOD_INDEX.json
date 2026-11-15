@@ -1,0 +1,179 @@
+[
+  {
+    "file": "q19_tune.py",
+    "line": 51,
+    "field": "REF_42",
+    "value": {
+      "xgboost": 0.24375,
+      "bilstm_attn": 0.242848
+    }
+  },
+  {
+    "file": "q19_tune.py",
+    "line": 52,
+    "field": "ORIG_CFG",
+    "value": {
+      "xgboost": {
+        "n": 100,
+        "lr": 0.05,
+        "depth": 6
+      },
+      "bilstm_attn": {
+        "units": 64,
+        "lr": 0.001,
+        "dropout": 0.2
+      }
+    }
+  },
+  {
+    "file": "q19_tune.py",
+    "line": 58,
+    "field": "CAP",
+    "value": {
+      "bilstm_attn": 60,
+      "light": 100
+    }
+  },
+  {
+    "file": "q19_tune.py",
+    "line": 59,
+    "field": "LIGHT",
+    "value": [
+      "transformer",
+      "bulstm",
+      "bulstm_attn",
+      "prob_bilstm_attn"
+    ]
+  },
+  {
+    "file": "q19_tune.py",
+    "line": 60,
+    "field": "LIGHT_LR",
+    "value": [
+      0.0003,
+      0.001,
+      0.003
+    ]
+  },
+  {
+    "file": "q19_tune.py",
+    "line": 55,
+    "field": "grid_axes",
+    "value": [
+      [
+        100,
+        300,
+        600
+      ],
+      [
+        0.03,
+        0.05,
+        0.1
+      ],
+      [
+        4,
+        6,
+        8
+      ]
+    ]
+  },
+  {
+    "file": "q19_tune.py",
+    "line": 57,
+    "field": "grid_axes",
+    "value": [
+      [
+        32,
+        64,
+        128
+      ],
+      [
+        0.0003,
+        0.001,
+        0.003
+      ],
+      [
+        0.1,
+        0.2,
+        0.3
+      ]
+    ]
+  },
+  {
+    "file": "q19_tune.py",
+    "line": 117,
+    "field": "patience",
+    "value": 10
+  },
+  {
+    "file": "q19_tune.py",
+    "line": 118,
+    "field": "batch_size",
+    "value": 32
+  },
+  {
+    "file": "q19_tune.py",
+    "line": 121,
+    "field": "batch_size",
+    "value": 1024
+  },
+  {
+    "file": "q19_stats.py",
+    "line": 29,
+    "field": "SEEDS",
+    "value": [
+      42,
+      123,
+      7,
+      2024,
+      99
+    ]
+  },
+  {
+    "file": "q19_stats.py",
+    "line": 30,
+    "field": "Q95",
+    "value": 0.574048
+  },
+  {
+    "file": "q19_stats.py",
+    "line": 30,
+    "field": "WET",
+    "value": 0.1
+  },
+  {
+    "file": "q19_stats.py",
+    "line": 31,
+    "field": "BLOCK",
+    "value": 28
+  },
+  {
+    "file": "q19_stats.py",
+    "line": 31,
+    "field": "NBOOT",
+    "value": 5000
+  },
+  {
+    "file": "q19_stats.py",
+    "line": 31,
+    "field": "BSEED",
+    "value": 42
+  },
+  {
+    "file": "q19_stats.py",
+    "line": 32,
+    "field": "ORIG",
+    "value": {
+      "xgboost": {
+        "n": 100,
+        "lr": 0.05,
+        "depth": 6
+      },
+      "bilstm_attn": {
+        "units": 64,
+        "lr": 0.001,
+        "dropout": 0.2
+      }
+    }
+  }
+]

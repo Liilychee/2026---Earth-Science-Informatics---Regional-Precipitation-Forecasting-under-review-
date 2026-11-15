@@ -1,0 +1,91 @@
+q19 运行数 117
+
+[XGBoost] 选定 {'n': 300, 'lr': 0.03, 'depth': 4}（原 {'n': 100, 'lr': 0.05, 'depth': 6}；原配置在前 3：False）；前 3 的 3 种子验证均值：{'n': 300, 'lr': 0.03, 'depth': 4}=0.250860，{'n': 100, 'lr': 0.03, 'depth': 4}=0.251067，{'n': 600, 'lr': 0.03, 'depth': 4}=0.251468
+  seed 42 网格 27 组，原配置验证排名 6
+
+[BiLSTM-Attention] 选定 {'units': 32, 'lr': 0.003, 'dropout': 0.3}（原 {'units': 64, 'lr': 0.001, 'dropout': 0.2}；原配置在前 3：True）；前 3 的 3 种子验证均值：{'units': 32, 'lr': 0.003, 'dropout': 0.3}=0.253599，{'units': 64, 'lr': 0.001, 'dropout': 0.2}=0.253652，{'units': 32, 'lr': 0.001, 'dropout': 0.2}=0.253983
+  seed 42 网格 28 组，原配置验证排名 2
+[Transformer] 按 validation rmse 选学习率：选定 {'lr': 0.003}；seed 42 验证：lr 0.003: rmse 0.25719，lr 0.0003: rmse 0.26000，lr 0.001: rmse 0.26141
+  B 组（lr 1e-3，上限 100）best epoch [35, 45, 29, 6, 44]，跑满上限 0/5
+[BU-LSTM] 按 validation crps 选学习率：选定 {'lr': 0.003}；seed 42 验证：lr 0.003: rmse 0.25416, crps 0.08702，lr 0.001: rmse 0.25732, crps 0.08922，lr 0.0003: rmse 0.25572, crps 0.08926
+  B 组（lr 1e-3，上限 100）best epoch [7, 8, 12, 9, 6]，跑满上限 0/5
+[BU-LSTM-Attention] 按 validation crps 选学习率：选定 {'lr': 0.003}；seed 42 验证：lr 0.003: rmse 0.25432, crps 0.08785，lr 0.001: rmse 0.25589, crps 0.08895，lr 0.0003: rmse 0.25942, crps 0.09367
+  B 组（lr 1e-3，上限 100）best epoch [11, 12, 8, 5, 16]，跑满上限 0/5
+[Prob. BiLSTM-Attention] 按 validation crps 选学习率：选定 {'lr': 0.001}；seed 42 验证：lr 0.001: rmse 0.25771, crps 0.08797，lr 0.003: rmse 0.25764, crps 0.08896，lr 0.0003: rmse 0.25848, crps 0.08913
+  B 组（lr 1e-3，上限 100）best epoch [12, 10, 17, 4, 3]，跑满上限 0/5
+[BiLSTM-Attention] B 与 A 测试预测最大差 0.00e+00（为 0 说明 A 组从未受 30 轮上限限制）
+[Transformer] B 与 A 测试预测最大差 4.83e-01（为 0 说明 A 组从未受 30 轮上限限制）
+[BU-LSTM] B 与 A 测试预测最大差 0.00e+00（为 0 说明 A 组从未受 30 轮上限限制）
+[BU-LSTM-Attention] B 与 A 测试预测最大差 0.00e+00（为 0 说明 A 组从未受 30 轮上限限制）
+[Prob. BiLSTM-Attention] B 与 A 测试预测最大差 0.00e+00（为 0 说明 A 组从未受 30 轮上限限制）
+
+===== 配对差（负数 = 改进）=====
+                 model            comparison metric subset    ref    new   delta     pct    t_lo    t_hi  boot_lo  boot_hi  n_better_of_5                evidence  val_rmse_ref  val_rmse_new
+               XGBoost           C-A (total)   rmse    all 0.2439 0.2432 -0.0007 -0.3050 -0.0012 -0.0003  -0.0019   0.0004              5          medium(seed-t)        0.2513        0.2511
+               XGBoost           C-A (total)   rmse    wet 0.4735 0.4737  0.0002  0.0353 -0.0008  0.0011  -0.0022   0.0027              1               weak/none           NaN           NaN
+               XGBoost           C-A (total)   rmse   tail 0.8428 0.8450  0.0022  0.2624 -0.0000  0.0044  -0.0022   0.0070              0               weak/none           NaN           NaN
+      BiLSTM-Attention B-A (longer cap only)   rmse    all 0.2429 0.2429  0.0000  0.0000  0.0000  0.0000   0.0000   0.0000              0               weak/none        0.2540        0.2540
+      BiLSTM-Attention B-A (longer cap only)   rmse    wet 0.4850 0.4850  0.0000  0.0000  0.0000  0.0000   0.0000   0.0000              0               weak/none           NaN           NaN
+      BiLSTM-Attention B-A (longer cap only)   rmse   tail 0.8732 0.8732  0.0000  0.0000  0.0000  0.0000   0.0000   0.0000              0               weak/none           NaN           NaN
+      BiLSTM-Attention     C-B (tuning only)   rmse    all 0.2429 0.2430  0.0002  0.0626 -0.0016  0.0019  -0.0006   0.0010              2               weak/none        0.2540        0.2539
+      BiLSTM-Attention     C-B (tuning only)   rmse    wet 0.4850 0.4852  0.0002  0.0449 -0.0045  0.0049  -0.0016   0.0021              2               weak/none           NaN           NaN
+      BiLSTM-Attention     C-B (tuning only)   rmse   tail 0.8732 0.8743  0.0011  0.1219 -0.0101  0.0122  -0.0025   0.0048              2               weak/none           NaN           NaN
+      BiLSTM-Attention           C-A (total)   rmse    all 0.2429 0.2430  0.0002  0.0626 -0.0016  0.0019  -0.0006   0.0010              2               weak/none        0.2540        0.2539
+      BiLSTM-Attention           C-A (total)   rmse    wet 0.4850 0.4852  0.0002  0.0449 -0.0045  0.0049  -0.0016   0.0021              2               weak/none           NaN           NaN
+      BiLSTM-Attention           C-A (total)   rmse   tail 0.8732 0.8743  0.0011  0.1219 -0.0101  0.0122  -0.0025   0.0048              2               weak/none           NaN           NaN
+           Transformer B-A (longer cap only)   rmse    all 0.2600 0.2580 -0.0020 -0.7780 -0.0047  0.0007  -0.0028  -0.0014              3               weak/none        0.2649        0.2631
+           Transformer B-A (longer cap only)   rmse    wet 0.5283 0.5236 -0.0047 -0.8864 -0.0101  0.0008  -0.0062  -0.0034              3               weak/none           NaN           NaN
+           Transformer B-A (longer cap only)   rmse   tail 0.9491 0.9401 -0.0089 -0.9421 -0.0195  0.0016  -0.0115  -0.0065              3               weak/none           NaN           NaN
+           Transformer     C-B (tuning only)   rmse    all 0.2580 0.2564 -0.0015 -0.5917 -0.0092  0.0062  -0.0028  -0.0000              4 medium(block-bootstrap)        0.2631        0.2610
+           Transformer     C-B (tuning only)   rmse    wet 0.5236 0.5183 -0.0053 -1.0210 -0.0270  0.0163  -0.0085  -0.0020              4 medium(block-bootstrap)           NaN           NaN
+           Transformer     C-B (tuning only)   rmse   tail 0.9401 0.9340 -0.0061 -0.6541 -0.0465  0.0342  -0.0118  -0.0003              4 medium(block-bootstrap)           NaN           NaN
+           Transformer           C-A (total)   rmse    all 0.2600 0.2564 -0.0035 -1.3651 -0.0094  0.0023  -0.0051  -0.0021              4 medium(block-bootstrap)        0.2649        0.2610
+           Transformer           C-A (total)   rmse    wet 0.5283 0.5183 -0.0100 -1.8984 -0.0318  0.0118  -0.0133  -0.0068              4 medium(block-bootstrap)           NaN           NaN
+           Transformer           C-A (total)   rmse   tail 0.9491 0.9340 -0.0151 -1.5900 -0.0532  0.0230  -0.0209  -0.0092              4 medium(block-bootstrap)           NaN           NaN
+               BU-LSTM B-A (longer cap only)   rmse    all 0.2470 0.2470  0.0000  0.0000  0.0000  0.0000   0.0000   0.0000              0               weak/none        0.2560        0.2560
+               BU-LSTM B-A (longer cap only)   rmse    wet 0.4966 0.4966  0.0000  0.0000  0.0000  0.0000   0.0000   0.0000              0               weak/none           NaN           NaN
+               BU-LSTM B-A (longer cap only)   rmse   tail 0.8970 0.8970  0.0000  0.0000  0.0000  0.0000   0.0000   0.0000              0               weak/none           NaN           NaN
+               BU-LSTM B-A (longer cap only)   crps    all 0.0943 0.0943  0.0000  0.0000  0.0000  0.0000   0.0000   0.0000              0               weak/none           NaN           NaN
+               BU-LSTM     C-B (tuning only)   rmse    all 0.2470 0.2456 -0.0014 -0.5697 -0.0044  0.0015  -0.0025  -0.0004              2               weak/none        0.2560        0.2546
+               BU-LSTM     C-B (tuning only)   rmse    wet 0.4966 0.4909 -0.0056 -1.1357 -0.0203  0.0090  -0.0081  -0.0032              2               weak/none           NaN           NaN
+               BU-LSTM     C-B (tuning only)   rmse   tail 0.8970 0.8872 -0.0098 -1.0936 -0.0359  0.0162  -0.0145  -0.0054              2               weak/none           NaN           NaN
+               BU-LSTM     C-B (tuning only)   crps    all 0.0943 0.0941 -0.0001 -0.1522 -0.0022  0.0019  -0.0008   0.0004              2               weak/none           NaN           NaN
+               BU-LSTM           C-A (total)   rmse    all 0.2470 0.2456 -0.0014 -0.5697 -0.0044  0.0015  -0.0025  -0.0004              2               weak/none        0.2560        0.2546
+               BU-LSTM           C-A (total)   rmse    wet 0.4966 0.4909 -0.0056 -1.1357 -0.0203  0.0090  -0.0081  -0.0032              2               weak/none           NaN           NaN
+               BU-LSTM           C-A (total)   rmse   tail 0.8970 0.8872 -0.0098 -1.0936 -0.0359  0.0162  -0.0145  -0.0054              2               weak/none           NaN           NaN
+               BU-LSTM           C-A (total)   crps    all 0.0943 0.0941 -0.0001 -0.1522 -0.0022  0.0019  -0.0008   0.0004              2               weak/none           NaN           NaN
+     BU-LSTM-Attention B-A (longer cap only)   rmse    all 0.2472 0.2472  0.0000  0.0000  0.0000  0.0000   0.0000   0.0000              0               weak/none        0.2561        0.2561
+     BU-LSTM-Attention B-A (longer cap only)   rmse    wet 0.4961 0.4961  0.0000  0.0000  0.0000  0.0000   0.0000   0.0000              0               weak/none           NaN           NaN
+     BU-LSTM-Attention B-A (longer cap only)   rmse   tail 0.8965 0.8965  0.0000  0.0000  0.0000  0.0000   0.0000   0.0000              0               weak/none           NaN           NaN
+     BU-LSTM-Attention B-A (longer cap only)   crps    all 0.0950 0.0950  0.0000  0.0000  0.0000  0.0000   0.0000   0.0000              0               weak/none           NaN           NaN
+     BU-LSTM-Attention     C-B (tuning only)   rmse    all 0.2472 0.2457 -0.0015 -0.5944 -0.0047  0.0018  -0.0027  -0.0003              4 medium(block-bootstrap)        0.2561        0.2542
+     BU-LSTM-Attention     C-B (tuning only)   rmse    wet 0.4961 0.4907 -0.0053 -1.0782 -0.0223  0.0116  -0.0079  -0.0029              4 medium(block-bootstrap)           NaN           NaN
+     BU-LSTM-Attention     C-B (tuning only)   rmse   tail 0.8965 0.8846 -0.0118 -1.3215 -0.0427  0.0190  -0.0165  -0.0076              4 medium(block-bootstrap)           NaN           NaN
+     BU-LSTM-Attention     C-B (tuning only)   crps    all 0.0950 0.0933 -0.0016 -1.7265 -0.0027 -0.0006  -0.0023  -0.0010              5                  strong           NaN           NaN
+     BU-LSTM-Attention           C-A (total)   rmse    all 0.2472 0.2457 -0.0015 -0.5944 -0.0047  0.0018  -0.0027  -0.0003              4 medium(block-bootstrap)        0.2561        0.2542
+     BU-LSTM-Attention           C-A (total)   rmse    wet 0.4961 0.4907 -0.0053 -1.0782 -0.0223  0.0116  -0.0079  -0.0029              4 medium(block-bootstrap)           NaN           NaN
+     BU-LSTM-Attention           C-A (total)   rmse   tail 0.8965 0.8846 -0.0118 -1.3215 -0.0427  0.0190  -0.0165  -0.0076              4 medium(block-bootstrap)           NaN           NaN
+     BU-LSTM-Attention           C-A (total)   crps    all 0.0950 0.0933 -0.0016 -1.7265 -0.0027 -0.0006  -0.0023  -0.0010              5                  strong           NaN           NaN
+Prob. BiLSTM-Attention B-A (longer cap only)   rmse    all 0.2494 0.2494  0.0000  0.0000  0.0000  0.0000   0.0000   0.0000              0               weak/none        0.2578        0.2578
+Prob. BiLSTM-Attention B-A (longer cap only)   rmse    wet 0.5016 0.5016  0.0000  0.0000  0.0000  0.0000   0.0000   0.0000              0               weak/none           NaN           NaN
+Prob. BiLSTM-Attention B-A (longer cap only)   rmse   tail 0.9063 0.9063  0.0000  0.0000  0.0000  0.0000   0.0000   0.0000              0               weak/none           NaN           NaN
+Prob. BiLSTM-Attention B-A (longer cap only)   crps    all 0.0961 0.0961  0.0000  0.0000  0.0000  0.0000   0.0000   0.0000              0               weak/none           NaN           NaN
+Prob. BiLSTM-Attention           C-A (total)   rmse    all 0.2494 0.2494  0.0000  0.0000  0.0000  0.0000   0.0000   0.0000              0               weak/none        0.2578        0.2578
+Prob. BiLSTM-Attention           C-A (total)   rmse    wet 0.5016 0.5016  0.0000  0.0000  0.0000  0.0000   0.0000   0.0000              0               weak/none           NaN           NaN
+Prob. BiLSTM-Attention           C-A (total)   rmse   tail 0.9063 0.9063  0.0000  0.0000  0.0000  0.0000   0.0000   0.0000              0               weak/none           NaN           NaN
+Prob. BiLSTM-Attention           C-A (total)   crps    all 0.0961 0.0961  0.0000  0.0000  0.0000  0.0000   0.0000   0.0000              0               weak/none           NaN           NaN
+
+===== 测试 RMSE 排名：A（原设置）对 C（调参后）=====
+                        A_original  C_tuned  rank_A  rank_C
+BiLSTM-Attention            0.2429   0.2430       1       1
+XGBoost                     0.2439   0.2432       2       2
+BU-LSTM                     0.2470   0.2456       3       3
+BU-LSTM-Attention           0.2472   0.2457       4       4
+Prob. BiLSTM-Attention      0.2494   0.2494       5       5
+Transformer                 0.2600   0.2564       6       6
+
+===== 正文触发（预定规则）=====
+Transformer C−A rmse: -1.37%（medium(block-bootstrap)）
+BU-LSTM-Attention C−A crps: -1.73%（strong）
+
+输出：/root/autodl-tmp/results/metrics/q19_all_runs.csv（全部候选）、q19_effect.csv

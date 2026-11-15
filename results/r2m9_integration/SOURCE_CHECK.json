@@ -1,0 +1,107 @@
+{
+  "fixed_commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+  "n_runs": 117,
+  "n_predictions": 117,
+  "n_effect_rows": 53,
+  "run_counts": {
+    "bilstm_attn": 38,
+    "bulstm": 11,
+    "bulstm_attn": 11,
+    "prob_bilstm_attn": 7,
+    "transformer": 11,
+    "xgboost": 39
+  },
+  "common_test_samples": 3939,
+  "max_A_reference_target_difference": 0,
+  "validation_selections_recovered": 6,
+  "formal_grids_each": 27,
+  "bilstm_gate_excluded_from_rank": true,
+  "recorded_task_seconds": 13923.6,
+  "recorded_task_hours": 3.8676666666666675,
+  "triple_rule_rows": [
+    {
+      "csv_line": 42,
+      "model": "BU-LSTM-Attention",
+      "comparison": "C-B (tuning only)",
+      "metric": "crps",
+      "subset": "all",
+      "triple": true,
+      "improvement": true
+    },
+    {
+      "csv_line": 46,
+      "model": "BU-LSTM-Attention",
+      "comparison": "C-A (total)",
+      "metric": "crps",
+      "subset": "all",
+      "triple": true,
+      "improvement": true
+    }
+  ],
+  "ranking_unchanged": [
+    {
+      "subset": "all",
+      "A": [
+        "BiLSTM-Attention",
+        "XGBoost",
+        "BU-LSTM",
+        "BU-LSTM-Attention",
+        "Prob. BiLSTM-Attention",
+        "Transformer"
+      ],
+      "C": [
+        "BiLSTM-Attention",
+        "XGBoost",
+        "BU-LSTM",
+        "BU-LSTM-Attention",
+        "Prob. BiLSTM-Attention",
+        "Transformer"
+      ],
+      "unchanged": true
+    },
+    {
+      "subset": "wet",
+      "A": [
+        "XGBoost",
+        "BiLSTM-Attention",
+        "BU-LSTM-Attention",
+        "BU-LSTM",
+        "Prob. BiLSTM-Attention",
+        "Transformer"
+      ],
+      "C": [
+        "XGBoost",
+        "BiLSTM-Attention",
+        "BU-LSTM-Attention",
+        "BU-LSTM",
+        "Prob. BiLSTM-Attention",
+        "Transformer"
+      ],
+      "unchanged": true
+    },
+    {
+      "subset": "tail",
+      "A": [
+        "XGBoost",
+        "BiLSTM-Attention",
+        "BU-LSTM-Attention",
+        "BU-LSTM",
+        "Prob. BiLSTM-Attention",
+        "Transformer"
+      ],
+      "C": [
+        "XGBoost",
+        "BiLSTM-Attention",
+        "BU-LSTM-Attention",
+        "BU-LSTM",
+        "Prob. BiLSTM-Attention",
+        "Transformer"
+      ],
+      "unchanged": true
+    }
+  ],
+  "stages_complete": true,
+  "source_q19_tune_md5": "7fa8fb3283aca5dcb687c43af8cfc5c7",
+  "source_q19_stats_md5": "1664664b471c3f5464a50b5a80a79074",
+  "no_metrics_recomputed_from_predictions": true
+}

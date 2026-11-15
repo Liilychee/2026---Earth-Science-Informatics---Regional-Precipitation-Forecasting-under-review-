@@ -1,0 +1,479 @@
+[
+  {
+    "csv_line": 2,
+    "model": "XGBoost",
+    "comparison": "C-A (total)",
+    "metric": "rmse",
+    "subset": "all",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 3,
+    "model": "XGBoost",
+    "comparison": "C-A (total)",
+    "metric": "rmse",
+    "subset": "wet",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 4,
+    "model": "XGBoost",
+    "comparison": "C-A (total)",
+    "metric": "rmse",
+    "subset": "tail",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 5,
+    "model": "BiLSTM-Attention",
+    "comparison": "B-A (longer cap only)",
+    "metric": "rmse",
+    "subset": "all",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 6,
+    "model": "BiLSTM-Attention",
+    "comparison": "B-A (longer cap only)",
+    "metric": "rmse",
+    "subset": "wet",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 7,
+    "model": "BiLSTM-Attention",
+    "comparison": "B-A (longer cap only)",
+    "metric": "rmse",
+    "subset": "tail",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 8,
+    "model": "BiLSTM-Attention",
+    "comparison": "C-B (tuning only)",
+    "metric": "rmse",
+    "subset": "all",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 9,
+    "model": "BiLSTM-Attention",
+    "comparison": "C-B (tuning only)",
+    "metric": "rmse",
+    "subset": "wet",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 10,
+    "model": "BiLSTM-Attention",
+    "comparison": "C-B (tuning only)",
+    "metric": "rmse",
+    "subset": "tail",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 11,
+    "model": "BiLSTM-Attention",
+    "comparison": "C-A (total)",
+    "metric": "rmse",
+    "subset": "all",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 12,
+    "model": "BiLSTM-Attention",
+    "comparison": "C-A (total)",
+    "metric": "rmse",
+    "subset": "wet",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 13,
+    "model": "BiLSTM-Attention",
+    "comparison": "C-A (total)",
+    "metric": "rmse",
+    "subset": "tail",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 14,
+    "model": "Transformer",
+    "comparison": "B-A (longer cap only)",
+    "metric": "rmse",
+    "subset": "all",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 15,
+    "model": "Transformer",
+    "comparison": "B-A (longer cap only)",
+    "metric": "rmse",
+    "subset": "wet",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 16,
+    "model": "Transformer",
+    "comparison": "B-A (longer cap only)",
+    "metric": "rmse",
+    "subset": "tail",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 17,
+    "model": "Transformer",
+    "comparison": "C-B (tuning only)",
+    "metric": "rmse",
+    "subset": "all",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 18,
+    "model": "Transformer",
+    "comparison": "C-B (tuning only)",
+    "metric": "rmse",
+    "subset": "wet",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 19,
+    "model": "Transformer",
+    "comparison": "C-B (tuning only)",
+    "metric": "rmse",
+    "subset": "tail",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 20,
+    "model": "Transformer",
+    "comparison": "C-A (total)",
+    "metric": "rmse",
+    "subset": "all",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 21,
+    "model": "Transformer",
+    "comparison": "C-A (total)",
+    "metric": "rmse",
+    "subset": "wet",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 22,
+    "model": "Transformer",
+    "comparison": "C-A (total)",
+    "metric": "rmse",
+    "subset": "tail",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 23,
+    "model": "BU-LSTM",
+    "comparison": "B-A (longer cap only)",
+    "metric": "rmse",
+    "subset": "all",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 24,
+    "model": "BU-LSTM",
+    "comparison": "B-A (longer cap only)",
+    "metric": "rmse",
+    "subset": "wet",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 25,
+    "model": "BU-LSTM",
+    "comparison": "B-A (longer cap only)",
+    "metric": "rmse",
+    "subset": "tail",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 26,
+    "model": "BU-LSTM",
+    "comparison": "B-A (longer cap only)",
+    "metric": "crps",
+    "subset": "all",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 27,
+    "model": "BU-LSTM",
+    "comparison": "C-B (tuning only)",
+    "metric": "rmse",
+    "subset": "all",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 28,
+    "model": "BU-LSTM",
+    "comparison": "C-B (tuning only)",
+    "metric": "rmse",
+    "subset": "wet",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 29,
+    "model": "BU-LSTM",
+    "comparison": "C-B (tuning only)",
+    "metric": "rmse",
+    "subset": "tail",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 30,
+    "model": "BU-LSTM",
+    "comparison": "C-B (tuning only)",
+    "metric": "crps",
+    "subset": "all",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 31,
+    "model": "BU-LSTM",
+    "comparison": "C-A (total)",
+    "metric": "rmse",
+    "subset": "all",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 32,
+    "model": "BU-LSTM",
+    "comparison": "C-A (total)",
+    "metric": "rmse",
+    "subset": "wet",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 33,
+    "model": "BU-LSTM",
+    "comparison": "C-A (total)",
+    "metric": "rmse",
+    "subset": "tail",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 34,
+    "model": "BU-LSTM",
+    "comparison": "C-A (total)",
+    "metric": "crps",
+    "subset": "all",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 35,
+    "model": "BU-LSTM-Attention",
+    "comparison": "B-A (longer cap only)",
+    "metric": "rmse",
+    "subset": "all",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 36,
+    "model": "BU-LSTM-Attention",
+    "comparison": "B-A (longer cap only)",
+    "metric": "rmse",
+    "subset": "wet",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 37,
+    "model": "BU-LSTM-Attention",
+    "comparison": "B-A (longer cap only)",
+    "metric": "rmse",
+    "subset": "tail",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 38,
+    "model": "BU-LSTM-Attention",
+    "comparison": "B-A (longer cap only)",
+    "metric": "crps",
+    "subset": "all",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 39,
+    "model": "BU-LSTM-Attention",
+    "comparison": "C-B (tuning only)",
+    "metric": "rmse",
+    "subset": "all",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 40,
+    "model": "BU-LSTM-Attention",
+    "comparison": "C-B (tuning only)",
+    "metric": "rmse",
+    "subset": "wet",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 41,
+    "model": "BU-LSTM-Attention",
+    "comparison": "C-B (tuning only)",
+    "metric": "rmse",
+    "subset": "tail",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 42,
+    "model": "BU-LSTM-Attention",
+    "comparison": "C-B (tuning only)",
+    "metric": "crps",
+    "subset": "all",
+    "triple": true,
+    "improvement": true
+  },
+  {
+    "csv_line": 43,
+    "model": "BU-LSTM-Attention",
+    "comparison": "C-A (total)",
+    "metric": "rmse",
+    "subset": "all",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 44,
+    "model": "BU-LSTM-Attention",
+    "comparison": "C-A (total)",
+    "metric": "rmse",
+    "subset": "wet",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 45,
+    "model": "BU-LSTM-Attention",
+    "comparison": "C-A (total)",
+    "metric": "rmse",
+    "subset": "tail",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 46,
+    "model": "BU-LSTM-Attention",
+    "comparison": "C-A (total)",
+    "metric": "crps",
+    "subset": "all",
+    "triple": true,
+    "improvement": true
+  },
+  {
+    "csv_line": 47,
+    "model": "Prob. BiLSTM-Attention",
+    "comparison": "B-A (longer cap only)",
+    "metric": "rmse",
+    "subset": "all",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 48,
+    "model": "Prob. BiLSTM-Attention",
+    "comparison": "B-A (longer cap only)",
+    "metric": "rmse",
+    "subset": "wet",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 49,
+    "model": "Prob. BiLSTM-Attention",
+    "comparison": "B-A (longer cap only)",
+    "metric": "rmse",
+    "subset": "tail",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 50,
+    "model": "Prob. BiLSTM-Attention",
+    "comparison": "B-A (longer cap only)",
+    "metric": "crps",
+    "subset": "all",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 51,
+    "model": "Prob. BiLSTM-Attention",
+    "comparison": "C-A (total)",
+    "metric": "rmse",
+    "subset": "all",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 52,
+    "model": "Prob. BiLSTM-Attention",
+    "comparison": "C-A (total)",
+    "metric": "rmse",
+    "subset": "wet",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 53,
+    "model": "Prob. BiLSTM-Attention",
+    "comparison": "C-A (total)",
+    "metric": "rmse",
+    "subset": "tail",
+    "triple": false,
+    "improvement": false
+  },
+  {
+    "csv_line": 54,
+    "model": "Prob. BiLSTM-Attention",
+    "comparison": "C-A (total)",
+    "metric": "crps",
+    "subset": "all",
+    "triple": false,
+    "improvement": false
+  }
+]

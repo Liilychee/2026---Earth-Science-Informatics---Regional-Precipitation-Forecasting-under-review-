@@ -1,0 +1,25 @@
+--- a/ESI_审稿意见分类_严重程度排序_35项.md
++++ b/ESI_审稿意见分类_严重程度排序_35项.md
+@@ -4392,3 +4392,6 @@
+ 
+ 
+ R2-M4最终证据与关闭记录：results/r2m4_final/。作者PDF MD5=f73dd3d355084727bb13bf644ce332d3；本轮77行交接输入与归档CSI/命中/预报次数0差异，作者最终点值CSV未取得，最终图片精确点值对应性引用作者此前独立核验。八段EvidenceBox和三PDF核验通过，只关闭R2-M4，不整体关闭05/12共享任务。
++
++
++> **R2-M9科学归档状态（2026-11-15）：SCIENTIFIC_INTEGRATION_COMPLETE — FINAL_REPOSITORY_DOCUMENTATION_PENDING。** 科学及论文整合经作者审核通过，S48/S49、828数值和86缺省、103旧摘录及6新摘录、三PDF核验有效。只归档本轮增量与证据，不关闭M9整体。README、环境/复现说明、Code Availability最终commit及公开内容审核继续Pending，待全文返修结束统一处理。R3-L822–824及任务18/34共享工作仍Pending；未开始R2-m1。
+--- a/FINAL_REVISION_CHECKLIST.md
++++ b/FINAL_REVISION_CHECKLIST.md
+@@ -504,3 +504,13 @@
+ - [ ] 作者审核本地报告；未来另行授权选择性归档。本轮不提交、不推送，不关闭R2-M9。
+ 
+ R3-L822–824、任务18/34共享事项仍Pending；未开始R2-m1。历史本地仓库文档草稿不继续准备，也不代表已公开材料。详见results/r2m9_integration/FINAL_REPORT.md。
++
++
++### R2-M9科学选择性归档（2026-11-15；整体不关闭）
++
++状态：`SCIENTIFIC_INTEGRATION_COMPLETE — FINAL_REPOSITORY_DOCUMENTATION_PENDING`。
++
++- [x] 科学/论文增量经作者审核，保留已验证S48/S49、828数值+86缺省、103旧+6新摘录与三PDF结果。
++- [ ] 最终GitHub README、环境/复现材料、Code Availability固定发布commit和公开内容审核：留待全部返修完成后统一处理。
++
++归档不代表这些待办已完成；不得标记整体CLOSED。R3-L822–824及共享18/34保持Pending，未开始R2-m1。

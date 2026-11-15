@@ -1,0 +1,12 @@
+{
+  "resume_date": "2026-11-15",
+  "initial_six_documents_equal_before": true,
+  "q19_evidence_complete_before_resume": true,
+  "initial_M9_response_pending": true,
+  "initial_S48_S49_absent": true,
+  "initial_M9_builds_patch_report_absent": true,
+  "existing_local_repository_drafts": "Historical only; no further preparation, not used as finalized publication evidence",
+  "process_check": "ps denied by platform; no known unfinished unified-exec result in the available command record, all examined JSON files parsed successfully",
+  "old_integration_script_not_rerun": true,
+  "remaining_work_completed_by_new_script": "r2m9_integrate_remaining.py"
+}

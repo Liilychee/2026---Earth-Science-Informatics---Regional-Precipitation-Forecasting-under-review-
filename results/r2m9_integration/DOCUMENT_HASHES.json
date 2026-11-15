@@ -1,0 +1,35 @@
+{
+  "files": [
+    {
+      "path": "Response letter.tex",
+      "before_sha256": "e58f2d92d82363d3ff77affc2d9b6ecc0c0f5595008d6cdd9d5561d10f4217e7",
+      "after_sha256": "f7d3d1d872a965e58d29ea9d5779b8c40301654f203388d48197268098632d36"
+    },
+    {
+      "path": "Supplementary.tex",
+      "before_sha256": "05b2dd1ef0748892be1d2fb0c0bc5ba02778113c391cccb22cc62f0bc1515531",
+      "after_sha256": "f2d495eb0f01a6555fd31fa5b0c0e0d6c6dd402e8b1ac06abb70979482de228d"
+    },
+    {
+      "path": "ESI_审稿意见分类_严重程度排序_35项.md",
+      "before_sha256": "f58e0db9623ab8414a0699bd8545e7b609ca266733935c864ecf63c4bb023ea8",
+      "after_sha256": "8c417b5f1ce73291b07f5f94223239985c03d9b8fb28775b89760c811bdaab91"
+    },
+    {
+      "path": "FINAL_REVISION_CHECKLIST.md",
+      "before_sha256": "aa1a7dac4f09cedfaa27b5955cb4928efe009def131e40318a96e6e2fc666761",
+      "after_sha256": "715ca37c57cf1620e03e1a00c7da0ff5a5d11df44ae06a1715b21ee53baf6102"
+    },
+    {
+      "path": "manuscript.tex",
+      "before_sha256": "e82ef67f18f4b075388104a5967f313e8503b42cb078d2a62ab26d076e9fd005",
+      "after_sha256": "888a79fd0048d157aa07af0ce9fee3faeac4cad4ecb1161f09c98ab8faab8beb"
+    },
+    {
+      "path": "SUPPLEMENTARY_TABLE_REGISTRY.md",
+      "before_sha256": "a8ce8a7570dbd7e160f4253404ea30dddb12cfdc59bb54345726b1d5668f9710",
+      "after_sha256": "e9d5679dbb54e55f2607b4cb800f37062abcda76dc1051219a1180d1c3533bc8"
+    }
+  ],
+  "patch_reconstructs_exactly": true
+}
