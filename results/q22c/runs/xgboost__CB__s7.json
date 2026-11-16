@@ -1,0 +1,37 @@
+{
+  "tag": "xgboost__CB__s7",
+  "model": "xgboost",
+  "input": "CB",
+  "n_steps": 31,
+  "step_hours": 1,
+  "features": [
+    "mxtpr",
+    "mntpr",
+    "lsp",
+    "tcc",
+    "v10",
+    "sp",
+    "d2m"
+  ],
+  "seed": 7,
+  "val": {
+    "rmse": 0.27174802064530157,
+    "mae": 0.1320807242489326
+  },
+  "test": {
+    "rmse": 0.20950888568408044,
+    "mae": 0.10508506027328196
+  },
+  "best_epoch": null,
+  "epochs_trained": null,
+  "train_seconds": 0.7,
+  "n_train": 26244,
+  "n_val": 1458,
+  "n_test": 1454,
+  "data_md5": "44aa4baa89219c914dbea75c08df6ca4",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "tf": "2.21.0",
+  "xgboost": "3.4.1",
+  "host": "autodl-container-c0lvq7fw2w-47cad62c",
+  "finished_utc": "2026-11-15T23:37:13+00:00"
+}

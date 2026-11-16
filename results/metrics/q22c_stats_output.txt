@@ -1,0 +1,114 @@
+运行数 40/40；缺少：无；设备：['NVIDIA GeForce RTX 4090']
+测试集 1454 个时刻（2021 年），四种配置逐一对齐；上尾阈值 Q95 = 0.5875 mm/h（主研究 0.5740 作敏感性）
+子集样本数：all 1454，wet 301，tail 69，tail_main_q95 71
+
+持续性（参照）测试 RMSE = 0.2774
+
+===== 逐运行（测试集）=====
+      model config  seed  n_train  rmse_all  mae_all  rmse_wet  rmse_tail  pred_max  sd_ratio  val_rmse  best_epoch  epochs_trained  train_seconds
+bilstm_attn      A     7     4374    0.2144   0.1155    0.4298     0.8385    0.4601    0.4004    0.2800         3.0            13.0           30.8
+bilstm_attn      A    42     4374    0.2122   0.1138    0.4241     0.8249    0.4895    0.4322    0.2778         5.0            15.0           38.6
+bilstm_attn      A    99     4374    0.2113   0.1111    0.4258     0.8288    0.4257    0.3945    0.2782         7.0            17.0           39.2
+bilstm_attn      A   123     4374    0.2120   0.1097    0.4221     0.8114    1.0044    0.4855    0.2715        17.0            27.0           61.0
+bilstm_attn      A  2024     4374    0.2113   0.1145    0.4223     0.8210    0.4770    0.3977    0.2773         9.0            19.0           43.4
+bilstm_attn      B     7     4374    0.2110   0.1133    0.4054     0.7794    0.5789    0.5405    0.2793         8.0            18.0           51.0
+bilstm_attn      B    42     4374    0.2111   0.1077    0.4231     0.8122    0.5712    0.4807    0.2790         8.0            18.0           54.0
+bilstm_attn      B    99     4374    0.2100   0.1089    0.4177     0.8130    0.6025    0.4522    0.2741        11.0            21.0           58.1
+bilstm_attn      B   123     4374    0.2077   0.1089    0.4112     0.7984    0.5615    0.4621    0.2725         9.0            19.0           53.8
+bilstm_attn      B  2024     4374    0.2134   0.1161    0.4199     0.8110    0.5860    0.4497    0.2759         8.0            18.0           50.6
+bilstm_attn     CA     7    26244    0.2042   0.1069    0.3994     0.7700    0.7390    0.5023    0.2731         3.0            13.0          135.8
+bilstm_attn     CA    42    26244    0.2086   0.1170    0.3906     0.7579    0.5672    0.5549    0.2726         1.0            11.0          117.8
+bilstm_attn     CA    99    26244    0.2106   0.1096    0.4173     0.8121    0.7449    0.4500    0.2705         3.0            13.0          134.0
+bilstm_attn     CA   123    26244    0.2108   0.1116    0.4188     0.8179    0.4872    0.4470    0.2739         2.0            12.0          127.4
+bilstm_attn     CA  2024    26244    0.2069   0.1073    0.4096     0.7933    0.5603    0.5047    0.2729         2.0            12.0          125.4
+bilstm_attn     CB     7    26244    0.2063   0.1134    0.3910     0.7507    0.6992    0.5464    0.2774         2.0            12.0          156.9
+bilstm_attn     CB    42    26244    0.2146   0.1134    0.4062     0.7638    1.1976    0.6138    0.2770         4.0            14.0          182.1
+bilstm_attn     CB    99    26244    0.2069   0.1071    0.4054     0.7831    1.0381    0.5142    0.2685         4.0            14.0          184.2
+bilstm_attn     CB   123    26244    0.2086   0.1110    0.4110     0.7931    0.7376    0.4870    0.2746         3.0            13.0          170.9
+bilstm_attn     CB  2024    26244    0.2050   0.1039    0.4090     0.7884    0.6908    0.4992    0.2712         3.0            13.0          169.7
+    xgboost      A     7     4374    0.2129   0.1065    0.4168     0.8005    1.0827    0.5340    0.2718         NaN             NaN            0.1
+    xgboost      A    42     4374    0.2140   0.1060    0.4232     0.8153    1.0597    0.4988    0.2734         NaN             NaN            0.3
+    xgboost      A    99     4374    0.2107   0.1062    0.4137     0.7889    0.8845    0.5266    0.2754         NaN             NaN            0.1
+    xgboost      A   123     4374    0.2127   0.1059    0.4153     0.7992    1.0195    0.5195    0.2729         NaN             NaN            0.1
+    xgboost      A  2024     4374    0.2123   0.1061    0.4204     0.8081    0.8955    0.5047    0.2727         NaN             NaN            0.1
+    xgboost      B     7     4374    0.2081   0.1026    0.4088     0.7876    1.0956    0.5185    0.2674         NaN             NaN            0.5
+    xgboost      B    42     4374    0.2082   0.1033    0.4086     0.7847    1.0936    0.5253    0.2723         NaN             NaN            0.7
+    xgboost      B    99     4374    0.2134   0.1064    0.4155     0.7962    1.1667    0.5355    0.2731         NaN             NaN            0.6
+    xgboost      B   123     4374    0.2084   0.1045    0.4062     0.7783    0.8474    0.5347    0.2720         NaN             NaN            0.5
+    xgboost      B  2024     4374    0.2130   0.1071    0.4155     0.7971    0.9247    0.5355    0.2716         NaN             NaN            0.5
+    xgboost     CA     7    26244    0.2115   0.1063    0.4108     0.7818    0.9741    0.5555    0.2734         NaN             NaN            0.2
+    xgboost     CA    42    26244    0.2113   0.1047    0.4129     0.7867    1.0342    0.5555    0.2743         NaN             NaN            0.4
+    xgboost     CA    99    26244    0.2102   0.1050    0.4104     0.7809    1.0250    0.5470    0.2721         NaN             NaN            0.2
+    xgboost     CA   123    26244    0.2098   0.1046    0.4104     0.7830    0.9225    0.5440    0.2715         NaN             NaN            0.2
+    xgboost     CA  2024    26244    0.2101   0.1048    0.4134     0.7880    0.9861    0.5378    0.2771         NaN             NaN            0.2
+    xgboost     CB     7    26244    0.2095   0.1051    0.4074     0.7814    1.0374    0.5437    0.2717         NaN             NaN            0.7
+    xgboost     CB    42    26244    0.2083   0.1036    0.4083     0.7785    0.9936    0.5465    0.2732         NaN             NaN            0.8
+    xgboost     CB    99    26244    0.2089   0.1049    0.4065     0.7759    1.0008    0.5566    0.2766         NaN             NaN            0.8
+    xgboost     CB   123    26244    0.2096   0.1046    0.4087     0.7797    1.0492    0.5476    0.2725         NaN             NaN            0.7
+    xgboost     CB  2024    26244    0.2097   0.1048    0.4109     0.7848    0.9607    0.5451    0.2734         NaN             NaN            0.7
+
+===== 运行成本（每种配置 5 个种子）=====
+                      sum   mean    max
+model       config                     
+bilstm_attn A       213.0   43.0   61.0
+            B       268.0   54.0   58.0
+            CA      640.0  128.0  136.0
+            CB      864.0  173.0  184.0
+xgboost     A         1.0    0.0    0.0
+            B         3.0    1.0    1.0
+            CA        1.0    0.0    0.0
+            CB        4.0    1.0    1.0
+
+===== 新 − 参照（负数 = 新配置更好）；t 区间、块自助法区间（28/56/120 个样本 = 7/14/30 天）=====
+      model comparison             role        subset metric  value_ref  value_new  d_mean   d_pct    t_lo    t_hi  boot28_lo  boot28_hi  boot56_lo  boot56_hi  boot120_lo  boot120_hi  n_new_better_of_5                 verdict
+    xgboost     CB − A          primary           all   rmse     0.2125     0.2092 -0.0033 -1.5689 -0.0051 -0.0015    -0.0072     0.0005    -0.0073     0.0001     -0.0079     -0.0003                  5               uncertain
+    xgboost     CB − A secondary metric           wet   rmse     0.4179     0.4084 -0.0095 -2.2812 -0.0136 -0.0055    -0.0175    -0.0030    -0.0170    -0.0034     -0.0165     -0.0048                  5 secondary (descriptive)
+    xgboost     CB − A secondary metric          tail   rmse     0.8024     0.7801 -0.0223 -2.7842 -0.0334 -0.0113    -0.0401    -0.0064    -0.0413    -0.0066     -0.0423     -0.0082                  5 secondary (descriptive)
+    xgboost     CB − A secondary metric tail_main_q95   rmse     0.7926     0.7710 -0.0217 -2.7348 -0.0323 -0.0111    -0.0391    -0.0060    -0.0405    -0.0062     -0.0412     -0.0079                  5 secondary (descriptive)
+    xgboost     CB − A secondary metric           all    mae     0.1061     0.1046 -0.0015 -1.4517 -0.0022 -0.0009    -0.0037     0.0004    -0.0037     0.0002     -0.0035      0.0001                  5 secondary (descriptive)
+    xgboost     CA − A      exploratory           all   rmse     0.2125     0.2105 -0.0020 -0.9228 -0.0032 -0.0008    -0.0054     0.0011    -0.0055     0.0009     -0.0061      0.0006                  5               uncertain
+    xgboost     CA − A secondary metric           wet   rmse     0.4179     0.4116 -0.0063 -1.5087 -0.0095 -0.0031    -0.0130    -0.0005    -0.0123    -0.0008     -0.0119     -0.0027                  5 secondary (descriptive)
+    xgboost     CA − A secondary metric          tail   rmse     0.8024     0.7841 -0.0183 -2.2830 -0.0275 -0.0091    -0.0326    -0.0035    -0.0324    -0.0043     -0.0328     -0.0071                  5 secondary (descriptive)
+    xgboost     CA − A secondary metric tail_main_q95   rmse     0.7926     0.7756 -0.0170 -2.1502 -0.0255 -0.0085    -0.0314    -0.0023    -0.0313    -0.0032     -0.0314     -0.0063                  5 secondary (descriptive)
+    xgboost     CA − A secondary metric           all    mae     0.1061     0.1051 -0.0011 -1.0100 -0.0017 -0.0004    -0.0034     0.0008    -0.0035     0.0006     -0.0036      0.0006                  5 secondary (descriptive)
+    xgboost    CB − CA      exploratory           all   rmse     0.2105     0.2092 -0.0014 -0.6521 -0.0028  0.0001    -0.0032     0.0007    -0.0029     0.0003     -0.0026      0.0001                  5               uncertain
+    xgboost    CB − CA secondary metric           wet   rmse     0.4116     0.4084 -0.0032 -0.7843 -0.0047 -0.0018    -0.0081     0.0011    -0.0074     0.0004     -0.0064      0.0002                  5 secondary (descriptive)
+    xgboost    CB − CA secondary metric          tail   rmse     0.7841     0.7801 -0.0040 -0.5129 -0.0076 -0.0004    -0.0159     0.0055    -0.0154     0.0038     -0.0146      0.0033                  5 secondary (descriptive)
+    xgboost    CB − CA secondary metric tail_main_q95   rmse     0.7756     0.7710 -0.0046 -0.5975 -0.0085 -0.0008    -0.0164     0.0049    -0.0159     0.0032     -0.0149      0.0028                  5 secondary (descriptive)
+    xgboost    CB − CA secondary metric           all    mae     0.1051     0.1046 -0.0005 -0.4463 -0.0012  0.0003    -0.0015     0.0008    -0.0014     0.0007     -0.0011      0.0007                  3 secondary (descriptive)
+    xgboost     CB − B      exploratory           all   rmse     0.2102     0.2092 -0.0010 -0.4931 -0.0044  0.0024    -0.0045     0.0021    -0.0043     0.0020     -0.0046      0.0024                  2               uncertain
+    xgboost     CB − B secondary metric           wet   rmse     0.4109     0.4084 -0.0026 -0.6280 -0.0081  0.0029    -0.0080     0.0021    -0.0068     0.0021     -0.0061      0.0015                  4 secondary (descriptive)
+    xgboost     CB − B secondary metric          tail   rmse     0.7888     0.7801 -0.0087 -1.1032 -0.0187  0.0013    -0.0192     0.0018    -0.0169     0.0018     -0.0163      0.0001                  4 secondary (descriptive)
+    xgboost     CB − B secondary metric tail_main_q95   rmse     0.7797     0.7710 -0.0087 -1.1151 -0.0191  0.0017    -0.0189     0.0016    -0.0167     0.0017     -0.0161      0.0000                  4 secondary (descriptive)
+    xgboost     CB − B secondary metric           all    mae     0.1048     0.1046 -0.0002 -0.1726 -0.0025  0.0021    -0.0025     0.0017    -0.0024     0.0015     -0.0023      0.0016                  2 secondary (descriptive)
+bilstm_attn     CB − A          primary           all   rmse     0.2122     0.2083 -0.0039 -1.8583 -0.0089  0.0010    -0.0095     0.0016    -0.0099     0.0026     -0.0100      0.0041                  4               uncertain
+bilstm_attn     CB − A secondary metric           wet   rmse     0.4248     0.4045 -0.0203 -4.7801 -0.0340 -0.0067    -0.0328    -0.0091    -0.0337    -0.0071     -0.0340     -0.0036                  5 secondary (descriptive)
+bilstm_attn     CB − A secondary metric          tail   rmse     0.8249     0.7758 -0.0491 -5.9515 -0.0824 -0.0158    -0.0703    -0.0310    -0.0712    -0.0286     -0.0723     -0.0237                  5 secondary (descriptive)
+bilstm_attn     CB − A secondary metric tail_main_q95   rmse     0.8150     0.7670 -0.0480 -5.8851 -0.0804 -0.0155    -0.0690    -0.0298    -0.0700    -0.0275     -0.0712     -0.0226                  5 secondary (descriptive)
+bilstm_attn     CB − A secondary metric           all    mae     0.1129     0.1097 -0.0032 -2.8262 -0.0089  0.0025    -0.0066     0.0003    -0.0067     0.0006     -0.0059      0.0011                  4 secondary (descriptive)
+bilstm_attn     CA − A      exploratory           all   rmse     0.2122     0.2082 -0.0040 -1.8904 -0.0087  0.0007    -0.0071    -0.0013    -0.0071    -0.0011     -0.0071     -0.0005                  5               uncertain
+bilstm_attn     CA − A secondary metric           wet   rmse     0.4248     0.4071 -0.0177 -4.1637 -0.0344 -0.0009    -0.0241    -0.0117    -0.0244    -0.0112     -0.0241     -0.0103                  5 secondary (descriptive)
+bilstm_attn     CA − A secondary metric          tail   rmse     0.8249     0.7903 -0.0346 -4.2001 -0.0751  0.0058    -0.0464    -0.0241    -0.0465    -0.0235     -0.0473     -0.0224                  4 secondary (descriptive)
+bilstm_attn     CA − A secondary metric tail_main_q95   rmse     0.8150     0.7804 -0.0345 -4.2388 -0.0745  0.0055    -0.0462    -0.0241    -0.0463    -0.0236     -0.0472     -0.0224                  4 secondary (descriptive)
+bilstm_attn     CA − A secondary metric           all    mae     0.1129     0.1105 -0.0025 -2.1874 -0.0090  0.0040    -0.0050    -0.0004    -0.0048    -0.0006     -0.0046     -0.0002                  3 secondary (descriptive)
+bilstm_attn    CB − CA      exploratory           all   rmse     0.2082     0.2083  0.0001  0.0327 -0.0049  0.0050    -0.0037     0.0044    -0.0042     0.0049     -0.0041      0.0059                  3               uncertain
+bilstm_attn    CB − CA secondary metric           wet   rmse     0.4071     0.4045 -0.0026 -0.6432 -0.0163  0.0110    -0.0108     0.0055    -0.0112     0.0064     -0.0115      0.0091                  4 secondary (descriptive)
+bilstm_attn    CB − CA secondary metric          tail   rmse     0.7903     0.7758 -0.0144 -1.8282 -0.0325  0.0036    -0.0287    -0.0012    -0.0294    -0.0008     -0.0296      0.0036                  4 secondary (descriptive)
+bilstm_attn    CB − CA secondary metric tail_main_q95   rmse     0.7804     0.7670 -0.0134 -1.7191 -0.0318  0.0049    -0.0274    -0.0003    -0.0282     0.0001     -0.0285      0.0045                  4 secondary (descriptive)
+bilstm_attn    CB − CA secondary metric           all    mae     0.1105     0.1097 -0.0007 -0.6531 -0.0059  0.0045    -0.0033     0.0021    -0.0034     0.0025     -0.0034      0.0031                  4 secondary (descriptive)
+bilstm_attn     CB − B      exploratory           all   rmse     0.2107     0.2083 -0.0024 -1.1222 -0.0082  0.0035    -0.0065     0.0016    -0.0070     0.0020     -0.0071      0.0030                  3               uncertain
+bilstm_attn     CB − B secondary metric           wet   rmse     0.4155     0.4045 -0.0110 -2.6370 -0.0189 -0.0030    -0.0193    -0.0037    -0.0197    -0.0033     -0.0192     -0.0018                  5 secondary (descriptive)
+bilstm_attn     CB − B secondary metric          tail   rmse     0.8028     0.7758 -0.0270 -3.3584 -0.0462 -0.0077    -0.0428    -0.0141    -0.0425    -0.0149     -0.0422     -0.0129                  5 secondary (descriptive)
+bilstm_attn     CB − B secondary metric tail_main_q95   rmse     0.7932     0.7670 -0.0262 -3.3055 -0.0454 -0.0071    -0.0420    -0.0137    -0.0419    -0.0141     -0.0415     -0.0122                  5 secondary (descriptive)
+bilstm_attn     CB − B secondary metric           all    mae     0.1110     0.1097 -0.0012 -1.1254 -0.0096  0.0071    -0.0037     0.0013    -0.0038     0.0015     -0.0037      0.0021                  2 secondary (descriptive)
+
+===== 判定（测试 RMSE，块 28；主比较为 CB − A，其余为探索性分解，未做多重比较校正）=====
+xgboost      CB − A   [primary]: ΔRMSE = -0.00333（-1.57%），t [-0.00512, -0.00155]，块 28 [-0.00718, +0.00049]，5/5 → 未检测到满足预设标准的差异
+xgboost      CA − A   [exploratory]: ΔRMSE = -0.00196（-0.92%），t [-0.00317, -0.00075]，块 28 [-0.00541, +0.00111]，5/5 → 未检测到满足预设标准的差异
+xgboost      CB − CA  [exploratory]: ΔRMSE = -0.00137（-0.65%），t [-0.00280, +0.00005]，块 28 [-0.00323, +0.00066]，5/5 → 未检测到满足预设标准的差异
+xgboost      CB − B   [exploratory]: ΔRMSE = -0.00104（-0.49%），t [-0.00443, +0.00236]，块 28 [-0.00449, +0.00211]，2/5 → 未检测到满足预设标准的差异
+bilstm_attn  CB − A   [primary]: ΔRMSE = -0.00394（-1.86%），t [-0.00890, +0.00101]，块 28 [-0.00954, +0.00164]，4/5 → 未检测到满足预设标准的差异
+bilstm_attn  CA − A   [exploratory]: ΔRMSE = -0.00401（-1.89%），t [-0.00870, +0.00067]，块 28 [-0.00710, -0.00130]，5/5 → 未检测到满足预设标准的差异
+bilstm_attn  CB − CA  [exploratory]: ΔRMSE = +0.00007（+0.03%），t [-0.00489, +0.00502]，块 28 [-0.00370, +0.00440]，3/5 → 未检测到满足预设标准的差异
+bilstm_attn  CB − B   [exploratory]: ΔRMSE = -0.00236（-1.12%），t [-0.00819, +0.00347]，块 28 [-0.00654, +0.00160]，3/5 → 未检测到满足预设标准的差异
+注：XGBoost 的 5 个种子只改变行列抽样，不是独立重复；其 t 区间只描述种子敏感性。

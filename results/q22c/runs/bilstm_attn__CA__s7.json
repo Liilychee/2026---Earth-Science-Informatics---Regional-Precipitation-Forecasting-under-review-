@@ -1,0 +1,37 @@
+{
+  "tag": "bilstm_attn__CA__s7",
+  "model": "bilstm_attn",
+  "input": "CA",
+  "n_steps": 6,
+  "step_hours": 6,
+  "features": [
+    "mxtpr",
+    "mntpr",
+    "lsp",
+    "tcc",
+    "v10",
+    "sp",
+    "d2m"
+  ],
+  "seed": 7,
+  "val": {
+    "rmse": 0.2730539037844632,
+    "mae": 0.1354804473844696
+  },
+  "test": {
+    "rmse": 0.2042479571831768,
+    "mae": 0.10691960434973634
+  },
+  "best_epoch": 3,
+  "epochs_trained": 13,
+  "train_seconds": 135.8,
+  "n_train": 26244,
+  "n_val": 1458,
+  "n_test": 1454,
+  "data_md5": "44aa4baa89219c914dbea75c08df6ca4",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "tf": "2.21.0",
+  "xgboost": "3.4.1",
+  "host": "autodl-container-c0lvq7fw2w-47cad62c",
+  "finished_utc": "2026-11-15T23:43:36+00:00"
+}

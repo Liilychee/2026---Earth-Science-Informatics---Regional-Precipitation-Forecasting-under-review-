@@ -1,0 +1,28 @@
+data /root/autodl-tmp/data/q22/q22_hourly_boxmean_2017_2021.csv (md5 44aa4baa89219c914dbea75c08df6ca4)
+
+split     n         first target          last target wet>=0.1  >=Q95      A shape       B shape  XGB A/B
+train  4374  2017-01-02 12:00:00  2019-12-31 18:00:00      922    219 (4374, 6, 7) (4374, 31, 7)   42/217
+val    1458  2020-01-02 12:00:00  2020-12-31 18:00:00      293     94 (1458, 6, 7) (1458, 31, 7)   42/217
+test   1454  2021-01-02 12:00:00  2021-12-31 18:00:00      301     69 (1454, 6, 7) (1454, 31, 7)   42/217
+
+example (first test sample): target 2021-01-02 12:00:00, issue 2021-01-02 06:00:00
+  A input times: ['01-01 00:00', '01-01 06:00', '01-01 12:00', '01-01 18:00', '01-02 00:00', '01-02 06:00']
+  B input times: 01-01 00:00 ... 01-02 06:00 (31 hourly)
+
+training-target Q95 (this subset) = 0.5875 mm/h; y scaler mean 0.10657 sd 0.27306
+checks passed: same targets, issue times and labels for A and B; no input after the issue time; no window crosses a split; A == every 6th snapshot of B; splits disjoint and ordered
+
+===== experiment C: training set with hourly issue times =====
+training samples: hourly issue 26244 (synoptic subset 4374 == q22 train 4374); first target 2017-01-02 12:00:00, last 2019-12-31 23:00:00
+shapes: CA (26244, 6, 7), CB (26244, 31, 7); val 1458, test 1454 (unchanged)
+training-target distribution (mm/h)   hourly-issue   synoptic (q22)
+  mean                               0.1108         0.1062
+  sd                                 0.2789         0.2717
+  wet >= 0.1 fraction                0.2179         0.2108
+  Q95                                0.6140         0.5875
+  >= 0.5875 fraction                 0.0527         0.0501
+  max                                3.7923         2.9865
+lag-1 h autocorrelation of hourly training targets = 0.890; neighbouring CB windows share 30 of 31 input hours, so the effective sample size grows far less than 6.0x
+example: target 2017-01-02 13:00:00, issue 2017-01-02 07:00:00, CA inputs ['01-01 01:00', '01-01 07:00', '01-01 13:00', '01-01 19:00', '01-02 01:00', '01-02 07:00']
+checks passed: scalers equal q22's and use training stamps only; no input after the issue time; no window crosses a split; no training target/input reaches 2020-2021; CA == every 6th snapshot of CB; synoptic subset == q22 training set; val/test arrays identical to A/B
+===== q22c CHECK COMPLETE (no training) =====
