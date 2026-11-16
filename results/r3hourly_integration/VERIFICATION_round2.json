@@ -1,0 +1,73 @@
+{
+ "baseline_total": 159,
+ "outside_block_excerpts_unchanged": true,
+ "outside_count": 158,
+ "total": 159,
+ "unmatched": [],
+ "R4M1_and_other_RL_unchanged": true,
+ "manuscript_only_R319_paragraph": true,
+ "supp_only_R319_section": true,
+ "bib_unchanged": true,
+ "old_phrase_removed": true,
+ "paragraph_numbers": {
+  "CB − A": [
+   -1.57,
+   -1.86
+  ],
+  "CA − A": [
+   -0.92,
+   -1.89
+  ],
+  "CB − CA": [
+   -0.65,
+   0.03
+  ],
+  "B − A": [
+   -1.08,
+   -0.74
+  ],
+  "CB−A wet/tail (pct,better,t_excl,b_excl)": [
+   [
+    "xgboost",
+    "wet",
+    -2.2812100535222912,
+    "5",
+    true,
+    true
+   ],
+   [
+    "xgboost",
+    "tail",
+    -2.7841621761136026,
+    "5",
+    true,
+    true
+   ],
+   [
+    "bilstm_attn",
+    "wet",
+    -4.780060084574822,
+    "5",
+    true,
+    true
+   ],
+   [
+    "bilstm_attn",
+    "tail",
+    -5.951506488306845,
+    "5",
+    true,
+    true
+   ]
+  ],
+  "XGB CB−A all: better,t_excl,b_excl": [
+   "5",
+   true,
+   false
+  ],
+  "BA CB−A all: t_incl,b_incl": [
+   true,
+   true
+  ]
+ }
+}

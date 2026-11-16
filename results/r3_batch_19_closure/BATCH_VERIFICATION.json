@@ -1,0 +1,42 @@
+{
+ "base_remote": "2b019583a501b8eccdc0fd902bf21a3ca18707c1",
+ "items": [
+  "R3-13 status correction",
+  "R3-19"
+ ],
+ "R3_19_patch_excludes_R4_M1": true,
+ "R3_19_patch_bsd_rebuild": true,
+ "excerpts_full_workspace": {
+  "total": 159,
+  "unmatched": [],
+  "R3_01_to_R3_18_and_earlier_unchanged": true,
+  "count_R3_01_18_and_earlier": 154,
+  "R3_19": 1,
+  "R4_M1": 4,
+  "R4_M1_excerpts_equal_R4M1_record": true,
+  "R4_M1_excerpts_unchanged_since_R4M1_integration": true,
+  "R3_13_NWP_limitation_text_present": true
+ },
+ "excerpts_R3_19_only_state": {
+  "R3_19_only_state_excerpts": 155,
+  "unmatched": [],
+  "outside_block_equal_R3_18": true,
+  "R3_18_count": 154
+ },
+ "pdfs": {
+  "manuscript": {
+   "pages": 110,
+   "sha256": "369de2a58d00e3d0b57e7a25b01bfe9f88692e5255c8b2ae4aea317fcf71d65a"
+  },
+  "Supplementary": {
+   "pages": 79,
+   "sha256": "98fdb0b2dd6ac64afd7243761b42ed47edb462250e79e204de4e138259098a85"
+  },
+  "Response letter": {
+   "pages": 97,
+   "sha256": "299944ce107d7038395cac36d90b95eaf1305b84a2711fde704248e29a1d0a86"
+  }
+ },
+ "pdf_build": "0 undefined, 0 multiply defined, 0 overfull hbox",
+ "q22_q22c_files_referenced": 96
+}

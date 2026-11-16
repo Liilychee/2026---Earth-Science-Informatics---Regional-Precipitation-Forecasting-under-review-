@@ -1,0 +1,16 @@
+{
+ "old154_verbatim_in_order": true,
+ "total": 155,
+ "unmatched": [],
+ "RL_outside_block_unchanged": true,
+ "manuscript_pure_insertion": true,
+ "R3_08_limitation_paragraph_unchanged": true,
+ "supp_pure_append": true,
+ "bib_unchanged": true,
+ "text_pcts": [
+  -1.08,
+  -0.74
+ ],
+ "BA_wet_tail_5of5_block_excl_seed_incl": true,
+ "all_target_not_robust": true
+}

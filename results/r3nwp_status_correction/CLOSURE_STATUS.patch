@@ -1,0 +1,22 @@
+--- a/ESI_审稿意见分类_严重程度排序_35项.md	2026-11-16 00:00:00 +0000
++++ b/ESI_审稿意见分类_严重程度排序_35项.md	2026-11-16 00:00:00 +0000
+@@ -4408,3 +4408,8 @@
+ ### R3-14 — local scientific revision complete; Git archiving deferred (2026-11-15)
+ 
+ Reviewer 3 Lines 469–471 only. Added full-period Figure S4 (`sfig:r3season_full_cdf`) and Tables S61–S63 (`stab:r3season_full_distribution`, `stab:r3season_gsf_scores`, `stab:r3season_gsf_pairs`). Corrected CDF scope from 26,282 windowed targets to all 26,300 retained 00/06/12/18 UTC timestamps, including zeros; original evidence/figure retained. q03d G/S/F raw, summary and all 14 paired bootstrap results verified without training. Separate seed-score and seed-mean-prediction estimands preserved. Prior144 excerpts unchanged,147/147 match. S1–S60, old figures, R1-M2 and all other reviewer replies preserved. R3-13 remains OPEN; other task03/R3/R4 shared work retains prior state. No staging, commit or push. Evidence: `results/r3season_distribution_integration/FINAL_REPORT.md`.
++
++
++### R3-13 status correction (2026-11-16)
++
++R3-13 (Section 3.3.1): CLOSED — qualified operational NWP comparison; matched-target limitation disclosed. Evidence unchanged (archive 8f9c52f; 1,970 common targets; HRES 0.2061, BiLSTM-Attention 0.2428, XGBoost 0.2443 mm/h; ERA5 six-hour-mean diagnostic 0.1882, post-origin verifying information, not a forecast or lower bound; Dublin Airport auxiliary check). Window mismatch, shared-IFS limitation and no claim of superiority over NWP retained. No hourly HRES download or retraining. Record: results/r3nwp_status_correction/.
+--- a/FINAL_REVISION_CHECKLIST.md	2026-11-16 00:00:00 +0000
++++ b/FINAL_REVISION_CHECKLIST.md	2026-11-16 00:00:00 +0000
+@@ -535,3 +535,8 @@
+ ### R3-14 — local scientific revision complete; Git archiving deferred (2026-11-15)
+ 
+ Reviewer 3 Lines 469–471 only. Added full-period Figure S4 (`sfig:r3season_full_cdf`) and Tables S61–S63 (`stab:r3season_full_distribution`, `stab:r3season_gsf_scores`, `stab:r3season_gsf_pairs`). Corrected CDF scope from 26,282 windowed targets to all 26,300 retained 00/06/12/18 UTC timestamps, including zeros; original evidence/figure retained. q03d G/S/F raw, summary and all 14 paired bootstrap results verified without training. Separate seed-score and seed-mean-prediction estimands preserved. Prior144 excerpts unchanged,147/147 match. S1–S60, old figures, R1-M2 and all other reviewer replies preserved. R3-13 remains OPEN; other task03/R3/R4 shared work retains prior state. No staging, commit or push. Evidence: `results/r3season_distribution_integration/FINAL_REPORT.md`.
++
++
++### R3-13 status correction (2026-11-16)
++
++R3-13 CLOSED — qualified operational NWP comparison; matched-target limitation disclosed. No change to text, numbers or excerpts. R3-19 separate.

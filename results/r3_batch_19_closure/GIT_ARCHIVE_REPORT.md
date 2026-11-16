@@ -1,0 +1,3 @@
+# Git archive report — R3-13 correction and R3-19
+
+Base origin/main 2b019583a501b8eccdc0fd902bf21a3ca18707c1 (R3-14–18 archive), re-fetched before work. Independent worktree from that commit; explicit allowlist only; no `git add .`, pull, reset, clean or force-push. Paper workspace (HEAD ae4cd53) never staged. Excluded: full paper and reply sources, PDFs, before snapshots, renders, TeX fragments, per-round and cumulative local patches (which contain R4-M1 context or changes), local evidence copies already archived. Commit: "revision: close R3-13 and archive R3-19 verified evidence". Remote SHA and per-file readback in the local FINAL_REMOTE_RECEIPT.json.

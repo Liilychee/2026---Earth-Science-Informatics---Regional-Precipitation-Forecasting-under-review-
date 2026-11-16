@@ -1,0 +1,49 @@
+{
+ "manuscript": {
+  "pages": 110,
+  "pdf_sha256": "369de2a58d00e3d0b57e7a25b01bfe9f88692e5255c8b2ae4aea317fcf71d65a",
+  "hits": {
+   "Reduced-period experiments examined both changes": [
+    95
+   ],
+   "The retrieved HRES subset contains lead steps": [
+    56
+   ],
+   "2.5 Research gaps and objectives": [
+    10
+   ],
+   "2.2 Machine-learning precipitation": [
+    6
+   ]
+  }
+ },
+ "Supplementary": {
+  "pages": 79,
+  "pdf_sha256": "98fdb0b2dd6ac64afd7243761b42ed47edb462250e79e204de4e138259098a85",
+  "hits": {
+   "Reduced-period hourly-data sensitivity": [
+    78
+   ],
+   "Training runs for the configurations": [
+    79
+   ]
+  }
+ },
+ "Response letter": {
+  "pages": 97,
+  "pdf_sha256": "299944ce107d7038395cac36d90b95eaf1305b84a2711fde704248e29a1d0a86",
+  "hits": {
+   "Comment: Lines 979": [
+    79
+   ],
+   "Major Comment 1": [
+    2,
+    27,
+    81
+   ],
+   "Comment: Section 3.3.1": [
+    71
+   ]
+  }
+ }
+}

@@ -1,0 +1,112 @@
+--- a/manuscript.tex	2026-11-16 00:00:00.000000000 +0000
++++ b/manuscript.tex	2026-11-16 00:00:00.000000000 +0000
+@@ -1278,6 +1278,8 @@
+ \revminor{The original predictors were restricted to the local 25-cell domain and therefore did not explicitly incorporate atmospheric conditions farther upstream to the west. The C3 gains reported in Section~\ref{sec:predictor_complementarity} were consistent across all five seeds, with both seed-t and moving-block intervals excluding zero (Supplementary Tables~\ref{supp-stab:r2m3_upstream_xgboost} and~\ref{supp-stab:r2m3_upstream_bilstm_attn}). Because C3 added variables and spatial coverage together, it does not isolate the effect of extending the domain alone. In the exploratory comparisons, the western near-upstream box (U1) accounted for most of the gain for XGBoost, whereas adding the Atlantic box (U2) to U1 further reduced BiLSTM-Attention RMSE (Supplementary Table~\ref{supp-stab:r3d_upstream_increments} and Fig.~\ref{supp-sfig:r3d_upstream_effects}). In subseasonal downscaling of weekly mean fields, \citet{goutham2023statistical} found that restricting the predictor domain to the predictand domain considerably degraded prediction quality, whereas shifting a predictand-sized domain westward did not improve on a centred one; this provides context rather than validation of six-hour precipitation prediction or of the present boxes. The upstream boxes were fixed before the refits and were not optimized, and only two models, the main chronological split and ERA5 reanalysis inputs were tested; no optimal predictor domain is therefore identified.}
+ 
+ The 6-hour subsampling of the hourly ERA5 data introduces a related constraint. Rapidly developing precipitation systems can evolve on much shorter time scales, particularly during convective events. A six-step input sequence provides 30~h of historical information but cannot resolve sub-hourly or hourly changes in local rainfall structure. Future work could examine whether higher-frequency ERA5 data or complementary radar and satellite observations improve the representation of short-duration events.
++
++\revminor{Reduced-period experiments examined both changes that hourly ERA5 data would allow. Hourly box means for 2017--2021 were used to refit XGBoost and BiLSTM-Attention with five seeds (training 2017--2019, validation 2020, test 2021; Supplementary Tables~\ref{supp-stab:r3hourly_ab} and~\ref{supp-stab:r3hourly_runs}). Configurations A and B use the six six-hourly snapshots of the main configuration or all 31 hourly values over the same 30-h history, with training issue times at 00/06/12/18~UTC (4,374 samples); CA and CB use the same inputs with hourly training issue times (26,244 samples). All four share the validation and test targets, the final-hour target and the 6-h lead time. Relative to A, CB, which combines hourly inputs and hourly issue times, changed overall test RMSE by $-1.57\%$ for XGBoost and $-1.86\%$ for BiLSTM-Attention. Neither change was robust: for XGBoost all five seeds improved and the seed-t interval excluded zero, but the moving-block interval included zero, and for BiLSTM-Attention both intervals included zero. In the exploratory decomposition, hourly inputs alone (B versus A) changed RMSE by $-1.08\%$ and $-0.74\%$, hourly issue times alone (CA versus A) by $-0.92\%$ and $-1.89\%$, and hourly inputs added to hourly issue times (CB versus CA) by $-0.65\%$ and $+0.03\%$. Wet and upper-tail RMSE were 2.3--6.0\% lower for CB than for A in all five seeds of both models, with both intervals excluding zero; these subset results are exploratory and unadjusted for multiplicity. Experiment C was designed after the input-frequency results had been seen, the evaluation covers one test year and two models, and the hourly training samples are highly autocorrelated (lag-1 autocorrelation 0.89), so the effective sample size increases far less than sixfold; with hourly issue times, each training epoch also contains about six times as many optimization steps. A robust overall benefit is therefore not established, and its absence is not established either, for the main 2004--2021 configuration.}
+ 
+ {\color{red}
+ A further limitation is the relative scarcity of high-intensity regional-mean precipitation: only 402 training samples reached 1.0~mm\,h$^{-1}$. The loss and weighting sensitivity experiments have already examined Huber, pseudo-Huber, sample weighting, log1p-target and Tweedie objectives in the specified model settings (Section~\ref{sec:training_objective_sensitivity}). Huber worsened BiLSTM-Attention but improved the Transformer in overall RMSE at $\delta=2$. Both Transformer configurations frequently approached the 30-epoch limit, and its wet- and upper-tail seed-based intervals included zero; no intrinsic advantage under fully converged training is established. XGBoost weighting improved tail RMSE on five-seed mean predictions at a substantial cost in overall error and M3's own positive bias. This aggregation is distinct from the mean of five seed-level RMSE values in the main comparison. These experiments do not exhaust objective functions or model configurations and cannot identify a dominant cause of underestimation. The peak-timing diagnostic is limited to neighborhoods of the largest sampled amounts, with overlapping windows and a selected sample that is not a local observed maximum; it does not establish delays of independent storm peaks.
+--- a/Supplementary.tex	2026-11-16 00:00:00.000000000 +0000
++++ b/Supplementary.tex	2026-11-16 00:00:00.000000000 +0000
+@@ -2621,5 +2621,80 @@
+ \hline
+ \end{tabularx}
+ \end{revisiontable}
++
++\clearpage
++% R3 L979-982 (R3-19): hourly inputs and hourly training issue times (reduced period)
++{\color{red}\section*{Hourly input sensitivity}\par}
+ 
++\begin{revisionlongtable}\footnotesize\setlength{\tabcolsep}{2.6pt}
++\begin{longtable}{@{}llrrrllr@{}}
++\caption{Reduced-period hourly-data sensitivity (q22 and q22c). Hourly ERA5 box means over the same 25 cells were built for 2017--2021; at 00/06/12/18~UTC they reproduce the regional series of the main study (maximum difference below $6\times10^{-5}$ of each variable's SD; identical $\geq0.1$ and $\geq0.574$~mm\,h$^{-1}$ labels at 7,304 timestamps). A: six six-hourly snapshots ($t_0-30$ to $t_0$); B: all 31 hourly values over the same 30~h; both with training issue times at 00/06/12/18~UTC. CA and CB: the same inputs as A and B with training issue times every hour. All configurations share the seven predictors, training-only scalers fitted on the 00/06/12/18~UTC training stamps, validation (2020) and test (2021, $n=1,454$) targets, final-hour target $(t_0+5\,\mathrm{h},t_0+6\,\mathrm{h}]$, 6-h lead time and seeds 42, 123, 7, 2024, 99 (training run details in Table~\ref{stab:r3hourly_runs}). RMSE (mm\,h$^{-1}$) is shown for the reference and new configuration; $\Delta$ is the mean of five paired seed-level differences, new minus reference, so negative values favour the new configuration. Wet $y\geq0.1$~mm\,h$^{-1}$ ($n=301$); Upper $y\geq0.5875$~mm\,h$^{-1}$, the Q95 of the 2017--2019 training targets ($n=69$). Seed-t intervals use four degrees of freedom; block intervals use non-circular 28-target (7-day) moving blocks, 5,000 replicates, seed 42. Both are pointwise 95\% intervals without multiplicity adjustment. CB$-$A is the primary comparison defined in the analysis script; B$-$A, CA$-$A, CB$-$CA and CB$-$B are exploratory, and all subset rows are descriptive. Experiment C was designed after the A--B results had been seen. Hourly training samples are strongly autocorrelated (lag-1 autocorrelation 0.89 for the targets), so the effective sample size grows far less than sixfold. XGBoost seeds change only row and column subsampling. Better counts seeds with lower RMSE for the new configuration.}\label{stab:r3hourly_ab}\\
++\hline
++\textbf{Comparison} & \textbf{Subset} & \textbf{RMSE ref/new} & \textbf{$\Delta$} & \textbf{$\Delta\%$} & \textbf{Seed-t interval} & \textbf{Block interval} & \textbf{Better}\\
++\hline
++\endfirsthead
++\multicolumn{8}{l}{\textbf{Table~\thetable{} (continued)}}\\
++\hline
++\textbf{Comparison} & \textbf{Subset} & \textbf{RMSE ref/new} & \textbf{$\Delta$} & \textbf{$\Delta\%$} & \textbf{Seed-t interval} & \textbf{Block interval} & \textbf{Better}\\
++\hline
++\endhead
++\hline
++\endfoot
++\multicolumn{7}{@{}l}{\textbf{XGBoost}}\\
++CB $-$ A (primary) & All & $0.2125/0.2092$ & $-0.0033$ & $-1.57$ & $[-0.0051,-0.0015]$ & $[-0.0072,+0.0005]$ & 5/5\\
++ & Wet & $0.4179/0.4084$ & $-0.0095$ & $-2.28$ & $[-0.0136,-0.0055]$ & $[-0.0175,-0.0030]$ & 5/5\\
++ & Upper & $0.8024/0.7801$ & $-0.0223$ & $-2.78$ & $[-0.0334,-0.0113]$ & $[-0.0401,-0.0064]$ & 5/5\\
++B $-$ A & All & $0.2125/0.2102$ & $-0.0023$ & $-1.08$ & $[-0.0069,+0.0023]$ & $[-0.0057,+0.0012]$ & 3/5\\
++ & Wet & $0.4179/0.4109$ & $-0.0070$ & $-1.66$ & $[-0.0144,+0.0005]$ & $[-0.0145,-0.0001]$ & 4/5\\
++ & Upper & $0.8024/0.7888$ & $-0.0136$ & $-1.70$ & $[-0.0310,+0.0038]$ & $[-0.0314,+0.0020]$ & 4/5\\
++CA $-$ A & All & $0.2125/0.2105$ & $-0.0020$ & $-0.92$ & $[-0.0032,-0.0008]$ & $[-0.0054,+0.0011]$ & 5/5\\
++ & Wet & $0.4179/0.4116$ & $-0.0063$ & $-1.51$ & $[-0.0095,-0.0031]$ & $[-0.0130,-0.0005]$ & 5/5\\
++ & Upper & $0.8024/0.7841$ & $-0.0183$ & $-2.28$ & $[-0.0275,-0.0091]$ & $[-0.0326,-0.0035]$ & 5/5\\
++CB $-$ CA & All & $0.2105/0.2092$ & $-0.0014$ & $-0.65$ & $[-0.0028,+0.0001]$ & $[-0.0032,+0.0007]$ & 5/5\\
++ & Wet & $0.4116/0.4084$ & $-0.0032$ & $-0.78$ & $[-0.0047,-0.0018]$ & $[-0.0081,+0.0011]$ & 5/5\\
++ & Upper & $0.7841/0.7801$ & $-0.0040$ & $-0.51$ & $[-0.0076,-0.0004]$ & $[-0.0159,+0.0055]$ & 5/5\\
++CB $-$ B & All & $0.2102/0.2092$ & $-0.0010$ & $-0.49$ & $[-0.0044,+0.0024]$ & $[-0.0045,+0.0021]$ & 2/5\\
++ & Wet & $0.4109/0.4084$ & $-0.0026$ & $-0.63$ & $[-0.0081,+0.0029]$ & $[-0.0080,+0.0021]$ & 4/5\\
++ & Upper & $0.7888/0.7801$ & $-0.0087$ & $-1.10$ & $[-0.0187,+0.0013]$ & $[-0.0192,+0.0018]$ & 4/5\\
++\multicolumn{7}{@{}l}{\textbf{BiLSTM-Attention}}\\
++CB $-$ A (primary) & All & $0.2122/0.2083$ & $-0.0039$ & $-1.86$ & $[-0.0089,+0.0010]$ & $[-0.0095,+0.0016]$ & 4/5\\
++ & Wet & $0.4248/0.4045$ & $-0.0203$ & $-4.78$ & $[-0.0340,-0.0067]$ & $[-0.0328,-0.0091]$ & 5/5\\
++ & Upper & $0.8249/0.7758$ & $-0.0491$ & $-5.95$ & $[-0.0824,-0.0158]$ & $[-0.0703,-0.0310]$ & 5/5\\
++B $-$ A & All & $0.2122/0.2107$ & $-0.0016$ & $-0.74$ & $[-0.0046,+0.0015]$ & $[-0.0044,+0.0013]$ & 4/5\\
++ & Wet & $0.4248/0.4155$ & $-0.0094$ & $-2.20$ & $[-0.0210,+0.0023]$ & $[-0.0154,-0.0032]$ & 5/5\\
++ & Upper & $0.8249/0.8028$ & $-0.0221$ & $-2.68$ & $[-0.0479,+0.0036]$ & $[-0.0325,-0.0107]$ & 5/5\\
++CA $-$ A & All & $0.2122/0.2082$ & $-0.0040$ & $-1.89$ & $[-0.0087,+0.0007]$ & $[-0.0071,-0.0013]$ & 5/5\\
++ & Wet & $0.4248/0.4071$ & $-0.0177$ & $-4.16$ & $[-0.0344,-0.0009]$ & $[-0.0241,-0.0117]$ & 5/5\\
++ & Upper & $0.8249/0.7903$ & $-0.0346$ & $-4.20$ & $[-0.0751,+0.0058]$ & $[-0.0464,-0.0241]$ & 4/5\\
++CB $-$ CA & All & $0.2082/0.2083$ & $+0.0001$ & $+0.03$ & $[-0.0049,+0.0050]$ & $[-0.0037,+0.0044]$ & 3/5\\
++ & Wet & $0.4071/0.4045$ & $-0.0026$ & $-0.64$ & $[-0.0163,+0.0110]$ & $[-0.0108,+0.0055]$ & 4/5\\
++ & Upper & $0.7903/0.7758$ & $-0.0144$ & $-1.83$ & $[-0.0325,+0.0036]$ & $[-0.0287,-0.0012]$ & 4/5\\
++CB $-$ B & All & $0.2107/0.2083$ & $-0.0024$ & $-1.12$ & $[-0.0082,+0.0035]$ & $[-0.0065,+0.0016]$ & 3/5\\
++ & Wet & $0.4155/0.4045$ & $-0.0110$ & $-2.64$ & $[-0.0189,-0.0030]$ & $[-0.0193,-0.0037]$ & 5/5\\
++ & Upper & $0.8028/0.7758$ & $-0.0270$ & $-3.36$ & $[-0.0462,-0.0077]$ & $[-0.0428,-0.0141]$ & 5/5\\
++\end{longtable}
++\end{revisionlongtable}
++
++\begin{revisiontable}
++\renewcommand{\arraystretch}{1.15}
++\caption{Training runs for the configurations in Table~\ref{stab:r3hourly_ab}. Training samples are the windowed 2017--2019 training targets (00/06/12/18~UTC issue times for A and B; every hour for CA and CB). Test RMSE (mm\,h$^{-1}$) is the mean $\pm$ sample SD over five seeds. BiLSTM-Attention used Adam ($10^{-3}$), batch size 32, at most 30 epochs and early stopping on the common 2020 validation set (patience 10); epochs give the range of epochs trained and, in parentheses, of the selected epoch. With hourly issue times each epoch contains about six times as many optimization steps, and the protocol was not re-tuned. Times are recorded seconds per seed, mean [range], covering model construction, fitting and validation/test prediction on an RTX 4090 host; they are not a controlled computational benchmark, and the XGBoost device was not recorded. NA: not applicable.}
++\label{stab:r3hourly_runs}
++\begin{tabularx}{\linewidth}{@{}l>{\raggedright\arraybackslash}Xrrrr@{}}
++\hline
++\textbf{Config.} & \textbf{Inputs; training issue times} & \textbf{Samples} & \textbf{Test RMSE} & \textbf{Epochs} & \textbf{Time (s)}\\
++\hline
++\multicolumn{6}{@{}l}{\textbf{XGBoost}}\\
++A & 6 six-hourly; 00/06/12/18 UTC & 4,374 & $0.2125\pm0.0012$ & NA & 0.1 [0.1--0.3]\\
++B & 31 hourly; 00/06/12/18 UTC & 4,374 & $0.2102\pm0.0027$ & NA & 0.6 [0.5--0.7]\\
++CA & 6 six-hourly; hourly & 26,244 & $0.2105\pm0.0008$ & NA & 0.2 [0.2--0.4]\\
++CB & 31 hourly; hourly & 26,244 & $0.2092\pm0.0006$ & NA & 0.7 [0.7--0.8]\\
++\multicolumn{6}{@{}l}{\textbf{BiLSTM-Attention}}\\
++A & 6 six-hourly; 00/06/12/18 UTC & 4,374 & $0.2122\pm0.0013$ & 13--27 (3--17) & 42.6 [30.8--61.0]\\
++B & 31 hourly; 00/06/12/18 UTC & 4,374 & $0.2107\pm0.0020$ & 18--21 (8--11) & 53.5 [50.6--58.1]\\
++CA & 6 six-hourly; hourly & 26,244 & $0.2082\pm0.0027$ & 11--13 (1--3) & 128.1 [117.8--135.8]\\
++CB & 31 hourly; hourly & 26,244 & $0.2083\pm0.0038$ & 12--14 (2--4) & 172.8 [156.9--184.2]\\
++\hline
++\end{tabularx}
++\end{revisiontable}
++
+ \end{document}
+--- a/Response letter.tex	2026-11-16 00:00:00.000000000 +0000
++++ b/Response letter.tex	2026-11-16 00:00:00.000000000 +0000
+@@ -1449,9 +1449,13 @@
+ 
+ \ReviewerComment{L979-982: It is better to use hourly ERA5 data and still forecast at 6h lead time. This way, you will have more data to train and validate the model.}
+ 
+-\PendingResponse
++\AuthorResponse{We thank the reviewer for this suggestion. It combines two changes, hourly rather than six-hourly inputs and hourly issue times that increase the number of training samples, and we tested both in reduced-period experiments. Hourly ERA5 box means were built for 2017--2021 and reproduce the six-hourly regional series at 00/06/12/18~UTC. XGBoost and BiLSTM-Attention were refitted with five seeds in four configurations: six-hourly or hourly inputs over the same 30-h history, each with training issue times either at 00/06/12/18~UTC (A and B; 4,374 samples) or every hour (CA and CB; 26,244 samples). The validation and test targets (2020 and 2021), the final-hour target $(t_0+5\,\mathrm{h},t_0+6\,\mathrm{h}]$ and the 6-h lead time were identical. Relative to A, the configuration proposed by the reviewer (CB) changed overall test RMSE by $-1.57\%$ for XGBoost and $-1.86\%$ for BiLSTM-Attention; neither change was robust, because the moving-block intervals included zero. In the exploratory decomposition, most of the change was associated with hourly issue times (CA versus A: $-0.92\%$ and $-1.89\%$) rather than with hourly inputs. Wet and upper-tail RMSE were 2.3--6.0\% lower for CB than for A in all five seeds of both models, but these subset results are exploratory and unadjusted for multiplicity. The second experiment was designed after the first comparison had been seen, the evaluation uses one test year and two models, the hourly training samples are highly autocorrelated, and each epoch contained about six times as many optimization steps. We therefore report these results as motivating further evaluation of hourly data over the full period, not as an established improvement. They are described in Section~\ref{manuscript-sec:limitations} and Supplementary Tables~\ref{supp-stab:r3hourly_ab} and~\ref{supp-stab:r3hourly_runs}.}
+ 
+-\ChangeLocation
++\ManuscriptChange{Section~\ref{manuscript-sec:limitations} (Limitations and Future Work): new paragraph after the existing six-hour subsampling limitation, which is unchanged. Supplementary Material: new final section ``Hourly input sensitivity'' with Tables~\ref{supp-stab:r3hourly_ab} (configurations A, B, CA and CB for XGBoost and BiLSTM-Attention; primary comparison CB$-$A and exploratory comparisons; all/wet/upper-tail RMSE with seed-t and moving-block intervals) and~\ref{supp-stab:r3hourly_runs} (training samples, epochs and recorded times). Main-study models, splits and results are unchanged; no new training was performed for this revision. Final page and line numbers pending full-manuscript assembly.}
++
++\EvidenceBox{Hourly input sensitivity (Section~\ref{manuscript-sec:limitations})}{
++\RevisedExcerpt{Reduced-period experiments examined both changes that hourly ERA5 data would allow. Hourly box means for 2017--2021 were used to refit XGBoost and BiLSTM-Attention with five seeds (training 2017--2019, validation 2020, test 2021; Supplementary Tables~\ref{supp-stab:r3hourly_ab} and~\ref{supp-stab:r3hourly_runs}). Configurations A and B use the six six-hourly snapshots of the main configuration or all 31 hourly values over the same 30-h history, with training issue times at 00/06/12/18~UTC (4,374 samples); CA and CB use the same inputs with hourly training issue times (26,244 samples). All four share the validation and test targets, the final-hour target and the 6-h lead time. Relative to A, CB, which combines hourly inputs and hourly issue times, changed overall test RMSE by $-1.57\%$ for XGBoost and $-1.86\%$ for BiLSTM-Attention. Neither change was robust: for XGBoost all five seeds improved and the seed-t interval excluded zero, but the moving-block interval included zero, and for BiLSTM-Attention both intervals included zero. In the exploratory decomposition, hourly inputs alone (B versus A) changed RMSE by $-1.08\%$ and $-0.74\%$, hourly issue times alone (CA versus A) by $-0.92\%$ and $-1.89\%$, and hourly inputs added to hourly issue times (CB versus CA) by $-0.65\%$ and $+0.03\%$. Wet and upper-tail RMSE were 2.3--6.0\% lower for CB than for A in all five seeds of both models, with both intervals excluding zero; these subset results are exploratory and unadjusted for multiplicity. Experiment C was designed after the input-frequency results had been seen, the evaluation covers one test year and two models, and the hourly training samples are highly autocorrelated (lag-1 autocorrelation 0.89), so the effective sample size increases far less than sixfold; with hourly issue times, each training epoch also contains about six times as many optimization steps. A robust overall benefit is therefore not established, and its absence is not established either, for the main 2004--2021 configuration.}
++}
+ 
+ \subsection*{References supplied by the reviewer}
+ 

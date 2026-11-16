@@ -1,0 +1,21 @@
+{
+ "base_R3_18_after": {
+  "manuscript.tex": "0eef8d4ff8ba718bd6edace809537a198c74e7b86607471ed85a839d60e344c0",
+  "Response letter.tex": "5a662631c34e6403900ce83408e46c6bad915bc255729c27ad2128d7e5abeef9",
+  "Supplementary.tex": "8f146471a1861806a29eed2fe7dd48decf606a493f02ff8da03c8d0ecaa51bbd",
+  "sn-bibliography.bib": "137c59707308c31c5cee9b6bb7992ed6d0a01f462dd7131552abe75b509f20f5"
+ },
+ "R3_19_only_after": {
+  "manuscript.tex": "d13e4b6f9a7555b39aafa8b01f48f764d99b1e0b63dfdee3544c58afeecf3fee",
+  "Response letter.tex": "5371848df2a7883235afbd0d53853ba290768c466b94c609bbf6e89a99b861d7",
+  "Supplementary.tex": "067683bf23d20e866ab82c0fff0ec03f2d186054553e62917e8a5344f8c165cb",
+  "sn-bibliography.bib": "137c59707308c31c5cee9b6bb7992ed6d0a01f462dd7131552abe75b509f20f5"
+ },
+ "current_workspace_R3_19_plus_R4_M1": {
+  "manuscript.tex": "a0eb8f27065e6789f531b37b7351101ec2948c0eb0bd179ee36c48f60efd4f78",
+  "Response letter.tex": "cb22fcfd279f380cf6abe9063c00e5341e600193b4f027c6557902e0da0926ba",
+  "Supplementary.tex": "067683bf23d20e866ab82c0fff0ec03f2d186054553e62917e8a5344f8c165cb",
+  "sn-bibliography.bib": "137c59707308c31c5cee9b6bb7992ed6d0a01f462dd7131552abe75b509f20f5"
+ },
+ "check": "applying R4_M1_LOCAL.patch to R3_19_only_after reproduces current workspace byte-for-byte"
+}

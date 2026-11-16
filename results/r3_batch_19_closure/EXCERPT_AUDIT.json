@@ -1,0 +1,11 @@
+{
+ "total": 159,
+ "unmatched": [],
+ "R3_01_to_R3_18_and_earlier_unchanged": true,
+ "count_R3_01_18_and_earlier": 154,
+ "R3_19": 1,
+ "R4_M1": 4,
+ "R4_M1_excerpts_equal_R4M1_record": true,
+ "R4_M1_excerpts_unchanged_since_R4M1_integration": true,
+ "R3_13_NWP_limitation_text_present": true
+}
