@@ -1,0 +1,7 @@
+# Closure manifest
+
+Archive commit verified: 5305b27adb1de42bdf1d5743e6cd8dbd3e4e6281
+
+- results/r4_batch_closure/STATUS.md  sha256 d37698350faebdb51a7c21384d5d5359599dc5f446fd693900ecf5588bb3879a
+- results/r4_batch_closure/REMOTE_RECEIPT.json  sha256 afc16da34a3d3dab8943c1e10ac7be1761dbe20a15fb52f61fa387ea06948f3d
+- results/r4_batch_closure/GIT_ARCHIVE_REPORT.md  sha256 1daa5943535570a1cb0be8a14d5f521cb307dfec05297f2e3f9696eebec3d07e

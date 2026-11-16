@@ -1,0 +1,20 @@
+{
+ "remote": "https://github.com/Liilychee/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-.git",
+ "branch": "main",
+ "base": "53319b2aec5d991f0c1f18023d45d19315d77c73",
+ "archive_commit": "5305b27adb1de42bdf1d5743e6cd8dbd3e4e6281",
+ "push": "fast-forward, no force",
+ "fresh_clone_head": "5305b27adb1de42bdf1d5743e6cd8dbd3e4e6281",
+ "manifest_files_verified": 236,
+ "manifest_mismatches": 0,
+ "files_in_commit": 238,
+ "chain_rebuild_from_clone": "22/22 nodes byte-for-byte",
+ "user_bib_edit_patches": 7,
+ "net_user_bib_patch": "USER_BIB_EDITS.patch (git apply and BSD patch verified)",
+ "evidence_boxes": {
+  "total": 179,
+  "original": 170,
+  "new": 9
+ },
+ "excluded": "before/mid/after full sources, diff.tex, diff.pdf, latexdiff_raw.tex"
+}
