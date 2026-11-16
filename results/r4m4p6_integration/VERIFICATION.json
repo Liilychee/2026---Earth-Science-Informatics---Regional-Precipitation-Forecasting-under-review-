@@ -1,0 +1,41 @@
+{
+  "total_excerpts": 170,
+  "matched": 170,
+  "missing_idx": [],
+  "all_excerpts_equal_before_in_order": true,
+  "baseline_total": 170,
+  "response_letter_unchanged": true,
+  "para1_excerpt": "ex31 (R1 M6) quotes the whole station-limitation paragraph and ends exactly at its last sentence; text appended after it, excerpt still matches",
+  "para2_protected": false,
+  "bib_keys": {
+    "lavers2022evaluation": 1,
+    "rasp2024weatherbench": 1
+  },
+  "keys_in_bbl": true,
+  "dois": {
+    "lavers2022evaluation": "10.1002/qj.4351",
+    "rasp2024weatherbench": "10.1029/2023MS004019"
+  },
+  "undefined_citations": 0,
+  "citet_occurrences": 9,
+  "p1_p5_intact": true,
+  "hres_results_text_unchanged": true,
+  "manuscript_pages_before_after": [
+    114,
+    115
+  ],
+  "overfull_before_after": [
+    113,
+    114
+  ],
+  "overfull_hbox": 0,
+  "patch_hunks": 2,
+  "patch_rebuild_git_apply": true,
+  "patch_rebuild_bsd_patch": true,
+  "reference_rendering_issues": [
+    "rasp2024weatherbench: pages e2023MS004019 printed as e2023MS004,019 (use eid)",
+    "rasp2024weatherbench: author 'Russel, Tyler' \u2014 likely 'Russell'; please verify"
+  ],
+  "supplementary_unchanged": true,
+  "bib_unchanged": true
+}

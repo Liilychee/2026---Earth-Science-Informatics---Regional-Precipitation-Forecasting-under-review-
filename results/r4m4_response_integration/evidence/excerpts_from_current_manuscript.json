@@ -1,0 +1,47 @@
+[
+ {
+  "item": "P3",
+  "line": 1187,
+  "text": "The comparable overall performance of the tree-based and recurrent models is consistent with broader evidence that tree-based methods remain competitive with deep neural networks on medium-sized tabular datasets \\citep{grinsztajn2022tree}. Related precipitation-focused work has also shown that shallower U-Net configurations can achieve performance comparable to deeper variants with fewer trainable parameters \\citep{otero2023intercomparison}. Although these studies differ in data representation, architecture and prediction setting, they reinforce the importance of evaluating model complexity against demonstrated predictive gains rather than assuming that more complex models will necessarily perform better."
+ },
+ {
+  "item": "P1",
+  "line": 1216,
+  "text": "These upper-tail RMSE comparisons are conditional on observed precipitation exceeding the specified thresholds. Evaluating forecasts only on cases selected by their observed outcomes can distort comparative rankings \\citep{lerch2017forecaster}. Accordingly, the present upper-tail results are interpreted as conditional error diagnostics rather than evidence of unconditional forecasting superiority."
+ },
+ {
+  "item": "P2",
+  "line": 1220,
+  "text": "Similar difficulties in representing high precipitation intensities have been reported in data-driven rainfall forecasting. For example, radar-based deep-learning nowcasts have exhibited spatial smoothing and reduced representation of intense rainfall features \\citep{ayzel2020rainnet}. Although the present study concerns regional-mean ERA5 precipitation rather than spatial radar nowcasts, these findings provide a relevant comparison for the observed upper-tail amplitude compression. The underlying causes in our models remain unresolved."
+ },
+ {
+  "item": "P1c",
+  "line": 1232,
+  "text": "This pattern is broadly consistent with evidence that tree-based methods can match or exceed deep neural networks on tabular data, \\revminor{particularly for medium-sized datasets} \\citep{grinsztajn2022tree}."
+ },
+ {
+  "item": "P4",
+  "line": 1240,
+  "text": "Bernoulli--Gamma distributions have previously been used in neural-network-based precipitation downscaling to jointly represent precipitation occurrence and positive amounts \\citep{cannon2008bernoulli,bano2020configuration}. In related precipitation downscaling experiments, deterministic predictions slightly underestimated the 98th precipitation percentile, while stochastic sampling improved this aspect at the expense of some temporal and spatial correlation \\citep{bano2020configuration}. Although percentile bias and prediction-interval coverage are distinct diagnostics, these findings underscore the importance of evaluating high-intensity precipitation performance separately from aggregate probabilistic skill."
+ },
+ {
+  "item": "P5a",
+  "line": 1254,
+  "text": "This complementary interpretation is consistent with previous geoscientific research highlighting the method-dependent strengths and limitations of XAI techniques and advocating the combined use of multiple explanation methods \\citep{mamalakis2022investigating}."
+ },
+ {
+  "item": "P6a",
+  "line": 1295,
+  "text": "Independent evaluations have documented differences between ERA5 precipitation and rain-gauge measurements, including biases in daily precipitation and underrepresentation of the largest observed daily totals \\citep{lavers2022evaluation}. Although these findings concern daily precipitation across a much broader geographical domain, they reinforce the need to distinguish ERA5-referenced forecast evaluation from validation against local observations."
+ },
+ {
+  "item": "P6b",
+  "line": 1322,
+  "text": "WeatherBench 2 likewise distinguishes reanalysis-based evaluation from verification against operational analyses and acknowledges the limitations of ERA5 precipitation as a reference dataset \\citep{rasp2024weatherbench}. Although that benchmark uses ERA5 to verify precipitation accumulations across models, the net effect of the verification reference on the present HRES comparison has not been quantified, and the mismatch in precipitation accumulation windows remains an additional limitation."
+ },
+ {
+  "item": "P5b",
+  "line": 1325,
+  "text": "Previous methodological research has shown that Shapley-value explanations can be misleading when dependencies among correlated features are not adequately accounted for \\citep{aas2021explaining}. This reinforces the need to interpret the present attributions cautiously, without assuming that they uniquely identify the contribution of each meteorological predictor."
+ }
+]

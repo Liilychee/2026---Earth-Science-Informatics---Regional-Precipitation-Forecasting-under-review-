@@ -1,0 +1,17 @@
+--- a/sn-bibliography.bib	2026-11-16 00:00:00.000000000 +0000
++++ b/sn-bibliography.bib	2026-11-16 00:00:00.000000000 +0000
+@@ -1312,3 +1312,13 @@
+   year={2013},
+   doi={10.1002/grl.50636}
+ }
++
++@article{lerch2017forecaster,
++  title={Forecaster's dilemma: Extreme events and forecast evaluation},
++  author={Lerch, Sebastian and Thorarinsdottir, Thordis L and Ravazzolo, Francesco and Gneiting, Tilmann},
++  journal={Statistical Science},
++  pages={106--127},
++  year={2017},
++  publisher={JSTOR},
++  doi={10.1214/16-STS588}
++}
+\ No newline at end of file

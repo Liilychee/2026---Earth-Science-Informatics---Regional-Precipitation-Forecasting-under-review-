@@ -1,0 +1,22 @@
+{
+  "total_excerpts": 170,
+  "matched": 170,
+  "missing_idx": [],
+  "all_excerpts_equal_before_in_order": true,
+  "baseline_total": 170,
+  "response_letter_unchanged": true,
+  "sentence_protected": false,
+  "replacement": {
+    "old": "particularly under limited or imbalanced sample sizes",
+    "new": "\\revminor{particularly for medium-sized datasets}",
+    "choice": "user-selected option 3 (avoids repeating 'tabular')"
+  },
+  "p1_p6_inserted_texts_intact": true,
+  "manuscript_pages": 115,
+  "overfull_total": 114,
+  "overfull_hbox": 0,
+  "patch_hunks": 1,
+  "patch_rebuild_git_apply": true,
+  "patch_rebuild_bsd_patch": true,
+  "bib_supp_letter_unchanged": true
+}

@@ -1,0 +1,17 @@
+--- a/sn-bibliography.bib	2026-11-16 00:00:00.000000000 +0000
++++ b/sn-bibliography.bib	2026-11-16 00:00:00.000000000 +0000
+@@ -1370,11 +1370,11 @@
+ 
+ @article{rasp2024weatherbench,
+   title={{WeatherBench 2}: A Benchmark for the Next Generation of Data-Driven Global Weather Models},
+-  author={Rasp, Stephan and Hoyer, Stephan and Merose, Alexander and Langmore, Ian and Battaglia, Peter and Russel, Tyler and Sanchez-Gonzalez, Alvaro and Yang, Vivian and Carver, Robert and Agrawal, Shreya and others},
++  author={Rasp, Stephan and Hoyer, Stephan and Merose, Alexander and Langmore, Ian and Battaglia, Peter and Russell, Tyler and Sanchez-Gonzalez, Alvaro and Yang, Vivian and Carver, Robert and Agrawal, Shreya and others},
+   journal={Journal of Advances in Modeling Earth Systems},
+   volume={16},
+   number={6},
+-  pages={e2023MS004019},
++  eid={e2023MS004019},
+   year={2024},
+   doi={10.1029/2023MS004019}
+ }
+\ No newline at end of file

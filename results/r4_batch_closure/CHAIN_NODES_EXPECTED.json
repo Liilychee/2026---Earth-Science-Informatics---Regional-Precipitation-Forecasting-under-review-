@@ -1,0 +1,225 @@
+{
+ "note": "Expected SHA-256 of the four sources after each step; final node equals the paper working copy on 2026-11-16.",
+ "nodes": [
+  {
+   "name": "R3-19 archived after-state (base, 53319b2 BASE_AND_AFTER_HASHES)",
+   "patch": null,
+   "state": {
+    "manuscript.tex": "d13e4b6f9a7555b39aafa8b01f48f764d99b1e0b63dfdee3544c58afeecf3fee",
+    "Response letter.tex": "5371848df2a7883235afbd0d53853ba290768c466b94c609bbf6e89a99b861d7",
+    "Supplementary.tex": "067683bf23d20e866ab82c0fff0ec03f2d186054553e62917e8a5344f8c165cb",
+    "sn-bibliography.bib": "137c59707308c31c5cee9b6bb7992ed6d0a01f462dd7131552abe75b509f20f5"
+   }
+  },
+  {
+   "name": "R4-M1",
+   "patch": "results/r4m1_integration/R4_M1_LOCAL.patch",
+   "state": {
+    "manuscript.tex": "a0eb8f27065e6789f531b37b7351101ec2948c0eb0bd179ee36c48f60efd4f78",
+    "Response letter.tex": "cb22fcfd279f380cf6abe9063c00e5341e600193b4f027c6557902e0da0926ba",
+    "Supplementary.tex": "067683bf23d20e866ab82c0fff0ec03f2d186054553e62917e8a5344f8c165cb",
+    "sn-bibliography.bib": "137c59707308c31c5cee9b6bb7992ed6d0a01f462dd7131552abe75b509f20f5"
+   }
+  },
+  {
+   "name": "R4-M1 label fix",
+   "patch": "results/r4m1m2_integration/R4_M1_LABELFIX_LOCAL.patch",
+   "state": {
+    "manuscript.tex": "a0eb8f27065e6789f531b37b7351101ec2948c0eb0bd179ee36c48f60efd4f78",
+    "Response letter.tex": "99b8ec1ea94a63adf0d95f8583846472a22555c809f31cbc7b5eac60b4c61daf",
+    "Supplementary.tex": "067683bf23d20e866ab82c0fff0ec03f2d186054553e62917e8a5344f8c165cb",
+    "sn-bibliography.bib": "137c59707308c31c5cee9b6bb7992ed6d0a01f462dd7131552abe75b509f20f5"
+   }
+  },
+  {
+   "name": "R4-M2",
+   "patch": "results/r4m1m2_integration/R4_M2_LOCAL.patch",
+   "state": {
+    "manuscript.tex": "e09c84d2a667924192cff7ef76d4857adcf9c3c2edc5f27f4447f99c49473d08",
+    "Response letter.tex": "12cf66ee1eec4aac7498c74b4b1c2d830d7852d8530e4d84e2a9d51a4d80809c",
+    "Supplementary.tex": "067683bf23d20e866ab82c0fff0ec03f2d186054553e62917e8a5344f8c165cb",
+    "sn-bibliography.bib": "137c59707308c31c5cee9b6bb7992ed6d0a01f462dd7131552abe75b509f20f5"
+   }
+  },
+  {
+   "name": "R4-M3",
+   "patch": "results/r4m3_integration/R4_M3_LOCAL.patch",
+   "state": {
+    "manuscript.tex": "8920ad956ee17a528b9ce390346197ed73cfb1d76cf78f4b9eb701546d7dff6f",
+    "Response letter.tex": "8e6c75f46b30ec388e306b3f2bbdfb1fa3004f6d0869bf51f73a336513cc5ccb",
+    "Supplementary.tex": "2df7e160574947361e653cf78eda9f5c0ac86eb30f841282dadb4c988efda3fd",
+    "sn-bibliography.bib": "137c59707308c31c5cee9b6bb7992ed6d0a01f462dd7131552abe75b509f20f5"
+   }
+  },
+  {
+   "name": "R4-m8",
+   "patch": "results/r4m8_integration/R4_m8_LOCAL.patch",
+   "state": {
+    "manuscript.tex": "d65be30545d00d9740985e95c65d2a9643c5ffddc615d3c0e292beccfa0f67ea",
+    "Response letter.tex": "4a53015dda79356df2b600c4317fd72ad6a1c510bebfee08109f115e89564442",
+    "Supplementary.tex": "2df7e160574947361e653cf78eda9f5c0ac86eb30f841282dadb4c988efda3fd",
+    "sn-bibliography.bib": "137c59707308c31c5cee9b6bb7992ed6d0a01f462dd7131552abe75b509f20f5"
+   }
+  },
+  {
+   "name": "USER_BIB_EDIT_01 (lerch2017forecaster added)",
+   "patch": "results/r4_batch_closure/user_bib_edits/USER_BIB_EDIT_01.patch",
+   "state": {
+    "manuscript.tex": "d65be30545d00d9740985e95c65d2a9643c5ffddc615d3c0e292beccfa0f67ea",
+    "Response letter.tex": "4a53015dda79356df2b600c4317fd72ad6a1c510bebfee08109f115e89564442",
+    "Supplementary.tex": "2df7e160574947361e653cf78eda9f5c0ac86eb30f841282dadb4c988efda3fd",
+    "sn-bibliography.bib": "1fccf8a3c03cb1deaa71e99d2ee1dde1f6ba86e46cf64979178f47079ce1921b"
+   }
+  },
+  {
+   "name": "R4-M4 P1",
+   "patch": "results/r4m4p1_integration/R4_M4_P1_LOCAL.patch",
+   "state": {
+    "manuscript.tex": "65140a3cc1b6067992ac1837c9b8e9fe43a1df7c4aabdd720d7dc3fd7e9aa934",
+    "Response letter.tex": "4a53015dda79356df2b600c4317fd72ad6a1c510bebfee08109f115e89564442",
+    "Supplementary.tex": "2df7e160574947361e653cf78eda9f5c0ac86eb30f841282dadb4c988efda3fd",
+    "sn-bibliography.bib": "1fccf8a3c03cb1deaa71e99d2ee1dde1f6ba86e46cf64979178f47079ce1921b"
+   }
+  },
+  {
+   "name": "Citation style unification",
+   "patch": "results/citation_style_unification/CITATION_STYLE_LOCAL.patch",
+   "state": {
+    "manuscript.tex": "43aa048e7b1b5bcd6dbe3c2685c6dec70c7d0ef23e74d652a07843bdd858056e",
+    "Response letter.tex": "4a53015dda79356df2b600c4317fd72ad6a1c510bebfee08109f115e89564442",
+    "Supplementary.tex": "2df7e160574947361e653cf78eda9f5c0ac86eb30f841282dadb4c988efda3fd",
+    "sn-bibliography.bib": "1fccf8a3c03cb1deaa71e99d2ee1dde1f6ba86e46cf64979178f47079ce1921b"
+   }
+  },
+  {
+   "name": "USER_BIB_EDIT_02 (ayzel2020rainnet added)",
+   "patch": "results/r4_batch_closure/user_bib_edits/USER_BIB_EDIT_02.patch",
+   "state": {
+    "manuscript.tex": "43aa048e7b1b5bcd6dbe3c2685c6dec70c7d0ef23e74d652a07843bdd858056e",
+    "Response letter.tex": "4a53015dda79356df2b600c4317fd72ad6a1c510bebfee08109f115e89564442",
+    "Supplementary.tex": "2df7e160574947361e653cf78eda9f5c0ac86eb30f841282dadb4c988efda3fd",
+    "sn-bibliography.bib": "34408e58d2033e7e41b263fe4d1ed2b0c09e9c4d48f86d0d04e8d95b75287796"
+   }
+  },
+  {
+   "name": "R4-M4 P2",
+   "patch": "results/r4m4p2_integration/R4_M4_P2_LOCAL.patch",
+   "state": {
+    "manuscript.tex": "8fae6ac3feb48c0b6202083b330e4d9b6205e56a5123c13826772e20c3c46512",
+    "Response letter.tex": "4a53015dda79356df2b600c4317fd72ad6a1c510bebfee08109f115e89564442",
+    "Supplementary.tex": "2df7e160574947361e653cf78eda9f5c0ac86eb30f841282dadb4c988efda3fd",
+    "sn-bibliography.bib": "34408e58d2033e7e41b263fe4d1ed2b0c09e9c4d48f86d0d04e8d95b75287796"
+   }
+  },
+  {
+   "name": "USER_BIB_EDIT_03 (ayzel2020rainnet: {RainNet v1.0} title, doi added)",
+   "patch": "results/r4_batch_closure/user_bib_edits/USER_BIB_EDIT_03.patch",
+   "state": {
+    "manuscript.tex": "8fae6ac3feb48c0b6202083b330e4d9b6205e56a5123c13826772e20c3c46512",
+    "Response letter.tex": "4a53015dda79356df2b600c4317fd72ad6a1c510bebfee08109f115e89564442",
+    "Supplementary.tex": "2df7e160574947361e653cf78eda9f5c0ac86eb30f841282dadb4c988efda3fd",
+    "sn-bibliography.bib": "9c2b81f7671d0810ffd01c1b4645cb44219b5a8fb46a32bd0429d62301f44ea3"
+   }
+  },
+  {
+   "name": "R4-M4 P3",
+   "patch": "results/r4m4p3_integration/R4_M4_P3_LOCAL.patch",
+   "state": {
+    "manuscript.tex": "1ba4cbb330b6d60104f69b0f23d059451afd53464ae791cd7ffa86d2f667b43f",
+    "Response letter.tex": "4a53015dda79356df2b600c4317fd72ad6a1c510bebfee08109f115e89564442",
+    "Supplementary.tex": "2df7e160574947361e653cf78eda9f5c0ac86eb30f841282dadb4c988efda3fd",
+    "sn-bibliography.bib": "9c2b81f7671d0810ffd01c1b4645cb44219b5a8fb46a32bd0429d62301f44ea3"
+   }
+  },
+  {
+   "name": "USER_BIB_EDIT_04 (bano2020configuration added)",
+   "patch": "results/r4_batch_closure/user_bib_edits/USER_BIB_EDIT_04.patch",
+   "state": {
+    "manuscript.tex": "1ba4cbb330b6d60104f69b0f23d059451afd53464ae791cd7ffa86d2f667b43f",
+    "Response letter.tex": "4a53015dda79356df2b600c4317fd72ad6a1c510bebfee08109f115e89564442",
+    "Supplementary.tex": "2df7e160574947361e653cf78eda9f5c0ac86eb30f841282dadb4c988efda3fd",
+    "sn-bibliography.bib": "205f53c2ea41744d7d983606d1702b6e89abf2f66f7642dafff452602b9c817e"
+   }
+  },
+  {
+   "name": "R4-M4 P4",
+   "patch": "results/r4m4p4_integration/R4_M4_P4_LOCAL.patch",
+   "state": {
+    "manuscript.tex": "46489b3aebe7661a419f28a2d1aeeaf48abd14c1778073e1473e203a29035a27",
+    "Response letter.tex": "4a53015dda79356df2b600c4317fd72ad6a1c510bebfee08109f115e89564442",
+    "Supplementary.tex": "2df7e160574947361e653cf78eda9f5c0ac86eb30f841282dadb4c988efda3fd",
+    "sn-bibliography.bib": "205f53c2ea41744d7d983606d1702b6e89abf2f66f7642dafff452602b9c817e"
+   }
+  },
+  {
+   "name": "USER_BIB_EDIT_05 (aas2021explaining, mamalakis2022investigating added)",
+   "patch": "results/r4_batch_closure/user_bib_edits/USER_BIB_EDIT_05.patch",
+   "state": {
+    "manuscript.tex": "46489b3aebe7661a419f28a2d1aeeaf48abd14c1778073e1473e203a29035a27",
+    "Response letter.tex": "4a53015dda79356df2b600c4317fd72ad6a1c510bebfee08109f115e89564442",
+    "Supplementary.tex": "2df7e160574947361e653cf78eda9f5c0ac86eb30f841282dadb4c988efda3fd",
+    "sn-bibliography.bib": "e2d2269bf6198b1df9f07de158d82faf1f157c19affcff39966310d899ee44c8"
+   }
+  },
+  {
+   "name": "R4-M4 P5",
+   "patch": "results/r4m4p5_integration/R4_M4_P5_LOCAL.patch",
+   "state": {
+    "manuscript.tex": "4d7e04fde185b37adc3ede2dceb3b764c3e8f59f4eb1f8a44b46cfc55b812441",
+    "Response letter.tex": "4a53015dda79356df2b600c4317fd72ad6a1c510bebfee08109f115e89564442",
+    "Supplementary.tex": "2df7e160574947361e653cf78eda9f5c0ac86eb30f841282dadb4c988efda3fd",
+    "sn-bibliography.bib": "e2d2269bf6198b1df9f07de158d82faf1f157c19affcff39966310d899ee44c8"
+   }
+  },
+  {
+   "name": "USER_BIB_EDIT_06 (aas/mamalakis: {Shapley}, pages->eid; rasp2024weatherbench added)",
+   "patch": "results/r4_batch_closure/user_bib_edits/USER_BIB_EDIT_06.patch",
+   "state": {
+    "manuscript.tex": "4d7e04fde185b37adc3ede2dceb3b764c3e8f59f4eb1f8a44b46cfc55b812441",
+    "Response letter.tex": "4a53015dda79356df2b600c4317fd72ad6a1c510bebfee08109f115e89564442",
+    "Supplementary.tex": "2df7e160574947361e653cf78eda9f5c0ac86eb30f841282dadb4c988efda3fd",
+    "sn-bibliography.bib": "11a976459318c9c6c3e4a9e6579406f0d23e68e3bb27986142bbe1f15e844718"
+   }
+  },
+  {
+   "name": "R4-M4 P6",
+   "patch": "results/r4m4p6_integration/R4_M4_P6_LOCAL.patch",
+   "state": {
+    "manuscript.tex": "7135173a2af2e587a4128cfb528680872c2f7ed979c671fb03e464868b74e8a7",
+    "Response letter.tex": "4a53015dda79356df2b600c4317fd72ad6a1c510bebfee08109f115e89564442",
+    "Supplementary.tex": "2df7e160574947361e653cf78eda9f5c0ac86eb30f841282dadb4c988efda3fd",
+    "sn-bibliography.bib": "11a976459318c9c6c3e4a9e6579406f0d23e68e3bb27986142bbe1f15e844718"
+   }
+  },
+  {
+   "name": "USER_BIB_EDIT_07 (rasp2024weatherbench: Russell, pages->eid)",
+   "patch": "results/r4_batch_closure/user_bib_edits/USER_BIB_EDIT_07.patch",
+   "state": {
+    "manuscript.tex": "7135173a2af2e587a4128cfb528680872c2f7ed979c671fb03e464868b74e8a7",
+    "Response letter.tex": "4a53015dda79356df2b600c4317fd72ad6a1c510bebfee08109f115e89564442",
+    "Supplementary.tex": "2df7e160574947361e653cf78eda9f5c0ac86eb30f841282dadb4c988efda3fd",
+    "sn-bibliography.bib": "285eb33458287ef9c28e154e823e202b07846933e16a7c8e30ae51d346a33a64"
+   }
+  },
+  {
+   "name": "R4-M4 P1-c",
+   "patch": "results/r4m4p1c_integration/R4_M4_P1c_LOCAL.patch",
+   "state": {
+    "manuscript.tex": "a45a2944e241d32c3ea454a1d1f15f607920a669385b0838649c69b24de5a204",
+    "Response letter.tex": "4a53015dda79356df2b600c4317fd72ad6a1c510bebfee08109f115e89564442",
+    "Supplementary.tex": "2df7e160574947361e653cf78eda9f5c0ac86eb30f841282dadb4c988efda3fd",
+    "sn-bibliography.bib": "285eb33458287ef9c28e154e823e202b07846933e16a7c8e30ae51d346a33a64"
+   }
+  },
+  {
+   "name": "R4-M4 Response letter integration",
+   "patch": "results/r4m4_response_integration/R4_M4_RESPONSE_LOCAL.patch",
+   "state": {
+    "manuscript.tex": "a45a2944e241d32c3ea454a1d1f15f607920a669385b0838649c69b24de5a204",
+    "Response letter.tex": "0b87bed7ec1be280504b8a4b2f4ff1465b34996fe9508b5ae1efc47f11e9d774",
+    "Supplementary.tex": "2df7e160574947361e653cf78eda9f5c0ac86eb30f841282dadb4c988efda3fd",
+    "sn-bibliography.bib": "285eb33458287ef9c28e154e823e202b07846933e16a7c8e30ae51d346a33a64"
+   }
+  }
+ ]
+}

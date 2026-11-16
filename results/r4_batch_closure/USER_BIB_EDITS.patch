@@ -1,0 +1,74 @@
+--- a/sn-bibliography.bib	2026-11-16 00:00:00.000000000 +0000
++++ b/sn-bibliography.bib	2026-11-16 00:00:00.000000000 +0000
+@@ -1311,4 +1311,70 @@
+   pages={3259--3264},
+   year={2013},
+   doi={10.1002/grl.50636}
++}
++
++@article{lerch2017forecaster,
++  title={Forecaster's dilemma: Extreme events and forecast evaluation},
++  author={Lerch, Sebastian and Thorarinsdottir, Thordis L and Ravazzolo, Francesco and Gneiting, Tilmann},
++  journal={Statistical Science},
++  pages={106--127},
++  year={2017},
++  publisher={JSTOR},
++  doi={10.1214/16-STS588}
++}
++
++@article{ayzel2020rainnet,
++  title={{RainNet v1.0}: a convolutional neural network for radar-based precipitation nowcasting},
++  author={Ayzel, Georgy and Scheffer, Tobias and Heistermann, Maik},
++  journal={Geoscientific Model Development},
++  volume={13},
++  number={6},
++  pages={2631--2644},
++  year={2020},
++  doi={10.5194/gmd-13-2631-2020}
++}
++
++@article{bano2020configuration,
++  title={Configuration and intercomparison of deep learning neural models for statistical downscaling},
++  author={Ba{\~n}o-Medina, Jorge and Manzanas, Rodrigo and Guti{\'e}rrez, Jos{\'e} Manuel},
++  journal={Geoscientific Model Development},
++  volume={13},
++  number={4},
++  pages={2109--2124},
++  year={2020},
++  publisher={Copernicus Publications, G{\"o}ttingen, Germany},
++  doi={10.5194/gmd-13-2109-2020}
++}
++
++@article{aas2021explaining,
++  title={Explaining individual predictions when features are dependent: More accurate approximations to {Shapley} values},
++  author={Aas, Kjersti and Jullum, Martin and L{\o}land, Anders},
++  journal={Artificial Intelligence},
++  volume={298},
++  eid={103502},
++  year={2021},
++  publisher={Elsevier},
++  doi={10.1016/j.artint.2021.103502}
+ }
++
++@article{mamalakis2022investigating,
++  title={Investigating the fidelity of explainable artificial intelligence methods for applications of convolutional neural networks in geoscience},
++  author={Mamalakis, Antonios and Barnes, Elizabeth A and Ebert-Uphoff, Imme},
++  journal={Artificial Intelligence for the Earth Systems},
++  volume={1},
++  number={4},
++  eid={e220012},
++  year={2022},
++  doi={10.1175/AIES-D-22-0012.1}
++}
++
++@article{rasp2024weatherbench,
++  title={{WeatherBench 2}: A Benchmark for the Next Generation of Data-Driven Global Weather Models},
++  author={Rasp, Stephan and Hoyer, Stephan and Merose, Alexander and Langmore, Ian and Battaglia, Peter and Russell, Tyler and Sanchez-Gonzalez, Alvaro and Yang, Vivian and Carver, Robert and Agrawal, Shreya and others},
++  journal={Journal of Advances in Modeling Earth Systems},
++  volume={16},
++  number={6},
++  eid={e2023MS004019},
++  year={2024},
++  doi={10.1029/2023MS004019}
++}
+\ No newline at end of file

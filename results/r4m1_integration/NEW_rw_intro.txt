@@ -1,0 +1,1 @@
+\revminor{This section is organized around the questions that motivate the study: how precipitation data products constrain regional evaluation, how machine-learning models are compared, how probabilistic reliability is assessed, and how predictor relevance is interpreted.}

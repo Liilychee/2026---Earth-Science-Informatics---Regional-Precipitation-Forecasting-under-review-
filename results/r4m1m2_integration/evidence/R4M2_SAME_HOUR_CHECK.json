@@ -1,0 +1,13 @@
+{
+  "source_rows": 26300,
+  "first": "2004-01-01 00:00:00",
+  "last": "2021-12-31 18:00:00",
+  "same_hour": {
+    "max_lsp_minus_tp_mm": 0.000343322776,
+    "n_lsp_gt_tp_by_1e-6": 870,
+    "n_lsp_gt_tp_by_1e-4": 117,
+    "n_lsp_gt_tp_by_1e-3": 0,
+    "min_lsp_mm": 0.0,
+    "min_tp_mm": 0.0
+  }
+}

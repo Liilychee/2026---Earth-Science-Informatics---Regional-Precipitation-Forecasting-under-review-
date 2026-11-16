@@ -1,0 +1,9 @@
+{
+  "total_excerpts": 170,
+  "matched": 170,
+  "missing_idx": [],
+  "outside_R4m8_equal_baseline": true,
+  "outside_count": 167,
+  "baseline_total": 167,
+  "inside_R4m8_new": 3
+}

@@ -1,0 +1,10 @@
+{
+  "total_excerpts": 162,
+  "matched": 162,
+  "missing_idx": [],
+  "outside_R4M2_equal_baseline": true,
+  "outside_count": 159,
+  "baseline_total": 159,
+  "inside_R4M2_new": 3,
+  "evidencebox_count": 144
+}

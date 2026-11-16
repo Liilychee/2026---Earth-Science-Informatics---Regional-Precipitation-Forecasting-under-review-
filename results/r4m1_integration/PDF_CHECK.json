@@ -1,0 +1,51 @@
+{
+ "manuscript": {
+  "pages": 109,
+  "pdf_sha256": "35d1009ca073cb628e4010ea4192a3ac2c919a9b9f941f58797c713700b09538",
+  "hits": {
+   "1 Introduction": [
+    2
+   ],
+   "Regional precipitation forecasting over Ireland provides a useful setting in which to examine how": [],
+   "2.2 Machine-learning precipitation": [
+    6
+   ],
+   "This gives a third evaluation gap": [
+    9
+   ],
+   "2.5 Research gaps and objectives": [
+    10
+   ]
+  },
+  "rendered": [
+   2,
+   6,
+   9,
+   10
+  ]
+ },
+ "Response letter": {
+  "pages": 97,
+  "pdf_sha256": "38c2d2a80cfffdfc2bc54200600851bfd11fcb5715fd477eb2785e896fc20aac",
+  "hits": {
+   "Major Comment 1": [
+    2,
+    27,
+    81
+   ],
+   "Objectives derived from the gaps": [
+    83
+   ]
+  },
+  "rendered": [
+   81,
+   83
+  ]
+ },
+ "Supplementary": {
+  "pages": 78,
+  "pdf_sha256": "06578d9837f031605b72bdfb02fc68d8bdb71fc4d22d1fcb220850ffdad2676a",
+  "hits": {},
+  "rendered": []
+ }
+}

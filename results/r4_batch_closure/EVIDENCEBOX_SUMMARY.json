@@ -1,0 +1,19 @@
+{
+ "evidence_boxes_total": 179,
+ "matched": 179,
+ "original_unchanged_in_order": 170,
+ "new_in_R4_M4_block": 9,
+ "new_items": [
+  "P3",
+  "P1",
+  "P2",
+  "P1c",
+  "P4",
+  "P5a",
+  "P6a",
+  "P6b",
+  "P5b"
+ ],
+ "citet_exceptions_retained": 9,
+ "source": "results/r4m4_response_integration/VERIFICATION.json (re-checked in memory on 2026-11-16)"
+}

@@ -1,0 +1,551 @@
+[
+ {
+  "line": 63,
+  "cmd": "citep",
+  "keys": "toth2000comparison",
+  "protected_excerpts": [],
+  "context": "tation safety, and water-resource planning, particularly in regions such as Ireland where weather conditions can change rapidly under strong maritime influence \\citep{toth2000comparison}. Precipitation remains difficult to predict because of the nonlinear evolution of atmospheric processes, the intermittency of rainfall, and limitations in the spatial and temporal representation of m"
+ },
+ {
+  "line": 63,
+  "cmd": "citep",
+  "keys": "magnusson2019ecmwf",
+  "protected_excerpts": [],
+  "context": "ar evolution of atmospheric processes, the intermittency of rainfall, and limitations in the spatial and temporal representation of meteorological observations \\citep{magnusson2019ecmwf}. Numerical Weather Prediction systems, including the European Centre for Medium-Range Weather Forecasts (ECMWF) Integrated Forecasting System, provide physically based forecasts and commonly use ense"
+ },
+ {
+  "line": 65,
+  "cmd": "citep",
+  "keys": "pathak2022fourcastnet,bi2023accurate,lam2023learning,chen2023fuxi",
+  "protected_excerpts": [
+   120
+  ],
+  "context": "minor{Global data-driven models such as FourCastNet, Pangu-Weather, GraphCast and FuXi illustrate different neural-network approaches to atmospheric prediction \\citep{pathak2022fourcastnet,bi2023accurate,lam2023learning,chen2023fuxi}.} \\textcolor{red}{Their reported performance and inference characteristics do not establish the accuracy or end-to-end computational cost of the regional models evaluated here.} Recurrent neural netw"
+ },
+ {
+  "line": 67,
+  "cmd": "citep",
+  "keys": "10906190",
+  "protected_excerpts": [],
+  "context": "ful setting in which to examine how such models behave. Previous work has explored uncertainty-aware recurrent modelling for rainfall prediction in this region \\citep{10906190}, while rapidly changing Atlantic-influenced weather continues to challenge localized forecasting. This study addresses 6-hour-ahead prediction of hourly regional-mean precipitation over Dublin from E"
+ },
+ {
+  "line": 80,
+  "cmd": "citet",
+  "keys": "10512739",
+  "protected_excerpts": [],
+  "context": "n reanalysis datasets and the development of machine learning techniques, both of which have become important for precipitation forecasting, as demonstrated by \\citet{10512739}. Reanalysis datasets provide temporally and spatially consistent climate information that supports retrospective climate studies and weather prediction applications \\citep{10512483}. Among these prod"
+ },
+ {
+  "line": 80,
+  "cmd": "citep",
+  "keys": "10512483",
+  "protected_excerpts": [],
+  "context": "alysis datasets provide temporally and spatially consistent climate information that supports retrospective climate studies and weather prediction applications \\citep{10512483}. Among these products, the ERA5 reanalysis dataset developed by ECMWF under the Copernicus Climate Change Service represents a substantial improvement over its predecessors. \\citet{hersbach2020era5} "
+ },
+ {
+  "line": 80,
+  "cmd": "citet",
+  "keys": "hersbach2020era5",
+  "protected_excerpts": [],
+  "context": "roducts, the ERA5 reanalysis dataset developed by ECMWF under the Copernicus Climate Change Service represents a substantial improvement over its predecessors. \\citet{hersbach2020era5} introduced ERA5 with hourly coverage and a spatial resolution of approximately 31~km, showing marked improvements over ERA-Interim in reproducing variability and extremes across multiple atmospheric "
+ },
+ {
+  "line": 80,
+  "cmd": "citet",
+  "keys": "mcnicholl2021evaluating",
+  "protected_excerpts": [],
+  "context": "roducing variability and extremes across multiple atmospheric variables. Subsequent evaluations have further clarified the reliability and limitations of ERA5. \\citet{mcnicholl2021evaluating} found strong agreement between ERA5 near-surface air temperature and ground-based observations but also reported discrepancies under complex meteorological conditions. \\citet{doddy2021reanalysis} com"
+ },
+ {
+  "line": 80,
+  "cmd": "citet",
+  "keys": "doddy2021reanalysis",
+  "protected_excerpts": [],
+  "context": "rong agreement between ERA5 near-surface air temperature and ground-based observations but also reported discrepancies under complex meteorological conditions. \\citet{doddy2021reanalysis} compared several reanalysis products for renewable energy applications in Ireland and showed that ERA5 generally outperforms MERRA-2 and JRA-55, while still exhibiting regional biases that require co"
+ },
+ {
+  "line": 80,
+  "cmd": "citet",
+  "keys": "lavers2022evaluation",
+  "protected_excerpts": [],
+  "context": "in Ireland and showed that ERA5 generally outperforms MERRA-2 and JRA-55, while still exhibiting regional biases that require consideration. For precipitation, \\citet{lavers2022evaluation} evaluated 24-hour totals against 5,637 stations over 2001--2020, finding a general wet bias, lower annual maximum one-day amounts, and smaller random errors in winter than summer in the extratropics."
+ },
+ {
+  "line": 80,
+  "cmd": "citep",
+  "keys": "ridal2024cerra",
+  "protected_excerpts": [
+   121
+  ],
+  "context": "is (CERRA) provides atmospheric reanalysis data over Europe at a horizontal resolution of 5.5~km, offering finer spatial detail than the global ERA5 reanalysis \\citep{ridal2024cerra}. Although \\citet{ridal2024cerra} reported improvements over ERA5 for several near-surface variables, the present study uses ERA5 for both predictors and target precipitation and does not assess wheth"
+ },
+ {
+  "line": 80,
+  "cmd": "citet",
+  "keys": "ridal2024cerra",
+  "protected_excerpts": [
+   121
+  ],
+  "context": "eanalysis data over Europe at a horizontal resolution of 5.5~km, offering finer spatial detail than the global ERA5 reanalysis \\citep{ridal2024cerra}. Although \\citet{ridal2024cerra} reported improvements over ERA5 for several near-surface variables, the present study uses ERA5 for both predictors and target precipitation and does not assess whether CERRA would improve regional p"
+ },
+ {
+  "line": 80,
+  "cmd": "citet",
+  "keys": "palharini2021assessment",
+  "protected_excerpts": [],
+  "context": ", the present study uses ERA5 for both predictors and target precipitation and does not assess whether CERRA would improve regional precipitation forecasting.} \\citet{palharini2021assessment} evaluated eleven satellite-based precipitation products across different regions of Brazil and found that no single product consistently captured extreme rainfall, with performance varying by region "
+ },
+ {
+  "line": 80,
+  "cmd": "citet",
+  "keys": "kumar2025long",
+  "protected_excerpts": [],
+  "context": "t regions of Brazil and found that no single product consistently captured extreme rainfall, with performance varying by region and event intensity. Similarly, \\citet{kumar2025long} evaluated CHIRPS and GSMaP\\_ISRO rainfall estimates against gauge observations over India during 2000--2022 and found that GSMaP\\_ISRO agreed more closely with station measurements than CHIRPS, while"
+ },
+ {
+  "line": 85,
+  "cmd": "citet",
+  "keys": "rahman2022rainfall",
+  "protected_excerpts": [
+   45,
+   122
+  ],
+  "context": "r{Parallel to advances in reanalysis data, machine learning has gained prominence in precipitation forecasting. Among conventional machine-learning approaches, \\citet{rahman2022rainfall} developed a fusion-based system for smart-city rainfall prediction that combines multiple classifiers with fuzzy logic, reporting improvements in prediction accuracy in their study. With the developm"
+ },
+ {
+  "line": 85,
+  "cmd": "citet",
+  "keys": "adewoyin2021tru",
+  "protected_excerpts": [
+   46
+  ],
+  "context": " improvements in prediction accuracy in their study. With the development of deep learning, more sophisticated spatiotemporal architectures have been explored. \\citet{adewoyin2021tru} proposed TRU-NET, which incorporates attention mechanisms and ERA5 inputs to produce high-resolution rainfall predictions over the UK. Their model outperformed U-Net baselines and produced competitiv"
+ },
+ {
+  "line": 85,
+  "cmd": "citet",
+  "keys": "singh2021deep",
+  "protected_excerpts": [],
+  "context": ". This daily-scale comparison does not establish the behaviour of the models evaluated here for Dublin regional-mean hourly precipitation. At the global scale, \\citet{singh2021deep} trained a residual U-Net on reanalysis data in a cubed-sphere framework and reported improved correlation skill over an operational numerical weather prediction system, while also emphasizing the nee"
+ },
+ {
+  "line": 85,
+  "cmd": "citet",
+  "keys": "miller2021analysis",
+  "protected_excerpts": [],
+  "context": "correlation skill over an operational numerical weather prediction system, while also emphasizing the need for hybrid integration and probabilistic evaluation. \\citet{miller2021analysis} examined short-term and seasonal rainfall forecasts in Kenya and found substantial regional differences in forecasting skill, highlighting the importance of localized validation. More recently, \\cite"
+ },
+ {
+  "line": 85,
+  "cmd": "citet",
+  "keys": "latif2023assessing",
+  "protected_excerpts": [
+   123
+  ],
+  "context": "ainfall forecasts in Kenya and found substantial regional differences in forecasting skill, highlighting the importance of localized validation. More recently, \\citet{latif2023assessing} compared statistical, machine-learning and deep-learning approaches to rainfall prediction and concluded that machine learning performed well across climates and timescales, with LSTM models among th"
+ },
+ {
+  "line": 87,
+  "cmd": "citep",
+  "keys": "rahman2022rainfall",
+  "protected_excerpts": [
+   155
+  ],
+  "context": "\\revminor{These studies differ in target, spatial support, lead time and verification data, ranging from station-based classification \\citep{rahman2022rainfall} and daily UK rainfall fields \\citep{adewoyin2021tru} to global forecasts \\citep{singh2021deep} and contemporaneous European daily precipitation \\citep{otero2023intercomparison}, so their reported ski"
+ },
+ {
+  "line": 87,
+  "cmd": "citep",
+  "keys": "adewoyin2021tru",
+  "protected_excerpts": [
+   155
+  ],
+  "context": " in target, spatial support, lead time and verification data, ranging from station-based classification \\citep{rahman2022rainfall} and daily UK rainfall fields \\citep{adewoyin2021tru} to global forecasts \\citep{singh2021deep} and contemporaneous European daily precipitation \\citep{otero2023intercomparison}, so their reported skills cannot be ranked against one another. Where heavy"
+ },
+ {
+  "line": 87,
+  "cmd": "citep",
+  "keys": "singh2021deep",
+  "protected_excerpts": [
+   155
+  ],
+  "context": "erification data, ranging from station-based classification \\citep{rahman2022rainfall} and daily UK rainfall fields \\citep{adewoyin2021tru} to global forecasts \\citep{singh2021deep} and contemporaneous European daily precipitation \\citep{otero2023intercomparison}, so their reported skills cannot be ranked against one another. Where heavy precipitation was examined separately, ag"
+ },
+ {
+  "line": 87,
+  "cmd": "citep",
+  "keys": "otero2023intercomparison",
+  "protected_excerpts": [
+   155
+  ],
+  "context": "an2022rainfall} and daily UK rainfall fields \\citep{adewoyin2021tru} to global forecasts \\citep{singh2021deep} and contemporaneous European daily precipitation \\citep{otero2023intercomparison}, so their reported skills cannot be ranked against one another. Where heavy precipitation was examined separately, aggregate results did not describe tail behaviour: TRU-NET underpredicted the larges"
+ },
+ {
+  "line": 87,
+  "cmd": "citep",
+  "keys": "adewoyin2021tru",
+  "protected_excerpts": [
+   155
+  ],
+  "context": " heavy precipitation was examined separately, aggregate results did not describe tail behaviour: TRU-NET underpredicted the largest daily amounts more than IFS \\citep{adewoyin2021tru}, and \\citet{otero2023intercomparison} compared architectures specifically with regard to extremes. Because tree-based models often match or outperform deep networks on tabular data \\citep{grinsztajn2"
+ },
+ {
+  "line": 87,
+  "cmd": "citet",
+  "keys": "otero2023intercomparison",
+  "protected_excerpts": [
+   155
+  ],
+  "context": "ined separately, aggregate results did not describe tail behaviour: TRU-NET underpredicted the largest daily amounts more than IFS \\citep{adewoyin2021tru}, and \\citet{otero2023intercomparison} compared architectures specifically with regard to extremes. Because tree-based models often match or outperform deep networks on tabular data \\citep{grinsztajn2022tree}, model comparisons also requi"
+ },
+ {
+  "line": 87,
+  "cmd": "citep",
+  "keys": "grinsztajn2022tree",
+  "protected_excerpts": [
+   155
+  ],
+  "context": "intercomparison} compared architectures specifically with regard to extremes. Because tree-based models often match or outperform deep networks on tabular data \\citep{grinsztajn2022tree}, model comparisons also require strong non-deep baselines. Two evaluation gaps follow for regional hourly precipitation: (i) a comparison of model families under a common target, lead time, data spli"
+ },
+ {
+  "line": 92,
+  "cmd": "citet",
+  "keys": "kendall2017uncertainties",
+  "protected_excerpts": [],
+  "context": "Reliable uncertainty estimation is important for the application of deep learning models in scientific forecasting. \\citet{kendall2017uncertainties} introduced a probabilistic regression framework in which neural networks jointly predict the mean and variance of a Gaussian likelihood, allowing data-dependent uncertainty to be estimated directly f"
+ },
+ {
+  "line": 92,
+  "cmd": "citet",
+  "keys": "9001195",
+  "protected_excerpts": [],
+  "context": "ch neural networks jointly predict the mean and variance of a Gaussian likelihood, allowing data-dependent uncertainty to be estimated directly from the model. \\citet{9001195} proposed a framework that combines assumed density filtering and Monte Carlo dropout to model both data and model uncertainty without retraining, reporting improvements in calibration and robustness "
+ },
+ {
+  "line": 92,
+  "cmd": "citet",
+  "keys": "klotz2022uncertainty",
+  "protected_excerpts": [],
+  "context": " dropout to model both data and model uncertainty without retraining, reporting improvements in calibration and robustness across perception and control tasks. \\citet{klotz2022uncertainty} compared several probabilistic deep learning approaches for rainfall-runoff modeling and found that asymmetric Laplacian mixture networks produced more accurately calibrated predictions than Gaussian"
+ },
+ {
+  "line": 92,
+  "cmd": "citet",
+  "keys": "mena2021survey",
+  "protected_excerpts": [],
+  "context": "placian mixture networks produced more accurately calibrated predictions than Gaussian or dropout-based approaches, particularly under extreme flow conditions. \\citet{mena2021survey} reviewed a range of uncertainty estimation methods, including variational inference, Monte Carlo dropout, ensembles, and Dirichlet prior networks, and discussed their trade-offs in calibration, inter"
+ },
+ {
+  "line": 94,
+  "cmd": "citep",
+  "keys": "yang2024interpretable",
+  "protected_excerpts": [
+   156
+  ],
+  "context": "learning forecasting models still produce a single deterministic prediction, whereas risk-sensitive applications also require information about its uncertainty \\citep{yang2024interpretable}. Proper scoring rules assess the full predictive distribution \\citep{gneiting2007proper}, and threshold- or quantile-weighted versions can emphasize particular parts of it, such as the upper tail \\ci"
+ },
+ {
+  "line": 94,
+  "cmd": "citep",
+  "keys": "gneiting2007proper",
+  "protected_excerpts": [
+   156
+  ],
+  "context": "nsitive applications also require information about its uncertainty \\citep{yang2024interpretable}. Proper scoring rules assess the full predictive distribution \\citep{gneiting2007proper}, and threshold- or quantile-weighted versions can emphasize particular parts of it, such as the upper tail \\citep{gneiting2011weighted}. Satisfactory probabilistic performance over the full test set "
+ },
+ {
+  "line": 94,
+  "cmd": "citep",
+  "keys": "gneiting2011weighted",
+  "protected_excerpts": [
+   156
+  ],
+  "context": "l predictive distribution \\citep{gneiting2007proper}, and threshold- or quantile-weighted versions can emphasize particular parts of it, such as the upper tail \\citep{gneiting2011weighted}. Satisfactory probabilistic performance over the full test set therefore does not necessarily imply reliable uncertainty for less frequent heavy-rainfall events. This gives a third evaluation gap: (i"
+ },
+ {
+  "line": 99,
+  "cmd": "citet",
+  "keys": "chakraborty2017interpretability",
+  "protected_excerpts": [],
+  "context": " forecasting. Although complex neural networks can achieve high predictive accuracy, their internal decision processes are often difficult to examine directly. \\citet{chakraborty2017interpretability} provided an early systematic overview of interpretability research, distinguishing model transparency, functionality, and different forms of explanation. \\citet{li2022interpretable} developed a unifi"
+ },
+ {
+  "line": 99,
+  "cmd": "citet",
+  "keys": "li2022interpretable",
+  "protected_excerpts": [],
+  "context": "lity} provided an early systematic overview of interpretability research, distinguishing model transparency, functionality, and different forms of explanation. \\citet{li2022interpretable} developed a unified taxonomy linking interpretation, interpretability, and trustworthiness, providing a general basis for evaluating explanations produced by machine learning systems. \\citet{vinuesa2"
+ },
+ {
+  "line": 99,
+  "cmd": "citet",
+  "keys": "vinuesa2021interpretable",
+  "protected_excerpts": [],
+  "context": "nomy linking interpretation, interpretability, and trustworthiness, providing a general basis for evaluating explanations produced by machine learning systems. \\citet{vinuesa2021interpretable} discussed the role of interpretable deep learning in sustainable development and emphasized the value of models that incorporate meaningful and understandable representations. \\citet{temenos2023inter"
+ },
+ {
+  "line": 99,
+  "cmd": "citet",
+  "keys": "temenos2023interpretable",
+  "protected_excerpts": [],
+  "context": "le of interpretable deep learning in sustainable development and emphasized the value of models that incorporate meaningful and understandable representations. \\citet{temenos2023interpretable} developed an interpretable deep learning framework combining a compact CNN with SHAP-based explanations to provide both local and global feature attributions in remote-sensing classification. \\citet{"
+ },
+ {
+  "line": 99,
+  "cmd": "citet",
+  "keys": "yoganand2026shap",
+  "protected_excerpts": [],
+  "context": "learning framework combining a compact CNN with SHAP-based explanations to provide both local and global feature attributions in remote-sensing classification. \\citet{yoganand2026shap} proposed a SHAP-integrated LeNet model with transfer learning for flood prediction in Telangana, combining engineered feature selection with attention-based convolutional layers and using SHAP to exp"
+ },
+ {
+  "line": 99,
+  "cmd": "citet",
+  "keys": "yang2024interpretable",
+  "protected_excerpts": [],
+  "context": "ng for flood prediction in Telangana, combining engineered feature selection with attention-based convolutional layers and using SHAP to explain model outputs. \\citet{yang2024interpretable} reviewed recent developments in interpretable machine learning for weather and climate prediction, highlighting the use of feature attribution, attention mechanisms, and physics-informed approaches t"
+ },
+ {
+  "line": 101,
+  "cmd": "citep",
+  "keys": "du2019techniques",
+  "protected_excerpts": [
+   157
+  ],
+  "context": "can capture nonlinear temporal relationships but often provide limited information about how individual meteorological predictors contribute to their forecasts \\citep{du2019techniques}. Attention mechanisms weight temporal representations, whereas post hoc attribution methods such as SHapley Additive exPlanations (SHAP) describe how a fitted model distributes its output among input"
+ },
+ {
+  "line": 101,
+  "cmd": "citep",
+  "keys": "lundberg2017unified",
+  "protected_excerpts": [
+   157
+  ],
+  "context": "resentations, whereas post hoc attribution methods such as SHapley Additive exPlanations (SHAP) describe how a fitted model distributes its output among inputs \\citep{lundberg2017unified}; neither measures statistical association with the target or the loss of skill when a predictor is removed. A variable may be strongly correlated with precipitation while adding little once related p"
+ },
+ {
+  "line": 145,
+  "cmd": "citep",
+  "keys": "hersbach2020era5",
+  "protected_excerpts": [
+   26
+  ],
+  "context": "ast. ERA5 supplies a long, temporally continuous record of meteorological fields on a common grid, supporting consistent construction of predictors and targets \\citep{hersbach2020era5}. This describes the scope and methodological rationale of the present comparison, not evidence that reanalysis precipitation is more accurate than gauge observations. \\citet{otero2023intercomparison}"
+ },
+ {
+  "line": 145,
+  "cmd": "citet",
+  "keys": "otero2023intercomparison",
+  "protected_excerpts": [
+   26
+  ],
+  "context": "escribes the scope and methodological rationale of the present comparison, not evidence that reanalysis precipitation is more accurate than gauge observations. \\citet{otero2023intercomparison} likewise used ERA5 predictors and precipitation fields for an architecture intercomparison, but their European daily contemporaneous modelling task differs from our six-hour-ahead hourly target. ERA5"
+ },
+ {
+  "line": 147,
+  "cmd": "citep",
+  "keys": "manandhar2019data,rahman2022rainfall,gao2025applying",
+  "protected_excerpts": [
+   128
+  ],
+  "context": "analogues of temperature, dew point, wind, pressure, cloud cover and solar radiation, although these are not necessarily identical to the ERA5 fields used here \\citep{manandhar2019data,rahman2022rainfall,gao2025applying}. The precipitation-related variables lsp, mxtpr and mntpr instead provide information about preceding-hour large-scale precipitation and the within-hour extrema of total precipitation rate \\citep{ecm"
+ },
+ {
+  "line": 147,
+  "cmd": "citep",
+  "keys": "ecmwf_era5_documentation",
+  "protected_excerpts": [
+   55,
+   128,
+   132
+  ],
+  "context": "riables lsp, mxtpr and mntpr instead provide information about preceding-hour large-scale precipitation and the within-hour extrema of total precipitation rate \\citep{ecmwf_era5_documentation}. The inclusion of all eleven variables defines an exploratory candidate pool rather than presupposing that each variable contributes independent predictive information; their associations with the fo"
+ },
+ {
+  "line": 156,
+  "cmd": "citep",
+  "keys": "ecmwf_era5_documentation",
+  "protected_excerpts": [
+   55,
+   132
+  ],
+  "context": "t come from ERA5 short forecasts initialized at 06 and 18~UTC; the instantaneous inputs sp, tcc, v10 and d2m are supplied as analysis fields in the CDS product \\citep{ecmwf_era5_documentation}. Thus, the latest precipitation input represents $(t_0-1\\,\\mathrm{h},t_0]$, whereas the target represents $(t_0+5\\,\\mathrm{h},t_0+6\\,\\mathrm{h}]$; no target-hour precipitation value is directly inclu"
+ },
+ {
+  "line": 161,
+  "cmd": "citep",
+  "keys": "ecmwf_era5_documentation",
+  "protected_excerpts": [
+   131
+  ],
+  "context": "id time; tp, lsp, e and ssr are accumulations over the preceding hour; and mxtpr and mntpr are within-hour extrema of precipitation rate, not hourly-mean rates \\citep{ecmwf_era5_documentation}. We aligned these fields by valid timestamp without converting them to a common averaging window. Apart from the tp target conversion described above, the selected predictors retain the native units "
+ },
+ {
+  "line": 239,
+  "cmd": "citep",
+  "keys": "chen2016xgboost",
+  "protected_excerpts": [
+   33
+  ],
+  "context": "XGBoost provides a non-sequential machine-learning benchmark \\revminor{\\citep{chen2016xgboost}}. Each $6\\times7$ predictor sequence is flattened into a 42-dimensional feature vector, and the model is configured with 100 boosting estimators, a learning rate of 0.05, a maximum tree depth of 6, a"
+ },
+ {
+  "line": 241,
+  "cmd": "citep",
+  "keys": "vaswani2017attention",
+  "protected_excerpts": [
+   34
+  ],
+  "context": "A compact Transformer encoder serves as an alternative deep-learning sequence model \\revminor{\\citep{vaswani2017attention}}. The seven predictors at each time step are projected into a 32-dimensional latent representation and combined with learned positional embeddings, then passed through a single encoder block with fou"
+ },
+ {
+  "line": 247,
+  "cmd": "citep",
+  "keys": "hochreiter1997long",
+  "protected_excerpts": [
+   35
+  ],
+  "context": "The recurrent models use the long short-term memory (LSTM) formulation \\revminor{\\citep{hochreiter1997long}}. Bidirectional recurrent neural networks process a sequence in both directions \\revminor{\\citep{650093}}; combining this structure with LSTM units gives bidirectional LSTM (BiLSTM) networks \\revmino"
+ },
+ {
+  "line": 247,
+  "cmd": "citep",
+  "keys": "650093",
+  "protected_excerpts": [
+   35
+  ],
+  "context": "t-term memory (LSTM) formulation \\revminor{\\citep{hochreiter1997long}}. Bidirectional recurrent neural networks process a sequence in both directions \\revminor{\\citep{650093}}; combining this structure with LSTM units gives bidirectional LSTM (BiLSTM) networks \\revminor{\\citep{graves2005framewise}}. For an input vector $x_t$, the forward and backward hidden states are"
+ },
+ {
+  "line": 247,
+  "cmd": "citep",
+  "keys": "graves2005framewise",
+  "protected_excerpts": [
+   35
+  ],
+  "context": " process a sequence in both directions \\revminor{\\citep{650093}}; combining this structure with LSTM units gives bidirectional LSTM (BiLSTM) networks \\revminor{\\citep{graves2005framewise}}. For an input vector $x_t$, the forward and backward hidden states are"
+ },
+ {
+  "line": 257,
+  "cmd": "citep",
+  "keys": "bahdanau2015iclr-neural",
+  "protected_excerpts": [
+   36
+  ],
+  "context": "au-type) scoring function without a decoder query, followed by attention-weighted pooling of the BiLSTM hidden states across the six input time steps \\revminor{\\citep{bahdanau2015iclr-neural}}."
+ },
+ {
+  "line": 313,
+  "cmd": "citep",
+  "keys": "10906190",
+  "protected_excerpts": [
+   38
+  ],
+  "context": "\\revminor{BU-LSTM denotes a bidirectional long short-term memory network incorporating uncertainty estimation, following the model named in our earlier work~\\citep{10906190}. In the current implementation, uncertainty is represented by Gaussian mean and variance outputs, rather than Bayesian inference over network weights.}"
+ },
+ {
+  "line": 368,
+  "cmd": "citep",
+  "keys": "tobin1958limited",
+  "protected_excerpts": [],
+  "context": "For the Tobit alternative, $Y=\\max(0,Z)$ with $Z\\sim\\mathcal N(\\mu,s^2)$ \\citep{tobin1958limited}. For Bernoulli--Gamma, $P(Y=0)=1-p$ and $f(y)=p\\,y^{a-1}e^{-y/b}/[\\Gamma(a)b^a]$ for $y>0$ \\citep{cannon2008bernoulli}. The Tobit outputs are $\\mu$ and $s=\\operatorname{softplus}(h_s)+10^{-3}$; BG ou"
+ },
+ {
+  "line": 368,
+  "cmd": "citep",
+  "keys": "cannon2008bernoulli",
+  "protected_excerpts": [],
+  "context": "=\\max(0,Z)$ with $Z\\sim\\mathcal N(\\mu,s^2)$ \\citep{tobin1958limited}. For Bernoulli--Gamma, $P(Y=0)=1-p$ and $f(y)=p\\,y^{a-1}e^{-y/b}/[\\Gamma(a)b^a]$ for $y>0$ \\citep{cannon2008bernoulli}. The Tobit outputs are $\\mu$ and $s=\\operatorname{softplus}(h_s)+10^{-3}$; BG outputs are $p=\\operatorname{clip}(\\operatorname{sigmoid}(h_p),10^{-5},1-10^{-5})$, $a=\\operatorname{softplus}(h_a)+10^{-"
+ },
+ {
+  "line": 482,
+  "cmd": "citep",
+  "keys": "wmo2008guide",
+  "protected_excerpts": [
+   9
+  ],
+  "context": "For context, the rain-intensity classification in WMO-No.~8 \\citep[Part~I, Chapter~14, Annex, p.~I.14--7]{wmo2008guide} defines heavy rain (including showers) by $10\\leq i<50$~mm\\,h$^{-1}$, where $i$ is the intensity based on a 3-minute measurement period. This rain classification cannot be directly equated with ERA5 "
+ },
+ {
+  "line": 537,
+  "cmd": "citep",
+  "keys": "gneiting2007proper,gneiting2011weighted",
+  "protected_excerpts": [],
+  "context": "ictive CDF $F$, $\\mathrm{CRPS}(F,y)=\\int_{-\\infty}^{\\infty}[F(z)-\\mathbf1\\{y\\leq z\\}]^2\\,dz$, and $\\mathrm{twCRPS}_u$ uses the same integrand over $[u,\\infty)$ \\citep{gneiting2007proper,gneiting2011weighted}. For interval bounds $l,h$ and miscoverage $\\alpha$, $\\mathrm{IS}_\\alpha=(h-l)+(2/\\alpha)(l-y)\\mathbf1\\{y<l\\}+(2/\\alpha)(y-h)\\mathbf1\\{y>h\\}$. For event probability $p_u$, the Brier score is $(p_u-\\m"
+ },
+ {
+  "line": 572,
+  "cmd": "citet",
+  "keys": "met_eireann_dublin_hourly",
+  "protected_excerpts": [
+   27
+  ],
+  "context": "Hourly precipitation observations at Dublin Airport were obtained from \\citet{met_eireann_dublin_hourly}. Dublin Airport is used as a single-station exploratory observational reference, not as a spatially matched verification target for the main forecast task. The primary target is precipitation average"
+ },
+ {
+  "line": 614,
+  "cmd": "citep",
+  "keys": "lundberg2017unified,rozemberczki2022shapley",
+  "protected_excerpts": [],
+  "context": " grouped as one player, giving seven predictor-level players. For each fitted model, exact Shapley values were obtained by enumerating all $2^7=128$ coalitions \\citep{lundberg2017unified,rozemberczki2022shapley}. For predictor $j$ in the player set $\\mathcal{N}$,"
+ },
+ {
+  "line": 1200,
+  "cmd": "citet",
+  "keys": "https://doi.org/10.1029/2026JH001291",
+  "protected_excerpts": [
+   32
+  ],
+  "context": "retaining regional ERA5 inputs and untuned settings would in any case be a restricted test, not an optimized station forecast. A related distinction is made by \\citet{https://doi.org/10.1029/2026JH001291}, who treated ERA5-referenced precipitation evaluation as a model-consistency check and used satellite-derived IMERG as an independent observational benchmark. Their global forecasting design and obse"
+ },
+ {
+  "line": 1215,
+  "cmd": "citet",
+  "keys": "lerch2017forecaster",
+  "protected_excerpts": [],
+  "context": "sec:regime_results}). \\revminor{These upper-tail RMSE comparisons are conditional on observed precipitation exceeding the specified thresholds. As discussed by \\citet{lerch2017forecaster}, evaluating forecasts only on cases selected by their observed outcomes can distort comparative rankings. Accordingly, the present upper-tail results are interpreted as conditional error diagnostics "
+ },
+ {
+  "line": 1231,
+  "cmd": "citep",
+  "keys": "grinsztajn2022tree",
+  "protected_excerpts": [],
+  "context": "onsistent with evidence that tree-based methods can match or exceed deep neural networks on tabular data, particularly under limited or imbalanced sample sizes \\citep{grinsztajn2022tree}. This may be useful when high-intensity rainfall events are relatively sparse, although the present experiments do not establish the underlying mechanism directly."
+ },
+ {
+  "line": 1265,
+  "cmd": "citep",
+  "keys": "hawcroft2012much,catto2012relating",
+  "protected_excerpts": [
+   149
+  ],
+  "context": "ough none of the analyses tests a mechanism. Over the North Atlantic storm track, most precipitation is associated with extratropical cyclones and their fronts \\citep{hawcroft2012much,catto2012relating}. Surface pressure summarizes the synoptic pressure field; in the training period, it was negatively associated with precipitation six hours later (Spearman $\\rho=-0.37$; rank-partial $-0.19$ after co"
+ },
+ {
+  "line": 1265,
+  "cmd": "citep",
+  "keys": "lavers2013nexus",
+  "protected_excerpts": [
+   149
+  ],
+  "context": "{sec:predictor_selection_results}). This is consistent with poleward moisture transport ahead of cold fronts and in atmospheric rivers affecting western Europe \\citep{lavers2013nexus}; without moisture-flux or trajectory analysis, no moisture source or transport path is inferred. The precipitation-related inputs describe current precipitation: lsp is the preceding-hour large-scale"
+ },
+ {
+  "line": 1298,
+  "cmd": "citep",
+  "keys": "ecmwf_era5_documentation",
+  "protected_excerpts": [
+   57
+  ],
+  "context": "cast, not a real-time operational forecast. ERA5T is released about five days after valid time, and final ERA5 may replace it after roughly two to three months \\citep{ecmwf_era5_documentation}. ERA5 uses 12-hour 4D-Var windows spanning 09--21 and 21--09~UTC; analyses at 00 and 12~UTC can therefore be informed by observations up to nine hours after their valid time. At those forecast origin"
+ },
+ {
+  "line": 1306,
+  "cmd": "citet",
+  "keys": "goutham2023statistical",
+  "protected_excerpts": [
+   130
+  ],
+  "context": " (Supplementary Table~\\ref{supp-stab:r3d_upstream_increments} and Fig.~\\ref{supp-sfig:r3d_upstream_effects}). In subseasonal downscaling of weekly mean fields, \\citet{goutham2023statistical} found that restricting the predictor domain to the predictand domain considerably degraded prediction quality, whereas shifting a predictand-sized domain westward did not improve on a centred one; th"
+ }
+]

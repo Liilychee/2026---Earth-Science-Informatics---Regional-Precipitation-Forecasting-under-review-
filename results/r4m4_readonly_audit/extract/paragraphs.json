@@ -1,0 +1,202 @@
+{
+ "1186": {
+  "section": "5.1 Overall Forecasting Performance and Model Robustness",
+  "cites": [],
+  "protected": {},
+  "n_sent": 7,
+  "first": "The results show that several machine-learning and deep-learning models achieved similar levels of performance for short-term regional precipitation forecasting",
+  "raw": "The results show that several machine-learning and deep-learning models achieved similar levels of performance for short-term regional precipitation forecasting over Dublin. Across five fixed random seeds, BiLSTM-Attention obtained the lowest mean RMSE of 0.2429~mm\\,h$^{-1}$, followed closely by XGBoost at 0.2439~mm\\,h$^{-1}$. The difference between the two models was small relative to the overall forecast error. The paired block-bootstrap analysis showed no clear RMSE difference for the complete test set. The legacy wet-subset interval is retained only for its original definition. For the revised wet subset ($\\geq0.1$~mm\\,h$^{-1}$), the separate single-saved-run comparison supports lower RMSE for XGBoost, as reported in Section~\\ref{sec:overall_results}; it is not a five-seed comparison. The main result is therefore not that one model consistently outperformed all alternatives, but that a relatively compact recurrent model and a tree-based machine-learning model produced comparable overall point forecasts under the same data and evaluation protocol."
+ },
+ "1189": {
+  "section": "5.1 Overall Forecasting Performance and Model Robustness",
+  "cites": [],
+  "protected": {
+   "R3 L822-824": 5
+  },
+  "n_sent": 5,
+  "first": "The comparison between BiLSTM-Attention and the otherwise identical BiLSTM-NoAttention control isolates the temporal attention layer.",
+  "raw": "\\revminor{The comparison between BiLSTM-Attention and the otherwise identical BiLSTM-NoAttention control isolates the temporal attention layer. Attention reduced mean RMSE from 0.2447 to 0.2429~mm\\,h$^{-1}$ (paired difference $-0.0018$~mm\\,h$^{-1}$, $-0.73\\%$); all five seeds improved, and both the seed-t and moving-block intervals, each $[-0.0033,-0.0003]$~mm\\,h$^{-1}$, excluded zero. After Holm adjustment over the 16 all-target RMSE comparisons in Supplementary Table~\\ref{supp-stab:r3sig_pairs}, however, the adjusted $p$ values were 0.17 (seed-t) and 0.13 (block), and the wet and upper-tail differences were not clearly separated. The attention layer added 8,320 trainable parameters (36,993 to 45,313). The gain is therefore consistent in sign but small, and it is not established after multiplicity adjustment.}"
+ },
+ "1191": {
+  "section": "5.1 Overall Forecasting Performance and Model Robustness",
+  "cites": [],
+  "protected": {
+   "R3 L822-824": 8
+  },
+  "n_sent": 8,
+  "first": "Greater model complexity was not matched by clear gains in point accuracy.",
+  "raw": "\\revminor{Greater model complexity was not matched by clear gains in point accuracy. BiLSTM-Attention and XGBoost differed by $-0.0011$~mm\\,h$^{-1}$ ($-0.43\\%$) overall, with both intervals including zero, whereas XGBoost had lower RMSE in the wet ($+2.4\\%$) and upper-tail ($+3.6\\%$) subsets, with all five seeds and both intervals favouring it; in the rolling-origin evaluation, the pooled difference slightly favoured XGBoost but depended on block length (Section~\\ref{sec:rolling_origin_results}). BU-LSTM, BU-LSTM-Attention and Probabilistic BiLSTM-Attention had 1.3--2.2\\% higher overall RMSE than XGBoost in all five seeds, and adding attention to BU-LSTM (159,272 additional parameters) produced no clear RMSE or CRPS improvement. All models except the Transformer had lower RMSE than AR(1) after Holm adjustment. In the recorded runs, training the neural models took about 105--393~s per seed, compared with 0.1--0.4~s for XGBoost, but timer definitions differ, the XGBoost device was not recorded and inference time was not benchmarked (Supplementary Table~\\ref{supp-stab:r3sig_cost}). For point forecasts in this setting, XGBoost therefore provided comparable overall accuracy and better wet and upper-tail accuracy, with much shorter recorded training times that do not constitute a unified computational-cost benchmark. The probabilistic models are justified only where predictive distributions are required, and their upper-tail undercoverage remains a limitation. These conclusions apply to this regional ERA5 target, the 6-h lead time and the tested configurations, without a formal cost--benefit criterion.}"
+ },
+ "1196": {
+  "section": "5.1 Overall Forecasting Performance and Model Robustness",
+  "cites": [],
+  "protected": {},
+  "n_sent": 6,
+  "first": "The stronger-reference comparisons narrow the interpretation of model gains.",
+  "raw": "The stronger-reference comparisons narrow the interpretation of model gains. Only three saved learning-model predictions had statistically supported RMSE improvements over the 42-input Ridge reference, and the available seasonal specialization test does not establish a general benefit of season-specific models. The HRES comparison is unfavourable to claims of NWP competitiveness: its ERA5 RMSE was lower than that of all six learning models, and its airport event AUC was higher. The six-hour versus final-hour accumulation mismatch, regional versus station support, and shared IFS framework must nevertheless be retained in interpreting these results. Shared modelling structure could favour HRES when ERA5 is the target, but its effect was not separately quantified; station verification does not remove the other mismatches. No end-to-end computational-cost advantage was measured or established."
+ },
+ "1200": {
+  "section": "5.1 Overall Forecasting Performance and Model Robustness",
+  "cites": [
+   "https://doi.org/10.1029/2026JH001291"
+  ],
+  "protected": {
+   "R1 M6": 7
+  },
+  "n_sent": 7,
+  "first": "The observational checks distinguish within-reanalysis predictability from agreement with local measurements (Section~\\refsec:observational_checks).",
+  "raw": "The observational checks distinguish within-reanalysis predictability from agreement with local measurements (Section~\\ref{sec:observational_checks}). Moderate ERA5--station correspondence and limited gains over a constant training-mean reference constrain external interpretation. The constant is the ERA5 training-period mean, 0.1061~mm\\,h$^{-1}$, not a station-derived mean. The small, non-significant XGBoost label-training difference does not support a conclusion that observations lack value. Changing labels while retaining regional ERA5 inputs and untuned settings would in any case be a restricted test, not an optimized station forecast. A related distinction is made by \\citet{https://doi.org/10.1029/2026JH001291}, who treated ERA5-referenced precipitation evaluation as a model-consistency check and used satellite-derived IMERG as an independent observational benchmark. Their global forecasting design and observational product differ from ours; the citation supports separating reanalysis and observational verification rather than transferring their skill to this study."
+ },
+ "1215": {
+  "section": "5.2 Performance under Upper-Tail Precipitation and Probabilistic Reliability",
+  "cites": [],
+  "protected": {},
+  "n_sent": 5,
+  "first": "A different model ranking emerged when the analysis was restricted to upper-tail precipitation.",
+  "raw": "A different model ranking emerged when the analysis was restricted to upper-tail precipitation. BiLSTM-Attention and XGBoost performed similarly over the full test set, while XGBoost achieved lower RMSE at the higher precipitation thresholds. The separate revised-wet comparison ($\\geq0.1$~mm\\,h$^{-1}$; $N=854$) also favoured XGBoost, with a paired RMSE difference of $+0.016144$~mm\\,h$^{-1}$ (BiLSTM-Attention minus XGBoost) and a pointwise 95\\% interval of $[+0.007102,+0.025956]$~mm\\,h$^{-1}$. This evidence comes from the original single saved predictions, not from the legacy wet interval or five-seed mean scores. The paired upper-tail comparison supports an XGBoost advantage more clearly than the complete-test comparison (Section~\\ref{sec:regime_results})."
+ },
+ "1219": {
+  "section": "5.2 Performance under Upper-Tail Precipitation and Probabilistic Reliability",
+  "cites": [],
+  "protected": {},
+  "n_sent": 6,
+  "first": "This change in ranking illustrates a limitation of aggregate forecast metrics.",
+  "raw": "This change in ranking illustrates a limitation of aggregate forecast metrics. Overall RMSE is dominated by common low amounts, while predictions substantially compress the observed upper tail (Section~\\ref{sec:amplitude_diagnostics}). The BU-LSTM-Attention calibration slope, standard-deviation ratio and correlation are consistent with a limited-skill conditional-mean forecast, but do not isolate whether limited predictors, event scarcity, the objective or other model choices dominate the compression. The restricted three-sample timing diagnostic cannot establish an event-wise peak delay because selected samples are not independent storm peaks and some windows overlap. Low CSI at the fixed 1.0~mm\\,h$^{-1}$ rule must also be distinguished from ranking ability: AUC remained approximately 0.82--0.87, yet validation-selected cutoffs produced FAR of approximately 0.86--0.92 (Section~\\ref{sec:event_detection}). More detections therefore did not translate into reliable high-threshold warnings."
+ },
+ "1228": {
+  "section": "5.2 Performance under Upper-Tail Precipitation and Probabilistic Reliability",
+  "cites": [],
+  "protected": {
+   "R2 M4": 7
+  },
+  "n_sent": 7,
+  "first": "The fixed-rule event results sharpen the limitation identified by the amplitude diagnostics.",
+  "raw": "The fixed-rule event results sharpen the limitation identified by the amplitude diagnostics. Compressed forecast amplitudes led to few or no forecasts at high fixed thresholds and consequently many misses. This is an observed property of these saved predictions, not a causal diagnosis of why their amplitudes are compressed. Persistence achieved higher fixed-rule CSI at the four thresholds examined above, yet its own FAR ranged from approximately 0.72 to 0.89, so it was not a reliable high-intensity warning system either. Higher learning-model AUC indicates useful event ranking but does not guarantee skill when the predicted mean is compared directly with the physical intensity threshold. Validation-selected cutoffs constitute another operating rule and recover some detections at a large false-alarm cost; their intervals omit selection uncertainty. The existing experiments do not identify whether predictors, event scarcity, loss functions or other modelling choices are the dominant cause of amplitude compression."
+ },
+ "1231": {
+  "section": "5.2 Performance under Upper-Tail Precipitation and Probabilistic Reliability",
+  "cites": [
+   "grinsztajn2022tree"
+  ],
+  "protected": {},
+  "n_sent": 6,
+  "first": "The performance of XGBoost in the upper-tail subset should not be interpreted as evidence that tree-based models were generally superior to the deep-learning mo",
+  "raw": "The performance of XGBoost in the upper-tail subset should not be interpreted as evidence that tree-based models were generally superior to the deep-learning models. BiLSTM-Attention remained numerically best for the overall point-forecast comparison, and the difference from XGBoost was small. The clearer advantage of XGBoost appeared only in the upper tail of the precipitation distribution. One possible explanation is that tree-based models can partition predictor space effectively without requiring the same amount of repeated examples needed to estimate complex neural-network representations. This pattern is broadly consistent with evidence that tree-based methods can match or exceed deep neural networks on tabular data, particularly under limited or imbalanced sample sizes \\citep{grinsztajn2022tree}. This may be useful when high-intensity rainfall events are relatively sparse, although the present experiments do not establish the underlying mechanism directly."
+ },
+ "1234": {
+  "section": "5.2 Performance under Upper-Tail Precipitation and Probabilistic Reliability",
+  "cites": [],
+  "protected": {},
+  "n_sent": 5,
+  "first": "The probabilistic forecasts showed a similar dependence on rainfall intensity.",
+  "raw": "The probabilistic forecasts showed a similar dependence on rainfall intensity. When evaluated over the complete test set, empirical coverage of the nominal 95\\% prediction interval ranged from approximately 0.956 to 0.958 across the five-seed experiments. In the separate single-saved-run diagnostic in Figure~\\ref{fig:prob_coverage}, legacy-wet coverage ranged from 0.9340 to 0.9452, whereas revised-wet coverage was 0.7693--0.7927 and upper-tail coverage was 0.4370--0.5000. The inclusion of near-zero amounts in the legacy subset may contribute to its higher aggregate coverage; these descriptive contrasts do not identify the cause of undercoverage. The Figure~\\ref{fig:prob_coverage} values are not five-seed means."
+ },
+ "1237": {
+  "section": "5.2 Performance under Upper-Tail Precipitation and Probabilistic Reliability",
+  "cites": [],
+  "protected": {},
+  "n_sent": 3,
+  "first": "Prediction intervals widened as rainfall intensity increased, but the additional width was insufficient to maintain nominal coverage for the strongest events.",
+  "raw": "Prediction intervals widened as rainfall intensity increased, but the additional width was insufficient to maintain nominal coverage for the strongest events. This result shows that near-nominal \\textcolor{red}{95\\%} coverage over the complete test distribution can conceal substantial undercoverage in a less frequent but meteorologically important regime. Reporting only overall coverage would therefore give an incomplete assessment of probabilistic forecast reliability."
+ },
+ "1239": {
+  "section": "5.2 Performance under Upper-Tail Precipitation and Probabilistic Reliability",
+  "cites": [],
+  "protected": {},
+  "n_sent": 7,
+  "first": "The Gaussian likelihood also imposes a structural limitation on the uncertainty estimates.",
+  "raw": "The Gaussian likelihood also imposes a structural limitation on the uncertainty estimates. Precipitation is non-negative and strongly right-skewed, whereas the Gaussian distribution is symmetric and unbounded. In the single-run diagnostic, the lower bound of the nominal 95\\% interval extended below 0~mm\\,h$^{-1}$ throughout the test set. Negative interval bounds do not correspond to physically meaningful precipitation and indicate a mismatch between the assumed predictive distribution and the support of the target variable. The Gaussian formulation remains a baseline. The controlled Bernoulli--Gamma comparison removed negative bounds and improved overall probabilistic scores, but substantial upper-tail undercoverage remained. This comparison was limited to Probabilistic BiLSTM-Attention; it does not establish the same benefit for other architectures, test periods or event-detection rules."
+ },
+ "1244": {
+  "section": "5.2 Performance under Upper-Tail Precipitation and Probabilistic Reliability",
+  "cites": [],
+  "protected": {
+   "R2 M6": 3
+  },
+  "n_sent": 3,
+  "first": "An alternative precipitation-appropriate likelihood improved overall probabilistic skill and eliminated negative prediction bounds by construction, but substant",
+  "raw": "An alternative precipitation-appropriate likelihood improved overall probabilistic skill and eliminated negative prediction bounds by construction, but substantial upper-tail undercoverage remained. The comparison does not isolate the likelihood family from changes in output parameterization, loss and training-target scale. It supports the tested Bernoulli--Gamma formulation within this backbone, not a general claim that it improves every architecture or rare-event diagnostic."
+ },
+ "1253": {
+  "section": "5.3 Predictor Attribution and Incremental Contribution",
+  "cites": [],
+  "protected": {},
+  "n_sent": 5,
+  "first": "The three analyses answer different questions.",
+  "raw": "The three analyses answer different questions. Marginal correlation describes statistical association with precipitation; partial correlation describes association after controlling for current precipitation. SHAP describes how a fitted model attributes its predictions relative to a background distribution, including changes in reliance across precipitation regimes. Retrained feature ablation measures incremental predictive utility in the presence of the remaining inputs. Neither SHAP nor correlation alone establishes that a predictor improves performance, and none of these analyses establishes meteorological causality."
+ },
+ "1255": {
+  "section": "5.3 Predictor Attribution and Incremental Contribution",
+  "cites": [],
+  "protected": {},
+  "n_sent": 5,
+  "first": "The upper-tail mntpr attribution illustrates what SHAP adds beyond aggregate single-variable ablation.",
+  "raw": "The upper-tail mntpr attribution illustrates what SHAP adds beyond aggregate single-variable ablation. In BiLSTM-Attention, its mean absolute attribution increased by a factor of 2.71 and its mean signed attribution was positive relative to the background, but only 53.7\\% of case--seed attributions were positive; individual removal had little detectable effect. The precipitation-group ablation resolves the apparent discrepancy: the three related variables jointly carry useful predictive information that can remain available when only one is removed. High attribution and a small individual-removal effect can therefore coexist. The group result supports predictive redundancy in these fitted models, rather than physical interchangeability of the variables."
+ },
+ "1257": {
+  "section": "5.3 Predictor Attribution and Incremental Contribution",
+  "cites": [],
+  "protected": {},
+  "n_sent": 4,
+  "first": "The correlation-based rankings also differed from model-based rankings.",
+  "raw": "The correlation-based rankings also differed from model-based rankings. Marginal-correlation rankings showed weak or negative agreement with SHAP and ablation, while partial-correlation rankings were descriptively closer. These comparisons span training-period associations and model evaluations on different subsets and are not formal same-sample tests of which method is correct. The $\\tau=0.524$ random-SHAP/full-test-ablation comparison is descriptive; upper-tail agreement of only 0.048 in both architectures further shows that the methods are not interchangeable."
+ },
+ "1259": {
+  "section": "5.3 Predictor Attribution and Incremental Contribution",
+  "cites": [],
+  "protected": {},
+  "n_sent": 5,
+  "first": "Conclusions also depend on architecture and training variability.",
+  "raw": "Conclusions also depend on architecture and training variability. BiLSTM-Attention provided consistent single-variable effects for sp, tcc and v10, whereas BU-LSTM-Attention had less stable ablation rankings and disagreement between some sampling and seed-based intervals. Its individual precipitation-variable removals sometimes improved performance. Total cloud cover is therefore not identified as a universally most important predictor. Combining the methods distinguishes statistical association, regime-dependent model reliance and individual or jointly shared predictive utility without treating any one ranking as definitive."
+ },
+ "1261": {
+  "section": "5.3 Predictor Attribution and Incremental Contribution",
+  "cites": [],
+  "protected": {},
+  "n_sent": 2,
+  "first": "The model-matched contrasts in Figs.~\\reffig:r1m4_shap_comparison and~\\reffig:r1m4_ablation_comparison, together with Supplementary Tables~\\refsupp-stab:r1m4_sh",
+  "raw": "The model-matched contrasts in Figs.~\\ref{fig:r1m4_shap_comparison} and~\\ref{fig:r1m4_ablation_comparison}, together with Supplementary Tables~\\ref{supp-stab:r1m4_shap_direction}--\\ref{supp-stab:r1m4_correlation_rank_agreement}, provide the evidence for this complementary interpretation. Temporal attribution remains a separate finite-permutation approximation, without an established convergence claim."
+ },
+ "1294": {
+  "section": "5.4 Limitations and Future Work",
+  "cites": [],
+  "protected": {
+   "R1 M6": 9
+  },
+  "n_sent": 9,
+  "first": "The independent observational assessment is limited to one airport station and remains exploratory.",
+  "raw": "The independent observational assessment is limited to one airport station and remains exploratory. Point rainfall and regional-mean reanalysis have different spatial supports, and spatial averaging cannot be assumed to explain all distributional differences or model errors. No multi-station validation was implemented, and no independent station-based or radar-derived precipitation target was constructed at a spatial support matched to the 25-grid-point ERA5 regional mean. The station rainfall accumulation window remains uncertain under the adopted timestamp alignment. All 26,300 matched station observations carried rainfall indicator 111 (``investigation required''), with no indicator-0 (``satisfactory'') subset, so an indicator-0 sensitivity analysis could not be undertaken. This does not establish why code 111 occurs or imply that every amount is erroneous, but it limits the strength of observational validation. The XGBoost station-label experiment used regional ERA5 inputs and unchanged hyperparameters, without station-specific predictors or tuning, multi-station training, or deep-learning retraining on observations. Neither the exploratory observational comparison nor the non-significant label-training difference establishes transferability to other stations, regions or temporal scales. Our conclusions remain restricted to ERA5-derived regional-mean precipitation over Dublin."
+ },
+ "1313": {
+  "section": "5.4 Limitations and Future Work",
+  "cites": [],
+  "protected": {},
+  "n_sent": 8,
+  "first": "A further limitation is the relative scarcity of high-intensity regional-mean precipitation: only 402 training samples reached 1.0~mm\\,h$^-1$.",
+  "raw": "A further limitation is the relative scarcity of high-intensity regional-mean precipitation: only 402 training samples reached 1.0~mm\\,h$^{-1}$. The loss and weighting sensitivity experiments have already examined Huber, pseudo-Huber, sample weighting, log1p-target and Tweedie objectives in the specified model settings (Section~\\ref{sec:training_objective_sensitivity}). Huber worsened BiLSTM-Attention but improved the Transformer in overall RMSE at $\\delta=2$. Both Transformer configurations frequently approached the 30-epoch limit, and its wet- and upper-tail seed-based intervals included zero; no intrinsic advantage under fully converged training is established. XGBoost weighting improved tail RMSE on five-seed mean predictions at a substantial cost in overall error and M3's own positive bias. This aggregation is distinct from the mean of five seed-level RMSE values in the main comparison. These experiments do not exhaust objective functions or model configurations and cannot identify a dominant cause of underestimation. The peak-timing diagnostic is limited to neighborhoods of the largest sampled amounts, with overlapping windows and a selected sample that is not a local observed maximum; it does not establish delays of independent storm peaks."
+ },
+ "1317": {
+  "section": "5.4 Limitations and Future Work",
+  "cites": [],
+  "protected": {},
+  "n_sent": 5,
+  "first": "The probabilistic formulation also warrants further development.",
+  "raw": "The probabilistic formulation also warrants further development. A Bernoulli--Gamma occurrence-and-amount likelihood has already been tested for one network and improved overall probabilistic scores without eliminating upper-tail undercoverage. Its benefit in other architectures and test periods remains untested. Future work should assess additional predictive information, broader objective and calibration settings, and the tradeoffs between common and rare events rather than presenting these completed distribution and objective comparisons as wholly untested proposals. Ensemble or Bayesian approaches could additionally examine uncertainty associated with model parameters and training variability."
+ },
+ "1321": {
+  "section": "5.4 Limitations and Future Work",
+  "cites": [],
+  "protected": {},
+  "n_sent": 5,
+  "first": "The archived NWP reference also has a restricted scope.",
+  "raw": "The archived NWP reference also has a restricted scope. It uses only 1,970 common 06/18~UTC samples, a six-hour mean HRES rate rather than the final-hour learning target, and station observations with different spatial support. ERA5 and HRES share the IFS framework, so the ERA5-target comparison is not independent of modelling structure. Neither the more limited station RMSE differences nor the use of matched leads makes this a fully equivalent-window operational comparison. Seasonal results are descriptive because each season has only two to three test-period realizations, and season-specific training was examined only for XGBoost."
+ },
+ "1324": {
+  "section": "5.4 Limitations and Future Work",
+  "cites": [],
+  "protected": {},
+  "n_sent": 6,
+  "first": "The interpretation is conditional on the fixed SHAP background and the tested model configurations.",
+  "raw": "The interpretation is conditional on the fixed SHAP background and the tested model configurations. The main grouped analysis used 100 training windows shared across models and seeds; sensitivity to alternative background selections was not evaluated and is not claimed. Coalition enumeration does not remove this uncertainty, and interventional masking can break dependencies among correlated predictors. Five seeds provide limited information about training variability, with only four degrees of freedom for the seed-based intervals. The less stable BU-LSTM-Attention ablations, the overlap between the random and upper-tail SHAP samples, and comparisons of rankings across different evaluation subsets limit broader conclusions. Attribution magnitudes and ranks should therefore be read as model- and background-dependent associations rather than causal effects."
+ }
+}

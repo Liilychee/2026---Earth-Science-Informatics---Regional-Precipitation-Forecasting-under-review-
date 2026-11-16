@@ -1,0 +1,129 @@
+{
+ "P1": {
+  "source_line": 1216,
+  "section": "Performance under Upper-Tail Precipitation and Probabilistic Reliability",
+  "label": "sec:upper_tail_discussion",
+  "pdf_page": null,
+  "first_printed_line": null,
+  "keys": [
+   "lerch2017forecaster"
+  ],
+  "text": "These upper-tail RMSE comparisons are conditional on observed precipitation exceeding the specified thresholds. Evaluating forecasts only on cases selected by their observed outcomes can distort comparative rankings \\citep{lerch2017forecaster}. Accordingly, the present upper-tail results are interpreted as conditional error diagnostics rather than evidence of unconditional forecasting superiority.",
+  "pdf": "p.86 l.2010 – p.87 l.2015"
+ },
+ "P2": {
+  "source_line": 1220,
+  "section": "Performance under Upper-Tail Precipitation and Probabilistic Reliability",
+  "label": "sec:upper_tail_discussion",
+  "pdf_page": null,
+  "first_printed_line": null,
+  "keys": [
+   "ayzel2020rainnet"
+  ],
+  "text": "Similar difficulties in representing high precipitation intensities have been reported in data-driven rainfall forecasting. For example, radar-based deep-learning nowcasts have exhibited spatial smoothing and reduced representation of intense rainfall features \\citep{ayzel2020rainnet}. Although the present study concerns regional-mean ERA5 precipitation rather than spatial radar nowcasts, these findings provide a relevant comparison for the observed upper-tail amplitude compression. The underlying causes in our models remain unresolved.",
+  "pdf": "p.87 l.2028 – p.87 l.2035"
+ },
+ "P3": {
+  "source_line": 1187,
+  "section": "Overall Forecasting Performance and Model Robustness",
+  "label": "sec:overall_discussion",
+  "pdf_page": null,
+  "first_printed_line": null,
+  "keys": [
+   "grinsztajn2022tree",
+   "otero2023intercomparison"
+  ],
+  "text": "The comparable overall performance of the tree-based and recurrent models is consistent with broader evidence that tree-based methods remain competitive with deep neural networks on medium-sized tabular datasets \\citep{grinsztajn2022tree}. Related precipitation-focused work has also shown that shallower U-Net configurations can achieve performance comparable to deeper variants with fewer trainable parameters \\citep{otero2023intercomparison}. Although these studies differ in data representation, architecture and prediction setting, they reinforce the importance of evaluating model complexity against demonstrated predictive gains rather than assuming that more complex models will necessarily perform better.",
+  "pdf": "p.82 l.1903 – p.83 l.1912"
+ },
+ "P4": {
+  "source_line": 1240,
+  "section": "Performance under Upper-Tail Precipitation and Probabilistic Reliability",
+  "label": "sec:upper_tail_discussion",
+  "pdf_page": 90,
+  "first_printed_line": null,
+  "keys": [
+   "cannon2008bernoulli,bano2020configuration",
+   "bano2020configuration"
+  ],
+  "text": "Bernoulli--Gamma distributions have previously been used in neural-network-based precipitation downscaling to jointly represent precipitation occurrence and positive amounts \\citep{cannon2008bernoulli,bano2020configuration}. In related precipitation downscaling experiments, deterministic predictions slightly underestimated the 98th precipitation percentile, while stochastic sampling improved this aspect at the expense of some temporal and spatial correlation \\citep{bano2020configuration}. Although percentile bias and prediction-interval coverage are distinct diagnostics, these findings underscore the importance of evaluating high-intensity precipitation performance separately from aggregate probabilistic skill.",
+  "pdf": "p.90 l.2101 – p.90 l.2110"
+ },
+ "P5a": {
+  "source_line": 1254,
+  "section": "Predictor Attribution and Incremental Contribution",
+  "label": "sec:predictor_complementarity",
+  "pdf_page": 91,
+  "first_printed_line": null,
+  "keys": [
+   "mamalakis2022investigating"
+  ],
+  "text": "This complementary interpretation is consistent with previous geoscientific research highlighting the method-dependent strengths and limitations of XAI techniques and advocating the combined use of multiple explanation methods \\citep{mamalakis2022investigating}.",
+  "pdf": "p.91 l.2134 – p.91 l.2137"
+ },
+ "P5b": {
+  "source_line": 1325,
+  "section": "Limitations and Future Work",
+  "label": "sec:limitations",
+  "pdf_page": 102,
+  "first_printed_line": null,
+  "keys": [
+   "aas2021explaining"
+  ],
+  "text": "Previous methodological research has shown that Shapley-value explanations can be misleading when dependencies among correlated features are not adequately accounted for \\citep{aas2021explaining}. This reinforces the need to interpret the present attributions cautiously, without assuming that they uniquely identify the contribution of each meteorological predictor.",
+  "pdf": "p.102 l.2413 – p.102 l.2418"
+ },
+ "P6a": {
+  "source_line": 1295,
+  "section": "Limitations and Future Work",
+  "label": "sec:limitations",
+  "pdf_page": 97,
+  "first_printed_line": null,
+  "keys": [
+   "lavers2022evaluation"
+  ],
+  "text": "Independent evaluations have documented differences between ERA5 precipitation and rain-gauge measurements, including biases in daily precipitation and underrepresentation of the largest observed daily totals \\citep{lavers2022evaluation}. Although these findings concern daily precipitation across a much broader geographical domain, they reinforce the need to distinguish ERA5-referenced forecast evaluation from validation against local observations.",
+  "pdf": "p.97 l.2282 – p.97 l.2287"
+ },
+ "P6b": {
+  "source_line": 1322,
+  "section": "Limitations and Future Work",
+  "label": "sec:limitations",
+  "pdf_page": null,
+  "first_printed_line": null,
+  "keys": [
+   "rasp2024weatherbench"
+  ],
+  "text": "WeatherBench 2 likewise distinguishes reanalysis-based evaluation from verification against operational analyses and acknowledges the limitations of ERA5 precipitation as a reference dataset \\citep{rasp2024weatherbench}. Although that benchmark uses ERA5 to verify precipitation accumulations across models, the net effect of the verification reference on the present HRES comparison has not been quantified, and the mismatch in precipitation accumulation windows remains an additional limitation.",
+  "pdf": "p.101 l.2394 – p.101 l.2401"
+ },
+ "_discussion_citations": {
+  "original": [
+   1,
+   [
+    "grinsztajn2022tree"
+   ]
+  ],
+  "current": [
+   18,
+   [
+    "aas2021explaining",
+    "ayzel2020rainnet",
+    "bano2020configuration",
+    "cannon2008bernoulli",
+    "catto2012relating",
+    "ecmwf_era5_documentation",
+    "goutham2023statistical",
+    "grinsztajn2022tree",
+    "hawcroft2012much",
+    "https://doi.org/10.1029/2026JH001291",
+    "lavers2013nexus",
+    "lavers2022evaluation",
+    "lerch2017forecaster",
+    "mamalakis2022investigating",
+    "otero2023intercomparison",
+    "rasp2024weatherbench"
+   ]
+  ]
+ }
+}

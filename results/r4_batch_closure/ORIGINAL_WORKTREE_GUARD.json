@@ -1,0 +1,14 @@
+{
+ "paper_dir": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review- (never staged, committed or pushed)",
+ "sha256_at_archive_start": {
+  "manuscript.tex": "a45a2944e241d32c3ea454a1d1f15f607920a669385b0838649c69b24de5a204",
+  "Response letter.tex": "0b87bed7ec1be280504b8a4b2f4ff1465b34996fe9508b5ae1efc47f11e9d774",
+  "Supplementary.tex": "2df7e160574947361e653cf78eda9f5c0ac86eb30f841282dadb4c988efda3fd",
+  "sn-bibliography.bib": "285eb33458287ef9c28e154e823e202b07846933e16a7c8e30ae51d346a33a64",
+  "original_manuscript.tex": "171a6ad92dc12bb4d7d74b58970f03a41f670968734ab0a4cbebd8f8b9de5b0c",
+  "diff.tex": "55731b7367dbce3b0053e312eeee4faf7de9003353518ebbac25d5e413c1af99",
+  "sn-jnl.cls": "d311146e0547a8fa0384679d22da7459f10a607b49b8cd2c1867c452386a34ab",
+  "sn-basic.bst": "e2241c0d579f97341d94759be8ba9385c9a22ad61b93a133b71e6dc5b6483d31"
+ },
+ "paper_git_HEAD": "ae4cd53 (unchanged)"
+}

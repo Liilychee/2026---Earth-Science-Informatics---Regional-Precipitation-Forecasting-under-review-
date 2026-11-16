@@ -1,0 +1,18 @@
+--- a/sn-bibliography.bib	2026-11-16 00:00:00.000000000 +0000
++++ b/sn-bibliography.bib	2026-11-16 00:00:00.000000000 +0000
+@@ -1324,12 +1324,12 @@
+ }
+ 
+ @article{ayzel2020rainnet,
+-  title={RainNet v1. 0: a convolutional neural network for radar-based precipitation nowcasting},
++  title={{RainNet v1.0}: a convolutional neural network for radar-based precipitation nowcasting},
+   author={Ayzel, Georgy and Scheffer, Tobias and Heistermann, Maik},
+   journal={Geoscientific Model Development},
+   volume={13},
+   number={6},
+   pages={2631--2644},
+   year={2020},
+-  publisher={Copernicus Publications, G{\"o}ttingen, Germany}
++  doi={10.5194/gmd-13-2631-2020}
+ }
+\ No newline at end of file

@@ -1,0 +1,31 @@
+{
+  "total_excerpts": 179,
+  "matched": 179,
+  "missing_idx": [],
+  "outside_R4M4_equal_baseline_170": true,
+  "outside_count": 170,
+  "baseline_total": 170,
+  "inside_R4M4_new": 9,
+  "original_170_unchanged_in_order": true,
+  "new_excerpts": 9,
+  "new_excerpt_items": [
+    "P3",
+    "P1",
+    "P2",
+    "P1c",
+    "P4",
+    "P5a",
+    "P6a",
+    "P6b",
+    "P5b"
+  ],
+  "new_excerpts_raw_substring_of_current_manuscript": true,
+  "letter_identical_outside_R4M4_block": true,
+  "reviewer_comment_verbatim": true,
+  "placeholders_removed": true,
+  "letter_pages_before_after": [
+    102,
+    105
+  ],
+  "other_sources_unchanged": true
+}

@@ -1,0 +1,37 @@
+--- a/sn-bibliography.bib	2026-11-16 00:00:00.000000000 +0000
++++ b/sn-bibliography.bib	2026-11-16 00:00:00.000000000 +0000
+@@ -1347,11 +1347,11 @@
+ }
+ 
+ @article{aas2021explaining,
+-  title={Explaining individual predictions when features are dependent: More accurate approximations to Shapley values},
++  title={Explaining individual predictions when features are dependent: More accurate approximations to {Shapley} values},
+   author={Aas, Kjersti and Jullum, Martin and L{\o}land, Anders},
+   journal={Artificial Intelligence},
+   volume={298},
+-  pages={103502},
++  eid={103502},
+   year={2021},
+   publisher={Elsevier},
+   doi={10.1016/j.artint.2021.103502}
+@@ -1363,7 +1363,18 @@
+   journal={Artificial Intelligence for the Earth Systems},
+   volume={1},
+   number={4},
+-  pages={e220012},
++  eid={e220012},
+   year={2022},
+   doi={10.1175/AIES-D-22-0012.1}
++}
++
++@article{rasp2024weatherbench,
++  title={{WeatherBench 2}: A Benchmark for the Next Generation of Data-Driven Global Weather Models},
++  author={Rasp, Stephan and Hoyer, Stephan and Merose, Alexander and Langmore, Ian and Battaglia, Peter and Russel, Tyler and Sanchez-Gonzalez, Alvaro and Yang, Vivian and Carver, Robert and Agrawal, Shreya and others},
++  journal={Journal of Advances in Modeling Earth Systems},
++  volume={16},
++  number={6},
++  pages={e2023MS004019},
++  year={2024},
++  doi={10.1029/2023MS004019}
+ }
+\ No newline at end of file

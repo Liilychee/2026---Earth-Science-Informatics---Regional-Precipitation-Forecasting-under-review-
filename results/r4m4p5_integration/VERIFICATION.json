@@ -1,0 +1,39 @@
+{
+  "total_excerpts": 170,
+  "matched": 170,
+  "missing_idx": [],
+  "all_excerpts_equal_before_in_order": true,
+  "baseline_total": 170,
+  "response_letter_unchanged": true,
+  "target_paragraphs_quoted_in_excerpt": false,
+  "excerpt_notes": "window hits ex157 (R4 M1), ex15/98/118 (R1 M4, R2 M8, R2 m4) are generic phrases in other passages; no excerpt spans either paragraph end",
+  "bib_keys": {
+    "mamalakis2022investigating": 1,
+    "aas2021explaining": 1
+  },
+  "keys_in_bbl": true,
+  "undefined_citations": 0,
+  "citet_occurrences": 9,
+  "p1_intact": true,
+  "p2_intact": true,
+  "p3_intact": true,
+  "p4_intact": true,
+  "manuscript_pages_before_after": [
+    114,
+    114
+  ],
+  "overfull_before_after": [
+    113,
+    113
+  ],
+  "overfull_hbox": 0,
+  "patch_hunks": 2,
+  "patch_rebuild_git_apply": true,
+  "patch_rebuild_bsd_patch": true,
+  "reference_rendering_issues": [
+    "aas2021explaining: pages 103502 printed as 103,502; 'Shapley' lower-cased",
+    "mamalakis2022investigating: pages e220012 printed as e220,012"
+  ],
+  "supplementary_unchanged": true,
+  "bib_unchanged": true
+}

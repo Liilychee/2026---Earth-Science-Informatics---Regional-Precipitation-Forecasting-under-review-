@@ -1,0 +1,20 @@
+--- a/sn-bibliography.bib	2026-11-16 00:00:00.000000000 +0000
++++ b/sn-bibliography.bib	2026-11-16 00:00:00.000000000 +0000
+@@ -1332,4 +1332,16 @@
+   pages={2631--2644},
+   year={2020},
+   doi={10.5194/gmd-13-2631-2020}
++}
++
++@article{bano2020configuration,
++  title={Configuration and intercomparison of deep learning neural models for statistical downscaling},
++  author={Ba{\~n}o-Medina, Jorge and Manzanas, Rodrigo and Guti{\'e}rrez, Jos{\'e} Manuel},
++  journal={Geoscientific Model Development},
++  volume={13},
++  number={4},
++  pages={2109--2124},
++  year={2020},
++  publisher={Copernicus Publications, G{\"o}ttingen, Germany},
++  doi={10.5194/gmd-13-2109-2020}
+ }
+\ No newline at end of file

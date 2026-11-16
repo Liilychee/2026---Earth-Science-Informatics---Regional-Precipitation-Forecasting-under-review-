@@ -1,0 +1,122 @@
+--- a/manuscript.tex	2026-11-16 00:00:00.000000000 +0000
++++ b/manuscript.tex	2026-11-16 00:00:00.000000000 +0000
+@@ -679,6 +679,8 @@
+ {\color{red}\hypersetup{linkcolor=red,citecolor=red}
+ Replacing d2m with the processed cp in C6 did not improve overall RMSE under the matched settings. For XGBoost, the mean paired difference was $+0.000132$~mm\,h$^{-1}$ ($+0.054\%$), with seed-t and moving-block intervals of $[-0.000776,+0.001040]$ and $[-0.001366,+0.001613]$~mm\,h$^{-1}$. For BiLSTM-Attention it was $+0.001113$~mm\,h$^{-1}$ ($+0.458\%$), with intervals of $[+0.000592,+0.001633]$ and $[+0.000095,+0.002119]$~mm\,h$^{-1}$; all five seeds had higher RMSE. The wet and upper-tail BiLSTM-Attention seed-t intervals included zero despite positive sampling intervals, so the overall result is not extended to every subset (Supplementary Table~\ref{supp-stab:r2m3_c6}). These tests support retaining the original local seven-variable configuration under the tested conditions, not the optimality of contemporaneous screening or of the predictor set.
+ \par}
++
++\revminor{Convective precipitation was not part of the original screening. Apart from the tp target, the ERA5 single-level fields retrieved for the original study were the 11 candidates, which did not include convective precipitation as a separate field. lsp was therefore retained by the contemporaneous screening rule, not chosen to restrict the study to large-scale precipitation. The target remains total precipitation, including its convective part, and mxtpr and mntpr are rates of total precipitation. In a separate XGBoost check, regional-mean $\max(\mathrm{tp}-\mathrm{lsp},0)$ was added to the original seven predictors as an eighth input, with the same window, hyperparameters, training-only scaling, five seeds and 3,939 test targets. Mean overall test RMSE changed from 0.243920 to 0.243693~mm\,h$^{-1}$; the mean paired difference was $-0.000227$~mm\,h$^{-1}$ ($-0.093\%$; pointwise 95\% seed-t interval $[-0.001643,+0.001189]$), with lower RMSE in three of five seeds. This check detected no consistent gain from adding cp. It evaluated only overall RMSE for one architecture, and it differs from C6, which replaced d2m within a fixed seven-variable budget.}
+ 
+ \revminor{We additionally assessed wind speed and two large-scale atmospheric variables under matched experimental settings (Supplementary Table~\ref{supp-stab:r3c_local_additions}). Adding local wind speed, calculated from the 10-m wind components, produced no clear RMSE improvement for either XGBoost or BiLSTM-Attention. Jointly adding local 500-hPa geopotential and total-column water vapour reduced BiLSTM-Attention RMSE by 1.18\%, with both uncertainty intervals excluding zero, but produced no clear improvement for XGBoost. These findings indicate that the original candidate pool excluded potentially useful atmospheric information, although the individual contributions of geopotential and water vapour cannot be determined from the joint experiment.}
+ 
+@@ -842,6 +844,8 @@
+ \revminor{Full-period seasonal distributions use all 26,300 retained 00/06/12/18 UTC timestamps over 2004--2021, including zero precipitation, rather than only the 26,282 windowed prediction targets (Supplementary Fig.~\ref{supp-sfig:r3season_full_cdf} and Table~\ref{supp-stab:r3season_full_distribution}). The 18 additional timestamps are the first six in each chronological partition, excluded only when constructing model windows. DJF/MAM/JJA/SON have 6,500/6,624/6,624/6,552 samples, with descriptive seasonal Q95 values of 0.6197/0.4575/0.5877/0.6726~mm\,h$^{-1}$; these do not redefine the fixed training threshold. Values $\geq1.0$~mm\,h$^{-1}$ account for 2.49/1.24/2.14/2.98\%, respectively. The curves describe regional-mean preceding-hour precipitation, not six-hour totals or wet-only distributions; neither Q95 nor 1.0~mm\,h$^{-1}$ is adopted as a physical extreme-rainfall definition.}
+ 
+ \revminor{The separate q03d sensitivity compares year-round XGBoost (G), four season-specific models (S), and a year-round model with month/hour sine--cosine inputs (F), using five matched seeds and unchanged hyperparameters without retuning (Supplementary Tables~\ref{supp-stab:r3season_gsf_scores} and~\ref{supp-stab:r3season_gsf_pairs}). Mean seed-level overall RMSE is 0.2439/0.2468/0.2443~mm\,h$^{-1}$ for G/S/F. S is worse overall in all five seeds, but its five-seed-mean-prediction difference is +0.0020 with a pointwise 95\% circular-block interval of $[-0.0012,+0.0056]$~mm\,h$^{-1}$. The corresponding F difference is +0.0004 $[-0.0011,+0.0018]$; its JJA improvement and SON deterioration have intervals excluding zero, without multiplicity adjustment. None of the seasonal S--G intervals excludes zero. Thus this fixed-configuration XGBoost experiment does not show consistent benefits from seasonal specialization; we retain year-round models with seasonal evaluation, rather than infer that season-specific modelling is ineffective.}
++
++\revminor{Convective contributions to the target were examined with the original single saved predictions on the 3,939 test targets (Supplementary Table~\ref{supp-stab:r4conv_strata}). Wet targets ($\geq0.1$~mm\,h$^{-1}$; $N=854$) were classified after the fact as convective-dominated when $\mathrm{cp}/\mathrm{tp}\geq0.5$ in the target hour, with $\mathrm{cp}=\mathrm{tp}-\mathrm{lsp}$, and otherwise as large-scale-dominated: 383 and 471 targets, of which 146 and 114 fell in JJA. These target-hour components are not model inputs and would not be known when a forecast is issued; the split also reflects ERA5's parameterized partition of regional-mean precipitation, not an observed storm type. RMSE skill relative to the training month-by-hour climatology, computed within each subset, was lower for convective-dominated than for large-scale-dominated targets in all six models. For XGBoost it was 0.091 and 0.166 overall, and 0.103 and 0.167 within JJA. Other metrics did not give the same ordering: RMSE divided by the subset mean was slightly lower for convective-dominated targets (0.947 and 0.971 for XGBoost), and correlation with the observations was lower for XGBoost and BiLSTM-Attention but higher for BU-LSTM-Attention. Summer as a whole was not harder in these terms: XGBoost skill was 0.127 in JJA and 0.099 outside it, and JJA skill was higher in five of the six models, with the Transformer nearly equal (0.050 and 0.052). The stratum differences were not tested and describe single saved runs over one test period.}
+ 
+ \subsubsection{Independent Observational Checks}
+ \label{sec:observational_checks}
+--- a/Supplementary.tex	2026-11-16 00:00:00.000000000 +0000
++++ b/Supplementary.tex	2026-11-16 00:00:00.000000000 +0000
+@@ -2693,6 +2693,54 @@
+ B & 31 hourly; 00/06/12/18 UTC & 4,374 & $0.2107\pm0.0020$ & 18--21 (8--11) & 53.5 [50.6--58.1]\\
+ CA & 6 six-hourly; hourly & 26,244 & $0.2082\pm0.0027$ & 11--13 (1--3) & 128.1 [117.8--135.8]\\
+ CB & 31 hourly; hourly & 26,244 & $0.2083\pm0.0038$ & 12--14 (2--4) & 172.8 [156.9--184.2]\\
++\hline
++\end{tabularx}
++\end{revisiontable}
++
++\clearpage
++{\color{red}\section*{Convective and large-scale target strata}\par}
++
++\begin{revisiontable}\footnotesize\setlength{\tabcolsep}{3pt}
++\renewcommand{\arraystretch}{1.1}
++\caption{Original single saved predictions on the 3,939 test targets, stratified after the fact by season and by the convective share of the target hour (q03e). Wet: $y\geq0.1$~mm\,h$^{-1}$. Conv.\ (convective-dominated): $\mathrm{cp}/\mathrm{tp}\geq0.5$ with $\mathrm{cp}=\mathrm{tp}-\mathrm{lsp}$ at the target hour; l.-s.\ (large-scale-dominated): $\mathrm{cp}/\mathrm{tp}<0.5$. The target-hour components define evaluation subsets only and are not model inputs. Mean obs., RMSE and Clim.\ RMSE are in mm\,h$^{-1}$; Clim.\ is the training-target month-by-hour climatology. SS $=1-\mathrm{RMSE}/\mathrm{RMSE}_{\mathrm{clim}}$ within each subset; RMSE/mean divides by the subset mean observation; $r$ is the Pearson correlation. Differences between strata were not tested.}
++\label{stab:r4conv_strata}
++\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}Xrrrrrrr@{}}
++\hline
++\textbf{Stratum} & \textbf{$N$} & \textbf{Mean obs.} & \textbf{RMSE} & \textbf{Clim.\ RMSE} & \textbf{SS} & \textbf{RMSE/mean} & \textbf{$r$}\\
++\hline
++\multicolumn{8}{@{}l}{\textbf{XGBoost}}\\
++All & 3{,}939 & $0.1151$ & $0.2437$ & $0.2731$ & $0.107$ & $2.119$ & $0.456$\\
++JJA & 1{,}104 & $0.1229$ & $0.2459$ & $0.2819$ & $0.127$ & $2.001$ & $0.493$\\
++Non-JJA & 2{,}835 & $0.1120$ & $0.2429$ & $0.2696$ & $0.099$ & $2.169$ & $0.445$\\
++Wet & 854 & $0.4765$ & $0.4726$ & $0.5565$ & $0.151$ & $0.992$ & $0.286$\\
++Wet{,} conv. & 383 & $0.3517$ & $0.3332$ & $0.3666$ & $0.091$ & $0.947$ & $0.190$\\
++Wet{,} l.-s. & 471 & $0.5780$ & $0.5609$ & $0.6724$ & $0.166$ & $0.971$ & $0.252$\\
++JJA wet{,} conv. & 146 & $0.3880$ & $0.3760$ & $0.4189$ & $0.103$ & $0.969$ & $0.241$\\
++JJA wet{,} l.-s. & 114 & $0.5700$ & $0.5716$ & $0.6861$ & $0.167$ & $1.003$ & $0.340$\\
++Non-JJA wet{,} conv. & 237 & $0.3294$ & $0.3039$ & $0.3302$ & $0.080$ & $0.923$ & $0.161$\\
++Non-JJA wet{,} l.-s. & 357 & $0.5805$ & $0.5575$ & $0.6680$ & $0.165$ & $0.960$ & $0.221$\\
++\multicolumn{8}{@{}l}{\textbf{BiLSTM-Attention}}\\
++All & 3{,}939 & $0.1151$ & $0.2428$ & $0.2731$ & $0.111$ & $2.111$ & $0.469$\\
++JJA & 1{,}104 & $0.1229$ & $0.2483$ & $0.2819$ & $0.119$ & $2.020$ & $0.486$\\
++Non-JJA & 2{,}835 & $0.1120$ & $0.2407$ & $0.2696$ & $0.107$ & $2.149$ & $0.462$\\
++Wet & 854 & $0.4765$ & $0.4887$ & $0.5565$ & $0.122$ & $1.026$ & $0.268$\\
++Wet{,} conv. & 383 & $0.3517$ & $0.3364$ & $0.3666$ & $0.082$ & $0.957$ & $0.208$\\
++Wet{,} l.-s. & 471 & $0.5780$ & $0.5840$ & $0.6724$ & $0.132$ & $1.010$ & $0.229$\\
++JJA wet{,} conv. & 146 & $0.3880$ & $0.3746$ & $0.4189$ & $0.106$ & $0.966$ & $0.275$\\
++JJA wet{,} l.-s. & 114 & $0.5700$ & $0.5865$ & $0.6861$ & $0.145$ & $1.029$ & $0.315$\\
++Non-JJA wet{,} conv. & 237 & $0.3294$ & $0.3106$ & $0.3302$ & $0.059$ & $0.943$ & $0.160$\\
++Non-JJA wet{,} l.-s. & 357 & $0.5805$ & $0.5832$ & $0.6680$ & $0.127$ & $1.005$ & $0.200$\\
++\multicolumn{8}{@{}l}{\textbf{BU-LSTM-Attention}}\\
++All & 3{,}939 & $0.1151$ & $0.2464$ & $0.2731$ & $0.097$ & $2.142$ & $0.439$\\
++JJA & 1{,}104 & $0.1229$ & $0.2502$ & $0.2819$ & $0.112$ & $2.036$ & $0.479$\\
++Non-JJA & 2{,}835 & $0.1120$ & $0.2450$ & $0.2696$ & $0.091$ & $2.187$ & $0.425$\\
++Wet & 854 & $0.4765$ & $0.4923$ & $0.5565$ & $0.115$ & $1.033$ & $0.236$\\
++Wet{,} conv. & 383 & $0.3517$ & $0.3356$ & $0.3666$ & $0.084$ & $0.954$ & $0.220$\\
++Wet{,} l.-s. & 471 & $0.5780$ & $0.5898$ & $0.6724$ & $0.123$ & $1.021$ & $0.160$\\
++JJA wet{,} conv. & 146 & $0.3880$ & $0.3765$ & $0.4189$ & $0.101$ & $0.970$ & $0.278$\\
++JJA wet{,} l.-s. & 114 & $0.5700$ & $0.6015$ & $0.6861$ & $0.123$ & $1.055$ & $0.255$\\
++Non-JJA wet{,} conv. & 237 & $0.3294$ & $0.3077$ & $0.3302$ & $0.068$ & $0.934$ & $0.183$\\
++Non-JJA wet{,} l.-s. & 357 & $0.5805$ & $0.5861$ & $0.6680$ & $0.123$ & $1.010$ & $0.128$\\
+ \hline
+ \end{tabularx}
+ \end{revisiontable}
+--- a/Response letter.tex	2026-11-16 00:00:00.000000000 +0000
++++ b/Response letter.tex	2026-11-16 00:00:00.000000000 +0000
+@@ -1542,10 +1542,40 @@
+ 
+ \ReviewerComment{3. For some reason you picked lsp instead of convective precipitation. I realize that picking both is meaningless because tp is a sum of the two, but, from the practical point of view, summer convective cases are typically harder to predict. Did you deliberately focus on large-scale precipitation?}
+ 
+-\PendingResponse
++\AuthorResponse{We thank the reviewer for this question. The original manuscript did not explain why lsp, rather than convective precipitation (cp), appears among the predictors. We did not deliberately focus on large-scale precipitation, and the revised manuscript now states this explicitly.
+ 
+-\ChangeLocation
++\textit{Why lsp and not cp.} The predictors were selected from an 11-variable candidate pool by the absolute contemporaneous Spearman correlation with total precipitation over the training period; this was a same-time screening, not a lead-time one. Apart from the tp target, the pool consisted of the ERA5 single-level fields retrieved for the original study. Convective precipitation was not retrieved as a separate field and was therefore never screened. lsp entered the final set because it ranked third in that screening ($\lvert\rho\rvert=0.899$), not because the study was designed around large-scale precipitation. In the later training-only diagnostic with an expanded pool, cp had a contemporaneous correlation of 0.843 and would have ranked fourth (Supplementary Table~\ref{supp-stab:r2m3_associations}). Its omission from the original pool was therefore not a judgement about its relevance.
++
++\textit{Target.} The target has always been total precipitation, including its convective part, and the convective cases are part of every evaluation. mxtpr and mntpr are rates of total precipitation, so recent convective precipitation is also partly represented in the inputs. We agree that same-hour lsp and cp are redundant given tp, since $\mathrm{tp}=\mathrm{lsp}+\mathrm{cp}$. For lagged inputs, however, whether cp adds predictive information is an empirical question, and we tested it in two ways.
++
++\textit{Does cp improve the forecasts?} First, adding regional-mean $\max(\mathrm{tp}-\mathrm{lsp},0)$ to the seven predictors as an eighth XGBoost input changed mean overall RMSE from 0.243920 to 0.243693~mm\,h$^{-1}$: a paired difference of $-0.000227$~mm\,h$^{-1}$ ($-0.093\%$; pointwise 95\% seed-t interval $[-0.001643,+0.001189]$), with lower RMSE in three of five seeds. Second, in the matched C6 test, replacing d2m with cp within the seven-predictor budget changed overall RMSE by $+0.000132$~mm\,h$^{-1}$ ($+0.054\%$) for XGBoost, with both intervals including zero, and by $+0.001113$~mm\,h$^{-1}$ ($+0.458\%$) for BiLSTM-Attention, with higher RMSE in all five seeds and both intervals excluding zero. The two tests answer different questions (adding cp, and replacing d2m by cp); we did not run a test that replaces lsp with cp. Neither showed a consistent gain from cp under these configurations. This does not show that cp has no predictive value, nor that lsp is the best precipitation predictor.
++
++\textit{Convective cases.} We agree that convective precipitation is typically harder to predict, and we have added a stratified evaluation to Section~\ref{manuscript-sec:seasonal_baseline_check} and Supplementary Table~\ref{supp-stab:r4conv_strata}. Of the 854 wet test targets ($\geq0.1$~mm\,h$^{-1}$), 383 were convective-dominated ($\mathrm{cp}/\mathrm{tp}\geq0.5$ in the target hour) and 471 large-scale-dominated; 146 and 114 of them fell in JJA. This classification uses the target hour after the fact and is not available to the models when a forecast is issued. RMSE skill relative to the training month-by-hour climatology was lower for convective-dominated targets in all six models; for XGBoost it was 0.091 versus 0.166, and 0.103 versus 0.167 within JJA. This supports the reviewer's expectation for convective-dominated hours. It does not extend to summer as a whole: XGBoost skill was 0.127 in JJA and 0.099 outside it, and JJA skill was higher in five of six models. Other metrics also ordered the strata differently; for example, RMSE relative to the subset mean was slightly lower for convective-dominated targets. As reported in our response to Major Comment~2, lsp accounts for 50.92\% of JJA precipitation, so about half of summer precipitation is convective in ERA5; it remains part of the target and of the evaluation. The stratum differences were not tested statistically and are descriptive.
++
++These results remain conditional on ERA5 reanalysis, whose large-scale/convective split reflects its parameterization; on the 25-cell regional mean, which smooths small convective cells; on six-hourly sampled inputs (Section~\ref{manuscript-sec:limitations}); and on one test period, with single saved runs for the stratified evaluation and one or two architectures for the cp tests.}
++
++\ManuscriptChange{Section~\ref{manuscript-sec:predictor_selection_results} (Predictor Selection Results): one paragraph added after the C6 results, stating that cp was not in the original candidate pool, that lsp was retained by screening rather than to target large-scale precipitation, that the target is total precipitation, and reporting the cp-addition XGBoost check. Section~\ref{manuscript-sec:seasonal_baseline_check} (Descriptive Seasonal Check): one paragraph added at the end on convective- and large-scale-dominated target strata and on JJA versus non-JJA skill. Supplementary: new final section with Table~\ref{supp-stab:r4conv_strata}. The contemporaneous screening description in Section~\ref{manuscript-sec:dataset} and the C6 results (Supplementary Table~\ref{supp-stab:r2m3_c6}) are unchanged. The time semantics and seasonal lsp shares added for Major Comment~2 are not repeated.}
++
++\EvidenceBox{Original screening rule (Section~\ref{manuscript-sec:dataset}, unchanged)}{
++\RevisedExcerpt{Feature screening used the absolute contemporaneous Spearman rank correlation with total precipitation, calculated over the 18,410 raw training-period timestamps from 00:00~UTC on 1 January 2004 to 06:00~UTC on 7 August 2016.}
++}
++
++\EvidenceBox{Origin of lsp and the cp-addition check (Section~\ref{manuscript-sec:predictor_selection_results})}{
++\RevisedExcerpt{Convective precipitation was not part of the original screening. Apart from the tp target, the ERA5 single-level fields retrieved for the original study were the 11 candidates, which did not include convective precipitation as a separate field. lsp was therefore retained by the contemporaneous screening rule, not chosen to restrict the study to large-scale precipitation. The target remains total precipitation, including its convective part, and mxtpr and mntpr are rates of total precipitation. In a separate XGBoost check, regional-mean $\max(\mathrm{tp}-\mathrm{lsp},0)$ was added to the original seven predictors as an eighth input, with the same window, hyperparameters, training-only scaling, five seeds and 3,939 test targets. Mean overall test RMSE changed from 0.243920 to 0.243693~mm\,h$^{-1}$; the mean paired difference was $-0.000227$~mm\,h$^{-1}$ ($-0.093\%$; pointwise 95\% seed-t interval $[-0.001643,+0.001189]$), with lower RMSE in three of five seeds. This check detected no consistent gain from adding cp. It evaluated only overall RMSE for one architecture, and it differs from C6, which replaced d2m within a fixed seven-variable budget.}
++}
++
++\EvidenceBox{Matched C6 replacement of d2m by cp (Section~\ref{manuscript-sec:predictor_selection_results}, unchanged)}{
++\RevisedExcerpt{Replacing d2m with the processed cp in C6 did not improve overall RMSE under the matched settings. For XGBoost, the mean paired difference was $+0.000132$~mm\,h$^{-1}$ ($+0.054\%$), with seed-t and moving-block intervals of $[-0.000776,+0.001040]$ and $[-0.001366,+0.001613]$~mm\,h$^{-1}$. For BiLSTM-Attention it was $+0.001113$~mm\,h$^{-1}$ ($+0.458\%$), with intervals of $[+0.000592,+0.001633]$ and $[+0.000095,+0.002119]$~mm\,h$^{-1}$; all five seeds had higher RMSE.}
++}
++
++\EvidenceBox{Convective- and large-scale-dominated targets (Section~\ref{manuscript-sec:seasonal_baseline_check})}{
++\RevisedExcerpt{Wet targets ($\geq0.1$~mm\,h$^{-1}$; $N=854$) were classified after the fact as convective-dominated when $\mathrm{cp}/\mathrm{tp}\geq0.5$ in the target hour, with $\mathrm{cp}=\mathrm{tp}-\mathrm{lsp}$, and otherwise as large-scale-dominated: 383 and 471 targets, of which 146 and 114 fell in JJA. These target-hour components are not model inputs and would not be known when a forecast is issued; the split also reflects ERA5's parameterized partition of regional-mean precipitation, not an observed storm type. RMSE skill relative to the training month-by-hour climatology, computed within each subset, was lower for convective-dominated than for large-scale-dominated targets in all six models. For XGBoost it was 0.091 and 0.166 overall, and 0.103 and 0.167 within JJA. Other metrics did not give the same ordering: RMSE divided by the subset mean was slightly lower for convective-dominated targets (0.947 and 0.971 for XGBoost), and correlation with the observations was lower for XGBoost and BiLSTM-Attention but higher for BU-LSTM-Attention. Summer as a whole was not harder in these terms: XGBoost skill was 0.127 in JJA and 0.099 outside it, and JJA skill was higher in five of the six models, with the Transformer nearly equal (0.050 and 0.052). The stratum differences were not tested and describe single saved runs over one test period.}
++}
+ 
++\EvidenceBox{Stratified table definition (Supplementary Table~\ref{supp-stab:r4conv_strata})}{
++\RevisedExcerpt{The target-hour components define evaluation subsets only and are not model inputs.}
++}
++
+ % Review ID: R4 M4
+ \Needspace{5\baselineskip}
+ \subsection*{Major Comment~4}

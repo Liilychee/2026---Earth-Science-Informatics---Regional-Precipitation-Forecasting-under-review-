@@ -1,0 +1,34 @@
+{
+  "total_excerpts": 170,
+  "matched": 170,
+  "missing_idx": [],
+  "all_excerpts_equal_before_in_order": true,
+  "baseline_total": 170,
+  "response_letter_unchanged": true,
+  "target_paragraph_protected": false,
+  "target_paragraph_window_overlaps": {
+    "25 (R1 M5)": "generic phrase 'wet subset (>=0.1 mm/h'",
+    "78 (R2 M5)": "same generic phrase",
+    "121 (R3 Section 2)": "'regional precipitation forecasting'",
+    "123 (R3 L169-177)": "'machine-learning and deep-learning'"
+  },
+  "no_excerpt_spans_paragraph_end": true,
+  "bib_keys": {
+    "grinsztajn2022tree": 1,
+    "otero2023intercomparison": 1
+  },
+  "keys_in_bbl": true,
+  "undefined_citations": 0,
+  "citet_occurrences": 9,
+  "p1_intact": true,
+  "p2_intact": true,
+  "manuscript_pages": 113,
+  "overfull_total": 112,
+  "overfull_hbox": 0,
+  "overfull_baseline": 112,
+  "patch_hunks": 1,
+  "patch_rebuild_git_apply": true,
+  "patch_rebuild_bsd_patch": true,
+  "supplementary_unchanged": true,
+  "bib_unchanged": true
+}

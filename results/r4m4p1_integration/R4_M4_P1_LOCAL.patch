@@ -1,0 +1,11 @@
+--- a/manuscript.tex	2026-11-16 00:00:00.000000000 +0000
++++ b/manuscript.tex	2026-11-16 00:00:00.000000000 +0000
+@@ -1212,7 +1212,7 @@
+ \label{sec:upper_tail_discussion}
+ 
+ {\color{red}\hypersetup{linkcolor=red}
+-A different model ranking emerged when the analysis was restricted to upper-tail precipitation. BiLSTM-Attention and XGBoost performed similarly over the full test set, while XGBoost achieved lower RMSE at the higher precipitation thresholds. The separate revised-wet comparison ($\geq0.1$~mm\,h$^{-1}$; $N=854$) also favoured XGBoost, with a paired RMSE difference of $+0.016144$~mm\,h$^{-1}$ (BiLSTM-Attention minus XGBoost) and a pointwise 95\% interval of $[+0.007102,+0.025956]$~mm\,h$^{-1}$. This evidence comes from the original single saved predictions, not from the legacy wet interval or five-seed mean scores. The paired upper-tail comparison supports an XGBoost advantage more clearly than the complete-test comparison (Section~\ref{sec:regime_results}).
++A different model ranking emerged when the analysis was restricted to upper-tail precipitation. BiLSTM-Attention and XGBoost performed similarly over the full test set, while XGBoost achieved lower RMSE at the higher precipitation thresholds. The separate revised-wet comparison ($\geq0.1$~mm\,h$^{-1}$; $N=854$) also favoured XGBoost, with a paired RMSE difference of $+0.016144$~mm\,h$^{-1}$ (BiLSTM-Attention minus XGBoost) and a pointwise 95\% interval of $[+0.007102,+0.025956]$~mm\,h$^{-1}$. This evidence comes from the original single saved predictions, not from the legacy wet interval or five-seed mean scores. The paired upper-tail comparison supports an XGBoost advantage more clearly than the complete-test comparison (Section~\ref{sec:regime_results}). \revminor{These upper-tail RMSE comparisons are conditional on observed precipitation exceeding the specified thresholds. As discussed by \citet{lerch2017forecaster}, evaluating forecasts only on cases selected by their observed outcomes can distort comparative rankings. Accordingly, the present upper-tail results are interpreted as conditional error diagnostics rather than evidence of unconditional forecasting superiority.}
+ \par}
+ 
+ {\color{red}

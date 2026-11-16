@@ -1,0 +1,24 @@
+{
+ "old155_verbatim_in_order": true,
+ "total": 159,
+ "unmatched": [],
+ "RL_outside_block_unchanged": true,
+ "manuscript_outside_intro_related_unchanged": true,
+ "supp_bib_unchanged": true,
+ "old_paragraphs_not_verbatim_in_new": [
+  "Uncertainty estimation provides an additional perspective on forecast quality. Many machin",
+  "Interpretability presents a related challenge. Deep neural networks can capture nonlinear ",
+  "Regional precipitation forecasting over Ireland provides a useful setting in which to exam",
+  "\\subsection{Main contributions}",
+  "The main contributions of this study are as follows:",
+  "The remainder of this paper is organized as follows. Section~2 reviews related work on pre"
+ ],
+ "old_cite_keys_lost": [],
+ "cite_keys_lost": [],
+ "cite_keys_added": [
+  "gneiting2007proper",
+  "gneiting2011weighted",
+  "grinsztajn2022tree",
+  "otero2023intercomparison"
+ ]
+}

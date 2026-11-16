@@ -1,0 +1,61 @@
+--- a/Response letter.tex	2026-11-16 00:00:00.000000000 +0000
++++ b/Response letter.tex	2026-11-16 00:00:00.000000000 +0000
+@@ -1582,10 +1582,56 @@
+ 
+ \ReviewerComment{4. The discussion include valid issues and I like its structure, however, there is barely any reference to existing literature! This is a major drawback, bigger than point 1.}
+ 
+-\PendingResponse
++\AuthorResponse{We thank the reviewer for this important comment. We agree that, although the original Discussion addressed the main findings and limitations, its connections to the existing literature were insufficient. We have therefore revised Sections~5.1--5.4 to relate the principal results to relevant published studies, clarify the similarities and differences between their settings and ours, and make the limits of these comparisons explicit.
+ 
+-\ChangeLocation
++\textit{Overall model comparison (Section~\ref{manuscript-sec:overall_discussion}).} We now discuss the comparable overall performance of XGBoost and the recurrent models in relation to evidence that tree-based methods remain competitive with deep neural networks on medium-sized tabular datasets, and to precipitation forecasting research reporting comparable performance from shallower and deeper U-Net configurations. We explicitly acknowledge differences in data representation, architecture and prediction setting.
++
++\textit{Upper-tail evaluation and probabilistic reliability (Section~\ref{manuscript-sec:upper_tail_discussion}).} We have added literature addressing the forecaster's dilemma to clarify that RMSE evaluated on observed upper-tail events is a conditional diagnostic, rather than evidence of unconditional forecasting superiority. We also compare the observed upper-tail amplitude compression with findings from radar-based deep-learning nowcasting, without assuming a shared mechanism. The Bernoulli--Gamma discussion is now connected to earlier neural-network precipitation downscaling studies, while explicitly distinguishing precipitation-percentile bias from prediction-interval coverage. We additionally refined the wording of the tree-model comparison to align the scope of the cited evidence with medium-sized tabular datasets rather than making an unsupported claim about imbalanced sample sizes.
++
++\textit{Predictor attribution (Sections~\ref{manuscript-sec:predictor_complementarity} and~\ref{manuscript-sec:limitations}).} We have related the complementary interpretation of correlation, SHAP and ablation to published geoscientific research on the strengths and limitations of different XAI methods. We further cite methodological work demonstrating that Shapley-value explanations can be misleading when dependencies between correlated predictors are not adequately accounted for. These references support a cautious interpretation of attribution results without implying meteorological causality.
++
++\textit{Verification and observational limitations (Section~\ref{manuscript-sec:limitations}).} We have strengthened the discussion of ERA5-based verification by citing evaluations of ERA5 precipitation against rain-gauge measurements and the verification design of WeatherBench~2. We explicitly distinguish reanalysis-referenced assessment from independent observational validation. We also clarify that the net effect of the verification reference on the present HRES comparison has not been quantified and that differences in precipitation accumulation windows remain a limitation.
++
++Together, these revisions connect the Discussion more directly to established research while distinguishing supporting evidence, relevant differences in experimental settings, and unresolved methodological limitations. No numerical results or substantive experimental conclusions have been changed.}
++
++\ManuscriptChange{Section~\ref{manuscript-sec:overall_discussion}: literature on tree-based versus deep models and on U-Net depth added at the end of the first paragraph. Section~\ref{manuscript-sec:upper_tail_discussion}: conditional upper-tail evaluation (forecaster's dilemma) added to the first paragraph; comparison with radar-based deep-learning nowcasting added to the second paragraph; the scope of the tree-model citation corrected from ``limited or imbalanced sample sizes'' to ``medium-sized datasets''; Bernoulli--Gamma downscaling literature added to the paragraph on the Gaussian likelihood. Section~\ref{manuscript-sec:predictor_complementarity}: XAI method-intercomparison literature added to the first paragraph. Section~\ref{manuscript-sec:limitations}: ERA5--rain-gauge evaluation added to the station-validation paragraph; WeatherBench~2 verification design added to the HRES-scope paragraph; Shapley values under feature dependence added to the SHAP-interpretation paragraph. Nine sources were added to the Discussion; no numerical result was changed.}
++
++\EvidenceBox{Tree-based and U-Net comparisons (Section~\ref{manuscript-sec:overall_discussion})}{
++\RevisedExcerpt{The comparable overall performance of the tree-based and recurrent models is consistent with broader evidence that tree-based methods remain competitive with deep neural networks on medium-sized tabular datasets \citep{grinsztajn2022tree}. Related precipitation-focused work has also shown that shallower U-Net configurations can achieve performance comparable to deeper variants with fewer trainable parameters \citep{otero2023intercomparison}. Although these studies differ in data representation, architecture and prediction setting, they reinforce the importance of evaluating model complexity against demonstrated predictive gains rather than assuming that more complex models will necessarily perform better.}
++}
++
++\EvidenceBox{Conditional upper-tail evaluation (Section~\ref{manuscript-sec:upper_tail_discussion})}{
++\RevisedExcerpt{These upper-tail RMSE comparisons are conditional on observed precipitation exceeding the specified thresholds. Evaluating forecasts only on cases selected by their observed outcomes can distort comparative rankings \citep{lerch2017forecaster}. Accordingly, the present upper-tail results are interpreted as conditional error diagnostics rather than evidence of unconditional forecasting superiority.}
++}
++
++\EvidenceBox{Amplitude compression in data-driven forecasts (Section~\ref{manuscript-sec:upper_tail_discussion})}{
++\RevisedExcerpt{Similar difficulties in representing high precipitation intensities have been reported in data-driven rainfall forecasting. For example, radar-based deep-learning nowcasts have exhibited spatial smoothing and reduced representation of intense rainfall features \citep{ayzel2020rainnet}. Although the present study concerns regional-mean ERA5 precipitation rather than spatial radar nowcasts, these findings provide a relevant comparison for the observed upper-tail amplitude compression. The underlying causes in our models remain unresolved.}
++}
++
++\EvidenceBox{Corrected scope of the tree-model citation (Section~\ref{manuscript-sec:upper_tail_discussion})}{
++\RevisedExcerpt{This pattern is broadly consistent with evidence that tree-based methods can match or exceed deep neural networks on tabular data, \revminor{particularly for medium-sized datasets} \citep{grinsztajn2022tree}.}
++}
++
++\EvidenceBox{Bernoulli--Gamma downscaling literature (Section~\ref{manuscript-sec:upper_tail_discussion})}{
++\RevisedExcerpt{Bernoulli--Gamma distributions have previously been used in neural-network-based precipitation downscaling to jointly represent precipitation occurrence and positive amounts \citep{cannon2008bernoulli,bano2020configuration}. In related precipitation downscaling experiments, deterministic predictions slightly underestimated the 98th precipitation percentile, while stochastic sampling improved this aspect at the expense of some temporal and spatial correlation \citep{bano2020configuration}. Although percentile bias and prediction-interval coverage are distinct diagnostics, these findings underscore the importance of evaluating high-intensity precipitation performance separately from aggregate probabilistic skill.}
++}
++
++\EvidenceBox{XAI method intercomparison (Section~\ref{manuscript-sec:predictor_complementarity})}{
++\RevisedExcerpt{This complementary interpretation is consistent with previous geoscientific research highlighting the method-dependent strengths and limitations of XAI techniques and advocating the combined use of multiple explanation methods \citep{mamalakis2022investigating}.}
++}
++
++\EvidenceBox{ERA5 precipitation against rain gauges (Section~\ref{manuscript-sec:limitations})}{
++\RevisedExcerpt{Independent evaluations have documented differences between ERA5 precipitation and rain-gauge measurements, including biases in daily precipitation and underrepresentation of the largest observed daily totals \citep{lavers2022evaluation}. Although these findings concern daily precipitation across a much broader geographical domain, they reinforce the need to distinguish ERA5-referenced forecast evaluation from validation against local observations.}
++}
+ 
++\EvidenceBox{WeatherBench~2 verification design (Section~\ref{manuscript-sec:limitations})}{
++\RevisedExcerpt{WeatherBench 2 likewise distinguishes reanalysis-based evaluation from verification against operational analyses and acknowledges the limitations of ERA5 precipitation as a reference dataset \citep{rasp2024weatherbench}. Although that benchmark uses ERA5 to verify precipitation accumulations across models, the net effect of the verification reference on the present HRES comparison has not been quantified, and the mismatch in precipitation accumulation windows remains an additional limitation.}
++}
++
++\EvidenceBox{Shapley values under feature dependence (Section~\ref{manuscript-sec:limitations})}{
++\RevisedExcerpt{Previous methodological research has shown that Shapley-value explanations can be misleading when dependencies among correlated features are not adequately accounted for \citep{aas2021explaining}. This reinforces the need to interpret the present attributions cautiously, without assuming that they uniquely identify the contribution of each meteorological predictor.}
++}
++
+ % Review ID: R4 m1
+ \Needspace{5\baselineskip}
+ \subsection*{Minor Comment~1}

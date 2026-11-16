@@ -1,0 +1,35 @@
+{
+  "total_excerpts": 170,
+  "matched": 170,
+  "missing_idx": [],
+  "all_excerpts_equal_before_in_order": true,
+  "baseline_total": 170,
+  "response_letter_unchanged": true,
+  "target_paragraph_quoted_in_excerpt": false,
+  "excerpt_notes": {
+    "90 (R2 M6)": "quotes the following red paragraph ('An alternative precipitation-appropriate likelihood ...'); insertion is before it, excerpt remains contiguous",
+    "153 (R3 L822-824)": "quotes \u00a75.1 complexity paragraph; shared generic phrase only",
+    "others": "single generic phrase 'Probabilistic BiLSTM-Attention'"
+  },
+  "bib_keys": {
+    "cannon2008bernoulli": 1,
+    "bano2020configuration": 1,
+    "banomedina2020configuration": 0
+  },
+  "keys_in_bbl": true,
+  "undefined_citations": 0,
+  "citet_occurrences": 9,
+  "p1_intact": true,
+  "p2_intact": true,
+  "p3_intact": true,
+  "sec54_onward_unchanged": true,
+  "manuscript_pages": 114,
+  "overfull_total": 113,
+  "overfull_hbox": 0,
+  "overfull_note": "all per-page 1.41457pt \\vbox template artefact; 112->113 follows 113->114 pages",
+  "patch_hunks": 1,
+  "patch_rebuild_git_apply": true,
+  "patch_rebuild_bsd_patch": true,
+  "supplementary_unchanged": true,
+  "bib_unchanged": true
+}

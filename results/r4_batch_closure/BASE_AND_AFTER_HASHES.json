@@ -1,0 +1,58 @@
+{
+ "base_R3_19_after": {
+  "manuscript.tex": "d13e4b6f9a7555b39aafa8b01f48f764d99b1e0b63dfdee3544c58afeecf3fee",
+  "Response letter.tex": "5371848df2a7883235afbd0d53853ba290768c466b94c609bbf6e89a99b861d7",
+  "Supplementary.tex": "067683bf23d20e866ab82c0fff0ec03f2d186054553e62917e8a5344f8c165cb",
+  "sn-bibliography.bib": "137c59707308c31c5cee9b6bb7992ed6d0a01f462dd7131552abe75b509f20f5"
+ },
+ "final_after_R4_batch": {
+  "manuscript.tex": "a45a2944e241d32c3ea454a1d1f15f607920a669385b0838649c69b24de5a204",
+  "Response letter.tex": "0b87bed7ec1be280504b8a4b2f4ff1465b34996fe9508b5ae1efc47f11e9d774",
+  "Supplementary.tex": "2df7e160574947361e653cf78eda9f5c0ac86eb30f841282dadb4c988efda3fd",
+  "sn-bibliography.bib": "285eb33458287ef9c28e154e823e202b07846933e16a7c8e30ae51d346a33a64"
+ },
+ "user_bib_edit_segments": [
+  {
+   "n": 1,
+   "from": "r4m8_integration/after",
+   "to": "r4m4p1_integration/before",
+   "change": "lerch2017forecaster added"
+  },
+  {
+   "n": 2,
+   "from": "citation_style_unification/after",
+   "to": "r4m4p2_integration/before",
+   "change": "ayzel2020rainnet added"
+  },
+  {
+   "n": 3,
+   "from": "r4m4p2_integration/after",
+   "to": "r4m4p3_integration/before",
+   "change": "ayzel2020rainnet: {RainNet v1.0} title, doi added"
+  },
+  {
+   "n": 4,
+   "from": "r4m4p3_integration/after",
+   "to": "r4m4p4_integration/before",
+   "change": "bano2020configuration added"
+  },
+  {
+   "n": 5,
+   "from": "r4m4p4_integration/after",
+   "to": "r4m4p5_integration/before",
+   "change": "aas2021explaining, mamalakis2022investigating added"
+  },
+  {
+   "n": 6,
+   "from": "r4m4p5_integration/after",
+   "to": "r4m4p6_integration/before",
+   "change": "aas/mamalakis: {Shapley}, pages->eid; rasp2024weatherbench added"
+  },
+  {
+   "n": 7,
+   "from": "r4m4p6_integration/after",
+   "to": "r4m4p1c_integration/before",
+   "change": "rasp2024weatherbench: Russell, pages->eid"
+  }
+ ]
+}

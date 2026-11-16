@@ -1,0 +1,23 @@
+OK  R3-19 archived after-state (base, 53319b2 BASE_AND_AFTER_HASHES)
+OK  R4-M1
+OK  R4-M1 label fix
+OK  R4-M2
+OK  R4-M3
+OK  R4-m8
+OK  USER_BIB_EDIT_01 (lerch2017forecaster added)
+OK  R4-M4 P1
+OK  Citation style unification
+OK  USER_BIB_EDIT_02 (ayzel2020rainnet added)
+OK  R4-M4 P2
+OK  USER_BIB_EDIT_03 (ayzel2020rainnet: {RainNet v1.0} title, doi added)
+OK  R4-M4 P3
+OK  USER_BIB_EDIT_04 (bano2020configuration added)
+OK  R4-M4 P4
+OK  USER_BIB_EDIT_05 (aas2021explaining, mamalakis2022investigating added)
+OK  R4-M4 P5
+OK  USER_BIB_EDIT_06 (aas/mamalakis: {Shapley}, pages->eid; rasp2024weatherbench added)
+OK  R4-M4 P6
+OK  USER_BIB_EDIT_07 (rasp2024weatherbench: Russell, pages->eid)
+OK  R4-M4 P1-c
+OK  R4-M4 Response letter integration
+chain rebuilt byte-for-byte: True
