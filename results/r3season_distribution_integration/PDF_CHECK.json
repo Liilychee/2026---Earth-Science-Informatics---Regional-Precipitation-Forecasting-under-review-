@@ -1,0 +1,54 @@
+{
+  "manuscript": {
+    "pages": 104,
+    "review_pages": [
+      56,
+      93
+    ],
+    "template_vbox_count": 103,
+    "pdf_sha256": "00c51dc66ad0df92fef46c0ca24ef86ab32a1949512f2b55271c921162e2f543",
+    "visual_review": "PASS: every listed page actually rendered and visually inspected; legible tables/axes, no crop/overlap, correct red text and blue evidence/location notes.",
+    "final_source_sha256": {
+      "manuscript.tex": "e1cc40a2bc37e27452e4e88561153f783fede4ea64370a345fdbeb14595c443b",
+      "Supplementary.tex": "6787bfadf9137551d34633397d097670b8672e700dcbfca213b55b54e44c890f",
+      "Response letter.tex": "6d32b316f75460cd25c62910fd9cdae4d727f9a3ff2cb118e9eaf8a469d23792",
+      "sn-bibliography.bib": "d2795d63417099234153bc4e582c68abe9c3586ce1b7951bf5087dcc56248b9d"
+    }
+  },
+  "Supplementary": {
+    "pages": 72,
+    "review_pages": [
+      69,
+      70,
+      71,
+      72
+    ],
+    "template_vbox_count": 0,
+    "pdf_sha256": "2d96381603efa1b710d1e4cb614fa411d0795101faf6fb0d724726206df0a733",
+    "visual_review": "PASS: every listed page actually rendered and visually inspected; legible tables/axes, no crop/overlap, correct red text and blue evidence/location notes.",
+    "final_source_sha256": {
+      "manuscript.tex": "e1cc40a2bc37e27452e4e88561153f783fede4ea64370a345fdbeb14595c443b",
+      "Supplementary.tex": "6787bfadf9137551d34633397d097670b8672e700dcbfca213b55b54e44c890f",
+      "Response letter.tex": "6d32b316f75460cd25c62910fd9cdae4d727f9a3ff2cb118e9eaf8a469d23792",
+      "sn-bibliography.bib": "d2795d63417099234153bc4e582c68abe9c3586ce1b7951bf5087dcc56248b9d"
+    }
+  },
+  "Response letter": {
+    "pages": 91,
+    "review_pages": [
+      73,
+      74,
+      75,
+      76
+    ],
+    "template_vbox_count": 0,
+    "pdf_sha256": "58bec7d8c58fac2d5be67408ec2f5ae97b40faefbeb3aaf2a8ca2b6032c01527",
+    "visual_review": "PASS: every listed page actually rendered and visually inspected; legible tables/axes, no crop/overlap, correct red text and blue evidence/location notes.",
+    "final_source_sha256": {
+      "manuscript.tex": "e1cc40a2bc37e27452e4e88561153f783fede4ea64370a345fdbeb14595c443b",
+      "Supplementary.tex": "6787bfadf9137551d34633397d097670b8672e700dcbfca213b55b54e44c890f",
+      "Response letter.tex": "6d32b316f75460cd25c62910fd9cdae4d727f9a3ff2cb118e9eaf8a469d23792",
+      "sn-bibliography.bib": "d2795d63417099234153bc4e582c68abe9c3586ce1b7951bf5087dcc56248b9d"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+ "batch": "R3-14 to R3-18",
+ "remote_main_before_push": "eae9d63a10600dff564373379ebe79d9e2c4a695",
+ "paper_head": "ae4cd53b795943878bcf135634f62432b7e2b922",
+ "paper_index_sha256_prefix": "1d0b3404f68e",
+ "paper_staged": [],
+ "patch_chain": "R3-13 archived after -> R3_14..R3_18 task patches (sources only) -> equals R3-19 before snapshot; each intermediate equals the next task before-snapshot (git apply)",
+ "cumulative_patch_rebuild": "BSD patch on R3-14 before gives R3-18 after byte-identically (4 files)",
+ "cumulative_patch_excludes_R3_19_and_R4_M1": true,
+ "excerpts": {
+  "base_R3_13_after_excerpts": 144,
+  "R3_18_end_excerpts": 154,
+  "added_by_batch_by_block": {
+   "R3 L469-471": 3,
+   "R3 Section 4.1": 1,
+   "R3 L745-751": 2,
+   "R3 L752-758": 2,
+   "R3 L822-824": 2
+  },
+  "R3_18_end_self_consistent_unmatched": [],
+  "current_total": 159,
+  "current_unmatched": [],
+  "batch_blocks_identical_in_current": {
+   "R3 L469-471": true,
+   "R3 Section 4.1": true,
+   "R3 L745-751": true,
+   "R3 L752-758": true,
+   "R3 L822-824": true
+  },
+  "later_unarchived": 5
+ },
+ "pdfs_current_workspace": {
+  "Supplementary": {
+   "pages": 79,
+   "pdf_sha256": "98fdb0b2dd6ac64afd7243761b42ed47edb462250e79e204de4e138259098a85"
+  },
+  "manuscript": {
+   "pages": 110,
+   "pdf_sha256": "369de2a58d00e3d0b57e7a25b01bfe9f88692e5255c8b2ae4aea317fcf71d65a"
+  },
+  "Response letter": {
+   "pages": 97,
+   "pdf_sha256": "299944ce107d7038395cac36d90b95eaf1305b84a2711fde704248e29a1d0a86"
+  }
+ },
+ "pdf_build": "0 undefined, 0 multiply defined, 0 overfull hbox for all three",
+ "supplementary_labels": {
+  "S61": "stab:r3season_full_distribution",
+  "S4": "sfig:r3season_full_cdf",
+  "S62": "stab:r3season_gsf_scores",
+  "S63": "stab:r3season_gsf_pairs",
+  "S64": "stab:r3season_nrmse",
+  "S65": "stab:r3season_clim_pairs",
+  "S66": "stab:r3sig_pairs",
+  "S67": "stab:r3sig_cost"
+ },
+ "figure_S4_sha256": "139a62f9c78928cee7454ef2c13043e26466cb7ffede32732b0fbe05e8e1da31",
+ "figure_S4_matches_R3_14_artifact_index": true,
+ "allowlisted_task_files": 86,
+ "excluded_task_files": 104,
+ "statuses_pending_remote_receipt": {
+  "R3-14": "CLOSED on receipt",
+  "R3-15": "CLOSED on receipt",
+  "R3-16": "CLOSED on receipt",
+  "R3-17": "CLOSED on receipt",
+  "R3-18": "CLOSED on receipt",
+  "R3-13": "OPEN",
+  "R3-19": "LOCAL SCIENTIFIC REVISION COMPLETE — Git archiving deferred",
+  "R4-M1": "LOCAL SCIENTIFIC REVISION COMPLETE — Git archiving deferred; stale R1 m3/m4 location labels unresolved"
+ }
+}

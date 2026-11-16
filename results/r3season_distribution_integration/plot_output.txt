@@ -1,0 +1,1 @@
+Figures/r3M14_season_cdf_full.pdf ['CROJSU+LMMathSymbols9-Regular', 'DGCYSG+LMMathItalic8-Regular', 'EKLNXK+LMRoman8-Regular', 'MDJGZL+LMRoman12-Regular', 'MHBBBK+LMRoman9-Regular', 'MUQMLA+LMRoman9-Bold', 'NZOVVG+LMMathItalic9-Regular', 'ONAHZY+LMMathSymbols6-Regular', 'QWXLJS+LMRoman6-Regular']

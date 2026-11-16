@@ -1,0 +1,155 @@
+--- a/manuscript.tex	2026-11-16 00:00:00.000000000 +0000
++++ b/manuscript.tex	2026-11-16 00:00:00.000000000 +0000
+@@ -816,6 +816,10 @@
+ For the $W=6$ five-seed reruns, all six models had positive RMSE skill scores relative to month-by-hour climatology in each of DJF, MAM, JJA and SON. A separate comparison of season-specific and year-round XGBoost training gave a mean paired seed-level RMSE difference of $+0.0029$~mm\,h$^{-1}$. Averaging predictions across the five seeds before scoring instead gave $+0.0020$~mm\,h$^{-1}$, with a 95\% bootstrap interval of $[-0.0012,+0.0056]$~mm\,h$^{-1}$; this interval applies only to the latter statistic. Season-specific training was tested only for XGBoost and cannot be generalized to the deep-learning models. Each season has only two to three seasonal realizations in the test period, so these seasonal conclusions are descriptive.
+ \par}
+ \textcolor{red}{\hypersetup{linkcolor=red}Supplementary Table~\ref{supp-stab:season_counts} reports the seasonal sample counts, Tables~\ref{supp-stab:season_djf_mam} and~\ref{supp-stab:season_jja_son} report seasonal RMSE and SS for the separate $W=6$ rerun set, and Tables~\ref{supp-stab:season_xgb_scores} and~\ref{supp-stab:season_xgb_paired} distinguish the two summaries of the season-specific XGBoost experiment.}
++
++\revminor{Full-period seasonal distributions use all 26,300 retained 00/06/12/18 UTC timestamps over 2004--2021, including zero precipitation, rather than only the 26,282 windowed prediction targets (Supplementary Fig.~\ref{supp-sfig:r3season_full_cdf} and Table~\ref{supp-stab:r3season_full_distribution}). The 18 additional timestamps are the first six in each chronological partition, excluded only when constructing model windows. DJF/MAM/JJA/SON have 6,500/6,624/6,624/6,552 samples, with descriptive seasonal Q95 values of 0.6197/0.4575/0.5877/0.6726~mm\,h$^{-1}$; these do not redefine the fixed training threshold. Values $\geq1.0$~mm\,h$^{-1}$ account for 2.49/1.24/2.14/2.98\%, respectively. The curves describe regional-mean preceding-hour precipitation, not six-hour totals or wet-only distributions; neither Q95 nor 1.0~mm\,h$^{-1}$ is adopted as a physical extreme-rainfall definition.}
++
++\revminor{The separate q03d sensitivity compares year-round XGBoost (G), four season-specific models (S), and a year-round model with month/hour sine--cosine inputs (F), using five matched seeds and unchanged hyperparameters without retuning (Supplementary Tables~\ref{supp-stab:r3season_gsf_scores} and~\ref{supp-stab:r3season_gsf_pairs}). Mean seed-level overall RMSE is 0.2439/0.2468/0.2443~mm\,h$^{-1}$ for G/S/F. S is worse overall in all five seeds, but its five-seed-mean-prediction difference is +0.0020 with a pointwise 95\% circular-block interval of $[-0.0012,+0.0056]$~mm\,h$^{-1}$. The corresponding F difference is +0.0004 $[-0.0011,+0.0018]$; its JJA improvement and SON deterioration have intervals excluding zero, without multiplicity adjustment. None of the seasonal S--G intervals excludes zero. Thus this fixed-configuration XGBoost experiment does not show consistent benefits from seasonal specialization; we retain year-round models with seasonal evaluation, rather than infer that season-specific modelling is ineffective.}
+ 
+ \subsubsection{Independent Observational Checks}
+ \label{sec:observational_checks}
+@@ -1285,6 +1289,8 @@
+ 
+ 
+ %----------------------------------------------------------
++\revminor{The q03d seasonal-training sensitivity did not retune each season or train season-specific deep models. Seasonal training uses roughly one quarter of the available training targets, and the experiment does not isolate the reason for its score changes. Five seeds describe training variability, whereas the paired circular-block intervals condition on their mean predictions; these are separate uncertainty summaries. Full-period seasonal distribution plots are descriptive and do not enter model fitting or threshold selection.}
++
+ \section{Conclusion}
+ \label{sec:conclusion}
+ {\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
+--- a/Supplementary.tex	2026-11-16 00:00:00.000000000 +0000
++++ b/Supplementary.tex	2026-11-16 00:00:00.000000000 +0000
+@@ -2336,7 +2336,97 @@
+ AR(1) & 0.2627 & 0.1409 & 0.0879 & 0.0418 & 0.3589 & 0.0083 \\
+ HRES six-hour mean & 0.2061 & 0.0839 & 0.4386 & 0.2483 & 0.6033 & 0.3526 \\
+ ERA5 window diagnostic & 0.1882 & 0.0743 & 0.5317 & 0.3134 & 0.6606 & 0.3824 \\
++\hline
++\end{tabular}
++\end{revisiontable}
++
++
++% R3-14: full-period seasonal distributions and existing q03d sensitivity.
++\clearpage
++\begin{revisiontable}
++\caption{Seasonal distribution of ERA5 25-cell regional-mean hourly precipitation over the complete sampled 2004--2021 archive: 26,300 timestamps, 00/06/12/18 UTC from 1 January 2004 00:00 to 31 December 2021 18:00. Seasons are DJF/MAM/JJA/SON by valid month; zero values are included. These descriptive full-period quantiles are not the fixed training-derived event threshold. $N_0$, $N_{\rm wet}$ and $N_{\geq1}$ count exact zeros, $y\geq0.1$ and $y\geq1.0$~mm\,h$^{-1}$, respectively. Q95 and maxima are in mm\,h$^{-1}$. The old prediction-file distribution omitted six initial timestamps in each partition (26,282 targets); this table restores all 18, without changing model evaluations.}
++\label{stab:r3season_full_distribution}
++\begin{tabular}{@{}lrrrrrr@{}}
++\hline
++Season & $N$ & $N_0$ & $N_{\rm wet}$ & $N_{\geq1}$ & Q95 & Max \\
++\hline
++DJF & 6500 & 829 & 1299 & 162 & 0.6197 & 3.4193 \\
++MAM & 6624 & 1681 & 1288 & 82 & 0.4575 & 2.8670 \\
++JJA & 6624 & 1237 & 1443 & 142 & 0.5877 & 3.9403 \\
++SON & 6552 & 964 & 1333 & 195 & 0.6726 & 4.1345 \\
++\hline
++\end{tabular}
++\end{revisiontable}
++
++\clearpage
++\begin{figure}[htbp]
++\centering
++\includegraphics{Figures/r3M14_season_cdf_full.pdf}
++\caption{\textcolor{red}{Seasonal empirical distributions of ERA5 regional-mean hourly precipitation for the complete 2004--2021 sampled archive (26,300 timestamps; DJF 6,500, MAM 6,624, JJA 6,624, SON 6,552). Panel (a) shows $P(Y\leq y)$ and panel (b) shows $P(Y\geq y)$ on a logarithmic vertical axis; both include zero precipitation and the full observed range. The two probabilities are defined separately at ties. These are unconditional distributions, not wet-only CDFs. Values are preceding-hour accumulations averaged equally over the same 25 grid cells, retained at 00/06/12/18 UTC; they are not six-hour totals or all 24 hourly values per day. Vertical dotted, dashed and dash-dotted lines mark 0.1, training Q95=0.574048 and 1.0~mm\,h$^{-1}$, respectively; the fixed Q95 is not recomputed by season. Each season has its own denominator. The full-period statistics are in Table~\ref{stab:r3season_full_distribution}.}}
++\label{sfig:r3season_full_cdf}
++\end{figure}
++\clearpage
++\begin{revisionlongtable}
++\begin{longtable}{@{}llrrrr@{}}
++\caption{Five-seed q03d seasonal-training sensitivity on common test targets. G is year-round XGBoost; S fits four separate models grouped by target season; F adds target-month and target-hour sine/cosine inputs to G (42 inputs for G/S, 46 for F). All use the same seven meteorological variables, six-snapshot window, chronological split and fixed hyperparameters (100 trees, learning rate 0.05, depth 6, row/column subsampling 0.8), without seasonal retuning. Seeds are 42, 123, 7, 2024, 99. Seasonal training targets are 4566/4784/4686/4368 in DJF/MAM/JJA/SON. Entries are mean$\pm$SD of five seed-level scores; RMSE/MAE are mm\,h$^{-1}$. SS is $1-\mathrm{RMSE}/\mathrm{RMSE}_{\mathrm{month\times hour}}$, using training-fitted climatology on the same subset. Wet is $y\geq0.1$ and upper tail is $y\geq$training Q95=0.5740~mm\,h$^{-1}$. This separate sensitivity experiment does not replace the main model comparison or the q13 seasonal reruns.}\label{stab:r3season_gsf_scores}\\
++\hline
++Subset & Strategy & $N$ & RMSE$\pm$SD & MAE$\pm$SD & SS$\pm$SD \\
++\hline
++\endfirsthead
++\hline
++Subset & Strategy & $N$ & RMSE$\pm$SD & MAE$\pm$SD & SS$\pm$SD \\
++\hline
++\endhead
++\hline
++\endfoot
++All & G & 3939 & 0.2439$\pm$0.0002 & 0.1191$\pm$0.0005 & 0.1067$\pm$0.0009 \\
++All & S & 3939 & 0.2468$\pm$0.0010 & 0.1205$\pm$0.0006 & 0.0962$\pm$0.0035 \\
++All & F & 3939 & 0.2443$\pm$0.0005 & 0.1190$\pm$0.0003 & 0.1052$\pm$0.0019 \\
++DJF & G & 848 & 0.2819$\pm$0.0020 & 0.1556$\pm$0.0017 & 0.0966$\pm$0.0064 \\
++DJF & S & 848 & 0.2811$\pm$0.0011 & 0.1486$\pm$0.0012 & 0.0994$\pm$0.0037 \\
++DJF & F & 848 & 0.2806$\pm$0.0014 & 0.1540$\pm$0.0012 & 0.1009$\pm$0.0046 \\
++MAM & G & 895 & 0.1731$\pm$0.0011 & 0.0745$\pm$0.0008 & 0.1224$\pm$0.0055 \\
++MAM & S & 895 & 0.1707$\pm$0.0013 & 0.0728$\pm$0.0005 & 0.1348$\pm$0.0066 \\
++MAM & F & 895 & 0.1724$\pm$0.0011 & 0.0732$\pm$0.0009 & 0.1264$\pm$0.0058 \\
++JJA & G & 1104 & 0.2467$\pm$0.0015 & 0.1192$\pm$0.0011 & 0.1249$\pm$0.0052 \\
++JJA & S & 1104 & 0.2497$\pm$0.0015 & 0.1247$\pm$0.0012 & 0.1142$\pm$0.0053 \\
++JJA & F & 1104 & 0.2443$\pm$0.0010 & 0.1182$\pm$0.0007 & 0.1334$\pm$0.0036 \\
++SON & G & 1092 & 0.2585$\pm$0.0012 & 0.1271$\pm$0.0009 & 0.0924$\pm$0.0044 \\
++SON & S & 1092 & 0.2673$\pm$0.0021 & 0.1335$\pm$0.0014 & 0.0613$\pm$0.0072 \\
++SON & F & 1092 & 0.2637$\pm$0.0018 & 0.1301$\pm$0.0012 & 0.0741$\pm$0.0064 \\
++Wet $\geq0.1$ & G & 854 & 0.4735$\pm$0.0011 & 0.3118$\pm$0.0010 & 0.1491$\pm$0.0019 \\
++Wet $\geq0.1$ & S & 854 & 0.4784$\pm$0.0023 & 0.3169$\pm$0.0011 & 0.1403$\pm$0.0041 \\
++Wet $\geq0.1$ & F & 854 & 0.4746$\pm$0.0016 & 0.3126$\pm$0.0006 & 0.1470$\pm$0.0030 \\
++Upper tail & G & 238 & 0.8428$\pm$0.0020 & 0.7294$\pm$0.0020 & 0.1580$\pm$0.0020 \\
++Upper tail & S & 238 & 0.8476$\pm$0.0041 & 0.7351$\pm$0.0035 & 0.1533$\pm$0.0041 \\
++Upper tail & F & 238 & 0.8432$\pm$0.0029 & 0.7295$\pm$0.0034 & 0.1576$\pm$0.0029 \\
++\end{longtable}
++\end{revisionlongtable}
++\clearpage
++\begin{revisiontable}
++\caption{Paired q03d differences relative to G, in mm\,h$^{-1}$; positive means worse. Seed mean$\pm$SD summarizes five paired seed-level RMSE differences, and $n_+/5$ counts increases. Prediction mean first averages predictions across seeds, then computes the RMSE difference; only this latter statistic has the displayed pointwise 95\% percentile interval. The two statistics must not be interchanged. Bootstrap uses shared circular blocks on the full 3,939-target timeline, block 28 (seven days), 2,000 replicates, seed 42; 141 complete blocks give 3,948 sampled positions, truncated to 3,939 before applying seasonal/wet/upper-tail masks. Intervals condition on the five fitted models, exclude training randomness, and are not multiplicity-adjusted; seed SD is separate, not a total uncertainty interval. Subset counts are in Table~\ref{stab:r3season_gsf_scores}. Tables~\ref{stab:season_xgb_scores} and~\ref{stab:season_xgb_paired} retain the earlier G/S summaries unchanged. Calendar augmentation has opposite JJA/SON effects; seasonal specialization has no consistently supported gain here. No season-specific deep-model training or retuning was performed.}
++\label{stab:r3season_gsf_pairs}
++\begin{tabular}{@{}lrrrr@{}}
+ \hline
++Subset & Seed mean$\pm$SD & $n_+/5$ & Prediction mean & 95\% block CI \\
++\hline
++\multicolumn{5}{@{}l}{\textbf{S$-$G}} \\
++All & +0.0029$\pm$0.0008 & 5/5 & +0.0020 & [-0.0012, +0.0056] \\
++DJF & -0.0009$\pm$0.0024 & 3/5 & -0.0013 & [-0.0103, +0.0074] \\
++MAM & -0.0024$\pm$0.0013 & 0/5 & -0.0025 & [-0.0074, +0.0030] \\
++JJA & +0.0030$\pm$0.0016 & 5/5 & +0.0023 & [-0.0011, +0.0059] \\
++SON & +0.0088$\pm$0.0029 & 5/5 & +0.0071 & [-0.0005, +0.0148] \\
++Wet $\geq0.1$ & +0.0049$\pm$0.0029 & 5/5 & +0.0037 & [-0.0032, +0.0111] \\
++Upper tail & +0.0047$\pm$0.0056 & 4/5 & +0.0041 & [-0.0093, +0.0184] \\
++\multicolumn{5}{@{}l}{\textbf{F$-$G}} \\
++All & +0.0004$\pm$0.0007 & 3/5 & +0.0004 & [-0.0011, +0.0018] \\
++DJF & -0.0013$\pm$0.0019 & 1/5 & -0.0013 & [-0.0038, +0.0013] \\
++MAM & -0.0008$\pm$0.0003 & 0/5 & -0.0007 & [-0.0030, +0.0013] \\
++JJA & -0.0024$\pm$0.0024 & 1/5 & -0.0025 & [-0.0050, -0.0004] \\
++SON & +0.0052$\pm$0.0011 & 5/5 & +0.0050 & [+0.0022, +0.0079] \\
++Wet $\geq0.1$ & +0.0012$\pm$0.0017 & 4/5 & +0.0010 & [-0.0015, +0.0033] \\
++Upper tail & +0.0004$\pm$0.0030 & 1/5 & +0.0004 & [-0.0048, +0.0051] \\
++\hline
+ \end{tabular}
+ \end{revisiontable}
+ 
+--- a/Response letter.tex	2026-11-16 00:00:00.000000000 +0000
++++ b/Response letter.tex	2026-11-16 00:00:00.000000000 +0000
+@@ -1350,10 +1350,28 @@
+ 
+ \ReviewerComment{L469-471: This does not appear like an extreme precipitation. This is the reason why the modeling and analyses need to be carried out by separating seasons. According to some definitions, < 1 mm of rainfall is not even considered as rain. Could you plot the PDFs or CDFs of total precipitation across 4 seasons from your dataset (entire dataset from 2004-2021)?}
+ 
+-\PendingResponse
++\AuthorResponse{We agree that Q95=0.5740~mm\,h$^{-1}$ is a relative upper-tail threshold for regional-mean hourly ERA5 precipitation, not a meteorological extreme definition. It is the untransformed 95th percentile of 18,404 training targets. The existing Methods discussion distinguishes it from WMO's intensity classification and its different temporal/spatial support. We use wet $\geq0.1$~mm\,h$^{-1}$, with $>0$ retained only as a labelled legacy diagnostic; rainfall below 1~mm\,h$^{-1}$ is not treated as universally dry.
+ 
+-\ChangeLocation
++Supplementary Fig.~\ref{supp-sfig:r3season_full_cdf} now shows unconditional four-season CDFs and upper-tail exceedance curves for all 26,300 retained 00/06/12/18 UTC timestamps in 2004--2021, including zeros. The earlier figure used 26,282 windowed targets, omitting six initial timestamps per partition; we corrected that scope while preserving the old figure. The seasonal Q95 values are 0.6197/0.4575/0.5877/0.6726~mm\,h$^{-1}$ in DJF/MAM/JJA/SON (Table~\ref{supp-stab:r3season_full_distribution}); these full-period descriptions do not change the training event threshold.
++
++We also report the existing five-seed XGBoost comparison of year-round (G), four seasonal (S) and year-round calendar-augmented (F) models, with identical meteorological inputs, splits and hyperparameters and no retuning (Tables~\ref{supp-stab:r3season_gsf_scores} and~\ref{supp-stab:r3season_gsf_pairs}). Overall mean seed-level RMSE is 0.2439/0.2468/0.2443~mm\,h$^{-1}$. The S--G mean seed-level difference is +0.0029 (5/5 worse), but its block interval belongs to the distinct five-seed-mean-prediction difference +0.0020 $[-0.0012,+0.0056]$. F--G is +0.0004 $[-0.0011,+0.0018]$ on the latter scale. Seasonal S--G intervals all include zero; calendar augmentation improves JJA and worsens SON with pointwise intervals excluding zero. These unadjusted, conditional intervals do not combine training and sampling uncertainty.
++
++We therefore retain year-round models and evaluate them by season, without claiming that seasonal modelling is generally ineffective. The experiment tests only fixed-configuration XGBoost, with smaller seasonal training sets, not season-specific deep models or retuning. Existing seasonal variable-ablation and climatology results remain separate.}
++
++\ManuscriptChange{Section~\ref{manuscript-sec:seasonal_baseline_check}: full-period distributions and G/S/F sensitivity; Section~\ref{manuscript-sec:limitations}: scope and uncertainty limits. Supplementary Fig.~\ref{supp-sfig:r3season_full_cdf} and Tables~\ref{supp-stab:r3season_full_distribution}--\ref{supp-stab:r3season_gsf_pairs}. Final page/line numbers pending full assembly.}
++
++
++\EvidenceBox{Full-period seasonal precipitation distributions}{
++\RevisedExcerpt{Full-period seasonal distributions use all 26,300 retained 00/06/12/18 UTC timestamps over 2004--2021, including zero precipitation, rather than only the 26,282 windowed prediction targets (Supplementary Fig.~\ref{supp-sfig:r3season_full_cdf} and Table~\ref{supp-stab:r3season_full_distribution}). The 18 additional timestamps are the first six in each chronological partition, excluded only when constructing model windows. DJF/MAM/JJA/SON have 6,500/6,624/6,624/6,552 samples, with descriptive seasonal Q95 values of 0.6197/0.4575/0.5877/0.6726~mm\,h$^{-1}$; these do not redefine the fixed training threshold. Values $\geq1.0$~mm\,h$^{-1}$ account for 2.49/1.24/2.14/2.98\%, respectively. The curves describe regional-mean preceding-hour precipitation, not six-hour totals or wet-only distributions; neither Q95 nor 1.0~mm\,h$^{-1}$ is adopted as a physical extreme-rainfall definition.}
++}
++
++\EvidenceBox{Seasonal-training sensitivity}{
++\RevisedExcerpt{The separate q03d sensitivity compares year-round XGBoost (G), four season-specific models (S), and a year-round model with month/hour sine--cosine inputs (F), using five matched seeds and unchanged hyperparameters without retuning (Supplementary Tables~\ref{supp-stab:r3season_gsf_scores} and~\ref{supp-stab:r3season_gsf_pairs}). Mean seed-level overall RMSE is 0.2439/0.2468/0.2443~mm\,h$^{-1}$ for G/S/F. S is worse overall in all five seeds, but its five-seed-mean-prediction difference is +0.0020 with a pointwise 95\% circular-block interval of $[-0.0012,+0.0056]$~mm\,h$^{-1}$. The corresponding F difference is +0.0004 $[-0.0011,+0.0018]$; its JJA improvement and SON deterioration have intervals excluding zero, without multiplicity adjustment. None of the seasonal S--G intervals excludes zero. Thus this fixed-configuration XGBoost experiment does not show consistent benefits from seasonal specialization; we retain year-round models with seasonal evaluation, rather than infer that season-specific modelling is ineffective.}
++}
+ 
++\EvidenceBox{Scope and uncertainty limits}{
++\RevisedExcerpt{The q03d seasonal-training sensitivity did not retune each season or train season-specific deep models. Seasonal training uses roughly one quarter of the available training targets, and the experiment does not isolate the reason for its score changes. Five seeds describe training variability, whereas the paired circular-block intervals condition on their mean predictions; these are separate uncertainty summaries. Full-period seasonal distribution plots are descriptive and do not enter model fitting or threshold selection.}
++}
+ % Review ID: R3 Section 4.1
+ \Needspace{5\baselineskip}
+ \subsection*{Comment: Section~4.1}

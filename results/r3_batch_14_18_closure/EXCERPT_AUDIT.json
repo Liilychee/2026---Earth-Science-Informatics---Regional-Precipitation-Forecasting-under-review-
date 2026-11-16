@@ -1,0 +1,22 @@
+{
+ "base_R3_13_after_excerpts": 144,
+ "R3_18_end_excerpts": 154,
+ "added_by_batch_by_block": {
+  "R3 L469-471": 3,
+  "R3 Section 4.1": 1,
+  "R3 L745-751": 2,
+  "R3 L752-758": 2,
+  "R3 L822-824": 2
+ },
+ "R3_18_end_self_consistent_unmatched": [],
+ "current_total": 159,
+ "current_unmatched": [],
+ "batch_blocks_identical_in_current": {
+  "R3 L469-471": true,
+  "R3 Section 4.1": true,
+  "R3 L745-751": true,
+  "R3 L752-758": true,
+  "R3 L822-824": true
+ },
+ "later_unarchived": 5
+}

@@ -1,0 +1,19 @@
+{
+ "total": 154,
+ "unmatched": [],
+ "RL_outside_block_unchanged": true,
+ "manuscript_only_planned_changes": true,
+ "orig_paragraph_not_previously_excerpted": true,
+ "supp_pure_append": true,
+ "bib_unchanged": true,
+ "S66_rows": 50,
+ "S66_mismatch": 0,
+ "old_excerpts": 152,
+ "old152_verbatim_in_order": true,
+ "final_old152_verbatim_in_order": true,
+ "final_total": 154,
+ "final_unmatched": [],
+ "final_RL_outside_block_unchanged": true,
+ "final_manuscript_only_planned": true,
+ "pre_specification_record": "only the q18_stats.py docstring; script and outputs committed together 2026-11-13 (d8f8a9b); wording changed to \"16 all-target RMSE comparisons\""
+}

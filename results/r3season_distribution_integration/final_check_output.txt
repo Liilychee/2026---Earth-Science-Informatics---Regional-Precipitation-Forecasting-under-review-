@@ -1,0 +1,68 @@
+{
+  "previous_excerpts_preserved": 144,
+  "new_exact_excerpts": 3,
+  "total_matched": 147,
+  "all_other_review_blocks_byte_identical": true,
+  "old_main_paragraphs_tables_figures_identical": true,
+  "old_S1_S60_and_Figures_source_prefix_unchanged": true,
+  "bibliography_unchanged": true,
+  "protected_figures": 17,
+  "csv_fields": 255,
+  "new_table_data_rows": 39,
+  "all_14_saved_bootstrap_intervals_reproduced": true,
+  "no_staging_commit_push": true,
+  "labels": {
+    "stab:r3season_full_distribution": {
+      "number": "S61",
+      "page": "69"
+    },
+    "sfig:r3season_full_cdf": {
+      "number": "S4",
+      "page": "70"
+    },
+    "stab:r3season_gsf_scores": {
+      "number": "S62",
+      "page": "71"
+    },
+    "stab:r3season_gsf_pairs": {
+      "number": "S63",
+      "page": "72"
+    }
+  }
+}
+{
+  "manuscript": {
+    "pages": 104,
+    "review_pages": [
+      56,
+      93
+    ],
+    "template_vbox_count": 103,
+    "pdf_sha256": "00c51dc66ad0df92fef46c0ca24ef86ab32a1949512f2b55271c921162e2f543",
+    "visual_review": "PENDING actual inspection"
+  },
+  "Supplementary": {
+    "pages": 72,
+    "review_pages": [
+      69,
+      70,
+      71,
+      72
+    ],
+    "template_vbox_count": 0,
+    "pdf_sha256": "2d96381603efa1b710d1e4cb614fa411d0795101faf6fb0d724726206df0a733",
+    "visual_review": "PENDING actual inspection"
+  },
+  "Response letter": {
+    "pages": 91,
+    "review_pages": [
+      73,
+      74,
+      75,
+      76
+    ],
+    "template_vbox_count": 0,
+    "pdf_sha256": "58bec7d8c58fac2d5be67408ec2f5ae97b40faefbeb3aaf2a8ca2b6032c01527",
+    "visual_review": "PENDING actual inspection"
+  }
+}

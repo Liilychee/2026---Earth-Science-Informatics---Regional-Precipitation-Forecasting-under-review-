@@ -1,0 +1,182 @@
+[
+  {
+    "path": "results/q14/preds/xgboost__w6__tree__s42.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "40c13188261543f7b602f1ef8a8e0e63",
+    "sha256": "83e39df6b6cc9e8a08963e98a3075051a3a177a4534f893d1350659ed326a73d"
+  },
+  {
+    "path": "results/q14/preds/xgboost__w6__tree__s123.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "a3cfab6608ecbf81b017207205fc5cc0",
+    "sha256": "749ebf6522f6b82904978d232c9b744121fec9a360ec6994698cda61a6c8f74a"
+  },
+  {
+    "path": "results/q14/preds/xgboost__w6__tree__s7.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "4f3defa92acb0720cde9c4673da4f5db",
+    "sha256": "d33cd0a121bdfc23a4fd67c082a577fefeda1f87d485fbf99e1e1f28fc561e34"
+  },
+  {
+    "path": "results/q14/preds/xgboost__w6__tree__s2024.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "ff2dc80c4ff65405b52c99f74ba3f919",
+    "sha256": "6deaa1d71abb646889771dea618d59d57aee56b81da9f97fc2f42a187876dfab"
+  },
+  {
+    "path": "results/q14/preds/xgboost__w6__tree__s99.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "b0b7faec1944faae5c6f308ef80a6f1f",
+    "sha256": "46053063655acc437ee73bc9a999c8dc8c0518c5f19e84115a4ad64a1419c24b"
+  },
+  {
+    "path": "results/q14/preds/bulstm__w6__nll__s42.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "b3d10494eb41d3a2fcf8f02b2a7adc56",
+    "sha256": "bccb1d7b5d9ed2d32bc1a66084836854f8de013e9aaf11acbf09280da621f1ad"
+  },
+  {
+    "path": "results/q14/preds/bulstm__w6__nll__s123.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "aa0dd29e78bbce69b0682c993cccd686",
+    "sha256": "223e22c2d1fb9c10fe3cb92c118039aeaa3b6f7e3d4507de3d7257a25623375a"
+  },
+  {
+    "path": "results/q14/preds/bulstm__w6__nll__s7.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "03e219f9b91b0607a74d01e731722816",
+    "sha256": "a6c8cdde7981933c56314192fb95522cec4681c2339b2cc683a494c5f3de500a"
+  },
+  {
+    "path": "results/q14/preds/bulstm__w6__nll__s2024.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "38417dd438667bd44fcb9244c42a9b91",
+    "sha256": "16bfd4727a7019cc38f398dec7941b430e6058445962409472a80b7591f97b40"
+  },
+  {
+    "path": "results/q14/preds/bulstm__w6__nll__s99.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "26b8fe996509829165f9f9c3603b72b5",
+    "sha256": "51cd59fa217b9e25fb6a85e221ae7d34e0435b187dd452e74ae583d3702bcc3f"
+  },
+  {
+    "path": "results/q14/preds/bilstm_attn__w6__mse__s42.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "2c87c5a283004c8bb33a9bcf310384d0",
+    "sha256": "51e5e15ea5d2b97611e6834345e8f804ee38a6c9a3b35077ac6b93054c3df0f4"
+  },
+  {
+    "path": "results/q14/preds/bilstm_attn__w6__mse__s123.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "e3e6cee4f8fdb8126efca16ff078d50b",
+    "sha256": "e36d7a1de1574bba86951f8cc7e098777b2d26d25cff8938f9fa4e623f652c51"
+  },
+  {
+    "path": "results/q14/preds/bilstm_attn__w6__mse__s7.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "0370774090dd198872e214b974469388",
+    "sha256": "0c1f46982ce179b2660f3e6533d1907489d4a742faedaaed3ef4a8f75dde4095"
+  },
+  {
+    "path": "results/q14/preds/bilstm_attn__w6__mse__s2024.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "5f8fbed8d556eac50d86e9dff3f9f125",
+    "sha256": "caf2fdea76b14cdd040a118a7fb19f047b75c7f9ede51f1eae23452fc6f1eec4"
+  },
+  {
+    "path": "results/q14/preds/bilstm_attn__w6__mse__s99.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "58ed6a38c8c29dbfdf201779e3673f36",
+    "sha256": "5011115cd49713ec6516a03a74836ae35609260f75512ee5599a3e055cd962f1"
+  },
+  {
+    "path": "results/q14/preds/transformer__w6__mse__s42.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "73f949c0559ba0ee48e4ffa7198886e3",
+    "sha256": "ed5130760f7b8b721927115f4d163401c5f70ee34c36791276fc092f982238b1"
+  },
+  {
+    "path": "results/q14/preds/transformer__w6__mse__s123.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "e33ca5b8e0a58d882c6709967deb001b",
+    "sha256": "bbce595351080b8d4ae114146d17e2afec7bea97a37438b182749b464415bbb2"
+  },
+  {
+    "path": "results/q14/preds/transformer__w6__mse__s7.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "f3fdc7e5b420fc96ba23d8695ded03ef",
+    "sha256": "17422d1e0dc0bb3cb63ef2cf6f83e6851623ffccc4cfff061c1bb5c0bcbba134"
+  },
+  {
+    "path": "results/q14/preds/transformer__w6__mse__s2024.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "237a44635df39e13f9f9dc4c045618aa",
+    "sha256": "80d2a36fe5f8d245b848a681d91996a4c5d97826cef75f3f1a04a7279206dd24"
+  },
+  {
+    "path": "results/q14/preds/transformer__w6__mse__s99.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "bf385ab217bf84dc84875ffa751dd191",
+    "sha256": "a6e4430a2f6a58a2d7005a1f1c6657170879d7ee59bacd106b048adb13410c93"
+  },
+  {
+    "path": "results/q14/preds/bulstm_attn__w6__nll__s42.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "f21b600e5f2b53c7962e63f405a1920e",
+    "sha256": "37f5e6444c73e086c9bc8a2342ae4d763b9257460b40bd24c7b7d339bebc73d4"
+  },
+  {
+    "path": "results/q14/preds/bulstm_attn__w6__nll__s123.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "0a009912c945ab961a1cee5f87acc9e7",
+    "sha256": "ca5d1549dcd4ad2585d8e3466a32455dc761765f88f6c6090652c37b1f4bbb1e"
+  },
+  {
+    "path": "results/q14/preds/bulstm_attn__w6__nll__s7.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "25d073bab1f02a584994aed7aed00f80",
+    "sha256": "e66751536fd096ceacfb91da5b27f632a932c9ae2b4ca3fb8c366703dd47070e"
+  },
+  {
+    "path": "results/q14/preds/bulstm_attn__w6__nll__s2024.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "9137aab22fc7baeb52884dc365c55e1a",
+    "sha256": "59eb4d2fbda96c1d3f906b6e28881a96d7f6455e49c404a578e9822d0d009afd"
+  },
+  {
+    "path": "results/q14/preds/bulstm_attn__w6__nll__s99.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "b88619926d427953815a9208acf35886",
+    "sha256": "13813451e2129813109d99e41c5357690e4f47089573fffbe1ac9f9e69ba4e31"
+  },
+  {
+    "path": "results/q14/preds/prob_bilstm_attn__w6__nll__s42.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "f40478cfcbb54fb408a0ece7641a43c9",
+    "sha256": "c658559625e4aef1899fbf07d560874be701af526d1e3c00445eb7d6238160bf"
+  },
+  {
+    "path": "results/q14/preds/prob_bilstm_attn__w6__nll__s123.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "d3b33428b70dcfcb346c8f9d1724d74b",
+    "sha256": "5573bbf13a71ed91070db25b69a6ac1b3d44b2f149d4651e187f7ed377d888e6"
+  },
+  {
+    "path": "results/q14/preds/prob_bilstm_attn__w6__nll__s7.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "dec6075263f84668e6203693c2992c12",
+    "sha256": "81262e4fe9267b596a47d7a83204b1eb12bb37e49cc07d156f0e2c641c06f091"
+  },
+  {
+    "path": "results/q14/preds/prob_bilstm_attn__w6__nll__s2024.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "9f4db27967af344ef15816657ec76bc7",
+    "sha256": "227a63767dc5ef7545901c400cfe5da41ae1dfc35e873d4dae86d314d2a367a5"
+  },
+  {
+    "path": "results/q14/preds/prob_bilstm_attn__w6__nll__s99.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "md5": "54f866445ad15dfaf1526648b7ae7332",
+    "sha256": "a9c77e94fb40db2bddbd863f3791321f7c0ef9124a2794888a411810ffd7fc22"
+  }
+]

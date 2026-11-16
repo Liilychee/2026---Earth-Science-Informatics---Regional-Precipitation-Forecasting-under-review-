@@ -1,0 +1,24 @@
+{
+ "Response letter": {
+  "pages": 93,
+  "pdf_sha256": "fd304f072f4ba7483c4beda6f0acb430367616e8522c9b292cc5470a61642fc6",
+  "hits": {
+   "Comment: Lines 752": [
+    77
+   ],
+   "Window specification and comparison design": [
+    78
+   ]
+  }
+ },
+ "manuscript": {
+  "pages": 107,
+  "pdf_sha256": "d798d5a2c6bb0da7533bfd606df3b66f082a056a6ccb6e4e1b433ee92559c5ac",
+  "hits": {}
+ },
+ "Supplementary": {
+  "pages": 75,
+  "pdf_sha256": "fbb2bcd574d3dc909aca8356ef2f61dbe0f08e807005344d07568a6ed43092ce",
+  "hits": {}
+ }
+}

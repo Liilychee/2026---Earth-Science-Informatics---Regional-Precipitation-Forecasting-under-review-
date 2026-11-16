@@ -1,0 +1,41 @@
+{
+ "old_excerpts": 147,
+ "old_verbatim_in_order": true,
+ "total": 148,
+ "unmatched": [],
+ "RL_outside_41_unchanged": true,
+ "manuscript_pure_insertion": true,
+ "supp_pure_append": true,
+ "bib_unchanged": true,
+ "numbers": {
+  "stab:season_djf_mam": "S8",
+  "stab:r3season_full_distribution": "S61",
+  "stab:r3season_gsf_pairs": "S63",
+  "stab:r3season_nrmse": "S64",
+  "stab:r3season_clim_pairs": "S65",
+  "sfig:r3d_upstream_effects": "S3",
+  "sfig:r3season_full_cdf": "S4"
+ },
+ "paragraph_values_from_csv": {
+  "DJF": [
+   "2.65-2.83",
+   "2.97",
+   "1.93-2.07"
+  ],
+  "MAM": [
+   "2.03-2.14",
+   "2.31",
+   "2.53-2.67"
+  ],
+  "JJA": [
+   "2.19-2.40",
+   "2.51",
+   "2.01-2.19"
+  ],
+  "SON": [
+   "2.07-2.22",
+   "2.32",
+   "2.07-2.22"
+  ]
+ }
+}

@@ -1,0 +1,93 @@
+[
+  {
+    "path": "code/analysis_revision_metrics.py",
+    "commit": "8982e8e3e9477e148dbe45b6cb79062b544ea70c",
+    "local": "results/r3season_distribution_integration/evidence/analysis_revision_metrics.py",
+    "md5": "c81942e445db7253e84c2516d24b6f80",
+    "sha256": "99b14197e8feb03de41d694e77d1e0137271629328e248b5a33d299f115168c2"
+  },
+  {
+    "path": "code/plot_q03_season_cdf.py",
+    "commit": "8982e8e3e9477e148dbe45b6cb79062b544ea70c",
+    "local": "results/r3season_distribution_integration/evidence/plot_q03_season_cdf.py",
+    "md5": "416016bf82f6643bfe4a69903f0a5070",
+    "sha256": "3d51c2b66dede2a528322b273467b308af829ea6b7beb9bf97a9911e2dd3f40c"
+  },
+  {
+    "path": "code/analysis_q03d_seasonal_xgb.py",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "local": "results/r3season_distribution_integration/evidence/analysis_q03d_seasonal_xgb.py",
+    "md5": "59ce6d56a58db4282ead4681c34b3287",
+    "sha256": "e54a523c3a2f45d61608b6c3766b7ed6dae9625413162bfb40e92f83434c7048"
+  },
+  {
+    "path": "results/metrics/revision_season_precip_dist.csv",
+    "commit": "8982e8e3e9477e148dbe45b6cb79062b544ea70c",
+    "local": "results/r3season_distribution_integration/evidence/revision_season_precip_dist.csv",
+    "md5": "677ee615495bfd470c774d2b86470024",
+    "sha256": "f86867ffb3288f2555c7b711b38a2700eec3fd92b45e6dc4661d6aee448427d3"
+  },
+  {
+    "path": "results/metrics/q03_season_cdf_data.csv",
+    "commit": "8982e8e3e9477e148dbe45b6cb79062b544ea70c",
+    "local": "results/r3season_distribution_integration/evidence/q03_season_cdf_data.csv",
+    "md5": "3100ee0d8150cd682b94ab8f13b73535",
+    "sha256": "ac6b46e9f8ae812679580d33828a88e4c4653ee145824de88710671c5c8d6f88"
+  },
+  {
+    "path": "results/figures/fig_season_cdf.pdf",
+    "commit": "8982e8e3e9477e148dbe45b6cb79062b544ea70c",
+    "local": "results/r3season_distribution_integration/evidence/fig_season_cdf.pdf",
+    "md5": "b5d05b0d8d6e2a2c1b668b33eccf21d7",
+    "sha256": "8dc39beab285b5a099118a0743e0baaec1f7cf5110032ad22c27f14d8c977d3a"
+  },
+  {
+    "path": "results/metrics/q03d_seasonal_xgb_output.txt",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "local": "results/r3season_distribution_integration/evidence/q03d_seasonal_xgb_output.txt",
+    "md5": "65f308dfd7ea2d8d737cd72018a19adf",
+    "sha256": "6cd2461832e7d1c524793dc70048feb3cc1a9826479f309b1f3295b95b4be021"
+  },
+  {
+    "path": "results/ablation/q03d_seasonal_xgb_raw.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "local": "results/r3season_distribution_integration/evidence/q03d_seasonal_xgb_raw.csv",
+    "md5": "62a294a4d512da13ac4a54cfb9cf36ba",
+    "sha256": "1cd6e199ad3508c9511902a50a7dc507fef67aef395616f9d28416ab7f17f221"
+  },
+  {
+    "path": "results/ablation/q03d_seasonal_xgb_summary.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "local": "results/r3season_distribution_integration/evidence/q03d_seasonal_xgb_summary.csv",
+    "md5": "57f5fb31b6e301bd87693103edaa1ca2",
+    "sha256": "b5c9f5c2bf8125db5aca28c727f9a349a7074e546b711507d5fbf77c4e97e3e5"
+  },
+  {
+    "path": "results/ablation/q03d_seasonal_xgb_paired.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "local": "results/r3season_distribution_integration/evidence/q03d_seasonal_xgb_paired.csv",
+    "md5": "34f42e03229dbd5e0233eb00aeedcfa6",
+    "sha256": "467786ae4ce64b424325a41ee54c6902aeee8695a3a66927d65375ac429d75ee"
+  },
+  {
+    "path": "results/ablation/q03d_seasonal_xgb_test_preds.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "local": "results/r3season_distribution_integration/evidence/q03d_seasonal_xgb_test_preds.csv",
+    "md5": "dfd9d226b99c0ce372f3549a84733a33",
+    "sha256": "d8fd09368d1e9939c0378d845a6b4d204ab3901085ba7a92c3d90d8cf594a8f7"
+  },
+  {
+    "path": "results/xgboost_preds.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "local": "results/r3season_distribution_integration/evidence/xgboost_preds.csv",
+    "md5": "8af1fbe1bde1124f4eb8bd2e9778b9d7",
+    "sha256": "3ed75bf4eb8a49ae9161a21c3b76c8095aca6230bd6870f97246ad97b5708870"
+  },
+  {
+    "path": "results/metrics/q04_pairs.csv",
+    "commit": "8982e8e3e9477e148dbe45b6cb79062b544ea70c",
+    "local": "results/r3season_distribution_integration/evidence/q04_pairs.csv",
+    "md5": "c3e7e80d6147bf889bb2d2d50942a9df",
+    "sha256": "b5267167f243541aeb91b426386dafb010f974d528062e625c022dcc8efcf634"
+  }
+]

@@ -1,0 +1,3 @@
+# Git archive report — R3-14 to R3-18
+
+Fetched origin/main eae9d63a10600dff564373379ebe79d9e2c4a695 (R3-19 q22c evidence; preserved). One independent worktree based on that commit; explicit allowlist only; no `git add .`; no pull/reset/clean/force-push in any repository. Paper workspace (HEAD ae4cd53) never staged. Full manuscript/Supplementary/response-letter sources, PDFs (except the Figure S4 scientific figure), before-snapshots, page renders, TeX fragments, per-task local patches and git-state logs are excluded. Commit message: "revision: archive R3-14 to R3-18 verified evidence". Remote SHA, file count and per-file hash readback are recorded in the local FINAL_REMOTE_RECEIPT.json.

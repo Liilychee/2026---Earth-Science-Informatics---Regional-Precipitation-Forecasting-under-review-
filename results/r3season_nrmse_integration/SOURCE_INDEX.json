@@ -1,0 +1,51 @@
+[
+  {
+    "path": "code/q13_seasonal.py",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "local": "results/r3season_nrmse_integration/evidence/q13_seasonal.py",
+    "md5": "090a620122160b89f2747ada7e9a2cd9",
+    "sha256": "38a59c1a5ca94e24a0cd7c92558f1c7c0eca0dd5121df41090d75e180c75267e"
+  },
+  {
+    "path": "code/q06_common.py",
+    "commit": "395234ebcce2269a71bfcfc6bff5bcdf14ce0086",
+    "local": "results/r3season_nrmse_integration/evidence/q06_common.py",
+    "md5": "fd11bd85160fe9118bc945a40feffa28",
+    "sha256": "bf9713d8f83f715a81bcd02726c73d344ace1e95fcd7e5552635f0108b22dbe2"
+  },
+  {
+    "path": "code/q06_build_regional.py",
+    "commit": "395234ebcce2269a71bfcfc6bff5bcdf14ce0086",
+    "local": "results/r3season_nrmse_integration/evidence/q06_build_regional.py",
+    "md5": "3ce60b607b35925c7fe8670ab545973a",
+    "sha256": "22e9818a2bffe1e6f1c9623b029f1ac8cfb706930febc885550897598f1627fa"
+  },
+  {
+    "path": "results/metrics/q13_output.txt",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "local": "results/r3season_nrmse_integration/evidence/q13_output.txt",
+    "md5": "8a26df66670c5a6f56d1edf5912ee1f2",
+    "sha256": "d3e747e2e77990b42cef55c73d9ffe39f68d857c74fb45abc5c8d7858c6920d7"
+  },
+  {
+    "path": "results/metrics/q13_season_counts.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "local": "results/r3season_nrmse_integration/evidence/q13_season_counts.csv",
+    "md5": "2fe3cce5710601e4c9ad5b2b1c2b2475",
+    "sha256": "c17a24fd6f1426e6ed0627bc8278da46156b33dffa93bda4dc9d6a38e200bf35"
+  },
+  {
+    "path": "results/metrics/q13_season_metrics.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "local": "results/r3season_nrmse_integration/evidence/q13_season_metrics.csv",
+    "md5": "1bdeb2ebf19aa3158f79f48c42272247",
+    "sha256": "0b53f8ee825e81c58242c6a4d46cc01820c95c2b560b3587389a1469313bf3b1"
+  },
+  {
+    "path": "results/metrics/q13_season_paired.csv",
+    "commit": "d02519c5f153feb712018cf97efb035f6ca2d7ae",
+    "local": "results/r3season_nrmse_integration/evidence/q13_season_paired.csv",
+    "md5": "e9e961928b63ac2bc88daddbd4a25eba",
+    "sha256": "21080df182bc190e61ceeda5c613c18084ace58fead742cd8af9029fe2ad0ec8"
+  }
+]

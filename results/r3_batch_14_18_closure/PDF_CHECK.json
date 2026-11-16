@@ -1,0 +1,54 @@
+{
+ "Supplementary": {
+  "pages": 79,
+  "pdf_sha256": "98fdb0b2dd6ac64afd7243761b42ed47edb462250e79e204de4e138259098a85",
+  "hits": {
+   "Full-period seasonal": [],
+   "Seasonal RMSE normalized by the seasonal": [
+    74
+   ],
+   "Paired model comparisons (q18)": [
+    76
+   ],
+   "Model size and recorded training time": [
+    77
+   ]
+  }
+ },
+ "manuscript": {
+  "pages": 110,
+  "pdf_sha256": "369de2a58d00e3d0b57e7a25b01bfe9f88692e5255c8b2ae4aea317fcf71d65a",
+  "hits": {
+   "To normalize by the seasonal climatological mean": [
+    57
+   ],
+   "These rankings are physically plausible": [
+    89
+   ],
+   "isolates the temporal attention layer": [
+    80
+   ]
+  }
+ },
+ "Response letter": {
+  "pages": 97,
+  "pdf_sha256": "299944ce107d7038395cac36d90b95eaf1305b84a2711fde704248e29a1d0a86",
+  "hits": {
+   "Comment: Lines 469": [
+    73
+   ],
+   "Comment: Section 4.1": [
+    74
+   ],
+   "Comment: Lines 745": [
+    75
+   ],
+   "Comment: Lines 752": [
+    77
+   ],
+   "Comment: Lines 822": [
+    78
+   ]
+  }
+ }
+}

@@ -1,0 +1,32 @@
+{
+  "previous_excerpts_preserved": 144,
+  "new_exact_excerpts": 3,
+  "total_matched": 147,
+  "all_other_review_blocks_byte_identical": true,
+  "old_main_paragraphs_tables_figures_identical": true,
+  "old_S1_S60_and_Figures_source_prefix_unchanged": true,
+  "bibliography_unchanged": true,
+  "protected_figures": 17,
+  "csv_fields": 255,
+  "new_table_data_rows": 39,
+  "all_14_saved_bootstrap_intervals_reproduced": true,
+  "no_staging_commit_push": true,
+  "labels": {
+    "stab:r3season_full_distribution": {
+      "number": "S61",
+      "page": "69"
+    },
+    "sfig:r3season_full_cdf": {
+      "number": "S4",
+      "page": "70"
+    },
+    "stab:r3season_gsf_scores": {
+      "number": "S62",
+      "page": "71"
+    },
+    "stab:r3season_gsf_pairs": {
+      "number": "S63",
+      "page": "72"
+    }
+  }
+}

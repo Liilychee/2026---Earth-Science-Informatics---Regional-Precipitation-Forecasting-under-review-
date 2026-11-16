@@ -1,0 +1,6 @@
+{
+  "files": 6,
+  "applies_to_private_before_snapshot": true,
+  "reconstructs_current_bytes_exactly": true,
+  "live_workspace_patch_not_replayed": true
+}

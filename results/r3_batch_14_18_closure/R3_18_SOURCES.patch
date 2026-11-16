@@ -1,0 +1,146 @@
+--- a/manuscript.tex	2026-11-16 00:00:00.000000000 +0000
++++ b/manuscript.tex	2026-11-16 00:00:00.000000000 +0000
+@@ -1152,13 +1152,16 @@
+ \section{Discussion}
+ 
+ \subsection{Overall Forecasting Performance and Model Robustness}
++\label{sec:overall_discussion}
+ 
+ {\color{red}\hypersetup{linkcolor=red}
+ The results show that several machine-learning and deep-learning models achieved similar levels of performance for short-term regional precipitation forecasting over Dublin. Across five fixed random seeds, BiLSTM-Attention obtained the lowest mean RMSE of 0.2429~mm\,h$^{-1}$, followed closely by XGBoost at 0.2439~mm\,h$^{-1}$. The difference between the two models was small relative to the overall forecast error. The paired block-bootstrap analysis showed no clear RMSE difference for the complete test set. The legacy wet-subset interval is retained only for its original definition. For the revised wet subset ($\geq0.1$~mm\,h$^{-1}$), the separate single-saved-run comparison supports lower RMSE for XGBoost, as reported in Section~\ref{sec:overall_results}; it is not a five-seed comparison. The main result is therefore not that one model consistently outperformed all alternatives, but that a relatively compact recurrent model and a tree-based machine-learning model produced comparable overall point forecasts under the same data and evaluation protocol.
+ \par}
+ 
+-The comparison between BiLSTM-Attention and BiLSTM provides a more direct assessment of the temporal attention mechanism. The attention-based model reduced the mean RMSE from 0.2447 to 0.2429~mm\,h$^{-1}$ while the remaining architecture was kept unchanged. The improvement was consistent with a useful contribution from temporal attention, although its magnitude was modest. This result is important when interpreting architectural changes in rainfall forecasting, because differences observed in a single training run can be similar in magnitude to those caused by stochastic model initialization. The five-seed experiment therefore provides a more conservative estimate of the benefit associated with attention.
++\revminor{The comparison between BiLSTM-Attention and the otherwise identical BiLSTM-NoAttention control isolates the temporal attention layer. Attention reduced mean RMSE from 0.2447 to 0.2429~mm\,h$^{-1}$ (paired difference $-0.0018$~mm\,h$^{-1}$, $-0.73\%$); all five seeds improved, and both the seed-t and moving-block intervals, each $[-0.0033,-0.0003]$~mm\,h$^{-1}$, excluded zero. After Holm adjustment over the 16 all-target RMSE comparisons in Supplementary Table~\ref{supp-stab:r3sig_pairs}, however, the adjusted $p$ values were 0.17 (seed-t) and 0.13 (block), and the wet and upper-tail differences were not clearly separated. The attention layer added 8,320 trainable parameters (36,993 to 45,313). The gain is therefore consistent in sign but small, and it is not established after multiplicity adjustment.}
+ 
++\revminor{Greater model complexity was not matched by clear gains in point accuracy. BiLSTM-Attention and XGBoost differed by $-0.0011$~mm\,h$^{-1}$ ($-0.43\%$) overall, with both intervals including zero, whereas XGBoost had lower RMSE in the wet ($+2.4\%$) and upper-tail ($+3.6\%$) subsets, with all five seeds and both intervals favouring it; in the rolling-origin evaluation, the pooled difference slightly favoured XGBoost but depended on block length (Section~\ref{sec:rolling_origin_results}). BU-LSTM, BU-LSTM-Attention and Probabilistic BiLSTM-Attention had 1.3--2.2\% higher overall RMSE than XGBoost in all five seeds, and adding attention to BU-LSTM (159,272 additional parameters) produced no clear RMSE or CRPS improvement. All models except the Transformer had lower RMSE than AR(1) after Holm adjustment. In the recorded runs, training the neural models took about 105--393~s per seed, compared with 0.1--0.4~s for XGBoost, but timer definitions differ, the XGBoost device was not recorded and inference time was not benchmarked (Supplementary Table~\ref{supp-stab:r3sig_cost}). For point forecasts in this setting, XGBoost therefore provided comparable overall accuracy and better wet and upper-tail accuracy, with much shorter recorded training times that do not constitute a unified computational-cost benchmark. The probabilistic models are justified only where predictive distributions are required, and their upper-tail undercoverage remains a limitation. These conclusions apply to this regional ERA5 target, the 6-h lead time and the tested configurations, without a formal cost--benefit criterion.}
++
+ The probabilistic recurrent models did not improve deterministic point accuracy. Probabilistic BiLSTM-Attention produced a higher mean RMSE than its deterministic BiLSTM-Attention counterpart, and a similar pattern was observed for the deeper BU-LSTM-Attention architecture when compared with the matched deterministic diagnostic control. The corresponding point-error results are reported in Section~\ref{sec:ablation_results}. These differences are consistent with the models being trained for different objectives. Mean squared error directly optimizes point prediction, whereas Gaussian negative log-likelihood jointly estimates the predictive mean and variance. Probabilistic models should therefore be assessed using both point accuracy and the quality of the predictive distribution rather than point-error metrics alone.
+ 
+ {\color{red}\hypersetup{linkcolor=red}
+--- a/Supplementary.tex	2026-11-16 00:00:00.000000000 +0000
++++ b/Supplementary.tex	2026-11-16 00:00:00.000000000 +0000
+@@ -2528,7 +2528,97 @@
+ Transformer & $-0.0126$ & $-4.4$ & $[-0.0169,-0.0084]$ & $[-0.0177,-0.0088]$ & 5/5 \\
+ BU-LSTM-Attention & $-0.0261$ & $-9.2$ & $[-0.0274,-0.0247]$ & $[-0.0331,-0.0213]$ & 5/5 \\
+ Prob. BiLSTM-Attention & $-0.0239$ & $-8.4$ & $[-0.0252,-0.0226]$ & $[-0.0305,-0.0187]$ & 5/5 \\
++\hline
++\end{tabularx}
++\end{revisiontable}
++
++\clearpage
++% R3 L822-824 (R3-18): paired significance and model complexity
++{\color{red}\section*{Paired model comparisons and complexity}\par}
++
++\begin{revisionlongtable}\footnotesize
++\begin{longtable}{@{}llrrllrl@{}}
++\caption{Paired model comparisons (q18) on the 3,939 common test targets of the main split, $W=6$, five seeds (42, 123, 7, 2024, 99). Codes: XGB, XGBoost; BA, BiLSTM-Attention; BNA, BiLSTM-NoAttention (the BiLSTM row of Table~3); BU, BU-LSTM; BUA, BU-LSTM-Attention; PBA, Probabilistic BiLSTM-Attention; TR, Transformer; AR(1), training-fitted AR(1). Predictions: XGB and BA from the q21 C0 runs, BNA from the q18 rerun, the other models from the q14 $W=6$ reruns (not the run set of the main performance table). $\Delta$ is the mean of five seed-level differences, A minus B (RMSE or Gaussian CRPS, mm\,h$^{-1}$); negative values favour A; $\Delta\%$ is relative to B. Seed-t intervals use four degrees of freedom; moving-block intervals average the seed-level differences within each of 5,000 replicates of non-circular 28-target blocks (seed 42, common indices across pairs, then subset masking). Both are pointwise 95\% intervals. Better counts seeds in which A has the lower score. Holm-adjusted $p$ values (seed-t; block) are given only for the 16 all-target RMSE comparisons, treated as one family; other rows are descriptive. The comparison list is defined in the analysis script; no independent pre-registration record is available. Wet $y\geq0.1$~mm\,h$^{-1}$ ($n=854$); Upper $y\geq0.574048$~mm\,h$^{-1}$ ($n=238$).}\label{stab:r3sig_pairs}\\
++\hline
++\textbf{A $-$ B} & \textbf{Subset} & \textbf{$\Delta$} & \textbf{$\Delta\%$} & \textbf{Seed-t interval} & \textbf{Block interval} & \textbf{Better} & \textbf{Holm $p$}\\
++\hline
++\endfirsthead
++\multicolumn{8}{l}{\textbf{Table~\thetable{} (continued)}}\\
++\hline
++\textbf{A $-$ B} & \textbf{Subset} & \textbf{$\Delta$} & \textbf{$\Delta\%$} & \textbf{Seed-t interval} & \textbf{Block interval} & \textbf{Better} & \textbf{Holm $p$}\\
++\hline
++\endhead
++\hline
++\endfoot
++BA $-$ BNA & All & $-0.0018$ & $-0.73$ & $[-0.0033,-0.0003]$ & $[-0.0033,-0.0003]$ & 5/5 & 0.173; 0.134\\
++ & Wet & $-0.0043$ & $-0.89$ & $[-0.0101,+0.0014]$ & $[-0.0078,-0.0010]$ & 4/5 & --\\
++ & Upper & $-0.0058$ & $-0.66$ & $[-0.0174,+0.0059]$ & $[-0.0122,+0.0004]$ & 4/5 & --\\
++BA $-$ XGB & All & $-0.0011$ & $-0.43$ & $[-0.0024,+0.0003]$ & $[-0.0049,+0.0030]$ & 4/5 & 0.346; 1.000\\
++ & Wet & $+0.0115$ & $+2.42$ & $[+0.0077,+0.0152]$ & $[+0.0027,+0.0208]$ & 0/5 & --\\
++ & Upper & $+0.0304$ & $+3.61$ & $[+0.0253,+0.0355]$ & $[+0.0145,+0.0469]$ & 0/5 & --\\
++TR $-$ XGB & All & $+0.0161$ & $+6.59$ & $[+0.0131,+0.0191]$ & $[+0.0103,+0.0224]$ & 0/5 & 0.001; 0.000\\
++ & Wet & $+0.0548$ & $+11.58$ & $[+0.0412,+0.0685]$ & $[+0.0427,+0.0680]$ & 0/5 & --\\
++ & Upper & $+0.1062$ & $+12.61$ & $[+0.0837,+0.1288]$ & $[+0.0845,+0.1299]$ & 0/5 & --\\
++BU $-$ XGB & All & $+0.0031$ & $+1.25$ & $[+0.0013,+0.0048]$ & $[-0.0011,+0.0077]$ & 0/5 & 0.061; 0.792\\
++ & Wet & $+0.0231$ & $+4.88$ & $[+0.0134,+0.0327]$ & $[+0.0137,+0.0336]$ & 0/5 & --\\
++ & Upper & $+0.0542$ & $+6.44$ & $[+0.0379,+0.0706]$ & $[+0.0369,+0.0731]$ & 0/5 & --\\
++BUA $-$ XGB & All & $+0.0033$ & $+1.35$ & $[+0.0011,+0.0054]$ & $[-0.0009,+0.0079]$ & 0/5 & 0.091; 0.734\\
++ & Wet & $+0.0226$ & $+4.77$ & $[+0.0124,+0.0328]$ & $[+0.0133,+0.0330]$ & 0/5 & --\\
++ & Upper & $+0.0537$ & $+6.37$ & $[+0.0342,+0.0732]$ & $[+0.0368,+0.0725]$ & 0/5 & --\\
++PBA $-$ XGB & All & $+0.0054$ & $+2.23$ & $[+0.0038,+0.0071]$ & $[+0.0011,+0.0104]$ & 0/5 & 0.007; 0.118\\
++ & Wet & $+0.0281$ & $+5.93$ & $[+0.0208,+0.0354]$ & $[+0.0186,+0.0392]$ & 0/5 & --\\
++ & Upper & $+0.0635$ & $+7.53$ & $[+0.0531,+0.0739]$ & $[+0.0461,+0.0836]$ & 0/5 & --\\
++BNA $-$ XGB & All & $+0.0007$ & $+0.30$ & $[-0.0010,+0.0025]$ & $[-0.0029,+0.0044]$ & 1/5 & 0.632; 1.000\\
++ & Wet & $+0.0158$ & $+3.34$ & $[+0.0074,+0.0243]$ & $[+0.0079,+0.0245]$ & 0/5 & --\\
++ & Upper & $+0.0362$ & $+4.29$ & $[+0.0219,+0.0504]$ & $[+0.0211,+0.0519]$ & 0/5 & --\\
++BUA $-$ BU & All & $+0.0002$ & $+0.10$ & $[-0.0028,+0.0033]$ & $[-0.0004,+0.0008]$ & 2/5 & 0.842; 1.000\\
++ & Wet & $-0.0005$ & $-0.10$ & $[-0.0158,+0.0148]$ & $[-0.0021,+0.0011]$ & 3/5 & --\\
++ & Upper & $-0.0006$ & $-0.06$ & $[-0.0295,+0.0284]$ & $[-0.0037,+0.0023]$ & 3/5 & --\\
++ & All CRPS & $+0.0007$ & $+0.76$ & $[-0.0005,+0.0020]$ & $[+0.0003,+0.0011]$ & 2/5 & --\\
++BUA $-$ PBA & All & $-0.0022$ & $-0.87$ & $[-0.0048,+0.0005]$ & $[-0.0032,-0.0013]$ & 5/5 & 0.346; 0.000\\
++ & Wet & $-0.0055$ & $-1.10$ & $[-0.0210,+0.0100]$ & $[-0.0081,-0.0034]$ & 3/5 & --\\
++ & Upper & $-0.0098$ & $-1.08$ & $[-0.0378,+0.0182]$ & $[-0.0146,-0.0059]$ & 3/5 & --\\
++ & All CRPS & $-0.0011$ & $-1.17$ & $[-0.0044,+0.0022]$ & $[-0.0017,-0.0006]$ & 3/5 & --\\
++XGB $-$ AR(1) & All & $-0.0187$ & $-7.13$ & $[-0.0190,-0.0184]$ & $[-0.0245,-0.0135]$ & 5/5 & 0.000; 0.000\\
++ & Wet & $-0.0578$ & $-10.88$ & $[-0.0591,-0.0565]$ & $[-0.0697,-0.0466]$ & 5/5 & --\\
++ & Upper & $-0.1097$ & $-11.52$ & $[-0.1123,-0.1072]$ & $[-0.1312,-0.0895]$ & 5/5 & --\\
++BA $-$ AR(1) & All & $-0.0198$ & $-7.54$ & $[-0.0210,-0.0186]$ & $[-0.0238,-0.0162]$ & 5/5 & 0.000; 0.000\\
++ & Wet & $-0.0463$ & $-8.72$ & $[-0.0497,-0.0430]$ & $[-0.0539,-0.0392]$ & 5/5 & --\\
++ & Upper & $-0.0793$ & $-8.33$ & $[-0.0835,-0.0752]$ & $[-0.0925,-0.0667]$ & 5/5 & --\\
++BNA $-$ AR(1) & All & $-0.0180$ & $-6.85$ & $[-0.0195,-0.0165]$ & $[-0.0220,-0.0142]$ & 5/5 & 0.000; 0.000\\
++ & Wet & $-0.0420$ & $-7.90$ & $[-0.0505,-0.0335]$ & $[-0.0500,-0.0339]$ & 5/5 & --\\
++ & Upper & $-0.0736$ & $-7.72$ & $[-0.0884,-0.0588]$ & $[-0.0881,-0.0589]$ & 5/5 & --\\
++BU $-$ AR(1) & All & $-0.0157$ & $-5.97$ & $[-0.0173,-0.0141]$ & $[-0.0182,-0.0132]$ & 5/5 & 0.000; 0.000\\
++ & Wet & $-0.0347$ & $-6.53$ & $[-0.0433,-0.0262]$ & $[-0.0396,-0.0295]$ & 5/5 & --\\
++ & Upper & $-0.0555$ & $-5.83$ & $[-0.0700,-0.0410]$ & $[-0.0641,-0.0465]$ & 5/5 & --\\
++BUA $-$ AR(1) & All & $-0.0155$ & $-5.88$ & $[-0.0176,-0.0133]$ & $[-0.0181,-0.0129]$ & 5/5 & 0.000; 0.000\\
++ & Wet & $-0.0352$ & $-6.62$ & $[-0.0458,-0.0246]$ & $[-0.0406,-0.0296]$ & 5/5 & --\\
++ & Upper & $-0.0561$ & $-5.89$ & $[-0.0765,-0.0356]$ & $[-0.0653,-0.0463]$ & 5/5 & --\\
++PBA $-$ AR(1) & All & $-0.0133$ & $-5.06$ & $[-0.0147,-0.0119]$ & $[-0.0158,-0.0107]$ & 5/5 & 0.000; 0.000\\
++ & Wet & $-0.0297$ & $-5.59$ & $[-0.0374,-0.0220]$ & $[-0.0346,-0.0240]$ & 5/5 & --\\
++ & Upper & $-0.0462$ & $-4.85$ & $[-0.0576,-0.0349]$ & $[-0.0548,-0.0362]$ & 5/5 & --\\
++TR $-$ AR(1) & All & $-0.0027$ & $-1.02$ & $[-0.0054,+0.0001]$ & $[-0.0065,+0.0017]$ & 4/5 & 0.274; 0.962\\
++ & Wet & $-0.0030$ & $-0.56$ & $[-0.0169,+0.0109]$ & $[-0.0111,+0.0066]$ & 3/5 & --\\
++ & Upper & $-0.0035$ & $-0.37$ & $[-0.0275,+0.0205]$ & $[-0.0187,+0.0140]$ & 3/5 & --\\
++\end{longtable}
++\end{revisionlongtable}
++
++\begin{revisiontable}
++\renewcommand{\arraystretch}{1.15}
++\caption{Model size and recorded training time for the run sets compared in Table~\ref{stab:r3sig_pairs}. Parameters are trainable counts from the saved model summaries (BiLSTM-NoAttention from the q18 rerun of the same architecture; Table~2 lists NR because no original record was located); not applicable (NA) to XGBoost. Times are the recorded seconds per seed, mean [range] over five seeds, with early stopping (patience 10; cap 30 epochs). All runs were executed on an RTX 5090 host, but in separate batches; the XGBoost execution device was not recorded. Timer coverage differs between scripts: q21 and q14 include model construction, fitting and validation/test prediction, whereas q18 records fitting only. Inference cost was not benchmarked separately, and data preparation and hyperparameter search are excluded (search records are in Supplementary Table~\ref{stab:r2m9_search}). These are recorded run times, not a controlled computational benchmark.}
++\label{stab:r3sig_cost}
++\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}Xrrrll@{}}
+ \hline
++\textbf{Model} & \textbf{Parameters} & \textbf{Time (s)} & \textbf{Epochs} & \textbf{Runs} & \textbf{Timer}\\
++\hline
++XGBoost & NA & 0.2 [0.1--0.4] & NA & q21 & Build, fit, predict\\
++BiLSTM-Attention & 45,313 & 121.2 [115.0--126.7] & 18--20 & q21 & Build, fit, predict\\
++BiLSTM-NoAttention & 36,993 & 104.8 [87.7--116.5] & 17--23 & q18 & Fit only\\
++BU-LSTM & 83,802 & 211.8 [187.0--245.0] & 16--22 & q14 & Build, fit, predict\\
++BU-LSTM-Attention & 243,074 & 392.5 [288.6--495.5] & 15--26 & q14 & Build, fit, predict\\
++Prob. BiLSTM-Attention & 45,442 & 203.1 [136.7--267.6] & 13--27 & q14 & Build, fit, predict\\
++Transformer & 8,833 & 315.0 [190.6--347.6] & 16--30 & q14 & Build, fit, predict\\
++\hline
+ \end{tabularx}
+ \end{revisiontable}
+ 
+--- a/Response letter.tex	2026-11-16 00:00:00.000000000 +0000
++++ b/Response letter.tex	2026-11-16 00:00:00.000000000 +0000
+@@ -1428,10 +1428,21 @@
+ 
+ \ReviewerComment{L822-824: Is the difference statistically significant? Is it worth using a slightly sophisticated model for a marginal gain in skill?}
+ 
+-\PendingResponse
++\makeatletter
++\expandafter\let\csname r@sec:rolling_origin_results\expandafter\endcsname\csname r@manuscript-sec:rolling_origin_results\endcsname
++\makeatother
++\AuthorResponse{We thank the reviewer for these questions. The difference in question is the attention gain in the one-layer BiLSTM (0.2447 to 0.2429~mm\,h$^{-1}$). Using five matched seeds and paired comparisons on the 3,939 common test targets, the reduction was $-0.0018$~mm\,h$^{-1}$ ($-0.73\%$); all five seeds improved, and both the seed-t and moving-block intervals excluded zero. After Holm adjustment over the 16 all-target RMSE comparisons, however, the adjusted $p$ values were 0.17 and 0.13, and the wet and upper-tail differences were not clearly separated. We therefore no longer describe attention as a demonstrated benefit. On the second question, the added complexity is not justified by point accuracy alone in this setting. BiLSTM-Attention and XGBoost differed by only $-0.43\%$ overall, with both intervals including zero; XGBoost was better in the wet and upper-tail subsets; the three probabilistic recurrent models had 1.3--2.2\% higher overall RMSE than XGBoost; and adding attention to BU-LSTM gave no clear RMSE or CRPS improvement despite 159,272 additional parameters. The neural models also required about 105--393~s of recorded training per seed, compared with 0.1--0.4~s for XGBoost, although these timings are not a controlled benchmark and inference cost was not measured. For point forecasts in this setting, XGBoost therefore provided comparable overall accuracy with much shorter recorded training; because these run times are not a unified computational-cost benchmark, we do not claim a general efficiency ranking. The probabilistic recurrent models are useful only where predictive distributions are required, subject to their upper-tail undercoverage. These conclusions are restricted to this regional ERA5 target, lead time and set of configurations. The revised discussion is in Section~\ref{manuscript-sec:overall_discussion}, and the paired comparisons and recorded costs are in Supplementary Tables~\ref{supp-stab:r3sig_pairs} and~\ref{supp-stab:r3sig_cost}.}
+ 
+-\ChangeLocation
++\ManuscriptChange{Section~\ref{manuscript-sec:overall_discussion} (Overall Forecasting Performance and Model Robustness): the original attention paragraph is revised with paired and Holm-adjusted results, and a new paragraph assesses complexity against accuracy. Supplementary Material: new final section ``Paired model comparisons and complexity'' with Tables~\ref{supp-stab:r3sig_pairs} (16 model pairs, all/wet/upper-tail RMSE and two CRPS comparisons) and~\ref{supp-stab:r3sig_cost} (parameters and recorded training times with their limitations). Table~\ref{manuscript-tab:seed_stability} and the existing figures are unchanged; no training or data download. Final page and line numbers pending full-manuscript assembly.}
+ 
++\EvidenceBox{Attention gain and multiplicity adjustment (Section~\ref{manuscript-sec:overall_discussion})}{
++\RevisedExcerpt{The comparison between BiLSTM-Attention and the otherwise identical BiLSTM-NoAttention control isolates the temporal attention layer. Attention reduced mean RMSE from 0.2447 to 0.2429~mm\,h$^{-1}$ (paired difference $-0.0018$~mm\,h$^{-1}$, $-0.73\%$); all five seeds improved, and both the seed-t and moving-block intervals, each $[-0.0033,-0.0003]$~mm\,h$^{-1}$, excluded zero. After Holm adjustment over the 16 all-target RMSE comparisons in Supplementary Table~\ref{supp-stab:r3sig_pairs}, however, the adjusted $p$ values were 0.17 (seed-t) and 0.13 (block), and the wet and upper-tail differences were not clearly separated. The attention layer added 8,320 trainable parameters (36,993 to 45,313). The gain is therefore consistent in sign but small, and it is not established after multiplicity adjustment.}
++}
++
++\EvidenceBox{Complexity versus accuracy (Section~\ref{manuscript-sec:overall_discussion})}{
++\RevisedExcerpt{Greater model complexity was not matched by clear gains in point accuracy. BiLSTM-Attention and XGBoost differed by $-0.0011$~mm\,h$^{-1}$ ($-0.43\%$) overall, with both intervals including zero, whereas XGBoost had lower RMSE in the wet ($+2.4\%$) and upper-tail ($+3.6\%$) subsets, with all five seeds and both intervals favouring it; in the rolling-origin evaluation, the pooled difference slightly favoured XGBoost but depended on block length (Section~\ref{sec:rolling_origin_results}). BU-LSTM, BU-LSTM-Attention and Probabilistic BiLSTM-Attention had 1.3--2.2\% higher overall RMSE than XGBoost in all five seeds, and adding attention to BU-LSTM (159,272 additional parameters) produced no clear RMSE or CRPS improvement. All models except the Transformer had lower RMSE than AR(1) after Holm adjustment. In the recorded runs, training the neural models took about 105--393~s per seed, compared with 0.1--0.4~s for XGBoost, but timer definitions differ, the XGBoost device was not recorded and inference time was not benchmarked (Supplementary Table~\ref{supp-stab:r3sig_cost}). For point forecasts in this setting, XGBoost therefore provided comparable overall accuracy and better wet and upper-tail accuracy, with much shorter recorded training times that do not constitute a unified computational-cost benchmark. The probabilistic models are justified only where predictive distributions are required, and their upper-tail undercoverage remains a limitation. These conclusions apply to this regional ERA5 target, the 6-h lead time and the tested configurations, without a formal cost--benefit criterion.}
++}
++
+ % Review ID: R3 L979-982
+ \Needspace{5\baselineskip}
+ \subsection*{Comment: Lines~979--982}

@@ -1,0 +1,11 @@
+# Science audit — R3-14 to R3-18
+
+| Comment | Change | Evidence checked | Adverse results / limits retained |
+|---|---|---|---|
+| R3-14 (L469–471: seasonal distributions, seasonal modelling) | Fig. S4 (full-period seasonal CDF/exceedance), S61–S63; §4.2.3, §5.4 | Codex record: 255 CSV fields, 39 table rows, all 14 saved bootstrap intervals reproduced; 147/147 excerpts at the time | Season-specific XGBoost worse overall in all seeds but its ensemble-prediction interval includes 0; fixed Q95 not redefined; descriptive only; XGBoost only |
+| R3-15 (§4.1: seasonal NRMSE) | S64 (RMSE, NRMSE by training-season mean, test-mean sensitivity), S65 (model − month×hour climatology); §4.2.3 | Codex re-check from 30 q14 prediction files (≤7.5e-14) + independent Claude spot check (≤6.8e-14); 60/60 table rows match CSV | 2–3 seasonal realizations; DJF/MAM positions reverse under test-mean normalization; q14 rerun set, not main-table runs; season-filtered block bootstrap = conditional sensitivity intervals (S65 caption) |
+| R3-16 (L745–751: physical explanation of rankings) | §4.5 ranking paragraph, §5.3 physical interpretation; 3 Crossref-verified references | q10_shap_global.csv = Supplementary S18 (28/28 rows); group ablation, Kendall τ, training associations re-read from CSV | Plausible mechanisms only, not causal; cited studies daily/climatological, broader regions; signed SHAP not used for direction; fixed background |
+| R3-17 (L752–758: 12 h vs 30 h) | Reply only; reuses R3-10 §3.3/§4.2 text and S55/S56 | q14_window_effect.csv values (from closed R3-10 evidence) | 30 h not best; Transformer epoch cap; ranks of BU/BU-Attention swap; single split; no rolling repetition |
+| R3-18 (L822–824: significance, complexity) | §5.1 attention paragraph revised + complexity paragraph; S66 (16 comparisons, Holm), S67 (parameters, recorded times) | All 48 RMSE rows recomputed from predictions (Δ/seed-t ≤1e-16, block ≤1e-7, block p and Holm exact); matched-run JSON timings | Attention gain not significant after Holm; XGBoost better on wet/upper tail; "more economical" claim removed; "pre-specified" removed (only script docstring record); timings not a unified benchmark; inference not measured |
+
+All five: no training or data download for the revision text; previously closed replies unchanged; R3-13 NWP limitation retained.

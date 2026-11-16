@@ -1,0 +1,254 @@
+[
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/AUTHOR_RESPONSE.tex",
+    "bytes": 2268,
+    "md5": "266113df952a72bb6fa42b0ec5ac00c8",
+    "sha256": "359127fc16796de4122311851924b0b17cb8c2f5acea9d63fbc7480ecc4c17e5"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/AUTHOR_RESPONSE_READABLE.md",
+    "bytes": 2116,
+    "md5": "5fedcd112da633dd56dbe6e350cd5173",
+    "sha256": "60005905b028a7f138f70665c881a270f6455f6830c513626db05787b9c9d650"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/BEFORE_AFTER_EXCERPT_MAP.json",
+    "bytes": 20594,
+    "md5": "60023d3b651795d970c0be228b06b9b7",
+    "sha256": "edcd0fbf150ba13e772e6c2e447c3a00259ea23aa4faa60c95d12db0d84f44d6"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/BOOTSTRAP_RECHECK.json",
+    "bytes": 2761,
+    "md5": "9ba82eb6c7db07c01a34be6a91c611e6",
+    "sha256": "2e6d7285a5e7b4d803208c80fb481a329de40f4e53491c234146502f76a45bfe"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/CELL_INDEX.json",
+    "bytes": 46028,
+    "md5": "93d5c8fb138840bea07d31cc4191737f",
+    "sha256": "5a39ad74fe250f757de9262ca5f741996f508bb66688c9b1b3355823c03bab2e"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/EXCERPT_INDEX.json",
+    "bytes": 19147,
+    "md5": "dd55725ac114f559e39a692f3eb442bc",
+    "sha256": "c4ff916cf3d96934b3037776798dd24709cb60c6b33675c63c4d2c2660e2f704"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/FIGURE_CHECK.json",
+    "bytes": 644,
+    "md5": "0692bfef47fea439f3a3225f2a654d31",
+    "sha256": "c5a40d2abb21875a081abb7b0db6a23cf2f0f6dda03f9d120dfde7eea7d28815"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/FIGURE_HASHES.json",
+    "bytes": 1812,
+    "md5": "ffe704973e6f76cd5bc71e98dd240323",
+    "sha256": "f6efa4108dad102e76736788a369ceb14bac21c18746a4dbc7a7c804281890a5"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/FINAL_REPORT.md",
+    "bytes": 13078,
+    "md5": "f0cb3c47a9be969e528767f5a886e594",
+    "sha256": "6e37358cd0a2ddd7fec04361f79e95a9a450964ebd40b1222399284235d0fcca"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/FULL_PERIOD_ECDF.csv",
+    "bytes": 1268170,
+    "md5": "1f85268a68360fe4f6073eb7af8ce3ac",
+    "sha256": "91d43d66a9f9bbba3de1c1742ddec5ee084ac231b75ddd1f69a2f4c29ee11501"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/FULL_PERIOD_SEASON_STATS.csv",
+    "bytes": 665,
+    "md5": "7b15d67e11171a8482e94b6715cb863c",
+    "sha256": "bdbfd551d8fe0edb083451cebdaab8ba3856ae34ffb3524b9925e85ffec987b4"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/GIT_STATUS.txt",
+    "bytes": 856,
+    "md5": "7e41ca79a177ba8effd2785674e4c6bd",
+    "sha256": "de7995bbc4bf5a6681e911389a6003f5d093cb61998417c8d18246424f731872"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/GIT_STATUS_BEFORE.txt",
+    "bytes": 819,
+    "md5": "ec614c14727612d72c73a94e3b955350",
+    "sha256": "229e0f1aa46157af12b1ba764fd950f90c3a84244a684b12ac6a419460cbd2dd"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/LABEL_INDEX.json",
+    "bytes": 305,
+    "md5": "960e57e9ba81e9a8a7ff743efcb17240",
+    "sha256": "e71e4ec95488be54ee8d1e572d951f58bb45272278247e3cc8cd67eaf17b5cf6"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/LOCAL_DEPENDENCY.json",
+    "bytes": 481,
+    "md5": "c004fdc18236228a01ff004ef2bfcf98",
+    "sha256": "7a648a4279e294a1b8c18c43fcec65d1cbec0917f1408e31eda16bd0498bd232"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/LOCATIONS.json",
+    "bytes": 855,
+    "md5": "c61e24610542012af641d9ede4a2d320",
+    "sha256": "f2a28e0a749108643a96e1ec96eb4922ac0251b4031fcaa690c75e4a966a598f"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/NEW_PARAGRAPHS.json",
+    "bytes": 2484,
+    "md5": "3e4172c0e8977d3a47634a9515d626bd",
+    "sha256": "ff12b0ff680f8923ded66b8e7be01d4e29da6558367d4311f75871ec179deaaa"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/OMITTED_18_TIMESTAMPS.csv",
+    "bytes": 675,
+    "md5": "a2419407311ce27fe90edb10303fa3e8",
+    "sha256": "eab964ce67ef106fd68a125a392f7e03a4ba40ae49e90f474f98d0c77e19670e"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/PATCH_RECONSTRUCTION.json",
+    "bytes": 153,
+    "md5": "534a9ad719840936a249148ae2855d45",
+    "sha256": "9d2467d0755cc4385921c3a692cc35b91ed0825f2f1d6a9a572f6b7034d2cf0d"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/PDF_CHECK.json",
+    "bytes": 2447,
+    "md5": "62a271eff02bf302137af433fa30711f",
+    "sha256": "fb4779a1ab3da4c2fc0eb88a14c6cebd415a2b8cefc08b593ceeb3e15d408021"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/PROSE_FACT_INDEX.json",
+    "bytes": 1558,
+    "md5": "ce582341e7a6d63f4803391fc2a0bb6d",
+    "sha256": "6bc5eecb525db39281c57b35b9ae518ddf116f6ab8eacf36ebc040e7b5bf52b9"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/R3_14_LOCAL.patch",
+    "bytes": 22003,
+    "md5": "66e1847b5129783d91556768f26d684e",
+    "sha256": "20782e5ca9456ad248554ace00972f2ce4ddeeac4ac667b3ca57ebee55fddb0f"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/ROW_INDEX.json",
+    "bytes": 3660,
+    "md5": "f00e922ec90c6d2ba734e3b52dcfcd7e",
+    "sha256": "92156e9e1ac88bcb0f641f9a34324a05e5f147751eb37c8c3adccab861807cbc"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/SAVED_RESULTS_CHECK.json",
+    "bytes": 2504,
+    "md5": "fa9fc4110e75cac6164a3f87355f4870",
+    "sha256": "d1dcd10e374e4baa51edd082594a69526be4c9d33cad520d4be2e8e72f2fb3c0"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/SOURCE_INDEX.json",
+    "bytes": 4446,
+    "md5": "58388d80c242398e85daffd219e89148",
+    "sha256": "f081090bfd31fe7f26cfa4fc6050bea68b8cba7e266cd4c030de74b2f7d89160"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/STAGING_BEFORE.txt",
+    "bytes": 0,
+    "md5": "d41d8cd98f00b204e9800998ecf8427e",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/STATUS.md",
+    "bytes": 145,
+    "md5": "6ad07530715cc02f5acadc414652af15",
+    "sha256": "7437708732f95440584ea3d9de1975eddc481036532950d6e0da1fbc7f0d1071"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/SUPPLEMENTARY_INCREMENT.tex",
+    "bytes": 7648,
+    "md5": "08cbe05ec29eaf328afe64baeb779542",
+    "sha256": "f5dba7b2597888c89aa4f7ea8240e7e4c3bf831ab1382ef5833c5af337c72926"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/VERIFICATION.json",
+    "bytes": 808,
+    "md5": "2e15b1e2dabc3f4f1119641ab18df616",
+    "sha256": "a7db5ddf94f0c0192b087323e1f2e71c989e323b51a8fa6a0d590445d94b59a5"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/check_integration.py",
+    "bytes": 7688,
+    "md5": "b58d3fc5d82fe6f18f0c19611adedd3c",
+    "sha256": "47faa32639d5ee6bc00fa3a8aa75f8a08c342117d7e9119b3044d7d195ed10ec"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/compile_Response_letter.txt",
+    "bytes": 10000,
+    "md5": "cba4897dfd26359b810b458c1e7f587f",
+    "sha256": "f3a7c928522f1b22c00e126b1bf77ceb140e02ae7cb4b435baffb82a9f1b2f03"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/compile_Supplementary.txt",
+    "bytes": 17468,
+    "md5": "9eac96ff8572b7a6af0189424fc55898",
+    "sha256": "ebfc1b517d7a0700afcd6994eeb49a204a5d72e2f511defe78543f7523ff8953"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/compile_manuscript.txt",
+    "bytes": 32746,
+    "md5": "d417c792e00a93555700c8a951ce2b3e",
+    "sha256": "a00d30c16349ecad41381397cdb0b88ac83088551e273a186258a12fcca0edd3"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/final_check_output.txt",
+    "bytes": 1622,
+    "md5": "2ac8a4899bc42c7edca7b17af0bd685c",
+    "sha256": "8ba989a725e660ea584e7e00b4d1dfc4ef4586f07ce4ce578269fa0811fbf363"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/new_cdf.png",
+    "bytes": 72221,
+    "md5": "1b76cefecde74f29a1b4e958e9abca02",
+    "sha256": "009820c866c1c3b549044c037e1a83eff40d362b16d1297c407f770c8c55049e"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/old_cdf.png",
+    "bytes": 46304,
+    "md5": "699e7202dae63eb1521c789b9ab9a39e",
+    "sha256": "6308abd082587aadc8408ce6fda544a068e47bbe5911444c937221f3f24d3a8b"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/plot_full_season_cdf.py",
+    "bytes": 3096,
+    "md5": "9e75e6737d1f7168e4c9c3bfebc77f74",
+    "sha256": "4417379e4f9bce5d0ccd4471412af3d9e8d6435e85ed67d38d245beb387a06f9"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/plot_output.txt",
+    "bytes": 298,
+    "md5": "fafc31e955537539f505a312639b01da",
+    "sha256": "f3ec2f0e46354600d1f988f9046bc6726e9c76e79b4be45e3cb37e37244c4d91"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/verify_saved.py",
+    "bytes": 5668,
+    "md5": "b7cbb5f9a3806a229dc0d1c503c61b95",
+    "sha256": "f88163e457ea502e1dee78d5fb460eefbb8b1ab6aa4176285667c91238b9d809"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/verify_saved_output.txt",
+    "bytes": 2505,
+    "md5": "7dfd2bc7155c2d49ddf700b4a0f23b56",
+    "sha256": "9fa8dff5d45a74f2b34233366730bfdd1977875a8f1ab7b2da54b29c31b4cab9"
+  },
+  {
+    "path": "/Users/yue/codex_proj/2026---Earth-Science-Informatics---Regional-Precipitation-Forecasting-under-review-/results/r3season_distribution_integration/write_report.py",
+    "bytes": 12391,
+    "md5": "9e3ea97b3171e754acadaaae8845fe77",
+    "sha256": "472fac6ca6854ffccf629b0ad2cdd7c7c5441978351a430f66568ee624386945"
+  },
+  {
+    "path": "Figures/r3M14_season_cdf_full.pdf",
+    "bytes": 167286,
+    "md5": "9618bf5d3f20e0c22992286ac9ad058a",
+    "sha256": "139a62f9c78928cee7454ef2c13043e26466cb7ffede32732b0fbe05e8e1da31"
+  }
+]

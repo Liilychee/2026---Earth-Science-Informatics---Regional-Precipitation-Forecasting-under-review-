@@ -1,0 +1,34 @@
+{
+ "manuscript": {
+  "pages": 107,
+  "pdf_sha256": "d798d5a2c6bb0da7533bfd606df3b66f082a056a6ccb6e4e1b433ee92559c5ac",
+  "hits": {
+   "In the random sample, BiLSTM-Attention attributions": [
+    74
+   ],
+   "These rankings are physically plausible": [
+    87
+   ],
+   "Hawcroft M": [
+    101
+   ]
+  }
+ },
+ "Response letter": {
+  "pages": 92,
+  "pdf_sha256": "b165fb46ad9073f0df1e193b58eb51ab0b912d8387978f4c3d1ece2da10fa9c5",
+  "hits": {
+   "Comment: Lines 745": [
+    75
+   ],
+   "Physical interpretation of the rankings": [
+    76
+   ]
+  }
+ },
+ "Supplementary": {
+  "pages": 75,
+  "pdf_sha256": "fbb2bcd574d3dc909aca8356ef2f61dbe0f08e807005344d07568a6ed43092ce",
+  "hits": {}
+ }
+}

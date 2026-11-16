@@ -1,0 +1,62 @@
+{
+  "saved_metric_rows": 45,
+  "saved_paired_rows": 35,
+  "q14_prediction_files": 30,
+  "per_seed_rows": 150,
+  "max_metric_abs_error": 7.505107646466058e-14,
+  "max_pair_abs_error": 3.661715599484472e-08,
+  "max_training_mean_abs_error": 2.6229018956769323e-15,
+  "max_prediction_target_difference": 0,
+  "all_interval_zero_conclusions_match": true,
+  "denominator_source": "18410 raw training timestamps; NOT18404 windowed training targets; no validation/test fitting",
+  "q06_original_extended_file_available": false,
+  "independent_normalizer_check": "Existing2004\u20132021 regional table with audited MD5;18410-row prefix agrees to2.7e-15",
+  "bootstrap": "noncircular moving blocks28 within each concatenated seasonal subsequence;5000 replicates;seed42 once, RNG continued per original35 comparison order; block positions truncated to seasonal n; gaps/years may be bridged; paired per seed then mean RMSE effect, NOT prediction-mean scoring; conditional on fitted models",
+  "replicate_count_evidence": "Source-code5000 configuration, no standalone loop-count execution log; independent reproduction using5000 agrees with saved intervals",
+  "season_summary": {
+    "DJF": {
+      "n_test": 848,
+      "n_train": 4572,
+      "mean_train": 0.1051658094554316,
+      "mean_test": 0.1439567777883823,
+      "nrmse_train_min": 2.645356967662826,
+      "nrmse_train_max": 2.8310681008161116,
+      "nrmse_test_min": 1.932532188319644,
+      "nrmse_test_max": 2.068201115778278,
+      "clim_rmse": 0.3120955342916182
+    },
+    "MAM": {
+      "n_test": 895,
+      "n_train": 4784,
+      "mean_train": 0.0854304342961356,
+      "mean_test": 0.0685049078430205,
+      "nrmse_train_min": 2.026560594266104,
+      "nrmse_train_max": 2.1443093044801858,
+      "nrmse_test_min": 2.527263478586329,
+      "nrmse_test_max": 2.674104395071464,
+      "clim_rmse": 0.1972870336272817
+    },
+    "JJA": {
+      "n_test": 1104,
+      "n_train": 4686,
+      "mean_train": 0.1124571410511941,
+      "mean_test": 0.1229147111621323,
+      "nrmse_train_min": 2.193319974335054,
+      "nrmse_train_max": 2.3960061163296023,
+      "nrmse_test_min": 2.0067125520788616,
+      "nrmse_test_max": 2.1921541793982895,
+      "clim_rmse": 0.2818574298038926
+    },
+    "SON": {
+      "n_test": 1092,
+      "n_train": 4368,
+      "mean_train": 0.1228190756678663,
+      "mean_test": 0.1228164310802437,
+      "nrmse_train_min": 2.070341907843037,
+      "nrmse_train_max": 2.215957822770814,
+      "nrmse_test_min": 2.070386488202,
+      "nrmse_test_max": 2.216005538655234,
+      "clim_rmse": 0.2847805045536932
+    }
+  }
+}

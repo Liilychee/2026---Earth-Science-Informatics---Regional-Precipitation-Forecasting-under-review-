@@ -1,0 +1,7 @@
+{
+  "path": "/Users/yue/Interpretable-BU-LSTM-for-Rainfall-Prediction-in-Dublin/data/dublin_regional_reduced.csv",
+  "md5": "f9b4f8a22c8b7849f40eb71918fe1fd6",
+  "sha256": "1a384092ef6f78e5ed757d50db5fbaaff11baf64fcf1779ca3629e76e847d45f",
+  "dependency": "Existing regional table, same MD5 as audited R2-M7 evidence. Source not newly downloaded or overwritten. Cross-checked26300times against archived q04_pairs; regional mm max discrepancy1.01e-13.",
+  "raw_era5_reread": false
+}

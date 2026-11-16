@@ -1,0 +1,247 @@
+[
+  {
+    "season": "DJF",
+    "model": "XGBoost",
+    "max_abs_error": 2.919408561077863e-08,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "DJF",
+    "model": "BU-LSTM",
+    "max_abs_error": 1.8748617949815305e-08,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "DJF",
+    "model": "BiLSTM-Attention",
+    "max_abs_error": 2.441059166607973e-08,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "DJF",
+    "model": "Transformer",
+    "max_abs_error": 8.151977509696096e-09,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "DJF",
+    "model": "BU-LSTM-Attention",
+    "max_abs_error": 1.2140556164552674e-08,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "DJF",
+    "model": "Prob. BiLSTM-Attention",
+    "max_abs_error": 1.1517596872762104e-08,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "DJF",
+    "model": "pair",
+    "max_abs_error": 1.2419569227206662e-08,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "MAM",
+    "model": "XGBoost",
+    "max_abs_error": 1.3440692659544284e-08,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "MAM",
+    "model": "BU-LSTM",
+    "max_abs_error": 1.4587294466100742e-08,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "MAM",
+    "model": "BiLSTM-Attention",
+    "max_abs_error": 6.028186734508001e-09,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "MAM",
+    "model": "Transformer",
+    "max_abs_error": 8.388381059210026e-09,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "MAM",
+    "model": "BU-LSTM-Attention",
+    "max_abs_error": 5.435940819004115e-09,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "MAM",
+    "model": "Prob. BiLSTM-Attention",
+    "max_abs_error": 4.522443867310821e-09,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "MAM",
+    "model": "pair",
+    "max_abs_error": 4.903560734542678e-09,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 2
+  },
+  {
+    "season": "JJA",
+    "model": "XGBoost",
+    "max_abs_error": 1.1636744734477844e-08,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "JJA",
+    "model": "BU-LSTM",
+    "max_abs_error": 3.0201716433309045e-08,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "JJA",
+    "model": "BiLSTM-Attention",
+    "max_abs_error": 2.7114602722810854e-08,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "JJA",
+    "model": "Transformer",
+    "max_abs_error": 2.2412392062035047e-08,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "JJA",
+    "model": "BU-LSTM-Attention",
+    "max_abs_error": 1.3627412261130178e-08,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "JJA",
+    "model": "Prob. BiLSTM-Attention",
+    "max_abs_error": 9.12626253735116e-09,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "JJA",
+    "model": "pair",
+    "max_abs_error": 1.2821418443869498e-08,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 0
+  },
+  {
+    "season": "SON",
+    "model": "XGBoost",
+    "max_abs_error": 3.661715599484472e-08,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "SON",
+    "model": "BU-LSTM",
+    "max_abs_error": 1.4166226230266643e-08,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "SON",
+    "model": "BiLSTM-Attention",
+    "max_abs_error": 4.941115704093502e-09,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "SON",
+    "model": "Transformer",
+    "max_abs_error": 9.589477146382253e-09,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "SON",
+    "model": "BU-LSTM-Attention",
+    "max_abs_error": 5.847201493824894e-09,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "SON",
+    "model": "Prob. BiLSTM-Attention",
+    "max_abs_error": 1.9333088834699863e-08,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "SON",
+    "model": "pair",
+    "max_abs_error": 1.0478484181036807e-08,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "all",
+    "model": "XGBoost",
+    "max_abs_error": 3.052086551547095e-08,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "all",
+    "model": "BU-LSTM",
+    "max_abs_error": 3.045618144140172e-08,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "all",
+    "model": "BiLSTM-Attention",
+    "max_abs_error": 1.061340340613448e-08,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "all",
+    "model": "Transformer",
+    "max_abs_error": 3.472227947699802e-08,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "all",
+    "model": "BU-LSTM-Attention",
+    "max_abs_error": 2.074566079340867e-08,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "all",
+    "model": "Prob. BiLSTM-Attention",
+    "max_abs_error": 2.64579676396981e-08,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 5
+  },
+  {
+    "season": "all",
+    "model": "pair",
+    "max_abs_error": 1.624144893097937e-08,
+    "matching_interval_zero_conclusions": true,
+    "n_better": 4
+  }
+]

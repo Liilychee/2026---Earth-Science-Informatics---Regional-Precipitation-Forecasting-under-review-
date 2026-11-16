@@ -1,0 +1,35 @@
+{
+ "manuscript": {
+  "pages": 108,
+  "pdf_sha256": "0e36ca034b091cf3fe3359a79d9aecf5669a85b4ae3251b055686144b672d6c7",
+  "hits": {
+   "isolates the temporal attention layer": [
+    79
+   ],
+   "do not constitute a unified computational-cost benchmark": [
+    80
+   ]
+  }
+ },
+ "Supplementary": {
+  "pages": 77,
+  "pdf_sha256": "1d7778d759303889296c0ed5aab5e8afb27e0cf39989edbb03305e92e47576c7",
+  "hits": {
+   "Paired model comparisons (q18)": [
+    76
+   ]
+  }
+ },
+ "Response letter": {
+  "pages": 94,
+  "pdf_sha256": "ac150e7ed2fb5ecef3e4f506db0a29ce7a7e67a41ffe1624a6946a488a00c88c",
+  "hits": {
+   "Comment: Lines 822": [
+    78
+   ],
+   "we do not claim a general efficiency ranking": [
+    78
+   ]
+  }
+ }
+}

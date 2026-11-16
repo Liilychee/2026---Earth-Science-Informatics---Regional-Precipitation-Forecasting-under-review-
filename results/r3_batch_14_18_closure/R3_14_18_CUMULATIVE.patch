@@ -1,0 +1,504 @@
+--- a/manuscript.tex	2026-11-16 00:00:00.000000000 +0000
++++ b/manuscript.tex	2026-11-16 00:00:00.000000000 +0000
+@@ -816,7 +816,13 @@
+ For the $W=6$ five-seed reruns, all six models had positive RMSE skill scores relative to month-by-hour climatology in each of DJF, MAM, JJA and SON. A separate comparison of season-specific and year-round XGBoost training gave a mean paired seed-level RMSE difference of $+0.0029$~mm\,h$^{-1}$. Averaging predictions across the five seeds before scoring instead gave $+0.0020$~mm\,h$^{-1}$, with a 95\% bootstrap interval of $[-0.0012,+0.0056]$~mm\,h$^{-1}$; this interval applies only to the latter statistic. Season-specific training was tested only for XGBoost and cannot be generalized to the deep-learning models. Each season has only two to three seasonal realizations in the test period, so these seasonal conclusions are descriptive.
+ \par}
+ \textcolor{red}{\hypersetup{linkcolor=red}Supplementary Table~\ref{supp-stab:season_counts} reports the seasonal sample counts, Tables~\ref{supp-stab:season_djf_mam} and~\ref{supp-stab:season_jja_son} report seasonal RMSE and SS for the separate $W=6$ rerun set, and Tables~\ref{supp-stab:season_xgb_scores} and~\ref{supp-stab:season_xgb_paired} distinguish the two summaries of the season-specific XGBoost experiment.}
++
++\revminor{To normalize by the seasonal climatological mean, each seasonal RMSE was divided by the training-period mean precipitation of that season, estimated from the 18,410 raw training timestamps (0.1052, 0.0854, 0.1125 and 0.1228~mm\,h$^{-1}$ for DJF, MAM, JJA and SON). Across the six models of the $W=6$ rerun set, NRMSE ranged from 2.65 to 2.83 in DJF, 2.03 to 2.14 in MAM, 2.19 to 2.40 in JJA and 2.07 to 2.22 in SON, compared with 2.97, 2.31, 2.51 and 2.32 for month-by-hour climatology (Supplementary Table~\ref{supp-stab:r3season_nrmse}). Every model had lower seasonal RMSE than this climatology in all five seeds, with seed-t and moving-block intervals excluding zero (Supplementary Table~\ref{supp-stab:r3season_clim_pairs}). NRMSE scales error by typical seasonal precipitation and is distinct from the skill score. Test-period mean precipitation exceeded the training mean in DJF (0.1440~mm\,h$^{-1}$) and fell below it in MAM (0.0685~mm\,h$^{-1}$); with test-period means as denominators, the positions of DJF and MAM reverse (1.93--2.07 and 2.53--2.67). With two to three realizations of each season in the test period, these differences describe the test years and do not establish a general seasonal ranking.}
++
++\revminor{Full-period seasonal distributions use all 26,300 retained 00/06/12/18 UTC timestamps over 2004--2021, including zero precipitation, rather than only the 26,282 windowed prediction targets (Supplementary Fig.~\ref{supp-sfig:r3season_full_cdf} and Table~\ref{supp-stab:r3season_full_distribution}). The 18 additional timestamps are the first six in each chronological partition, excluded only when constructing model windows. DJF/MAM/JJA/SON have 6,500/6,624/6,624/6,552 samples, with descriptive seasonal Q95 values of 0.6197/0.4575/0.5877/0.6726~mm\,h$^{-1}$; these do not redefine the fixed training threshold. Values $\geq1.0$~mm\,h$^{-1}$ account for 2.49/1.24/2.14/2.98\%, respectively. The curves describe regional-mean preceding-hour precipitation, not six-hour totals or wet-only distributions; neither Q95 nor 1.0~mm\,h$^{-1}$ is adopted as a physical extreme-rainfall definition.}
+ 
++\revminor{The separate q03d sensitivity compares year-round XGBoost (G), four season-specific models (S), and a year-round model with month/hour sine--cosine inputs (F), using five matched seeds and unchanged hyperparameters without retuning (Supplementary Tables~\ref{supp-stab:r3season_gsf_scores} and~\ref{supp-stab:r3season_gsf_pairs}). Mean seed-level overall RMSE is 0.2439/0.2468/0.2443~mm\,h$^{-1}$ for G/S/F. S is worse overall in all five seeds, but its five-seed-mean-prediction difference is +0.0020 with a pointwise 95\% circular-block interval of $[-0.0012,+0.0056]$~mm\,h$^{-1}$. The corresponding F difference is +0.0004 $[-0.0011,+0.0018]$; its JJA improvement and SON deterioration have intervals excluding zero, without multiplicity adjustment. None of the seasonal S--G intervals excludes zero. Thus this fixed-configuration XGBoost experiment does not show consistent benefits from seasonal specialization; we retain year-round models with seasonal evaluation, rather than infer that season-specific modelling is ineffective.}
++
+ \subsubsection{Independent Observational Checks}
+ \label{sec:observational_checks}
+ 
+@@ -1068,6 +1074,8 @@
+ For BiLSTM-Attention, upper-tail minimum total precipitation rate (mntpr) had the highest mean absolute grouped SHAP attribution among the seven predictors, 0.089130~mm\,h$^{-1}$, compared with 0.032847~mm\,h$^{-1}$ in the random comparison sample, a factor of approximately 2.71. Its mean signed attribution was positive ($+0.067413$~mm\,h$^{-1}$), relative to the selected background, but the proportion of positive case--seed attributions was only 53.7\%. BU-LSTM-Attention also ranked mntpr first in the upper tail, with mean absolute attribution 0.045958~mm\,h$^{-1}$. These results identify regime-dependent model reliance; they do not establish that mntpr has unique incremental predictive information or a causal effect.
+ 
+ \par}
++
++\revminor{In the random sample, BiLSTM-Attention attributions were largest for tcc, sp and mntpr (0.0370, 0.0360 and 0.0328~mm\,h$^{-1}$), followed by v10 (0.0192~mm\,h$^{-1}$); mxtpr, d2m and lsp each had less than 0.01~mm\,h$^{-1}$. The tcc and sp means differed by less than their seed SDs. In the upper tail, the order was mntpr, tcc, sp, v10, lsp, mxtpr and d2m. BU-LSTM-Attention also ranked tcc and sp first and second in the random sample, and mntpr and tcc first and second in the upper tail (Supplementary Table~\ref{supp-stab:r1m4_shap_magnitude}).}
+ 
+ \begin{figure}[!htbp]
+ \centering
+@@ -1144,13 +1152,16 @@
+ \section{Discussion}
+ 
+ \subsection{Overall Forecasting Performance and Model Robustness}
++\label{sec:overall_discussion}
+ 
+ {\color{red}\hypersetup{linkcolor=red}
+ The results show that several machine-learning and deep-learning models achieved similar levels of performance for short-term regional precipitation forecasting over Dublin. Across five fixed random seeds, BiLSTM-Attention obtained the lowest mean RMSE of 0.2429~mm\,h$^{-1}$, followed closely by XGBoost at 0.2439~mm\,h$^{-1}$. The difference between the two models was small relative to the overall forecast error. The paired block-bootstrap analysis showed no clear RMSE difference for the complete test set. The legacy wet-subset interval is retained only for its original definition. For the revised wet subset ($\geq0.1$~mm\,h$^{-1}$), the separate single-saved-run comparison supports lower RMSE for XGBoost, as reported in Section~\ref{sec:overall_results}; it is not a five-seed comparison. The main result is therefore not that one model consistently outperformed all alternatives, but that a relatively compact recurrent model and a tree-based machine-learning model produced comparable overall point forecasts under the same data and evaluation protocol.
+ \par}
+ 
+-The comparison between BiLSTM-Attention and BiLSTM provides a more direct assessment of the temporal attention mechanism. The attention-based model reduced the mean RMSE from 0.2447 to 0.2429~mm\,h$^{-1}$ while the remaining architecture was kept unchanged. The improvement was consistent with a useful contribution from temporal attention, although its magnitude was modest. This result is important when interpreting architectural changes in rainfall forecasting, because differences observed in a single training run can be similar in magnitude to those caused by stochastic model initialization. The five-seed experiment therefore provides a more conservative estimate of the benefit associated with attention.
++\revminor{The comparison between BiLSTM-Attention and the otherwise identical BiLSTM-NoAttention control isolates the temporal attention layer. Attention reduced mean RMSE from 0.2447 to 0.2429~mm\,h$^{-1}$ (paired difference $-0.0018$~mm\,h$^{-1}$, $-0.73\%$); all five seeds improved, and both the seed-t and moving-block intervals, each $[-0.0033,-0.0003]$~mm\,h$^{-1}$, excluded zero. After Holm adjustment over the 16 all-target RMSE comparisons in Supplementary Table~\ref{supp-stab:r3sig_pairs}, however, the adjusted $p$ values were 0.17 (seed-t) and 0.13 (block), and the wet and upper-tail differences were not clearly separated. The attention layer added 8,320 trainable parameters (36,993 to 45,313). The gain is therefore consistent in sign but small, and it is not established after multiplicity adjustment.}
+ 
++\revminor{Greater model complexity was not matched by clear gains in point accuracy. BiLSTM-Attention and XGBoost differed by $-0.0011$~mm\,h$^{-1}$ ($-0.43\%$) overall, with both intervals including zero, whereas XGBoost had lower RMSE in the wet ($+2.4\%$) and upper-tail ($+3.6\%$) subsets, with all five seeds and both intervals favouring it; in the rolling-origin evaluation, the pooled difference slightly favoured XGBoost but depended on block length (Section~\ref{sec:rolling_origin_results}). BU-LSTM, BU-LSTM-Attention and Probabilistic BiLSTM-Attention had 1.3--2.2\% higher overall RMSE than XGBoost in all five seeds, and adding attention to BU-LSTM (159,272 additional parameters) produced no clear RMSE or CRPS improvement. All models except the Transformer had lower RMSE than AR(1) after Holm adjustment. In the recorded runs, training the neural models took about 105--393~s per seed, compared with 0.1--0.4~s for XGBoost, but timer definitions differ, the XGBoost device was not recorded and inference time was not benchmarked (Supplementary Table~\ref{supp-stab:r3sig_cost}). For point forecasts in this setting, XGBoost therefore provided comparable overall accuracy and better wet and upper-tail accuracy, with much shorter recorded training times that do not constitute a unified computational-cost benchmark. The probabilistic models are justified only where predictive distributions are required, and their upper-tail undercoverage remains a limitation. These conclusions apply to this regional ERA5 target, the 6-h lead time and the tested configurations, without a formal cost--benefit criterion.}
++
+ The probabilistic recurrent models did not improve deterministic point accuracy. Probabilistic BiLSTM-Attention produced a higher mean RMSE than its deterministic BiLSTM-Attention counterpart, and a similar pattern was observed for the deeper BU-LSTM-Attention architecture when compared with the matched deterministic diagnostic control. The corresponding point-error results are reported in Section~\ref{sec:ablation_results}. These differences are consistent with the models being trained for different objectives. Mean squared error directly optimizes point prediction, whereas Gaussian negative log-likelihood jointly estimates the predictive mean and variance. Probabilistic models should therefore be assessed using both point accuracy and the quality of the predictive distribution rather than point-error metrics alone.
+ 
+ {\color{red}\hypersetup{linkcolor=red}
+@@ -1223,7 +1234,9 @@
+ 
+ \par}
+ 
++\revminor{These rankings are physically plausible for a mid-latitude maritime region, although none of the analyses tests a mechanism. Over the North Atlantic storm track, most precipitation is associated with extratropical cyclones and their fronts \citep{hawcroft2012much,catto2012relating}. Surface pressure summarizes the synoptic pressure field; in the training period, it was negatively associated with precipitation six hours later (Spearman $\rho=-0.37$; rank-partial $-0.19$ after controlling current precipitation), consistent with wetter conditions near low-pressure systems, although low pressure is neither necessary nor sufficient for rain. Total cloud cover indicates moist, cloud-covered conditions within precipitating systems ($\rho=0.44$; rank-partial $0.25$), but extensive cloud does not by itself imply rain. Positive v10, a southerly flow component, was associated with later precipitation in every season, and removing v10 degraded BiLSTM-Attention mainly in DJF and SON (Section~\ref{sec:predictor_selection_results}). This is consistent with poleward moisture transport ahead of cold fronts and in atmospheric rivers affecting western Europe \citep{lavers2013nexus}; without moisture-flux or trajectory analysis, no moisture source or transport path is inferred. The precipitation-related inputs describe current precipitation: lsp is the preceding-hour large-scale accumulation, whereas mxtpr and mntpr bound the total precipitation rate within that hour. Their overlap is consistent with small single-variable removal effects but a clear group effect. A high mntpr indicates precipitation sustained throughout the preceding hour, which may persist into the target hour in heavy cases, consistent with its upper-tail attribution. The low attribution of d2m may reflect moisture information shared with tcc and the precipitation inputs; it does not imply that humidity is unimportant for precipitation formation. Because attribution and ablation measure model reliance and predictive utility for this regional ERA5 target, these explanations are hypotheses consistent with the evidence, not causal validation; the cited studies concern daily or climatological precipitation over broader regions.}
+ 
++
+ {\color{red}\hypersetup{linkcolor=red,citecolor=red}
+ Contemporaneous association is not six-hour predictive contribution, and a rank-partial association does not demonstrate a causal effect or a gain in model performance. The candidate-pool dependence and matched C6 results in Section~\ref{sec:predictor_selection_results} therefore qualify the original screening rationale. A separate, pre-specified q21 configuration, C3, added upstream U1 inputs (the original seven variables plus ws, averaged over 52.75--53.75$^\circ$N, 10.5--7.0$^\circ$W) and U2 inputs (500-hPa geopotential and total-column water vapour, cosine-latitude weighted over 50--57$^\circ$N, 20--7$^\circ$W). Overall RMSE decreased by 6.4\% for XGBoost and 7.0\% for BiLSTM-Attention. C3 expands both spatial coverage and the predictor count from seven to 17, so it is not a controlled seven-variable selection comparison. C3a (U1 only, 15 predictors) and C3b (U2 only, nine predictors) were added after inspecting C3 and are exploratory. Their results are reported separately in Supplementary Tables~\ref{supp-stab:r2m3_upstream_xgboost} and~\ref{supp-stab:r2m3_upstream_bilstm_attn}. These spatial sensitivity tests show that the local configuration can omit useful upstream information; they do not establish a uniquely best selection strategy.
+ \par}
+@@ -1285,6 +1298,8 @@
+ 
+ 
+ %----------------------------------------------------------
++\revminor{The q03d seasonal-training sensitivity did not retune each season or train season-specific deep models. Seasonal training uses roughly one quarter of the available training targets, and the experiment does not isolate the reason for its score changes. Five seeds describe training variability, whereas the paired circular-block intervals condition on their mean predictions; these are separate uncertainty summaries. Full-period seasonal distribution plots are descriptive and do not enter model fitting or threshold selection.}
++
+ \section{Conclusion}
+ \label{sec:conclusion}
+ {\color{red}\hypersetup{linkcolor=red,citecolor=red,filecolor=red,urlcolor=red}
+--- a/Supplementary.tex	2026-11-16 00:00:00.000000000 +0000
++++ b/Supplementary.tex	2026-11-16 00:00:00.000000000 +0000
+@@ -2338,6 +2338,288 @@
+ ERA5 window diagnostic & 0.1882 & 0.0743 & 0.5317 & 0.3134 & 0.6606 & 0.3824 \\
+ \hline
+ \end{tabular}
++\end{revisiontable}
++
++
++% R3-14: full-period seasonal distributions and existing q03d sensitivity.
++\clearpage
++\begin{revisiontable}
++\caption{Seasonal distribution of ERA5 25-cell regional-mean hourly precipitation over the complete sampled 2004--2021 archive: 26,300 timestamps, 00/06/12/18 UTC from 1 January 2004 00:00 to 31 December 2021 18:00. Seasons are DJF/MAM/JJA/SON by valid month; zero values are included. These descriptive full-period quantiles are not the fixed training-derived event threshold. $N_0$, $N_{\rm wet}$ and $N_{\geq1}$ count exact zeros, $y\geq0.1$ and $y\geq1.0$~mm\,h$^{-1}$, respectively. Q95 and maxima are in mm\,h$^{-1}$. The old prediction-file distribution omitted six initial timestamps in each partition (26,282 targets); this table restores all 18, without changing model evaluations.}
++\label{stab:r3season_full_distribution}
++\begin{tabular}{@{}lrrrrrr@{}}
++\hline
++Season & $N$ & $N_0$ & $N_{\rm wet}$ & $N_{\geq1}$ & Q95 & Max \\
++\hline
++DJF & 6500 & 829 & 1299 & 162 & 0.6197 & 3.4193 \\
++MAM & 6624 & 1681 & 1288 & 82 & 0.4575 & 2.8670 \\
++JJA & 6624 & 1237 & 1443 & 142 & 0.5877 & 3.9403 \\
++SON & 6552 & 964 & 1333 & 195 & 0.6726 & 4.1345 \\
++\hline
++\end{tabular}
++\end{revisiontable}
++
++\clearpage
++\begin{figure}[htbp]
++\centering
++\includegraphics{Figures/r3M14_season_cdf_full.pdf}
++\caption{\textcolor{red}{Seasonal empirical distributions of ERA5 regional-mean hourly precipitation for the complete 2004--2021 sampled archive (26,300 timestamps; DJF 6,500, MAM 6,624, JJA 6,624, SON 6,552). Panel (a) shows $P(Y\leq y)$ and panel (b) shows $P(Y\geq y)$ on a logarithmic vertical axis; both include zero precipitation and the full observed range. The two probabilities are defined separately at ties. These are unconditional distributions, not wet-only CDFs. Values are preceding-hour accumulations averaged equally over the same 25 grid cells, retained at 00/06/12/18 UTC; they are not six-hour totals or all 24 hourly values per day. Vertical dotted, dashed and dash-dotted lines mark 0.1, training Q95=0.574048 and 1.0~mm\,h$^{-1}$, respectively; the fixed Q95 is not recomputed by season. Each season has its own denominator. The full-period statistics are in Table~\ref{stab:r3season_full_distribution}.}}
++\label{sfig:r3season_full_cdf}
++\end{figure}
++\clearpage
++\begin{revisionlongtable}
++\begin{longtable}{@{}llrrrr@{}}
++\caption{Five-seed q03d seasonal-training sensitivity on common test targets. G is year-round XGBoost; S fits four separate models grouped by target season; F adds target-month and target-hour sine/cosine inputs to G (42 inputs for G/S, 46 for F). All use the same seven meteorological variables, six-snapshot window, chronological split and fixed hyperparameters (100 trees, learning rate 0.05, depth 6, row/column subsampling 0.8), without seasonal retuning. Seeds are 42, 123, 7, 2024, 99. Seasonal training targets are 4566/4784/4686/4368 in DJF/MAM/JJA/SON. Entries are mean$\pm$SD of five seed-level scores; RMSE/MAE are mm\,h$^{-1}$. SS is $1-\mathrm{RMSE}/\mathrm{RMSE}_{\mathrm{month\times hour}}$, using training-fitted climatology on the same subset. Wet is $y\geq0.1$ and upper tail is $y\geq$training Q95=0.5740~mm\,h$^{-1}$. This separate sensitivity experiment does not replace the main model comparison or the q13 seasonal reruns.}\label{stab:r3season_gsf_scores}\\
++\hline
++Subset & Strategy & $N$ & RMSE$\pm$SD & MAE$\pm$SD & SS$\pm$SD \\
++\hline
++\endfirsthead
++\hline
++Subset & Strategy & $N$ & RMSE$\pm$SD & MAE$\pm$SD & SS$\pm$SD \\
++\hline
++\endhead
++\hline
++\endfoot
++All & G & 3939 & 0.2439$\pm$0.0002 & 0.1191$\pm$0.0005 & 0.1067$\pm$0.0009 \\
++All & S & 3939 & 0.2468$\pm$0.0010 & 0.1205$\pm$0.0006 & 0.0962$\pm$0.0035 \\
++All & F & 3939 & 0.2443$\pm$0.0005 & 0.1190$\pm$0.0003 & 0.1052$\pm$0.0019 \\
++DJF & G & 848 & 0.2819$\pm$0.0020 & 0.1556$\pm$0.0017 & 0.0966$\pm$0.0064 \\
++DJF & S & 848 & 0.2811$\pm$0.0011 & 0.1486$\pm$0.0012 & 0.0994$\pm$0.0037 \\
++DJF & F & 848 & 0.2806$\pm$0.0014 & 0.1540$\pm$0.0012 & 0.1009$\pm$0.0046 \\
++MAM & G & 895 & 0.1731$\pm$0.0011 & 0.0745$\pm$0.0008 & 0.1224$\pm$0.0055 \\
++MAM & S & 895 & 0.1707$\pm$0.0013 & 0.0728$\pm$0.0005 & 0.1348$\pm$0.0066 \\
++MAM & F & 895 & 0.1724$\pm$0.0011 & 0.0732$\pm$0.0009 & 0.1264$\pm$0.0058 \\
++JJA & G & 1104 & 0.2467$\pm$0.0015 & 0.1192$\pm$0.0011 & 0.1249$\pm$0.0052 \\
++JJA & S & 1104 & 0.2497$\pm$0.0015 & 0.1247$\pm$0.0012 & 0.1142$\pm$0.0053 \\
++JJA & F & 1104 & 0.2443$\pm$0.0010 & 0.1182$\pm$0.0007 & 0.1334$\pm$0.0036 \\
++SON & G & 1092 & 0.2585$\pm$0.0012 & 0.1271$\pm$0.0009 & 0.0924$\pm$0.0044 \\
++SON & S & 1092 & 0.2673$\pm$0.0021 & 0.1335$\pm$0.0014 & 0.0613$\pm$0.0072 \\
++SON & F & 1092 & 0.2637$\pm$0.0018 & 0.1301$\pm$0.0012 & 0.0741$\pm$0.0064 \\
++Wet $\geq0.1$ & G & 854 & 0.4735$\pm$0.0011 & 0.3118$\pm$0.0010 & 0.1491$\pm$0.0019 \\
++Wet $\geq0.1$ & S & 854 & 0.4784$\pm$0.0023 & 0.3169$\pm$0.0011 & 0.1403$\pm$0.0041 \\
++Wet $\geq0.1$ & F & 854 & 0.4746$\pm$0.0016 & 0.3126$\pm$0.0006 & 0.1470$\pm$0.0030 \\
++Upper tail & G & 238 & 0.8428$\pm$0.0020 & 0.7294$\pm$0.0020 & 0.1580$\pm$0.0020 \\
++Upper tail & S & 238 & 0.8476$\pm$0.0041 & 0.7351$\pm$0.0035 & 0.1533$\pm$0.0041 \\
++Upper tail & F & 238 & 0.8432$\pm$0.0029 & 0.7295$\pm$0.0034 & 0.1576$\pm$0.0029 \\
++\end{longtable}
++\end{revisionlongtable}
++\clearpage
++\begin{revisiontable}
++\caption{Paired q03d differences relative to G, in mm\,h$^{-1}$; positive means worse. Seed mean$\pm$SD summarizes five paired seed-level RMSE differences, and $n_+/5$ counts increases. Prediction mean first averages predictions across seeds, then computes the RMSE difference; only this latter statistic has the displayed pointwise 95\% percentile interval. The two statistics must not be interchanged. Bootstrap uses shared circular blocks on the full 3,939-target timeline, block 28 (seven days), 2,000 replicates, seed 42; 141 complete blocks give 3,948 sampled positions, truncated to 3,939 before applying seasonal/wet/upper-tail masks. Intervals condition on the five fitted models, exclude training randomness, and are not multiplicity-adjusted; seed SD is separate, not a total uncertainty interval. Subset counts are in Table~\ref{stab:r3season_gsf_scores}. Tables~\ref{stab:season_xgb_scores} and~\ref{stab:season_xgb_paired} retain the earlier G/S summaries unchanged. Calendar augmentation has opposite JJA/SON effects; seasonal specialization has no consistently supported gain here. No season-specific deep-model training or retuning was performed.}
++\label{stab:r3season_gsf_pairs}
++\begin{tabular}{@{}lrrrr@{}}
++\hline
++Subset & Seed mean$\pm$SD & $n_+/5$ & Prediction mean & 95\% block CI \\
++\hline
++\multicolumn{5}{@{}l}{\textbf{S$-$G}} \\
++All & +0.0029$\pm$0.0008 & 5/5 & +0.0020 & [-0.0012, +0.0056] \\
++DJF & -0.0009$\pm$0.0024 & 3/5 & -0.0013 & [-0.0103, +0.0074] \\
++MAM & -0.0024$\pm$0.0013 & 0/5 & -0.0025 & [-0.0074, +0.0030] \\
++JJA & +0.0030$\pm$0.0016 & 5/5 & +0.0023 & [-0.0011, +0.0059] \\
++SON & +0.0088$\pm$0.0029 & 5/5 & +0.0071 & [-0.0005, +0.0148] \\
++Wet $\geq0.1$ & +0.0049$\pm$0.0029 & 5/5 & +0.0037 & [-0.0032, +0.0111] \\
++Upper tail & +0.0047$\pm$0.0056 & 4/5 & +0.0041 & [-0.0093, +0.0184] \\
++\multicolumn{5}{@{}l}{\textbf{F$-$G}} \\
++All & +0.0004$\pm$0.0007 & 3/5 & +0.0004 & [-0.0011, +0.0018] \\
++DJF & -0.0013$\pm$0.0019 & 1/5 & -0.0013 & [-0.0038, +0.0013] \\
++MAM & -0.0008$\pm$0.0003 & 0/5 & -0.0007 & [-0.0030, +0.0013] \\
++JJA & -0.0024$\pm$0.0024 & 1/5 & -0.0025 & [-0.0050, -0.0004] \\
++SON & +0.0052$\pm$0.0011 & 5/5 & +0.0050 & [+0.0022, +0.0079] \\
++Wet $\geq0.1$ & +0.0012$\pm$0.0017 & 4/5 & +0.0010 & [-0.0015, +0.0033] \\
++Upper tail & +0.0004$\pm$0.0030 & 1/5 & +0.0004 & [-0.0048, +0.0051] \\
++\hline
++\end{tabular}
++\end{revisiontable}
++
++\clearpage
++% R3 Section 4.1 (R3-15): seasonal NRMSE and climatology comparison
++{\color{red}\section*{Seasonal normalized RMSE}\par}
++
++\begin{revisiontable}
++\renewcommand{\arraystretch}{1.15}
++\caption{Seasonal RMSE normalized by the seasonal climatological mean (q13; $W=6$ five-seed rerun set, not the run set of the main performance table). Seasons are assigned by target time. NRMSE $=\mathrm{RMSE}_s/\bar{y}^{\,\mathrm{train}}_s$, where $\bar{y}^{\,\mathrm{train}}_s$ is the mean precipitation of season $s$ over the 18,410 raw training timestamps (2004-01-01 00:00 to 2016-08-07 06:00~UTC; 4,572/4,784/4,686/4,368 for DJF/MAM/JJA/SON); no validation or test data enter this denominator. The last column divides by the test-period seasonal mean instead and is a sensitivity only. Learning-model RMSE is the mean $\pm$ sample SD of five seed-level scores (seeds 42, 123, 7, 2024, 99), and NRMSE SD is that SD divided by the fixed denominator; references each have one deterministic score. RMSE and means are in mm\,h$^{-1}$; NRMSE is dimensionless. Skill scores relative to month-by-hour climatology are in Supplementary Tables~\ref{stab:season_djf_mam} and~\ref{stab:season_jja_son}; NRMSE is not a skill score. Each season has only two to three realizations in the test period, so seasonal contrasts are descriptive.}
++\label{stab:r3season_nrmse}
++\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}Xrrr@{}}
++\hline
++\textbf{Forecast} & \textbf{RMSE} & \textbf{NRMSE (training mean)} & \textbf{NRMSE (test mean)} \\
++\hline
++\multicolumn{4}{@{}l}{\textbf{DJF}, $N=848$; training mean $0.1052$; test mean $0.1440$~mm\,h$^{-1}$} \\
++Persistence & $0.3971$ & $3.776$ & $2.758$ \\
++Month-by-hour climatology & $0.3121$ & $2.968$ & $2.168$ \\
++AR(1) & $0.3065$ & $2.914$ & $2.129$ \\
++XGBoost & $0.2819\pm0.0020$ & $2.681\pm0.019$ & $1.958$ \\
++BU-LSTM & $0.2859\pm0.0026$ & $2.719\pm0.025$ & $1.986$ \\
++BiLSTM-Attention & $0.2782\pm0.0015$ & $2.645\pm0.014$ & $1.933$ \\
++Transformer & $0.2977\pm0.0024$ & $2.831\pm0.023$ & $2.068$ \\
++BU-LSTM-Attention & $0.2850\pm0.0017$ & $2.710\pm0.016$ & $1.980$ \\
++Prob. BiLSTM-Attention & $0.2886\pm0.0025$ & $2.744\pm0.024$ & $2.005$ \\
++\hline
++\multicolumn{4}{@{}l}{\textbf{MAM}, $N=895$; training mean $0.0854$; test mean $0.0685$~mm\,h$^{-1}$} \\
++Persistence & $0.2318$ & $2.714$ & $3.384$ \\
++Month-by-hour climatology & $0.1973$ & $2.309$ & $2.880$ \\
++AR(1) & $0.1897$ & $2.220$ & $2.768$ \\
++XGBoost & $0.1731\pm0.0011$ & $2.027\pm0.013$ & $2.527$ \\
++BU-LSTM & $0.1762\pm0.0003$ & $2.062\pm0.003$ & $2.572$ \\
++BiLSTM-Attention & $0.1743\pm0.0007$ & $2.040\pm0.008$ & $2.544$ \\
++Transformer & $0.1832\pm0.0027$ & $2.144\pm0.031$ & $2.674$ \\
++BU-LSTM-Attention & $0.1769\pm0.0015$ & $2.071\pm0.017$ & $2.583$ \\
++Prob. BiLSTM-Attention & $0.1781\pm0.0010$ & $2.085\pm0.012$ & $2.600$ \\
++\hline
++\multicolumn{4}{@{}l}{\textbf{JJA}, $N=1104$; training mean $0.1125$; test mean $0.1229$~mm\,h$^{-1}$} \\
++Persistence & $0.3218$ & $2.861$ & $2.618$ \\
++Month-by-hour climatology & $0.2819$ & $2.506$ & $2.293$ \\
++AR(1) & $0.2651$ & $2.357$ & $2.157$ \\
++XGBoost & $0.2467\pm0.0015$ & $2.193\pm0.013$ & $2.007$ \\
++BU-LSTM & $0.2524\pm0.0013$ & $2.244\pm0.011$ & $2.053$ \\
++BiLSTM-Attention & $0.2498\pm0.0022$ & $2.222\pm0.020$ & $2.033$ \\
++Transformer & $0.2694\pm0.0028$ & $2.396\pm0.025$ & $2.192$ \\
++BU-LSTM-Attention & $0.2531\pm0.0036$ & $2.251\pm0.032$ & $2.059$ \\
++Prob. BiLSTM-Attention & $0.2546\pm0.0015$ & $2.264\pm0.014$ & $2.072$ \\
++\hline
++\multicolumn{4}{@{}l}{\textbf{SON}, $N=1092$; training mean $0.1228$; test mean $0.1228$~mm\,h$^{-1}$} \\
++Persistence & $0.3426$ & $2.789$ & $2.789$ \\
++Month-by-hour climatology & $0.2848$ & $2.319$ & $2.319$ \\
++AR(1) & $0.2746$ & $2.235$ & $2.236$ \\
++XGBoost & $0.2585\pm0.0012$ & $2.105\pm0.010$ & $2.105$ \\
++BU-LSTM & $0.2583\pm0.0014$ & $2.103\pm0.011$ & $2.103$ \\
++BiLSTM-Attention & $0.2543\pm0.0008$ & $2.070\pm0.006$ & $2.070$ \\
++Transformer & $0.2722\pm0.0034$ & $2.216\pm0.028$ & $2.216$ \\
++BU-LSTM-Attention & $0.2587\pm0.0011$ & $2.107\pm0.009$ & $2.107$ \\
++Prob. BiLSTM-Attention & $0.2609\pm0.0011$ & $2.124\pm0.009$ & $2.124$ \\
++\hline
++\end{tabularx}
+ \end{revisiontable}
+ 
++\begin{revisiontable}
++\renewcommand{\arraystretch}{1.15}
++\caption{Paired seasonal RMSE differences between each learning model and month-by-hour climatology (q13; same rerun set and targets as Table~\ref{stab:r3season_nrmse}). $\Delta$ is the mean of five seed-level RMSE differences (model minus climatology, mm\,h$^{-1}$); negative values favour the model; $\Delta\%$ is relative to climatology RMSE. Seed-t intervals use four degrees of freedom. Moving-block intervals resample non-circular blocks of 28 consecutive targets within each season's chronologically concatenated test subsequence (5,000 replicates, seed 42). The moving-block bootstrap was applied to season-filtered samples; consequently, some resampled blocks may span discontinuities between seasons or years. The resulting intervals should be interpreted as conditional sensitivity estimates rather than uncertainty intervals that fully preserve chronological dependence. Both are pointwise 95\% intervals without multiplicity adjustment. Improve counts seeds with lower model RMSE.}
++\label{stab:r3season_clim_pairs}
++\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}Xrrrrr@{}}
++\hline
++\textbf{Model} & \textbf{$\Delta$RMSE} & \textbf{$\Delta$\%} & \textbf{Seed-t interval} & \textbf{Block interval} & \textbf{Improve} \\
++\hline
++\multicolumn{6}{@{}l}{\textbf{DJF}, $N=848$; climatology RMSE $0.3121$} \\
++XGBoost & $-0.0302$ & $-9.7$ & $[-0.0326,-0.0277]$ & $[-0.0471,-0.0141]$ & 5/5 \\
++BU-LSTM & $-0.0262$ & $-8.4$ & $[-0.0294,-0.0229]$ & $[-0.0346,-0.0180]$ & 5/5 \\
++BiLSTM-Attention & $-0.0339$ & $-10.9$ & $[-0.0357,-0.0321]$ & $[-0.0438,-0.0242]$ & 5/5 \\
++Transformer & $-0.0144$ & $-4.6$ & $[-0.0174,-0.0113]$ & $[-0.0202,-0.0079]$ & 5/5 \\
++BU-LSTM-Attention & $-0.0271$ & $-8.7$ & $[-0.0292,-0.0250]$ & $[-0.0358,-0.0185]$ & 5/5 \\
++Prob. BiLSTM-Attention & $-0.0235$ & $-7.5$ & $[-0.0266,-0.0204]$ & $[-0.0307,-0.0159]$ & 5/5 \\
++\hline
++\multicolumn{6}{@{}l}{\textbf{MAM}, $N=895$; climatology RMSE $0.1973$} \\
++XGBoost & $-0.0242$ & $-12.2$ & $[-0.0255,-0.0228]$ & $[-0.0362,-0.0112]$ & 5/5 \\
++BU-LSTM & $-0.0211$ & $-10.7$ & $[-0.0215,-0.0208]$ & $[-0.0321,-0.0102]$ & 5/5 \\
++BiLSTM-Attention & $-0.0230$ & $-11.7$ & $[-0.0239,-0.0222]$ & $[-0.0365,-0.0107]$ & 5/5 \\
++Transformer & $-0.0141$ & $-7.1$ & $[-0.0174,-0.0108]$ & $[-0.0230,-0.0064]$ & 5/5 \\
++BU-LSTM-Attention & $-0.0204$ & $-10.3$ & $[-0.0222,-0.0185]$ & $[-0.0319,-0.0096]$ & 5/5 \\
++Prob. BiLSTM-Attention & $-0.0192$ & $-9.7$ & $[-0.0204,-0.0179]$ & $[-0.0285,-0.0099]$ & 5/5 \\
++\hline
++\multicolumn{6}{@{}l}{\textbf{JJA}, $N=1104$; climatology RMSE $0.2819$} \\
++XGBoost & $-0.0352$ & $-12.5$ & $[-0.0370,-0.0334]$ & $[-0.0495,-0.0217]$ & 5/5 \\
++BU-LSTM & $-0.0295$ & $-10.5$ & $[-0.0311,-0.0279]$ & $[-0.0374,-0.0209]$ & 5/5 \\
++BiLSTM-Attention & $-0.0320$ & $-11.4$ & $[-0.0348,-0.0293]$ & $[-0.0415,-0.0222]$ & 5/5 \\
++Transformer & $-0.0124$ & $-4.4$ & $[-0.0159,-0.0089]$ & $[-0.0163,-0.0079]$ & 5/5 \\
++BU-LSTM-Attention & $-0.0287$ & $-10.2$ & $[-0.0332,-0.0243]$ & $[-0.0365,-0.0208]$ & 5/5 \\
++Prob. BiLSTM-Attention & $-0.0272$ & $-9.7$ & $[-0.0291,-0.0253]$ & $[-0.0344,-0.0196]$ & 5/5 \\
++\hline
++\multicolumn{6}{@{}l}{\textbf{SON}, $N=1092$; climatology RMSE $0.2848$} \\
++XGBoost & $-0.0263$ & $-9.2$ & $[-0.0278,-0.0248]$ & $[-0.0382,-0.0161]$ & 5/5 \\
++BU-LSTM & $-0.0265$ & $-9.3$ & $[-0.0282,-0.0248]$ & $[-0.0338,-0.0212]$ & 5/5 \\
++BiLSTM-Attention & $-0.0305$ & $-10.7$ & $[-0.0314,-0.0296]$ & $[-0.0413,-0.0226]$ & 5/5 \\
++Transformer & $-0.0126$ & $-4.4$ & $[-0.0169,-0.0084]$ & $[-0.0177,-0.0088]$ & 5/5 \\
++BU-LSTM-Attention & $-0.0261$ & $-9.2$ & $[-0.0274,-0.0247]$ & $[-0.0331,-0.0213]$ & 5/5 \\
++Prob. BiLSTM-Attention & $-0.0239$ & $-8.4$ & $[-0.0252,-0.0226]$ & $[-0.0305,-0.0187]$ & 5/5 \\
++\hline
++\end{tabularx}
++\end{revisiontable}
++
++\clearpage
++% R3 L822-824 (R3-18): paired significance and model complexity
++{\color{red}\section*{Paired model comparisons and complexity}\par}
++
++\begin{revisionlongtable}\footnotesize
++\begin{longtable}{@{}llrrllrl@{}}
++\caption{Paired model comparisons (q18) on the 3,939 common test targets of the main split, $W=6$, five seeds (42, 123, 7, 2024, 99). Codes: XGB, XGBoost; BA, BiLSTM-Attention; BNA, BiLSTM-NoAttention (the BiLSTM row of Table~3); BU, BU-LSTM; BUA, BU-LSTM-Attention; PBA, Probabilistic BiLSTM-Attention; TR, Transformer; AR(1), training-fitted AR(1). Predictions: XGB and BA from the q21 C0 runs, BNA from the q18 rerun, the other models from the q14 $W=6$ reruns (not the run set of the main performance table). $\Delta$ is the mean of five seed-level differences, A minus B (RMSE or Gaussian CRPS, mm\,h$^{-1}$); negative values favour A; $\Delta\%$ is relative to B. Seed-t intervals use four degrees of freedom; moving-block intervals average the seed-level differences within each of 5,000 replicates of non-circular 28-target blocks (seed 42, common indices across pairs, then subset masking). Both are pointwise 95\% intervals. Better counts seeds in which A has the lower score. Holm-adjusted $p$ values (seed-t; block) are given only for the 16 all-target RMSE comparisons, treated as one family; other rows are descriptive. The comparison list is defined in the analysis script; no independent pre-registration record is available. Wet $y\geq0.1$~mm\,h$^{-1}$ ($n=854$); Upper $y\geq0.574048$~mm\,h$^{-1}$ ($n=238$).}\label{stab:r3sig_pairs}\\
++\hline
++\textbf{A $-$ B} & \textbf{Subset} & \textbf{$\Delta$} & \textbf{$\Delta\%$} & \textbf{Seed-t interval} & \textbf{Block interval} & \textbf{Better} & \textbf{Holm $p$}\\
++\hline
++\endfirsthead
++\multicolumn{8}{l}{\textbf{Table~\thetable{} (continued)}}\\
++\hline
++\textbf{A $-$ B} & \textbf{Subset} & \textbf{$\Delta$} & \textbf{$\Delta\%$} & \textbf{Seed-t interval} & \textbf{Block interval} & \textbf{Better} & \textbf{Holm $p$}\\
++\hline
++\endhead
++\hline
++\endfoot
++BA $-$ BNA & All & $-0.0018$ & $-0.73$ & $[-0.0033,-0.0003]$ & $[-0.0033,-0.0003]$ & 5/5 & 0.173; 0.134\\
++ & Wet & $-0.0043$ & $-0.89$ & $[-0.0101,+0.0014]$ & $[-0.0078,-0.0010]$ & 4/5 & --\\
++ & Upper & $-0.0058$ & $-0.66$ & $[-0.0174,+0.0059]$ & $[-0.0122,+0.0004]$ & 4/5 & --\\
++BA $-$ XGB & All & $-0.0011$ & $-0.43$ & $[-0.0024,+0.0003]$ & $[-0.0049,+0.0030]$ & 4/5 & 0.346; 1.000\\
++ & Wet & $+0.0115$ & $+2.42$ & $[+0.0077,+0.0152]$ & $[+0.0027,+0.0208]$ & 0/5 & --\\
++ & Upper & $+0.0304$ & $+3.61$ & $[+0.0253,+0.0355]$ & $[+0.0145,+0.0469]$ & 0/5 & --\\
++TR $-$ XGB & All & $+0.0161$ & $+6.59$ & $[+0.0131,+0.0191]$ & $[+0.0103,+0.0224]$ & 0/5 & 0.001; 0.000\\
++ & Wet & $+0.0548$ & $+11.58$ & $[+0.0412,+0.0685]$ & $[+0.0427,+0.0680]$ & 0/5 & --\\
++ & Upper & $+0.1062$ & $+12.61$ & $[+0.0837,+0.1288]$ & $[+0.0845,+0.1299]$ & 0/5 & --\\
++BU $-$ XGB & All & $+0.0031$ & $+1.25$ & $[+0.0013,+0.0048]$ & $[-0.0011,+0.0077]$ & 0/5 & 0.061; 0.792\\
++ & Wet & $+0.0231$ & $+4.88$ & $[+0.0134,+0.0327]$ & $[+0.0137,+0.0336]$ & 0/5 & --\\
++ & Upper & $+0.0542$ & $+6.44$ & $[+0.0379,+0.0706]$ & $[+0.0369,+0.0731]$ & 0/5 & --\\
++BUA $-$ XGB & All & $+0.0033$ & $+1.35$ & $[+0.0011,+0.0054]$ & $[-0.0009,+0.0079]$ & 0/5 & 0.091; 0.734\\
++ & Wet & $+0.0226$ & $+4.77$ & $[+0.0124,+0.0328]$ & $[+0.0133,+0.0330]$ & 0/5 & --\\
++ & Upper & $+0.0537$ & $+6.37$ & $[+0.0342,+0.0732]$ & $[+0.0368,+0.0725]$ & 0/5 & --\\
++PBA $-$ XGB & All & $+0.0054$ & $+2.23$ & $[+0.0038,+0.0071]$ & $[+0.0011,+0.0104]$ & 0/5 & 0.007; 0.118\\
++ & Wet & $+0.0281$ & $+5.93$ & $[+0.0208,+0.0354]$ & $[+0.0186,+0.0392]$ & 0/5 & --\\
++ & Upper & $+0.0635$ & $+7.53$ & $[+0.0531,+0.0739]$ & $[+0.0461,+0.0836]$ & 0/5 & --\\
++BNA $-$ XGB & All & $+0.0007$ & $+0.30$ & $[-0.0010,+0.0025]$ & $[-0.0029,+0.0044]$ & 1/5 & 0.632; 1.000\\
++ & Wet & $+0.0158$ & $+3.34$ & $[+0.0074,+0.0243]$ & $[+0.0079,+0.0245]$ & 0/5 & --\\
++ & Upper & $+0.0362$ & $+4.29$ & $[+0.0219,+0.0504]$ & $[+0.0211,+0.0519]$ & 0/5 & --\\
++BUA $-$ BU & All & $+0.0002$ & $+0.10$ & $[-0.0028,+0.0033]$ & $[-0.0004,+0.0008]$ & 2/5 & 0.842; 1.000\\
++ & Wet & $-0.0005$ & $-0.10$ & $[-0.0158,+0.0148]$ & $[-0.0021,+0.0011]$ & 3/5 & --\\
++ & Upper & $-0.0006$ & $-0.06$ & $[-0.0295,+0.0284]$ & $[-0.0037,+0.0023]$ & 3/5 & --\\
++ & All CRPS & $+0.0007$ & $+0.76$ & $[-0.0005,+0.0020]$ & $[+0.0003,+0.0011]$ & 2/5 & --\\
++BUA $-$ PBA & All & $-0.0022$ & $-0.87$ & $[-0.0048,+0.0005]$ & $[-0.0032,-0.0013]$ & 5/5 & 0.346; 0.000\\
++ & Wet & $-0.0055$ & $-1.10$ & $[-0.0210,+0.0100]$ & $[-0.0081,-0.0034]$ & 3/5 & --\\
++ & Upper & $-0.0098$ & $-1.08$ & $[-0.0378,+0.0182]$ & $[-0.0146,-0.0059]$ & 3/5 & --\\
++ & All CRPS & $-0.0011$ & $-1.17$ & $[-0.0044,+0.0022]$ & $[-0.0017,-0.0006]$ & 3/5 & --\\
++XGB $-$ AR(1) & All & $-0.0187$ & $-7.13$ & $[-0.0190,-0.0184]$ & $[-0.0245,-0.0135]$ & 5/5 & 0.000; 0.000\\
++ & Wet & $-0.0578$ & $-10.88$ & $[-0.0591,-0.0565]$ & $[-0.0697,-0.0466]$ & 5/5 & --\\
++ & Upper & $-0.1097$ & $-11.52$ & $[-0.1123,-0.1072]$ & $[-0.1312,-0.0895]$ & 5/5 & --\\
++BA $-$ AR(1) & All & $-0.0198$ & $-7.54$ & $[-0.0210,-0.0186]$ & $[-0.0238,-0.0162]$ & 5/5 & 0.000; 0.000\\
++ & Wet & $-0.0463$ & $-8.72$ & $[-0.0497,-0.0430]$ & $[-0.0539,-0.0392]$ & 5/5 & --\\
++ & Upper & $-0.0793$ & $-8.33$ & $[-0.0835,-0.0752]$ & $[-0.0925,-0.0667]$ & 5/5 & --\\
++BNA $-$ AR(1) & All & $-0.0180$ & $-6.85$ & $[-0.0195,-0.0165]$ & $[-0.0220,-0.0142]$ & 5/5 & 0.000; 0.000\\
++ & Wet & $-0.0420$ & $-7.90$ & $[-0.0505,-0.0335]$ & $[-0.0500,-0.0339]$ & 5/5 & --\\
++ & Upper & $-0.0736$ & $-7.72$ & $[-0.0884,-0.0588]$ & $[-0.0881,-0.0589]$ & 5/5 & --\\
++BU $-$ AR(1) & All & $-0.0157$ & $-5.97$ & $[-0.0173,-0.0141]$ & $[-0.0182,-0.0132]$ & 5/5 & 0.000; 0.000\\
++ & Wet & $-0.0347$ & $-6.53$ & $[-0.0433,-0.0262]$ & $[-0.0396,-0.0295]$ & 5/5 & --\\
++ & Upper & $-0.0555$ & $-5.83$ & $[-0.0700,-0.0410]$ & $[-0.0641,-0.0465]$ & 5/5 & --\\
++BUA $-$ AR(1) & All & $-0.0155$ & $-5.88$ & $[-0.0176,-0.0133]$ & $[-0.0181,-0.0129]$ & 5/5 & 0.000; 0.000\\
++ & Wet & $-0.0352$ & $-6.62$ & $[-0.0458,-0.0246]$ & $[-0.0406,-0.0296]$ & 5/5 & --\\
++ & Upper & $-0.0561$ & $-5.89$ & $[-0.0765,-0.0356]$ & $[-0.0653,-0.0463]$ & 5/5 & --\\
++PBA $-$ AR(1) & All & $-0.0133$ & $-5.06$ & $[-0.0147,-0.0119]$ & $[-0.0158,-0.0107]$ & 5/5 & 0.000; 0.000\\
++ & Wet & $-0.0297$ & $-5.59$ & $[-0.0374,-0.0220]$ & $[-0.0346,-0.0240]$ & 5/5 & --\\
++ & Upper & $-0.0462$ & $-4.85$ & $[-0.0576,-0.0349]$ & $[-0.0548,-0.0362]$ & 5/5 & --\\
++TR $-$ AR(1) & All & $-0.0027$ & $-1.02$ & $[-0.0054,+0.0001]$ & $[-0.0065,+0.0017]$ & 4/5 & 0.274; 0.962\\
++ & Wet & $-0.0030$ & $-0.56$ & $[-0.0169,+0.0109]$ & $[-0.0111,+0.0066]$ & 3/5 & --\\
++ & Upper & $-0.0035$ & $-0.37$ & $[-0.0275,+0.0205]$ & $[-0.0187,+0.0140]$ & 3/5 & --\\
++\end{longtable}
++\end{revisionlongtable}
++
++\begin{revisiontable}
++\renewcommand{\arraystretch}{1.15}
++\caption{Model size and recorded training time for the run sets compared in Table~\ref{stab:r3sig_pairs}. Parameters are trainable counts from the saved model summaries (BiLSTM-NoAttention from the q18 rerun of the same architecture; Table~2 lists NR because no original record was located); not applicable (NA) to XGBoost. Times are the recorded seconds per seed, mean [range] over five seeds, with early stopping (patience 10; cap 30 epochs). All runs were executed on an RTX 5090 host, but in separate batches; the XGBoost execution device was not recorded. Timer coverage differs between scripts: q21 and q14 include model construction, fitting and validation/test prediction, whereas q18 records fitting only. Inference cost was not benchmarked separately, and data preparation and hyperparameter search are excluded (search records are in Supplementary Table~\ref{stab:r2m9_search}). These are recorded run times, not a controlled computational benchmark.}
++\label{stab:r3sig_cost}
++\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}Xrrrll@{}}
++\hline
++\textbf{Model} & \textbf{Parameters} & \textbf{Time (s)} & \textbf{Epochs} & \textbf{Runs} & \textbf{Timer}\\
++\hline
++XGBoost & NA & 0.2 [0.1--0.4] & NA & q21 & Build, fit, predict\\
++BiLSTM-Attention & 45,313 & 121.2 [115.0--126.7] & 18--20 & q21 & Build, fit, predict\\
++BiLSTM-NoAttention & 36,993 & 104.8 [87.7--116.5] & 17--23 & q18 & Fit only\\
++BU-LSTM & 83,802 & 211.8 [187.0--245.0] & 16--22 & q14 & Build, fit, predict\\
++BU-LSTM-Attention & 243,074 & 392.5 [288.6--495.5] & 15--26 & q14 & Build, fit, predict\\
++Prob. BiLSTM-Attention & 45,442 & 203.1 [136.7--267.6] & 13--27 & q14 & Build, fit, predict\\
++Transformer & 8,833 & 315.0 [190.6--347.6] & 16--30 & q14 & Build, fit, predict\\
++\hline
++\end{tabularx}
++\end{revisiontable}
++
+ \end{document}
+--- a/Response letter.tex	2026-11-16 00:00:00.000000000 +0000
++++ b/Response letter.tex	2026-11-16 00:00:00.000000000 +0000
+@@ -1350,39 +1350,77 @@
+ 
+ \ReviewerComment{L469-471: This does not appear like an extreme precipitation. This is the reason why the modeling and analyses need to be carried out by separating seasons. According to some definitions, < 1 mm of rainfall is not even considered as rain. Could you plot the PDFs or CDFs of total precipitation across 4 seasons from your dataset (entire dataset from 2004-2021)?}
+ 
+-\PendingResponse
++\AuthorResponse{We agree that Q95=0.5740~mm\,h$^{-1}$ is a relative upper-tail threshold for regional-mean hourly ERA5 precipitation, not a meteorological extreme definition. It is the untransformed 95th percentile of 18,404 training targets. The existing Methods discussion distinguishes it from WMO's intensity classification and its different temporal/spatial support. We use wet $\geq0.1$~mm\,h$^{-1}$, with $>0$ retained only as a labelled legacy diagnostic; rainfall below 1~mm\,h$^{-1}$ is not treated as universally dry.
+ 
+-\ChangeLocation
++Supplementary Fig.~\ref{supp-sfig:r3season_full_cdf} now shows unconditional four-season CDFs and upper-tail exceedance curves for all 26,300 retained 00/06/12/18 UTC timestamps in 2004--2021, including zeros. The earlier figure used 26,282 windowed targets, omitting six initial timestamps per partition; we corrected that scope while preserving the old figure. The seasonal Q95 values are 0.6197/0.4575/0.5877/0.6726~mm\,h$^{-1}$ in DJF/MAM/JJA/SON (Table~\ref{supp-stab:r3season_full_distribution}); these full-period descriptions do not change the training event threshold.
++
++We also report the existing five-seed XGBoost comparison of year-round (G), four seasonal (S) and year-round calendar-augmented (F) models, with identical meteorological inputs, splits and hyperparameters and no retuning (Tables~\ref{supp-stab:r3season_gsf_scores} and~\ref{supp-stab:r3season_gsf_pairs}). Overall mean seed-level RMSE is 0.2439/0.2468/0.2443~mm\,h$^{-1}$. The S--G mean seed-level difference is +0.0029 (5/5 worse), but its block interval belongs to the distinct five-seed-mean-prediction difference +0.0020 $[-0.0012,+0.0056]$. F--G is +0.0004 $[-0.0011,+0.0018]$ on the latter scale. Seasonal S--G intervals all include zero; calendar augmentation improves JJA and worsens SON with pointwise intervals excluding zero. These unadjusted, conditional intervals do not combine training and sampling uncertainty.
+ 
++We therefore retain year-round models and evaluate them by season, without claiming that seasonal modelling is generally ineffective. The experiment tests only fixed-configuration XGBoost, with smaller seasonal training sets, not season-specific deep models or retuning. Existing seasonal variable-ablation and climatology results remain separate.}
++
++\ManuscriptChange{Section~\ref{manuscript-sec:seasonal_baseline_check}: full-period distributions and G/S/F sensitivity; Section~\ref{manuscript-sec:limitations}: scope and uncertainty limits. Supplementary Fig.~\ref{supp-sfig:r3season_full_cdf} and Tables~\ref{supp-stab:r3season_full_distribution}--\ref{supp-stab:r3season_gsf_pairs}. Final page/line numbers pending full assembly.}
++
++
++\EvidenceBox{Full-period seasonal precipitation distributions}{
++\RevisedExcerpt{Full-period seasonal distributions use all 26,300 retained 00/06/12/18 UTC timestamps over 2004--2021, including zero precipitation, rather than only the 26,282 windowed prediction targets (Supplementary Fig.~\ref{supp-sfig:r3season_full_cdf} and Table~\ref{supp-stab:r3season_full_distribution}). The 18 additional timestamps are the first six in each chronological partition, excluded only when constructing model windows. DJF/MAM/JJA/SON have 6,500/6,624/6,624/6,552 samples, with descriptive seasonal Q95 values of 0.6197/0.4575/0.5877/0.6726~mm\,h$^{-1}$; these do not redefine the fixed training threshold. Values $\geq1.0$~mm\,h$^{-1}$ account for 2.49/1.24/2.14/2.98\%, respectively. The curves describe regional-mean preceding-hour precipitation, not six-hour totals or wet-only distributions; neither Q95 nor 1.0~mm\,h$^{-1}$ is adopted as a physical extreme-rainfall definition.}
++}
++
++\EvidenceBox{Seasonal-training sensitivity}{
++\RevisedExcerpt{The separate q03d sensitivity compares year-round XGBoost (G), four season-specific models (S), and a year-round model with month/hour sine--cosine inputs (F), using five matched seeds and unchanged hyperparameters without retuning (Supplementary Tables~\ref{supp-stab:r3season_gsf_scores} and~\ref{supp-stab:r3season_gsf_pairs}). Mean seed-level overall RMSE is 0.2439/0.2468/0.2443~mm\,h$^{-1}$ for G/S/F. S is worse overall in all five seeds, but its five-seed-mean-prediction difference is +0.0020 with a pointwise 95\% circular-block interval of $[-0.0012,+0.0056]$~mm\,h$^{-1}$. The corresponding F difference is +0.0004 $[-0.0011,+0.0018]$; its JJA improvement and SON deterioration have intervals excluding zero, without multiplicity adjustment. None of the seasonal S--G intervals excludes zero. Thus this fixed-configuration XGBoost experiment does not show consistent benefits from seasonal specialization; we retain year-round models with seasonal evaluation, rather than infer that season-specific modelling is ineffective.}
++}
++
++\EvidenceBox{Scope and uncertainty limits}{
++\RevisedExcerpt{The q03d seasonal-training sensitivity did not retune each season or train season-specific deep models. Seasonal training uses roughly one quarter of the available training targets, and the experiment does not isolate the reason for its score changes. Five seeds describe training variability, whereas the paired circular-block intervals condition on their mean predictions; these are separate uncertainty summaries. Full-period seasonal distribution plots are descriptive and do not enter model fitting or threshold selection.}
++}
+ % Review ID: R3 Section 4.1
+ \Needspace{5\baselineskip}
+ \subsection*{Comment: Section~4.1}
+ 
+ \ReviewerComment{Section 4.1: Could you please show RMSE across 4 seasons normalized by the climatological mean for the season?}
+ 
+-\PendingResponse
++\AuthorResponse{We thank the reviewer for this request. We now report, for DJF, MAM, JJA and SON, the RMSE of all six learning models and three references together with the RMSE normalized by the seasonal climatological mean (NRMSE). The normalizing mean for each season is the training-period mean precipitation of that season (18,410 raw training timestamps; 0.1052, 0.0854, 0.1125 and 0.1228~mm\,h$^{-1}$), so no test information enters the main definition; NRMSE based on test-period seasonal means is given only as a sensitivity. Model NRMSE ranged from 2.65--2.83 (DJF), 2.03--2.14 (MAM), 2.19--2.40 (JJA) and 2.07--2.22 (SON), below month-by-hour climatology in each season (2.97, 2.31, 2.51 and 2.32). All six models had lower RMSE than this climatology in every season and in all five seeds, with seed-based and moving-block intervals excluding zero. Because each season has only two to three realizations in the test period, and the DJF and MAM test-period means differed from their training means, the seasonal ordering is descriptive and changes under the test-mean normalization. The results are reported in Section~\ref{manuscript-sec:seasonal_baseline_check} and Supplementary Tables~\ref{supp-stab:r3season_nrmse} and~\ref{supp-stab:r3season_clim_pairs}.}
+ 
+-\ChangeLocation
++\ManuscriptChange{Section~\ref{manuscript-sec:seasonal_baseline_check} (Descriptive Seasonal Check): new paragraph on seasonal NRMSE. Supplementary Material: new final section ``Seasonal normalized RMSE'' with Tables~\ref{supp-stab:r3season_nrmse} (seasonal RMSE and NRMSE for six models and three references, with denominators and sample counts) and~\ref{supp-stab:r3season_clim_pairs} (paired model--climatology differences with seed-t and moving-block intervals). Existing seasonal Tables~\ref{supp-stab:season_counts}--\ref{supp-stab:season_xgb_paired} and the R3-14 seasonal distribution results are unchanged; no training or data download. Final page and line numbers pending full-manuscript assembly.}
+ 
++\EvidenceBox{Seasonal NRMSE and climatology comparison (Section~\ref{manuscript-sec:seasonal_baseline_check})}{
++\RevisedExcerpt{To normalize by the seasonal climatological mean, each seasonal RMSE was divided by the training-period mean precipitation of that season, estimated from the 18,410 raw training timestamps (0.1052, 0.0854, 0.1125 and 0.1228~mm\,h$^{-1}$ for DJF, MAM, JJA and SON). Across the six models of the $W=6$ rerun set, NRMSE ranged from 2.65 to 2.83 in DJF, 2.03 to 2.14 in MAM, 2.19 to 2.40 in JJA and 2.07 to 2.22 in SON, compared with 2.97, 2.31, 2.51 and 2.32 for month-by-hour climatology (Supplementary Table~\ref{supp-stab:r3season_nrmse}). Every model had lower seasonal RMSE than this climatology in all five seeds, with seed-t and moving-block intervals excluding zero (Supplementary Table~\ref{supp-stab:r3season_clim_pairs}). NRMSE scales error by typical seasonal precipitation and is distinct from the skill score. Test-period mean precipitation exceeded the training mean in DJF (0.1440~mm\,h$^{-1}$) and fell below it in MAM (0.0685~mm\,h$^{-1}$); with test-period means as denominators, the positions of DJF and MAM reverse (1.93--2.07 and 2.53--2.67). With two to three realizations of each season in the test period, these differences describe the test years and do not establish a general seasonal ranking.}
++}
++
+ % Review ID: R3 L745-751
+ \Needspace{5\baselineskip}
+ \subsection*{Comment: Lines~745--751}
+ 
+ \ReviewerComment{L745-751: Do you have any physical explanation for these rankings?}
+ 
+-\PendingResponse
++\AuthorResponse{We thank the reviewer for this question; the original manuscript did not provide a physical interpretation of the rankings. In the revised analysis, which groups the six input times of each predictor and uses five seeds, BiLSTM-Attention attributions in a random test sample were largest for tcc, sp and mntpr, followed by v10, with mxtpr, d2m and lsp smallest; in upper-tail cases ($\geq$ training Q95), mntpr ranked first, followed by tcc, sp and v10. We have added a physical interpretation to Section~\ref{manuscript-sec:predictor_complementarity}. Surface pressure summarizes the synoptic pressure field, and lower pressure was associated with more precipitation six hours later, consistent with the dominant contribution of extratropical cyclones and fronts to North Atlantic precipitation \citep{hawcroft2012much,catto2012relating}. Total cloud cover indicates moist, cloud-covered conditions within precipitating systems. Positive v10, a southerly component, was associated with later precipitation in all seasons, consistent with poleward moisture transport ahead of cold fronts and in atmospheric rivers \citep{lavers2013nexus}, although we did not analyse moisture fluxes. The precipitation-related inputs describe ongoing precipitation and overlap: individual removals changed RMSE little, whereas removing mxtpr, mntpr and lsp together increased BiLSTM-Attention RMSE by 0.0048~mm\,h$^{-1}$ overall and 0.0194~mm\,h$^{-1}$ in the upper tail. This redundancy, and the different questions addressed by SHAP and retrained ablation, are consistent with their weak upper-tail rank agreement (Kendall's $\tau=0.048$). Low d2m attribution does not imply that humidity is physically unimportant. These are physically plausible interpretations, not causal validation. The rankings are reported in Section~\ref{manuscript-sec:shap_results} and Supplementary Table~\ref{supp-stab:r1m4_shap_magnitude}, the ablation results in Section~\ref{manuscript-sec:ablation_results}, and the interpretation in Section~\ref{manuscript-sec:predictor_complementarity}.}
+ 
+-\ChangeLocation
++\ManuscriptChange{Section~\ref{manuscript-sec:shap_results} (SHAP-Based Feature Attribution): new paragraph stating the random-sample and upper-tail grouped SHAP rankings for both architectures. Section~\ref{manuscript-sec:predictor_complementarity} (Predictor Attribution and Incremental Contribution): new paragraph giving the physical interpretation and its limits, citing \citet{hawcroft2012much}, \citet{catto2012relating} and \citet{lavers2013nexus} (added to the reference list). Existing SHAP and ablation figures and Supplementary Tables~\ref{supp-stab:r1m4_shap_magnitude}--\ref{supp-stab:r1m4_correlation_rank_agreement} are reused unchanged; no training or data download. Final page and line numbers pending full-manuscript assembly.}
+ 
++\EvidenceBox{Grouped SHAP rankings (Section~\ref{manuscript-sec:shap_results})}{
++\RevisedExcerpt{In the random sample, BiLSTM-Attention attributions were largest for tcc, sp and mntpr (0.0370, 0.0360 and 0.0328~mm\,h$^{-1}$), followed by v10 (0.0192~mm\,h$^{-1}$); mxtpr, d2m and lsp each had less than 0.01~mm\,h$^{-1}$. The tcc and sp means differed by less than their seed SDs. In the upper tail, the order was mntpr, tcc, sp, v10, lsp, mxtpr and d2m. BU-LSTM-Attention also ranked tcc and sp first and second in the random sample, and mntpr and tcc first and second in the upper tail (Supplementary Table~\ref{supp-stab:r1m4_shap_magnitude}).}
++}
++
++\EvidenceBox{Physical interpretation of the rankings (Section~\ref{manuscript-sec:predictor_complementarity})}{
++\RevisedExcerpt{These rankings are physically plausible for a mid-latitude maritime region, although none of the analyses tests a mechanism. Over the North Atlantic storm track, most precipitation is associated with extratropical cyclones and their fronts \citep{hawcroft2012much,catto2012relating}. Surface pressure summarizes the synoptic pressure field; in the training period, it was negatively associated with precipitation six hours later (Spearman $\rho=-0.37$; rank-partial $-0.19$ after controlling current precipitation), consistent with wetter conditions near low-pressure systems, although low pressure is neither necessary nor sufficient for rain. Total cloud cover indicates moist, cloud-covered conditions within precipitating systems ($\rho=0.44$; rank-partial $0.25$), but extensive cloud does not by itself imply rain. Positive v10, a southerly flow component, was associated with later precipitation in every season, and removing v10 degraded BiLSTM-Attention mainly in DJF and SON (Section~\ref{sec:predictor_selection_results}). This is consistent with poleward moisture transport ahead of cold fronts and in atmospheric rivers affecting western Europe \citep{lavers2013nexus}; without moisture-flux or trajectory analysis, no moisture source or transport path is inferred. The precipitation-related inputs describe current precipitation: lsp is the preceding-hour large-scale accumulation, whereas mxtpr and mntpr bound the total precipitation rate within that hour. Their overlap is consistent with small single-variable removal effects but a clear group effect. A high mntpr indicates precipitation sustained throughout the preceding hour, which may persist into the target hour in heavy cases, consistent with its upper-tail attribution. The low attribution of d2m may reflect moisture information shared with tcc and the precipitation inputs; it does not imply that humidity is unimportant for precipitation formation. Because attribution and ablation measure model reliance and predictive utility for this regional ERA5 target, these explanations are hypotheses consistent with the evidence, not causal validation; the cited studies concern daily or climatological precipitation over broader regions.}
++}
++
+ % Review ID: R3 L752-758
+ \Needspace{5\baselineskip}
+ \subsection*{Comment: Lines~752--758}
+ 
+ \ReviewerComment{L752-758: Did you try a new model by reducing the historical window from the current 30 h to say 12 h to see if there is any difference in skill?}
+ 
+-\PendingResponse
++\AuthorResponse{We thank the reviewer for this suggestion. Yes: we compared a 12-h history (three six-hourly snapshots, $t_0-12$ to $t_0$) with the original 30-h history (six snapshots) for all six models, using five matched seeds, unchanged within-model hyperparameters and training protocol, and 3,939 common test targets (Section~\ref{manuscript-sec:overall_results}; Supplementary Table~\ref{supp-stab:r3window_six_models}). All six models had lower mean test RMSE with 12~h. BiLSTM-Attention changed from 0.2429 to 0.2410~mm\,h$^{-1}$ (paired difference $-0.0018$~mm\,h$^{-1}$; all five seeds improved and both interval types excluded zero), and Transformer from 0.2600 to 0.2468~mm\,h$^{-1}$, although the Transformer retained the 30-epoch cap, so its gain cannot be attributed to window length alone. XGBoost changed little (0.2439 to 0.2430~mm\,h$^{-1}$; both intervals included zero). For BU-LSTM, BU-LSTM-Attention and Probabilistic BiLSTM-Attention, three or four of five seeds improved and the seed-based intervals included zero. BiLSTM-Attention and XGBoost remained first and second, whereas BU-LSTM and BU-LSTM-Attention exchanged positions. A wider comparison of 6--66~h for XGBoost and BiLSTM-Attention (Supplementary Table~\ref{supp-stab:r3window_curve}) gave their lowest test RMSE at 12~h and 6~h, respectively; 30~h was therefore not the best window in these comparisons. We retain 30~h in the main results because it is the original specification underlying the other analyses, and selecting a window from these test-period comparisons would use test information. These sensitivity checks are retrospective, use one chronological split and were not repeated across rolling-origin folds (Section~\ref{manuscript-sec:forecasting_models}).}
+ 
+-\ChangeLocation
++\ManuscriptChange{No new manuscript or Supplementary change was made for this comment. The window sensitivity results added in response to Lines~329--333 are in Sections~\ref{manuscript-sec:forecasting_models} (Forecasting Models) and~\ref{manuscript-sec:overall_results} (Overall Forecasting Performance and Robustness) and Supplementary Tables~\ref{supp-stab:r3window_six_models} and~\ref{supp-stab:r3window_curve}; the two excerpts below reproduce that existing text verbatim. Final page and line numbers pending full-manuscript assembly.}
++
++\EvidenceBox{Window sensitivity results (Section~\ref{manuscript-sec:overall_results})}{
++\RevisedExcerpt{Input-history sensitivity does not establish 30 h as optimal. On 3,939 common test targets, changing from 30 h to 12 h lowers mean RMSE for all six tested models; BiLSTM-Attention changes from 0.2429 to 0.2410~mm\,h$^{-1}$ and Transformer from 0.2600 to 0.2468~mm\,h$^{-1}$. BiLSTM-Attention and XGBoost remain first and second, while BU-LSTM and BU-LSTM-Attention exchange positions; these are q14 reruns, not replacements for the original main-table runs. The wider two-model comparison uses 3,933 common targets: BiLSTM-Attention has its lowest numerical test RMSE with 6 h (0.2406 versus 0.2430 for 30 h), whereas XGBoost is lowest with 12 h. BiLSTM-Attention at 42/66 h improves numerically over 30 h, but both all-target interval types include zero; longer histories therefore do not show a consistent all-target advantage. Supplementary Tables~\ref{supp-stab:r3window_six_models} and~\ref{supp-stab:r3window_curve} report seed variability and the separate block-sampling diagnostic without multiplicity adjustment. The Transformer comparison retains the 30-epoch cap and cannot isolate window length from optimization effects. Temporal SHAP concentrated toward recent snapshots is a conditional model diagnostic, not evidence for storm lifetime or a physical advection timescale.}
++}
++
++\EvidenceBox{Window specification and comparison design (Section~\ref{manuscript-sec:forecasting_models})}{
++\RevisedExcerpt{The six-snapshot (30 h) history is the original modelling specification, rather than a window justified by measured storm-passage durations. We found no independently verifiable record linking its initial choice to such durations, a specific literature recommendation or a systematic window search; its pre-experimental selection history is therefore not established. Retrospective sensitivity checks compare 12 h and 30 h for six models, and 6, 12, 18, 30, 42 and 66 h for XGBoost and BiLSTM-Attention, using five matched seeds and common test times within each comparison (Supplementary Tables~\ref{supp-stab:r3window_six_models} and~\ref{supp-stab:r3window_curve}). Shorter windows yield more training/validation samples, so these are sensitivity checks of the full window specification, not comparisons with identical fitted sample sets.}
++}
+ 
+ % Review ID: R3 L822-824
+ \Needspace{5\baselineskip}
+@@ -1390,10 +1428,21 @@
+ 
+ \ReviewerComment{L822-824: Is the difference statistically significant? Is it worth using a slightly sophisticated model for a marginal gain in skill?}
+ 
+-\PendingResponse
++\makeatletter
++\expandafter\let\csname r@sec:rolling_origin_results\expandafter\endcsname\csname r@manuscript-sec:rolling_origin_results\endcsname
++\makeatother
++\AuthorResponse{We thank the reviewer for these questions. The difference in question is the attention gain in the one-layer BiLSTM (0.2447 to 0.2429~mm\,h$^{-1}$). Using five matched seeds and paired comparisons on the 3,939 common test targets, the reduction was $-0.0018$~mm\,h$^{-1}$ ($-0.73\%$); all five seeds improved, and both the seed-t and moving-block intervals excluded zero. After Holm adjustment over the 16 all-target RMSE comparisons, however, the adjusted $p$ values were 0.17 and 0.13, and the wet and upper-tail differences were not clearly separated. We therefore no longer describe attention as a demonstrated benefit. On the second question, the added complexity is not justified by point accuracy alone in this setting. BiLSTM-Attention and XGBoost differed by only $-0.43\%$ overall, with both intervals including zero; XGBoost was better in the wet and upper-tail subsets; the three probabilistic recurrent models had 1.3--2.2\% higher overall RMSE than XGBoost; and adding attention to BU-LSTM gave no clear RMSE or CRPS improvement despite 159,272 additional parameters. The neural models also required about 105--393~s of recorded training per seed, compared with 0.1--0.4~s for XGBoost, although these timings are not a controlled benchmark and inference cost was not measured. For point forecasts in this setting, XGBoost therefore provided comparable overall accuracy with much shorter recorded training; because these run times are not a unified computational-cost benchmark, we do not claim a general efficiency ranking. The probabilistic recurrent models are useful only where predictive distributions are required, subject to their upper-tail undercoverage. These conclusions are restricted to this regional ERA5 target, lead time and set of configurations. The revised discussion is in Section~\ref{manuscript-sec:overall_discussion}, and the paired comparisons and recorded costs are in Supplementary Tables~\ref{supp-stab:r3sig_pairs} and~\ref{supp-stab:r3sig_cost}.}
+ 
+-\ChangeLocation
++\ManuscriptChange{Section~\ref{manuscript-sec:overall_discussion} (Overall Forecasting Performance and Model Robustness): the original attention paragraph is revised with paired and Holm-adjusted results, and a new paragraph assesses complexity against accuracy. Supplementary Material: new final section ``Paired model comparisons and complexity'' with Tables~\ref{supp-stab:r3sig_pairs} (16 model pairs, all/wet/upper-tail RMSE and two CRPS comparisons) and~\ref{supp-stab:r3sig_cost} (parameters and recorded training times with their limitations). Table~\ref{manuscript-tab:seed_stability} and the existing figures are unchanged; no training or data download. Final page and line numbers pending full-manuscript assembly.}
+ 
++\EvidenceBox{Attention gain and multiplicity adjustment (Section~\ref{manuscript-sec:overall_discussion})}{
++\RevisedExcerpt{The comparison between BiLSTM-Attention and the otherwise identical BiLSTM-NoAttention control isolates the temporal attention layer. Attention reduced mean RMSE from 0.2447 to 0.2429~mm\,h$^{-1}$ (paired difference $-0.0018$~mm\,h$^{-1}$, $-0.73\%$); all five seeds improved, and both the seed-t and moving-block intervals, each $[-0.0033,-0.0003]$~mm\,h$^{-1}$, excluded zero. After Holm adjustment over the 16 all-target RMSE comparisons in Supplementary Table~\ref{supp-stab:r3sig_pairs}, however, the adjusted $p$ values were 0.17 (seed-t) and 0.13 (block), and the wet and upper-tail differences were not clearly separated. The attention layer added 8,320 trainable parameters (36,993 to 45,313). The gain is therefore consistent in sign but small, and it is not established after multiplicity adjustment.}
++}
++
++\EvidenceBox{Complexity versus accuracy (Section~\ref{manuscript-sec:overall_discussion})}{
++\RevisedExcerpt{Greater model complexity was not matched by clear gains in point accuracy. BiLSTM-Attention and XGBoost differed by $-0.0011$~mm\,h$^{-1}$ ($-0.43\%$) overall, with both intervals including zero, whereas XGBoost had lower RMSE in the wet ($+2.4\%$) and upper-tail ($+3.6\%$) subsets, with all five seeds and both intervals favouring it; in the rolling-origin evaluation, the pooled difference slightly favoured XGBoost but depended on block length (Section~\ref{sec:rolling_origin_results}). BU-LSTM, BU-LSTM-Attention and Probabilistic BiLSTM-Attention had 1.3--2.2\% higher overall RMSE than XGBoost in all five seeds, and adding attention to BU-LSTM (159,272 additional parameters) produced no clear RMSE or CRPS improvement. All models except the Transformer had lower RMSE than AR(1) after Holm adjustment. In the recorded runs, training the neural models took about 105--393~s per seed, compared with 0.1--0.4~s for XGBoost, but timer definitions differ, the XGBoost device was not recorded and inference time was not benchmarked (Supplementary Table~\ref{supp-stab:r3sig_cost}). For point forecasts in this setting, XGBoost therefore provided comparable overall accuracy and better wet and upper-tail accuracy, with much shorter recorded training times that do not constitute a unified computational-cost benchmark. The probabilistic models are justified only where predictive distributions are required, and their upper-tail undercoverage remains a limitation. These conclusions apply to this regional ERA5 target, the 6-h lead time and the tested configurations, without a formal cost--benefit criterion.}
++}
++
+ % Review ID: R3 L979-982
+ \Needspace{5\baselineskip}
+ \subsection*{Comment: Lines~979--982}
+--- a/sn-bibliography.bib	2026-11-16 00:00:00.000000000 +0000
++++ b/sn-bibliography.bib	2026-11-16 00:00:00.000000000 +0000
+@@ -1279,4 +1279,36 @@
+   pages={275--296},
+   year={2023},
+   doi={10.1175/MWR-D-22-0170.1}
++}
++
++% R3 L745-751: metadata verified against Crossref (abstracts checked).
++@article{hawcroft2012much,
++  title={How much {Northern Hemisphere} precipitation is associated with extratropical cyclones?},
++  author={Hawcroft, M. K. and Shaffrey, L. C. and Hodges, K. I. and Dacre, H. F.},
++  journal={Geophysical Research Letters},
++  volume={39},
++  number={24},
++  year={2012},
++  doi={10.1029/2012GL053866}
++}
++
++@article{catto2012relating,
++  title={Relating global precipitation to atmospheric fronts},
++  author={Catto, J. L. and Jakob, C. and Berry, G. and Nicholls, N.},
++  journal={Geophysical Research Letters},
++  volume={39},
++  number={10},
++  year={2012},
++  doi={10.1029/2012GL051736}
+ }
++
++@article{lavers2013nexus,
++  title={The nexus between atmospheric rivers and extreme precipitation across {Europe}},
++  author={Lavers, David A. and Villarini, Gabriele},
++  journal={Geophysical Research Letters},
++  volume={40},
++  number={12},
++  pages={3259--3264},
++  year={2013},
++  doi={10.1002/grl.50636}
++}

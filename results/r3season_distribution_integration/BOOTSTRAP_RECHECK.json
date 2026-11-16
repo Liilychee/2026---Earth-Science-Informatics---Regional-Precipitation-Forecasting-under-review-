@@ -1,0 +1,114 @@
+[
+  {
+    "comparison": "S_minus_G",
+    "subset": "all",
+    "point": 0.002019080543143592,
+    "low": -0.0012208956555213326,
+    "high": 0.005599074151184179,
+    "matches_saved_4dp": true
+  },
+  {
+    "comparison": "S_minus_G",
+    "subset": "DJF",
+    "point": -0.001319431355985612,
+    "low": -0.010296135369886893,
+    "high": 0.0074462979967592074,
+    "matches_saved_4dp": true
+  },
+  {
+    "comparison": "S_minus_G",
+    "subset": "MAM",
+    "point": -0.0025220222185372843,
+    "low": -0.00736466014642735,
+    "high": 0.003044235113758119,
+    "matches_saved_4dp": true
+  },
+  {
+    "comparison": "S_minus_G",
+    "subset": "JJA",
+    "point": 0.0022980254866155903,
+    "low": -0.0011384185805998648,
+    "high": 0.005924824998016426,
+    "matches_saved_4dp": true
+  },
+  {
+    "comparison": "S_minus_G",
+    "subset": "SON",
+    "point": 0.007060468207911286,
+    "low": -0.0005077171137107719,
+    "high": 0.014836019359884713,
+    "matches_saved_4dp": true
+  },
+  {
+    "comparison": "S_minus_G",
+    "subset": "wet>=0.1",
+    "point": 0.003713179139746725,
+    "low": -0.0031709139592128147,
+    "high": 0.011146431250548821,
+    "matches_saved_4dp": true
+  },
+  {
+    "comparison": "S_minus_G",
+    "subset": "tail>=Q95",
+    "point": 0.004091168821961588,
+    "low": -0.00928341937422866,
+    "high": 0.018382967523811185,
+    "matches_saved_4dp": true
+  },
+  {
+    "comparison": "F_minus_G",
+    "subset": "all",
+    "point": 0.0003507598327545103,
+    "low": -0.0010841282050422173,
+    "high": 0.0017854218765125105,
+    "matches_saved_4dp": true
+  },
+  {
+    "comparison": "F_minus_G",
+    "subset": "DJF",
+    "point": -0.0012629786012162691,
+    "low": -0.00378768080567819,
+    "high": 0.001273712716151595,
+    "matches_saved_4dp": true
+  },
+  {
+    "comparison": "F_minus_G",
+    "subset": "MAM",
+    "point": -0.0006799799435633913,
+    "low": -0.003039032154951446,
+    "high": 0.0013297682756627553,
+    "matches_saved_4dp": true
+  },
+  {
+    "comparison": "F_minus_G",
+    "subset": "JJA",
+    "point": -0.0025109539841340622,
+    "low": -0.004959791611141062,
+    "high": -0.00039685333167978934,
+    "matches_saved_4dp": true
+  },
+  {
+    "comparison": "F_minus_G",
+    "subset": "SON",
+    "point": 0.004994165569003062,
+    "low": 0.0021853887255265233,
+    "high": 0.007943300757643977,
+    "matches_saved_4dp": true
+  },
+  {
+    "comparison": "F_minus_G",
+    "subset": "wet>=0.1",
+    "point": 0.0010284430903697017,
+    "low": -0.001510207722008633,
+    "high": 0.003334110152231802,
+    "matches_saved_4dp": true
+  },
+  {
+    "comparison": "F_minus_G",
+    "subset": "tail>=Q95",
+    "point": 0.0003816714181333891,
+    "low": -0.004750890669069108,
+    "high": 0.005138481405846021,
+    "matches_saved_4dp": true
+  }
+]

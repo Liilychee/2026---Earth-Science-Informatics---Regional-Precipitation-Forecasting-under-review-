@@ -1,0 +1,35 @@
+{
+ "manuscript": {
+  "pages": 105,
+  "pdf_sha256": "a7308ff4b24d6fcf53dc32a4de5dee77b40df00a88ea04e2a8389bb9b55016a8",
+  "hits": {
+   "To normalize by the seasonal climatological mean": [
+    56
+   ]
+  }
+ },
+ "Supplementary": {
+  "pages": 75,
+  "pdf_sha256": "d2beaacbc4c8943e09c7a089cbcd86b258b9001dd58b548e5b51f94fa3658095",
+  "hits": {
+   "Seasonal RMSE normalized by the seasonal": [
+    74
+   ],
+   "Paired seasonal RMSE differences": [
+    75
+   ]
+  }
+ },
+ "Response letter": {
+  "pages": 91,
+  "pdf_sha256": "633443b3743943e58ec04dfd00e78f8eea4a8da38e967c9afafbdf56c707630f",
+  "hits": {
+   "Comment: Section 4.1": [
+    74
+   ],
+   "Seasonal NRMSE and climatology comparison": [
+    75
+   ]
+  }
+ }
+}

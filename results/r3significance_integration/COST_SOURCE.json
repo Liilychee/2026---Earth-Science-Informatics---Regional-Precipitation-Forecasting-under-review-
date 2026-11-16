@@ -1,0 +1,170 @@
+[
+ {
+  "model": "XGBoost",
+  "run_set": "q21",
+  "params": null,
+  "train_s": [
+   0.4,
+   0.1,
+   0.3,
+   0.2,
+   0.1
+  ],
+  "mean": 0.22,
+  "epochs": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "gpu": [
+   "NVIDIA GeForce RTX 5090"
+  ],
+  "timer": "construction, fit and validation/test prediction"
+ },
+ {
+  "model": "BiLSTM-Attention",
+  "run_set": "q21",
+  "params": 45313,
+  "train_s": [
+   115.0,
+   118.9,
+   125.5,
+   126.7,
+   120.0
+  ],
+  "mean": 121.22,
+  "epochs": [
+   18,
+   18,
+   19,
+   20,
+   18
+  ],
+  "gpu": [
+   "NVIDIA GeForce RTX 5090"
+  ],
+  "timer": "construction, fit and validation/test prediction"
+ },
+ {
+  "model": "BiLSTM-NoAttention",
+  "run_set": "q18",
+  "params": 36993,
+  "train_s": [
+   112.8,
+   112.3,
+   94.9,
+   87.7,
+   116.5
+  ],
+  "mean": 104.84,
+  "epochs": [
+   22,
+   22,
+   18,
+   17,
+   23
+  ],
+  "gpu": [
+   "NVIDIA GeForce RTX 5090"
+  ],
+  "timer": "fit only"
+ },
+ {
+  "model": "BU-LSTM",
+  "run_set": "q14",
+  "params": 83802,
+  "train_s": [
+   214.1,
+   213.6,
+   199.4,
+   245.0,
+   187.0
+  ],
+  "mean": 211.82,
+  "epochs": [
+   18,
+   19,
+   17,
+   22,
+   16
+  ],
+  "gpu": [
+   "NVIDIA GeForce RTX 5090"
+  ],
+  "timer": "construction, fit and validation/test prediction"
+ },
+ {
+  "model": "BU-LSTM-Attention",
+  "run_set": "q14",
+  "params": 243074,
+  "train_s": [
+   426.1,
+   288.6,
+   406.2,
+   346.2,
+   495.5
+  ],
+  "mean": 392.52,
+  "epochs": [
+   22,
+   15,
+   21,
+   18,
+   26
+  ],
+  "gpu": [
+   "NVIDIA GeForce RTX 5090"
+  ],
+  "timer": "construction, fit and validation/test prediction"
+ },
+ {
+  "model": "Prob. BiLSTM-Attention",
+  "run_set": "q14",
+  "params": 45442,
+  "train_s": [
+   203.3,
+   144.7,
+   263.4,
+   267.6,
+   136.7
+  ],
+  "mean": 203.14,
+  "epochs": [
+   20,
+   14,
+   22,
+   27,
+   13
+  ],
+  "gpu": [
+   "NVIDIA GeForce RTX 5090"
+  ],
+  "timer": "construction, fit and validation/test prediction"
+ },
+ {
+  "model": "Transformer",
+  "run_set": "q14",
+  "params": 8833,
+  "train_s": [
+   346.3,
+   190.6,
+   345.2,
+   347.6,
+   345.3
+  ],
+  "mean": 315.0,
+  "epochs": [
+   30,
+   16,
+   30,
+   30,
+   30
+  ],
+  "gpu": [
+   "NVIDIA GeForce RTX 5090"
+  ],
+  "timer": "construction, fit and validation/test prediction"
+ }
+]

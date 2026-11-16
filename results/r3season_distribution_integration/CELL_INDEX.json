@@ -1,0 +1,2297 @@
+[
+  {
+    "file": "FULL_PERIOD_SEASON_STATS.csv",
+    "line": 2,
+    "field": "N",
+    "raw": "6500",
+    "display": "6500",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "FULL_PERIOD_SEASON_STATS.csv",
+    "line": 2,
+    "field": "Zero_n",
+    "raw": "829",
+    "display": "829",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "FULL_PERIOD_SEASON_STATS.csv",
+    "line": 2,
+    "field": "Wet_n",
+    "raw": "1299",
+    "display": "1299",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "FULL_PERIOD_SEASON_STATS.csv",
+    "line": 2,
+    "field": "Ge1_n",
+    "raw": "162",
+    "display": "162",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "FULL_PERIOD_SEASON_STATS.csv",
+    "line": 2,
+    "field": "Q95",
+    "raw": "0.6197109188199993",
+    "display": "0.6197",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "FULL_PERIOD_SEASON_STATS.csv",
+    "line": 2,
+    "field": "Max",
+    "raw": "3.419265736",
+    "display": "3.4193",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "FULL_PERIOD_SEASON_STATS.csv",
+    "line": 3,
+    "field": "N",
+    "raw": "6624",
+    "display": "6624",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "FULL_PERIOD_SEASON_STATS.csv",
+    "line": 3,
+    "field": "Zero_n",
+    "raw": "1681",
+    "display": "1681",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "FULL_PERIOD_SEASON_STATS.csv",
+    "line": 3,
+    "field": "Wet_n",
+    "raw": "1288",
+    "display": "1288",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "FULL_PERIOD_SEASON_STATS.csv",
+    "line": 3,
+    "field": "Ge1_n",
+    "raw": "82",
+    "display": "82",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "FULL_PERIOD_SEASON_STATS.csv",
+    "line": 3,
+    "field": "Q95",
+    "raw": "0.45745944985799947",
+    "display": "0.4575",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "FULL_PERIOD_SEASON_STATS.csv",
+    "line": 3,
+    "field": "Max",
+    "raw": "2.867031108",
+    "display": "2.8670",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "FULL_PERIOD_SEASON_STATS.csv",
+    "line": 4,
+    "field": "N",
+    "raw": "6624",
+    "display": "6624",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "FULL_PERIOD_SEASON_STATS.csv",
+    "line": 4,
+    "field": "Zero_n",
+    "raw": "1237",
+    "display": "1237",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "FULL_PERIOD_SEASON_STATS.csv",
+    "line": 4,
+    "field": "Wet_n",
+    "raw": "1443",
+    "display": "1443",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "FULL_PERIOD_SEASON_STATS.csv",
+    "line": 4,
+    "field": "Ge1_n",
+    "raw": "142",
+    "display": "142",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "FULL_PERIOD_SEASON_STATS.csv",
+    "line": 4,
+    "field": "Q95",
+    "raw": "0.5876960756019997",
+    "display": "0.5877",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "FULL_PERIOD_SEASON_STATS.csv",
+    "line": 4,
+    "field": "Max",
+    "raw": "3.9403152639999997",
+    "display": "3.9403",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "FULL_PERIOD_SEASON_STATS.csv",
+    "line": 5,
+    "field": "N",
+    "raw": "6552",
+    "display": "6552",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "FULL_PERIOD_SEASON_STATS.csv",
+    "line": 5,
+    "field": "Zero_n",
+    "raw": "964",
+    "display": "964",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "FULL_PERIOD_SEASON_STATS.csv",
+    "line": 5,
+    "field": "Wet_n",
+    "raw": "1333",
+    "display": "1333",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "FULL_PERIOD_SEASON_STATS.csv",
+    "line": 5,
+    "field": "Ge1_n",
+    "raw": "195",
+    "display": "195",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "FULL_PERIOD_SEASON_STATS.csv",
+    "line": 5,
+    "field": "Q95",
+    "raw": "0.6725530639299999",
+    "display": "0.6726",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "FULL_PERIOD_SEASON_STATS.csv",
+    "line": 5,
+    "field": "Max",
+    "raw": "4.134540564",
+    "display": "4.1345",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 9,
+    "field": "RMSE_mean",
+    "raw": "0.2439",
+    "display": "0.2439",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 9,
+    "field": "RMSE_std",
+    "raw": "0.0002",
+    "display": "0.0002",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 9,
+    "field": "MAE_mean",
+    "raw": "0.1191",
+    "display": "0.1191",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 9,
+    "field": "MAE_std",
+    "raw": "0.0005",
+    "display": "0.0005",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 9,
+    "field": "Skill_vs_monthhour_clim_mean",
+    "raw": "0.1067",
+    "display": "0.1067",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 9,
+    "field": "Skill_vs_monthhour_clim_std",
+    "raw": "0.0009",
+    "display": "0.0009",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_raw.csv",
+    "line": 2,
+    "field": "N",
+    "raw": "3939",
+    "display": "3939",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 16,
+    "field": "RMSE_mean",
+    "raw": "0.2468",
+    "display": "0.2468",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 16,
+    "field": "RMSE_std",
+    "raw": "0.001",
+    "display": "0.0010",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 16,
+    "field": "MAE_mean",
+    "raw": "0.1205",
+    "display": "0.1205",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 16,
+    "field": "MAE_std",
+    "raw": "0.0006",
+    "display": "0.0006",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 16,
+    "field": "Skill_vs_monthhour_clim_mean",
+    "raw": "0.0962",
+    "display": "0.0962",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 16,
+    "field": "Skill_vs_monthhour_clim_std",
+    "raw": "0.0035",
+    "display": "0.0035",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_raw.csv",
+    "line": 9,
+    "field": "N",
+    "raw": "3939",
+    "display": "3939",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 2,
+    "field": "RMSE_mean",
+    "raw": "0.2443",
+    "display": "0.2443",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 2,
+    "field": "RMSE_std",
+    "raw": "0.0005",
+    "display": "0.0005",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 2,
+    "field": "MAE_mean",
+    "raw": "0.119",
+    "display": "0.1190",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 2,
+    "field": "MAE_std",
+    "raw": "0.0003",
+    "display": "0.0003",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 2,
+    "field": "Skill_vs_monthhour_clim_mean",
+    "raw": "0.1052",
+    "display": "0.1052",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 2,
+    "field": "Skill_vs_monthhour_clim_std",
+    "raw": "0.0019",
+    "display": "0.0019",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_raw.csv",
+    "line": 16,
+    "field": "N",
+    "raw": "3939",
+    "display": "3939",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 10,
+    "field": "RMSE_mean",
+    "raw": "0.2819",
+    "display": "0.2819",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 10,
+    "field": "RMSE_std",
+    "raw": "0.002",
+    "display": "0.0020",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 10,
+    "field": "MAE_mean",
+    "raw": "0.1556",
+    "display": "0.1556",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 10,
+    "field": "MAE_std",
+    "raw": "0.0017",
+    "display": "0.0017",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 10,
+    "field": "Skill_vs_monthhour_clim_mean",
+    "raw": "0.0966",
+    "display": "0.0966",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 10,
+    "field": "Skill_vs_monthhour_clim_std",
+    "raw": "0.0064",
+    "display": "0.0064",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_raw.csv",
+    "line": 3,
+    "field": "N",
+    "raw": "848",
+    "display": "848",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 17,
+    "field": "RMSE_mean",
+    "raw": "0.2811",
+    "display": "0.2811",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 17,
+    "field": "RMSE_std",
+    "raw": "0.0011",
+    "display": "0.0011",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 17,
+    "field": "MAE_mean",
+    "raw": "0.1486",
+    "display": "0.1486",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 17,
+    "field": "MAE_std",
+    "raw": "0.0012",
+    "display": "0.0012",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 17,
+    "field": "Skill_vs_monthhour_clim_mean",
+    "raw": "0.0994",
+    "display": "0.0994",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 17,
+    "field": "Skill_vs_monthhour_clim_std",
+    "raw": "0.0037",
+    "display": "0.0037",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_raw.csv",
+    "line": 10,
+    "field": "N",
+    "raw": "848",
+    "display": "848",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 3,
+    "field": "RMSE_mean",
+    "raw": "0.2806",
+    "display": "0.2806",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 3,
+    "field": "RMSE_std",
+    "raw": "0.0014",
+    "display": "0.0014",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 3,
+    "field": "MAE_mean",
+    "raw": "0.154",
+    "display": "0.1540",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 3,
+    "field": "MAE_std",
+    "raw": "0.0012",
+    "display": "0.0012",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 3,
+    "field": "Skill_vs_monthhour_clim_mean",
+    "raw": "0.1009",
+    "display": "0.1009",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 3,
+    "field": "Skill_vs_monthhour_clim_std",
+    "raw": "0.0046",
+    "display": "0.0046",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_raw.csv",
+    "line": 17,
+    "field": "N",
+    "raw": "848",
+    "display": "848",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 11,
+    "field": "RMSE_mean",
+    "raw": "0.1731",
+    "display": "0.1731",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 11,
+    "field": "RMSE_std",
+    "raw": "0.0011",
+    "display": "0.0011",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 11,
+    "field": "MAE_mean",
+    "raw": "0.0745",
+    "display": "0.0745",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 11,
+    "field": "MAE_std",
+    "raw": "0.0008",
+    "display": "0.0008",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 11,
+    "field": "Skill_vs_monthhour_clim_mean",
+    "raw": "0.1224",
+    "display": "0.1224",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 11,
+    "field": "Skill_vs_monthhour_clim_std",
+    "raw": "0.0055",
+    "display": "0.0055",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_raw.csv",
+    "line": 4,
+    "field": "N",
+    "raw": "895",
+    "display": "895",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 18,
+    "field": "RMSE_mean",
+    "raw": "0.1707",
+    "display": "0.1707",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 18,
+    "field": "RMSE_std",
+    "raw": "0.0013",
+    "display": "0.0013",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 18,
+    "field": "MAE_mean",
+    "raw": "0.0728",
+    "display": "0.0728",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 18,
+    "field": "MAE_std",
+    "raw": "0.0005",
+    "display": "0.0005",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 18,
+    "field": "Skill_vs_monthhour_clim_mean",
+    "raw": "0.1348",
+    "display": "0.1348",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 18,
+    "field": "Skill_vs_monthhour_clim_std",
+    "raw": "0.0066",
+    "display": "0.0066",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_raw.csv",
+    "line": 11,
+    "field": "N",
+    "raw": "895",
+    "display": "895",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 4,
+    "field": "RMSE_mean",
+    "raw": "0.1724",
+    "display": "0.1724",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 4,
+    "field": "RMSE_std",
+    "raw": "0.0011",
+    "display": "0.0011",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 4,
+    "field": "MAE_mean",
+    "raw": "0.0732",
+    "display": "0.0732",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 4,
+    "field": "MAE_std",
+    "raw": "0.0009",
+    "display": "0.0009",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 4,
+    "field": "Skill_vs_monthhour_clim_mean",
+    "raw": "0.1264",
+    "display": "0.1264",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 4,
+    "field": "Skill_vs_monthhour_clim_std",
+    "raw": "0.0058",
+    "display": "0.0058",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_raw.csv",
+    "line": 18,
+    "field": "N",
+    "raw": "895",
+    "display": "895",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 12,
+    "field": "RMSE_mean",
+    "raw": "0.2467",
+    "display": "0.2467",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 12,
+    "field": "RMSE_std",
+    "raw": "0.0015",
+    "display": "0.0015",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 12,
+    "field": "MAE_mean",
+    "raw": "0.1192",
+    "display": "0.1192",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 12,
+    "field": "MAE_std",
+    "raw": "0.0011",
+    "display": "0.0011",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 12,
+    "field": "Skill_vs_monthhour_clim_mean",
+    "raw": "0.1249",
+    "display": "0.1249",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 12,
+    "field": "Skill_vs_monthhour_clim_std",
+    "raw": "0.0052",
+    "display": "0.0052",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_raw.csv",
+    "line": 5,
+    "field": "N",
+    "raw": "1104",
+    "display": "1104",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 19,
+    "field": "RMSE_mean",
+    "raw": "0.2497",
+    "display": "0.2497",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 19,
+    "field": "RMSE_std",
+    "raw": "0.0015",
+    "display": "0.0015",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 19,
+    "field": "MAE_mean",
+    "raw": "0.1247",
+    "display": "0.1247",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 19,
+    "field": "MAE_std",
+    "raw": "0.0012",
+    "display": "0.0012",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 19,
+    "field": "Skill_vs_monthhour_clim_mean",
+    "raw": "0.1142",
+    "display": "0.1142",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 19,
+    "field": "Skill_vs_monthhour_clim_std",
+    "raw": "0.0053",
+    "display": "0.0053",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_raw.csv",
+    "line": 12,
+    "field": "N",
+    "raw": "1104",
+    "display": "1104",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 5,
+    "field": "RMSE_mean",
+    "raw": "0.2443",
+    "display": "0.2443",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 5,
+    "field": "RMSE_std",
+    "raw": "0.001",
+    "display": "0.0010",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 5,
+    "field": "MAE_mean",
+    "raw": "0.1182",
+    "display": "0.1182",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 5,
+    "field": "MAE_std",
+    "raw": "0.0007",
+    "display": "0.0007",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 5,
+    "field": "Skill_vs_monthhour_clim_mean",
+    "raw": "0.1334",
+    "display": "0.1334",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 5,
+    "field": "Skill_vs_monthhour_clim_std",
+    "raw": "0.0036",
+    "display": "0.0036",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_raw.csv",
+    "line": 19,
+    "field": "N",
+    "raw": "1104",
+    "display": "1104",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 13,
+    "field": "RMSE_mean",
+    "raw": "0.2585",
+    "display": "0.2585",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 13,
+    "field": "RMSE_std",
+    "raw": "0.0012",
+    "display": "0.0012",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 13,
+    "field": "MAE_mean",
+    "raw": "0.1271",
+    "display": "0.1271",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 13,
+    "field": "MAE_std",
+    "raw": "0.0009",
+    "display": "0.0009",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 13,
+    "field": "Skill_vs_monthhour_clim_mean",
+    "raw": "0.0924",
+    "display": "0.0924",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 13,
+    "field": "Skill_vs_monthhour_clim_std",
+    "raw": "0.0044",
+    "display": "0.0044",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_raw.csv",
+    "line": 6,
+    "field": "N",
+    "raw": "1092",
+    "display": "1092",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 20,
+    "field": "RMSE_mean",
+    "raw": "0.2673",
+    "display": "0.2673",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 20,
+    "field": "RMSE_std",
+    "raw": "0.0021",
+    "display": "0.0021",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 20,
+    "field": "MAE_mean",
+    "raw": "0.1335",
+    "display": "0.1335",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 20,
+    "field": "MAE_std",
+    "raw": "0.0014",
+    "display": "0.0014",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 20,
+    "field": "Skill_vs_monthhour_clim_mean",
+    "raw": "0.0613",
+    "display": "0.0613",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 20,
+    "field": "Skill_vs_monthhour_clim_std",
+    "raw": "0.0072",
+    "display": "0.0072",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_raw.csv",
+    "line": 13,
+    "field": "N",
+    "raw": "1092",
+    "display": "1092",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 6,
+    "field": "RMSE_mean",
+    "raw": "0.2637",
+    "display": "0.2637",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 6,
+    "field": "RMSE_std",
+    "raw": "0.0018",
+    "display": "0.0018",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 6,
+    "field": "MAE_mean",
+    "raw": "0.1301",
+    "display": "0.1301",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 6,
+    "field": "MAE_std",
+    "raw": "0.0012",
+    "display": "0.0012",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 6,
+    "field": "Skill_vs_monthhour_clim_mean",
+    "raw": "0.0741",
+    "display": "0.0741",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 6,
+    "field": "Skill_vs_monthhour_clim_std",
+    "raw": "0.0064",
+    "display": "0.0064",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_raw.csv",
+    "line": 20,
+    "field": "N",
+    "raw": "1092",
+    "display": "1092",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 14,
+    "field": "RMSE_mean",
+    "raw": "0.4735",
+    "display": "0.4735",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 14,
+    "field": "RMSE_std",
+    "raw": "0.0011",
+    "display": "0.0011",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 14,
+    "field": "MAE_mean",
+    "raw": "0.3118",
+    "display": "0.3118",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 14,
+    "field": "MAE_std",
+    "raw": "0.001",
+    "display": "0.0010",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 14,
+    "field": "Skill_vs_monthhour_clim_mean",
+    "raw": "0.1491",
+    "display": "0.1491",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 14,
+    "field": "Skill_vs_monthhour_clim_std",
+    "raw": "0.0019",
+    "display": "0.0019",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_raw.csv",
+    "line": 7,
+    "field": "N",
+    "raw": "854",
+    "display": "854",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 21,
+    "field": "RMSE_mean",
+    "raw": "0.4784",
+    "display": "0.4784",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 21,
+    "field": "RMSE_std",
+    "raw": "0.0023",
+    "display": "0.0023",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 21,
+    "field": "MAE_mean",
+    "raw": "0.3169",
+    "display": "0.3169",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 21,
+    "field": "MAE_std",
+    "raw": "0.0011",
+    "display": "0.0011",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 21,
+    "field": "Skill_vs_monthhour_clim_mean",
+    "raw": "0.1403",
+    "display": "0.1403",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 21,
+    "field": "Skill_vs_monthhour_clim_std",
+    "raw": "0.0041",
+    "display": "0.0041",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_raw.csv",
+    "line": 14,
+    "field": "N",
+    "raw": "854",
+    "display": "854",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 7,
+    "field": "RMSE_mean",
+    "raw": "0.4746",
+    "display": "0.4746",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 7,
+    "field": "RMSE_std",
+    "raw": "0.0016",
+    "display": "0.0016",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 7,
+    "field": "MAE_mean",
+    "raw": "0.3126",
+    "display": "0.3126",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 7,
+    "field": "MAE_std",
+    "raw": "0.0006",
+    "display": "0.0006",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 7,
+    "field": "Skill_vs_monthhour_clim_mean",
+    "raw": "0.147",
+    "display": "0.1470",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 7,
+    "field": "Skill_vs_monthhour_clim_std",
+    "raw": "0.003",
+    "display": "0.0030",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_raw.csv",
+    "line": 21,
+    "field": "N",
+    "raw": "854",
+    "display": "854",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 15,
+    "field": "RMSE_mean",
+    "raw": "0.8428",
+    "display": "0.8428",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 15,
+    "field": "RMSE_std",
+    "raw": "0.002",
+    "display": "0.0020",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 15,
+    "field": "MAE_mean",
+    "raw": "0.7294",
+    "display": "0.7294",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 15,
+    "field": "MAE_std",
+    "raw": "0.002",
+    "display": "0.0020",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 15,
+    "field": "Skill_vs_monthhour_clim_mean",
+    "raw": "0.158",
+    "display": "0.1580",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 15,
+    "field": "Skill_vs_monthhour_clim_std",
+    "raw": "0.002",
+    "display": "0.0020",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_raw.csv",
+    "line": 8,
+    "field": "N",
+    "raw": "238",
+    "display": "238",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 22,
+    "field": "RMSE_mean",
+    "raw": "0.8476",
+    "display": "0.8476",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 22,
+    "field": "RMSE_std",
+    "raw": "0.0041",
+    "display": "0.0041",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 22,
+    "field": "MAE_mean",
+    "raw": "0.7351",
+    "display": "0.7351",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 22,
+    "field": "MAE_std",
+    "raw": "0.0035",
+    "display": "0.0035",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 22,
+    "field": "Skill_vs_monthhour_clim_mean",
+    "raw": "0.1533",
+    "display": "0.1533",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 22,
+    "field": "Skill_vs_monthhour_clim_std",
+    "raw": "0.0041",
+    "display": "0.0041",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_raw.csv",
+    "line": 15,
+    "field": "N",
+    "raw": "238",
+    "display": "238",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 8,
+    "field": "RMSE_mean",
+    "raw": "0.8432",
+    "display": "0.8432",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 8,
+    "field": "RMSE_std",
+    "raw": "0.0029",
+    "display": "0.0029",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 8,
+    "field": "MAE_mean",
+    "raw": "0.7295",
+    "display": "0.7295",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 8,
+    "field": "MAE_std",
+    "raw": "0.0034",
+    "display": "0.0034",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 8,
+    "field": "Skill_vs_monthhour_clim_mean",
+    "raw": "0.1576",
+    "display": "0.1576",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_summary.csv",
+    "line": 8,
+    "field": "Skill_vs_monthhour_clim_std",
+    "raw": "0.0029",
+    "display": "0.0029",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_raw.csv",
+    "line": 22,
+    "field": "N",
+    "raw": "238",
+    "display": "238",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 2,
+    "field": "seed_mean_delta_RMSE",
+    "raw": "0.0029",
+    "display": "+0.0029",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 2,
+    "field": "seed_std_delta",
+    "raw": "0.0008",
+    "display": "0.0008",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 2,
+    "field": "n_seeds_worse",
+    "raw": "5",
+    "display": "5",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 2,
+    "field": "seedavg_pred_delta_RMSE",
+    "raw": "0.002",
+    "display": "+0.0020",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 2,
+    "field": "boot_CI_low",
+    "raw": "-0.0012",
+    "display": "-0.0012",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 2,
+    "field": "boot_CI_high",
+    "raw": "0.0056",
+    "display": "+0.0056",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 3,
+    "field": "seed_mean_delta_RMSE",
+    "raw": "-0.0009",
+    "display": "-0.0009",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 3,
+    "field": "seed_std_delta",
+    "raw": "0.0024",
+    "display": "0.0024",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 3,
+    "field": "n_seeds_worse",
+    "raw": "3",
+    "display": "3",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 3,
+    "field": "seedavg_pred_delta_RMSE",
+    "raw": "-0.0013",
+    "display": "-0.0013",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 3,
+    "field": "boot_CI_low",
+    "raw": "-0.0103",
+    "display": "-0.0103",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 3,
+    "field": "boot_CI_high",
+    "raw": "0.0074",
+    "display": "+0.0074",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 4,
+    "field": "seed_mean_delta_RMSE",
+    "raw": "-0.0024",
+    "display": "-0.0024",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 4,
+    "field": "seed_std_delta",
+    "raw": "0.0013",
+    "display": "0.0013",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 4,
+    "field": "n_seeds_worse",
+    "raw": "0",
+    "display": "0",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 4,
+    "field": "seedavg_pred_delta_RMSE",
+    "raw": "-0.0025",
+    "display": "-0.0025",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 4,
+    "field": "boot_CI_low",
+    "raw": "-0.0074",
+    "display": "-0.0074",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 4,
+    "field": "boot_CI_high",
+    "raw": "0.003",
+    "display": "+0.0030",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 5,
+    "field": "seed_mean_delta_RMSE",
+    "raw": "0.003",
+    "display": "+0.0030",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 5,
+    "field": "seed_std_delta",
+    "raw": "0.0016",
+    "display": "0.0016",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 5,
+    "field": "n_seeds_worse",
+    "raw": "5",
+    "display": "5",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 5,
+    "field": "seedavg_pred_delta_RMSE",
+    "raw": "0.0023",
+    "display": "+0.0023",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 5,
+    "field": "boot_CI_low",
+    "raw": "-0.0011",
+    "display": "-0.0011",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 5,
+    "field": "boot_CI_high",
+    "raw": "0.0059",
+    "display": "+0.0059",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 6,
+    "field": "seed_mean_delta_RMSE",
+    "raw": "0.0088",
+    "display": "+0.0088",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 6,
+    "field": "seed_std_delta",
+    "raw": "0.0029",
+    "display": "0.0029",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 6,
+    "field": "n_seeds_worse",
+    "raw": "5",
+    "display": "5",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 6,
+    "field": "seedavg_pred_delta_RMSE",
+    "raw": "0.0071",
+    "display": "+0.0071",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 6,
+    "field": "boot_CI_low",
+    "raw": "-0.0005",
+    "display": "-0.0005",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 6,
+    "field": "boot_CI_high",
+    "raw": "0.0148",
+    "display": "+0.0148",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 7,
+    "field": "seed_mean_delta_RMSE",
+    "raw": "0.0049",
+    "display": "+0.0049",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 7,
+    "field": "seed_std_delta",
+    "raw": "0.0029",
+    "display": "0.0029",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 7,
+    "field": "n_seeds_worse",
+    "raw": "5",
+    "display": "5",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 7,
+    "field": "seedavg_pred_delta_RMSE",
+    "raw": "0.0037",
+    "display": "+0.0037",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 7,
+    "field": "boot_CI_low",
+    "raw": "-0.0032",
+    "display": "-0.0032",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 7,
+    "field": "boot_CI_high",
+    "raw": "0.0111",
+    "display": "+0.0111",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 8,
+    "field": "seed_mean_delta_RMSE",
+    "raw": "0.0047",
+    "display": "+0.0047",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 8,
+    "field": "seed_std_delta",
+    "raw": "0.0056",
+    "display": "0.0056",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 8,
+    "field": "n_seeds_worse",
+    "raw": "4",
+    "display": "4",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 8,
+    "field": "seedavg_pred_delta_RMSE",
+    "raw": "0.0041",
+    "display": "+0.0041",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 8,
+    "field": "boot_CI_low",
+    "raw": "-0.0093",
+    "display": "-0.0093",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 8,
+    "field": "boot_CI_high",
+    "raw": "0.0184",
+    "display": "+0.0184",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 9,
+    "field": "seed_mean_delta_RMSE",
+    "raw": "0.0004",
+    "display": "+0.0004",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 9,
+    "field": "seed_std_delta",
+    "raw": "0.0007",
+    "display": "0.0007",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 9,
+    "field": "n_seeds_worse",
+    "raw": "3",
+    "display": "3",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 9,
+    "field": "seedavg_pred_delta_RMSE",
+    "raw": "0.0004",
+    "display": "+0.0004",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 9,
+    "field": "boot_CI_low",
+    "raw": "-0.0011",
+    "display": "-0.0011",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 9,
+    "field": "boot_CI_high",
+    "raw": "0.0018",
+    "display": "+0.0018",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 10,
+    "field": "seed_mean_delta_RMSE",
+    "raw": "-0.0013",
+    "display": "-0.0013",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 10,
+    "field": "seed_std_delta",
+    "raw": "0.0019",
+    "display": "0.0019",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 10,
+    "field": "n_seeds_worse",
+    "raw": "1",
+    "display": "1",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 10,
+    "field": "seedavg_pred_delta_RMSE",
+    "raw": "-0.0013",
+    "display": "-0.0013",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 10,
+    "field": "boot_CI_low",
+    "raw": "-0.0038",
+    "display": "-0.0038",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 10,
+    "field": "boot_CI_high",
+    "raw": "0.0013",
+    "display": "+0.0013",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 11,
+    "field": "seed_mean_delta_RMSE",
+    "raw": "-0.0008",
+    "display": "-0.0008",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 11,
+    "field": "seed_std_delta",
+    "raw": "0.0003",
+    "display": "0.0003",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 11,
+    "field": "n_seeds_worse",
+    "raw": "0",
+    "display": "0",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 11,
+    "field": "seedavg_pred_delta_RMSE",
+    "raw": "-0.0007",
+    "display": "-0.0007",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 11,
+    "field": "boot_CI_low",
+    "raw": "-0.003",
+    "display": "-0.0030",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 11,
+    "field": "boot_CI_high",
+    "raw": "0.0013",
+    "display": "+0.0013",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 12,
+    "field": "seed_mean_delta_RMSE",
+    "raw": "-0.0024",
+    "display": "-0.0024",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 12,
+    "field": "seed_std_delta",
+    "raw": "0.0024",
+    "display": "0.0024",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 12,
+    "field": "n_seeds_worse",
+    "raw": "1",
+    "display": "1",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 12,
+    "field": "seedavg_pred_delta_RMSE",
+    "raw": "-0.0025",
+    "display": "-0.0025",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 12,
+    "field": "boot_CI_low",
+    "raw": "-0.005",
+    "display": "-0.0050",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 12,
+    "field": "boot_CI_high",
+    "raw": "-0.0004",
+    "display": "-0.0004",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 13,
+    "field": "seed_mean_delta_RMSE",
+    "raw": "0.0052",
+    "display": "+0.0052",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 13,
+    "field": "seed_std_delta",
+    "raw": "0.0011",
+    "display": "0.0011",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 13,
+    "field": "n_seeds_worse",
+    "raw": "5",
+    "display": "5",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 13,
+    "field": "seedavg_pred_delta_RMSE",
+    "raw": "0.005",
+    "display": "+0.0050",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 13,
+    "field": "boot_CI_low",
+    "raw": "0.0022",
+    "display": "+0.0022",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 13,
+    "field": "boot_CI_high",
+    "raw": "0.0079",
+    "display": "+0.0079",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 14,
+    "field": "seed_mean_delta_RMSE",
+    "raw": "0.0012",
+    "display": "+0.0012",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 14,
+    "field": "seed_std_delta",
+    "raw": "0.0017",
+    "display": "0.0017",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 14,
+    "field": "n_seeds_worse",
+    "raw": "4",
+    "display": "4",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 14,
+    "field": "seedavg_pred_delta_RMSE",
+    "raw": "0.001",
+    "display": "+0.0010",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 14,
+    "field": "boot_CI_low",
+    "raw": "-0.0015",
+    "display": "-0.0015",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 14,
+    "field": "boot_CI_high",
+    "raw": "0.0033",
+    "display": "+0.0033",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 15,
+    "field": "seed_mean_delta_RMSE",
+    "raw": "0.0004",
+    "display": "+0.0004",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 15,
+    "field": "seed_std_delta",
+    "raw": "0.003",
+    "display": "0.0030",
+    "digits": 4,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 15,
+    "field": "n_seeds_worse",
+    "raw": "1",
+    "display": "1",
+    "digits": 0,
+    "signed": false
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 15,
+    "field": "seedavg_pred_delta_RMSE",
+    "raw": "0.0004",
+    "display": "+0.0004",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 15,
+    "field": "boot_CI_low",
+    "raw": "-0.0048",
+    "display": "-0.0048",
+    "digits": 4,
+    "signed": true
+  },
+  {
+    "file": "q03d_seasonal_xgb_paired.csv",
+    "line": 15,
+    "field": "boot_CI_high",
+    "raw": "0.0051",
+    "display": "+0.0051",
+    "digits": 4,
+    "signed": true
+  }
+]

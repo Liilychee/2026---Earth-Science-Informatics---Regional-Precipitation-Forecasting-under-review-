@@ -1,0 +1,20 @@
+{
+  "Figures/r1M1_prediction_distribution.pdf": "6730e5a51f47e0539a77628c8fa839fb487188ec043afcc57632cc2f49c11e9c",
+  "Figures/r2M4_event_csi.pdf": "931cbc9e74a7b316764ba373afc5ffa7726aef43c288b28df8230a244c29923e",
+  "Figures/fig3_probabilistic_coverage.pdf": "3c30a112ab629f4c530da8fe183052923f406ad2f778edf94587f09e0747518d",
+  "Figures/r1M3_interval_coverage.pdf": "1dea68105e12dba61df60fa312efe9c2b7dc7c29ec98ed5028ab3cbe19e6b330",
+  "Figures/train_only_spearman_heatmap.pdf": "dc2f95d77106b57d8a92b438bedbfad8113006760a1024276c999da1a077893d",
+  "Figures/r1M2_seed_rmse.pdf": "46a8085894d70a54f375448794a23ad8de87fd15421179ad8d153d4dbebbc160",
+  "Figures/r1M4_shap_comparison.pdf": "a4cc1bbcbaa1606808c7627216854b94c1cdf9aa5e32681fb3aca603f2279f8d",
+  "Figures/fig6_shap_summary.pdf": "fbd16e9de11144feecb7b20539ac0c7c8da00479a52a917ecd31ea2b2018d617",
+  "Figures/fig1_5seed_rmse.pdf": "a24982489219ac50afafbeb9c26e3951933130dda884de088ff7f6cfc4c7552c",
+  "Figures/r1M4_ablation_comparison.pdf": "8accdf9485f179637c5b9fa810743a823994f849dc8075b37fcdb35d35e41389",
+  "Figures/r3M7_upstream_effects.pdf": "1f195c814553a10bc35b4ce3e66b41e064e15ceb0a7304c469de7c8aafc77369",
+  "Figures/fig5_temporal_shap.pdf": "56e0e6ada48880897f312bcecb0835237401683fe965edea1e1e7e82de070b23",
+  "Figures/Study_region.PDF": "0b080aa836133e47de55c6419c8fff24f9a79deaa5a25d18966522fd94778aa1",
+  "Figures/r1M1_stratified_rmse.pdf": "a51a76cac6cef4cc5ab81c3be5e51f0cb39543a816d32a313dd3756141400233",
+  "Figures/r2M7_spatial_quantiles.pdf": "db90227a5991059d3feb0dbd01bc24a1ef9f697a5ba7f4972c61b2b23878ba1d",
+  "Figures/r3M14_season_cdf_full.pdf": "139a62f9c78928cee7454ef2c13043e26466cb7ffede32732b0fbe05e8e1da31",
+  "Figures/feature_ablation_rmse_5seed.pdf": "44b2e32788a194e12ee7fed006c8d95c73dad072f15747add0679b4065cd3966",
+  "Figures/fig2_stratified_rmse.pdf": "89af06901bd7e2b7d5d92419a18d6773f9cba2c177424450418ac402d67d5a38"
+}

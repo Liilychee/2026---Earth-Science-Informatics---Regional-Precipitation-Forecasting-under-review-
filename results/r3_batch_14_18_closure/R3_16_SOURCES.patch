@@ -1,0 +1,83 @@
+--- a/manuscript.tex	2026-11-16 00:00:00.000000000 +0000
++++ b/manuscript.tex	2026-11-16 00:00:00.000000000 +0000
+@@ -1074,6 +1074,8 @@
+ For BiLSTM-Attention, upper-tail minimum total precipitation rate (mntpr) had the highest mean absolute grouped SHAP attribution among the seven predictors, 0.089130~mm\,h$^{-1}$, compared with 0.032847~mm\,h$^{-1}$ in the random comparison sample, a factor of approximately 2.71. Its mean signed attribution was positive ($+0.067413$~mm\,h$^{-1}$), relative to the selected background, but the proportion of positive case--seed attributions was only 53.7\%. BU-LSTM-Attention also ranked mntpr first in the upper tail, with mean absolute attribution 0.045958~mm\,h$^{-1}$. These results identify regime-dependent model reliance; they do not establish that mntpr has unique incremental predictive information or a causal effect.
+ 
+ \par}
++
++\revminor{In the random sample, BiLSTM-Attention attributions were largest for tcc, sp and mntpr (0.0370, 0.0360 and 0.0328~mm\,h$^{-1}$), followed by v10 (0.0192~mm\,h$^{-1}$); mxtpr, d2m and lsp each had less than 0.01~mm\,h$^{-1}$. The tcc and sp means differed by less than their seed SDs. In the upper tail, the order was mntpr, tcc, sp, v10, lsp, mxtpr and d2m. BU-LSTM-Attention also ranked tcc and sp first and second in the random sample, and mntpr and tcc first and second in the upper tail (Supplementary Table~\ref{supp-stab:r1m4_shap_magnitude}).}
+ 
+ \begin{figure}[!htbp]
+ \centering
+@@ -1229,7 +1231,9 @@
+ 
+ \par}
+ 
++\revminor{These rankings are physically plausible for a mid-latitude maritime region, although none of the analyses tests a mechanism. Over the North Atlantic storm track, most precipitation is associated with extratropical cyclones and their fronts \citep{hawcroft2012much,catto2012relating}. Surface pressure summarizes the synoptic pressure field; in the training period, it was negatively associated with precipitation six hours later (Spearman $\rho=-0.37$; rank-partial $-0.19$ after controlling current precipitation), consistent with wetter conditions near low-pressure systems, although low pressure is neither necessary nor sufficient for rain. Total cloud cover indicates moist, cloud-covered conditions within precipitating systems ($\rho=0.44$; rank-partial $0.25$), but extensive cloud does not by itself imply rain. Positive v10, a southerly flow component, was associated with later precipitation in every season, and removing v10 degraded BiLSTM-Attention mainly in DJF and SON (Section~\ref{sec:predictor_selection_results}). This is consistent with poleward moisture transport ahead of cold fronts and in atmospheric rivers affecting western Europe \citep{lavers2013nexus}; without moisture-flux or trajectory analysis, no moisture source or transport path is inferred. The precipitation-related inputs describe current precipitation: lsp is the preceding-hour large-scale accumulation, whereas mxtpr and mntpr bound the total precipitation rate within that hour. Their overlap is consistent with small single-variable removal effects but a clear group effect. A high mntpr indicates precipitation sustained throughout the preceding hour, which may persist into the target hour in heavy cases, consistent with its upper-tail attribution. The low attribution of d2m may reflect moisture information shared with tcc and the precipitation inputs; it does not imply that humidity is unimportant for precipitation formation. Because attribution and ablation measure model reliance and predictive utility for this regional ERA5 target, these explanations are hypotheses consistent with the evidence, not causal validation; the cited studies concern daily or climatological precipitation over broader regions.}
+ 
++
+ {\color{red}\hypersetup{linkcolor=red,citecolor=red}
+ Contemporaneous association is not six-hour predictive contribution, and a rank-partial association does not demonstrate a causal effect or a gain in model performance. The candidate-pool dependence and matched C6 results in Section~\ref{sec:predictor_selection_results} therefore qualify the original screening rationale. A separate, pre-specified q21 configuration, C3, added upstream U1 inputs (the original seven variables plus ws, averaged over 52.75--53.75$^\circ$N, 10.5--7.0$^\circ$W) and U2 inputs (500-hPa geopotential and total-column water vapour, cosine-latitude weighted over 50--57$^\circ$N, 20--7$^\circ$W). Overall RMSE decreased by 6.4\% for XGBoost and 7.0\% for BiLSTM-Attention. C3 expands both spatial coverage and the predictor count from seven to 17, so it is not a controlled seven-variable selection comparison. C3a (U1 only, 15 predictors) and C3b (U2 only, nine predictors) were added after inspecting C3 and are exploratory. Their results are reported separately in Supplementary Tables~\ref{supp-stab:r2m3_upstream_xgboost} and~\ref{supp-stab:r2m3_upstream_bilstm_attn}. These spatial sensitivity tests show that the local configuration can omit useful upstream information; they do not establish a uniquely best selection strategy.
+ \par}
+--- a/Response letter.tex	2026-11-16 00:00:00.000000000 +0000
++++ b/Response letter.tex	2026-11-16 00:00:00.000000000 +0000
+@@ -1392,10 +1392,18 @@
+ 
+ \ReviewerComment{L745-751: Do you have any physical explanation for these rankings?}
+ 
+-\PendingResponse
++\AuthorResponse{We thank the reviewer for this question; the original manuscript did not provide a physical interpretation of the rankings. In the revised analysis, which groups the six input times of each predictor and uses five seeds, BiLSTM-Attention attributions in a random test sample were largest for tcc, sp and mntpr, followed by v10, with mxtpr, d2m and lsp smallest; in upper-tail cases ($\geq$ training Q95), mntpr ranked first, followed by tcc, sp and v10. We have added a physical interpretation to Section~\ref{manuscript-sec:predictor_complementarity}. Surface pressure summarizes the synoptic pressure field, and lower pressure was associated with more precipitation six hours later, consistent with the dominant contribution of extratropical cyclones and fronts to North Atlantic precipitation \citep{hawcroft2012much,catto2012relating}. Total cloud cover indicates moist, cloud-covered conditions within precipitating systems. Positive v10, a southerly component, was associated with later precipitation in all seasons, consistent with poleward moisture transport ahead of cold fronts and in atmospheric rivers \citep{lavers2013nexus}, although we did not analyse moisture fluxes. The precipitation-related inputs describe ongoing precipitation and overlap: individual removals changed RMSE little, whereas removing mxtpr, mntpr and lsp together increased BiLSTM-Attention RMSE by 0.0048~mm\,h$^{-1}$ overall and 0.0194~mm\,h$^{-1}$ in the upper tail. This redundancy, and the different questions addressed by SHAP and retrained ablation, are consistent with their weak upper-tail rank agreement (Kendall's $\tau=0.048$). Low d2m attribution does not imply that humidity is physically unimportant. These are physically plausible interpretations, not causal validation. The rankings are reported in Section~\ref{manuscript-sec:shap_results} and Supplementary Table~\ref{supp-stab:r1m4_shap_magnitude}, the ablation results in Section~\ref{manuscript-sec:ablation_results}, and the interpretation in Section~\ref{manuscript-sec:predictor_complementarity}.}
+ 
+-\ChangeLocation
++\ManuscriptChange{Section~\ref{manuscript-sec:shap_results} (SHAP-Based Feature Attribution): new paragraph stating the random-sample and upper-tail grouped SHAP rankings for both architectures. Section~\ref{manuscript-sec:predictor_complementarity} (Predictor Attribution and Incremental Contribution): new paragraph giving the physical interpretation and its limits, citing \citet{hawcroft2012much}, \citet{catto2012relating} and \citet{lavers2013nexus} (added to the reference list). Existing SHAP and ablation figures and Supplementary Tables~\ref{supp-stab:r1m4_shap_magnitude}--\ref{supp-stab:r1m4_correlation_rank_agreement} are reused unchanged; no training or data download. Final page and line numbers pending full-manuscript assembly.}
++
++\EvidenceBox{Grouped SHAP rankings (Section~\ref{manuscript-sec:shap_results})}{
++\RevisedExcerpt{In the random sample, BiLSTM-Attention attributions were largest for tcc, sp and mntpr (0.0370, 0.0360 and 0.0328~mm\,h$^{-1}$), followed by v10 (0.0192~mm\,h$^{-1}$); mxtpr, d2m and lsp each had less than 0.01~mm\,h$^{-1}$. The tcc and sp means differed by less than their seed SDs. In the upper tail, the order was mntpr, tcc, sp, v10, lsp, mxtpr and d2m. BU-LSTM-Attention also ranked tcc and sp first and second in the random sample, and mntpr and tcc first and second in the upper tail (Supplementary Table~\ref{supp-stab:r1m4_shap_magnitude}).}
++}
+ 
++\EvidenceBox{Physical interpretation of the rankings (Section~\ref{manuscript-sec:predictor_complementarity})}{
++\RevisedExcerpt{These rankings are physically plausible for a mid-latitude maritime region, although none of the analyses tests a mechanism. Over the North Atlantic storm track, most precipitation is associated with extratropical cyclones and their fronts \citep{hawcroft2012much,catto2012relating}. Surface pressure summarizes the synoptic pressure field; in the training period, it was negatively associated with precipitation six hours later (Spearman $\rho=-0.37$; rank-partial $-0.19$ after controlling current precipitation), consistent with wetter conditions near low-pressure systems, although low pressure is neither necessary nor sufficient for rain. Total cloud cover indicates moist, cloud-covered conditions within precipitating systems ($\rho=0.44$; rank-partial $0.25$), but extensive cloud does not by itself imply rain. Positive v10, a southerly flow component, was associated with later precipitation in every season, and removing v10 degraded BiLSTM-Attention mainly in DJF and SON (Section~\ref{sec:predictor_selection_results}). This is consistent with poleward moisture transport ahead of cold fronts and in atmospheric rivers affecting western Europe \citep{lavers2013nexus}; without moisture-flux or trajectory analysis, no moisture source or transport path is inferred. The precipitation-related inputs describe current precipitation: lsp is the preceding-hour large-scale accumulation, whereas mxtpr and mntpr bound the total precipitation rate within that hour. Their overlap is consistent with small single-variable removal effects but a clear group effect. A high mntpr indicates precipitation sustained throughout the preceding hour, which may persist into the target hour in heavy cases, consistent with its upper-tail attribution. The low attribution of d2m may reflect moisture information shared with tcc and the precipitation inputs; it does not imply that humidity is unimportant for precipitation formation. Because attribution and ablation measure model reliance and predictive utility for this regional ERA5 target, these explanations are hypotheses consistent with the evidence, not causal validation; the cited studies concern daily or climatological precipitation over broader regions.}
++}
++
+ % Review ID: R3 L752-758
+ \Needspace{5\baselineskip}
+ \subsection*{Comment: Lines~752--758}
+--- a/sn-bibliography.bib	2026-11-16 00:00:00.000000000 +0000
++++ b/sn-bibliography.bib	2026-11-16 00:00:00.000000000 +0000
+@@ -1279,4 +1279,36 @@
+   pages={275--296},
+   year={2023},
+   doi={10.1175/MWR-D-22-0170.1}
++}
++
++% R3 L745-751: metadata verified against Crossref (abstracts checked).
++@article{hawcroft2012much,
++  title={How much {Northern Hemisphere} precipitation is associated with extratropical cyclones?},
++  author={Hawcroft, M. K. and Shaffrey, L. C. and Hodges, K. I. and Dacre, H. F.},
++  journal={Geophysical Research Letters},
++  volume={39},
++  number={24},
++  year={2012},
++  doi={10.1029/2012GL053866}
++}
++
++@article{catto2012relating,
++  title={Relating global precipitation to atmospheric fronts},
++  author={Catto, J. L. and Jakob, C. and Berry, G. and Nicholls, N.},
++  journal={Geophysical Research Letters},
++  volume={39},
++  number={10},
++  year={2012},
++  doi={10.1029/2012GL051736}
+ }
++
++@article{lavers2013nexus,
++  title={The nexus between atmospheric rivers and extreme precipitation across {Europe}},
++  author={Lavers, David A. and Villarini, Gabriele},
++  journal={Geophysical Research Letters},
++  volume={40},
++  number={12},
++  pages={3259--3264},
++  year={2013},
++  doi={10.1002/grl.50636}
++}

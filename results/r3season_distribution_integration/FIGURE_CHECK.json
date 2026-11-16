@@ -1,0 +1,27 @@
+{
+  "path": "Figures/r3M14_season_cdf_full.pdf",
+  "size_mm": [
+    119.00005764431424,
+    131.99992090861002
+  ],
+  "fonts": [
+    "CROJSU+LMMathSymbols9-Regular",
+    "DGCYSG+LMMathItalic8-Regular",
+    "EKLNXK+LMRoman8-Regular",
+    "MDJGZL+LMRoman12-Regular",
+    "MHBBBK+LMRoman9-Regular",
+    "MUQMLA+LMRoman9-Bold",
+    "NZOVVG+LMMathItalic9-Regular",
+    "ONAHZY+LMMathSymbols6-Regular",
+    "QWXLJS+LMRoman6-Regular"
+  ],
+  "min_font_pt": 8,
+  "source_rows": 19302,
+  "includes_all_26300": true,
+  "full_x_range": [
+    0,
+    4.3
+  ],
+  "original_figure_preserved": true,
+  "backend": "PGF/pdflatex with shared fig_style constants"
+}

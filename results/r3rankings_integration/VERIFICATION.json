@@ -1,0 +1,64 @@
+{
+ "old148_verbatim_in_order": true,
+ "total": 150,
+ "unmatched": [],
+ "RL_outside_block_unchanged": true,
+ "manuscript_pure_insertion": true,
+ "supplementary_unchanged": true,
+ "bib_append_only": true,
+ "bi_random_rank": [
+  "tcc",
+  "sp",
+  "mntpr",
+  "v10",
+  "mxtpr",
+  "d2m",
+  "lsp"
+ ],
+ "bi_upper_rank": [
+  "mntpr",
+  "tcc",
+  "sp",
+  "v10",
+  "lsp",
+  "mxtpr",
+  "d2m"
+ ],
+ "bu_random_top2": [
+  "tcc",
+  "sp"
+ ],
+ "bu_upper_top2": [
+  "mntpr",
+  "tcc"
+ ],
+ "values_045": [
+  0.037,
+  0.036,
+  0.0328,
+  0.0192
+ ],
+ "others_lt_0.01": true,
+ "tcc_sp_gap_lt_sd": true,
+ "assoc_rows": [
+  "tcc & $0.4755$ & $0.4378$ & $[0.4190,0.4555]$ & $0.2513$ & $[0.2351,0.2672]$ & 5/4/1 \\\\",
+  "sp & $-0.4277$ & $-0.3691$ & $[-0.3917,-0.3455]$ & $-0.1879$ & $[-0.2034,-0.1722]$ & 6/6/2 \\\\"
+ ],
+ "group_ablation_bi": [
+  [
+   "all",
+   "no_precip",
+   0.004805
+  ],
+  [
+   "wet_ge0.1",
+   "no_precip",
+   0.010705
+  ],
+  [
+   "upper_geQ95",
+   "no_precip",
+   0.019359
+  ]
+ ]
+}

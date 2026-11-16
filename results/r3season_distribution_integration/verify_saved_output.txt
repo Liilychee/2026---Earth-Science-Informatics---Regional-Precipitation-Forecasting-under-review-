@@ -1,0 +1,88 @@
+{
+  "raw_n": 26300,
+  "old_windowed_n": 26282,
+  "missing": 18,
+  "full_first": "2004-01-01 00:00:00",
+  "full_last": "2021-12-31 18:00:00",
+  "sampling": "00/06/12/18 UTC; hourly regional precipitation, not six-hour totals",
+  "season_stats": [
+    {
+      "Season": "DJF",
+      "N": 6500,
+      "Zero_n": 829,
+      "Wet_n": 1299,
+      "Wet_pct": 19.984615384615385,
+      "Ge1_n": 162,
+      "Ge1_pct": 2.4923076923076923,
+      "Mean": 0.10914008799142637,
+      "Q90": 0.328430175732,
+      "Q95": 0.6197109188199993,
+      "Q99": 1.4296079606120005,
+      "Max": 3.419265736
+    },
+    {
+      "Season": "MAM",
+      "N": 6624,
+      "Zero_n": 1681,
+      "Wet_n": 1288,
+      "Wet_pct": 19.444444444444446,
+      "Ge1_n": 82,
+      "Ge1_pct": 1.2379227053140096,
+      "Mean": 0.08538127375807375,
+      "Q90": 0.25295639018239985,
+      "Q95": 0.45745944985799947,
+      "Q99": 1.0893665282639977,
+      "Max": 2.867031108
+    },
+    {
+      "Season": "JJA",
+      "N": 6624,
+      "Zero_n": 1237,
+      "Wet_n": 1443,
+      "Wet_pct": 21.78442028985507,
+      "Ge1_n": 142,
+      "Ge1_pct": 2.143719806763285,
+      "Mean": 0.11128707783427633,
+      "Q90": 0.31266021805192984,
+      "Q95": 0.5876960756019997,
+      "Q99": 1.4295911747719938,
+      "Max": 3.9403152639999997
+    },
+    {
+      "Season": "SON",
+      "N": 6552,
+      "Zero_n": 964,
+      "Wet_n": 1333,
+      "Wet_pct": 20.344932844932845,
+      "Ge1_n": 195,
+      "Ge1_pct": 2.976190476190476,
+      "Mean": 0.12092209125726971,
+      "Q90": 0.3227329268200002,
+      "Q95": 0.6725530639299999,
+      "Q99": 1.7418258681619987,
+      "Max": 4.134540564
+    }
+  ],
+  "train_seasons": {
+    "DJF": 4566,
+    "MAM": 4784,
+    "JJA": 4686,
+    "SON": 4368
+  },
+  "old_counts": {
+    "DJF": 6494,
+    "JJA": 6618,
+    "MAM": 6618,
+    "SON": 6552
+  },
+  "bootstrap": "circular blocks28,2000,seed42;141 blocks=3948 positions truncated to3939; full-timeline indices shared, mask after sampling; score five-seed mean prediction; pointwise, no multiplicity adjustment",
+  "seed_rows": 105,
+  "summary_rows": 21,
+  "paired_rows": 14,
+  "all_rounding_matches": true,
+  "limitations": [
+    "Per-seed q03d predictions were not archived; 105 raw metrics can be checked against saved summaries but not independently regenerated from individual seed predictions.",
+    "Seed-mean prediction file supports all 14 paired point estimates and full bootstrap reproduction.",
+    "No seasonal retuning or deep-model seasonal retraining."
+  ]
+}

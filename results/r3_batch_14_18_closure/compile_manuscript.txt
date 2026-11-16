@@ -1,0 +1,6 @@
+Rc files read (in order):
+  NONE
+Latexmk: This is Latexmk, John Collins, 9 March 2026. Version 4.88.
+Latexmk: Nothing to do for 'manuscript.tex'.
+Latexmk: All targets (build/manuscript.pdf) are up-to-date
+

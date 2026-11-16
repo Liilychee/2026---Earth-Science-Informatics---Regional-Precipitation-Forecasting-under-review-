@@ -1,0 +1,39 @@
+[
+  {
+    "fact": "Q95 .5740 and18404 training targets; relative upper tail, original scale",
+    "source": "manuscript \u00a73.4 protected paragraphs; results/r2m7_evidence/README_METHODS.md"
+  },
+  {
+    "fact": "26300/26282/18; date range; four seasonal Ns/Q95s and >=1 percentages",
+    "source": "verify_saved.py; FULL_PERIOD_SEASON_STATS.csv; OMITTED_18_TIMESTAMPS.csv",
+    "method": "Training/validation/test each lose first6 timestamps only during window construction"
+  },
+  {
+    "fact": "G/S/F 0.2439/0.2468/0.2443",
+    "source": "evidence/q03d_seasonal_xgb_summary.csv; rowsVariant=G/S/F,Subset=all",
+    "fields": [
+      "RMSE_mean",
+      "RMSE_std"
+    ]
+  },
+  {
+    "fact": "S-G +.0029 seedmean;5/5worse vs+.0020 ensemble[-.0012,+.0056]",
+    "source": "evidence/q03d_seasonal_xgb_paired.csv; Comparison=S_minus_G,Subset=all"
+  },
+  {
+    "fact": "F-G +.0004[-.0011,+.0018]; JJA andSON differing signs",
+    "source": "evidence/q03d_seasonal_xgb_paired.csv; Comparison=F_minus_G,Subset=all/JJA/SON"
+  },
+  {
+    "fact": "42inputs vs46; train/testN; seasons4566/4784/4686/4368; five seeds, no retuning, treeparameters",
+    "source": "evidence/analysis_q03d_seasonal_xgb.py lines50\u2013175 and q03d_seasonal_xgb_output.txt lines1\u201321"
+  },
+  {
+    "fact": "circular28,2000,seed42;3948truncated3939, jointindices then masks",
+    "source": "evidence/analysis_q03d_seasonal_xgb.py lines218\u2013265; BOOTSTRAP_RECHECK.json"
+  },
+  {
+    "fact": "S61/S62/S63 and FigureS4",
+    "source": "build/Supplementary.aux; LABEL_INDEX.json"
+  }
+]

@@ -1,0 +1,5 @@
+# R3-17 (R3 L752-758: 12 h vs 30 h history)
+Evidence (R3-10, CLOSED, archived 8f9c52f): §3.3 and §4.2 paragraphs (present verbatim in current manuscript), Supplementary S55 stab:r3window_six_models and S56 stab:r3window_curve; saved q14_window_effect.csv (prediction check max diff 2.3e-16; 3,939 common 12/30 h targets; 3,933 for the 6–66 h curve).
+Key values (all-target, 12 h minus 30 h, five seeds): XGBoost −0.000919 (4/5; seed-t [−0.001986,+0.000149], block [−0.002482,+0.000814]); BU-LSTM −0.001470 (3/5); BiLSTM-Attention −0.001830 (5/5; both intervals < 0; 0.2429→0.2410); Transformer −0.013196 (5/5; 0.2600→0.2468; 30-epoch cap); BU-LSTM-Attention −0.002064 (4/5); Prob. BiLSTM-Attention −0.002626 (4/5); seed-t intervals of the last three include zero.
+Change: Response letter R3 L752-758 only — reply, location box, two EvidenceBoxes reusing the R3-10 excerpts verbatim. No manuscript, Supplementary or bib change.
+Checks: 150 original excerpts unchanged in order + 2 = 152/152 match; three PDFs compile with 0 undefined/overfull (107/75/93 pp).
